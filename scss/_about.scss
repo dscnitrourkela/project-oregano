@@ -1,0 +1,129 @@
+/* About Area css
+============================================================================================ */
+.about-area{
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		background-image: url(../img/banner/about1.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		right: 0;
+		top: 0;
+
+	}
+	@media (max-width: 1199px){
+		&:after {
+			right: -44px;
+			background-size: contain;
+		}
+	}
+
+	.single-about{
+		text-align: left;
+		padding: 40px 0 0;
+		@include transition;
+		&:hover{
+			
+		}
+		.about-icon {
+			width: 170px;
+			height: 95px;
+			text-align: center;
+			margin-bottom: 20px;
+			position: relative;
+			z-index: 1;
+			line-height: 112px;
+			&:after{
+				content: '';
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				background: #fcefed;
+				border-radius: 100%;
+				left: 0;
+				z-index: -1;
+				top: 0;
+			}
+			i{
+				font-size: 40px;
+				color: #050817;
+			}
+		}
+		.single-about-content{
+			h5{
+				font-size: 20px;
+				font-weight: 600;
+				color: $dip;
+				margin-bottom: 18px;
+			}
+			p{
+				line-height: 27px;
+				font-size: 14px;
+				margin-bottom: 35px;
+			}	
+
+		}
+	}
+	.col-lg-6:nth-child(1) .single-about{
+		.about-icon:after{
+			background: $circle1;
+		}
+
+	}
+	.col-lg-6:nth-child(2) .single-about{
+		.about-icon:after{
+			background: $circle2;
+		}
+
+	}
+
+}
+
+.area-heading{
+	text-align: left;
+	@media (min-width: 1199px) and (max-width: 1199px){
+		padding-top: 30px;
+	}
+	@media (max-width: 991px){
+		margin-top: 0;
+		h4 br{
+			display: none;
+		}
+		p br{
+			display: none;
+		}
+
+	}
+	h4{
+		font-size: 45px;
+		color: $dip;
+		font-family: $rob;
+		margin-bottom: 40px;
+		line-height: 58px;
+	}
+	h6{
+		font-size: 16px;
+		color: #333333;
+		font-weight: 400;
+		margin-bottom: 25px;
+	}
+	p{
+		font-size: 14px;
+		font-family: $rob;
+		color: $pfont;
+		margin-bottom: 40px;
+		line-height: 27px;
+		padding-right: 65px;
+	}
+	.main_btn{
+		&:hover{
+			border: 1px solid $baseColor;
+		}
+	}
+}
+
+/* End  About Area css 
+============================================================================================ */

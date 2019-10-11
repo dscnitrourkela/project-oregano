@@ -1,0 +1,287 @@
+/* Home Banner Area css
+============================================================================================ */
+.home_banner_area{
+	position: relative;
+	z-index: 1;
+	min-height: 900px;
+	.banner_inner{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 900px;
+		.overlay{
+			background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 100%;
+			bottom: 0;
+			z-index: -1;
+		}
+		.banner_content{
+			color: #fff;
+
+			h3{
+				font-size: 50px;
+				font-family: $rob;
+				font-weight: 600;
+				margin-bottom: 30px;
+			}
+
+			p{
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 27px;
+				margin-bottom: 50px;
+			}
+		}
+	}	
+	
+}
+
+
+
+
+.blog_banner{
+	min-height: 660px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	margin-bottom: 0px;
+	.banner_inner{
+		background: #04091e;
+		position: relative; 
+		overflow: hidden;
+		width: 100%;
+		min-height: 660px;
+		z-index: 1;
+		.overlay{
+			background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+			opacity: .5;
+			height: 125%;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			z-index: -1;
+		}
+		.blog_b_text{
+			max-width: 700px;
+			margin: auto;
+			color: #fff;
+			h2{
+				font-size: 60px;
+				font-weight: bold;
+				font-family: $rob;
+				line-height: 66px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 16px;
+				margin-bottom: 35px;
+			}
+			.white_bg_btn{
+				line-height: 42px;
+				padding: 0px 45px;
+			}
+		}
+	}
+}
+
+.banner_box{
+	max-width: 1620px;
+	margin: auto;
+}
+.banner_area{
+	position: relative;
+	z-index: 1;
+	min-height: 300px;
+	.banner_inner{
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		min-height: 300px;
+		background: #04091e;
+		z-index: 1;
+		.overlay{
+			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 125%;
+			bottom: 0;
+			z-index: -1;
+			opacity: .6;
+		}
+		.banner_content{
+			h2{
+				color: #fff;
+				font-size: 48px;
+				font-family: $rob;
+				margin-bottom: 0px;
+				font-weight: bold;
+			}
+			.page_link{
+				a{
+					font-size: 14px;
+					color: #fff;
+					font-family: $rob;
+					margin-right: 32px;
+					position: relative;
+					&:before{
+						content: "\e87a";
+						font-family: 'Linearicons-Free';
+						position: absolute;
+						right: -25px;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+					&:last-child{
+						margin-right: 0px;
+						&:before{
+							display: none;
+						}	
+					}
+					&:hover{
+						color: $baseColor;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* End Home Banner Area css
+============================================================================================ */
+
+
+
+/* banner section start
+============================================================================================ */
+.hero-banner{
+  background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+  position: relative;
+  padding: 70px 0;
+  background-size: cover;
+  min-height: 450px;
+  // z-index: 2;
+
+  @media(min-width: 768px){
+    padding: 150px 0;
+  }
+
+  @media(min-width: 1200px){
+    padding: 110px 0;
+  }
+
+  &-sm{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(min-width: 992px){
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  h1{
+    color: $title-color;
+    margin-bottom: 25px;
+    font-size: 28px;
+
+    @media(min-width: 768px){
+      font-size: 60px;
+      margin-bottom: 45px;
+    }
+  }
+
+  h2{
+    font-size: 22px;
+    color: $white;
+    text-transform: capitalize;
+    margin-bottom: 0;
+
+    @media(min-width: 768px){
+      font-size: 42px;
+    }
+  }
+
+  p{
+    font-size: 22px;
+    color: $white;
+    margin-bottom: 0;
+  }
+}
+
+.hero-banner-icon{
+  color: $white;
+  display: inline-block;
+  // margin-bottom: 10px;
+
+  @media(min-width: 768px){
+    margin-bottom: 10px;
+  }
+
+  i,span{
+    font-size: 35px;
+
+    @media(min-width: 768px){
+      font-size: 60px;
+    }
+  }
+
+  [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+    font-size: 35px;
+
+    @media(min-width: 768px){
+      font-size: 60px;
+    }
+  }
+}
+/* banner section end
+  ============================================================================================ */
+
+
+
+/* breadcrumb section start
+  ============================================================================================ */
+  .banner-breadcrumb{
+    display: inline-block;
+    
+    .breadcrumb{
+      background: transparent;
+      padding: 0;
+  
+      &-item{
+        padding: .1rem;
+  
+        a{
+          text-transform: capitalize;
+          color: $white;
+        }
+  
+        &+.breadcrumb-item::before{
+          color: $white;
+          padding-left: .2rem;
+          padding-right: .4rem;
+          // content: "-";
+        }
+  
+        &.active{
+          color: $white;
+        }
+      }
+    }
+    .breadcrumb-item{
+    	a{
+    		&:hover{
+    			color: $baseColor;
+    		}
+    	}
+    }
+
+  }
+/* breadcrumb section end
+  ============================================================================================ */

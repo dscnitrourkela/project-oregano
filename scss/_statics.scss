@@ -1,0 +1,36 @@
+
+/* Statics  Area css
+======================================================================= */
+
+.single-data{
+	i{
+		float: left;
+		margin-right: 25px;
+		font-size: 18px;
+	}
+	p{
+		font-weight: 300;
+
+	}
+	.ti-paint-bucket{
+		color: $circle1;
+	}
+	.ti-check-box{
+		color: $circle2;
+	}
+	.ti-ruler-pencil{
+		color: $circle3;
+	}
+}
+
+.statics-area{
+	background-image: url(../img/background/pattern1.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	.area-heading{
+		margin-bottom: 40px;
+
+	}
+
+}
+

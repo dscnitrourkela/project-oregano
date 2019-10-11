@@ -1,0 +1,92 @@
+/* Testimonials Area css
+============================================================================================ */
+.testimonial-area {
+	background-size: cover;
+	position: relative;
+	background: $bg_one;
+	padding-bottom: 200px;
+	.owl-dots {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -75px;
+	}
+	.owl-dot {
+		width: 20px;
+		height: 4px;
+		background: #c2c2c2;
+		display: inline-block;
+		margin: 0 8px;
+		border-radius: 2px;
+	}
+	.owl-dot.active{
+		background: $baseColor;
+	}
+}
+
+.about-testimonial-area {
+	.single-testimonial {
+		border: 0;
+		margin: 20px;
+		&:hover {
+			box-shadow: -10px 10px 20px rgba(221, 221, 221, 0.62);
+		}
+	}
+}
+
+.single-testimonial {
+	background-color: $white;
+	padding: 25px 60px 25px 30px;
+	border-radius: 5px;
+	box-shadow: -2px 5.7px 20px 0 rgba(9, 30, 107, 0.05);
+	background-image: url(../img/icon/cotation.png);
+	background-size: auto;
+	background-position: 100% -128%;
+	background-repeat: no-repeat;
+	@include transition();
+	&:hover {
+		cursor: pointer;
+	}
+	.thumb {
+		margin-right: 30px;
+		max-height: 95px;
+		min-width: 95px;
+		border-radius: 100%;
+		border: 2px solid #ecf3f5;
+		overflow: hidden;
+	}
+	h4 {
+		@include transition();
+		margin-bottom: 5px;
+		font-weight: 500;
+		font-size: 20px;
+		color: $dip;
+		&:hover{
+			color: $baseColor;
+		}
+	}
+	&:hover {
+		h4 { 
+			cursor: pointer;
+		}
+	}
+	@media(max-width:575px) {
+		margin: 15px;
+	}
+	.designation{
+		font-style: italic;
+	}
+}
+
+
+@media (min-width:768px) and (max-width: 991px){
+
+	.single-testimonial {
+		padding: 57px 60px 53px 45px;
+		background-position: 96% -52%;
+	}
+}
+
+
+/* End Testimonials Area css
+============================================================================================ */
