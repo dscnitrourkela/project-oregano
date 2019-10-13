@@ -1,0 +1,39 @@
+/*font Variables*/
+$rob: 'Poppins', sans-serif;
+
+
+/*Color Variables*/
+$baseColor: #f84b67;
+$baseColorLight: #ec473a;
+$dip: #1d1d1d;
+$pfont: #7f7f7f; 
+$white: #fff;
+$bg_one: #2b237c;
+$title-color: #2a2a2a;
+ $circle1: #fca6a6;
+ $circle2: #71beb4;
+ $circle3: #ed92dd;
+ $circle4: #97d0ee;
+
+
+/*=================== fonts ====================*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+
+
