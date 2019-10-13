@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "8"
+script:
+ - echo "Deploy!!"
+install:
+  - npm install -g firebase-tools
+after_success:
+  - firebase deploy --project-cherry-4822  --token $FIREBASE_TOKEN 
+deploy:
+  provider: firebase
+  token:
+    secure: EWNbDzjeKQGnIX1TOcd4eGOasLoCzHCPuFFyRL2kLLk/SwFDmbCG3i33U5+M3PqwPuEuPkVEozf89hjS3/3Pm9B3LwrX2BDb5h9+3l6V1YGAIVmEfp3nSjFWWI7BQU3E6biyaAwHI4Wu2Xi0xo2A/gZx0Toph5UxmeygiBoc4bQiLc0kuYOdkhoU0rfaClExYphN1LOJLdmuq6/Vq9qoRS/DH367u75/rHVBbvNsGyQdW6RoyZvgPore5ViqXkabX2wvBV70MIej3hUDu4e4pktGS+ttJxu8j1etNtbX3GuLKzCi/qWhfPJ01Dm7pNKMvevXcBM1twLkhxBDUp2P16zr3EgWlQl7egTN/pWAXitD8OmyOwbEZ7TgzglCKOnbl1qSLiMJLDhZYF+/FKpj+9YSp02wCiu53b0yzOpg9W5rqmWotP0YZ1KIqC4blPMGKG8W6BDzi92qlvoh223cRuhoijqycsiVOyAisvbDjxnBlFzfw1f174AmhiVkLQfaEPIkq0H6frH0Vd6L4i36KFt1AsdAPsYX7XTnI/HrDArLye8TORsAg+U2c69XxbP0rOpl92SxeU09ld1oJOl0GJeYfgFMxgz+cBHbj+8YvC/pZXNftJA/TY+VakgqeN61KNuu7ZDdHWEOvlojokMxWBhFpIbM1GV3cxF+8EtNMLA=
