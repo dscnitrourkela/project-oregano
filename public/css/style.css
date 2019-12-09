@@ -1458,13 +1458,13 @@ ul {
   margin-bottom: 30px; }
 
 .area-padding {
-  padding: 130px 0; }
+  padding: 90px 0; }
 
 .area-padding-bottom {
-  padding-bottom: 130px; }
+  padding-bottom: 90px; }
 
 .area-padding-top {
-  padding-top: 130px; }
+  padding-top: 90px; }
 
 .bg_one {
   background: #2b237c; }
@@ -3480,4 +3480,14 @@ h6 {
     margin-top: 35px; } }
 /*---------------------------------------------------- */
 
+.brand-logo{
+    width: 275px;
+    height: 55px;
+    margin-top: 0.8rem;
+}
+
+
+.row-custom{
+  padding-left: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
