@@ -117,6 +117,12 @@
         "seven seven eight eight nine nine"
         "ten ten ten eleven eleven eleven"
     }
+
+    .hack-society{
+        color: #313F5C;
+        padding-left: 7.5rem;
+        padding-top: 1rem;
+    }
 }
 
 /*Tablet CSS*/
@@ -133,6 +139,8 @@
         "five five six six"
         "seven seven eight eight"
     }
+
+    
 }
 
 /*Mobile CSS*/
@@ -150,6 +158,30 @@
         "seven eight"
         "nine ten"
         "eleven eleven"
+    }
+
+     .gallery__img--5, .gallery__img--7, .gallery__img--9{
+        padding-left: 0rem;
+    }
+
+    .gallery__img--1, .gallery__img--3, .gallery__img--2{
+        padding-left: 1rem;
+    }
+    
+     .gallery__img--4, .gallery__img--6, .gallery__img--8, .gallery__img--10, .gallery__img--11{
+        padding-left: 0rem;
+    }
+
+    .hack-society{
+        padding-left: 1.5rem;
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .gallery__item--1, .gallery__item--2, .gallery__item--3, .gallery__item--4, .gallery__item--5, .gallery__item--6, .gallery__item--7, .gallery__item--8, .gallery__item--9, .gallery__item--10, .gallery__item--11{
+        width: 100%;
+        height: 100%;
+        
     }
 }
 
@@ -220,8 +252,3 @@ body{
 }
 
 
-.hack-society{
-    color: #313F5C;
-    padding-left: 7.5rem;
-    padding-top: 1rem;
-}
