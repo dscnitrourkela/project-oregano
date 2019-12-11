@@ -10,59 +10,91 @@
     padding: 0 15px;
 }
 
-.gallery__img--1{
+.gallery__img--1, .gallery__img--2, .gallery__img--3{
+    padding-left: 8rem;
+}
+
+.gallery__img--4, .gallery__img--5, .gallery__img--6{
+    padding-left: 5rem;
+}
+
+.gallery__img--7, .gallery__img--9{
+    padding-left: 7rem;
+}
+
+.gallery__img--9{
     padding-left: 4rem;
+}
+
+.gallery__img--10, .gallery__img--11{
+    padding-left: 7rem;
 }
 
 .gallery__item--1 {
     grid-area: one;
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
 }
 
 .gallery__item--2 {
     grid-area: two;
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
 }
 
 .gallery__item--3 {
     grid-area: three;
-    width: 85%;
-    height: 85%;
+    width: 75%;
+    height: 75%;
     
 }
 
 .gallery__item--4 {
     grid-area: four;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--5 {
     grid-area: five;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--6 {
     grid-area: six;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--7 {
     grid-area: seven;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--8 {
     grid-area: eight;
+    width: 95%;
+    height: 95%;
 }
 
 .gallery__item--9 {
     grid-area: nine;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--10 {
     grid-area: ten;
+    width: 85%;
+    height: 85%;
 }
 
 .gallery__item--11 {
     grid-area: eleven;
+    width: 85%;
+    height: 85%;
 }
 
 .sponsor-content{
@@ -85,6 +117,12 @@
         "seven seven eight eight nine nine"
         "ten ten ten eleven eleven eleven"
     }
+
+    .hack-society{
+        color: #313F5C;
+        padding-left: 7.5rem;
+        padding-top: 1rem;
+    }
 }
 
 /*Tablet CSS*/
@@ -101,6 +139,8 @@
         "five five six six"
         "seven seven eight eight"
     }
+
+    
 }
 
 /*Mobile CSS*/
@@ -118,6 +158,30 @@
         "seven eight"
         "nine ten"
         "eleven eleven"
+    }
+
+     .gallery__img--5, .gallery__img--7, .gallery__img--9{
+        padding-left: 0rem;
+    }
+
+    .gallery__img--1, .gallery__img--3, .gallery__img--2{
+        padding-left: 1rem;
+    }
+    
+     .gallery__img--4, .gallery__img--6, .gallery__img--8, .gallery__img--10, .gallery__img--11{
+        padding-left: 0rem;
+    }
+
+    .hack-society{
+        padding-left: 1.5rem;
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .gallery__item--1, .gallery__item--2, .gallery__item--3, .gallery__item--4, .gallery__item--5, .gallery__item--6, .gallery__item--7, .gallery__item--8, .gallery__item--9, .gallery__item--10, .gallery__item--11{
+        width: 100%;
+        height: 100%;
+        
     }
 }
 
@@ -141,6 +205,13 @@ body{
 
 .sponsor-content-div h2 , .past-sponsors h2 {
     font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.sponsor-content-div h1  {
+    font-size: 4rem;
     padding-top: 3rem;
     margin-bottom: 1rem;
     margin-top: 0rem;
@@ -154,11 +225,14 @@ body{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     margin-bottom: 0px;
     color: #707070;
 }
 
+.sponsor-content-div #para-end{
+    padding-bottom: 4rem;
+}
 
 .past-sponsors{
     text-align: center;
@@ -176,3 +250,5 @@ body{
 #past-sponsors{
     padding-top: 120px;
 }
+
+
