@@ -143,193 +143,90 @@ figure.snip1477.hover figcaption {
   transition-delay: 0.2s;
 }
 
-@media screen and (min-width: 768px){
 
-.container_tracks{
-  margin: 3rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 17vw);
-  grid-gap: 2rem;
 
+
+
+/*<==================== Custom Changes ======================>*/
+
+@media screen and (min-width: 760px){
+    .container_tracks{
+        padding: 1rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 1rem;
+        grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+        "box7 box8 box9"
+    }
 }
 
-.track_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+@media screen and (max-width: 480px){
+    .container_tracks{
+        padding: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 1rem;
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+
+    }
 }
 
-.tracks--1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.box1{
+    grid-area: box1;
 }
 
-.tracks--2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.box2{
+    grid-area: box2;
 }
 
-.tracks--3{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.box3{
+    grid-area: box3;
 }
 
-.tracks--4{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.box4{
+    grid-area: box4;
 }
 
-.tracks--5{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.box5{
+    grid-area: box5;
 }
 
-.tracks--6{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.box6{
+    grid-area: box6;
 }
 
+.box7{
+    grid-area: box7;
 }
 
-/*Tab css*/
-@media screen and (max-width: 768px) and (min-width: 468px){
-
-.container_tracks{
-  margin: 3rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 27vw);
-  grid-gap: 2rem;
-
+.box8{
+    grid-area: box8;
 }
 
-.track_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.box9{
+    grid-area: box9;
 }
 
-.tracks--1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
 
-.tracks--2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.tracks--3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.tracks--4{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.tracks--5{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.tracks--6{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-}
-
-/*Mobile CSS*/
-@media screen and (max-width: 468px){
-
-.container_tracks{
-  margin: 3rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 45vw);
-  grid-gap: 2rem;
-
-}
-
-.track_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.tracks--1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.tracks--2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.tracks--3{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-.tracks--4{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.tracks--5{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-
-.tracks--6{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 6;
-    grid-row-end: 7;
-}
-
+#box1{
+    padding-left: 2rem;
 }
 
 .container_tracks_outer{
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 
