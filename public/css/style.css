@@ -4555,3 +4555,13 @@ h6 {
     font-size: 1.4rem;
     
 }
+
+
+/* Favicon sizing */
+
+@media screen and (max-width: 480px) {
+    #mobile-sizing {
+        width: 235px;
+        height: 45px;
+    }
+}
