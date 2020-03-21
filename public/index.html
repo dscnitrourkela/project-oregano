@@ -32,6 +32,60 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/tracks_styles.css">
+    <script>
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+    let countDown = new Date('Mar 22, 2020 10:00:00').getTime(),
+        x = setInterval(function() {    
+
+          let now = new Date().getTime(),
+              distance = countDown - now;
+
+          document.getElementById('days').innerText = Math.floor(distance / (day)),
+            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+          //do something later when date is reached
+          //if (distance < 0) {
+          //  clearInterval(x);
+          //  'IT'S MY BIRTHDAY!;
+          //}
+
+        }, second)
+    </script>
+    <style>
+        #clockdiv{
+            font-family: sans-serif;
+            color: #fff;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #clockdiv > div{
+            padding: 10px;
+            border-radius: 3px;
+            background: #0b0b8f;
+            display: inline-block;
+        }
+
+        #clockdiv div > span{
+            padding: 15px;
+            border-radius: 3px;
+            background: #00816A;
+            display: inline-block;
+        }
+
+        .smalltext{
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -53,9 +107,9 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="codeofconduct.html">Code of Conduct</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                            <li class="nav-item"><a class="nav-link" href="guest.html">Guest</a></li>
-                            <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li> -->
+                            <!-- <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="guest.html">Sessions</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="workshop.html">Workshop</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="sponsor.html">Sponsors</a></li>
                         </ul>
                     </div>
@@ -74,10 +128,30 @@
                     <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
                         <div class="banner_content">
                             <h3>Create.<br/>Innovate.<br/>Execute.</h3>
+                            <div id="clockdiv">
+                              <h1><b style="color: #fff;">HackNITR ends in:</b></h1>
+                              <div id="clockdiv">
+                                  <div>
+                                    <span id="days"></span>
+                                    <div class="smalltext">Days</div>
+                                  </div>
+                                  <div>
+                                    <span id="hours"></span>
+                                    <div class="smalltext">Hours</div>
+                                  </div>
+                                  <div>
+                                    <span id="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                  </div>
+                                  <div>
+                                    <span id="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                  </div>
+                                </div>                   
+                            </div>
+                            <br><br>
                             <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
                             <p><br>HackNITR is one of a kind hackathon which endeavors to bring and integrate talent, innovation, and creativity under one roof to build solutions for real-world problems using the latest technologies. </p>
-                            <br><a href="https://www.instamojo.com/@StudentActivityCentre/l100f4b8d32bb4e63b8adaa078b9227d3/" rel="im-checkout" data-text="Get Tickets" data-css-style="color:#ffffff; background:#4148ff; width:300px; border-radius:4px"   data-layout="vertical"></a>
-                            <script src="https://js.instamojo.com/v1/button.js"></script>
                         </div>
                     </div>
 
@@ -101,100 +175,27 @@
 
                 <div class="offset-lg-1 col-lg-6">
                     <div class="area-heading">
-                        <h4>Hack for Social Good </h4>
+                        <h4>Important Update</h4>
 
-                        <p>With the rapid advancement of technology, it is important to use its power in ways that benefit society. HackNITR challenges its participants to hack for social good, and create an opportunity for us to explore the intersection
-                            between technology and society.</p>
+                        <p>In light of the Coronavirus <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">[COVID-19]</a> situation, we want to provide safety and health at top priority to hackers, and we aim to support each of you to continue to be part of HackNITR. With the health situation across the world, we have taken steps to make HackNITR as immersive as possible within the constraints.</p>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     <!--================About Area End =================-->
 
-    <!-- ====================Prizes=========================== -->
-    <section class="hero-banner d-flex align-items-center">
-      <div class="container text-center">
-          <h1 id="hackUsTitle">Prizes</h2>
-      </div>
-  </section><br><br><br><br>
-  <section class="service-area area-padding">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-4 col-sm-4 col-xs-4">
-                  <div class="card zoom">
-                      <br>
-                    <center><img src="img/prize/f.png" alt="Denim Jeans" style="width:30%"><br>
-                    <h1>First Prize</h1></center>
-                    <ol>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li> 
-                    </ol>  
-                    
-                    <br>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-sm-4 col-xs-4">
-                  <div class="card zoom">
-                      <br>
-                    <center><img src="img/prize/s.png" alt="Denim Jeans" style="width:30%"><br>
-                    <h1>Second Prize</h1></center>
-                    <ol>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li> 
-                    </ol>
-                    <br>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-sm-4 col-xs-4">
-                  <div class="card zoom">
-                      <br>
-                    <center><img src="img/prize/t.png" alt="Denim Jeans" style="width:30%"><br>
-                    <h1>Third Prize</h1></center>
-                    <ol>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li> 
-                    </ol>
-                    <br>
-                  </div>
-              </div>
-          </div><br><br><br><br>
-          <div class="row">
-              <div class="col-lg-3 col-sm-3 col-xs-3">
-              </div>
-              <div class="col-lg-6 col-sm-6 col-xs-6">
-                  <div class="card zoom">
-                      <br>
-                    <center><!-- <img src="img/prize/s.png" alt="Denim Jeans" style="width:30%"><br> -->
-                    <h1>Other Prizes</h1></center>
-                    <ol>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li>
-                       <li>aaaaaaaaa</li> 
-                    </ol>
-                    <br>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-sm-3 col-xs-3">
-              </div>
-          </div>
-      </div>
-  </section>
-  <br><br><br><br>
-
     <!--================Why Hack with us Area start =================-->
     <section class="hero-banner d-flex align-items-center">
         <div class="container text-center">
             <h1 id="hackUsTitle">Why Hack with us?</h2>
                 <p id="hackUsText">Whether you’re writing your first lines of HTML, building a VR app or a hoverboard, HackNITR is just the place for you. We will have workshops and mentors to help make your idea happen. You will be able to exhibit your skills without worrying
-                    about any mortal needs. We will take care of everything</p>
+                    about any mortal needs. We will take care of everything</p><br>
+                    <a class="typeform-share button" href="guest.html" style="display:inline-block;text-decoration:none;background-color:#267DDD;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;">Register for Online Sessions</a>
+
         </div>
+
     </section>
-    
     <!--================Tracks Intro Area end =================-->
 
 
@@ -210,8 +211,8 @@
                             <i class="fas fa-heart fa-4x"></i>
                         </div>
                         <div class="service-content">
-                            <h5>Health</h5>
-                            <p>Develop a product that encourages people to live a healthier lifestyle. Help predict and prevent illnesses before they affect the body.</p>
+                            <h5>Staying Connected</h5>
+                            <p><a href="https://join.slack.com/t/hacknitr/shared_invite/zt-cizxvzyq-E9yXIsUuiN8lOMfJvLsE1g">Join our workspace for all updates!</a>To ensure structured communication across hackers, we would be having further discussion over Slack.</p>
                         </div>
                     </div>
                 </div>
@@ -223,8 +224,8 @@
                             <i class="fab fa-pagelines fa-4x"></i>
                         </div>
                         <div class="service-content">
-                            <h5>Environment</h5>
-                            <p>Aggregate public data to analyze or improve government green energy policies. Design solutions to reduce energy consumption in habitable spaces.</p>
+                            <h5>Schwag and Prizes</h5>
+                            <p>We would ship the schwag and prizes to the winners after the hackathon via post/courier. All hacks need to be submitted online via GitHub. The submitted hacks would be judged and evaluated by panel of judges online.</p>
                         </div>
                     </div>
                 </div>
@@ -237,8 +238,8 @@
                             <i class="fas fa-book-open fa-4x"></i>
                         </div>
                         <div class="service-content">
-                            <h5>Education</h5>
-                            <p>Discover new ways to faciliatate learning within the classroom. Enable accessible education for individuals with learning disabilities.</p>
+                            <h5>Online Sessions</h5>
+                            <p>The entire hackathon would be an online event. No in-person meetup would happen. All the sessions would be online and can be easily attended from any mobile or desktop devices.</p>
                         </div>
                     </div>
                 </div>
@@ -247,6 +248,83 @@
         </div>
     </section>
     <!--================Service Area end =================-->
+    <!-- ====================Prizes=========================== -->
+    <section class="hero-banner d-flex align-items-center">
+        <div class="container text-center">
+            <h1 id="hackUsTitle">Prizes</h2>
+        </div>
+    </section><br><br><br><br>
+    <section class="service-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="card">
+                        <br>
+                      <center><img src="img/prize/t.jpg" alt="Denim Jeans" style="width:40%"><br>
+                      <h1>Premium Credits</h1></center>
+                      <ol>
+                         <p>Cloud Credits worth INR 7,500</p>
+                         <p>Wolfram Research Credits worth INR 28,000</p>
+                         <p>Cash prize of INR 15,000 on hacks built on Matic(for Ethereum, its INR 10,000)</p> 
+                         <p>Access to Creative Tim Big Bundle worth INR 11,000</p> 
+                      </ol>  
+                      
+                      <br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="card">
+                        <br>
+                      <center><img src="img/prize/t.jpg" alt="Denim Jeans" style="width:50%"><br>
+                      <h1>Internships and Jobs</h1>                    </center>
+                      <ol>
+                         <p>Get chance to be part of Digital Bank <a href="https://fold.money/">Fold</a></p>
+                         <p>Be part of <a href="https://matic.network/">Matic</a> and a chance to land seed funding of upto 5000 USD!</p>
+                         <br>
+                         <p>Note: Final decision of the above opportunities would be made by the respective companies after applying for the opportunities at those companies</p>
+                      </ol>
+                       <br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-4">
+                    <div class="card">
+                        <br>
+                      <center><img src="img/prize/t.jpg" alt="Denim Jeans" style="width:40%"><br>
+                      <h1>Premium Schwag</h1>
+                         <p>Devfolio T-shirts</p>
+                         <p>Matic T-shirts</p>
+                         <p>JetBrains T-shirts</p>
+                         <p>Coding Blocks T-shirts</p> 
+                      </center>
+                      <br>
+                    </div>
+                </div>
+            </div><br><br><br><br>
+            <div class="row">
+                <div class="col-lg-3 col-sm-3 col-xs-3">
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                    <div class="card zoom">
+                        <br>
+                      <center><img src="img/prize/gift.png" alt="Denim Jeans" style="width:30%"><br>
+                      <h1>Schwag</h1>
+                      <p>Cloud Credits worth INR 3,000</p>
+                      <p>Stickers from JetBrains</p>
+                         <p>Stickers from Devfolio</p>
+                         <p>Coding Diary from Coding Blocks</p> 
+                         <p>Wolfram Research Credits worth INR 1800</p>
+                         <p>Premium Web Themes</p>
+                      </center>
+                      <br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+  
 
     <!--================Tracks Intro Area start =================-->
     <section class="hero-banner d-flex align-items-center">
@@ -435,6 +513,9 @@
         <center><h5>GOLD SPONSORS</h5></center><hr><br><br>
         <div class="row">
             <div class="col-lg-6 col-sm-6">
+                <center><a href="https://www.digitalocean.com/"><img style="width: 60%;height: 70%;"  src="img/sponsors_img/DO_Logo.png" class="gallery__img gallery__img--1" alt="DigitalOcean"></a></center>
+            </div>
+            <div class="col-lg-6 col-sm-6">
                 <center><a href="https://fold.money/"><img style="width: 40%;height: 45%;"  src="img/sponsors_img/fold_l.png" class="gallery__img gallery__img--1" alt="Fold"></a></center><br><br><br><br>
             </div>
             <div class="col-lg-6 col-sm-6">
@@ -452,14 +533,17 @@
             <div class="col-lg-6 col-sm-6">
                 <center><a href="https://www.creative-tim.com/"><img style="width: 30%;height: 70%;"  src="img/sponsors_img/CT.png" class="gallery__img gallery__img--1" alt="Creative Tim"></a></center>
             </div>
+            <div class="col-lg-6 col-sm-6">
+                <center><a href="https://www.jetbrains.com/"><img style="width: 30%;height: 70%;"  src="img/sponsors_img/jetbrains.png" class="gallery__img gallery__img--1" alt="JetBrains"></a></center>
+            </div>
         </div>
         <center><h5>MEDIA AND OUTREACH PARTNERS</h5></center><hr><br><br>
         <div class="row">
             <div class="col-lg-6 col-sm-6">
-                <center><a href="http://www.noticebard.com"><img style="width: 55%;height: 45%;"  src="img/sponsors_img/NB.png" class="gallery__img gallery__img--1" alt="NoticeBard"></a></center><br><br><br><br>
+                <center><a href="http://www.noticebard.com"><img style="width: 45%;height: 45%;"  src="img/sponsors_img/NB.png" class="gallery__img gallery__img--1" alt="NoticeBard"></a></center><br><br><br><br>
             </div>
             <div class="col-lg-6 col-sm-6">
-                <center><a href="https://www.facebook.com/rkltips"><img style="width: 30%;height: 70%;"  src="img/sponsors_img/RT.jpg" class="gallery__img gallery__img--1" alt="Rourkela Tips"></a></center>
+                <center><a href="https://www.facebook.com/rkltips"><img style="width: 50%;height: 70%;"  src="img/sponsors_img/RT.jpg" class="gallery__img gallery__img--1" alt="Rourkela Tips"></a></center>
             </div>
         </div>
     </div><br><br><hr>
