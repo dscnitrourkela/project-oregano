@@ -32,6 +32,62 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/tracks_styles.css">
+
+    <script>
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+    let countDown = new Date('Mar 22, 2020 10:00:00').getTime(),
+        x = setInterval(function() {    
+
+          let now = new Date().getTime(),
+              distance = countDown - now;
+
+          document.getElementById('days').innerText = Math.floor(distance / (day)),
+            document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+          //do something later when date is reached
+          //if (distance < 0) {
+          //  clearInterval(x);
+          //  'IT'S MY BIRTHDAY!;
+          //}
+
+        }, second)
+    </script>
+    <style>
+        #clockdiv{
+            font-family: sans-serif;
+            color: #fff;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #clockdiv > div{
+            padding: 10px;
+            border-radius: 3px;
+            background: #0b0b8f;
+            display: inline-block;
+        }
+
+        #clockdiv div > span{
+            padding: 15px;
+            border-radius: 3px;
+            background: #00816A;
+            display: inline-block;
+        }
+
+        .smalltext{
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -74,6 +130,28 @@
                     <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
                         <div class="banner_content">
                             <h3>Create.<br/>Innovate.<br/>Execute.</h3>
+                            <div id="clockdiv">
+                              <h1><b style="color: #fff;">HackNITR ends in:</b></h1>
+                              <div id="clockdiv">
+                                  <div>
+                                    <span id="days"></span>
+                                    <div class="smalltext">Days</div>
+                                  </div>
+                                  <div>
+                                    <span id="hours"></span>
+                                    <div class="smalltext">Hours</div>
+                                  </div>
+                                  <div>
+                                    <span id="minutes"></span>
+                                    <div class="smalltext">Minutes</div>
+                                  </div>
+                                  <div>
+                                    <span id="seconds"></span>
+                                    <div class="smalltext">Seconds</div>
+                                  </div>
+                                </div>                   
+                            </div>
+                            <br><br>
                             <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
                             <p><br>HackNITR is one of a kind hackathon which endeavors to bring and integrate talent, innovation, and creativity under one roof to build solutions for real-world problems using the latest technologies. </p>
                         </div>
