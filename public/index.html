@@ -43,7 +43,7 @@
         x = setInterval(function() {    
 
           let now = new Date().getTime(),
-              distance = countDown - now;
+              distance = now - now;
 
           document.getElementById('days').innerText = Math.floor(distance / (day)),
             document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
