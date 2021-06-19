@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "project-oregano",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "official hacknitr website development repository",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -19,7 +19,11 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "autoprefixer": "^10.2.6",
+    "gatsby-plugin-postcss": "^4.7.1",
+    "postcss": "^8.3.5",
+    "prettier": "2.2.1",
+    "tailwindcss": "^2.2.2"
   },
   "repository": {
     "type": "git",
