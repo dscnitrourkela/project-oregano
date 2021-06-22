@@ -1,17 +1,37 @@
 {
   "name": "project-oregano",
   "private": true,
-  "description": "official hacknitr website development repository",
+  "description": "Official repository for HackNITR 3.0",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "MIT",
+  "main": "src/pages/index.js",
+  "keywords": [
+    "hacknitr",
+    "hackathon",
+    "website",
+    "react",
+    "gatsby",
+    "tailwind",
+    "dscnitrourkela",
+    "nitrourkela"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dscnitrourkela/project-oregano.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dscnitrourkela/project-oregano.git"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "prettier:fix": "npx prettier --write",
+    "prettier:check": "npx prettier --check",
+    "lint:fix": "npx eslint --fix '**/*.{js,jsx,ts,tsx,json,md}'",
+    "lint:find": "npx eslint '**/*.{js,jsx,ts,tsx,json,md}'"
   },
   "dependencies": {
     "gatsby": "^3.6.2",
@@ -35,12 +55,5 @@
     "postcss": "^8.3.5",
     "prettier": "^2.3.1",
     "tailwindcss": "^2.2.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
