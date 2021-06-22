@@ -1,0 +1,40 @@
+{
+    "theme_color": "#17171d",
+    "background_color": "#17171d",
+    "display": "standalone",
+    "start_url": "/",
+    "name": "HackNITR 3.0 |  Virtual Edition Hackathon",
+    "short_name": "HackNITR 3.0",
+    "icons": [
+        {
+            "src": "icons/maskable_icon_x128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+		{
+            "src": "icons/maskable_icon_x144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/maskable_icon_x152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/maskable_icon_x384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+	]	
+}
