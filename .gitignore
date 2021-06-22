@@ -152,4 +152,5 @@ temp/
 # and uncomment the following lines
 # .pnp.*
 
+public
 # End of https://www.toptal.com/developers/gitignore/api/node,yarn,firebase
