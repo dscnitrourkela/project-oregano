@@ -31,6 +31,19 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "riteshsp2000",
+      "name": "Ritesh Patil",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56112399?v=4",
+      "profile": "http://riteshpatil.dev",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "projectManagement",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
