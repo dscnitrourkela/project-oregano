@@ -2,7 +2,14 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'content-color-primary': 'var(--text-color-primary)',
+        'heading-color-primary': 'var(--heading-color-primary)',
+        'background-dark': 'var(--background-dark)',
+        'background-darker': 'var(--background-darker)',
+      },
+    },
     screens: {
       sm: '640px',
       // => @media (min-width: 640px) { ... }
