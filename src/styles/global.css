@@ -1,3 +1,27 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: inherit;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--background-darker);
+}
+
+:root {
+  --background-dark: #17171d;
+  --background-darker: #121217;
+  --heading-color-primary: #fff;
+  --text-color-primary: #717174;
+
+  --max-width: 83.5em;
+  --max-width-bleed: 90%;
+  --max-width-narrow: 50em;
+}
