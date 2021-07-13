@@ -1,12 +1,10 @@
 import React from 'react';
-import { Navbar, Layout, Footer } from '../components';
+import { Navbar, TrackCard } from '../components';
 
 const Homepage = () => (
   <div>
-    Layout
     <Navbar />
-    <Layout />
-    <Footer />
+    <TrackCard />
   </div>
 );
 
