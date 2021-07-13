@@ -14,7 +14,7 @@ const Wrapper = styled.ul`
 const NavItem = styled.li`
   ${tw`
  text-lg
- text-primary
+ text-heading-color-primary
  no-underline
  mr-7
  cursor-pointer
