@@ -1,0 +1,22 @@
+name: Lighthouse Audit
+on: [pull_request]
+
+env:
+  PR_NUM: ${{github.event.number}}
+  
+jobs:
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: mkdir /tmp/artifacts
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      with:
+        outputDirectory: /tmp/artifacts
+        urls: 'https://deploy-preview-$PR_NUM--hacknitr.netlify.app/?utm_source=github&utm_campaign=bot_dp'
+    - name: Upload artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: Lighthouse reports
+        path: /tmp/artifacts
