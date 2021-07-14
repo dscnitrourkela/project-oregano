@@ -16,4 +16,5 @@ jobs:
         with:
           urls: |
             $PR_URL
-            https://github.com
+          uploadArtifacts: true 
+          temporaryPublicStorage: true 
