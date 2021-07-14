@@ -3,7 +3,7 @@ import React from 'react';
 function Layout() {
   return (
     <div>
-      <h1>Welcome to HackNITR 3.0</h1>
+      <h1>Welcome to HackNITR 3.0. Have Fun!</h1>
     </div>
   );
 }
