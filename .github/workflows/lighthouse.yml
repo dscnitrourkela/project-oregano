@@ -5,18 +5,15 @@ env:
   PR_URL: https://deploy-preview-${{github.event.number}}--hacknitr.netlify.app/?utm_source=github&utm_campaign=bot_dp
   
 jobs:
-  lighthouse-check:
+  lighthouse:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - run: mkdir /tmp/artifacts
-    - name: Run Lighthouse
-      uses: foo-software/lighthouse-check-action@master
-      with:
-        outputDirectory: /tmp/artifacts
-          urls:'$PR_URL'
-    - name: Upload artifacts
-      uses: actions/upload-artifact@master
-      with:
-        name: Lighthouse reports
-        path: /tmp/artifacts
+      - uses: actions/checkout@v2
+      - name: Verify URL
+        run: echo $PR_URL
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          urls: |
+            $PR_URL
+            https://github.com
