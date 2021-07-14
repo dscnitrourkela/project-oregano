@@ -14,7 +14,7 @@ jobs:
       uses: foo-software/lighthouse-check-action@master
       with:
         outputDirectory: /tmp/artifacts
-          urls:$PR_URL
+          urls:'$PR_URL'
     - name: Upload artifacts
       uses: actions/upload-artifact@master
       with:
