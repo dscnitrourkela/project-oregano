@@ -2,6 +2,15 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      padding: {
+        default: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+      },
+      center: true,
+    },
     extend: {
       colors: {
         'content-color-primary': 'var(--text-color-primary)',
