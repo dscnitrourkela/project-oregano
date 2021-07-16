@@ -1,11 +1,25 @@
 import React from 'react';
-import { SectionContainer, Container } from '../components';
+import {
+  SectionContainer,
+  Container,
+  Heading1,
+  Heading2,
+  Heading3,
+  Heading4,
+  Body,
+  HighlightBody,
+} from '../components';
 
 function playground() {
   return (
     <Container>
       <SectionContainer>
-        <h1>Section Container</h1>
+        <Heading1>Heading 1</Heading1>
+        <Heading2>Heading 2</Heading2>
+        <Heading3>Heading 3</Heading3>
+        <Heading4>Heading 4</Heading4>
+        <Body>Body</Body>
+        <HighlightBody>Highlight Body</HighlightBody>
       </SectionContainer>
     </Container>
   );
