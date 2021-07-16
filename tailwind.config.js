@@ -21,7 +21,7 @@ module.exports = {
         'background-darker': 'var(--background-darker)',
       },
       fontFamily: {
-        'font-roboto': ['Roboto', ...defaultTheme.fontFamily.sans],
+        roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {
