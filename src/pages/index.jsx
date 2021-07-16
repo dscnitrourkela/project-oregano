@@ -1,10 +1,9 @@
 import React from 'react';
-import { Navbar, TrackCard } from '../components';
+import { Navbar } from '../components';
 
 const Homepage = () => (
   <div>
     <Navbar />
-    <TrackCard />
   </div>
 );
 
