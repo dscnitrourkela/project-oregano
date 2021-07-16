@@ -6,6 +6,7 @@ import { SectionContainer } from '../components';
 const Container = styled.div`
   ${tw`
     md:mx-12
+    font-roboto
   `}
 `;
 
