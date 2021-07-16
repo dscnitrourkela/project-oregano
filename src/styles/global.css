@@ -175,7 +175,7 @@ table {
   --background-dark: #121217;
   --background-darker: #17171d;
   --text-color-primary: #fff;
-  --text-color-secondary: rgba(255, 255, 255, 0.4)
+  --text-color-secondary: rgba(255, 255, 255, 0.4);
 
   --max-width: 83.5em;
   --max-width-bleed: 90%;
