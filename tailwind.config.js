@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -13,10 +15,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        'content-color-primary': 'var(--text-color-primary)',
-        'heading-color-primary': 'var(--heading-color-primary)',
+        'color-primary': 'var(--text-color-primary)',
+        'color-secondary': 'var(--text-color-secondary)',
         'background-dark': 'var(--background-dark)',
         'background-darker': 'var(--background-darker)',
+      },
+      fontFamily: {
+        'font-roboto': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {
