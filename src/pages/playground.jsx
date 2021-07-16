@@ -1,14 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import tw from 'twin.macro';
-import { SectionContainer } from '../components';
-
-const Container = styled.div`
-  ${tw`
-    md:mx-12
-    font-roboto
-  `}
-`;
+import { SectionContainer, Container } from '../components';
 
 function playground() {
   return (

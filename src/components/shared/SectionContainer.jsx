@@ -6,7 +6,7 @@ export const Container = styled.section`
   ${tw`
     min-h-screen
     min-w-full
-    bg-yellow-500
+    h-auto
   `}
 `;
 
