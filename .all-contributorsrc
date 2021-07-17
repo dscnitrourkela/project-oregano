@@ -44,6 +44,17 @@
         "projectManagement",
         "maintenance"
       ]
+    },
+    {
+      "login": "DesignrKnight",
+      "name": "Abel Mathew",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27865704?v=4",
+      "profile": "https://github.com/DesignrKnight",
+      "contributions": [
+        "code",
+        "security",
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
