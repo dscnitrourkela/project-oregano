@@ -1,5 +1,7 @@
 name: Lighthouse Audit
-on: [pull_request]
+on:
+  pull_request_target:
+    types: [labeled]
 
 env:
   PR_URL: https://deploy-preview-${{github.event.number}}--hacknitr.netlify.app
@@ -7,6 +9,7 @@ env:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'check-for-lighthouse')
     steps:
       - uses: actions/checkout@v2
       - name: Verify URL
