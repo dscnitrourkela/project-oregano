@@ -6,7 +6,7 @@ const Homepage = () => (
     <Tracks />
     <FAQ />
     <Sponsors />
+    <BeAHacker />
   </Container>
-);
 
 export default Homepage;
