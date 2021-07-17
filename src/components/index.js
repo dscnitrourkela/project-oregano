@@ -12,3 +12,5 @@ export { default as Tracks } from './TracksSection/Tracks';
 
 // Sponsors section exports
 export { default as Sponsors } from './SponsorsSection/Sponsor';
+
+export * from './HackerSection';
