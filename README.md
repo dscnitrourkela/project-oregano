@@ -1,7 +1,7 @@
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -197,6 +197,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://abhibhaw.co"><img src="https://avatars.githubusercontent.com/u/39991296?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhibhaw Asthana</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/pulls?q=is%3Apr+reviewed-by%3Aabhibhaw" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/CIPHERTron"><img src="https://avatars.githubusercontent.com/u/56754747?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Pritish Samal</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=CIPHERTron" title="Code">💻</a></td>
     <td align="center"><a href="http://riteshpatil.dev"><img src="https://avatars.githubusercontent.com/u/56112399?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ritesh Patil</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=riteshsp2000" title="Code">💻</a> <a href="https://github.com/dscnitrourkela/project-oregano/commits?author=riteshsp2000" title="Documentation">📖</a> <a href="#ideas-riteshsp2000" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-riteshsp2000" title="Project Management">📆</a> <a href="#maintenance-riteshsp2000" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars.githubusercontent.com/u/27865704?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=DesignrKnight" title="Code">💻</a> <a href="#security-DesignrKnight" title="Security">🛡️</a> <a href="#infra-DesignrKnight" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
