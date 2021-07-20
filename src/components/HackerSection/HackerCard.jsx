@@ -8,7 +8,7 @@ import { hackerConstants } from './hackerConstants';
 const Card = styled.div`
     ${tw`
         bg-background-darker
-        h-80
+        h-auto
         w-96
         rounded-2xl
     `}
@@ -44,7 +44,8 @@ const CardCol = styled.div`
     ${tw`
         grid
         grid-cols-1
-        sm:grid-cols-3
+        lg:grid-cols-3
+        sm:grid-cols-2
         gap-7
     `}
 `;
