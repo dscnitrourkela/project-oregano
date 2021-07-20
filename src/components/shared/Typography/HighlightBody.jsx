@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 export default styled.p`
   ${tw`
         font-normal
+        text-base
         2xl:text-base
         lg:text-base
         md:text-base
