@@ -11088,6 +11088,13 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
+tailwindcss-pseudo@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss-pseudo/-/tailwindcss-pseudo-1.0.3.tgz#1e1e999a9403476e8a3019e2c200d03fb033693a"
+  integrity sha512-R0APxj9bwOrz9CHmPIwk35SXyr4f6WD8fJ4uISIMpyMWthx2r7TIdC+S6s9xaLuZAffFcgnjeZ5rsMZuy21F1g==
+  dependencies:
+    lodash "^4.17.11"
+
 tailwindcss@^2.1.0:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.4.tgz#6a2e259b1e26125aeaa7cdc479963fd217c308b0"
