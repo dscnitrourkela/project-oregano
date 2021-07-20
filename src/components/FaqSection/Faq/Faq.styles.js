@@ -6,7 +6,7 @@ const Heading = styled.div`
   ${tw`
         grid
         w-100
-        grid-rows-2
+        grid-rows-1
         gap-4
     `}
 `
@@ -23,7 +23,7 @@ const FaqContainer = styled.div`
 const Section = styled.div`
   ${tw`
         grid
-        grid-flow-col  
+        grid-flow-col 
         grid-cols-2
         w-full
         gap-4
