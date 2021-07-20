@@ -5,6 +5,10 @@ export default styled.h1`
   ${tw`
         font-normal
         text-5xl
+        xl:text-5xl
+        lg:text-4xl
+        md:text-3xl
+        sm:text-3xl
         text-color-primary
         font-roboto
     `}
