@@ -7,8 +7,8 @@ export default styled.h4`
         text-2xl
         2xl:text-xl
         lg:text-base
-        md:text-sm
-        sm:text-sm
+        md:text-base
+        sm:text-base
         text-color-primary
         font-roboto
     `}
