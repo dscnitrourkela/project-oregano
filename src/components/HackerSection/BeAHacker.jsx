@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import Container from '../shared/Container';
+import { Container, SectionContainer } from '../shared';
 import Heading from '../shared/Typography/Heading2';
 import Body from '../shared/Typography/Body';
 import HackerCard from "./HackerCard";
@@ -21,7 +21,8 @@ const Description = styled.div`
 
 function BeAHacker() {
     return (
-        <Container class="h-screen py-40">
+        <SectionContainer>
+            <Container>
             <HackerItems>
                 <Heading>
                     How to be a hacker?
@@ -39,9 +40,10 @@ function BeAHacker() {
                 </Description>
             </HackerItems>
             <HackerItems>
-                <HackerCard />
+            <HackerCard />
             </HackerItems>
-        </Container>
+            </Container>
+        </SectionContainer>    
     );
 }
 
