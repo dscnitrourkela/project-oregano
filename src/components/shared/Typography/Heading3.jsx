@@ -8,7 +8,7 @@ export default styled.h3`
         2xl:text-3xl
         lg:text-2xl
         md:text-xl
-        sm:text-lg
+        sm:text-xl
         text-color-primary
         font-roboto
     `}
