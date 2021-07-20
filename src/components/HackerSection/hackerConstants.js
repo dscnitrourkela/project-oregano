@@ -19,7 +19,7 @@ export  const hackerConstants= [
     {
         id: 3,
         image: "BeAHackerImages/hacker.png",
-        title: "3. Register for HacikNITR 3.0",
+        title: "3. Register for HackNITR 3.0",
         description: "This one the most important step of all!!!",
         hasButton: true
     }
