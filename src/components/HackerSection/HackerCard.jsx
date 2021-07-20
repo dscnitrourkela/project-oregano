@@ -26,6 +26,12 @@ const CardImage = styled.img`
     `}
 `;
 
+const Description = styled.div`
+    ${tw`
+        py-1
+    `}
+`;
+
 const Button = styled.button`
     ${tw`
         h-14 
@@ -60,9 +66,11 @@ function HackerCard(){
                         <Title>
                             {object.title}
                         </Title>
-                        <Body>
-                            {object.description}
-                        </Body>
+                        <Description>
+                            <Body>
+                                {object.description}
+                            </Body>
+                        </Description>
                         {object.hasButton && (
                             <Button>Register Now</Button>
                         )}
