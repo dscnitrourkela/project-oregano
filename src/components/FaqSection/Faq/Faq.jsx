@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Body, Container, Heading1 } from "../..";
-import ToyFace from "../../../../images/toyfacefaq.svg";
+import Toy from "../../../../images/toyfacefaq.svg";
 import Logo from "../../../../images/hackNITR.png";
 import {
   List,
@@ -60,7 +60,7 @@ function Faq() {
         <Heading>
           <FaqContainer>
             <Bot>
-              <img alt="" src={ToyFace} />
+              <img alt="" src={Toy} />
               <Chat>
                 <Bodydark>{renderFaq()}</Bodydark>
               </Chat>
