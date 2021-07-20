@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Body, Container, Heading1 } from "../..";
-import Toy from "../../../../images/toyfacefaq.svg";
+import Toy from "../../../../images/Toy.png";
 import Logo from "../../../../images/hackNITR.png";
 import {
   List,
