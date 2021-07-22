@@ -23,6 +23,9 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
+      gridAutoColumns: {
+          '2fr': 'minmax(0, 2fr)',
+        },
     },
     screens: {
       sm: '640px',
