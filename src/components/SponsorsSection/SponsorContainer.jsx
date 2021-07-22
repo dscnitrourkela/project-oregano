@@ -1,6 +1,10 @@
 import styled from 'styled-components';
-import tw from 'twin.macro';
 
 export const SponsorContainer = styled.div`
-  ${tw`mt-6 grid grid-cols-4 md:grid-cols-8 gap-4`}
+  display: grid;
+  gap: 20px;
+  @media (max-width: 870px) {
+    grid-template-columns: repeat(4, minmax(85px, 1fr));
+  }
+  grid-template-columns: repeat(8, minmax(85px, 1fr));
 `;

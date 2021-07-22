@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 const SponsorLogo = styled.div`
   ${tw`p-4 m-auto justify-center align-middle`}
   & >* {
-    ${tw`h-24`}
+    ${tw`h-20`}
   }
 `;
 
