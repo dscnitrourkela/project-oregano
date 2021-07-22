@@ -4,7 +4,7 @@ import { Navbar, Faq } from '../components';
 const Homepage = () => (
   <div>
     <Navbar />
-    <Faq/>
+    <Faq />
   </div>
 );
 
