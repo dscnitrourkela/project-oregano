@@ -3,6 +3,7 @@ import { SponsorContainer } from './SponsorContainer';
 import { HeadingSection, HeadText } from './SponsorHeading';
 import { Heading1, Heading2, Container, SectionContainer } from '..';
 import SponsorIcon from './SponsorIcon';
+import { AlphaSponsorList, BetaSponsorList, GammaSponsorList } from './SponserImg';
 
 function Sponsor() {
   return (
@@ -23,16 +24,9 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
+          {AlphaSponsorList.map(({ src }, index) => (
+            <SponsorIcon key={index} pic={src} />
+          ))}
         </SponsorContainer>
 
         <HeadingSection>
@@ -40,11 +34,9 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
+          {BetaSponsorList.map(({ src }, index) => (
+            <SponsorIcon key={index} pic={src} />
+          ))}
         </SponsorContainer>
 
         <HeadingSection>
@@ -52,21 +44,9 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
-          <SponsorIcon pic='sponsor' />
+          {GammaSponsorList.map(({ src }, index) => (
+            <SponsorIcon key={index} pic={src} />
+          ))}
         </SponsorContainer>
       </Container>
     </SectionContainer>
