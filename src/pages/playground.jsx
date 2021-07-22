@@ -6,6 +6,7 @@ import {
   Heading2,
   Heading3,
   Heading4,
+  Heading5,
   Body,
   HighlightBody,
 } from '../components';
@@ -18,6 +19,7 @@ function playground() {
         <Heading2>Heading 2</Heading2>
         <Heading3>Heading 3</Heading3>
         <Heading4>Heading 4</Heading4>
+        <Heading5>Heading5</Heading5>
         <Body>Body</Body>
         <HighlightBody>Highlight Body</HighlightBody>
       </SectionContainer>
