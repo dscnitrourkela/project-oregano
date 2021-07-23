@@ -39,6 +39,7 @@
         "react-dom": "^17.0.1",
         "styled-components": "^5.3.0",
         "tailwindcss": "^2.2.2",
+        "tailwindcss-pseudo": "^1.0.3",
         "twin.macro": "^2.5.0"
     },
     "devDependencies": {

@@ -9,6 +9,8 @@ const Wrapper = styled.div`
         my-0
         mx-auto
         p-2.5
+        sm:p-0
+        overflow-y-hidden
     `}
 `;
 

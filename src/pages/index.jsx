@@ -1,9 +1,8 @@
 import React from 'react';
-import { Navbar, HeroSection } from '../components';
+import {HeroSection } from '../components';
 
 const Homepage = () => (
   <div>
-    <Navbar />
     <HeroSection />
   </div>
 );
