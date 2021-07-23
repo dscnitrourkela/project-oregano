@@ -24,8 +24,8 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          {AlphaSponsorList.map(({ src }, index) => (
-            <SponsorIcon key={index} pic={src} />
+          {AlphaSponsorList.map(({ src, alt }, index) => (
+            <SponsorIcon key={index} pic={src} alt={alt} />
           ))}
         </SponsorContainer>
 
@@ -34,8 +34,8 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          {BetaSponsorList.map(({ src }, index) => (
-            <SponsorIcon key={index} pic={src} />
+          {BetaSponsorList.map(({ src, alt }, index) => (
+            <SponsorIcon key={index} pic={src} alt={alt} />
           ))}
         </SponsorContainer>
 
@@ -44,8 +44,8 @@ function Sponsor() {
         </HeadingSection>
 
         <SponsorContainer>
-          {GammaSponsorList.map(({ src }, index) => (
-            <SponsorIcon key={index} pic={src} />
+          {GammaSponsorList.map(({ src, alt }, index) => (
+            <SponsorIcon key={index} pic={src} alt={alt} />
           ))}
         </SponsorContainer>
       </Container>

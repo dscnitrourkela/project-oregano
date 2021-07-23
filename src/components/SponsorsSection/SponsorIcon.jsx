@@ -9,10 +9,10 @@ const SponsorLogo = styled.div`
   }
 `;
 
-function SponsorIcon({ pic }) {
+function SponsorIcon({ pic, alt }) {
   return (
     <SponsorLogo>
-      <img src={`${pic}.png`} alt='' />
+      <img src={`${pic}.png`} alt={alt} />
     </SponsorLogo>
   );
 }
