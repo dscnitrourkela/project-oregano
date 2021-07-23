@@ -1,9 +1,14 @@
 import React from 'react';
-import {HeroSection } from '../components';
+
+import { HeroSection, Faq, Container, Tracks } from '../components';
 
 const Homepage = () => (
   <div>
-    <HeroSection />
+    <Container>
+      <HeroSection/>
+      <Faq />
+      <Tracks />
+    </Container>
   </div>
 );
 
