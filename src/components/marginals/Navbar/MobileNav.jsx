@@ -3,30 +3,18 @@ import React from 'react';
 import { StyledMobileNav } from './nav.styles';
 // eslint-disable-next-line import/no-useless-path-segments
 import { Body } from '../../.';
+import { NavItems } from './NavItems';
 
 function MobileNav() {
   return (
     <StyledMobileNav>
       <div className='mobile-nav-container'>
         <ul className='linkList'>
-          <li className='listItem'>
-            <Body className='link'>Home</Body>
-          </li>
-          <li className='listItem'>
-            <Body className='link'>Tracks</Body>
-          </li>
-          <li className='listItem'>
-            <Body className='link'>Prizes</Body>
-          </li>
-          <li className='listItem'>
-            <Body className='link'>FAQ</Body>
-          </li>
-          <li className='listItem'>
-            <Body className='link'>Sponsors</Body>
-          </li>
-          <li className='listItem'>
-            <Body className='link'>Contact</Body>
-          </li>
+          {NavItems.map((navitem) => (
+            <li key={navitem.toLowerCase()} id={navitem.toLowerCase()} className='listItem'>
+              <Body className='link'>{navitem}</Body>
+            </li>
+          ))}
         </ul>
       </div>
     </StyledMobileNav>

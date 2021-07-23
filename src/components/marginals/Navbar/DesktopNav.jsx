@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { NavSection, StyledHamburger, Logo } from './nav.styles';
 // eslint-disable-next-line import/no-useless-path-segments
 import { MenuContext, Container, Body } from '../../.';
+import { NavItems } from './NavItems';
 
 function DesktopNav() {
   const menuContext = useContext(MenuContext);
@@ -25,24 +26,11 @@ function DesktopNav() {
             <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
 
             <ul className='navLinkList'>
-              <li className='navLinkItem'>
-                <Body className='navLink'>About</Body>
-              </li>
-              <li className='navLinkItem'>
-                <Body className='navLink'>Tracks</Body>
-              </li>
-              <li className='navLinkItem'>
-                <Body className='navLink'>Prizes</Body>
-              </li>
-              <li className='navLinkItem'>
-                <Body className='navLink'>FAQ</Body>
-              </li>
-              <li className='navLinkItem'>
-                <Body className='navLink'>Sposors</Body>
-              </li>
-              <li className='navLinkItem'>
-                <Body className='navLink'>Contact</Body>
-              </li>
+              {NavItems.map((navitem) => (
+                <li key={navitem.toLowerCase()} id={navitem.toLowerCase()} className='navLinkItem'>
+                  <Body className='navLink'>{navitem}</Body>
+                </li>
+              ))}
             </ul>
           </div>
 
