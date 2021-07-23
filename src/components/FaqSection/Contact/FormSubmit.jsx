@@ -53,15 +53,9 @@ const FormSubmit = ({ submitForm, gmail }) => {
               if (!e.target.value) {
                 setErrors((currentValue) => ({
                   ...currentValue,
-                  username: "Name Required"
+                  username: ""
                 }));
               }
-              else
-              {setErrors((currentValue) => ({
-                ...currentValue,
-                username: ""
-              }));
-             }
             }}
           />
           {errors.username && (
