@@ -6,7 +6,7 @@ import HeroContent from './HeroContent';
 import Ticker from './Ticker';
 
 const HeroContainer = styled.div`
-  ${tw`justify-self-center grid grid-cols-12`}
+  ${tw`flex items-center justify-center grid grid-cols-12`}
 `;
 const HeroImage = styled.img`
   ${tw`
@@ -15,7 +15,7 @@ const HeroImage = styled.img`
 `;
 
 const HeroImageContainer = styled.div`
-  ${tw`col-span-8 sm:hidden flex items-center justify-center`}
+  ${tw`col-span-8 sm:hidden flex items-end`}
 `;
 
 function HeroSection() {

@@ -5,7 +5,6 @@ import { Heading1, Body, HighlightBody, Button } from '../shared';
 
 const ContentContainer = styled.div`
   ${tw`
-  mt-16
   col-span-4
   sm:col-span-12
   `}
