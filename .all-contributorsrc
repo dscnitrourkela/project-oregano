@@ -55,6 +55,15 @@
         "security",
         "infra"
       ]
+    },
+    {
+      "login": "padmajabhol",
+      "name": "Padmaja Bhol",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75530516?v=4",
+      "profile": "https://github.com/padmajabhol",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
