@@ -8,6 +8,7 @@ import {
   Heading4,
   Body,
   HighlightBody,
+  Button,
 } from '../components';
 
 function playground() {
@@ -20,6 +21,7 @@ function playground() {
         <Heading4>Heading 4</Heading4>
         <Body>Body</Body>
         <HighlightBody>Highlight Body</HighlightBody>
+        <Button>Button</Button>
       </SectionContainer>
     </Container>
   );
