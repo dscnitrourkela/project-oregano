@@ -14,7 +14,11 @@ function DesktopNav() {
       <Container>
         <nav className='navWrapper'>
           <div className='navLeft'>
-            <Logo src='brand.png' alt='Brand Logo' />
+            <Logo
+              // eslint-disable-next-line max-len
+              src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png'
+              alt='Brand Logo'
+            />
           </div>
 
           <div className='navRight'>
