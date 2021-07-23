@@ -49,6 +49,20 @@ const FormSubmit = ({ submitForm, gmail }) => {
                 }));
               }
             }}
+            onFocus={(e) => {
+              if (!e.target.value) {
+                setErrors((currentValue) => ({
+                  ...currentValue,
+                  username: "Name Required"
+                }));
+              }
+              else
+              {setErrors((currentValue) => ({
+                ...currentValue,
+                username: ""
+              }));
+             }
+            }}
           />
           {errors.username && (
             <Error>{errors.username}</Error>
@@ -75,6 +89,19 @@ const FormSubmit = ({ submitForm, gmail }) => {
                 }));
               }
             }}
+            onFocus={(e) => {
+              if (!e.target.value) {
+                setErrors((currentValue) => ({
+                  ...currentValue,
+                  email: ""
+                }));
+              } else if (!/\S+@\S+\.\S+/.test(e.target.value)) {
+                setErrors((currentValue) => ({
+                  ...currentValue,
+                  email: ""
+                }));
+              }
+            }}
             />
             {errors.email && (
             <Error>{errors.email}</Error>
@@ -95,6 +122,14 @@ const FormSubmit = ({ submitForm, gmail }) => {
                 setErrors((currentValue) => ({
                   ...currentValue,
                   text: "Message Required"
+                }));
+              }
+            }}
+            onFocus={(e) => {
+              if (!e.target.value) {
+                setErrors((currentValue) => ({
+                  ...currentValue,
+                  text: ""
                 }));
               }
             }}
