@@ -4,10 +4,16 @@ import tw from 'twin.macro';
 const Heading = styled.div`
   ${tw`
         grid
+        gap-2
+        /* xl:grid-rows-2 grid-cols-2 */
+        lg:grid-rows-1 grid-cols-1
+    `}
+`;
+
+const Sub = styled.div`
+  ${tw`
         w-100
-        grid-rows-1
-        gap-4
-        pr-2
+        lg:w-full
     `}
 `;
 
@@ -17,7 +23,6 @@ const FaqContainer = styled.div`
         relative
         p-2
         rounded-lg
-        sm:mr-8
    `}
 `;
 
@@ -25,9 +30,8 @@ const Section = styled.div`
   ${tw`
         flex
         lg:grid grid-cols-1 
-        md:w-100
         gap-5
-        mt-4
+        mt-5
         text-white
     `}
 `;
@@ -53,11 +57,12 @@ const Chat = styled.div`
         flex
         w-2/3
         p-1.5
+        sm:p-0.5
         bg-purple-light
         rounded-full
+        sm:rounded-3xl
         relative
         text-black
-        border-2 border-gray-800
     `}
 `;
 
@@ -67,6 +72,7 @@ const Ques = styled.div`
         grid-cols-10
         mt-8
         mb-4
+        sm:pr-2
     `}
 `;
 const Ul = styled.ul`
@@ -74,17 +80,20 @@ const Ul = styled.ul`
         grid grid-flow-row auto-rows-max
         col-start-3
         col-end-10
+        sm:col-start-1
         bg-black
         p-5
         rounded-xl
         border border-gray-800
         mr-3 
+        sm:mr-1.5
     `}
 `;
 
 const List = styled.li`
   ${tw`
         p-4
+        sm:px-1
         border-solid
         border-b border-gray-500
         cursor-default
@@ -109,4 +118,4 @@ const List1 = styled.li`
     `}
 `;
 
-export { List, List1, Ul, Ques, Chat, Bot, Section, FaqContainer, Heading, Img };
+export { List, List1, Ul, Ques, Chat, Bot, Section, FaqContainer, Heading, Img, Sub };
