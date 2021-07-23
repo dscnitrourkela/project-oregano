@@ -1,6 +1,4 @@
 import React from "react";
-import styled from 'styled-components';
-import tw from 'twin.macro';
 import validate from "./Validate";
 import useForm from "./Form";
 import { Container } from '../../shared/index.js';
@@ -15,7 +13,7 @@ import { Contact,
   SendButton,
   TextArea,
   Component,
-  Form, Error} from './ContactStyles';
+  Form, Error } from './ContactStyles';
 
 const FormSubmit = ({ submitForm, gmail }) => {
   const { handleChange, handleSubmit, values, errors, setErrors } = useForm(
@@ -26,8 +24,8 @@ const FormSubmit = ({ submitForm, gmail }) => {
   return (
     <Contact>
       <Container>
-        <div class="flex justify-around">
-          <Gmail src={`${gmail}.png`} alt="" />
+        <div className="flex">
+          <Gmail src={`${gmail}.png`} alt="gmail" />
           <HeadText>Drop us a mail</HeadText>
         </div>
       <Form>

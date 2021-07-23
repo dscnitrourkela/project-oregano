@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import FormSubmit from "./FormSubmit";
-import styled from 'styled-components';
-import tw from 'twin.macro';
+import FormSuccess from "./FormSuccess";
 
 function Contact(){
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -15,7 +14,7 @@ function Contact(){
             {!isSubmitted ? (
               <FormSubmit submitForm={submitForm} gmail='gmail' />
             ) : (
-              "The form has been submitted"
+              <FormSuccess />
             )}
 
     </div>

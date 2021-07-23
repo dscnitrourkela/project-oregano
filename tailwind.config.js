@@ -14,34 +14,39 @@ module.exports = {
       center: true,
     },
     extend: {
+      gridTemplateColumns: {
+        track: 'repeat(auto-fit, minmax(300px, 1fr))',
+      },
+      spacing:{
+        "100":"41rem"
+      },
       colors: {
         'color-primary': 'var(--text-color-primary)',
         'color-secondary': 'var(--text-color-secondary)',
         'background-dark': 'var(--background-dark)',
         'background-darker': 'var(--background-darker)',
+         secondary : '#17171D',
+        'purple-light': '#B6BAEA'
       },
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
       },
-      gridAutoColumns: {
-          '2fr': 'minmax(0, 2fr)',
-        },
     },
     screens: {
-      sm: '640px',
-      // => @media (min-width: 640px) { ... }
+      '2xl': { max: '1535px' },
+      // => @media (max-width: 1535px) { ... }
 
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
+      xl: { max: '1279px' },
+      // => @media (max-width: 1279px) { ... }
 
-      lg: '1024px',
-      // => @media (min-width: 1024px) { ... }
+      lg: { max: '1023px' },
+      // => @media (max-width: 1023px) { ... }
 
-      xl: '1280px',
-      // => @media (min-width: 1280px) { ... }
+      md: { max: '767px' },
+      // => @media (max-width: 767px) { ... }
 
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
+      sm: { max: '639px' },
+      // => @media (max-width: 639px) { ... }
     },
   },
   variants: {

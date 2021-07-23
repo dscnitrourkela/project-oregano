@@ -4,7 +4,6 @@ import tw from 'twin.macro';
 export const Contact = styled.div`
   ${tw`
       bg-background-darker
-      m-2
       w-full max-w-xl
       sm: max-w-sm grid grid-cols-1
       md: max-w-lg grid grid-cols-1
@@ -17,10 +16,8 @@ export const HeadText = styled.h3`
         text-3xl
         text-color-primary
         font-roboto
-        inline-block
-        align-top
-        mt-8
-        pl-6
+        text-left
+        mt-6
     `}
 `;
 
@@ -37,7 +34,7 @@ export const Heading5 = styled.h6`
 
 export const Gmail = styled.img`
   ${tw`
-      mt-6
+       mt-4
     `}
 `;
 
@@ -97,11 +94,14 @@ export const TextArea = styled.textarea`
 
 export const SendButton = styled.button`
   ${tw`
-      bg-white
+      bg-background-dark
       appearance-none
       p-4 px-9 rounded-full
-      text-black
-      font-medium
+      text-white
+      font-roboto
+      cursor-pointer
+      hover:bg-white
+      hover:text-black
     `}
 `;
 
@@ -118,5 +118,6 @@ export const Error = styled.p`
       text-sm
       sm: ml-40
       w-full
+      font-roboto
     `}
 `;
