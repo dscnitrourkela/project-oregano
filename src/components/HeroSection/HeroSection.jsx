@@ -5,11 +5,8 @@ import { SectionContainer } from '../shared';
 import HeroContent from './HeroContent';
 import Ticker from './Ticker';
 
-const HeroSectionContainer = styled(SectionContainer)`
-  ${tw`mt-14`}
-`;
 const HeroContainer = styled.div`
-  ${tw`mx-9 justify-self-center grid grid-cols-12`}
+  ${tw`justify-self-center grid grid-cols-12`}
 `;
 const HeroImage = styled.img`
   ${tw`
@@ -23,7 +20,7 @@ const HeroImageContainer = styled.div`
 
 function HeroSection() {
   return (
-    <HeroSectionContainer>
+    <SectionContainer>
       <HeroContainer>
         <HeroContent />
         <HeroImageContainer>
@@ -34,7 +31,7 @@ function HeroSection() {
         </HeroImageContainer>
       </HeroContainer>
       <Ticker />
-    </HeroSectionContainer>
+    </SectionContainer>
   );
 }
 

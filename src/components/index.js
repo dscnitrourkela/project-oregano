@@ -5,3 +5,5 @@ export { default as HeroSection }
 from './HeroSection/HeroSection';
 export { default as Faq }
 from './FaqSection/Faq';
+export { default as Tracks }
+from './TracksSection/Tracks';
