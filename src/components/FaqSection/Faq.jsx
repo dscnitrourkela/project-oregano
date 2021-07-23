@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Body, Container, Heading1, SectionContainer, Heading5 } from '..';
+import { Body, Heading1, SectionContainer, Heading5 } from '..';
 import {
   List,
   List1,
@@ -11,6 +11,7 @@ import {
   FaqContainer,
   Heading,
   Img,
+  Sub,
 } from './Faq.styles';
 import STAGE from './FaqData';
 
@@ -46,75 +47,75 @@ function Faq() {
   };
   return (
     <SectionContainer>
-      <Container>
-        <Heading>
-          <Heading1>Have a question?</Heading1>
+      <Heading>
+        <Heading1>Have a question?</Heading1>
+        <Sub>
           <Body>
             Vel lobortis porttitor eget dignissim. Facilisi euismod nullam nunc quisque egestas
             ridiculus sociis. Mi, aliquam, in turpis non cras diam elementum morbi . Blandit
             integer.
           </Body>
-        </Heading>
-        <Section>
-          <FaqContainer>
-            <Bot>
-              <Img
-                alt='Toy'
-                src='https://res.cloudinary.com/dalqfvowk/image/
+        </Sub>
+      </Heading>
+      <Section>
+        <FaqContainer>
+          <Bot>
+            <Img
+              alt='Toy'
+              src='https://res.cloudinary.com/dalqfvowk/image/
 upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
-              />
-              <Chat>
-                <Heading5>{renderFaq()}</Heading5>
-              </Chat>
-            </Bot>
-            <Ques>
-              <Ul>
-                <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
-                <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
-                <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
-                <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
-                <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
-                <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
-                <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
-              </Ul>
-              <img
-                alt='Logo'
-                src='https://res.cloudinary.com/dalqfvowk/image/
+            />
+            <Chat>
+              <Heading5>{renderFaq()}</Heading5>
+            </Chat>
+          </Bot>
+          <Ques>
+            <Ul>
+              <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
+              <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
+              <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
+              <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
+              <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
+              <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
+              <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
+            </Ul>
+            <img
+              alt='Logo'
+              src='https://res.cloudinary.com/dalqfvowk/image/
 upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
-              />
-            </Ques>
-          </FaqContainer>
+            />
+          </Ques>
+        </FaqContainer>
 
-          <FaqContainer>
-            <Bot>
-              <Img
-                alt='Toy'
-                src='https://res.cloudinary.com/dalqf
+        <FaqContainer>
+          <Bot>
+            <Img
+              alt='Toy'
+              src='https://res.cloudinary.com/dalqf
 vowk/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
-              />
-              <Chat>
-                <Heading5>{renderFaq()}</Heading5>
-              </Chat>
-            </Bot>
-            <Ques>
-              <Ul>
-                <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
-                <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
-                <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
-                <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
-                <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
-                <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
-                <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
-              </Ul>
-              <img
-                alt='Logo'
-                src='https://res.cloudinary.com/dalqfvowk/imag
+            />
+            <Chat>
+              <Heading5>{renderFaq()}</Heading5>
+            </Chat>
+          </Bot>
+          <Ques>
+            <Ul>
+              <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
+              <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
+              <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
+              <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
+              <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
+              <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
+              <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
+            </Ul>
+            <img
+              alt='Logo'
+              src='https://res.cloudinary.com/dalqfvowk/imag
 e/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
-              />
-            </Ques>
-          </FaqContainer>
-        </Section>
-      </Container>
+            />
+          </Ques>
+        </FaqContainer>
+      </Section>
     </SectionContainer>
   );
 }
