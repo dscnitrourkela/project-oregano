@@ -17,16 +17,16 @@ module.exports = {
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
       },
-      spacing:{
-        "100":"41rem"
+      spacing: {
+        100: '41rem',
       },
       colors: {
         'color-primary': 'var(--text-color-primary)',
         'color-secondary': 'var(--text-color-secondary)',
         'background-dark': 'var(--background-dark)',
         'background-darker': 'var(--background-darker)',
-         secondary : '#17171D',
-        'purple-light': '#B6BAEA'
+        secondary: '#17171D',
+        'purple-light': '#B6BAEA',
       },
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],

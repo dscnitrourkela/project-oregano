@@ -3,13 +3,11 @@ import tw from 'twin.macro';
 
 export default styled.p`
   ${tw`
-        font-normal
+  font-normal
         text-base
-        2xl:text-base
-        lg:text-base
-        md:text-base
-        sm:text-sm
-        text-color-secondary
+        text-black
         font-roboto
+        py-1 
+        px-5
     `}
 `;

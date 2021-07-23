@@ -48,7 +48,6 @@ const Img = styled.img`
   ${tw`
         float-left
         mr-2
-
     `}
 `;
 

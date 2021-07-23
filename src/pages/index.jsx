@@ -1,11 +1,14 @@
 import React from 'react';
-import { Navbar } from '../components';
-import { Contact } from '../components';
+
+import { Faq, Container, Tracks } from '../components';
 
 const Homepage = () => (
   <div>
-    <Navbar />
-    <Contact />
+    <Container>
+      <Faq />
+      <Tracks />
+    </Container>
+
   </div>
 );
 
