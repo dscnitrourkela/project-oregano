@@ -1,12 +1,13 @@
 import React from 'react';
-import { Navbar } from '../components';
 import Sponsor from '../components/SponsorsSection/Sponsor';
+import { Faq, Container, Tracks, Navbar } from '../components';
 
 const Homepage = () => (
-  <div>
-    <Navbar />
-    <Sponsor />
-  </div>
+    <Container>
+      <Tracks />
+      <Faq />
+      <Sponsor />
+    </Container>
 );
 
 export default Homepage;
