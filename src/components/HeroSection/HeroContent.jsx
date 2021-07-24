@@ -5,25 +5,29 @@ import { Heading1, Body, HighlightBody, Button } from '../shared';
 
 const ContentContainer = styled.div`
   ${tw`
-  col-span-4
+  col-span-5
   sm:col-span-12
   `}
 `;
+
 const TimeLine = styled(Body)`
   ${tw`
   mb-2
   text-xl
   sm:text-base`}
 `;
+
 const TagLine = styled(Heading1)`
   ${tw`leading-tight`}
 `;
+
 const Description = styled(Body)`
   ${tw`my-7
   mr-14
   md:mr-0
   sm:mr-0`}
 `;
+
 const DiscordBtn = styled(Button)`
   ${tw`
   bg-background-dark
@@ -31,6 +35,7 @@ const DiscordBtn = styled(Button)`
   border-color-primary
   border-2`}
 `;
+
 const SponsorInvite = styled.div`
   ${tw`my-6
   gap-1
@@ -39,6 +44,7 @@ const SponsorInvite = styled.div`
   md:inline-flex
   `}
 `;
+
 const InlineWrapper = styled.div`
   ${tw`flex mr-10`}
 `;

@@ -4,8 +4,8 @@ import { HeroSection, FAQ, Container, Tracks, Sponsors } from '../components';
 
 const Homepage = () => (
   <div>
+    <HeroSection />
     <Container>
-      <HeroSection />
       <FAQ />
       <Tracks />
       <Sponsors />

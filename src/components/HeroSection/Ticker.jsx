@@ -7,15 +7,24 @@ import { IconsList } from './IconsList';
 
 const TickerContainer = styled.div`
   ${tw`
-  bg-background-darker
-  w-full overflow-hidden`}
+    bg-background-darker
+    w-full overflow-hidden
+    absolute
+    bottom-0
+  `}
 `;
+
 const TickerWrapper = styled.div`
   ${tw`w-full`}
 `;
+
 const TickerMover = styled.div`
-  ${tw`inline-block whitespace-nowrap`}
+  ${tw`
+    inline-block
+    whitespace-nowrap
+  `}
 `;
+
 function Ticker() {
   return (
     <TickerContainer className='TickerContainer'>
