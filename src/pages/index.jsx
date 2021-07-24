@@ -1,11 +1,13 @@
 import React from 'react';
-import { Navbar } from '../components';
-import Sponsor from '../components/SponsorsSection/Sponsor';
+import { Faq, Container, Tracks, Sponsor } from '../components';
 
 const Homepage = () => (
   <div>
-    <Navbar />
-    <Sponsor />
+    <Container>
+      <Faq />
+      <Tracks />
+      <Sponsor />
+    </Container>
   </div>
 );
 
