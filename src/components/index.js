@@ -17,5 +17,8 @@ export { default as Tracks }
 from './TracksSection/Tracks';
 
 // Sponsors section exports
-export { default as Sponsors }
-from './SponsorsSection/Sponsor';
+export { default as Sponsors } from './SponsorsSection/Sponsor';
+
+// Hacker section exports
+export { default as BeAHacker } from './HackerSection/BeAHacker';
+export { default as HackerCard } from './HackerSection/HackerCard';
