@@ -7,3 +7,4 @@ export { default as Heading4 } from './Typography/Heading4';
 export { default as Heading5 } from './Typography/Heading5';
 export { default as Body } from './Typography/Body';
 export { default as HighlightBody } from './Typography/HighlightBody';
+export { default as Button } from './Button';
