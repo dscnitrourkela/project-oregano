@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker } from '../components';
+import { HeroSection, FAQ, Container, Footer, Tracks, Sponsors, BeAHacker } from '../components';
 
 const Homepage = () => (
   <div>
@@ -9,6 +9,7 @@ const Homepage = () => (
       <Sponsors />
       <FAQ />
       <BeAHacker />
+      <Footer />
     </Container>
   </div>
 );

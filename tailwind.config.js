@@ -14,11 +14,19 @@ module.exports = {
       center: true,
     },
     extend: {
+      gridColumn: {
+        'span-15': 'span 15 / span 15',
+      },
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
+        21: 'repeat(21, minmax(0, 1fr))',
       },
       spacing: {
         100: '41rem',
+        420: '420px',
+        360: '360px',
+        315: '315px',
+        270: '270px',
       },
       colors: {
         'color-primary': 'var(--text-color-primary)',
@@ -41,12 +49,18 @@ module.exports = {
 
       lg: { max: '1023px' },
       // => @media (max-width: 1023px) { ... }
+      
+      mid: { max: '850px' },
+      // => @media (max-width:850px) { ... }
 
       md: { max: '767px' },
       // => @media (max-width: 767px) { ... }
 
       sm: { max: '639px' },
       // => @media (max-width: 639px) { ... }
+
+      mobile: { max: '360px' },
+      // => @media (max-width:850px) { ... }
     },
   },
   variants: {
