@@ -9,8 +9,10 @@ import {
   Heading2,
   Heading3,
   Heading4,
+  Heading5,
   Body,
   HighlightBody,
+  Button,
 } from '../components';
 
 const Element = styled.div`
@@ -50,6 +52,7 @@ function playground() {
         <Heading2>Heading 2</Heading2>
         <Heading3>Heading 3</Heading3>
         <Heading4>Heading 4</Heading4>
+        <Heading5>Heading5</Heading5>
         <Body>Body</Body>
         <HighlightBody>Highlight Body</HighlightBody>
         <Element>
@@ -64,6 +67,7 @@ function playground() {
         <Element>
           <Paragraph>{partials.content}</Paragraph>
         </Element>
+        <Button>Button</Button>
       </SectionContainer>
     </Container>
   );

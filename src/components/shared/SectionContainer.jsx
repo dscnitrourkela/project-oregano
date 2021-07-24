@@ -5,8 +5,14 @@ import tw from 'twin.macro';
 export const Container = styled.section`
   ${tw`
     min-h-screen
-    min-w-full
+    w-full
     h-auto
+    overflow-x-hidden
+    overflow-y-auto
+    flex
+    flex-col
+    items-start
+    justify-center
   `}
 `;
 
