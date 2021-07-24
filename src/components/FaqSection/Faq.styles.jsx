@@ -28,10 +28,9 @@ const FaqContainer = styled.div`
 
 const Section = styled.div`
   ${tw`
-        flex
-        lg:grid grid-cols-1
-        xl:grid grid-cols-2
-        gap-5
+        grid
+        grid-cols-track
+        gap-6
         mt-5
         text-white
     `}

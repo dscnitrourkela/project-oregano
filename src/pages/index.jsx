@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Faq, Container, Tracks } from '../components';
 
 const Homepage = () => (

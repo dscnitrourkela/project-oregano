@@ -89,9 +89,7 @@ upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
           </Ques>
         </FaqContainer>
 
-        <FaqContainer>
-          <Contact />
-        </FaqContainer>
+        <Contact />
 
       </Section>
     </SectionContainer>

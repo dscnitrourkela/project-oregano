@@ -13,6 +13,7 @@ import { Contact,
   SendButton,
   TextArea,
   Component,
+  Component1,
   Form, Error } from './ContactStyles';
 
 const FormSubmit = ({ submitForm, gmail }) => {
@@ -23,11 +24,10 @@ const FormSubmit = ({ submitForm, gmail }) => {
 
   return (
     <Contact>
-      <Container>
-        <div className="flex">
+        <Component1>
           <Gmail src={`${gmail}.png`} alt="gmail" />
           <HeadText>Drop us a mail</HeadText>
-        </div>
+        </Component1>
       <Form>
       <form onSubmit={handleSubmit} noValidate>
         <Username>
@@ -138,7 +138,6 @@ const FormSubmit = ({ submitForm, gmail }) => {
         </Component>
       </form>
      </Form>
-    </Container>
   </Contact>
   );
 };
