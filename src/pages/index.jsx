@@ -1,27 +1,15 @@
-import React, { useState } from 'react';
-import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker, DesktopNav, MobileNav, MenuContext } from '../components';
+import React from 'react';
+import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker, Layout } from '../components';
 
-const Homepage = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenuOpen = () => (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
-  
-  return (
-    <div>
-      <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
-        <DesktopNav />
-        {menuOpen && <MobileNav />}
-      </MenuContext.Provider>
-         
-      <HeroSection />
-      <Container>
-        <Tracks />
-        <Sponsors />
-        <FAQ />
-        <BeAHacker />
-      </Container>
-    </div>
-  );
-}
-
+const Homepage = () => (
+  <Layout>
+    <HeroSection />
+    <Container>
+      <Tracks />
+      <Sponsors />
+      <FAQ />
+      <BeAHacker />
+    </Container>
+  </Layout>
+);
 export default Homepage;
