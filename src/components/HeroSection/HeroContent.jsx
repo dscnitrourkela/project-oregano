@@ -29,8 +29,7 @@ const DiscordBtn = styled(Button)`
   bg-background-dark
   text-color-primary
   border-color-primary
-  border-2
-  inline`}
+  border-2`}
 `;
 const SponsorInvite = styled.div`
   ${tw`my-6
@@ -55,7 +54,7 @@ function HeroContent() {
         vulputate sapien. In quis vitae vestibulum at sit mauris tortor nulla molestie.
       </Description>
       <InlineWrapper>
-        <Button className='inline'>Register Now!</Button>
+        <Button>Register Now!</Button>
         <DiscordBtn>Join Discord</DiscordBtn>
       </InlineWrapper>
       <SponsorInvite>

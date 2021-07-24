@@ -1,6 +1,6 @@
 import React from 'react';
 import { Body, Heading1, SectionContainer } from '..';
-import { Heading, Sub } from './Tracks.styles';
+import { Heading, Sub } from './Tracks.components';
 import Card from './Card';
 
 function Tracks() {

@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { HeroSection, Faq, Container, Tracks } from '../components';
+import { HeroSection, FAQ, Container, Tracks, Sponsors } from '../components';
 
 const Homepage = () => (
   <div>
     <Container>
       <HeroSection />
-      <Faq />
+      <FAQ />
       <Tracks />
+      <Sponsors />
     </Container>
   </div>
 );

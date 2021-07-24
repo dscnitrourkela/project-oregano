@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const Heading = styled.div`
+export const Heading = styled.div`
   ${tw`
         mt-20
         grid
@@ -10,14 +10,14 @@ const Heading = styled.div`
    `}
 `;
 
-const Sub = styled.div`
+export const Sub = styled.div`
   ${tw`
        w-100
        lg:w-full
    `}
 `;
 
-const Tracks1 = styled.div`
+export const Tracks1 = styled.div`
   ${tw`
        grid
        grid-cols-track
@@ -26,7 +26,7 @@ const Tracks1 = styled.div`
    `}
 `;
 
-const Tracks2 = styled.div`
+export const Tracks2 = styled.div`
   ${tw`
         grid
         grid-rows-3
@@ -34,14 +34,14 @@ const Tracks2 = styled.div`
    `}
 `;
 
-const Head = styled.div`
+export const Head = styled.div`
   ${tw`
       row-start-2
       row-end-4
    `}
 `;
 
-const Cards = styled.div`
+export const Cards = styled.div`
   ${tw`
       bg-secondary
       rounded-lg
@@ -49,7 +49,7 @@ const Cards = styled.div`
    `}
 `;
 
-const Head2 = styled.div`
+export const Head2 = styled.div`
   ${tw`
       grid
       grid-cols-4
@@ -57,7 +57,7 @@ const Head2 = styled.div`
    `}
 `;
 
-const Text = styled.div`
+export const Text = styled.div`
   ${tw`
        col-start-2
        col-end-5
@@ -65,5 +65,3 @@ const Text = styled.div`
        ml-3
    `}
 `;
-
-export { Heading, Sub, Tracks1, Cards, Tracks2, Head, Head2, Text };

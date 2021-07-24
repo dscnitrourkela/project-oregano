@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tracks2, Head, Head2, Text, Tracks1, Cards } from './Tracks.styles';
+import { Tracks2, Head, Head2, Text, Tracks1, Cards } from './Tracks.components';
 import { Body, Heading4 } from '..';
 import TracksData from './TracksData';
 

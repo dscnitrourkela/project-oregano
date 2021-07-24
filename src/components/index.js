@@ -1,9 +1,21 @@
-// eslint-disable-next-line import/no-cycle
+/* eslint-disable import/no-cycle */
+
+// Shared components
 export * from './marginals';
 export * from './shared';
+
+// Hero section exports
 export { default as HeroSection }
 from './HeroSection/HeroSection';
-export { default as Faq }
+
+// FAQ section exports
+export { default as FAQ }
 from './FaqSection/Faq';
+
+// Tracks section exports
 export { default as Tracks }
 from './TracksSection/Tracks';
+
+// Sponsors section exports
+export { default as Sponsors }
+from './SponsorsSection/Sponsor';

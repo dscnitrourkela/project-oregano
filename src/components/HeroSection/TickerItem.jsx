@@ -5,10 +5,6 @@ import tw from 'twin.macro';
 const ItemContainer = styled.div`
   ${tw`inline-block px-8 py-4`}
 `;
-// const TickerIcon = styled.img`
-//   ${tw`
-//   place-self-center`}
-// `;
 const TickerIcon = styled.img`
   ${tw`py-2
   px-6
@@ -17,7 +13,6 @@ const TickerIcon = styled.img`
 function TickerItem({ source, alt }) {
   return (
     <ItemContainer>
-      {/* <TickerIcon>{source}</TickerIcon> */}
       <TickerIcon src={source} alt={alt} />
     </ItemContainer>
   );
