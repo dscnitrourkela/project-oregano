@@ -2,11 +2,13 @@ import React from 'react';
 import { Faq, Container, Tracks, Sponsor } from '../components';
 
 const Homepage = () => (
-  <Container>
-    <Tracks />
-    <Faq />
+  <div>
+    <Container>
+      <Tracks />
+      <Faq />
+    </Container>
     <Sponsor />
-  </Container>
+  </div>
 );
 
 export default Homepage;
