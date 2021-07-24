@@ -4,12 +4,16 @@ import tw from 'twin.macro';
 import { HighlightBody } from '..';
 
 export const SponsorContainer = styled.div`
+  width: 100%;
   display: grid;
   gap: 20px;
-  @media (max-width: 870px) {
+  grid-template-columns: repeat(8, minmax(85px, 1fr));
+  @media (max-width: 639px) {
     grid-template-columns: repeat(2, minmax(85px, 1fr));
   }
-  grid-template-columns: repeat(8, minmax(85px, 1fr));
+  @media (min-width: 639px) and (max-width: 1023px) {
+    grid-template-columns: repeat(5, minmax(85px, 1fr));
+  }
 `;
 
 export const HeadingSection = styled.div`
