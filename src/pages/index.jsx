@@ -1,14 +1,12 @@
 import React from 'react';
-import { Faq, Container, Tracks, Sponsor } from '../components';
+import { FAQ, Container, Tracks, Sponsors } from '../components';
 
 const Homepage = () => (
-  <div>
-    <Container>
-      <Tracks />
-      <Faq />
-    </Container>
-    <Sponsor />
-  </div>
+  <Container>
+    <Tracks />
+    <FAQ />
+    <Sponsors />
+  </Container>
 );
 
 export default Homepage;
