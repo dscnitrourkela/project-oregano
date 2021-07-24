@@ -7,6 +7,7 @@ const ContentContainer = styled.div`
   ${tw`
   col-span-5
   sm:col-span-12
+  sm:mt-6
   `}
 `;
 
@@ -25,7 +26,16 @@ const Description = styled(Body)`
   ${tw`my-7
   mr-14
   md:mr-0
-  sm:mr-0`}
+  sm:mr-0
+  sm:text-justify
+  `}
+`;
+
+const RegisterBtn = styled(Button)`
+  ${tw`
+    sm:m-0
+    sm:mr-4
+  `}
 `;
 
 const DiscordBtn = styled(Button)`
@@ -33,7 +43,9 @@ const DiscordBtn = styled(Button)`
   bg-background-dark
   text-color-primary
   border-color-primary
-  border-2`}
+  border-2
+  sm:m-0
+  `}
 `;
 
 const SponsorInvite = styled.div`
@@ -46,7 +58,7 @@ const SponsorInvite = styled.div`
 `;
 
 const InlineWrapper = styled.div`
-  ${tw`flex mr-10`}
+  ${tw`flex mr-10 sm:mr-0 sm:justify-center sm:items-center`}
 `;
 
 function HeroContent() {
@@ -60,7 +72,7 @@ function HeroContent() {
         vulputate sapien. In quis vitae vestibulum at sit mauris tortor nulla molestie.
       </Description>
       <InlineWrapper>
-        <Button>Register Now!</Button>
+        <RegisterBtn>Register Now!</RegisterBtn>
         <DiscordBtn>Join Discord</DiscordBtn>
       </InlineWrapper>
       <SponsorInvite>

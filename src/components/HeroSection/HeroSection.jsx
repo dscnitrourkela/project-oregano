@@ -39,8 +39,10 @@ const HeroImage = styled.img`
 const HeroImageContainer = styled.div`
   ${tw`
     col-span-7
+    sm:col-span-12
     flex
     justify-end
+    sm:justify-center
   `}
 `;
 
