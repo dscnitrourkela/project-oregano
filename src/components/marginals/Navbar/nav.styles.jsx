@@ -20,7 +20,7 @@ export const NavSection = styled.header`
   padding-top: 1em;
   padding-bottom: 1em;
   position: relative;
-  z-index: 10;
+  z-index: 99999;
   .no-underline {
     color: var(--text-color-dark);
     &:hover {
@@ -83,11 +83,13 @@ export const NavSection = styled.header`
 `;
 
 export const StyledMobileNav = styled.section`
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: #17171d;
+  z-index: 9999;
   animation: ${fadeDown} 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   .mobile-nav-container {
     display: flex;
