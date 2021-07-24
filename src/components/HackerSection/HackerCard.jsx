@@ -9,7 +9,6 @@ const Card = styled.div`
   ${tw`
       bg-background-darker
       h-auto
-      w-96
       rounded-2xl
     `}
 `;
@@ -48,10 +47,9 @@ const Button = styled.button`
 
 const CardCol = styled.div`
   ${tw`
+      w-full
       grid
-      grid-cols-1
-      lg:grid-cols-3
-      sm:grid-cols-2
+      grid-cols-track
       gap-7
     `}
 `;
@@ -59,15 +57,15 @@ const CardCol = styled.div`
 function HackerCard() {
   return (
     <CardCol>
-      {hackerConstants.map((object) => (
-        <Card key={object.id}>
-          <CardImage src={object.image} />
+      {hackerConstants.map(({ id, image, title, description, hasButton }) => (
+        <Card key={id}>
+          <CardImage src={image} alt={title} />
           <CardBody>
-            <Title>{object.title}</Title>
+            <Title>{title}</Title>
             <Description>
-              <Body>{object.description}</Body>
+              <Body>{description}</Body>
             </Description>
-            {object.hasButton && <Button>Register Now</Button>}
+            {hasButton && <Button>Register Now</Button>}
           </CardBody>
         </Card>
       ))}

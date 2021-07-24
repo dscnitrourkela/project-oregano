@@ -1,5 +1,5 @@
 import React from 'react';
-import { FAQ, Container, Tracks, Sponsors } from '../components';
+import { FAQ, Container, Tracks, Sponsors, BeAHacker } from '../components';
 
 const Homepage = () => (
   <Container>
@@ -8,5 +8,6 @@ const Homepage = () => (
     <Sponsors />
     <BeAHacker />
   </Container>
+);
 
 export default Homepage;
