@@ -64,6 +64,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ratnakar5938",
+      "name": "Ratnakar Sahoo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80893583?v=4",
+      "profile": "https://www.linkedin.com/in/ratnakar-sahoo-a78401135",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "irsayvid",
+      "name": "Divya Sri Darimisetti",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56034618?v=4",
+      "profile": "https://irsayvid.azurewebsites.net/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sambit-sankalp",
+      "name": "sambit-sankalp",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82284130?v=4",
+      "profile": "https://github.com/sambit-sankalp",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

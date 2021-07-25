@@ -1,0 +1,25 @@
+.TickerWrapper {
+    padding-left: 100%;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-200%, 0, 0);
+    }
+}
+
+.TickerMover {
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 15s;
+}
+
+.TickerMover:hover {
+    animation-play-state: paused;
+    /* Pause scroll on mouse hover */
+}

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const TracksData = [
   {
     id: 1,
@@ -9,7 +10,7 @@ const TracksData = [
   },
   {
     id: 2,
-    title: 'FUN AND ENTERTAINMENT',
+    title: 'Fun & Entertainment',
     image:
       'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/ibjbhwktcjhgurc7dvnk.png',
     description:

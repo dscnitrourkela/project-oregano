@@ -1,7 +1,7 @@
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -199,6 +199,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://riteshpatil.dev"><img src="https://avatars.githubusercontent.com/u/56112399?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ritesh Patil</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=riteshsp2000" title="Code">💻</a> <a href="https://github.com/dscnitrourkela/project-oregano/commits?author=riteshsp2000" title="Documentation">📖</a> <a href="#ideas-riteshsp2000" title="Ideas, Planning, & Feedback">🤔</a> <a href="#projectManagement-riteshsp2000" title="Project Management">📆</a> <a href="#maintenance-riteshsp2000" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/DesignrKnight"><img src="https://avatars.githubusercontent.com/u/27865704?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abel Mathew</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=DesignrKnight" title="Code">💻</a> <a href="#security-DesignrKnight" title="Security">🛡️</a> <a href="#infra-DesignrKnight" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/padmajabhol"><img src="https://avatars.githubusercontent.com/u/75530516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Padmaja Bhol</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=padmajabhol" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/ratnakar-sahoo-a78401135"><img src="https://avatars.githubusercontent.com/u/80893583?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ratnakar Sahoo</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=ratnakar5938" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://irsayvid.azurewebsites.net/"><img src="https://avatars.githubusercontent.com/u/56034618?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Divya Sri Darimisetti</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=irsayvid" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/82284130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sambit-sankalp</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=sambit-sankalp" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -1,13 +1,15 @@
 import React from 'react';
-import { Faq, Container, Tracks } from '../components';
+import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker, Layout } from '../components';
 
 const Homepage = () => (
-  <div>
+  <Layout>
+    <HeroSection />
     <Container>
-      <Faq />
       <Tracks />
+      <Sponsors />
+      <FAQ />
+      <BeAHacker />
     </Container>
-  </div>
+  </Layout>
 );
-
 export default Homepage;

@@ -29,7 +29,7 @@ const FaqContainer = styled.div`
 const Section = styled.div`
   ${tw`
         flex
-        lg:grid grid-cols-1
+        lg:grid grid-cols-1 
         gap-5
         mt-5
         text-white
@@ -56,7 +56,7 @@ const Img = styled.img`
 `;
 
 const Chat = styled.div`
-  ${tw`
+  ${tw` 
         ml-3
         flex
         w-2/3
