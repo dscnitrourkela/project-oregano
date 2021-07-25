@@ -40,6 +40,6 @@ const SponsorLogo = styled.div`
 
 export const SponsorIcon = ({ pic, alt }) => (
   <SponsorLogo>
-    <img src={`${pic}.png`} alt={alt} />
+    <img src={pic} alt={alt} />
   </SponsorLogo>
 );
