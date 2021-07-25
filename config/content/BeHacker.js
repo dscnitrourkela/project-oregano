@@ -18,7 +18,7 @@ export default {
       buttonLink: 'N/A',
     },
     {
-      id: 'beahacker-1',
+      id: 'beahacker-2',
       title: '2. Drink more coffee than necessary',
       content:
         'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque',
@@ -31,7 +31,7 @@ export default {
       buttonLink: 'N/a',
     },
     {
-      id: 'beahacker-1',
+      id: 'beahacker-3',
       title: '3. Register for HackNITR 3.0',
       content: 'This one the most important step of all!!!',
       img: {
