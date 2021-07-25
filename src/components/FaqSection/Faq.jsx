@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Contact from "../Contact/Contact";
+import Contact from "./Contact/Contact";
 
 // Components
 import { Body, Heading1, SectionContainer, Heading5 } from '..';
