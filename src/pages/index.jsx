@@ -7,7 +7,6 @@ const Homepage = () => (
       <Faq />
       <Tracks />
     </Container>
-
   </div>
 );
 
