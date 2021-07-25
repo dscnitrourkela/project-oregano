@@ -1,8 +1,8 @@
 import React from 'react';
-import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker } from '../components';
+import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker, Layout } from '../components';
 
 const Homepage = () => (
-  <div>
+  <Layout>
     <HeroSection />
     <Container>
       <Tracks />
@@ -10,7 +10,6 @@ const Homepage = () => (
       <FAQ />
       <BeAHacker />
     </Container>
-  </div>
+  </Layout>
 );
-
 export default Homepage;
