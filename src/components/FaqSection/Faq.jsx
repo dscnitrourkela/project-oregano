@@ -63,8 +63,7 @@ function Faq() {
       </Heading>
 
       <Section>
-        {[0, 1].map((number) => (
-          <FaqContainer key={number}>
+          <FaqContainer>
             <Bot>
               <Img alt={toyImg.alt} src={toyImg.src} />
               <Chat>
@@ -85,7 +84,7 @@ function Faq() {
               <img alt={HackNITR.alt} src={HackNITR.src} />
             </Ques>
           </FaqContainer>
-        ))}
+          
          <FaqContainer>
             <Contact />
          </FaqContainer>
