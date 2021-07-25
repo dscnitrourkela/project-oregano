@@ -14,7 +14,7 @@ import {
   Component,
   Component1,
   ErrorComponent,
-  Form, Error } from './styles';
+  Form, Error } from './Contactstyles';
 
 const FormSubmit = ({ submitForm, gmail }) => {
   const { handleChange, handleSubmit, values, errors, setErrors } = useForm(
