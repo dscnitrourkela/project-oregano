@@ -1,8 +1,18 @@
 import React from 'react';
-import { HeroSection, FAQ, Container, Tracks, Sponsors, BeAHacker, Layout } from '../components';
+import {
+  HeroSection,
+  FAQ,
+  Container,
+  Tracks,
+  Sponsors,
+  BeAHacker,
+  Layout,
+  SEO,
+} from '../components';
 
 const Homepage = () => (
   <Layout>
+    <SEO />
     <HeroSection />
     <Container>
       <Tracks />
