@@ -13,11 +13,11 @@ module.exports = {
   author: 'HackNITR', // Author for schemaORGJSONLD
   organization: 'HackNITR',
 
-  siteFBAppID: '475685360131848', // Facebook App ID
+  siteFBAppID: '100644471452393', // Facebook App ID
   userTwitter: '@hacknitr', // Twitter Username
   ogSiteName: 'HackNITR', // Facebook Site Name
   ogLanguage: 'en_UK',
-  googleAnalyticsID: 'UA-187973769-1',
+  googleAnalyticsID: 'G-6KYQ8YWG0J',
 
   // Manifest and Progress color
   themeColor: '#ffffff',
@@ -30,6 +30,6 @@ module.exports = {
   linkedin: 'https://www.linkedin.cn/company/hacknitr',
   facebook: 'https://facebook.com/hacknitr',
   instagram: 'https://instagram.com/hacknitr',
-  discord: '',
-  registerLink: '',
+  discord: 'https://discord.hacknitr.tech',
+  registerLink: 'https://register.hacknitr.tech',
 };
