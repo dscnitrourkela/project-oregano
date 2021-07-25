@@ -1,7 +1,7 @@
 import React from "react";
 import validate from "./Validate";
 import useForm from "./Form";
-import { 
+import {
   HeadText,
   Heading5,
   Gmail,
@@ -13,6 +13,7 @@ import {
   TextArea,
   Component,
   Component1,
+  ErrorComponent,
   Form, Error } from './ContactStyles';
 
 const FormSubmit = ({ submitForm, gmail }) => {
@@ -55,9 +56,11 @@ const FormSubmit = ({ submitForm, gmail }) => {
               }
             }}
           />
-          {errors.username && (
-            <Error>{errors.username}</Error>
-          )}
+          <ErrorComponent>
+            {errors.username && (
+              <Error>{errors.username}</Error>
+            )}
+          </ErrorComponent>
         </Username>
         <Email>
           <Heading5>Your Email</Heading5>
@@ -94,12 +97,13 @@ const FormSubmit = ({ submitForm, gmail }) => {
               }
             }}
             />
-            {errors.email && (
-            <Error>{errors.email}</Error>
-          )}
+          <ErrorComponent>
+              {errors.email && (
+              <Error>{errors.email}</Error>
+            )}
+          </ErrorComponent>
 
       </Email>
-
         <Message>
           <Heading5>Message</Heading5>
           <TextArea
@@ -125,9 +129,11 @@ const FormSubmit = ({ submitForm, gmail }) => {
               }
             }}
           />
-            {errors.text && (
-            <Error>{errors.text}</Error>
-          )}
+          <ErrorComponent>
+              {errors.text && (
+              <Error>{errors.text}</Error>
+            )}
+          </ErrorComponent>
 
         </Message>
         <Component>

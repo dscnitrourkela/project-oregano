@@ -1,19 +1,11 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-// export const Contact = styled.div`
-//   ${tw`
-//       bg-secondary
-//       p-6
-//       relative
-//       rounded-lg
-//     `}
-// `;
-
 export const Component1 = styled.div`
   ${tw`
       grid
       grid-rows-1
+      grid-cols-7
     `}
 `;
 
@@ -23,14 +15,14 @@ export const HeadText = styled.h3`
         text-3xl
         text-color-primary
         font-roboto
-        col-start-2
-        col-end-5
+        col-start-3
+        col-end-7
         mt-6
-
     `}
-    @media(max-width: 320px){
-      font-size:1.5rem;
-      padding-left:10px;
+    @media(max-width: 540px){
+      width:100vw;
+      padding-left: 5%;
+      display: block;
     }
 `;
 
@@ -40,66 +32,65 @@ export const Heading5 = styled.h6`
         text-base
         text-color-primary
         font-roboto
-        mt-3
+        mt-6
+        col-start-1
+        col-end-3
     `}
+
 `;
 
 export const Gmail = styled.img`
   ${tw`
        mt-4
-       ml-3
+       ml-4
+       col-start-1
+       col-end-2
     `}
 
     @media(max-width: 320px){
-      width:80%;
-      height:80%;
+      width:150%;
+      height:auto;
     }
 `;
 
 export const Form = styled.div`
   ${tw`
        pt-10
-       p-5
-       md: grid grid-cols-1 auto-cols-fr
+       p-4
+       md:grid grid-cols-1 auto-cols-max
     `}
 `;
 
 export const Username = styled.div`
   ${tw`
-      xl: grid grid-cols-3
+      xl: grid grid-cols-8
     `}
 
     @media(max-width: 540px){
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-row:3;
-      grid-gap: 10%;
+      width:80vw;
+      display: inline-block;
     }
 `;
 
 export const Email = styled.div`
   ${tw`
-       xl: grid grid-cols-3
+       xl: grid grid-cols-8
        mt-5
     `}
     @media(max-width: 540px){
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-row:3;
-      grid-gap: 10%;
+      width:80vw;
+      display: inline-block;
     }
 `;
 
 export const Message = styled.div`
   ${tw`
-       xl: grid grid-cols-3
+       xl: grid grid-cols-8
        mt-5
     `}
     @media(max-width: 540px){
-      display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      grid-row:3;
-      grid-gap: 6%;
+      width:80vw;
+      display: inline-block;
     }
 `;
 
@@ -112,7 +103,10 @@ export const FormFillup = styled.input`
       py-4 px-4
       text-color-primary
       outline-none
-      w-full col-span-2 relative
+      w-full
+      mt-2
+      col-start-4
+      col-end-9
     `}
 `;
 
@@ -121,13 +115,16 @@ export const TextArea = styled.textarea`
       bg-background-dark
       appearance-none
       border-none rounded w-full
-      py-2 px-4
+      py-3 px-4
+      w-full
       text-color-primary
       h-44
+      mt-2
       text-base
       outline-none
       font-roboto
-      col-span-2
+      col-start-4
+      col-end-9
     `}
 `;
 
@@ -135,30 +132,37 @@ export const SendButton = styled.button`
   ${tw`
       bg-background-dark
       appearance-none
-      p-4 px-9 rounded-full
+      p-4 px-12 rounded-full
       text-white
       text-base
       font-roboto
       cursor-pointer
       hover:bg-white
       hover:text-black
+      col-start-3
+      col-end-6
     `}
+    @media(max-width: 540px){
+      align-items:center;
+      width:60vw;
+    }
+    @media(max-width: 320px){
+      align-items:center;
+      width:70vw;
+    }
 `;
 
 export const Component = styled.div`
   ${tw`
-      p-5
-      w-full
-      ml-36
+      p-4
+      grid grid-cols-6
     `}
 
     @media(max-width: 540px){
-      margin-left: 10%;
-      margin-top:15%;
+      margin-right:60%;
     }
     @media(max-width: 320px){
-      margin-left: 0%;
-      margin-top:15%;
+      margin-left: -15%;
     }
 `;
 
@@ -172,6 +176,12 @@ export const Error = styled.p`
 
     @media(max-width: 548px){
       margin:0;
-      margin-bottom: 5%;
     }
+`;
+
+export const ErrorComponent = styled.div`
+  ${tw`
+       col-start-4
+       col-end-8
+    `}
 `;
