@@ -6,7 +6,9 @@ import tw from 'twin.macro';
 
 // Components
 import TickerItem from './TickerItem';
-import { IconsList } from './IconsList';
+
+// Assets
+import { hero } from '../../../config/content';
 import '../../styles/styles.css';
 
 const TickerContainer = styled.div`
@@ -34,7 +36,7 @@ function Ticker() {
     <TickerContainer className='TickerContainer'>
       <TickerWrapper className='TickerWrapper'>
         <TickerMover className='TickerMover'>
-          {IconsList.map((item) => (
+          {hero.ticker.map((item) => (
             <TickerItem key={item.id} source={item.src} alt={item.alt} />
           ))}
         </TickerMover>
