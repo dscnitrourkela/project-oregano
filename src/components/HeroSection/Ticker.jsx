@@ -1,9 +1,15 @@
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import '../../styles/styles.css';
+
+// Components
 import TickerItem from './TickerItem';
-import { IconsList } from './IconsList';
+
+// Assets
+import { hero } from '../../../config/content';
+import '../../styles/styles.css';
 
 const TickerContainer = styled.div`
   ${tw`
@@ -30,7 +36,7 @@ function Ticker() {
     <TickerContainer className='TickerContainer'>
       <TickerWrapper className='TickerWrapper'>
         <TickerMover className='TickerMover'>
-          {IconsList.map((item) => (
+          {hero.ticker.map((item) => (
             <TickerItem key={item.id} source={item.src} alt={item.alt} />
           ))}
         </TickerMover>

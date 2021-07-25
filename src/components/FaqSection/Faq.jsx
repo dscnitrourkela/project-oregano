@@ -14,7 +14,7 @@ import {
   Heading,
   Img,
   Sub,
-} from './Faq.components';
+} from './styles';
 import STAGE from './FaqData';
 
 function Faq() {

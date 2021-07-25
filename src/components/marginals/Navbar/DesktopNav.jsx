@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 
-import { NavSection, StyledHamburger, Logo } from './nav.styles';
-// eslint-disable-next-line import/no-useless-path-segments
-import { MenuContext, Container, Body } from '../../.';
-import { NavItems } from './NavItems';
+// Components
+import { NavSection, StyledHamburger, Logo } from './styles';
+import { MenuContext, Container, Body } from '../..';
+
+// Assets
+import { nav } from '../../../../config/content';
 
 function DesktopNav() {
   const menuContext = useContext(MenuContext);
@@ -15,31 +17,23 @@ function DesktopNav() {
       <Container>
         <nav className='navWrapper'>
           <div className='navLeft'>
-            <Logo
-              // eslint-disable-next-line max-len
-              src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png'
-              alt='Brand Logo'
-            />
+            <Logo src={nav.logo.src} alt={nav.logo.alt} />
           </div>
 
           <div className='navRight'>
             <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
 
             <ul className='navLinkList'>
-              {NavItems.map((navitem) => (
-                <li key={navitem.toLowerCase()} id={navitem.toLowerCase()} className='navLinkItem'>
-                  <Body className='navLink'>{navitem}</Body>
+              {nav.navItems.map(({ id, name }) => (
+                <li key={id} id={name.toLowerCase()} className='navLinkItem'>
+                  <Body className='navLink'>{name}</Body>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className='sponsor-sec'>
-            <Logo
-              // eslint-disable-next-line max-len
-              src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png'
-              alt='Brand Logo'
-            />
+            <Logo src={nav.logo.src} alt={nav.logo.alt} />
           </div>
         </nav>
       </Container>

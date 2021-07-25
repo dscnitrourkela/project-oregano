@@ -1,10 +1,16 @@
-/* eslint-disable max-len */
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
+// Components
 import { Container } from '../shared';
 import HeroContent from './HeroContent';
 import Ticker from './Ticker';
+
+// Assets
+import { hero } from '../../../config/content';
 
 const SectionContainer = styled.div`
   ${tw`
@@ -53,10 +59,7 @@ function HeroSection() {
         <HeroContainer>
           <HeroContent />
           <HeroImageContainer>
-            <HeroImage
-              src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hwt5qvsejm6kjka0aon1.png'
-              alt='hero image'
-            />
+            <HeroImage src={hero.img.src} alt={hero.img.alt} />
           </HeroImageContainer>
         </HeroContainer>
       </Container>
