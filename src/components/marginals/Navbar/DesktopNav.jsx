@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 
-import { NavSection, StyledHamburger, Logo } from './nav.styles';
-// eslint-disable-next-line import/no-useless-path-segments
-import { MenuContext, Container, Body } from '../../.';
-import { NavItems } from './NavItems';
+import { NavSection, StyledHamburger, Logo } from './styles';
+import { MenuContext, Container, Body } from '../..';
+import { NavItems } from './navbarItems';
 
 function DesktopNav() {
   const menuContext = useContext(MenuContext);

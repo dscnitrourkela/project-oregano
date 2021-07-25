@@ -1,9 +1,13 @@
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import '../../styles/styles.css';
+
+// Components
 import TickerItem from './TickerItem';
 import { IconsList } from './IconsList';
+import '../../styles/styles.css';
 
 const TickerContainer = styled.div`
   ${tw`

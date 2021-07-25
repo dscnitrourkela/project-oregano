@@ -1,7 +1,11 @@
 /* eslint-disable max-len */
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
+// Components
 import { Container } from '../shared';
 import HeroContent from './HeroContent';
 import Ticker from './Ticker';

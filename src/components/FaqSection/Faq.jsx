@@ -1,4 +1,7 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
+
+// Components
 import { Body, Heading1, SectionContainer, Heading5 } from '..';
 import {
   List,
@@ -12,8 +15,10 @@ import {
   Heading,
   Img,
   Sub,
-} from './Faq.components';
-import STAGE from './FaqData';
+} from './styles';
+
+// Assets
+import STAGE from './data';
 
 function Faq() {
   const [stage, setStage] = useState();
@@ -45,6 +50,7 @@ function Faq() {
         return 'Hi there! I am Noni. How may I help you?';
     }
   };
+
   return (
     <SectionContainer>
       <Heading>
@@ -57,64 +63,37 @@ function Faq() {
           </Body>
         </Sub>
       </Heading>
-      <Section>
-        <FaqContainer>
-          <Bot>
-            <Img
-              alt='Toy'
-              src='https://res.cloudinary.com/dalqfvowk/image/
-upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
-            />
-            <Chat>
-              <Heading5>{renderFaq()}</Heading5>
-            </Chat>
-          </Bot>
-          <Ques>
-            <Ul>
-              <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
-              <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
-              <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
-              <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
-              <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
-              <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
-              <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
-            </Ul>
-            <img
-              alt='Logo'
-              src='https://res.cloudinary.com/dalqfvowk/image/
-upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
-            />
-          </Ques>
-        </FaqContainer>
 
-        <FaqContainer>
-          <Bot>
-            <Img
-              alt='Toy'
-              src='https://res.cloudinary.com/dalqf
-vowk/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
-            />
-            <Chat>
-              <Heading5>{renderFaq()}</Heading5>
-            </Chat>
-          </Bot>
-          <Ques>
-            <Ul>
-              <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
-              <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
-              <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
-              <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
-              <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
-              <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
-              <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
-            </Ul>
-            <img
-              alt='Logo'
-              src='https://res.cloudinary.com/dalqfvowk/imag
-e/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
-            />
-          </Ques>
-        </FaqContainer>
+      <Section>
+        {[0, 1].map((number) => (
+          <FaqContainer key={number}>
+            <Bot>
+              <Img
+                alt='Toy'
+                src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
+              />
+              <Chat>
+                <Heading5>{renderFaq()}</Heading5>
+              </Chat>
+            </Bot>
+
+            <Ques>
+              <Ul>
+                <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
+                <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
+                <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
+                <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
+                <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
+                <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
+                <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
+              </Ul>
+              <img
+                alt='Logo'
+                src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
+              />
+            </Ques>
+          </FaqContainer>
+        ))}
       </Section>
     </SectionContainer>
   );
