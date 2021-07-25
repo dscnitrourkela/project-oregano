@@ -1,7 +1,11 @@
 import React from 'react';
-import { Tracks2, Head, Head2, Text, Tracks1, Cards } from './Tracks.components';
+
+// Components
+import { Tracks2, Head, Head2, Text, Tracks1, Cards } from './styles';
 import { Body, Heading4 } from '..';
-import TracksData from './TracksData';
+
+// Assets
+import TracksData from './data';
 
 export default function Card() {
   return (

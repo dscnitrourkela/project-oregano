@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heading1, Heading2, SectionContainer } from '..';
-import { SponsorContainer, HeadingSection, HeadText, SponsorIcon } from './Sponsors.components';
-import { AlphaSponsorList, BetaSponsorList, GammaSponsorList } from './SponserImg';
+import { SponsorContainer, HeadingSection, HeadText, SponsorIcon } from './styles';
+import { AlphaSponsorList, BetaSponsorList, GammaSponsorList } from './data';
 
 function Sponsor() {
   return (

@@ -1,9 +1,13 @@
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
+// Components
 import Title from '../shared/Typography/Heading4';
 import Body from '../shared/Typography/Body';
-import { hackerConstants } from './hackerConstants';
+import { hackerConstants } from './data';
 
 const Card = styled.div`
   ${tw`
@@ -54,23 +58,21 @@ const CardCol = styled.div`
     `}
 `;
 
-function HackerCard() {
-  return (
-    <CardCol>
-      {hackerConstants.map(({ id, image, title, description, hasButton }) => (
-        <Card key={id}>
-          <CardImage src={image} alt={title} />
-          <CardBody>
-            <Title>{title}</Title>
-            <Description>
-              <Body>{description}</Body>
-            </Description>
-            {hasButton && <Button>Register Now</Button>}
-          </CardBody>
-        </Card>
-      ))}
-    </CardCol>
-  );
-}
+const HackerCard = () => (
+  <CardCol>
+    {hackerConstants.map(({ id, image, title, description, hasButton }) => (
+      <Card key={id}>
+        <CardImage src={image} alt={title} />
+        <CardBody>
+          <Title>{title}</Title>
+          <Description>
+            <Body>{description}</Body>
+          </Description>
+          {hasButton && <Button>Register Now</Button>}
+        </CardBody>
+      </Card>
+    ))}
+  </CardCol>
+);
 
 export default HackerCard;

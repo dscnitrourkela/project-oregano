@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { StyledMobileNav } from './nav.styles';
+import { StyledMobileNav } from './styles';
 // eslint-disable-next-line import/no-useless-path-segments
 import { Body } from '../../.';
-import { NavItems } from './NavItems';
+import { NavItems } from './navbarItems';
 
 function MobileNav() {
   return (
