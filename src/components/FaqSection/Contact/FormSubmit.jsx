@@ -1,7 +1,6 @@
 import React from "react";
 import validate from "./Validate";
 import useForm from "./Form";
-import { Container } from '../../shared/index.js';
 import { Contact,
   HeadText,
   Heading5,

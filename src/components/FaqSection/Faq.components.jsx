@@ -34,6 +34,10 @@ const Section = styled.div`
         mt-5
         text-white
     `}
+    @media(max-width: 100vw){
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 `;
 
 const Bot = styled.div`

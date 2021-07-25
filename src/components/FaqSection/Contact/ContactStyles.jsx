@@ -4,8 +4,8 @@ import tw from 'twin.macro';
 export const Contact = styled.div`
   ${tw`
       bg-secondary
-      relative
       p-6
+      relative
       rounded-lg
     `}
 `;
@@ -19,6 +19,7 @@ export const HeadText = styled.h3`
         col-start-2
         col-end-5
         mt-6
+
     `}
     @media(max-width: 320px){
       font-size:1.5rem;
@@ -111,7 +112,7 @@ export const FormFillup = styled.input`
       py-4 px-4
       text-color-primary
       outline-none
-      w-full col-span-2
+      w-full col-span-2 relative
     `}
 `;
 
@@ -165,8 +166,7 @@ export const Error = styled.p`
   ${tw`
       text-red-500
       text-sm
-      ml-44
-      w-2/3
+      w-full
       font-roboto
     `}
 
