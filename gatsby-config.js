@@ -27,7 +27,7 @@ module.exports = {
     },
     social: {
       twitter: config.twitterHandle,
-      fbAppID: '',
+      fbAppID: config.siteFBAppID,
     },
   },
   plugins: [
