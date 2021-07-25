@@ -1,12 +1,19 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const Contact = styled.div`
+// export const Contact = styled.div`
+//   ${tw`
+//       bg-secondary
+//       p-6
+//       relative
+//       rounded-lg
+//     `}
+// `;
+
+export const Component1 = styled.div`
   ${tw`
-      bg-secondary
-      p-6
-      relative
-      rounded-lg
+      grid
+      grid-rows-1
     `}
 `;
 
@@ -47,13 +54,6 @@ export const Gmail = styled.img`
       width:80%;
       height:80%;
     }
-`;
-
-export const Component1 = styled.div`
-  ${tw`
-      grid
-      grid-rows-1
-    `}
 `;
 
 export const Form = styled.div`

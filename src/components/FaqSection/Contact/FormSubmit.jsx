@@ -1,7 +1,7 @@
 import React from "react";
 import validate from "./Validate";
 import useForm from "./Form";
-import { Contact,
+import { 
   HeadText,
   Heading5,
   Gmail,
@@ -22,7 +22,7 @@ const FormSubmit = ({ submitForm, gmail }) => {
   );
 
   return (
-    <Contact>
+    <>
         <Component1>
           <Gmail src={`${gmail}.png`} alt="gmail" />
           <HeadText>Drop us a mail</HeadText>
@@ -137,7 +137,7 @@ const FormSubmit = ({ submitForm, gmail }) => {
         </Component>
       </form>
      </Form>
-  </Contact>
+  </>
   );
 };
 

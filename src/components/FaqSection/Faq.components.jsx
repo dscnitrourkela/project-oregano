@@ -28,16 +28,13 @@ const FaqContainer = styled.div`
 
 const Section = styled.div`
   ${tw`
-        flex
-        lg:grid grid-cols-1 
-        gap-5
-        mt-5
-        text-white
+      flex
+      lg:grid grid-cols-1
+      gap-5
+      mt-5
+      text-white
     `}
-    @media(max-width: 100vw){
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
+
 `;
 
 const Bot = styled.div`
@@ -56,7 +53,7 @@ const Img = styled.img`
 `;
 
 const Chat = styled.div`
-  ${tw` 
+  ${tw`
         ml-3
         flex
         w-2/3
