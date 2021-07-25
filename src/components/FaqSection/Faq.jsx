@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { useState } from 'react';
 
 // Components
@@ -18,34 +17,36 @@ import {
 } from './styles';
 
 // Assets
-import STAGE from './data';
+import { faq } from '../../../config/content';
 
 function Faq() {
   const [stage, setStage] = useState();
-  const setStageToQuesa = () => setStage(STAGE.QUESA);
-  const setStageToQuesb = () => setStage(STAGE.QUESB);
-  const setStageToQuesc = () => setStage(STAGE.QUESC);
-  const setStageToQuesd = () => setStage(STAGE.QUESD);
-  const setStageToQuese = () => setStage(STAGE.QUESE);
-  const setStageToQuesf = () => setStage(STAGE.QUESF);
-  const setStageToQuesg = () => setStage(STAGE.QUESG);
+  const { questions, title, content, toyImg, HackNITR } = faq;
+
+  const setStageToQuesa = () => setStage(questions.one.question);
+  const setStageToQuesb = () => setStage(questions.two.question);
+  const setStageToQuesc = () => setStage(questions.three.question);
+  const setStageToQuesd = () => setStage(questions.four.question);
+  const setStageToQuese = () => setStage(questions.five.question);
+  const setStageToQuesf = () => setStage(questions.six.question);
+  const setStageToQuesg = () => setStage(questions.seven.question);
 
   const renderFaq = () => {
     switch (stage) {
-      case STAGE.QUESA:
-        return STAGE.ANSA;
-      case STAGE.QUESB:
-        return STAGE.ANSB;
-      case STAGE.QUESC:
-        return STAGE.ANSC;
-      case STAGE.QUESD:
-        return STAGE.ANSD;
-      case STAGE.QUESE:
-        return STAGE.ANSE;
-      case STAGE.QUESF:
-        return STAGE.ANSF;
-      case STAGE.QUESG:
-        return STAGE.ANSG;
+      case questions.one.question:
+        return questions.one.answer;
+      case questions.two.question:
+        return questions.two.answer;
+      case questions.three.question:
+        return questions.three.answer;
+      case questions.four.question:
+        return questions.four.answer;
+      case questions.five.question:
+        return questions.five.answer;
+      case questions.six.question:
+        return questions.six.answer;
+      case questions.seven.question:
+        return questions.seven.answer;
       default:
         return 'Hi there! I am Noni. How may I help you?';
     }
@@ -54,13 +55,9 @@ function Faq() {
   return (
     <SectionContainer>
       <Heading>
-        <Heading1>Have a question?</Heading1>
+        <Heading1>{title}</Heading1>
         <Sub>
-          <Body>
-            Vel lobortis porttitor eget dignissim. Facilisi euismod nullam nunc quisque egestas
-            ridiculus sociis. Mi, aliquam, in turpis non cras diam elementum morbi . Blandit
-            integer.
-          </Body>
+          <Body>{content}</Body>
         </Sub>
       </Heading>
 
@@ -68,10 +65,7 @@ function Faq() {
         {[0, 1].map((number) => (
           <FaqContainer key={number}>
             <Bot>
-              <Img
-                alt='Toy'
-                src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png'
-              />
+              <Img alt={toyImg.alt} src={toyImg.src} />
               <Chat>
                 <Heading5>{renderFaq()}</Heading5>
               </Chat>
@@ -79,18 +73,15 @@ function Faq() {
 
             <Ques>
               <Ul>
-                <List onClick={setStageToQuesa}>{STAGE.QUESA}</List>
-                <List onClick={setStageToQuesb}>{STAGE.QUESB}</List>
-                <List onClick={setStageToQuesc}>{STAGE.QUESC}</List>
-                <List onClick={setStageToQuesd}>{STAGE.QUESD}</List>
-                <List onClick={setStageToQuese}>{STAGE.QUESE}</List>
-                <List onClick={setStageToQuesf}>{STAGE.QUESF}</List>
-                <List1 onClick={setStageToQuesg}>{STAGE.QUESG}</List1>
+                <List onClick={setStageToQuesa}>{questions.one.question}</List>
+                <List onClick={setStageToQuesb}>{questions.two.question}</List>
+                <List onClick={setStageToQuesc}>{questions.three.question}</List>
+                <List onClick={setStageToQuesd}>{questions.four.question}</List>
+                <List onClick={setStageToQuese}>{questions.five.question}</List>
+                <List onClick={setStageToQuesf}>{questions.six.question}</List>
+                <List1 onClick={setStageToQuesg}>{questions.seven.question}</List1>
               </Ul>
-              <img
-                alt='Logo'
-                src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png'
-              />
+              <img alt={HackNITR.alt} src={HackNITR.src} />
             </Ques>
           </FaqContainer>
         ))}

@@ -7,7 +7,9 @@ import tw from 'twin.macro';
 // Components
 import Title from '../shared/Typography/Heading4';
 import Body from '../shared/Typography/Body';
-import { hackerConstants } from './data';
+
+// Assets
+import { hacker } from '../../../config/content';
 
 const Card = styled.div`
   ${tw`
@@ -60,15 +62,15 @@ const CardCol = styled.div`
 
 const HackerCard = () => (
   <CardCol>
-    {hackerConstants.map(({ id, image, title, description, hasButton }) => (
+    {hacker.cards.map(({ id, title, content, img, hasButton, buttonText }) => (
       <Card key={id}>
-        <CardImage src={image} alt={title} />
+        <CardImage src={img.src} alt={img.alt} />
         <CardBody>
           <Title>{title}</Title>
           <Description>
-            <Body>{description}</Body>
+            <Body>{content}</Body>
           </Description>
-          {hasButton && <Button>Register Now</Button>}
+          {hasButton && <Button>{buttonText}</Button>}
         </CardBody>
       </Card>
     ))}

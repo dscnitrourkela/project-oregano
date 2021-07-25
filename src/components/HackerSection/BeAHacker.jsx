@@ -10,6 +10,9 @@ import Heading from '../shared/Typography/Heading2';
 import Body from '../shared/Typography/Body';
 import HackerCard from './HackerCard';
 
+// Assets
+import { hacker } from '../../../config/content';
+
 const HackerItems = styled.div`
   ${tw`
       py-5
@@ -17,21 +20,18 @@ const HackerItems = styled.div`
     `}
 `;
 
-const Description = styled.div`
+const SmallBody = styled(Body)`
   ${tw`
-      py-1
-    `}
+    w-3/6
+    mt-2
+  `}
 `;
 
 const BeAHacker = () => (
   <SectionContainer>
     <HackerItems>
-      <Heading>How to be a hacker?</Heading>
-      <Description>
-        <Body>We have prepared a list of simple steps one needs to follow to become</Body>
-        <Body>true hacker. The person who attains all these abilities will yield the power</Body>
-        <Body>a to hack anything.</Body>
-      </Description>
+      <Heading>{hacker.title}</Heading>
+      <SmallBody>{hacker.content}</SmallBody>
     </HackerItems>
 
     <HackerCard />

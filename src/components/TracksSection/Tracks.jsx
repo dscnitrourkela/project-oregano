@@ -5,16 +5,16 @@ import { Body, Heading1, SectionContainer } from '..';
 import { Heading, Sub } from './styles';
 import Card from './Card';
 
+// Assets
+import { tracks } from '../../../config/content';
+
 function Tracks() {
   return (
     <SectionContainer>
       <Heading>
-        <Heading1>Tracks</Heading1>
+        <Heading1>{tracks.title}</Heading1>
         <Sub>
-          <Body>
-            Mattis suscipit dignissim libero, neque, diam, sed. Cursus nibh non sit nulla. Quam
-            venenatis, imperdiet sed vulputate fames nibh. Natoque lectus neque vitae at.
-          </Body>
+          <Body>{tracks.content}</Body>
         </Sub>
       </Heading>
       <Card />

@@ -1,50 +1,55 @@
 import React from 'react';
+
+// Components
 import { Heading1, Heading2, SectionContainer } from '..';
 import { SponsorContainer, HeadingSection, HeadText, SponsorIcon } from './styles';
-import { AlphaSponsorList, BetaSponsorList, GammaSponsorList } from './data';
+
+// Assets
+import { sponsors } from '../../../config/content';
 
 function Sponsor() {
+  const sponsorDetails = [
+    {
+      title: 'Alpha Sponsors',
+      sponsors: sponsors.alpha,
+    },
+    {
+      title: 'Beta Sponsors',
+      sponsors: sponsors.alpha,
+    },
+    {
+      title: 'Gamma Sponsors',
+      sponsors: sponsors.alpha,
+    },
+    {
+      title: 'Delta Sponsors',
+      sponsors: sponsors.alpha,
+    },
+  ];
+
   return (
     <SectionContainer>
       <HeadingSection>
-        <Heading1>Our Awesome Sponsors</Heading1>
+        <Heading1>{sponsors.title}</Heading1>
 
         <HeadText>
-          Vel lobortis porttitor eget dignissim. Facilisi euismod nullam nunc quisque egestas Want
-          to join the HackNITR family?
+          {sponsors.content}
           <a href='/'> Sponsor Us</a>
         </HeadText>
       </HeadingSection>
 
-      <HeadingSection>
-        <Heading2>Alpha Sponsors</Heading2>
-      </HeadingSection>
-
-      <SponsorContainer>
-        {AlphaSponsorList.map(({ src, alt }) => (
-          <SponsorIcon key={alt} pic={src} alt={alt} />
-        ))}
-      </SponsorContainer>
-
-      <HeadingSection>
-        <Heading2>Beta Sponsors</Heading2>
-      </HeadingSection>
-
-      <SponsorContainer>
-        {BetaSponsorList.map(({ src, alt }) => (
-          <SponsorIcon key={alt} pic={src} alt={alt} />
-        ))}
-      </SponsorContainer>
-
-      <HeadingSection>
-        <Heading2>Gamma Sponsors</Heading2>
-      </HeadingSection>
-
-      <SponsorContainer>
-        {GammaSponsorList.map(({ src, alt }) => (
-          <SponsorIcon key={alt} pic={src} alt={alt} />
-        ))}
-      </SponsorContainer>
+      {sponsorDetails.map((details) => (
+        <>
+          <HeadingSection>
+            <Heading2>{details.title}</Heading2>
+          </HeadingSection>
+          <SponsorContainer>
+            {details.sponsors.map(({ src, alt }) => (
+              <SponsorIcon key={alt} pic={src} alt={alt} />
+            ))}
+          </SponsorContainer>
+        </>
+      ))}
     </SectionContainer>
   );
 }
