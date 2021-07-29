@@ -10,3 +10,7 @@ export { default as Body } from './Typography/Body';
 export { default as HighlightBody } from './Typography/HighlightBody';
 export { default as Button } from './Button';
 export { default as Layout } from './Layout';
+
+// SEO Components
+export { default as SEO } from './SEO/SEO';
+export { default as SchemaOrg } from './SEO/SchemaOrg';

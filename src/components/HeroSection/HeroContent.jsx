@@ -1,7 +1,14 @@
 import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
+
+// Components
 import { Heading1, Body, HighlightBody, Button } from '../shared';
+
+// Assets
+import { hero } from '../../../config/content';
 
 const ContentContainer = styled.div`
   ${tw`
@@ -64,13 +71,9 @@ const InlineWrapper = styled.div`
 function HeroContent() {
   return (
     <ContentContainer>
-      <TimeLine>20th to 31st October 2021</TimeLine>
-      <TagLine> Hack to make this world a better place.</TagLine>
-      <Description>
-        Molestie diam eget enim, ac dui lectus cursus. Condimentum ac ut vitae praesent. Morbi eget
-        mauris arcu ultrices. Arcu, feugiat egestas sit fames tortor, rhoncus ut. Gravida et blandit
-        vulputate sapien. In quis vitae vestibulum at sit mauris tortor nulla molestie.
-      </Description>
+      <TimeLine>{hero.dates}</TimeLine>
+      <TagLine>{hero.title}</TagLine>
+      <Description>{hero.content}</Description>
       <InlineWrapper>
         <RegisterBtn>Register Now!</RegisterBtn>
         <DiscordBtn>Join Discord</DiscordBtn>

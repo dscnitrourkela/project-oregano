@@ -1,18 +1,19 @@
 import React from 'react';
-
 import {
   HeroSection,
   FAQ,
-  Footer,
   Container,
   Tracks,
   Sponsors,
   BeAHacker,
   Layout,
+  SEO,
+  Footer,
 } from '../components';
 
 const Homepage = () => (
   <Layout>
+    <SEO />
     <HeroSection />
     <Container>
       <Tracks />
