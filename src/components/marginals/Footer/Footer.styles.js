@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+const FooterContainer = styled.div`
+  ${tw`
+    w-full  
+    bg-secondary
+`}
+`;
+
 const Grid = styled.div`
   ${tw`
     grid 
@@ -13,10 +20,9 @@ const Grid = styled.div`
 
 const SectionLogo = styled.div`
   ${tw`
-  col-start-2
+  col-start-1
   text-white
   col-span-3
-  mid:col-start-1
   text-left
   md:hidden
   grid
@@ -48,12 +54,9 @@ const SectionLogoText = styled.div`
 
 const SectionIcon = styled.div`
   ${tw`
-  col-start-8
+  col-start-9
   col-span-4
-  mid:col-start-8
-  mid:col-span-5
   text-color-secondary
-  
   md:col-start-1
   md:col-span-12
   my-auto
@@ -64,7 +67,7 @@ const SectionIcon = styled.div`
 
 const SectionIcons = styled.div`
   ${tw`
-  text-white
+  text-color-secondary
   text-right
   md:text-center
   grid
@@ -75,7 +78,6 @@ const SectionIcons = styled.div`
 
 const SectionIconText = styled.div`
   ${tw`
-  text-white
   text-right
   md:text-left
   md:m-2
@@ -84,38 +86,24 @@ const SectionIconText = styled.div`
 
 const SectionCard1 = styled.div`
   ${tw`
-  col-start-2
-  col-span-4
-  md:col-span-12
-  mid:col-start-1
-  row-span-2
-  md:row-span-1
-  m-4
-  my-auto
+  w-full
+  col-span-12
   mx-auto
-`}
-`;
-
-const SectionCard2 = styled.div`
-  ${tw`
-  md:col-start-1
-  col-start-7
-  col-span-6
-  lg:col-start-7
-  md:col-span-12
-  row-span-2
-  md:row-span-1
-  m-4
   my-auto
-  mx-auto
-`}
+  grid
+  grid-cols-footer
+  gap-7
+  place-items-center
+  lg:justify-center
+  my-4
+  md:my-0
+  `}
 `;
 
 const SectionText = styled.div`
   ${tw`
-  col-start-2 
+  col-start-1 
   col-span-5
-  mid:col-start-1
   row-span-1 
   text-color-secondary 
   lg:col-span-12
@@ -129,10 +117,8 @@ const SectionText = styled.div`
 
 const SectionOrganiser = styled.div`
   ${tw`
-  col-start-7
-  md:col-start-1
+  col-start-8
   col-span-5
-  lg:col-span-5  
   lg:col-span-12
   md:mx-auto
   my-auto
@@ -140,7 +126,6 @@ const SectionOrganiser = styled.div`
   grid
   gap-4
   grid-flow-col-dense
-  grid
   sm:grid-rows-2
   sm:grid-cols-2
   justify-items-center
@@ -150,6 +135,7 @@ const SectionOrganiser = styled.div`
 `;
 
 export {
+  FooterContainer,
   Grid,
   SectionLogo,
   SectionLogoImg,
@@ -160,57 +146,51 @@ export {
   SectionText,
   SectionOrganiser,
   SectionCard1,
-  SectionCard2,
 };
 
-const FooterCardContainer = styled.div`
+const FooterCards = styled.div`
+  ${tw`
+  w-full
+  h-auto
+  rounded-xl
+  mx-auto
+`}
+`;
+
+const CardContainer = styled.div`
   ${tw`
   grid
-  grid-cols-21 
-  lg:w-315 
-  md:w-420
-  xl:w-360
-  w-420 
   bg-black 
-  p-4 
-  pb-4
+  py-4
+  grid-flow-col
   rounded-xl
-  sm:w-315
-  mobile:w-270
-  my-4
+  auto-cols-auto
 `}
 `;
 
 const FooterCardImg = styled.div`
   ${tw`
-  col-start-2
-  col-span-3
-  pr-4
-  mobile:col-start-1
+  px-4
+  justify-center
 `}
 `;
 
 const FooterCardText = styled.div`
   ${tw`
   px-2 
-  text-white 
-  col-start-6 
-  col-span-15
-  lg:col-start-7
-  mobile:col-start-6
   `}
 `;
 
 const FooterCardTextSmall = styled.div`
   ${tw`
-  text-color-secondary
-  lg:text-sm
+  font-normal
   text-base
-  md:text-base
   sm:text-sm
+  text-color-secondary
   font-roboto
+  justify-center
   my-4
   `}
 `;
 
-export { FooterCardContainer, FooterCardText, FooterCardImg, FooterCardTextSmall };
+export { FooterCards, CardContainer, FooterCardText, FooterCardImg, FooterCardTextSmall };

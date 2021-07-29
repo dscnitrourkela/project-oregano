@@ -1,5 +1,13 @@
 /* eslint-disable max-len */
-const OrganiserData = [
+import {
+  faTwitterSquare,
+  faInstagram,
+  faLinkedin,
+  faGithubSquare,
+  faDiscord,
+} from '@fortawesome/free-brands-svg-icons';
+
+export const OrganiserData = [
   {
     id: 1,
     link: 'https://dscnitrourkela.org/team.html',
@@ -26,4 +34,25 @@ const OrganiserData = [
   },
 ];
 
-export default OrganiserData;
+export const SocialLogos = [
+  {
+    icon: faInstagram,
+    link: 'https://www.instagram.com/hacknitr/',
+  },
+  {
+    icon: faLinkedin,
+    link: 'https://www.linkedin.com/company/hacknitr/',
+  },
+  {
+    icon: faDiscord,
+    link: 'https://www.facebook.com/hacknitr/',
+  },
+  {
+    icon: faGithubSquare,
+    link: 'https://github.com/dscnitrourkela/project-oregano',
+  },
+  {
+    icon: faTwitterSquare,
+    link: 'https://twitter.com/hacknitr',
+  },
+];
