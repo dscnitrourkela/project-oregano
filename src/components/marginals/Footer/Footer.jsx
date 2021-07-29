@@ -53,7 +53,7 @@ function Footer() {
           <div style={{ width: '100%' }}>
             <IconContainer>
               {footer.socials.map(({ icon, link }) => (
-                <a key={icon} href={link} target='_blank' rel='noreferrer'>
+                <a key={link} href={link} target='_blank' rel='noreferrer'>
                   <FontAwesomeIcon
                     style={{ marginLeft: 20 }}
                     icon={icon}
@@ -79,8 +79,8 @@ function Footer() {
           <Body>Lorem ipsum dolor sit amet consectetur adipisicing.</Body>
 
           <LogoContainer>
-            {footer.organisers.map(({ id, link, image, span }) => (
-              <LogoImgLink span={span} key={id} to={link} target='_blank'>
+            {footer.organisers.map(({ id, link, image }) => (
+              <LogoImgLink key={id} to={link} target='_blank'>
                 <img src={image.src} alt={image.alt} />
               </LogoImgLink>
             ))}

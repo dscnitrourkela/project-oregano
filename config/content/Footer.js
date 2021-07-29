@@ -29,7 +29,7 @@ export default {
     {
       title: 'About Diamond Jubilee',
       text: 'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.',
-      id: 'footer-card-1',
+      id: 'footer-card-2',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png',
         alt: 'Diamond Jubilee NIT Rourkela',
