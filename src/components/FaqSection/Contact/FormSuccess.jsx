@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import styled from 'styled-components';
-import tw from 'twin.macro';
+import React from 'react';
 
 function FormSuccess() {
-  return(
+  return (
     <div>
       <h3>This form has been sucessfully submitted</h3>
     </div>
-  )
+  );
 }
 
 export default FormSuccess;

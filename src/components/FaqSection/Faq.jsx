@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Contact from "./Contact/Contact";
 
 // Components
 import { Body, Heading1, SectionContainer, Heading5 } from '..';
@@ -63,7 +62,8 @@ function Faq() {
       </Heading>
 
       <Section>
-          <FaqContainer>
+        {[0, 1].map((number) => (
+          <FaqContainer key={number}>
             <Bot>
               <Img alt={toyImg.alt} src={toyImg.src} />
               <Chat>
@@ -84,10 +84,7 @@ function Faq() {
               <img alt={HackNITR.alt} src={HackNITR.src} />
             </Ques>
           </FaqContainer>
-          
-         <FaqContainer>
-            <Contact />
-         </FaqContainer>
+        ))}
       </Section>
     </SectionContainer>
   );

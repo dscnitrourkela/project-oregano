@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useForm = (callback, validate) => {
   const [values, setValues] = useState({
-    username: "",
-    email: "",
-    text: ""
+    username: '',
+    email: '',
+    text: '',
   });
   const [errors, setErrors] = useState([]);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -13,7 +13,7 @@ const useForm = (callback, validate) => {
     const { name, value } = e.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -28,7 +28,7 @@ const useForm = (callback, validate) => {
     if (Object.keys(errors).length === 0 && isSubmitted) {
       callback();
     }
-  }, [errors]);
+  }, [callback, errors, isSubmitted]);
 
   return { handleChange, handleSubmit, values, errors, setErrors };
 };

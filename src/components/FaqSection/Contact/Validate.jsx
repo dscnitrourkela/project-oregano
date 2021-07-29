@@ -1,19 +1,19 @@
 export default function validate(values) {
-  let errors = {};
-  let setErrors = {};
+  const errors = {};
+  const setErrors = {};
 
   if (!values.username.trim()) {
-    errors.username = "Username required";
+    errors.username = 'Username required';
   }
 
   if (!values.email) {
-    errors.email = "Email required";
+    errors.email = 'Email required';
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-    errors.email = "Email address is invalid";
+    errors.email = 'Email address is invalid';
   }
 
   if (!values.text.trim()) {
-    errors.text = "Message required";
+    errors.text = 'Message required';
   }
 
   return { errors, setErrors };
