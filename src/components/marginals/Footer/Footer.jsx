@@ -23,11 +23,11 @@ import {
   IconContainer,
   LogoContainer,
 } from './styles';
-
-// import Heading4 from '../../shared/Typography/Heading4';
 import FooterCard from './FooterCard';
-import { OrganiserData, SocialLogos } from './Data';
 import { Container, Body } from '../../shared';
+
+// Assets
+import { footer } from '../../../../config/content';
 
 library.add(faInstagram, faTwitterSquare, faDiscord, faLinkedin, faGithubSquare);
 
@@ -48,14 +48,11 @@ function Footer() {
     <FooterContainer>
       <Container>
         <SecondaryContainer>
-          <Logo
-            src='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png'
-            alt='HackNITR Logo'
-          />
+          <Logo src={footer.hacknitr.img} alt={footer.hacknitr.alt} />
 
           <div style={{ width: '100%' }}>
             <IconContainer>
-              {SocialLogos.map(({ icon, link }) => (
+              {footer.socials.map(({ icon, link }) => (
                 <a key={icon} href={link} target='_blank' rel='noreferrer'>
                   <FontAwesomeIcon
                     style={{ marginLeft: 20 }}
@@ -66,23 +63,15 @@ function Footer() {
                 </a>
               ))}
             </IconContainer>
-            <NewBody>Sit mi, porttitor sapien, morbi id. Arcu,</NewBody>
-            <NewBody> nibh In nec pulvinar praesen</NewBody>
+            <NewBody>{footer.icons.content1}</NewBody>
+            <NewBody>{footer.icons.content2}</NewBody>
           </div>
         </SecondaryContainer>
 
         <Grid>
-          <FooterCard
-            img='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/j1hylhwi5lv6kyaksvbj.png'
-            Title='About NIT Rourkela'
-            Text='Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis
-           ac nec. In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.'
-          />
-          <FooterCard
-            img='https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png'
-            Title='About Diamond Jubilee'
-            Text='Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.'
-          />
+          {footer.cards.map(({ title, text, id, img }) => (
+            <FooterCard key={id} img={img.src} Title={title} Text={text} />
+          ))}
           <EmptyDiv />
         </Grid>
 
@@ -90,9 +79,9 @@ function Footer() {
           <Body>Lorem ipsum dolor sit amet consectetur adipisicing.</Body>
 
           <LogoContainer>
-            {OrganiserData.map(({ id, link, image, span }) => (
+            {footer.organisers.map(({ id, link, image, span }) => (
               <LogoImgLink span={span} key={id} to={link} target='_blank'>
-                <img src={image} alt='' />
+                <img src={image.src} alt={image.alt} />
               </LogoImgLink>
             ))}
           </LogoContainer>
