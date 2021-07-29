@@ -31,6 +31,7 @@ module.exports = {
         'background-darker': 'var(--background-darker)',
         secondary: '#17171D',
         'purple-light': '#B6BAEA',
+        date: '#E78967',
       },
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],

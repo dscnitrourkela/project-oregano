@@ -31,7 +31,6 @@ const HeroContainer = styled.div`
     justify-center
     grid
     grid-cols-12
-    mt-10
   `}
 `;
 
@@ -39,6 +38,7 @@ const HeroImage = styled.img`
   ${tw`
     w-11/12
     block
+    md:hidden
   `}
 `;
 
