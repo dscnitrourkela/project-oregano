@@ -4,6 +4,10 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    minHeight: {
+      0: '0px',
+      180: '180px',
+    },
     container: {
       padding: {
         default: '1rem',
@@ -19,7 +23,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
-        footer: 'repeat(3, minmax(270px, 400px))',
+        footer: 'repeat(3, minmax(270px, 1fr))',
+        footerMid: 'repeat(auto-fit, minmax(270px, 1fr))',
+        footerMd: 'repeat(auto-fit, minmax(270px, 400px))',
       },
       spacing: {
         100: '41rem',
@@ -42,6 +48,9 @@ module.exports = {
 
       xl: { max: '1279px' },
       // => @media (max-width: 1279px) { ... }
+
+      mid: { max: '1150px' },
+      // => @media (max-width: 1150px) { ... }
 
       lg: { max: '1023px' },
       // => @media (max-width: 1023px) { ... }

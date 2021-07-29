@@ -60,9 +60,7 @@ function Footer() {
               ))}
             </SectionIcons>
             <SectionIconText>
-              <p className='text-right'>
-                <Body>logo Lorem ipsum dolor sit amet consectetur adipisicing.</Body>
-              </p>
+              <Body>logo Lorem ipsum dolor sit amet consectetur adipisicing.</Body>
             </SectionIconText>
           </SectionIcon>
           <SectionCard1>

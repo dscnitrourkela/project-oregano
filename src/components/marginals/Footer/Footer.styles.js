@@ -92,6 +92,8 @@ const SectionCard1 = styled.div`
   my-auto
   grid
   grid-cols-footer
+  mid:grid-cols-footerMid
+  md:grid-cols-footerMd
   gap-7
   place-items-center
   lg:justify-center
