@@ -4,10 +4,6 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    minHeight: {
-      0: '0px',
-      180: '180px',
-    },
     container: {
       padding: {
         default: '1rem',
@@ -23,9 +19,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
-        footer: 'repeat(3, minmax(270px, 1fr))',
-        footerMid: 'repeat(auto-fit, minmax(270px, 1fr))',
-        footerMd: 'repeat(auto-fit, minmax(270px, 400px))',
+        logo: 'repeat(auto-fit, minmax(50px, 1fr))',
       },
       spacing: {
         100: '41rem',

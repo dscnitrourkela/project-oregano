@@ -11,24 +11,28 @@ export const OrganiserData = [
   {
     id: 1,
     link: 'https://dscnitrourkela.org/team.html',
+    span: true,
     image:
       'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/isjepabdq6poep7lmzxf.png',
   },
   {
     id: 2,
     link: 'https://opencodenitr.herokuapp.com/',
+    span: false,
     image:
       'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/gcezuprj0neujdhqanr4.png',
   },
   {
     id: 3,
     link: 'https://education.github.com/',
+    span: false,
     image:
       'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/slbqxtegtcrzwbrni4na.png',
   },
   {
     id: 4,
     link: 'https://hackclub.com/',
+    span: false,
     image:
       'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/po6v5ff92trierngzudg.png',
   },

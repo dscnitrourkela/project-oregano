@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 export default styled.h4`
   ${tw`
         font-normal
-        text-2xl
+        text-xl
         2xl:text-xl
         lg:text-base
         md:text-base
