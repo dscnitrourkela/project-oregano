@@ -9,6 +9,7 @@ export { default as HeroSection } from './HeroSection/HeroSection';
 
 // FAQ section exports
 export { default as FAQ } from './FaqSection/Faq';
+export { default as WhyWait } from './FaqSection/WhyWait';
 
 // Tracks section exports
 export { default as Tracks } from './TracksSection/Tracks';
