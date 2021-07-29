@@ -15,6 +15,10 @@ export default {
     src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png',
     alt: 'HackNITR Chat Profile',
   },
+  laptop: {
+    src: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1627540413/project-oregano/assets/dubynkp6upfnx4cajztf.png',
+    alt: 'Laptop Illustration',
+  },
   questions: {
     one: {
       id: 'faq-1',
