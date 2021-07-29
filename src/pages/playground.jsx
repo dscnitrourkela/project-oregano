@@ -13,6 +13,7 @@ import {
   Body,
   HighlightBody,
   Button,
+  WhyWait,
 } from '../components';
 
 const Element = styled.div`
@@ -55,15 +56,7 @@ function playground() {
         <Heading5>Heading5</Heading5>
         <Body>Body</Body>
         <HighlightBody>Highlight Body</HighlightBody>
-        <Element>
-          <Paragraph>{partials.content}</Paragraph>
-        </Element>
-        <Element>
-          <Paragraph>{partials.content}</Paragraph>
-        </Element>
-        <Element>
-          <Paragraph>{partials.content}</Paragraph>
-        </Element>
+        <WhyWait />
         <Element>
           <Paragraph>{partials.content}</Paragraph>
         </Element>

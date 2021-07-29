@@ -19,10 +19,12 @@ const ContentContainer = styled.div`
 `;
 
 const TimeLine = styled(Body)`
-  ${tw`
-  mb-2
-  text-xl
-  sm:text-base`}
+  color: #fff;
+  background-color: #e78967;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: fit-content;
+  margin-bottom: 24px;
 `;
 
 const TagLine = styled(Heading1)`
@@ -73,6 +75,7 @@ function HeroContent() {
     <ContentContainer>
       <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
+      <TagLine>{hero.subtitle}</TagLine>
       <Description>{hero.content}</Description>
       <InlineWrapper>
         <RegisterBtn>Register Now!</RegisterBtn>
