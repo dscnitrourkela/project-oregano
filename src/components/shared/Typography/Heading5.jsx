@@ -7,7 +7,7 @@ export default styled.p`
         text-base
         text-black
         font-roboto
-        py-1 
+        py-1
         px-5
     `}
 `;

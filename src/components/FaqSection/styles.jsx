@@ -28,12 +28,13 @@ const FaqContainer = styled.div`
 
 const Section = styled.div`
   ${tw`
-        flex
-        lg:grid grid-cols-1
-        gap-5
-        mt-5
-        text-white
+      flex
+      lg:grid grid-cols-1
+      gap-5
+      mt-5
+      text-white
     `}
+
 `;
 
 const Bot = styled.div`
@@ -47,7 +48,6 @@ const Img = styled.img`
   ${tw`
         float-left
         mr-2
-
     `}
 `;
 
