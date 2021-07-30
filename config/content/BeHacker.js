@@ -1,14 +1,14 @@
 /* eslint-disable max-len */
 export default {
-  title: 'How to be a hacker?',
+  title: 'Journey to become Hacker',
   content:
-    'We have prepared a list of simple steps one needs to follow to become true hacker. The person who attains all these abilities will yield the power a to hack anything.',
+    'The most mysterious yet popular Job but be careful it is not what you think. Below there are some qualities and discipline one should follow to be called as a Hacker.',
   cards: [
     {
       id: 'beahacker-1',
-      title: '1. Sleep like a cat',
+      title: '1. Nap like a Cat',
       content:
-        'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec.In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.',
+        'Nope, it is not how it sound. You should sleep, sleep and sleep and then wake up with great energy and do your work with great efficiency.',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/phgb0exycanxje0l0f77.png',
         alt: '',
@@ -19,9 +19,9 @@ export default {
     },
     {
       id: 'beahacker-2',
-      title: '2. Drink more coffee than necessary',
+      title: '2. Drink Coffee',
       content:
-        'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque',
+        'Make your Rest time during work productive by drinking a magical drink which we often called Coffee. This will make you smarter.',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/axlnny9dmql8xiq7imhk.png',
         alt: '',
@@ -32,8 +32,8 @@ export default {
     },
     {
       id: 'beahacker-3',
-      title: '3. Register for HackNITR 3.0',
-      content: 'This one the most important step of all!!!',
+      title: '3. Register for HACKNITR 3.0',
+      content: 'No warrior can be called a great warrior by only practicing on ground. He must go to war and fight. Similarly a Hacker should show his skills in Hackathon. So, come and join us in HACKNITR 3.0 ......',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/uwj1asbcivyev4xbrp5y.png',
         alt: '',

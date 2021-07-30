@@ -23,38 +23,48 @@ export default {
   questions: {
     one: {
       id: 'faq-1',
-      question: 'What is a Hackathon? How different is Online Hackathon?',
-      answer: 'Ans a: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: 'How do I register for the hackathon?',
+      answer: 'Scroll up to the beginning of this page and find the "Apply with Devfolio" button. Alternatively, head over to <devfolio link>. You can register for HackNITR 3.0 all the way till <deadline>',
     },
     two: {
       id: 'faq-2',
-      question: 'How to register?',
-      answer: 'Ans b: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: 'What is the participation fee?',
+      answer: "Just some enthusiasm and an open mind are enough. We don't charge any money!!",
     },
     three: {
       id: 'faq-3',
-      question: 'Who can participate?',
-      answer: 'Ans c: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: "What if I don't have a team or idea?",
+      answer: "Interest in learning and working with technology is much more important. We'll have team formation and ideation events geared towards helping you find people to form your team.",
     },
     four: {
       id: 'faq-4',
-      question: 'What if I haven’t been to a Hackathon before?',
-      answer: 'Ans d: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: 'Who can participate?',
+      answer: 'Students currently studying in any college of India and working professionals can participate.',
     },
     five: {
       id: 'faq-5',
-      question: "What if I don't have a team or idea?",
-      answer: 'Ans e: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: "I do not have enough knowledge and understanding about certain technologies like AI and ML. Can I still participate in HackNITR?",
+      answer: 'The hackathon includes multi-disciplinary challenges. You can choose one based on your knowledge and skills.',
     },
     six: {
       id: 'faq-6',
-      question: 'Where can I find updates?',
-      answer: 'Ans f: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: 'Why should I participate in HackNITR?',
+      answer: 'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swag😉.',
     },
     seven: {
       id: 'faq-7',
-      question: 'what could be the size of a team?',
-      answer: 'Ans g: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis.',
+      question: "What if I don't know how to code?",
+      answer: "Well, in that case, here is a secret. None of the top devs at hackathons were pros when they entered their first hackathon, and we're sure you'll find beginners like you in the HackNITR 3.0 too. It's all about you wanting to learn something new about tech and grow like that.",
+    },
+    eight: {
+      id: 'faq-8',
+      question: "What if I don't present what I made?",
+      answer: "We really won't advise doing that. We know you must be shy and doubtful about your work, but keep in mind that hackathons are not about being the best or making the best. Instead, it's just about what you thought and why. Your work might not even get a prize, but the feedbacks and suggestions which you'll get from showing it would really help you develop your idea or product into a cool new tech and who knows, it might be the next big thing!!!",
+    },
+    nine: {
+      id: 'faq-9',
+      question: "How will teams be judged?",
+      answer: "The teams will be judged based on viability, financial benefits, technical complexity, presentation skills, creativity etc.",
     },
   },
 };
