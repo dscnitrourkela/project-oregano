@@ -64,6 +64,7 @@ function Faq() {
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>
         </FaqContainer>
+
         <WhyWait />
       </Wrapper>
     </SectionLayout>

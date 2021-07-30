@@ -23,16 +23,21 @@ const FaqContainer = styled.div`
         relative
         p-2
         rounded-lg
+        grid
+        col-span-3
+        lg:col-span-1
    `}
 `;
 
 const Wrapper = styled.div`
   ${tw`
-        flex
-        lg:grid grid-cols-1
+        grid
+        grid-cols-5
+        lg:grid-cols-1
         gap-5
         mt-10
         text-white
+        w-full
     `}
 `;
 
