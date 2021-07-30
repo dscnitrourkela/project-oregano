@@ -101,7 +101,7 @@ function HeroContent() {
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
         <HighlightLink href={links.sponsor} target='_blank' rel='noreferrer'>
-          Sponsor Us
+          Join Us
         </HighlightLink>
       </SponsorInvite>
     </ContentContainer>

@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 export default {
-  title: 'Journey to become Hacker',
+  title: 'Journey to become a Hacker',
   content:
-    'The most mysterious yet popular Job but be careful it is not what you think. Below there are some qualities and discipline one should follow to be called as a Hacker.',
+    'The most mysterious yet popular work but be careful it is not what you think. Below there are some qualities and discipline one should follow to be called as a Hacker.',
   cards: [
     {
       id: 'beahacker-1',
@@ -33,7 +33,7 @@ export default {
     {
       id: 'beahacker-3',
       title: '3. Register for HACKNITR 3.0',
-      content: 'No warrior can be called a great warrior by only practicing on ground. He must go to war and fight. Similarly a Hacker should show his skills in Hackathon. So, come and join us in HACKNITR 3.0 ......',
+      content: 'No warrior can be called a great warrior by only practicing on ground. He must go to war and fight. Similarly a Hacker should show his skills in Hackathon. So, come and join us in HACKNITR 3.0.',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/uwj1asbcivyev4xbrp5y.png',
         alt: '',
