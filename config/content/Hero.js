@@ -1,10 +1,9 @@
 /* eslint-disable max-len */
 export default {
-  dates: '29th to 31st Oct',
-  title: 'HackNITR 3.0 - to a better world.',
-  subtitle: 'to a better world.',
+  dates: '20th to 31st October 2021',
+  title: 'HACK. IMBIBE. INNOVATE',
   content:
-    'Molestie diam eget enim, ac dui lectus cursus. Condimentum ac ut vitae praesent. Morbi eget mauris arcu ultrices. Arcu, feugiat egestas sit fames tortor, rhoncus ut. Gravida et blandit vulputate sapien. In quis vitae vestibulum at sit mauris tortor nulla molestie.',
+    "Dive deep into your innovation journey with Hackathon 3.0 and manifest your skills.Re-envision what's conceivable with hack and turn your fanatical ideas into reality.Calling out all innovators, its your time to showcase your skills and creativity.Shift+ 'hack' == CHANGE. WE HACK to AMEND.",
   links: {
     discord: '',
     register: '',
