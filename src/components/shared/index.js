@@ -1,5 +1,5 @@
 /* eslint-disable import/no-cycle */
-export { default as SectionContainer } from './SectionContainer';
+// export { default as SectionContainer } from './SectionContainer';
 export { default as Container } from './Container';
 export { default as Heading1 } from './Typography/Heading1';
 export { default as Heading2 } from './Typography/Heading2';

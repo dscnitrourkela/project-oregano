@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Components
-import { Heading1, Heading2, SectionContainer } from '..';
-import { SponsorContainer, HeadingSection, HeadText, SponsorIcon } from './styles';
+import { Heading2, SectionLayout } from '..';
+import { SponsorContainer, HeadingSection, SponsorIcon } from './styles';
 
 // Assets
 import { sponsors } from '../../../config/content';
@@ -28,16 +28,12 @@ function Sponsor() {
   ];
 
   return (
-    <SectionContainer>
-      <HeadingSection>
-        <Heading1>{sponsors.title}</Heading1>
-
-        <HeadText>
-          {sponsors.content}
-          <a href='/'> Sponsor Us</a>
-        </HeadText>
-      </HeadingSection>
-
+    <SectionLayout
+      title={sponsors.title}
+      description={sponsors.content}
+      link={{ text: 'Sponsor Us', link: '/' }}
+    >
+      <div style={{ marginTop: '1rem' }} />
       {sponsorDetails.map((details) => (
         <React.Fragment key={details.title}>
           <HeadingSection>
@@ -51,7 +47,7 @@ function Sponsor() {
           </SponsorContainer>
         </React.Fragment>
       ))}
-    </SectionContainer>
+    </SectionLayout>
   );
 }
 

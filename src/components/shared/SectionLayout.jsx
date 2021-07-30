@@ -23,15 +23,37 @@ const Description = styled(Body)`
   ${tw`
     mt-2
     w-1/2
-    sm:w-full
+    md:w-full
   `}
 `;
 
-function Section({ children, title, description }) {
+const HighlightLink = styled.a`
+  ${tw`
+    font-normal
+    text-base
+    2xl:text-base
+    lg:text-base
+    md:text-base
+    sm:text-sm
+    text-color-primary
+    font-roboto
+    ml-2
+    no-underline
+  `}
+`;
+
+function Section({ children, title, description, link }) {
   return (
     <SectionContainer>
       <Heading1>{title}</Heading1>
-      <Description>{description}</Description>
+      <Description>
+        {description}
+        {link && (
+          <HighlightLink href={link.link} target='_blank' rel='noreferrer'>
+            {link.text}
+          </HighlightLink>
+        )}
+      </Description>
       {children}
     </SectionContainer>
   );

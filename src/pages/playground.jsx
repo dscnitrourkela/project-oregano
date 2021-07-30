@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 import {
-  SectionContainer,
   Container,
   Heading1,
   Heading2,
@@ -49,7 +48,7 @@ function playground() {
 
   return (
     <Container>
-      <SectionContainer>
+      <div>
         <Heading1>Heading 1</Heading1>
         <Heading2>Heading 2</Heading2>
         <Heading3>Heading 3</Heading3>
@@ -63,7 +62,7 @@ function playground() {
         </Element>
         <ButtonLight>Button</ButtonLight>
         <ButtonDark>Button</ButtonDark>
-      </SectionContainer>
+      </div>
     </Container>
   );
 }
