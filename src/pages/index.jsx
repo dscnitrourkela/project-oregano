@@ -1,4 +1,16 @@
 import React from 'react';
+
+// Libraries
+import Helmet from 'react-helmet';
+
+// Assets
+import {
+  eventData,
+  breadcrumbsData,
+  faqData,
+  logoData,
+} from '../components/shared/SEO/structuredData';
+
 import {
   HeroSection,
   FAQ,
@@ -12,16 +24,25 @@ import {
 } from '../components';
 
 const Homepage = () => (
-  <Layout>
+  <>
+    <Helmet>
+      <script type='application/ld+json'>{JSON.stringify(eventData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(faqData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(logoData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
+    </Helmet>
     <SEO />
-    <HeroSection />
-    <Container>
-      <Tracks />
-      <Sponsors />
-      <FAQ />
-      <BeAHacker />
-    </Container>
-    <Footer />
-  </Layout>
+
+    <Layout>
+      <HeroSection />
+      <Container>
+        <Tracks />
+        <Sponsors />
+        <FAQ />
+        <BeAHacker />
+      </Container>
+      <Footer />
+    </Layout>
+  </>
 );
 export default Homepage;
