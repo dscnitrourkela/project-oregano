@@ -48,6 +48,16 @@ const CardCol = styled.div`
     `}
 `;
 
+const NonStyledLink = styled.a`
+  ${tw`
+    no-underline
+  `}
+`;
+
+const links = {
+  register: 'https://hacknitr3.devfolio.co/',
+};
+
 const HackerCard = () => (
   <CardCol>
     {hacker.cards.map(({ id, title, content, img, hasButton, buttonText }) => (
@@ -58,7 +68,11 @@ const HackerCard = () => (
           <Description>
             <Body>{content}</Body>
           </Description>
-          {hasButton && <ButtonLight>{buttonText}</ButtonLight>}
+          {hasButton && (
+            <NonStyledLink href={links.register} target='_blank' rel='no-referrer'>
+              <ButtonLight>{buttonText}</ButtonLight>
+            </NonStyledLink>
+          )}
         </CardBody>
       </Card>
     ))}
