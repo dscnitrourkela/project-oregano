@@ -27,21 +27,6 @@ export const Tracks1 = styled.div`
    `}
 `;
 
-export const Tracks2 = styled.div`
-  ${tw`
-        grid
-        grid-rows-3
-        gap-3
-   `}
-`;
-
-export const Head = styled.div`
-  ${tw`
-      row-start-2
-      row-end-4
-   `}
-`;
-
 export const Cards = styled.div`
   ${tw`
       bg-secondary
@@ -55,6 +40,7 @@ export const Head2 = styled.div`
       grid
       grid-cols-4
       items-center
+      pb-5
    `}
 `;
 
