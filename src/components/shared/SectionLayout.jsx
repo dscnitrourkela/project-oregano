@@ -42,9 +42,9 @@ const HighlightLink = styled.a`
   `}
 `;
 
-function Section({ children, title, description, link }) {
+function Section({ children, id, title, description, link }) {
   return (
-    <SectionContainer>
+    <SectionContainer id={id}>
       <Heading1>{title}</Heading1>
       <Description>
         {description}

@@ -7,37 +7,37 @@ export default {
   },
   navItems: [
     {
-      id: 'nav-home',
+      id: 'home',
       name: 'Home',
       link: '/home',
     },
+    // {
+    //   id: 'nav-about',
+    //   name: 'About',
+    //   link: '/about',
+    // },
     {
-      id: 'nav-about',
-      name: 'About',
-      link: '/about',
-    },
-    {
-      id: 'nav-tracks',
+      id: 'tracks',
       name: 'Tracks',
       link: '/tracks',
     },
+    // {
+    //   id: 'prizes',
+    //   name: 'Prizes',
+    //   link: '/prizes',
+    // },
     {
-      id: 'nav-prizes',
-      name: 'Prizes',
-      link: '/prizes',
-    },
-    {
-      id: 'nav-sponsors',
+      id: 'sponsors',
       name: 'Sponsors',
       link: '/sponsors',
     },
     {
-      id: 'nav-faq',
+      id: 'faq',
       name: 'FAQ',
       link: '/faq',
     },
     {
-      id: 'nav-contact',
+      id: 'contact',
       name: 'Contact',
       link: '/contact',
     },

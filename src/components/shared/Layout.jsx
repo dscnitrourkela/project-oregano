@@ -17,7 +17,7 @@ const Nav = styled.div`
   `}
 `;
 
-export default ({ children }) => {
+export default ({ children, location }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenuOpen = () => (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
@@ -26,8 +26,8 @@ export default ({ children }) => {
     <Layout>
       <Nav>
         <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
-          <DesktopNav />
-          {menuOpen && <MobileNav />}
+          <DesktopNav location={location} />
+          {menuOpen && <MobileNav location={location} />}
         </MenuContext.Provider>
       </Nav>
       {children}

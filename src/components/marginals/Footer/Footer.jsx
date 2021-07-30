@@ -45,7 +45,7 @@ const LogoImgLink = styled.a`
 
 function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id='contact'>
       <Container>
         <SecondaryContainer>
           <Logo src={footer.hacknitr.img} alt={footer.hacknitr.alt} />
