@@ -1,20 +1,8 @@
 import React, { useState } from 'react';
 
 // Components
-import { Body, Heading1, SectionContainer, Heading5, WhyWait } from '..';
-import {
-  List,
-  List1,
-  Ul,
-  Ques,
-  Chat,
-  Bot,
-  Section,
-  FaqContainer,
-  Heading,
-  Img,
-  Sub,
-} from './styles';
+import { Heading5, WhyWait, Section } from '..';
+import { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './styles';
 
 // Assets
 import { faq } from '../../../config/content';
@@ -53,15 +41,8 @@ function Faq() {
   };
 
   return (
-    <SectionContainer>
-      <Heading>
-        <Heading1>{title}</Heading1>
-        <Sub>
-          <Body>{content}</Body>
-        </Sub>
-      </Heading>
-
-      <Section>
+    <Section title={title} description={content}>
+      <Wrapper>
         <FaqContainer>
           <Bot>
             <Img alt={toyImg.alt} src={toyImg.src} />
@@ -84,8 +65,8 @@ function Faq() {
           </Ques>
         </FaqContainer>
         <WhyWait />
-      </Section>
-    </SectionContainer>
+      </Wrapper>
+    </Section>
   );
 }
 

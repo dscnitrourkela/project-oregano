@@ -26,15 +26,14 @@ const FaqContainer = styled.div`
    `}
 `;
 
-const Section = styled.div`
+const Wrapper = styled.div`
   ${tw`
-      flex
-      lg:grid grid-cols-1
-      gap-5
-      mt-5
-      text-white
+        flex
+        lg:grid grid-cols-1
+        gap-5
+        mt-10
+        text-white
     `}
-
 `;
 
 const Bot = styled.div`
@@ -118,4 +117,4 @@ const List1 = styled.li`
     `}
 `;
 
-export { List, List1, Ul, Ques, Chat, Bot, Section, FaqContainer, Heading, Img, Sub };
+export { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Heading, Img, Sub };
