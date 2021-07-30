@@ -30,7 +30,7 @@ export const eventData = {
     {
       '@type': 'Person',
       name: '',
-    },
+    }
   ],
   organization: {
     '@type': 'Organization',
