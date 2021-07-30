@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   dates: '29th to 31st Oct',
-  title: 'HackNITR 3.0 -',
+  title: 'HackNITR 3.0 - to a better world.',
   subtitle: 'to a better world.',
   content:
     'Molestie diam eget enim, ac dui lectus cursus. Condimentum ac ut vitae praesent. Morbi eget mauris arcu ultrices. Arcu, feugiat egestas sit fames tortor, rhoncus ut. Gravida et blandit vulputate sapien. In quis vitae vestibulum at sit mauris tortor nulla molestie.',

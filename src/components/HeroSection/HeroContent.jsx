@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, HighlightBody, ButtonDark, ButtonLight } from '../shared';
+import { Heading1, Body, ButtonDark, ButtonLight } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -13,8 +13,8 @@ import { hero } from '../../../config/content';
 const ContentContainer = styled.div`
   ${tw`
   col-span-5
-  sm:col-span-12
-  sm:mt-6
+  md:col-span-12
+  md:mt-6
   `}
 `;
 
@@ -28,7 +28,11 @@ const TimeLine = styled(Body)`
 `;
 
 const TagLine = styled(Heading1)`
-  ${tw`leading-tight`}
+  ${tw`
+  leading-tight
+    w-5/6
+    md:w-full
+  `}
 `;
 
 const Description = styled(Body)`
@@ -61,12 +65,27 @@ const InlineWrapper = styled.div`
   ${tw`flex mr-10 sm:mr-0 sm:justify-center sm:items-center`}
 `;
 
+const HighlightLink = styled.a`
+  ${tw`
+  font-normal
+  text-base
+  2xl:text-base
+  lg:text-base
+  md:text-base
+  sm:text-sm
+  text-color-primary
+  font-roboto
+  no-underline
+  ml-2
+  `}
+`;
+
 function HeroContent() {
   return (
     <ContentContainer>
       <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
-      <TagLine>{hero.subtitle}</TagLine>
+      {/* <TagLine>{hero.subtitle}</TagLine> */}
       <Description>{hero.content}</Description>
       <InlineWrapper>
         <RegisterBtn>Register Now!</RegisterBtn>
@@ -74,7 +93,9 @@ function HeroContent() {
       </InlineWrapper>
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
-        <HighlightBody>Sponsor Us</HighlightBody>
+        <HighlightLink href='/' target='_blank' rel='noreferrer'>
+          Sponsor Us
+        </HighlightLink>
       </SponsorInvite>
     </ContentContainer>
   );
