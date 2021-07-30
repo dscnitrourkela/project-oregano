@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
   ${tw`
     w-full
     bg-secondary
-    mt-20
+    mt-40
     overflow-x-hidden
 `}
 `;
