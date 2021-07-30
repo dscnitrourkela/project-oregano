@@ -14,8 +14,12 @@ module.exports = {
       center: true,
     },
     extend: {
+      gridColumn: {
+        'span-15': 'span 15 / span 15',
+      },
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
+        logo: 'repeat(auto-fit, minmax(50px, 1fr))',
       },
       spacing: {
         100: '41rem',
@@ -38,6 +42,9 @@ module.exports = {
 
       xl: { max: '1279px' },
       // => @media (max-width: 1279px) { ... }
+
+      mid: { max: '1150px' },
+      // => @media (max-width: 1150px) { ... }
 
       lg: { max: '1023px' },
       // => @media (max-width: 1023px) { ... }

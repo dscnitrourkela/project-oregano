@@ -8,6 +8,7 @@ import {
   BeAHacker,
   Layout,
   SEO,
+  Footer,
 } from '../components';
 
 const Homepage = () => (
@@ -20,6 +21,7 @@ const Homepage = () => (
       <FAQ />
       <BeAHacker />
     </Container>
+    <Footer />
   </Layout>
 );
 export default Homepage;
