@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, HighlightBody, Button } from '../shared';
+import { Heading1, Body, HighlightBody, ButtonDark, ButtonLight } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -40,20 +40,11 @@ const Description = styled(Body)`
   `}
 `;
 
-const RegisterBtn = styled(Button)`
+const RegisterBtn = styled(ButtonLight)`
   ${tw`
     sm:m-0
     sm:mr-4
-  `}
-`;
-
-const DiscordBtn = styled(Button)`
-  ${tw`
-  bg-background-dark
-  text-color-primary
-  border-color-primary
-  border-2
-  sm:m-0
+sm:bg-white
   `}
 `;
 
@@ -79,7 +70,7 @@ function HeroContent() {
       <Description>{hero.content}</Description>
       <InlineWrapper>
         <RegisterBtn>Register Now!</RegisterBtn>
-        <DiscordBtn>Join Discord</DiscordBtn>
+        <ButtonDark>Join Discord</ButtonDark>
       </InlineWrapper>
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
