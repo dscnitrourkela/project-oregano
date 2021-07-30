@@ -44,14 +44,6 @@ const Description = styled(Body)`
   `}
 `;
 
-const RegisterBtn = styled(ButtonLight)`
-  ${tw`
-    sm:m-0
-    sm:mr-4
-sm:bg-white
-  `}
-`;
-
 const SponsorInvite = styled.div`
   ${tw`my-6
   gap-1
@@ -80,20 +72,35 @@ const HighlightLink = styled.a`
   `}
 `;
 
+const NonStyledLink = styled.a`
+  ${tw`
+    no-underline
+  `}
+`;
+
+const links = {
+  discord: 'https://discord.com/invite/SGzuZyp9nS',
+  register: 'https://hacknitr3.devfolio.co/',
+  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+};
+
 function HeroContent() {
   return (
     <ContentContainer>
       <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
-      {/* <TagLine>{hero.subtitle}</TagLine> */}
       <Description>{hero.content}</Description>
       <InlineWrapper>
-        <RegisterBtn>Register Now!</RegisterBtn>
-        <ButtonDark>Join Discord</ButtonDark>
+        <NonStyledLink href={links.register} target='_blank' rel='noreferrer'>
+          <ButtonLight>Register Now!</ButtonLight>
+        </NonStyledLink>
+        <NonStyledLink href={links.discord} target='_blank' rel='noreferrer'>
+          <ButtonDark>Join Discord</ButtonDark>
+        </NonStyledLink>
       </InlineWrapper>
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
-        <HighlightLink href='/' target='_blank' rel='noreferrer'>
+        <HighlightLink href={links.sponsor} target='_blank' rel='noreferrer'>
           Sponsor Us
         </HighlightLink>
       </SponsorInvite>
