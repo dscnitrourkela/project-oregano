@@ -24,7 +24,7 @@ export default {
     one: {
       id: 'faq-1',
       question: 'How do I register for the hackathon?',
-      answer: 'Scroll up to the beginning of this page and find the "Apply with Devfolio" button. Alternatively, head over to <devfolio link>. You can register for HackNITR 3.0 all the way till <deadline>',
+      answer: 'Scroll up to the beginning of this page and find the "Apply with Devfolio" button. Alternatively, head over to <devfolio link>. You can register for HackNITR 3.0 all the way till 31st October 2021',
     },
     two: {
       id: 'faq-2',
@@ -49,7 +49,7 @@ export default {
     six: {
       id: 'faq-6',
       question: 'Why should I participate in HackNITR?',
-      answer: 'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swag😉.',
+      answer: 'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag😉.',
     },
     seven: {
       id: 'faq-7',

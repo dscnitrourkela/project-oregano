@@ -19,7 +19,7 @@ export default {
   cards: [
     {
       title: 'About NIT Rourkela',
-      text: 'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.',
+      text: 'With a total strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
       id: 'footer-card-1',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/j1hylhwi5lv6kyaksvbj.png',
@@ -28,7 +28,7 @@ export default {
     },
     {
       title: 'About Diamond Jubilee',
-      text: 'Sit mi, porttitor sapien, morbi id. Arcu, nibh facilisis ac nec. In nec pulvinar praesent neque eget velit nunc sit potenti. Diam dignissim.',
+      text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year (2021). Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a prominent beacon of knowledge.',
       id: 'footer-card-2',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png',
