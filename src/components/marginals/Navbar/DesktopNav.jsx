@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 
@@ -10,17 +8,29 @@ import { MenuContext, Container, Body } from '../..';
 // Assets
 import { nav } from '../../../../config/content';
 
-function DesktopNav({ location }) {
+// Function Returning new scroll object
+const newScrollObject = () => {
+  // eslint-disable-next-line
+  const SmoothScroll = require('smooth-scroll');
+  return new SmoothScroll('', {
+    offset: () => 100,
+  });
+};
+
+const handleScroll = (id) => {
+  if (typeof window !== 'undefined' && id) {
+    const isHome = window.location.pathname === '/';
+    if (isHome) {
+      const scroll = newScrollObject();
+      const anchor = document.getElementById(id);
+      scroll.animateScroll(anchor);
+    }
+  }
+};
+
+function DesktopNav() {
   const menuContext = useContext(MenuContext);
   const { toggleMenuOpen, menuOpen } = menuContext;
-
-  const scrollTo = (id) => {
-    if (document) {
-      const element = document.getElementById(id);
-
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <NavSection>
@@ -35,7 +45,15 @@ function DesktopNav({ location }) {
 
             <ul className='navLinkList'>
               {nav.navItems.map(({ id, name }) => (
-                <li key={id} onClick={() => scrollTo(id)} id={name} className='navLinkItem'>
+                <li
+                  key={id}
+                  onClick={() => handleScroll(id)}
+                  onKeyPress={() => handleScroll(id)}
+                  id={name}
+                  role='menuitem'
+                  tabIndex='0'
+                  className='navLinkItem'
+                >
                   <Link style={{ textDecoration: 'none' }} to={`#${id}`}>
                     <Body className='navLink'>{name}</Body>
                   </Link>
