@@ -27,9 +27,10 @@ module.exports = {
   twitterHandle: '@hacknitr',
   twitter: 'https://twitter.com/hacknitr/',
   github: 'https://github.com/dscnitrourkela/project-oregano',
-  linkedin: 'https://www.linkedin.cn/company/hacknitr',
+  linkedin: 'https://www.linkedin.com/company/hacknitr',
   facebook: 'https://facebook.com/hacknitr',
   instagram: 'https://instagram.com/hacknitr',
-  discord: 'https://discord.hacknitr.tech',
-  registerLink: 'https://register.hacknitr.tech',
+  discord: 'https://discord.com/invite/SGzuZyp9nS',
+  register: 'https://hacknitr3.devfolio.co/',
+  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
 };

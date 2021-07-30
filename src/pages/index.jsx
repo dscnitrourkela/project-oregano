@@ -1,4 +1,17 @@
 import React, { useState, useEffect } from 'react';
+
+
+// Libraries
+import Helmet from 'react-helmet';
+
+// Assets
+import {
+  eventData,
+  breadcrumbsData,
+  faqData,
+  logoData,
+} from '../components/shared/SEO/structuredData';
+
 import {
   HeroSection,
   FAQ,
@@ -30,9 +43,17 @@ const Homepage = ({ location }) => {
     }
   }, [location.hash, loading]);
 
-  return (
+return(
+  <>
+    <Helmet>
+      <script type='application/ld+json'>{JSON.stringify(eventData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(faqData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(logoData)}</script>
+      <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
+    </Helmet>
+    <SEO />
+
     <Layout location={location}>
-      <SEO />
       <HeroSection />
       <Container>
         <Tracks />
@@ -42,6 +63,7 @@ const Homepage = ({ location }) => {
       </Container>
       <Footer />
     </Layout>
-  );
+</>
+)
 };
 export default Homepage;
