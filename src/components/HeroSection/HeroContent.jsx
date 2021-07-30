@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, HighlightBody, Button } from '../shared';
+import { Heading1, Body, ButtonDark, ButtonLight } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -13,20 +13,26 @@ import { hero } from '../../../config/content';
 const ContentContainer = styled.div`
   ${tw`
   col-span-5
-  sm:col-span-12
-  sm:mt-6
+  md:col-span-12
+  md:mt-6
   `}
 `;
 
 const TimeLine = styled(Body)`
-  ${tw`
-  mb-2
-  text-xl
-  sm:text-base`}
+  color: #fff;
+  background-color: #e78967;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: fit-content;
+  margin-bottom: 24px;
 `;
 
 const TagLine = styled(Heading1)`
-  ${tw`leading-tight`}
+  ${tw`
+  leading-tight
+    w-5/6
+    md:w-full
+  `}
 `;
 
 const Description = styled(Body)`
@@ -35,23 +41,6 @@ const Description = styled(Body)`
   md:mr-0
   sm:mr-0
   sm:text-justify
-  `}
-`;
-
-const RegisterBtn = styled(Button)`
-  ${tw`
-    sm:m-0
-    sm:mr-4
-  `}
-`;
-
-const DiscordBtn = styled(Button)`
-  ${tw`
-  bg-background-dark
-  text-color-primary
-  border-color-primary
-  border-2
-  sm:m-0
   `}
 `;
 
@@ -68,6 +57,33 @@ const InlineWrapper = styled.div`
   ${tw`flex mr-10 sm:mr-0 sm:justify-center sm:items-center`}
 `;
 
+const HighlightLink = styled.a`
+  ${tw`
+  font-normal
+  text-base
+  2xl:text-base
+  lg:text-base
+  md:text-base
+  sm:text-sm
+  text-color-primary
+  font-roboto
+  no-underline
+  ml-2
+  `}
+`;
+
+const NonStyledLink = styled.a`
+  ${tw`
+    no-underline
+  `}
+`;
+
+const links = {
+  discord: 'https://discord.com/invite/SGzuZyp9nS',
+  register: 'https://hacknitr3.devfolio.co/',
+  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+};
+
 function HeroContent() {
   return (
     <ContentContainer>
@@ -75,12 +91,18 @@ function HeroContent() {
       <TagLine>{hero.title}</TagLine>
       <Description>{hero.content}</Description>
       <InlineWrapper>
-        <RegisterBtn>Register Now!</RegisterBtn>
-        <DiscordBtn>Join Discord</DiscordBtn>
+        <NonStyledLink href={links.register} target='_blank' rel='noreferrer'>
+          <ButtonLight>Register Now!</ButtonLight>
+        </NonStyledLink>
+        <NonStyledLink href={links.discord} target='_blank' rel='noreferrer'>
+          <ButtonDark>Join Discord</ButtonDark>
+        </NonStyledLink>
       </InlineWrapper>
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
-        <HighlightBody>Sponsor Us</HighlightBody>
+        <HighlightLink href={links.sponsor} target='_blank' rel='noreferrer'>
+          Sponsor Us
+        </HighlightLink>
       </SponsorInvite>
     </ContentContainer>
   );

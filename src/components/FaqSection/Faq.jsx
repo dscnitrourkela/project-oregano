@@ -1,20 +1,8 @@
 import React, { useState } from 'react';
 
 // Components
-import { Body, Heading1, SectionContainer, Heading5 } from '..';
-import {
-  List,
-  List1,
-  Ul,
-  Ques,
-  Chat,
-  Bot,
-  Section,
-  FaqContainer,
-  Heading,
-  Img,
-  Sub,
-} from './styles';
+import { Heading5, WhyWait, SectionLayout } from '..';
+import { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './styles';
 
 // Assets
 import { faq } from '../../../config/content';
@@ -53,40 +41,33 @@ function Faq() {
   };
 
   return (
-    <SectionContainer>
-      <Heading>
-        <Heading1>{title}</Heading1>
-        <Sub>
-          <Body>{content}</Body>
-        </Sub>
-      </Heading>
+    <SectionLayout title={title} description={content}>
+      <Wrapper>
+        <FaqContainer>
+          <Bot>
+            <Img alt={toyImg.alt} src={toyImg.src} />
+            <Chat>
+              <Heading5>{renderFaq()}</Heading5>
+            </Chat>
+          </Bot>
 
-      <Section>
-        {[0, 1].map((number) => (
-          <FaqContainer key={number}>
-            <Bot>
-              <Img alt={toyImg.alt} src={toyImg.src} />
-              <Chat>
-                <Heading5>{renderFaq()}</Heading5>
-              </Chat>
-            </Bot>
+          <Ques>
+            <Ul>
+              <List onClick={setStageToQuesa}>{questions.one.question}</List>
+              <List onClick={setStageToQuesb}>{questions.two.question}</List>
+              <List onClick={setStageToQuesc}>{questions.three.question}</List>
+              <List onClick={setStageToQuesd}>{questions.four.question}</List>
+              <List onClick={setStageToQuese}>{questions.five.question}</List>
+              <List onClick={setStageToQuesf}>{questions.six.question}</List>
+              <List1 onClick={setStageToQuesg}>{questions.seven.question}</List1>
+            </Ul>
+            <img alt={HackNITR.alt} src={HackNITR.src} />
+          </Ques>
+        </FaqContainer>
 
-            <Ques>
-              <Ul>
-                <List onClick={setStageToQuesa}>{questions.one.question}</List>
-                <List onClick={setStageToQuesb}>{questions.two.question}</List>
-                <List onClick={setStageToQuesc}>{questions.three.question}</List>
-                <List onClick={setStageToQuesd}>{questions.four.question}</List>
-                <List onClick={setStageToQuese}>{questions.five.question}</List>
-                <List onClick={setStageToQuesf}>{questions.six.question}</List>
-                <List1 onClick={setStageToQuesg}>{questions.seven.question}</List1>
-              </Ul>
-              <img alt={HackNITR.alt} src={HackNITR.src} />
-            </Ques>
-          </FaqContainer>
-        ))}
-      </Section>
-    </SectionContainer>
+        <WhyWait />
+      </Wrapper>
+    </SectionLayout>
   );
 }
 

@@ -34,6 +34,11 @@
     "lint:find": "npx eslint 'src/**/*.{js,jsx,ts,tsx,json,md}'"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@reach/router": "^1.3.4",
     "dotenv": "^10.0.0",
     "gatsby": "^3.6.2",

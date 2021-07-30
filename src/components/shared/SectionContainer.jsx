@@ -4,7 +4,6 @@ import tw from 'twin.macro';
 
 export const Container = styled.section`
   ${tw`
-    min-h-screen
     w-full
     h-auto
     overflow-x-hidden
@@ -13,7 +12,10 @@ export const Container = styled.section`
     flex-col
     items-start
     justify-center
+    min-h-screen
   `}
+  height: fit-content;
+  margin: 15% auto 10%;
 `;
 
 function Layout({ children }) {

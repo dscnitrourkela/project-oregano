@@ -40,7 +40,7 @@ export default {
       },
       hasButton: true,
       buttonText: 'Register Now',
-      buttonLink: 'https://register.hacknitr.tech',
+      buttonLink: 'https://hacknitr3.devfolio.co/',
     },
   ],
 };
