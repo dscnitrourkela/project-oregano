@@ -7,6 +7,7 @@ import tw from 'twin.macro';
 // Components
 import Title from '../shared/Typography/Heading4';
 import Body from '../shared/Typography/Body';
+import { ButtonLight } from '../shared';
 
 // Assets
 import { hacker } from '../../../config/content';
@@ -37,26 +38,13 @@ const Description = styled.div`
     `}
 `;
 
-const Button = styled.button`
-  ${tw`
-      h-14
-      w-48
-      mt-6
-      bg-white
-      border-0
-      hover:bg-black
-      hover:text-white
-      rounded-full
-      cursor-pointer
-    `}
-`;
-
 const CardCol = styled.div`
   ${tw`
       w-full
       grid
       grid-cols-track
       gap-7
+      mt-10
     `}
 `;
 
@@ -70,7 +58,7 @@ const HackerCard = () => (
           <Description>
             <Body>{content}</Body>
           </Description>
-          {hasButton && <Button>{buttonText}</Button>}
+          {hasButton && <ButtonLight>{buttonText}</ButtonLight>}
         </CardBody>
       </Card>
     ))}
