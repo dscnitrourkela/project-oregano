@@ -2,27 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { faq } from '../../../config/content';
 
-// const Wrapper = styled.div`
-//   ${tw`
-//   mx-4
-//   my-4
-//   h-wait
-//   md:h-wait-sm
-//   w-wait
-//   md:w-wait-sm
-//   bg-black
-//   grid
-//   grid-cols-1
-//   grid-rows-wait
-//   rounded-lg
-//   relative
-//  `}
-// `;
-
 const Wrapper = styled.div`
-  height: 575px;
-  width: 430px;
   background-color: #000;
+  grid-column: span 2 / span 2;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 2fr 2fr;
@@ -31,6 +13,10 @@ const Wrapper = styled.div`
 
   @media (max-width: 1024px) {
     width: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    display: none;
   }
 `;
 
