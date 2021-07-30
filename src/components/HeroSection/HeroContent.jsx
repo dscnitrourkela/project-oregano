@@ -54,7 +54,7 @@ const SponsorInvite = styled.div`
 `;
 
 const InlineWrapper = styled.div`
-  ${tw`flex mr-10 sm:mr-0 sm:justify-center sm:items-center`}
+  ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center`}
 `;
 
 const HighlightLink = styled.a`

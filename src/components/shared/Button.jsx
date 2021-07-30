@@ -4,7 +4,7 @@ import tw from 'twin.macro';
 const Button = styled.button`
   ${tw`
         h-14
-        w-48
+        w-40
         mt-6
         mr-4
         border-0
