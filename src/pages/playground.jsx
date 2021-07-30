@@ -12,7 +12,8 @@ import {
   Heading5,
   Body,
   HighlightBody,
-  Button,
+  ButtonLight,
+  ButtonDark,
   WhyWait,
 } from '../components';
 
@@ -60,7 +61,8 @@ function playground() {
         <Element>
           <Paragraph>{partials.content}</Paragraph>
         </Element>
-        <Button>Button</Button>
+        <ButtonLight>Button</ButtonLight>
+        <ButtonDark>Button</ButtonDark>
       </SectionContainer>
     </Container>
   );
