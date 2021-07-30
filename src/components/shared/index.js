@@ -9,7 +9,6 @@ export { default as Heading5 } from './Typography/Heading5';
 export { default as Body } from './Typography/Body';
 export { default as Subtitle } from './Typography/Subtitle';
 export { default as HighlightBody } from './Typography/HighlightBody';
-export { Button } from './Button';
 export { ButtonDark } from './Button';
 export { ButtonLight } from './Button';
 export { default as Layout } from './Layout';
