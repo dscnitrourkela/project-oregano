@@ -3,7 +3,7 @@ export default {
   id: 'faq',
   title: 'Have a question?',
   content:
-    'Vel lobortis porttitor eget dignissim. Facilisi euismod nullam nunc quisque egestas ridiculus sociis. Mi, aliquam, in turpis non cras diam elementum morbi . Blandit integer.',
+    "We know that many of you would be first time hackers here and there must be many questions buzzing in your mind. But don't worry, we got you covered!  Go through these FAQs and you'll get most of your queries solved.",
   img: {
     src: '',
     alt: '',
@@ -42,26 +42,21 @@ export default {
       answer: 'Students currently studying in any college of India and working professionals can participate.',
     },
     five: {
-      id: 'faq-5',
-      question: "I do not have enough knowledge and understanding about certain technologies like AI and ML. Can I still participate in HackNITR?",
-      answer: 'The hackathon includes multi-disciplinary challenges. You can choose one based on your knowledge and skills.',
-    },
-    six: {
       id: 'faq-6',
       question: 'Why should I participate in HackNITR?',
       answer: 'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag😉.',
     },
-    seven: {
+    six: {
       id: 'faq-7',
       question: "What if I don't know how to code?",
       answer: "Well, in that case, here is a secret. None of the top devs at hackathons were pros when they entered their first hackathon, and we're sure you'll find beginners like you in the HackNITR 3.0 too. It's all about you wanting to learn something new about tech and grow like that.",
     },
-    eight: {
+    seven: {
       id: 'faq-8',
       question: "What if I don't present what I made?",
       answer: "We really won't advise doing that. We know you must be shy and doubtful about your work, but keep in mind that hackathons are not about being the best or making the best. Instead, it's just about what you thought and why. Your work might not even get a prize, but the feedbacks and suggestions which you'll get from showing it would really help you develop your idea or product into a cool new tech and who knows, it might be the next big thing!!!",
     },
-    nine: {
+    eight: {
       id: 'faq-9',
       question: "How will teams be judged?",
       answer: "The teams will be judged based on viability, financial benefits, technical complexity, presentation skills, creativity etc.",

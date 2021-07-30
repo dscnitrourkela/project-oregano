@@ -5,6 +5,7 @@ import {
   faLinkedin,
   faGithubSquare,
   faDiscord,
+  faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 
 export default {
@@ -13,8 +14,11 @@ export default {
     alt: 'HackNITR 3.0',
   },
   icons: {
-    content1: 'Sit mi, porttitor sapien, morbi id. Arcu,',
-    content2: 'nibh In nec pulvinar praesen',
+    content1: 'For more updates,',
+    content2: 'follow us on all social media.',
+  },
+  copyright: {
+    content: 'Architected with love by HackNITR Team'
   },
   cards: [
     {
@@ -47,7 +51,11 @@ export default {
     },
     {
       icon: faDiscord,
-      link: 'https://www.facebook.com/hacknitr/',
+      link: 'https://discord.hacknitr.tech',
+    },
+    {
+      icon: faFacebook,
+      link: 'https://facebook.com/hacknitr',
     },
     {
       icon: faGithubSquare,
