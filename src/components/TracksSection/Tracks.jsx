@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Section } from '..';
+import { SectionLayout } from '..';
 import Card from './Card';
 
 // Assets
@@ -9,9 +9,9 @@ import { tracks } from '../../../config/content';
 
 function Tracks() {
   return (
-    <Section title={tracks.title} description={tracks.content}>
+    <SectionLayout title={tracks.title} description={tracks.content}>
       <Card />
-    </Section>
+    </SectionLayout>
   );
 }
 

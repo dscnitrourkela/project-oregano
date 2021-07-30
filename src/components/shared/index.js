@@ -7,12 +7,11 @@ export { default as Heading3 } from './Typography/Heading3';
 export { default as Heading4 } from './Typography/Heading4';
 export { default as Heading5 } from './Typography/Heading5';
 export { default as Body } from './Typography/Body';
-export { default as Subtitle } from './Typography/Subtitle';
 export { default as HighlightBody } from './Typography/HighlightBody';
 export { ButtonDark } from './Button';
 export { ButtonLight } from './Button';
 export { default as Layout } from './Layout';
-export { default as Section } from './Section';
+export { default as SectionLayout } from './SectionLayout';
 
 // SEO Components
 export { default as SEO } from './SEO/SEO';

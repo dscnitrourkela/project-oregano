@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Components
-import { Heading5, WhyWait, Section } from '..';
+import { Heading5, WhyWait, SectionLayout } from '..';
 import { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './styles';
 
 // Assets
@@ -41,7 +41,7 @@ function Faq() {
   };
 
   return (
-    <Section title={title} description={content}>
+    <SectionLayout title={title} description={content}>
       <Wrapper>
         <FaqContainer>
           <Bot>
@@ -66,7 +66,7 @@ function Faq() {
         </FaqContainer>
         <WhyWait />
       </Wrapper>
-    </Section>
+    </SectionLayout>
   );
 }
 

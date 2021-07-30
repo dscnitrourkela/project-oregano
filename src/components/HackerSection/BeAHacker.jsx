@@ -1,16 +1,16 @@
 import React from 'react';
 
 // Components
-import { Section } from '../shared';
+import { SectionLayout } from '../shared';
 import HackerCard from './HackerCard';
 
 // Assets
 import { hacker } from '../../../config/content';
 
 const BeAHacker = () => (
-  <Section title={hacker.title} description={hacker.content}>
+  <SectionLayout title={hacker.title} description={hacker.content}>
     <HackerCard />
-  </Section>
+  </SectionLayout>
 );
 
 export default BeAHacker;
