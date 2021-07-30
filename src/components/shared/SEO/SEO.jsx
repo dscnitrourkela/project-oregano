@@ -15,9 +15,8 @@ const SEO = ({ title, description, img }) => {
           title
           description
           canonicalUrl
-          image {
-            name
-          }
+          image
+          
           organization {
             name
             url
