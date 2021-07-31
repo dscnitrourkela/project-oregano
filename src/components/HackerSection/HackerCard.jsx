@@ -51,6 +51,7 @@ const CardCol = styled.div`
 const NonStyledLink = styled.a`
   ${tw`
     no-underline
+    sm:mt-2
   `}
 `;
 
