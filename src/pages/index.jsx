@@ -50,6 +50,13 @@ const Homepage = ({ location }) => {
   return (
     <>
       <Helmet>
+        <script
+          type='text/javascript'
+          id='hs-script-loader'
+          async
+          defer
+          src='//js.hs-scripts.com/8898157.js'
+        />
         <script type='application/ld+json'>{JSON.stringify(eventData)}</script>
         <script type='application/ld+json'>{JSON.stringify(faqData)}</script>
         <script type='application/ld+json'>{JSON.stringify(logoData)}</script>
