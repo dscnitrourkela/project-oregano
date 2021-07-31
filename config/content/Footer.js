@@ -18,7 +18,7 @@ export default {
     content2: 'follow us on all social media.',
   },
   copyright: {
-    content: 'Architected with love by HackNITR Team'
+    content: `Architected with ❤️ \nby HackNITR Team`,
   },
   cards: [
     {
@@ -32,7 +32,7 @@ export default {
     },
     {
       title: 'About Diamond Jubilee',
-      text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year (2021). Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a prominent beacon of knowledge.',
+      text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year. Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a beacon of knowledge.',
       id: 'footer-card-2',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png',

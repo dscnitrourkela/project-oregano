@@ -2,13 +2,13 @@
 export default {
   title: 'Journey to become a Hacker',
   content:
-    'The most mysterious yet popular work but be careful it is not what you think. Below there are some qualities and discipline one should follow to be called as a Hacker.',
+    'The most mysterious yet popular Job but be careful it is not what you think. Below there are some qualities and disciplines one should follow to be called a Hacker.',
   cards: [
     {
       id: 'beahacker-1',
       title: '1. Nap like a Cat',
       content:
-        'Nope, it is not how it sound. You should sleep, sleep and sleep and then wake up with great energy and do your work with great efficiency.',
+        'Nope, it is not how it sounds. You should sleep, sleep and sleep and then wake up with great energy and do your work with great efficiency.',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/phgb0exycanxje0l0f77.png',
         alt: '',
@@ -33,7 +33,8 @@ export default {
     {
       id: 'beahacker-3',
       title: '3. Register for HACKNITR 3.0',
-      content: 'No warrior can be called a great warrior by only practicing on ground. He must go to war and fight. Similarly a Hacker should show his skills in Hackathon. So, come and join us in HACKNITR 3.0.',
+      content:
+        'No warrior can be called a great warrior by only practising on the ground. He must go to war and fight. So, come and join us in HACKNITR 3.0.',
       img: {
         src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/uwj1asbcivyev4xbrp5y.png',
         alt: '',

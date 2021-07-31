@@ -36,7 +36,7 @@ function Faq() {
       case questions.seven.question:
         return questions.seven.answer;
       default:
-        return 'Hi there! I am Noni. How may I help you?';
+        return 'Hi there! I am Xori. How may I help you?';
     }
   };
 
