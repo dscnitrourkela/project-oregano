@@ -7,12 +7,13 @@ export const SponsorContainer = styled.div`
   width: 100%;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(8, minmax(85px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   @media (max-width: 639px) {
-    grid-template-columns: repeat(2, minmax(85px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
   }
   @media (min-width: 639px) and (max-width: 1023px) {
-    grid-template-columns: repeat(5, minmax(85px, 1fr));
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
   }
 `;
 
@@ -34,7 +35,7 @@ export const HeadText = styled(HighlightBody)`
 const SponsorLogo = styled.div`
   ${tw`p-4 m-auto justify-center align-middle`}
   & >* {
-    ${tw`h-20`}
+    ${tw`w-52 lg:w-40 md:w-36 sm:w-28`}
   }
 `;
 
