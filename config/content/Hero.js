@@ -17,38 +17,27 @@ export default {
     {
       id: 1,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
-      alt: 'amazon logo',
-      size: '10%',
+      alt: 'Devfolio',
     },
     {
       id: 2,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
-      alt: 'apple logo',
-      size: '15%',
+      alt: 'Github',
     },
     {
       id: 3,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
-      alt: 'dell logo',
-      size: '15%',
+      alt: 'Tezos',
     },
     {
       id: 4,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
-      alt: 'google logo',
-      size: '15%',
+      alt: 'Celo',
     },
     {
       id: 5,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
-      alt: 'nasa logo',
+      alt: 'Polygon',
     },
-    {
-      id: 6,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
-      alt: 'paypal logo',
-    },
-    // { id: 7, src: '/hero-icons/tata.svg', alt: 'tata logo' },
-    // { id: 8, src: '/hero-icons/tesla.svg', alt: 'tesla logo' },
   ],
 };
