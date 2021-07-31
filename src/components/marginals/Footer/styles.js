@@ -79,6 +79,11 @@ export const LogoContainer = styled.div`
     margin-top: 20px;
     width: 70%;
   }
+
+  @media (max-width: 464px) {
+    justify-content: center;
+  }
+  }
 `;
 
 // Check css from here onwards.
@@ -101,6 +106,10 @@ const CardContainer = styled.div`
   rounded-xl
   auto-cols-auto
 `}
+`;
+
+const CardImage = styled.img`
+  max-height: 30px;
 `;
 
 const FooterCardImg = styled.div`
@@ -128,4 +137,11 @@ const FooterCardTextSmall = styled.div`
   `}
 `;
 
-export { FooterCards, CardContainer, FooterCardText, FooterCardImg, FooterCardTextSmall };
+export {
+  FooterCards,
+  CardContainer,
+  FooterCardText,
+  FooterCardImg,
+  FooterCardTextSmall,
+  CardImage,
+};
