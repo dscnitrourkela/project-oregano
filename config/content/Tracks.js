@@ -32,7 +32,7 @@ export default {
         alt: 'Track3: Sustainability',
       },
       content:
-        'his track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
+        'This track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
     },
     {
       id: 'track-4',
