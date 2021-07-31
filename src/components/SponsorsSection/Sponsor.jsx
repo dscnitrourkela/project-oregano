@@ -19,15 +19,15 @@ function Sponsor() {
     },
     {
       title: 'Beta Sponsors',
-      sponsors: sponsors.alpha,
+      sponsors: sponsors.beta,
     },
     {
       title: 'Gamma Sponsors',
-      sponsors: sponsors.alpha,
+      sponsors: sponsors.gamma,
     },
     {
       title: 'Delta Sponsors',
-      sponsors: sponsors.alpha,
+      sponsors: sponsors.delta,
     },
   ];
 
