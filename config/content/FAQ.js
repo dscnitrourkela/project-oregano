@@ -24,8 +24,7 @@ export default {
     one: {
       id: 'faq-1',
       question: 'How do I register for the hackathon?',
-      answer:
-        "Hop onto any 'Register Now' button on the website. Alternatively, you can head to https://hacknitr3.devfolio.co/",
+      answer: `Click on any "Register Now" button on the website. Alternatively, you can head over to hacknitr3.devfolio.co`,
     },
     two: {
       id: 'faq-2',
@@ -55,17 +54,17 @@ export default {
       answer:
         'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag.😉',
     },
+    // seven: {
+    //   id: 'faq-7',
+    //   question: 'Where can I find updates regarding HackNITR?',
+    //   answer:
+    //     'Follow us on instagram.com/hacknitr for all the updates, along we will be reaching out to you via mail. To receive the updates through the mail, kindly register for the hackathon.',
+    // },
     seven: {
       id: 'faq-7',
-      question: 'Where can I find updates?',
-      answer:
-        'Follow us on instagram.com/hacknitr for all the updates, along we will be reaching out to you via mail. To receive the updates through the mail, kindly register for the hackathon.',
-    },
-    eight: {
-      id: 'faq-8',
       question: 'How will teams be judged?',
       answer:
-        'The teams will be judged based on viability, technical complexity, presentation skills and most important creativity.',
+        'The teams will be judged based on Viability, Technical Complexity, Presentation Skills and most importantly, Creativity.',
     },
   },
 };

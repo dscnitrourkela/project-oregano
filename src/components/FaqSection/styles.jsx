@@ -112,6 +112,7 @@ const List = styled.li`
 const List1 = styled.li`
   ${tw`
         p-4
+        sm:px-1
         border-solid
         cursor-default
         font-normal
