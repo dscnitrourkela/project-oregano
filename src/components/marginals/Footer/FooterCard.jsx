@@ -13,7 +13,7 @@ function FooterCard({ img, Title, Text }) {
     <FooterCards>
       <CardContainer>
         <FooterCardImg>
-          <img src={img} alt='' />
+          <img style={{ height: '80px', width: 'auto' }} src={img} alt='' />
         </FooterCardImg>
         <FooterCardText>
           <Heading4>{Title}</Heading4>

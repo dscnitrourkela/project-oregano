@@ -22,6 +22,7 @@ import {
   Logo,
   IconContainer,
   LogoContainer,
+  CardImage,
 } from './styles';
 import FooterCard from './FooterCard';
 import { Container, Body } from '../../shared';
@@ -86,8 +87,14 @@ function Footer() {
 
           <LogoContainer>
             {footer.organisers.map(({ id, link, image }) => (
-              <LogoImgLink key={id} href={link} target='_blank' rel='noreferrer noopener'>
-                <img src={image.src} alt={image.alt} />
+              <LogoImgLink
+                style={{ marginLeft: '5px', marginRight: '5px' }}
+                key={id}
+                href={link}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <CardImage src={image.src} alt={image.alt} />
               </LogoImgLink>
             ))}
           </LogoContainer>
