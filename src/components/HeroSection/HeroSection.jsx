@@ -49,6 +49,8 @@ const HeroImageContainer = styled.div`
     flex
     justify-end
     sm:justify-center
+    mt-6
+    md:mt-0
   `}
 `;
 

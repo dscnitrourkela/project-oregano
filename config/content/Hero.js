@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 export default {
-  dates: '20th to 31st October 2021',
+  dates: '29th to 31st October 2021',
   title: 'HackNITR 3.0',
   tagline: 'HACK. IMBIBE. INNOVATE',
   content:
-    "Dive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n WE HACK to AMEND.",
+    "Dive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
   links: {
     discord: '',
     register: '',

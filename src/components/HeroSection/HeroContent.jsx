@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, ButtonDark, ButtonLight } from '../shared';
+import { Heading1, Body, ButtonDark, ButtonLight, HighlightBody } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -44,6 +44,14 @@ const Description = styled(Body)`
   sm:text-justify
   `}
 `;
+const Slogan = styled(HighlightBody)`
+  ${tw`
+  mr-14
+  md:mr-0
+  sm:mr-0
+  sm:text-justify
+  `}
+`;
 
 const SponsorInvite = styled.div`
   ${tw`my-6
@@ -55,7 +63,7 @@ const SponsorInvite = styled.div`
 `;
 
 const InlineWrapper = styled.div`
-  ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center`}
+  ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center sm:mt-4`}
 `;
 
 const HighlightLink = styled.a`
@@ -84,7 +92,7 @@ function HeroContent() {
     <ContentContainer>
       <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
-      <Description style={{ marginBottom: '20px' }}>{hero.tagline}</Description>
+      <Slogan style={{ marginBottom: '20px' }}>{hero.tagline}</Slogan>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
