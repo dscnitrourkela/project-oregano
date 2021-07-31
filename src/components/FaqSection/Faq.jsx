@@ -9,7 +9,7 @@ import { faq } from '../../../config/content';
 
 function Faq() {
   const [stage, setStage] = useState();
-  const { questions, title, content, toyImg, HackNITR } = faq;
+  const { id, questions, title, content, toyImg, HackNITR } = faq;
 
   const setStageToQuesa = () => setStage(questions.one.question);
   const setStageToQuesb = () => setStage(questions.two.question);
@@ -41,7 +41,7 @@ function Faq() {
   };
 
   return (
-    <SectionLayout title={title} description={content}>
+    <SectionLayout id={id} title={title} description={content}>
       <Wrapper>
         <FaqContainer>
           <Bot>

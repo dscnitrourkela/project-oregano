@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 export default {
+  id: 'faq',
   title: 'Have a question?',
   content:
     'Vel lobortis porttitor eget dignissim. Facilisi euismod nullam nunc quisque egestas ridiculus sociis. Mi, aliquam, in turpis non cras diam elementum morbi . Blandit integer.',

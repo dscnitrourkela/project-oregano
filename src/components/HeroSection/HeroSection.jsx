@@ -54,7 +54,7 @@ const HeroImageContainer = styled.div`
 
 function HeroSection() {
   return (
-    <SectionContainer>
+    <SectionContainer id='home'>
       <Container>
         <HeroContainer>
           <HeroContent />

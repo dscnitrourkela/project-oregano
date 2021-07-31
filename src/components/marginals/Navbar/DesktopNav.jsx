@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'gatsby';
 
 // Components
 import { NavSection, StyledHamburger, Logo } from './styles';
@@ -7,9 +8,28 @@ import { MenuContext, Container, Body } from '../..';
 // Assets
 import { nav } from '../../../../config/content';
 
+// Function Returning new scroll object
+const newScrollObject = () => {
+  // eslint-disable-next-line
+  const SmoothScroll = require('smooth-scroll');
+  return new SmoothScroll('', {
+    offset: () => 100,
+  });
+};
+
+const handleScroll = (id) => {
+  if (typeof window !== 'undefined' && id) {
+    const isHome = window.location.pathname === '/';
+    if (isHome) {
+      const scroll = newScrollObject();
+      const anchor = document.getElementById(id);
+      scroll.animateScroll(anchor);
+    }
+  }
+};
+
 function DesktopNav() {
   const menuContext = useContext(MenuContext);
-
   const { toggleMenuOpen, menuOpen } = menuContext;
 
   return (
@@ -25,8 +45,18 @@ function DesktopNav() {
 
             <ul className='navLinkList'>
               {nav.navItems.map(({ id, name }) => (
-                <li key={id} id={name.toLowerCase()} className='navLinkItem'>
-                  <Body className='navLink'>{name}</Body>
+                <li
+                  key={id}
+                  onClick={() => handleScroll(id)}
+                  onKeyPress={() => handleScroll(id)}
+                  id={name}
+                  role='menuitem'
+                  tabIndex='0'
+                  className='navLinkItem'
+                >
+                  <Link style={{ textDecoration: 'none' }} to={`#${id}`}>
+                    <Body className='navLink'>{name}</Body>
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -9,7 +9,7 @@ import { tracks } from '../../../config/content';
 
 function Tracks() {
   return (
-    <SectionLayout title={tracks.title} description={tracks.content}>
+    <SectionLayout id='tracks' title={tracks.title} description={tracks.content}>
       <Card />
     </SectionLayout>
   );
