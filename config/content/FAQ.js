@@ -3,7 +3,7 @@ export default {
   id: 'faq',
   title: 'Have a question?',
   content:
-    "We know that many of you would be first time hackers here and there must be many questions buzzing in your mind. But don't worry, we got you covered!  Go through these FAQs and you'll get most of your queries solved.",
+    "We know that many of you would be first-time hackers here and there must be many questions buzzing in your mind. But don't worry, we got you covered!  Go through these FAQs and you'll get most of your queries solved. In case you have more questions, ping us at the bottom-right corner.",
   img: {
     src: '',
     alt: '',
@@ -24,7 +24,8 @@ export default {
     one: {
       id: 'faq-1',
       question: 'How do I register for the hackathon?',
-      answer: 'Scroll up to the beginning of this page and find the "Apply with Devfolio" button. Alternatively, head over to <devfolio link>. You can register for HackNITR 3.0 all the way till 31st October 2021',
+      answer:
+        "Hop onto any 'Register Now' button on the website. Alternatively, you can head to https://hacknitr3.devfolio.co/",
     },
     two: {
       id: 'faq-2',
@@ -34,32 +35,37 @@ export default {
     three: {
       id: 'faq-3',
       question: "What if I don't have a team or idea?",
-      answer: "Interest in learning and working with technology is much more important. We'll have team formation and ideation events geared towards helping you find people to form your team.",
+      answer:
+        "We'll have team formation and ideation events geared towards helping you find a team. Make sure you join the discord server.",
     },
     four: {
       id: 'faq-4',
       question: 'Who can participate?',
-      answer: 'Students currently studying in any college of India and working professionals can participate.',
+      answer:
+        'Everyone is welcome to apply, any student or working professionals. If you can innovate or just want to have a fun weekend, you are most welcome.',
     },
     five: {
-      id: 'faq-6',
-      question: 'Why should I participate in HackNITR?',
-      answer: 'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag😉.',
+      id: 'faq-5',
+      question: 'What could be the size of the team?',
+      answer: 'You can make teams of up to 4 members. Lone wolfs are also welcome.',
     },
     six: {
-      id: 'faq-7',
-      question: "What if I don't know how to code?",
-      answer: "Well, in that case, here is a secret. None of the top devs at hackathons were pros when they entered their first hackathon, and we're sure you'll find beginners like you in the HackNITR 3.0 too. It's all about you wanting to learn something new about tech and grow like that.",
+      id: 'faq-6',
+      question: 'Why should I participate in HackNITR?',
+      answer:
+        'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag.😉',
     },
     seven: {
-      id: 'faq-8',
-      question: "What if I don't present what I made?",
-      answer: "We really won't advise doing that. We know you must be shy and doubtful about your work, but keep in mind that hackathons are not about being the best or making the best. Instead, it's just about what you thought and why. Your work might not even get a prize, but the feedbacks and suggestions which you'll get from showing it would really help you develop your idea or product into a cool new tech and who knows, it might be the next big thing!!!",
+      id: 'faq-7',
+      question: 'Where can I find updates?',
+      answer:
+        'Follow us on instagram.com/hacknitr for all the updates, along we will be reaching out to you via mail. To receive the updates through the mail, kindly register for the hackathon.',
     },
     eight: {
-      id: 'faq-9',
-      question: "How will teams be judged?",
-      answer: "The teams will be judged based on viability, financial benefits, technical complexity, presentation skills, creativity etc.",
+      id: 'faq-8',
+      question: 'How will teams be judged?',
+      answer:
+        'The teams will be judged based on viability, technical complexity, presentation skills and most important creativity.',
     },
   },
 };

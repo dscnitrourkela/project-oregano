@@ -75,8 +75,14 @@ function Footer() {
           <EmptyDiv />
         </Grid>
 
-        <SecondaryContainer style={{ marginTop: '2rem' }}>
-          <Body>Lorem ipsum dolor sit amet consectetur adipisicing.</Body>
+        <SecondaryContainer style={{ marginTop: '2rem', alignItems: 'center' }}>
+          <Body>
+            {footer.copyright.content.split('\n').map((data) => (
+              <span key={data} style={{ marginRight: '5px' }}>
+                {data}
+              </span>
+            ))}
+          </Body>
 
           <LogoContainer>
             {footer.organisers.map(({ id, link, image }) => (

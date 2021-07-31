@@ -12,7 +12,7 @@ export default {
         alt: 'Track1: Inclusivity',
       },
       content:
-        'This track is a refuge to captivated issues like women empowerment,racial discrimination,LGBTQ rights, and all that rewinds you back to imprecise biasness. SO put yourself on the Hackathon vehicle, gear up with your team and accelerate your ideas .',
+        'This track is a reminder of the beauty of inclusion and equality. Base your hacks on altering the social norms and build for the society on the lines of women empowerment, gender emancipation and societal justice.',
     },
     {
       id: 'track-2',
@@ -22,7 +22,7 @@ export default {
         alt: 'Track2: Community',
       },
       content:
-        'The Community track serves to address some of the most critical societal issues today. We hope that projects in this track can approach important and nuanced topics such as diversity, equity, and inclusion, civil engagement, community service, and more with a creative and unique perspective. Each and every project that embraces the challenge of making our communities stronger and better connected is wanted in this track.',
+        'This track serves to build for the community. Build for solving the problems of the society. Find solutions for the problems in healthcare, education etc. Each and every project that makes our lives better will adore this track.',
     },
     {
       id: 'track-3',
@@ -32,7 +32,7 @@ export default {
         alt: 'Track3: Sustainability',
       },
       content:
-        'Today the impact of sustainability in deciding how we as humans think, act, and live continues to grow. Projects in this track will seek to help us make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
+        'his track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
     },
     {
       id: 'track-4',
@@ -42,7 +42,7 @@ export default {
         alt: 'Track4: Open Innovity',
       },
       content:
-        'Be innovative by taking inspiration from existing ideas and build something unique that aligns with the required environment. Feel empowered to get creative!',
+        "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
     },
   ],
 };
