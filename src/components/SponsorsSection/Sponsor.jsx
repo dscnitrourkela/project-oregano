@@ -45,9 +45,14 @@ function Sponsor() {
             <Heading2>{details.title}</Heading2>
           </HeadingSection>
           <SponsorContainer>
-            {details.sponsors.map(({ src, alt }, index) => (
+            {details.sponsors.map(({ src, alt, size }, index) => (
               // eslint-disable-next-line react/no-array-index-key
-              <SponsorIcon key={`${details.title}-${alt}-${index}`} pic={src} alt={alt} />
+              <SponsorIcon
+                key={`${details.title}-${alt}-${index}`}
+                pic={src}
+                alt={alt}
+                size={size}
+              />
             ))}
           </SponsorContainer>
         </React.Fragment>

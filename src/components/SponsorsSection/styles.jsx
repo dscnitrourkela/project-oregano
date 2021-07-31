@@ -35,12 +35,12 @@ export const HeadText = styled(HighlightBody)`
 const SponsorLogo = styled.div`
   ${tw`p-4 m-auto justify-center align-middle`}
   & >* {
-    ${tw`w-52 lg:w-40 md:w-36 sm:w-28`}
+    /* ${tw` lg:w-40 md:w-36 sm:w-28`} */
   }
 `;
 
-export const SponsorIcon = ({ pic, alt }) => (
+export const SponsorIcon = ({ pic, alt, size }) => (
   <SponsorLogo>
-    <img src={pic} alt={alt} />
+    <img src={pic} alt={alt} style={{ width: size }} />
   </SponsorLogo>
 );
