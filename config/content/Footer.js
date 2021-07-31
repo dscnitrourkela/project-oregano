@@ -51,7 +51,7 @@ export default {
     },
     {
       icon: faDiscord,
-      link: 'https://discord.hacknitr.tech',
+      link: 'https://discord.com/invite/SGzuZyp9nS',
     },
     {
       icon: faFacebook,

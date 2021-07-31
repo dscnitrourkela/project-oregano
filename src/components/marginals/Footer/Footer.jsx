@@ -86,7 +86,7 @@ function Footer() {
 
           <LogoContainer>
             {footer.organisers.map(({ id, link, image }) => (
-              <LogoImgLink key={id} to={link} target='_blank'>
+              <LogoImgLink key={id} href={link} target='_blank' rel='noreferrer noopener'>
                 <img src={image.src} alt={image.alt} />
               </LogoImgLink>
             ))}
