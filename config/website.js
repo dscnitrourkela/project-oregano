@@ -9,7 +9,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
-    'One of the largest hackathons in the eastern India region, HackNITR is organised by GDSC NIT Rourkela in collaboration with Opencode.',
+    "Dive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
   author: 'HackNITR', // Author for schemaORGJSONLD
   organization: 'HackNITR',
 
@@ -33,4 +33,5 @@ module.exports = {
   discord: 'https://discord.com/invite/SGzuZyp9nS',
   register: 'https://hacknitr3.devfolio.co/',
   sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+  join: 'https://hacknitr21.typeform.com/to/o2X7YSNf',
 };
