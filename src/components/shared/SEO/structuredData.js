@@ -75,7 +75,7 @@ export const faqData = {
   '@type': 'FAQPage',
   mainEntity: Object.keys(faq.questions).map((key) => ({
     '@type': 'Question',
-    title: faq.questions[key].question,
+    name: faq.questions[key].question,
     acceptedAnswer: {
       '@type': 'Answer',
       text: faq.questions[key].answer,
