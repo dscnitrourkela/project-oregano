@@ -9,6 +9,7 @@ import { Heading1, Body, ButtonDark, ButtonLight } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
+import config from '../../../config/website';
 
 const ContentContainer = styled.div`
   ${tw`
@@ -36,7 +37,7 @@ const TagLine = styled(Heading1)`
 `;
 
 const Description = styled(Body)`
-  ${tw`my-7
+  ${tw`
   mr-14
   md:mr-0
   sm:mr-0
@@ -78,29 +79,26 @@ const NonStyledLink = styled.a`
   `}
 `;
 
-const links = {
-  discord: 'https://discord.com/invite/SGzuZyp9nS',
-  register: 'https://hacknitr3.devfolio.co/',
-  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
-};
-
 function HeroContent() {
   return (
     <ContentContainer>
       <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
-      <Description>{hero.content}</Description>
+      <Description style={{ marginBottom: '20px' }}>{hero.tagline}</Description>
+      {hero.content.split(' \n ').map((data) => (
+        <Description key={data}>{data}</Description>
+      ))}
       <InlineWrapper>
-        <NonStyledLink href={links.register} target='_blank' rel='noreferrer'>
+        <NonStyledLink href={config.register} target='_blank' rel='noreferrer'>
           <ButtonLight>Register Now!</ButtonLight>
         </NonStyledLink>
-        <NonStyledLink href={links.discord} target='_blank' rel='noreferrer'>
+        <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
           <ButtonDark>Join Discord</ButtonDark>
         </NonStyledLink>
       </InlineWrapper>
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
-        <HighlightLink href={links.sponsor} target='_blank' rel='noreferrer'>
+        <HighlightLink href={config.join} target='_blank' rel='noreferrer'>
           Join Us
         </HighlightLink>
       </SponsorInvite>
