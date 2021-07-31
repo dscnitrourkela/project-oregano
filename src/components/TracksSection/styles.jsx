@@ -13,7 +13,7 @@ export const Background = styled.div`
 `;
 
 export const TrackIcon = styled.img`
-  height: 50px;
+  height: 38px;
   width: auto;
 `;
 

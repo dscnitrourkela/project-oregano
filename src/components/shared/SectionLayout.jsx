@@ -22,7 +22,7 @@ const SectionContainer = styled.div`
 const Description = styled(Body)`
   ${tw`
     mt-2
-    w-1/2
+    w-3/4
     md:w-full
   `}
 `;
