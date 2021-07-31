@@ -2,6 +2,21 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+export const Background = styled.div`
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  background-color: ${(props) => props.color};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TrackIcon = styled.img`
+  height: 50px;
+  width: auto;
+`;
+
 export const Heading = styled.div`
   ${tw`
         mt-20
