@@ -20,7 +20,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/39991296?v=4",
       "profile": "https://abhibhaw.co",
       "contributions": [
-        "review"
+        "review",
+        "maintenance",
+        "code",
+        "infra",
+        "projectManagement"
       ]
     },
     {
