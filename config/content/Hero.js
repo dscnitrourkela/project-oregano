@@ -13,42 +13,4 @@ export default {
     src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hwt5qvsejm6kjka0aon1.png',
     alt: 'Howdy buddy! We are back with another awesome virtual hackathon, HackNITR',
   },
-  ticker: [
-    {
-      id: 1,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
-      alt: 'Devfolio',
-      size: '170px',
-    },
-    {
-      id: 2,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
-      alt: 'Github',
-      size: '150px',
-    },
-    {
-      id: 3,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
-      alt: 'Diamond Jubilee',
-      size: '100px',
-    },
-    {
-      id: 4,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
-      alt: 'Tezos',
-      size: '150px',
-    },
-    {
-      id: 5,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
-      alt: 'Celo',
-      size: '160px',
-    },
-    {
-      id: 6,
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
-      alt: 'Polygon',
-      size: '200px',
-    },
-  ],
 };
