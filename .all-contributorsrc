@@ -29,7 +29,11 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/56754747?v=4",
       "profile": "https://github.com/CIPHERTron",
       "contributions": [
-        "code"
+        "code",
+        "maintenance",
+        "mentoring",
+        "review",
+        "projectManagement"
       ]
     },
     {
