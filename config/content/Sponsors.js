@@ -17,7 +17,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
       name: 'Diamond Jubilee',
-      size: '65%',
+      size: '60%',
     },
   ],
   beta: [
