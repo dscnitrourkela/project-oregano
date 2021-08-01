@@ -8,7 +8,7 @@ import tw from 'twin.macro';
 import TickerItem from './TickerItem';
 
 // Assets
-import { hero } from '../../../config/content';
+import { sponsors } from '../../../config/content';
 import '../../styles/styles.css';
 
 const TickerContainer = styled.div`
@@ -36,8 +36,8 @@ function Ticker() {
     <TickerContainer className='TickerContainer'>
       <TickerWrapper className='TickerWrapper'>
         <TickerMover className='TickerMover'>
-          {hero.ticker.map((item) => (
-            <TickerItem key={item.id} source={item.src} alt={item.alt} size={item.size} />
+          {[...sponsors.alpha, ...sponsors.beta].map(({ name, src, width }) => (
+            <TickerItem key={name} source={src} alt={name} size={width} />
           ))}
         </TickerMover>
       </TickerWrapper>

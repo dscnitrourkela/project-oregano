@@ -18,19 +18,19 @@ export default {
       id: 1,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
       alt: 'Devfolio',
-      size: '150px',
+      size: '170px',
     },
     {
       id: 2,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
       alt: 'Github',
-      size: '120px',
+      size: '150px',
     },
     {
       id: 3,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
       alt: 'Diamond Jubilee',
-      size: '90px',
+      size: '100px',
     },
     {
       id: 4,
@@ -42,13 +42,13 @@ export default {
       id: 5,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
       alt: 'Celo',
-      size: '150px',
+      size: '160px',
     },
     {
       id: 6,
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
       alt: 'Polygon',
-      size: '150px',
+      size: '200px',
     },
   ],
 };

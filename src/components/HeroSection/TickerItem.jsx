@@ -2,16 +2,19 @@ import React from 'react';
 
 // Libraries
 import styled from 'styled-components';
-import tw from 'twin.macro';
 
 const ItemContainer = styled.div`
-  ${tw`inline-block px-8 py-4 `}
+  display: inline-block;
+  margin: 0.5rem 3rem;
+  height: 60px;
+  width: auto;
 `;
+
 const TickerIcon = styled.img`
-  ${tw`py-2
-  px-6
-  transform scale-95
-`}
+  display: inline-block;
+  vertical-align: middle;
+  padding: auto 3rem;
+  transform: scale(0.8);
 `;
 function TickerItem({ source, alt, size }) {
   return (
