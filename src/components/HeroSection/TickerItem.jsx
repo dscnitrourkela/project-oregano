@@ -13,10 +13,10 @@ const TickerIcon = styled.img`
   transform scale-95
 `}
 `;
-function TickerItem({ source, alt }) {
+function TickerItem({ source, alt, size }) {
   return (
     <ItemContainer>
-      <TickerIcon src={source} alt={alt} style={{ width: '150px' }} />
+      <TickerIcon src={source} alt={alt} style={{ width: size }} />
     </ItemContainer>
   );
 }
