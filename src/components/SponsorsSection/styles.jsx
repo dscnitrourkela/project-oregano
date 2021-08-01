@@ -39,8 +39,10 @@ const SponsorLogo = styled.div`
   }
 `;
 
-export const SponsorIcon = ({ pic, alt, size }) => (
+export const SponsorIcon = ({ pic, alt, size, link }) => (
   <SponsorLogo>
-    <img src={pic} alt={alt} style={{ width: size }} />
+    <a href={link} target='_blank' rel='noopener noreferrer'>
+      <img src={pic} alt={alt} style={{ width: size }} />
+    </a>
   </SponsorLogo>
 );
