@@ -62,7 +62,7 @@ export default {
     // },
     seven: {
       id: 'faq-7',
-      question: 'How will teams be judged?',
+      question: 'How will the teams be judged?',
       answer:
         'The teams will be judged based on Viability, Technical Complexity, Presentation Skills and most importantly, Creativity.',
     },
