@@ -37,7 +37,7 @@ function Ticker() {
       <TickerWrapper className='TickerWrapper'>
         <TickerMover className='TickerMover'>
           {hero.ticker.map((item) => (
-            <TickerItem key={item.id} source={item.src} alt={item.alt} />
+            <TickerItem key={item.id} source={item.src} alt={item.alt} size={item.size} />
           ))}
         </TickerMover>
       </TickerWrapper>
