@@ -1,7 +1,7 @@
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -206,6 +206,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/sambit-sankalp"><img src="https://avatars.githubusercontent.com/u/82284130?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sambit-sankalp</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=sambit-sankalp" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/Sonakshi1901"><img src="https://avatars.githubusercontent.com/u/76627480?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sonakshi Satpathy</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=Sonakshi1901" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/nayakastha"><img src="https://avatars.githubusercontent.com/u/58568514?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Astha Nayak</b></sub></a><br /><a href="#maintenance-nayakastha" title="Maintenance">🚧</a> <a href="https://github.com/dscnitrourkela/project-oregano/commits?author=nayakastha" title="Code">💻</a> <a href="https://github.com/dscnitrourkela/project-oregano/commits?author=nayakastha" title="Documentation">📖</a> <a href="#mentoring-nayakastha" title="Mentoring">🧑‍🏫</a> <a href="#eventOrganizing-nayakastha" title="Event Organizing">📋</a> <a href="https://github.com/dscnitrourkela/project-oregano/pulls?q=is%3Apr+reviewed-by%3Anayakastha" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-nayakastha" title="Project Management">📆</a></td>
+    <td align="center"><a href="https://github.com/ORKO06"><img src="https://avatars.githubusercontent.com/u/74568847?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Hemant Bajaj</b></sub></a><br /><a href="https://github.com/dscnitrourkela/project-oregano/commits?author=ORKO06" title="Code">💻</a></td>
   </tr>
 </table>
 
