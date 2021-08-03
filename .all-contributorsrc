@@ -123,6 +123,15 @@
         "review",
         "projectManagement"
       ]
+    },
+    {
+      "login": "ORKO06",
+      "name": "Hemant Bajaj",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74568847?v=4",
+      "profile": "https://github.com/ORKO06",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
