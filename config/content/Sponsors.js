@@ -35,6 +35,13 @@ export default {
       width: '160px',
     },
     {
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1628276570/project-oregano/sponsors/beta/pydzmkwjnnuwc5mqwnlz.png',
+      name: 'DigitalOcean',
+      size: '100%',
+      link: 'https://www.digitalocean.com/',
+      width: '220px',
+    },
+    {
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
       name: 'Polygon',
       size: '100%',
@@ -57,16 +64,16 @@ export default {
       link: 'https://www.echoar.xyz/',
     },
     {
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
-      name: 'Taskade',
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
+      name: 'Linode',
       size: '95%',
-      link: 'https://www.taskade.com/',
+      link: 'https://www.linode.com/',
     },
     {
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7so.png',
-      name: 'Voiceflow',
-      size: '95%',
-      link: 'https://www.voiceflow.com/',
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/bqlfwphjmjytpeuicdoe.png',
+      name: 'StickerMule',
+      size: '80%',
+      link: 'https://www.stickermule.com/',
     },
     {
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/gamma/yukdnno6o2y2hdbddnrk.png',
@@ -83,28 +90,36 @@ export default {
       link: 'https://www.leadlearners.ca/',
     },
     {
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
-      name: 'Linode',
-      size: '95%',
-      link: 'https://www.linode.com/',
-    },
-    {
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
       name: 'Repl.it',
       size: '95%',
       link: 'https://replit.com/',
     },
     {
-      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/bqlfwphjmjytpeuicdoe.png',
-      name: 'StickerMule',
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
+      name: 'Taskade',
       size: '95%',
-      link: 'https://www.stickermule.com/',
+      link: 'https://www.taskade.com/',
     },
     {
       src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/delta/wx7rpjho44bemgfrsgl9.png',
       name: 'Tweetbeam',
       size: '95%',
       link: 'https://www.tweetbeam.com/',
+    },
+    {
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7so.png',
+      name: 'Voiceflow',
+      size: '95%',
+      link: 'https://www.voiceflow.com/',
+    },
+  ],
+  'authentication-partner': [
+    {
+      src: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1628159739/project-oregano/sponsors/tjxlxskmlgk87qego2cj.png',
+      name: 'SAWO Labs',
+      size: '90%',
+      link: 'https://sawolabs.com/',
     },
   ],
 };
