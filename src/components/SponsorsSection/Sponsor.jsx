@@ -29,6 +29,10 @@ function Sponsor() {
       title: 'Delta Sponsors',
       sponsors: sponsors.delta,
     },
+    {
+      title: 'Authentication Partner',
+      sponsors: sponsors['authentication-partner'],
+    },
   ];
 
   return (
@@ -53,13 +57,7 @@ function Sponsor() {
           <SponsorContainer>
             {details.sponsors.map(({ src, alt, size, link }) => (
               // eslint-disable-next-line react/no-array-index-key
-              <SponsorIcon
-                key={`${details.title}-${alt}`}
-                pic={src}
-                alt={alt}
-                size={size}
-                link={link}
-              />
+              <SponsorIcon key={link} pic={src} alt={alt} size={size} link={link} />
             ))}
           </SponsorContainer>
         </div>
