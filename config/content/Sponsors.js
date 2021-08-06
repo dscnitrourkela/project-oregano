@@ -120,6 +120,7 @@ export default {
       name: 'SAWO Labs',
       size: '90%',
       link: 'https://sawolabs.com/',
+      width: '180px',
     },
   ],
 };

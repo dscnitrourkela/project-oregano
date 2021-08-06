@@ -36,9 +36,11 @@ function Ticker() {
     <TickerContainer className='TickerContainer'>
       <TickerWrapper className='TickerWrapper'>
         <TickerMover className='TickerMover'>
-          {[...sponsors.alpha, ...sponsors.beta].map(({ name, src, width }) => (
-            <TickerItem key={name} source={src} alt={name} size={width} />
-          ))}
+          {[...sponsors.alpha, ...sponsors.beta, ...sponsors['authentication-partner']].map(
+            ({ name, src, width }) => (
+              <TickerItem key={name} source={src} alt={name} size={width} />
+            ),
+          )}
         </TickerMover>
       </TickerWrapper>
     </TickerContainer>
