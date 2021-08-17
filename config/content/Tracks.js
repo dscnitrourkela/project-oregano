@@ -9,7 +9,7 @@ export default {
       title: 'INCLUSIVITY',
       content:
         'This track is a reminder of the beauty of inclusion and equality. Base your hacks on altering the social norms and build for the society on the lines of women empowerment, gender emancipation and societal justice.',
-      icon: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1627730311/project-oregano/assets/yw1ew4euvqmuqpow2h6g.png',
+      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/yw1ew4euvqmuqpow2h6g.png',
       alt: 'Inclusivity Icon',
       hex: '#ebb722',
     },
@@ -18,7 +18,7 @@ export default {
       title: 'COMMUNITY',
       content:
         'This track serves to build for the community. Build for solving the problems of the society. Find solutions for the problems in healthcare, education etc. Each and every project that makes our lives better will adore this track.',
-      icon: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1627730311/project-oregano/assets/pwcokehizmndjmltve3f.png',
+      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/pwcokehizmndjmltve3f.png',
       alt: 'Community Icon',
       hex: '#71a0ce',
     },
@@ -27,7 +27,7 @@ export default {
       title: 'SUSTAINABILITY',
       content:
         'This track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
-      icon: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1627730311/project-oregano/assets/udxogwtrkzphm22s6aek.png',
+      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/udxogwtrkzphm22s6aek.png',
       alt: 'Sustainability Icon',
       hex: '#e78967',
     },
@@ -36,7 +36,7 @@ export default {
       title: 'OPEN INNOVITY',
       content:
         "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
-      icon: 'https://res.cloudinary.com/dalqfvowk/image/upload/v1627730311/project-oregano/assets/c6wx3wso2fwzlk1gpdny.png',
+      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/c6wx3wso2fwzlk1gpdny.png',
       alt: 'Open Innovity Icon',
       hex: '#8fa963',
     },
