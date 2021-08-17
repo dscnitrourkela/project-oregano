@@ -10,7 +10,7 @@ export default {
     register: '',
   },
   img: {
-    src: 'https://res.cloudinary.com/dalqfvowk/image/upload/project-oregano/assets/hwt5qvsejm6kjka0aon1.png',
+    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/hwt5qvsejm6kjka0aon1.png',
     alt: 'Howdy buddy! We are back with another awesome virtual hackathon, HackNITR',
   },
 };
