@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, ButtonDark, ButtonLight, HighlightBody, RegisterButton } from '../shared';
+import { Heading1, Body, ButtonDark, HighlightBody, RegisterButton } from '../shared';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -96,11 +96,8 @@ function HeroContent() {
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
-      <RegisterButton />
       <InlineWrapper>
-        <NonStyledLink href={config.register} target='_blank' rel='noreferrer'>
-          <ButtonLight>Register Now!</ButtonLight>
-        </NonStyledLink>
+        <RegisterButton />
         <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
           <ButtonDark>Join Discord</ButtonDark>
         </NonStyledLink>

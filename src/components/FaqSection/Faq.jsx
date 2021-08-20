@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import React, { useState } from 'react';
 
 // Components
@@ -6,6 +7,23 @@ import { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './
 
 // Assets
 import { faq } from '../../../config/content';
+import { renderData } from '../../utils/parseLinks';
+
+const getUpdatedContent = (text) => {
+  const updatedContent = {};
+  // eslint-disable-next-line no-useless-escape
+  const urlPattern = /([^+>]*)[^<]*(<a [^>]*(href="([^>^\"]*)")[^>]*>)([^<]+)(<\/a>)/gi;
+  const output = text.replace(urlPattern, '$1_|_$2$3_|_$4_|_$5_|_$6').split('_|_');
+
+  updatedContent[`body-${1}`] = output[0];
+  updatedContent[`link-${1}`] = {
+    href: output[2],
+    text: output[3],
+  };
+  updatedContent[`body-${2}`] = output[4]?.split('</a>')[1];
+
+  return renderData(updatedContent, true);
+};
 
 function Faq() {
   const [stage, setStage] = useState();
@@ -22,21 +40,21 @@ function Faq() {
   const renderFaq = () => {
     switch (stage) {
       case questions.one.question:
-        return questions.one.answer;
+        return getUpdatedContent(questions.one.answer);
       case questions.two.question:
-        return questions.two.answer;
+        return getUpdatedContent(questions.two.answer);
       case questions.three.question:
-        return questions.three.answer;
+        return getUpdatedContent(questions.three.answer);
       case questions.four.question:
-        return questions.four.answer;
+        return getUpdatedContent(questions.four.answer);
       case questions.five.question:
-        return questions.five.answer;
+        return getUpdatedContent(questions.five.answer);
       case questions.six.question:
-        return questions.six.answer;
+        return getUpdatedContent(questions.six.answer);
       case questions.seven.question:
-        return questions.seven.answer;
+        return getUpdatedContent(questions.seven.answer);
       default:
-        return 'Hi there! I am Xori. How may I help you?';
+        return '...';
     }
   };
 
@@ -47,7 +65,7 @@ function Faq() {
           <Bot>
             <Img alt={toyImg.alt} src={toyImg.src} />
             <Chat>
-              <Heading5>{renderFaq()}</Heading5>
+              <Heading5>Hi there! I am Xori. How may I help you?</Heading5>
             </Chat>
           </Bot>
 
@@ -63,6 +81,13 @@ function Faq() {
             </Ul>
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>
+
+          <Bot>
+            <Img alt={toyImg.alt} src={toyImg.src} />
+            <Chat>
+              <Heading5>{renderFaq()}</Heading5>
+            </Chat>
+          </Bot>
         </FaqContainer>
 
         <WhyWait />

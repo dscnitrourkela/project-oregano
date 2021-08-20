@@ -22,6 +22,7 @@ const FaqContainer = styled.div`
         bg-secondary
         relative
         p-2
+        pb-8
         rounded-lg
         grid
         col-span-3
@@ -59,7 +60,7 @@ const Chat = styled.div`
   ${tw`
         ml-3
         flex
-        w-2/3
+        w-auto
         p-1.5
         sm:p-0.5
         bg-purple-light
@@ -68,6 +69,8 @@ const Chat = styled.div`
         relative
         text-black
     `}
+  display: inline-block;
+  max-width: 66%;
 `;
 
 const Ques = styled.div`
@@ -85,7 +88,7 @@ const Ul = styled.ul`
         col-start-3
         col-end-10
         sm:col-start-1
-        bg-black
+        bg-background-dark
         p-5
         rounded-xl
         border border-gray-800

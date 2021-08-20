@@ -10,6 +10,7 @@ import { ButtonLight, Heading4, Body, Modal } from '.';
 
 // Assets
 import config from '../../../config/website';
+import { renderData } from '../../utils/parseLinks';
 
 const Label = styled.label`
   ${tw`
@@ -41,51 +42,23 @@ const Input = styled.input`
   `}
 `;
 
-const NonStyledLink = styled.a`
-  ${tw`
-    no-underline
-    text-gray-400
-  `}
-`;
-
-const Checkbox = ({ value, setValue, content }) => {
-  const renderData = (contentNext) => {
-    const render = (key, index) => {
-      switch (key.split('-')[0]) {
-        case 'body':
-          return contentNext[key];
-        case 'link':
-          return (
-            <NonStyledLink key={index} href={contentNext[key].href}>
-              {contentNext[key].text}
-            </NonStyledLink>
-          );
-        default:
-          return contentNext[key];
-      }
-    };
-
-    return Object.keys(contentNext).map((key, index) => render(key, index));
-  };
-
-  return (
-    <Label>
-      <InputContainer>
-        <Input type='checkbox' checked={value} onChange={() => setValue((current) => !current)} />
-        {value && (
-          <svg
-            className='fill-current hidden w-3 h-3 pointer-events-none'
-            viewBox='0 0 20 20'
-            style={{ padding: '3px' }}
-          >
-            <path d='M0 11l2-2 5 5L18 3l2 2L7 18z' />
-          </svg>
-        )}
-      </InputContainer>
-      <Body className='select-none'>{renderData(content)}</Body>
-    </Label>
-  );
-};
+const Checkbox = ({ value, setValue, content }) => (
+  <Label>
+    <InputContainer>
+      <Input type='checkbox' checked={value} onChange={() => setValue((current) => !current)} />
+      {value && (
+        <svg
+          className='fill-current hidden w-3 h-3 pointer-events-none'
+          viewBox='0 0 20 20'
+          style={{ padding: '3px' }}
+        >
+          <path d='M0 11l2-2 5 5L18 3l2 2L7 18z' />
+        </svg>
+      )}
+    </InputContainer>
+    <Body className='select-none'>{renderData(content)}</Body>
+  </Label>
+);
 
 const RegisterButton = () => {
   const [modalOpen, setModalOpen] = useState(false);
