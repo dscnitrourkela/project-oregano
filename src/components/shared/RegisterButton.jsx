@@ -48,42 +48,44 @@ const NonStyledLink = styled.a`
   `}
 `;
 
-const renderData = (content) => {
-  const render = (key, index) => {
-    switch (key.split('-')[0]) {
-      case 'body':
-        return content[key];
-      case 'link':
-        return (
-          <NonStyledLink key={index} href={content[key].href}>
-            {content[key].text}
-          </NonStyledLink>
-        );
-      default:
-        return content[key];
-    }
+const Checkbox = ({ value, setValue, content }) => {
+  const renderData = (contentNext) => {
+    const render = (key, index) => {
+      switch (key.split('-')[0]) {
+        case 'body':
+          return contentNext[key];
+        case 'link':
+          return (
+            <NonStyledLink key={index} href={contentNext[key].href}>
+              {contentNext[key].text}
+            </NonStyledLink>
+          );
+        default:
+          return contentNext[key];
+      }
+    };
+
+    return Object.keys(contentNext).map((key, index) => render(key, index));
   };
 
-  return Object.keys(content).map((key, index) => render(key, index));
+  return (
+    <Label>
+      <InputContainer>
+        <Input type='checkbox' checked={value} onChange={() => setValue((current) => !current)} />
+        {value && (
+          <svg
+            className='fill-current hidden w-3 h-3 pointer-events-none'
+            viewBox='0 0 20 20'
+            style={{ padding: '3px' }}
+          >
+            <path d='M0 11l2-2 5 5L18 3l2 2L7 18z' />
+          </svg>
+        )}
+      </InputContainer>
+      <Body className='select-none'>{renderData(content)}</Body>
+    </Label>
+  );
 };
-
-const Checkbox = ({ value, setValue, content }) => (
-  <Label>
-    <InputContainer>
-      <Input type='checkbox' checked={value} onChange={() => setValue((current) => !current)} />
-      {value && (
-        <svg
-          className='fill-current hidden w-3 h-3 pointer-events-none'
-          viewBox='0 0 20 20'
-          style={{ padding: '3px' }}
-        >
-          <path d='M0 11l2-2 5 5L18 3l2 2L7 18z' />
-        </svg>
-      )}
-    </InputContainer>
-    <Body className='select-none'>{renderData(content)}</Body>
-  </Label>
-);
 
 const RegisterButton = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -92,6 +94,13 @@ const RegisterButton = () => {
   const [value3, setValue3] = useState(false);
 
   const onProceed = () => {
+    if (!value1 || !value2 || !value3) {
+      if (window) {
+        // eslint-disable-next-line no-alert
+        window.alert('Please accept the following terms to proceed');
+        return;
+      }
+    }
     if (window) {
       window.open(config.register, '_blank', 'noreferrer');
     }
@@ -112,7 +121,7 @@ const RegisterButton = () => {
             'body-1': 'I have read and agree to the ',
             'link-1': {
               text: 'MLH Code of Conduct.',
-              href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+              href: config.codeOfConduct,
             },
           }}
         />
@@ -124,17 +133,17 @@ const RegisterButton = () => {
             'body-1':
               'I authorize you to share my application/registration information with Major League Hacking for event administration, ranking, and MLH administration in-line with the ',
             'link-1': {
-              href: 'https://mlh.io/privacy',
+              href: config.privacyPolicy,
               text: 'MLH Privacy Policy',
             },
             'body-2': '. I further agree to the terms of both the ',
             'link-2': {
-              href: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
+              href: config.termsConditions,
               text: 'MLH Contest Terms and Conditions',
             },
             'body-3': ' and the ',
             'link-3': {
-              href: 'https://mlh.io/privacy',
+              href: config.privacyPolicy,
               text: 'MLH Privacy Policy.',
             },
           }}
