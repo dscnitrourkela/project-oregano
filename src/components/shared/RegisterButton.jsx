@@ -41,6 +41,32 @@ const Input = styled.input`
   `}
 `;
 
+const NonStyledLink = styled.a`
+  ${tw`
+    no-underline
+    text-gray-400
+  `}
+`;
+
+const renderData = (content) => {
+  const render = (key, index) => {
+    switch (key.split('-')[0]) {
+      case 'body':
+        return content[key];
+      case 'link':
+        return (
+          <NonStyledLink key={index} href={content[key].href}>
+            {content[key].text}
+          </NonStyledLink>
+        );
+      default:
+        return content[key];
+    }
+  };
+
+  return Object.keys(content).map((key, index) => render(key, index));
+};
+
 const Checkbox = ({ value, setValue, content }) => (
   <Label>
     <InputContainer>
@@ -55,7 +81,7 @@ const Checkbox = ({ value, setValue, content }) => (
         </svg>
       )}
     </InputContainer>
-    <Body className='select-none'>{content}</Body>
+    <Body className='select-none'>{renderData(content)}</Body>
   </Label>
 );
 
@@ -82,22 +108,45 @@ const RegisterButton = () => {
         <Checkbox
           value={value1}
           setValue={setValue1}
-          content='I have read and agree to the MLH Code of Conduct.'
+          content={{
+            'body-1': 'I have read and agree to the ',
+            'link-1': {
+              text: 'MLH Code of Conduct.',
+              href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+            },
+          }}
         />
 
         <Checkbox
           value={value2}
           setValue={setValue2}
-          content='I authorize you to share my application/registration information with Major League
-            Hacking for event administration, ranking, and MLH administration in-line with the MLH
-            Privacy Policy. I further agree to the terms of both the MLH Contest Terms and
-            Conditions and the MLH Privacy Policy.'
+          content={{
+            'body-1':
+              'I authorize you to share my application/registration information with Major League Hacking for event administration, ranking, and MLH administration in-line with the ',
+            'link-1': {
+              href: 'https://mlh.io/privacy',
+              text: 'MLH Privacy Policy',
+            },
+            'body-2': '. I further agree to the terms of both the ',
+            'link-2': {
+              href: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
+              text: 'MLH Contest Terms and Conditions',
+            },
+            'body-3': ' and the ',
+            'link-3': {
+              href: 'https://mlh.io/privacy',
+              text: 'MLH Privacy Policy.',
+            },
+          }}
         />
 
         <Checkbox
           value={value3}
           setValue={setValue3}
-          content='I authorize MLH to send me pre- and post-event informational emails, which contain free credit and opportunities from their partners.'
+          content={{
+            'body-1':
+              'I authorize MLH to send me pre- and post-event informational emails, which contain free credit and opportunities from their partners.',
+          }}
         />
       </Modal>
     </>
