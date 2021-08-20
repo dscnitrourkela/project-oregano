@@ -34,4 +34,9 @@ module.exports = {
   register: 'https://hacknitr3.devfolio.co/',
   sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
   join: 'https://hacknitr21.typeform.com/to/o2X7YSNf',
+
+  // MLH Links
+  codeOfConduct: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  privacyPolicy: 'https://mlh.io/privacy',
+  termsConditions: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
 };
