@@ -89,8 +89,8 @@ const RegisterButton = () => {
         onProceed={onProceed}
         isButtonActive={value1 && value2 && value3}
       >
-        <Heading4>Checkboxes</Heading4>
-        <Body style={{ marginBottom: '15px' }}>Please check the following checkboxes.</Body>
+        <Heading4>Terms and Conditions</Heading4>
+        <Body style={{ marginBottom: '15px' }}>Please accept the following terms before proceeding ahead.</Body>
 
         <Checkbox
           value={value1}
