@@ -83,7 +83,12 @@ const RegisterButton = () => {
     <>
       <ButtonLight onClick={() => setModalOpen(true)}>Register Now!</ButtonLight>
 
-      <Modal isOpen={modalOpen} close={() => setModalOpen(false)} onProceed={onProceed}>
+      <Modal
+        isOpen={modalOpen}
+        close={() => setModalOpen(false)}
+        onProceed={onProceed}
+        isButtonActive={value1 && value2 && value3}
+      >
         <Heading4>Checkboxes</Heading4>
         <Body style={{ marginBottom: '15px' }}>Please check the following checkboxes.</Body>
 
