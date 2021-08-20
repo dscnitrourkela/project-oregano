@@ -7,7 +7,7 @@ import tw from 'twin.macro';
 // Components
 import Title from '../shared/Typography/Heading4';
 import Body from '../shared/Typography/Body';
-import { ButtonLight } from '../shared';
+import { RegisterButton } from '../shared';
 
 // Assets
 import { hacker } from '../../../config/content';
@@ -48,20 +48,9 @@ const CardCol = styled.div`
     `}
 `;
 
-const NonStyledLink = styled.a`
-  ${tw`
-    no-underline
-    sm:mt-2
-  `}
-`;
-
-const links = {
-  register: 'https://hacknitr3.devfolio.co/',
-};
-
 const HackerCard = () => (
   <CardCol>
-    {hacker.cards.map(({ id, title, content, img, hasButton, buttonText }) => (
+    {hacker.cards.map(({ id, title, content, img, hasButton }) => (
       <Card key={id}>
         <CardImage src={img.src} alt={img.alt} />
         <CardBody>
@@ -69,11 +58,7 @@ const HackerCard = () => (
           <Description>
             <Body>{content}</Body>
           </Description>
-          {hasButton && (
-            <NonStyledLink href={links.register} target='_blank' rel='no-referrer'>
-              <ButtonLight>{buttonText}</ButtonLight>
-            </NonStyledLink>
-          )}
+          {hasButton && <RegisterButton />}
         </CardBody>
       </Card>
     ))}

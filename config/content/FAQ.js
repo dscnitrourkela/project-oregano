@@ -24,7 +24,7 @@ export default {
     one: {
       id: 'faq-1',
       question: 'How do I register for the hackathon?',
-      answer: `Click on any "Register Now" button on the website. Alternatively, you can head over to hacknitr3.devfolio.co`,
+      answer: `Click on any "Register Now" button on the website. Alternatively, you can head over to <a href="https://hacknitr3.devfolio.co">Devfolio</a>`,
     },
     two: {
       id: 'faq-2',
