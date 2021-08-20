@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Libraries
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,6 +28,24 @@ const Container = styled.div`
   min-width: 100vw;
 `;
 
+const scaleUp = keyframes`
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+`;
+
+const scaleDown = keyframes`
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+`;
+
 const BackgroundContainer = styled.div`
   ${tw`
       absolute
@@ -35,7 +53,39 @@ const BackgroundContainer = styled.div`
       opacity-80
       inset-0
       z-0
-    `}
+    `};
+
+  animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+    forwards;
+`;
+
+const BodyContainer = styled.div`
+  ${tw`
+    text-left
+    p-5
+    flex-auto
+    justify-center
+  `}
+
+  animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
+    forwards;
+`;
+
+const ContentContainer = styled.div`
+  ${tw`
+    w-full
+    max-w-lg
+    p-5
+    relative
+    mx-auto
+    my-auto
+    rounded-xl
+    shadow-lg
+    bg-background-dark
+
+    flex
+    justify-between
+  `}
 `;
 
 const SvgContainer = styled.div`
@@ -70,32 +120,6 @@ const Icon = styled(FontAwesomeIcon)`
   &:hover {
     cursor: pointer;
   }
-`;
-
-const BodyContainer = styled.div`
-  ${tw`
-    text-left
-    p-5
-    flex-auto
-    justify-center
-  `}
-`;
-
-const ContentContainer = styled.div`
-  ${tw`
-    w-full
-    max-w-lg
-    p-5
-    relative
-    mx-auto
-    my-auto
-    rounded-xl
-    shadow-lg
-    bg-background-dark
-
-    flex
-    justify-between
-  `}
 `;
 
 const FooterContainer = styled.div`
@@ -151,7 +175,7 @@ const Modal = ({ isOpen, close, onProceed, buttonText, children }) => {
     <>
       {isOpen && (
         <Container id='modal-id'>
-          <BackgroundContainer onClick={close} />
+          <BackgroundContainer onClick={close} isOpen={isOpen} />
 
           <BodyContainer>
             {/* <!--content--> */}
