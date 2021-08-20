@@ -14,6 +14,7 @@ import {
   ButtonLight,
   ButtonDark,
   WhyWait,
+  Modal,
 } from '../components';
 
 const Element = styled.div`
@@ -63,6 +64,8 @@ function playground() {
         <ButtonLight>Button</ButtonLight>
         <ButtonDark>Button</ButtonDark>
       </div>
+
+      <Modal />
     </Container>
   );
 }
