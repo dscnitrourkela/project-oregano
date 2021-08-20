@@ -141,51 +141,62 @@ const DeleteButton = styled.button`
   }
 `;
 
-const Modal = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [s, ss] = React.useState();
+const Modal = ({ isOpen, close, onProceed, buttonText, children }) => {
+  const proceed = () => {
+    onProceed();
+    close();
+  };
+
   return (
-    <Container id='modal-id'>
-      <BackgroundContainer />
+    <>
+      {isOpen && (
+        <Container id='modal-id'>
+          <BackgroundContainer onClick={close} />
 
-      <BodyContainer>
-        {/* <!--content--> */}
-        <ContentContainer>
-          {/* <!--body--> */}
-          <SvgContainer>
-            <Svg
-              xmlns='http://www.w3.org/2000/svg'
-              class=''
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-              />
-            </Svg>
-          </SvgContainer>
+          <BodyContainer>
+            {/* <!--content--> */}
+            <ContentContainer>
+              {/* <!--body--> */}
+              <SvgContainer>
+                <Svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  class=''
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth='2'
+                    d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                  />
+                </Svg>
+              </SvgContainer>
 
-          <Icon icon={faTimes} />
+              <Icon icon={faTimes} onClick={close} />
 
-          <div>
-            <Heading4>Are you sure?</Heading4>
-            <Body style={{ marginTop: '5px' }}>
-              Do you really want to delete your account? This process cannot be undone
-            </Body>
+              <div>
+                {children || (
+                  <>
+                    <Heading4>Are you sure?</Heading4>
+                    <Body style={{ marginTop: '5px' }}>
+                      Do you really want to delete your account? This process cannot be undone
+                    </Body>
+                  </>
+                )}
 
-            <FooterContainer>
-              <DeleteButton>
-                <Body2>Proceed</Body2>
-              </DeleteButton>
-            </FooterContainer>
-          </div>
-        </ContentContainer>
-      </BodyContainer>
-    </Container>
+                <FooterContainer>
+                  <DeleteButton onClick={proceed}>
+                    <Body2>{buttonText || 'Proceed'}</Body2>
+                  </DeleteButton>
+                </FooterContainer>
+              </div>
+            </ContentContainer>
+          </BodyContainer>
+        </Container>
+      )}
+    </>
   );
 };
 

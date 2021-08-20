@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
@@ -40,7 +40,9 @@ const Paragraph = styled.p`
   `}
 `;
 
-function playground() {
+const Playground = () => {
+  const [open, setOpen] = useState(false);
+
   const partials = {
     content: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, impedit minus cupiditate
     fugit nulla cum, officia adipisci reprehenderit necessitatibus facilis, deleniti aliquam
@@ -65,9 +67,12 @@ function playground() {
         <ButtonDark>Button</ButtonDark>
       </div>
 
-      <Modal />
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button onClick={() => setOpen((current) => !current)}>Open Modal</button>
+
+      <Modal isOpen={open} close={() => setOpen(false)} onProceed={() => console.log('hello')} />
     </Container>
   );
-}
+};
 
-export default playground;
+export default Playground;
