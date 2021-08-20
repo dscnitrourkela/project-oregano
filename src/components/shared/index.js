@@ -13,6 +13,7 @@ export { ButtonLight } from './Button';
 export { default as Layout } from './Layout';
 export { default as SectionLayout } from './SectionLayout';
 export { default as Modal } from './Modal';
+export { default as RegisterButton } from './RegisterButton';
 
 // SEO Components
 export { default as SEO } from './SEO/SEO';
