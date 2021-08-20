@@ -135,9 +135,7 @@ const FooterContainer = styled.div`
 `;
 
 const Body2 = styled(Body)`
-  ${tw`
-    text-color-primary
-  `}
+  color: ${(isButtonActive) => (!isButtonActive ? '#686868' : '#ffffff')};
 `;
 
 const DeleteButton = styled.button`
@@ -158,14 +156,15 @@ const DeleteButton = styled.button`
     text-white
     hover:bg-blue-400
     hover:shadow-lg
-  `}
+    hover:cursor-pointer
 
-  &:hover {
-    cursor: pointer;
-  }
+    disabled:bg-gray-400
+    disabled:border-gray-400
+    disabled:cursor-not-allowed
+  `}
 `;
 
-const Modal = ({ isOpen, close, onProceed, buttonText, children }) => {
+const Modal = ({ isOpen, close, onProceed, buttonText, isButtonActive = true, children }) => {
   const proceed = () => {
     onProceed();
     close();
@@ -211,8 +210,8 @@ const Modal = ({ isOpen, close, onProceed, buttonText, children }) => {
                 )}
 
                 <FooterContainer>
-                  <DeleteButton onClick={proceed}>
-                    <Body2>{buttonText || 'Proceed'}</Body2>
+                  <DeleteButton onClick={proceed} disabled={!isButtonActive}>
+                    <Body2 isButtonActive={isButtonActive}>{buttonText || 'Proceed'}</Body2>
                   </DeleteButton>
                 </FooterContainer>
               </div>
