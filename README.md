@@ -228,7 +228,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 [stars-url]: https://github.com/dscnitrourkela/project-oregano/stargazers
 [issues-shield]: https://img.shields.io/github/issues/dscnitrourkela/project-oregano?style=for-the-badge
 [issues-url]: https://github.com/dscnitrourkela/project-oregano/issues
-[license-shield]: https://img.shields.io/github/license/dscnitrourkela/project-oregano=for-the-badge
-[license-url]: LICENSE
+[license-shield]: https://img.shields.io/github/license/dscnitrourkela/project-oregano?style=for-the-badge
+[license-url]: https://github.com/dscnitrourkela/project-oregano/blob/main/LICENSE
 [product-screenshot]: images/Compose.png
 [dsc-nitrourkela]: images/repoCover.png
