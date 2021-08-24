@@ -16,6 +16,7 @@ const ContentContainer = styled.div`
   col-span-5
   md:col-span-12
   md:mt-6
+  ml-3
   `}
 `;
 

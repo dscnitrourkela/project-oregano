@@ -36,7 +36,7 @@ const HeroContainer = styled.div`
 
 const HeroImage = styled.img`
   ${tw`
-    w-11/12
+    w-10/12
     block
     md:hidden
   `}
@@ -47,7 +47,7 @@ const HeroImageContainer = styled.div`
     col-span-7
     sm:col-span-12
     flex
-    justify-end
+    justify-center
     sm:justify-center
     mt-6
     md:mt-0
