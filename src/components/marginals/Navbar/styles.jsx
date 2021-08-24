@@ -37,6 +37,10 @@ export const NavSection = styled.header`
   }
   .navLeft {
     font-family: 'Pacifico', cursive;
+
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
   .navHomeLink {
     display: inline-flex;
@@ -129,7 +133,7 @@ export const StyledHamburger = styled.button`
     width: 100%;
     position: absolute;
     display: block;
-    right: 0;
+    left: 0;
     transition: all 0.25s;
   }
   &:active,
@@ -145,7 +149,7 @@ export const StyledHamburger = styled.button`
     bottom: ${({ menuOpen }) => (menuOpen ? '12px' : '8px')};
     transform: ${({ menuOpen }) => (menuOpen ? 'rotate(-40deg)' : null)};
   }
-  @media all and (min-width: 758px) {
+  @media all and (min-width: 760px) {
     display: none;
   }
 `;

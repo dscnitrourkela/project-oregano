@@ -14,12 +14,12 @@ const MLHBanner = () => (
       width: '10%',
       zIndex: 100000,
     }}
-    href='https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=yellow'
+    href='https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2022-season&amp;utm_content=red'
     target='_blank'
     rel='noreferrer'
   >
     <img
-      src='https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-yellow.svg'
+      src='https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-red.svg'
       alt='Major League Hacking 2022 Hackathon Season'
       style={{ width: '100%' }}
     />

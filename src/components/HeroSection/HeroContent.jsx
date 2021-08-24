@@ -21,8 +21,12 @@ const ContentContainer = styled.div`
 `;
 
 const TimeLine = styled(Body)`
-  color: #fff;
-  background-color: #e78967;
+  color: black;
+  /* color: #e73428; */
+  /* color: #fff; */
+  font-size: 1rem;
+  background-color: #ffffff;
+  /* background-color: #e73428; */
   border-radius: 25px;
   padding: 10px 15px;
   width: fit-content;
