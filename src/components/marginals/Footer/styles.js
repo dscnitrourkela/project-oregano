@@ -99,7 +99,7 @@ const FooterCards = styled.div`
 const CardContainer = styled.div`
   ${tw`
   grid
-  bg-black
+  bg-background-dark
   py-4
   pr-2
   grid-flow-col

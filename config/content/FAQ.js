@@ -16,9 +16,9 @@ export default {
     src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png',
     alt: 'HackNITR Chat Profile',
   },
-  laptop: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627540413/project-oregano/assets/dubynkp6upfnx4cajztf.png',
-    alt: 'Laptop Illustration',
+  email: {
+    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1629793604/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
+    alt: 'Email Illustration',
   },
   questions: {
     one: {
