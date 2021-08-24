@@ -11,6 +11,7 @@ import {
   logoData,
 } from '../components/shared/SEO/structuredData';
 
+// Components
 import {
   HeroSection,
   FAQ,
@@ -21,6 +22,7 @@ import {
   Layout,
   SEO,
   Footer,
+  MLHBanner,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -63,6 +65,8 @@ const Homepage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
+
+      <MLHBanner />
 
       <Layout location={location}>
         <HeroSection />

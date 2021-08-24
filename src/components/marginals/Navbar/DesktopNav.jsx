@@ -62,9 +62,7 @@ function DesktopNav() {
             </ul>
           </div>
 
-          <div className='sponsor-sec'>
-            <Logo src={nav.logo.src} alt={nav.logo.alt} />
-          </div>
+          <div className='sponsor-sec' />
         </nav>
       </Container>
     </NavSection>
