@@ -5,6 +5,7 @@ import { Heading2, Body } from '../shared';
 
 const Wrapper = styled.div`
   background-color: #000;
+  overflow: hidden;
   grid-column: span 2 / span 2;
   display: grid;
   grid-template-columns: 1;
