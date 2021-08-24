@@ -22,7 +22,7 @@ export const HeadingSection = styled.div`
     max-width: 100vw;
   }
   max-width: 50vw;
-  ${tw`p-8`}
+  ${tw`pl-0 py-8 pr-8`}
 `;
 
 export const HeadText = styled(HighlightBody)`

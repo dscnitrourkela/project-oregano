@@ -103,7 +103,7 @@ const List = styled.li`
         sm:px-1
         border-solid
         border-b border-gray-500
-        cursor-default
+        cursor-pointer
         font-normal
         text-base
         text-color-secondary
@@ -117,7 +117,7 @@ const List1 = styled.li`
         p-4
         sm:px-1
         border-solid
-        cursor-default
+        cursor-pointer
         font-normal
         text-base
         text-color-secondary
