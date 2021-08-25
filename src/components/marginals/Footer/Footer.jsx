@@ -23,6 +23,8 @@ import {
   IconContainer,
   LogoContainer,
   CardImage,
+  NoStyleNav,
+  LinksContainer,
 } from './styles';
 import FooterCard from './FooterCard';
 import { Container, Body } from '../../shared';
@@ -31,6 +33,29 @@ import { Container, Body } from '../../shared';
 import { footer } from '../../../../config/content';
 
 library.add(faInstagram, faTwitterSquare, faDiscord, faLinkedin, faGithubSquare);
+
+const LINKS = [
+  {
+    text: 'MLH Code of Conduct',
+    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  },
+  {
+    text: 'Terms and Conditions',
+    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  },
+  {
+    text: 'Privacy Policy',
+    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  },
+  {
+    text: 'Sponsor Us',
+    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  },
+  {
+    text: 'Join Us',
+    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+  },
+];
 
 const NewBody = styled(Body)`
   text-align: right;
@@ -73,8 +98,22 @@ function Footer() {
           {footer.cards.map(({ title, text, id, img }) => (
             <FooterCard key={id} img={img.src} Title={title} Text={text} />
           ))}
-          <EmptyDiv />
+          <EmptyDiv>
+            {LINKS.map(({ text, href }) => (
+              <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
+                <Body style={{ color: '#ffffffbc' }}>{text}</Body>
+              </NoStyleNav>
+            ))}
+          </EmptyDiv>
         </Grid>
+
+        <LinksContainer>
+          {LINKS.map(({ text, href }) => (
+            <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
+              <Body style={{ color: '#ffffffbc' }}>{text}</Body>
+            </NoStyleNav>
+          ))}
+        </LinksContainer>
 
         <SecondaryContainer style={{ marginTop: '2rem', alignItems: 'center' }}>
           <Body>
