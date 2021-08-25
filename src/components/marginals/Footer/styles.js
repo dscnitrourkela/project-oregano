@@ -56,14 +56,50 @@ export const Grid = styled.div`
   `}
 `;
 
-export const EmptyDiv = styled.div`
+export const NoStyleNav = styled.a`
   ${tw`
-    bg-transparent
-    h-auto
-    lg:hidden
+    no-underline
+    mt-2
+
+    lg:p-2
+    md:p-2
   `}
 
+  @media (max-width: 1045px) {
+    padding: 10;
+  }
+`;
+
+export const EmptyDiv = styled.div`
+  background: transparent;
+  padding: 10px;
+
+  @media (max-width: 1045px) {
+    display: none;
+  }
+
   min-height: 175px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+`;
+
+export const LinksContainer = styled.div`
+  background: transparent;
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-column: 1 / span2;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1045px) {
+    display: none;
+  }
 `;
 
 // Final Row Styles
@@ -82,7 +118,6 @@ export const LogoContainer = styled.div`
 
   @media (max-width: 464px) {
     justify-content: center;
-  }
   }
 `;
 
