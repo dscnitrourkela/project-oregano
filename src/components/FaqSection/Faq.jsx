@@ -36,6 +36,7 @@ function Faq() {
   const setStageToQuese = () => setStage(questions.five.question);
   const setStageToQuesf = () => setStage(questions.six.question);
   const setStageToQuesg = () => setStage(questions.seven.question);
+  const setStageToQuesh = () => setStage(questions.eight.question);
 
   const renderFaq = () => {
     switch (stage) {
@@ -53,6 +54,8 @@ function Faq() {
         return getUpdatedContent(questions.six.answer);
       case questions.seven.question:
         return getUpdatedContent(questions.seven.answer);
+      case questions.eight.question:
+        return getUpdatedContent(questions.eight.answer);
       default:
         return '...';
     }
@@ -77,7 +80,8 @@ function Faq() {
               <List onClick={setStageToQuesd}>{questions.four.question}</List>
               <List onClick={setStageToQuese}>{questions.five.question}</List>
               <List onClick={setStageToQuesf}>{questions.six.question}</List>
-              <List1 onClick={setStageToQuesg}>{questions.seven.question}</List1>
+              <List onClick={setStageToQuesg}>{questions.seven.question}</List>
+              <List1 onClick={setStageToQuesh}>{questions.eight.question}</List1>
             </Ul>
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>

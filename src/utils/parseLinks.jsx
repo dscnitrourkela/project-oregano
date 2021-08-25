@@ -21,7 +21,7 @@ export const renderData = (contentNext, isDark) => {
       case 'link':
         return (
           <NonStyledLink
-            style={{ color: isDark ? '#17171D' : '' }}
+            style={{ color: isDark ? '#17171D' : '', textDecoration: 'underline' }}
             key={index}
             href={contentNext[key].href}
           >
