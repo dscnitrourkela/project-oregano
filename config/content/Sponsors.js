@@ -5,6 +5,13 @@ export default {
     'Our love for open source and drive to make an impact materialized as HackNITR 3.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
   alpha: [
     {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/wdwlddhy9nix0p5jew4m.png',
+      name: 'Major League Hacking',
+      size: '70%',
+      link: 'https://mlh.io/',
+      width: '170px',
+    },
+    {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
       name: 'Devfolio',
       size: '95%',
