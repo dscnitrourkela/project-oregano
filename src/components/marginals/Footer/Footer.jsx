@@ -34,28 +34,7 @@ import { footer } from '../../../../config/content';
 
 library.add(faInstagram, faTwitterSquare, faDiscord, faLinkedin, faGithubSquare);
 
-const LINKS = [
-  {
-    text: 'MLH Code of Conduct',
-    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  },
-  {
-    text: 'Terms and Conditions',
-    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  },
-  {
-    text: 'Privacy Policy',
-    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  },
-  {
-    text: 'Sponsor Us',
-    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  },
-  {
-    text: 'Join Us',
-    href: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  },
-];
+const LINKS = footer.impLinks;
 
 const NewBody = styled(Body)`
   text-align: right;

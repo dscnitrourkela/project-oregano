@@ -7,6 +7,7 @@ import {
   faDiscord,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
+import config from '../website';
 
 export default {
   hacknitr: {
@@ -102,6 +103,28 @@ export default {
         src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/po6v5ff92trierngzudg.png',
         alt: 'Hackclub NIT Rourkela',
       },
+    },
+  ],
+  impLinks: [
+    {
+      text: 'MLH Code of Conduct',
+      href: config.codeOfConduct,
+    },
+    {
+      text: 'Terms and Conditions',
+      href: config.termsConditions,
+    },
+    {
+      text: 'Privacy Policy',
+      href: config.privacyPolicy,
+    },
+    {
+      text: 'Sponsor Us',
+      href: config.sponsor,
+    },
+    {
+      text: 'Join Us',
+      href: config.join,
     },
   ],
 };
