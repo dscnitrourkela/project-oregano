@@ -14,7 +14,7 @@ const RegisterButton = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: '1rem' }}>
+    <div style={{ marginTop: '2rem' }}>
       <div
         className='apply-button'
         data-hackathon-slug='hacknitr3'
