@@ -79,6 +79,7 @@ const RegisterButton = () => {
     }
   };
 
+  // eslint-disable-next-line no-unreachable
   return (
     <>
       <ButtonLight onClick={() => setModalOpen(true)}>Register Now!</ButtonLight>
@@ -90,7 +91,9 @@ const RegisterButton = () => {
         isButtonActive={value1 && value2 && value3}
       >
         <Heading4>Terms and Conditions</Heading4>
-        <Body style={{ marginBottom: '15px' }}>Please accept the following terms before proceeding ahead.</Body>
+        <Body style={{ marginBottom: '15px' }}>
+          Please accept the following terms before proceeding ahead.
+        </Body>
 
         <Checkbox
           value={value1}

@@ -5,7 +5,14 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, ButtonDark, HighlightBody, RegisterButton } from '../shared';
+import {
+  Heading1,
+  Body,
+  // eslint-disable-next-line no-unused-vars
+  ButtonDark,
+  HighlightBody,
+} from '../shared';
+import DevfolioButton from '../shared/DevfolioButton';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -22,11 +29,8 @@ const ContentContainer = styled.div`
 
 const TimeLine = styled(Body)`
   color: black;
-  /* color: #e73428; */
-  /* color: #fff; */
   font-size: 1rem;
   background-color: #ffffff;
-  /* background-color: #e73428; */
   border-radius: 25px;
   padding: 10px 15px;
   width: fit-content;
@@ -67,9 +71,9 @@ const SponsorInvite = styled.div`
   `}
 `;
 
-const InlineWrapper = styled.div`
-  ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center sm:mt-4`}
-`;
+// const InlineWrapper = styled.div`
+//   ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center sm:mt-4`}
+// `;
 
 const HighlightLink = styled.a`
   ${tw`
@@ -86,11 +90,11 @@ const HighlightLink = styled.a`
   `}
 `;
 
-const NonStyledLink = styled.a`
-  ${tw`
-    no-underline
-  `}
-`;
+// const NonStyledLink = styled.a`
+//   ${tw`
+//     no-underline
+//   `}
+// `;
 
 function HeroContent() {
   return (
@@ -101,12 +105,12 @@ function HeroContent() {
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
-      <InlineWrapper>
-        <RegisterButton />
+      <DevfolioButton />
+      {/* <InlineWrapper>
         <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
           <ButtonDark>Join Discord</ButtonDark>
         </NonStyledLink>
-      </InlineWrapper>
+      </InlineWrapper> */}
       <SponsorInvite>
         <Body>Want to join the HackNITR family? </Body>
         <HighlightLink href={config.join} target='_blank' rel='noreferrer'>
