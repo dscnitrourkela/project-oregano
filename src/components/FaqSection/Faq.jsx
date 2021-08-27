@@ -1,5 +1,5 @@
 /* eslint-disable prefer-destructuring */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 // Components
 import { Heading5, WhyWait, SectionLayout } from '..';
@@ -61,6 +61,10 @@ function Faq() {
     }
   };
 
+  const articleRef = useRef();
+
+  const executeScroll = () => articleRef.current.scrollIntoView({ behavior: 'smooth' });
+
   return (
     <SectionLayout id={id} title={title} description={content}>
       <Wrapper>
@@ -74,14 +78,71 @@ function Faq() {
 
           <Ques>
             <Ul>
-              <List onClick={setStageToQuesa}>{questions.one.question}</List>
-              <List onClick={setStageToQuesb}>{questions.two.question}</List>
-              <List onClick={setStageToQuesc}>{questions.three.question}</List>
-              <List onClick={setStageToQuesd}>{questions.four.question}</List>
-              <List onClick={setStageToQuese}>{questions.five.question}</List>
-              <List onClick={setStageToQuesf}>{questions.six.question}</List>
-              <List onClick={setStageToQuesg}>{questions.seven.question}</List>
-              <List1 onClick={setStageToQuesh}>{questions.eight.question}</List1>
+              <List
+                onClick={() => {
+                  setStageToQuesa();
+                  executeScroll();
+                }}
+              >
+                {questions.one.question}
+              </List>
+              <List
+                ref={articleRef}
+                onClick={() => {
+                  setStageToQuesb();
+                  executeScroll();
+                }}
+              >
+                {questions.two.question}
+              </List>
+              <List
+                onClick={() => {
+                  setStageToQuesc();
+                  executeScroll();
+                }}
+              >
+                {questions.three.question}
+              </List>
+              <List
+                onClick={() => {
+                  setStageToQuesd();
+                  executeScroll();
+                }}
+              >
+                {questions.four.question}
+              </List>
+              <List
+                onClick={() => {
+                  setStageToQuese();
+                  executeScroll();
+                }}
+              >
+                {questions.five.question}
+              </List>
+              <List
+                onClick={() => {
+                  setStageToQuesf();
+                  executeScroll();
+                }}
+              >
+                {questions.six.question}
+              </List>
+              <List
+                onClick={() => {
+                  setStageToQuesg();
+                  executeScroll();
+                }}
+              >
+                {questions.seven.question}
+              </List>
+              <List1
+                onClick={() => {
+                  setStageToQuesh();
+                  executeScroll();
+                }}
+              >
+                {questions.eight.question}
+              </List1>
             </Ul>
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>
