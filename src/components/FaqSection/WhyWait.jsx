@@ -56,7 +56,9 @@ function WhyWait() {
         </Body>
       </Content>
       <IllContainer>
-        <Illustration src={faq.email.src} alt={faq.email.alt} />
+        <a href='mailto:team@hacknitr.tech'>
+          <Illustration src={faq.email.src} alt={faq.email.alt} />
+        </a>
       </IllContainer>
     </Wrapper>
   );
