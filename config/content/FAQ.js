@@ -17,7 +17,7 @@ export default {
     alt: 'HackNITR Chat Profile',
   },
   email: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1629793604/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
+    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
     alt: 'Email Illustration',
   },
   questions: {
