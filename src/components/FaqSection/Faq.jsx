@@ -38,6 +38,37 @@ function Faq() {
   const setStageToQuesg = () => setStage(questions.seven.question);
   const setStageToQuesh = () => setStage(questions.eight.question);
 
+  const person = [
+    {
+      ques: questions.one.question,
+      ans: setStageToQuesa,
+    },
+    {
+      ques: questions.two.question,
+      ans: setStageToQuesb,
+    },
+    {
+      ques: questions.three.question,
+      ans: setStageToQuesc,
+    },
+    {
+      ques: questions.four.question,
+      ans: setStageToQuesd,
+    },
+    {
+      ques: questions.five.question,
+      ans: setStageToQuese,
+    },
+    {
+      ques: questions.six.question,
+      ans: setStageToQuesf,
+    },
+    {
+      ques: questions.seven.question,
+      ans: setStageToQuesg,
+    },
+  ];
+
   const renderFaq = () => {
     switch (stage) {
       case questions.one.question:
@@ -77,68 +108,22 @@ function Faq() {
           </Bot>
 
           <Ques>
-            <Ul>
-              <List
-                onClick={() => {
-                  setStageToQuesa();
-                  executeScroll();
-                }}
-              >
-                {questions.one.question}
-              </List>
-              <List
-                ref={articleRef}
-                onClick={() => {
-                  setStageToQuesb();
-                  executeScroll();
-                }}
-              >
-                {questions.two.question}
-              </List>
-              <List
-                onClick={() => {
-                  setStageToQuesc();
-                  executeScroll();
-                }}
-              >
-                {questions.three.question}
-              </List>
-              <List
-                onClick={() => {
-                  setStageToQuesd();
-                  executeScroll();
-                }}
-              >
-                {questions.four.question}
-              </List>
-              <List
-                onClick={() => {
-                  setStageToQuese();
-                  executeScroll();
-                }}
-              >
-                {questions.five.question}
-              </List>
-              <List
-                onClick={() => {
-                  setStageToQuesf();
-                  executeScroll();
-                }}
-              >
-                {questions.six.question}
-              </List>
-              <List
-                onClick={() => {
-                  setStageToQuesg();
-                  executeScroll();
-                }}
-              >
-                {questions.seven.question}
-              </List>
+            <Ul ref={articleRef}>
+              {person.map((detail) => (
+                <List
+                  key={detail}
+                  onClick={() => {
+                    detail.ans();
+                    executeScroll();
+                  }}
+                >
+                  {detail.ques}
+                </List>
+              ))}
+
               <List1
                 onClick={() => {
                   setStageToQuesh();
-                  executeScroll();
                 }}
               >
                 {questions.eight.question}
