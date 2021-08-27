@@ -1,6 +1,5 @@
 /* eslint-disable prefer-destructuring */
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
 
 // Components
 import { Heading5, WhyWait, SectionLayout } from '..';
@@ -75,30 +74,14 @@ function Faq() {
 
           <Ques>
             <Ul>
-              <Link onClick={setStageToQuesa} to='answer' spy='true' smooth='true'>
-                <List>{questions.one.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesb} to='answer' spy='true' smooth='true'>
-                <List id='answer'>{questions.two.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesc} to='answer' spy='true' smooth='true'>
-                <List>{questions.three.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesd} to='answer' spy='true' smooth='true'>
-                <List>{questions.four.question}</List>
-              </Link>
-              <Link onClick={setStageToQuese} to='answer' spy='true' smooth='true'>
-                <List>{questions.five.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesf} to='answer' spy='true' smooth='true'>
-                <List>{questions.six.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesg} to='answer' spy='true' smooth='true'>
-                <List>{questions.seven.question}</List>
-              </Link>
-              <Link onClick={setStageToQuesh} to='answer' spy='true' smooth='true'>
-                <List1>{questions.eight.question}</List1>
-              </Link>
+              <List onClick={setStageToQuesa}>{questions.one.question}</List>
+              <List onClick={setStageToQuesb}>{questions.two.question}</List>
+              <List onClick={setStageToQuesc}>{questions.three.question}</List>
+              <List onClick={setStageToQuesd}>{questions.four.question}</List>
+              <List onClick={setStageToQuese}>{questions.five.question}</List>
+              <List onClick={setStageToQuesf}>{questions.six.question}</List>
+              <List onClick={setStageToQuesg}>{questions.seven.question}</List>
+              <List1 onClick={setStageToQuesh}>{questions.eight.question}</List1>
             </Ul>
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>
