@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 
 // Components
 import { Heading5, WhyWait, SectionLayout } from '..';
-import { List, List1, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './styles';
+import { List, Ul, Ques, Chat, Bot, Wrapper, FaqContainer, Img } from './styles';
 
 // Assets
 import { faq } from '../../../config/content';
@@ -29,67 +29,13 @@ function Faq() {
   const [stage, setStage] = useState();
   const { id, questions, title, content, toyImg, HackNITR } = faq;
 
-  const setStageToQuesa = () => setStage(questions.one.question);
-  const setStageToQuesb = () => setStage(questions.two.question);
-  const setStageToQuesc = () => setStage(questions.three.question);
-  const setStageToQuesd = () => setStage(questions.four.question);
-  const setStageToQuese = () => setStage(questions.five.question);
-  const setStageToQuesf = () => setStage(questions.six.question);
-  const setStageToQuesg = () => setStage(questions.seven.question);
-  const setStageToQuesh = () => setStage(questions.eight.question);
-
-  const person = [
-    {
-      ques: questions.one.question,
-      ans: setStageToQuesa,
-    },
-    {
-      ques: questions.two.question,
-      ans: setStageToQuesb,
-    },
-    {
-      ques: questions.three.question,
-      ans: setStageToQuesc,
-    },
-    {
-      ques: questions.four.question,
-      ans: setStageToQuesd,
-    },
-    {
-      ques: questions.five.question,
-      ans: setStageToQuese,
-    },
-    {
-      ques: questions.six.question,
-      ans: setStageToQuesf,
-    },
-    {
-      ques: questions.seven.question,
-      ans: setStageToQuesg,
-    },
-  ];
-
   const renderFaq = () => {
-    switch (stage) {
-      case questions.one.question:
-        return getUpdatedContent(questions.one.answer);
-      case questions.two.question:
-        return getUpdatedContent(questions.two.answer);
-      case questions.three.question:
-        return getUpdatedContent(questions.three.answer);
-      case questions.four.question:
-        return getUpdatedContent(questions.four.answer);
-      case questions.five.question:
-        return getUpdatedContent(questions.five.answer);
-      case questions.six.question:
-        return getUpdatedContent(questions.six.answer);
-      case questions.seven.question:
-        return getUpdatedContent(questions.seven.answer);
-      case questions.eight.question:
-        return getUpdatedContent(questions.eight.answer);
-      default:
-        return '...';
-    }
+    let answer = '...';
+    Object.keys(faq.questions).forEach((key) => {
+      if (stage === faq.questions[key].question)
+        answer = getUpdatedContent(faq.questions[key].answer);
+    });
+    return answer;
   };
 
   const articleRef = useRef();
@@ -109,25 +55,17 @@ function Faq() {
 
           <Ques>
             <Ul ref={articleRef}>
-              {person.map((detail) => (
+              {Object.keys(faq.questions).map((key) => (
                 <List
-                  key={detail}
+                  key={key}
                   onClick={() => {
-                    detail.ans();
                     executeScroll();
+                    setStage(faq.questions[key].question);
                   }}
                 >
-                  {detail.ques}
+                  {faq.questions[key].question}
                 </List>
               ))}
-
-              <List1
-                onClick={() => {
-                  setStageToQuesh();
-                }}
-              >
-                {questions.eight.question}
-              </List1>
             </Ul>
             <img alt={HackNITR.alt} src={HackNITR.src} />
           </Ques>
