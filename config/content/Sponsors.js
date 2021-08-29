@@ -145,6 +145,13 @@ export default {
       link: 'https://www.voiceflow.com/',
       alt: 'Voiceflow',
     },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jzu4m46qrkuheumwzrcx.png',
+      name: 'Filter_Beans',
+      size: '45%',
+      link: 'https://www.instagram.com/filter_beans/?hl=en',
+      alt: 'Filter_Beans',
+    },
   ],
   'authentication-partner': [
     {
