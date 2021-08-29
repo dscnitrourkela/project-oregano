@@ -10,6 +10,7 @@ export default {
       size: '70%',
       link: 'https://mlh.io/',
       width: '170px',
+      alt: 'Major League Hacking',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
@@ -17,6 +18,7 @@ export default {
       size: '95%',
       link: 'https://devfolio.co/',
       width: '170px',
+      alt: 'Devfolio',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
@@ -24,6 +26,7 @@ export default {
       size: '95%',
       link: 'https://github.com/',
       width: '150px',
+      alt: 'Github',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
@@ -31,6 +34,7 @@ export default {
       size: '60%',
       link: 'https://www.nitrkl.ac.in/',
       width: '100px',
+      alt: 'Diamond Jubilee',
     },
   ],
   beta: [
@@ -40,6 +44,7 @@ export default {
       size: '95%',
       link: 'https://celo.org/',
       width: '160px',
+      alt: 'Celo',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1628276570/project-oregano/sponsors/beta/pydzmkwjnnuwc5mqwnlz.png',
@@ -47,6 +52,7 @@ export default {
       size: '100%',
       link: 'https://www.digitalocean.com/',
       width: '220px',
+      alt: 'DigitalOcean',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
@@ -54,6 +60,7 @@ export default {
       size: '100%',
       link: 'https://polygon.technology/',
       width: '200px',
+      alt: 'Polygon',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
@@ -61,6 +68,7 @@ export default {
       size: '95%',
       link: 'https://tezos.com/',
       width: '150px',
+      alt: 'Tezos',
     },
   ],
   gamma: [
@@ -69,24 +77,28 @@ export default {
       name: 'EchoAR',
       size: '95%',
       link: 'https://www.echoar.xyz/',
+      alt: 'EchoAR',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
       name: 'Linode',
       size: '95%',
       link: 'https://www.linode.com/',
+      alt: 'Linode',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/bqlfwphjmjytpeuicdoe.png',
       name: 'StickerMule',
       size: '80%',
       link: 'https://www.stickermule.com/',
+      alt: 'StickerMule',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/yukdnno6o2y2hdbddnrk.png',
       name: 'Wolfram',
       size: '95%',
       link: 'https://www.wolfram.com/language/',
+      alt: 'Wolfram',
     },
   ],
   delta: [
@@ -95,30 +107,35 @@ export default {
       name: 'Leading Learners',
       size: '50%',
       link: 'https://www.leadlearners.ca/',
+      alt: 'Leading Learners',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
       name: 'Repl.it',
       size: '95%',
       link: 'https://replit.com/',
+      alt: 'Repl.it',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
       name: 'Taskade',
       size: '95%',
       link: 'https://www.taskade.com/',
+      alt: 'Taskade',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/wx7rpjho44bemgfrsgl9.png',
       name: 'Tweetbeam',
       size: '95%',
       link: 'https://www.tweetbeam.com/',
+      alt: 'Tweetbeam',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7so.png',
       name: 'Voiceflow',
       size: '95%',
       link: 'https://www.voiceflow.com/',
+      alt: 'Voiceflow',
     },
   ],
   'authentication-partner': [
@@ -128,6 +145,7 @@ export default {
       size: '90%',
       link: 'https://sawolabs.com/',
       width: '180px',
+      alt: 'SAWO Labs',
     },
   ],
 };
