@@ -70,6 +70,14 @@ export default {
       width: '150px',
       alt: 'Tezos',
     },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/iylv4cyswfjzoydb3why.png',
+      name: 'Sashido',
+      size: '98%',
+      link: 'https://www.sashido.io/en/',
+      width: '200px',
+      alt: 'Sashido',
+    },
   ],
   gamma: [
     {
