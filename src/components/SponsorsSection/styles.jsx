@@ -47,7 +47,7 @@ export const SponsorIcon = ({ pic, alt, size, link }) => (
   </SponsorLogo>
 );
 
-export const Alpha = styled.div`
+export const Wrapper = styled.div`
   ${tw`border-2
        border-solid
        rounded-lg

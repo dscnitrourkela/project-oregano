@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import { Heading4, SectionLayout } from '..';
-import { SponsorContainer, HeadingSection, SponsorIcon, Alpha } from './styles';
+import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles';
 
 // Assets
 import { sponsors } from '../../../config/content';
@@ -68,7 +68,7 @@ function Sponsor() {
       />
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto auto auto', gridGap: '30px' }}>
         {sponsorDetails.map((details) => (
-          <Alpha
+          <Wrapper
             style={{
               borderColor: details.bcolor,
               gridColumnEnd: details.span,
@@ -91,7 +91,7 @@ function Sponsor() {
                 <SponsorIcon key={link} pic={src} alt={alt} size={size} link={link} />
               ))}
             </SponsorContainer>
-          </Alpha>
+          </Wrapper>
         ))}
       </div>
     </SectionLayout>
