@@ -157,7 +157,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1628159739/project-oregano/sponsors/tjxlxskmlgk87qego2cj.png',
       name: 'SAWO Labs',
-      size: '15rem',
+      size: '11rem',
       link: 'https://sawolabs.com/',
       width: '180px',
       alt: 'SAWO Labs',
@@ -167,7 +167,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1630820967/project-oregano/sponsors/Community%20Partners/rezmsmpf5b7ynktvufyt.png',
       name: 'Raahee',
-      size: '10rem',
+      size: '8rem',
       link: 'https://raahee.in/',
       width: '180px',
       alt: 'Raahee',

@@ -1,16 +1,8 @@
 import React from 'react';
 
 // Components
-import { Heading3, SectionLayout } from '..';
-import {
-  SponsorContainer,
-  HeadingSection,
-  SponsorIcon,
-  Alpha,
-  Alpha2,
-  Alpha3,
-  Hello,
-} from './styles';
+import { Heading4, SectionLayout } from '..';
+import { SponsorContainer, HeadingSection, SponsorIcon, Alpha } from './styles';
 
 // Assets
 import { sponsors } from '../../../config/content';
@@ -22,41 +14,40 @@ const links = {
 function Sponsor() {
   const sponsorDetails = [
     {
-      title: 'Alpha Sponsors',
+      title: 'ALPHA SPONSORS',
       sponsors: sponsors.alpha,
       bcolor: '#EBB722',
       color: '#EBB722',
-      // span: 'span-4',
       span: 'span 4',
     },
     {
-      title: 'Beta Sponsors',
+      title: 'BETA SPONSORS',
       sponsors: sponsors.beta,
       bcolor: '#71A0CE',
       color: '#71A0CE',
       span: 'span 4',
     },
     {
-      title: 'Gamma Sponsors',
+      title: 'GAMMA SPONSORS',
       sponsors: sponsors.gamma,
       bcolor: '#E78967',
       color: '#E78967',
       span: 'span 3',
     },
     {
-      title: 'Delta Sponsors',
+      title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
       bcolor: '#8FA963',
       color: '#8FA963',
     },
     {
-      title: 'Authentication Partner',
+      title: 'AUTHENTICATION PARTNER',
       sponsors: sponsors['authentication-partner'],
       bcolor: 'transparent',
       span: 'span 1',
     },
     {
-      title: 'Community Partner',
+      title: 'COMMUNITY PARTNER',
       sponsors: sponsors['community-partner'],
       bcolor: 'transparent',
       span: 'span 3',
@@ -85,14 +76,14 @@ function Sponsor() {
             key={details.title}
           >
             <HeadingSection>
-              <Heading3
+              <Heading4
                 style={{
                   fontWeight: '700',
                   color: details.color,
                 }}
               >
                 {details.title}
-              </Heading3>
+              </Heading4>
             </HeadingSection>
             <SponsorContainer>
               {details.sponsors.map(({ src, alt, size, link }) => (
