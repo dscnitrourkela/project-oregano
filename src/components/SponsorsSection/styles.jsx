@@ -7,14 +7,17 @@ export const SponsorContainer = styled.div`
   width: 100%;
   display: grid;
   gap: 10px;
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  @media (max-width: 1380px) {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  /* @media (max-width: 1380px) {
     grid-template-columns: repeat(3, minmax(80px, 1fr));
   }
   @media (max-width: 639px) {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-  }
+  } */
 `;
 
 export const HeadingSection = styled.div`
@@ -41,9 +44,13 @@ const SponsorLogo = styled.div`
 
 export const SponsorIcon = ({ pic, alt, size, link }) => (
   <SponsorLogo>
-    <a href={link} target='_blank' rel='noopener noreferrer'>
-      <img src={pic} alt={alt} style={{ width: size }} />
-    </a>
+    {pic ? (
+      <a href={link} target='_blank' rel='noopener noreferrer'>
+        <img src={pic} alt={alt} style={{ width: size, alignSelf: 'start' }} />
+      </a>
+    ) : (
+      <div />
+    )}
   </SponsorLogo>
 );
 
@@ -55,7 +62,8 @@ export const Wrapper = styled.div`
        bg-secondary
        /* grid */
      `}
+  /* grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 1fr; */
   @media (max-width: 900px) {
-    grid-column: span 4;
+    grid-column: span 5;
   }
 `;
