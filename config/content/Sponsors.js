@@ -7,7 +7,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/wdwlddhy9nix0p5jew4m.png',
       name: 'Major League Hacking',
-      size: '65%',
+      size: '45%',
       link: 'https://mlh.io/',
       width: '170px',
       alt: 'Major League Hacking',
@@ -15,7 +15,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
       name: 'Devfolio',
-      size: '95%',
+      size: '75%',
       link: 'https://devfolio.co/',
       width: '170px',
       alt: 'Devfolio',
@@ -23,7 +23,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
       name: 'Github',
-      size: '70%',
+      size: '60%',
       link: 'https://github.com/',
       width: '150px',
       alt: 'Github',
