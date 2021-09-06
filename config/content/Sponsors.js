@@ -7,7 +7,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/wdwlddhy9nix0p5jew4m.png',
       name: 'Major League Hacking',
-      size: '45%',
+      size: '65%',
       link: 'https://mlh.io/',
       width: '170px',
       alt: 'Major League Hacking',
@@ -15,7 +15,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
       name: 'Devfolio',
-      size: '75%',
+      size: '95%',
       link: 'https://devfolio.co/',
       width: '170px',
       alt: 'Devfolio',
@@ -23,7 +23,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
       name: 'Github',
-      size: '60%',
+      size: '70%',
       link: 'https://github.com/',
       width: '150px',
       alt: 'Github',
@@ -158,14 +158,14 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jzu4m46qrkuheumwzrcx.png',
       name: 'Filter_Beans',
-      size: '75%',
+      size: '70%',
       link: 'https://www.instagram.com/filter_beans/?hl=en',
       alt: 'Filter_Beans',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
       name: 'Leading Learners',
-      size: '60%',
+      size: '55%',
       link: 'https://www.leadlearners.ca/',
       alt: 'Leading Learners',
     },
