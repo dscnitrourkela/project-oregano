@@ -36,14 +36,6 @@ export default {
       width: '100px',
       alt: 'Diamond Jubilee',
     },
-    {
-      src: null,
-      name: 'Diamond Jubilee',
-      size: '55%',
-      link: 'https://www.nitrkl.ac.in/',
-      width: '100px',
-      alt: 'Diamond Jubilee',
-    },
     // {
     //   src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
     //   name: 'Diamond Jubilee',
@@ -97,7 +89,7 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1630908780/project-oregano/sponsors/beta/zuvuxsxn7zukvrtx5swz.png',
       name: '.xyz',
-      size: '98%',
+      size: '110%',
       link: 'https://gen.xyz/',
       width: '130px',
       alt: '.xyz',
@@ -166,14 +158,14 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jzu4m46qrkuheumwzrcx.png',
       name: 'Filter_Beans',
-      size: '78%',
+      size: '75%',
       link: 'https://www.instagram.com/filter_beans/?hl=en',
       alt: 'Filter_Beans',
     },
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
       name: 'Leading Learners',
-      size: '65%',
+      size: '60%',
       link: 'https://www.leadlearners.ca/',
       alt: 'Leading Learners',
     },

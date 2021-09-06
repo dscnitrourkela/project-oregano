@@ -10,14 +10,14 @@ export const SponsorContainer = styled.div`
 
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
   /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 
-  /* @media (max-width: 1380px) {
+  @media (max-width: 1380px) {
     grid-template-columns: repeat(3, minmax(80px, 1fr));
   }
   @media (max-width: 639px) {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-  } */
+  }
 `;
 
 export const HeadingSection = styled.div`

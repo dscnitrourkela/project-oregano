@@ -48,14 +48,14 @@ function Sponsor() {
       sponsors: sponsors['authentication-partner'],
       bcolor: 'transparent',
       span: 'span 2',
-      grid: '1fr 1fr 1fr',
+      grid: '1fr 1fr 1fr ',
     },
     {
       title: 'COMMUNITY PARTNER',
       sponsors: sponsors['community-partner'],
       bcolor: 'transparent',
       span: 'span 3',
-      grid: '1fr 1fr 1fr',
+      grid: '1fr 1fr 1fr ',
     },
   ];
 
