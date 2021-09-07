@@ -34,6 +34,7 @@ function Sponsor() {
       sponsors: sponsors.gamma,
       bcolor: '#E78967',
       color: '#E78967',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       span: 'span 2',
     },
     {
@@ -41,6 +42,7 @@ function Sponsor() {
       sponsors: sponsors.delta,
       bcolor: '#8FA963',
       color: '#8FA963',
+      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
       span: 'span 3',
     },
     {
@@ -97,9 +99,16 @@ function Sponsor() {
               </Heading4>
             </HeadingSection>
             <SponsorContainer style={{ gap: details.gap, gridTemplateColumns: details.grid }}>
-              {details.sponsors.map(({ src, alt, size, link }) => (
+              {details.sponsors.map(({ src, alt, size, link, margin }) => (
                 // eslint-disable-next-line react/no-array-index-key
-                <SponsorIcon key={link} pic={src} alt={alt} size={size} link={link} />
+                <SponsorIcon
+                  key={link}
+                  pic={src}
+                  alt={alt}
+                  size={size}
+                  link={link}
+                  margin={margin}
+                />
               ))}
             </SponsorContainer>
           </Wrapper>

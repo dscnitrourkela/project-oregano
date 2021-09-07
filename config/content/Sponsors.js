@@ -89,10 +89,11 @@ export default {
     {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1630908780/project-oregano/sponsors/beta/zuvuxsxn7zukvrtx5swz.png',
       name: '.xyz',
-      size: '110%',
+      size: '70%',
       link: 'https://gen.xyz/',
       width: '130px',
       alt: '.xyz',
+      margin: '0px',
     },
   ],
   gamma: [
@@ -124,6 +125,13 @@ export default {
       size: '100%',
       link: 'https://www.wolfram.com/language/',
       alt: 'Wolfram',
+    },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1631042280/project-oregano/sponsors/gamma/zcnuwxnahcm8ai30npsp.png',
+      name: 'Koii Network',
+      size: '85%',
+      link: 'https://koii.network/',
+      alt: 'Koii Network',
     },
   ],
   delta: [
@@ -188,6 +196,7 @@ export default {
       link: 'https://raahee.in/',
       width: '180px',
       alt: 'Raahee',
+      margin: '0px',
     },
   ],
 };
