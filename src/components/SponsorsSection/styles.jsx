@@ -6,14 +6,17 @@ import { HighlightBody } from '..';
 export const SponsorContainer = styled.div`
   width: 100%;
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 10px;
+  justify-content: center;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(4, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
   @media (max-width: 1380px) {
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
   }
   @media (max-width: 639px) {
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
   }
 `;
 
@@ -22,7 +25,7 @@ export const HeadingSection = styled.div`
     max-width: 100vw;
   }
   max-width: 50vw;
-  ${tw`pl-0 py-8 pr-8`}
+  ${tw`pl-0 py-0 pr-8 pt-0`}
 `;
 
 export const HeadText = styled(HighlightBody)`
@@ -39,10 +42,27 @@ const SponsorLogo = styled.div`
   }
 `;
 
-export const SponsorIcon = ({ pic, alt, size, link }) => (
-  <SponsorLogo>
-    <a href={link} target='_blank' rel='noopener noreferrer'>
-      <img src={pic} alt={alt} style={{ width: size }} />
-    </a>
+export const SponsorIcon = ({ pic, alt, size, link, margin }) => (
+  <SponsorLogo style={{ margin: margin }}>
+    {pic ? (
+      <a href={link} target='_blank' rel='noopener noreferrer'>
+        <img src={pic} alt={alt} style={{ width: size }} />
+      </a>
+    ) : (
+      <div />
+    )}
   </SponsorLogo>
 );
+
+export const Wrapper = styled.div`
+  ${tw`border-2
+       border-solid
+       rounded-lg
+       p-5
+       bg-secondary
+       /* grid */
+     `}
+  @media (max-width: 900px) {
+    grid-column: span 7;
+  }
+`;
