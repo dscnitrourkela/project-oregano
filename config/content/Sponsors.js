@@ -95,6 +95,15 @@ export default {
       alt: '.xyz',
       margin: '0px',
     },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1631196372/project-oregano/sponsors/beta/ps74duvfnma7sjh455de.svg',
+      name: 'Filecoin',
+      size: '100%',
+      link: 'https://filecoin.io/',
+      width: '200px',
+      alt: 'Filecoin',
+      margin: '0px',
+    },
   ],
   gamma: [
     {
