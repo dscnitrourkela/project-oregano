@@ -18,9 +18,11 @@ const TickerIcon = styled.img`
 `;
 function TickerItem({ source, alt, size }) {
   return (
-    <ItemContainer>
-      <TickerIcon src={source} alt={alt} style={{ width: size }} />
-    </ItemContainer>
+    source && (
+      <ItemContainer>
+        <TickerIcon src={source} alt={alt} style={{ width: size }} />
+      </ItemContainer>
+    )
   );
 }
 

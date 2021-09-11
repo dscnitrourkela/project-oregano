@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Components
-import { Heading2, SectionLayout } from '..';
-import { SponsorContainer, HeadingSection, SponsorIcon } from './styles';
+import { Heading4, SectionLayout } from '..';
+import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles';
 
 // Assets
 import { sponsors } from '../../../config/content';
@@ -14,24 +14,50 @@ const links = {
 function Sponsor() {
   const sponsorDetails = [
     {
-      title: 'Alpha Sponsors',
+      title: 'ALPHA SPONSORS',
       sponsors: sponsors.alpha,
+      bcolor: '#EBB722',
+      color: '#EBB722',
+      span: 'span 5',
+      gap: '0px',
     },
     {
-      title: 'Beta Sponsors',
+      title: 'BETA SPONSORS',
       sponsors: sponsors.beta,
+      bcolor: '#71A0CE',
+      color: '#71A0CE',
+      span: 'span 5',
+      gap: '30px',
     },
     {
-      title: 'Gamma Sponsors',
+      title: 'GAMMA SPONSORS',
       sponsors: sponsors.gamma,
+      bcolor: '#E78967',
+      color: '#E78967',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+      span: 'span 2',
     },
     {
-      title: 'Delta Sponsors',
+      title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
+      bcolor: '#8FA963',
+      color: '#8FA963',
+      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+      span: 'span 3',
     },
     {
-      title: 'Authentication Partner',
+      title: 'AUTHENTICATION PARTNER',
       sponsors: sponsors['authentication-partner'],
+      bcolor: 'transparent',
+      span: 'span 2',
+      grid: '1fr 1fr 1fr ',
+    },
+    {
+      title: 'COMMUNITY PARTNER',
+      sponsors: sponsors['community-partner'],
+      bcolor: 'transparent',
+      span: 'span 3',
+      grid: '1fr 1fr 1fr ',
     },
   ];
 
@@ -42,26 +68,52 @@ function Sponsor() {
       description={sponsors.content}
       link={{ text: 'Sponsor Us', link: links.sponsor }}
     >
-      <div style={{ marginTop: '1rem' }} />
-      {sponsorDetails.map((details) => (
-        <div style={{ marginTop: '5%', marginBottom: '5%' }} key={details.title}>
-          <HeadingSection>
-            <Heading2
-              style={{
-                fontWeight: '700',
-              }}
-            >
-              {details.title}
-            </Heading2>
-          </HeadingSection>
-          <SponsorContainer>
-            {details.sponsors.map(({ src, alt, size, link }) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <SponsorIcon key={link} pic={src} alt={alt} size={size} link={link} />
-            ))}
-          </SponsorContainer>
-        </div>
-      ))}
+      <div
+        style={{
+          marginTop: '1rem',
+        }}
+      />
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 0.5fr 0.5fr 0.5fr 1fr',
+          gridGap: '30px',
+        }}
+      >
+        {sponsorDetails.map((details) => (
+          <Wrapper
+            style={{
+              borderColor: details.bcolor,
+              gridColumnEnd: details.span,
+            }}
+            key={details.title}
+          >
+            <HeadingSection>
+              <Heading4
+                style={{
+                  fontWeight: '700',
+                  color: details.color,
+                }}
+              >
+                {details.title}
+              </Heading4>
+            </HeadingSection>
+            <SponsorContainer style={{ gap: details.gap, gridTemplateColumns: details.grid }}>
+              {details.sponsors.map(({ src, alt, size, link, margin }) => (
+                // eslint-disable-next-line react/no-array-index-key
+                <SponsorIcon
+                  key={link}
+                  pic={src}
+                  alt={alt}
+                  size={size}
+                  link={link}
+                  margin={margin}
+                />
+              ))}
+            </SponsorContainer>
+          </Wrapper>
+        ))}
+      </div>
     </SectionLayout>
   );
 }
