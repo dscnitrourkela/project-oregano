@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Body, ButtonLight, Container, Heading2 } from '..';
+import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
 import { join } from '../../../config/content';
 
 const Wrapper = styled.div`
@@ -15,7 +15,6 @@ const Wrapper = styled.div`
     xl:grid-cols-2
     grid-cols-3
     gap-6
-    mt-40
     `}
 `;
 const Description = styled(Body)`
@@ -122,25 +121,27 @@ const SponsorImg = styled.img`
 
 function JoinUs() {
   return (
-    <Container>
-      <Wrapper>
-        <JoinUsDiv>
-          <JoinUsImg src={join.JoinUs.img.src} alt={join.JoinUs.img.alt} />
-          <JoinUsText>
-            <Head>{join.JoinUs.head}</Head>
-            <JoinHeading>{join.JoinUs.heading}</JoinHeading>
-            <JoinDescription>{join.JoinUs.description}</JoinDescription>
-            <ButtonContainer>Join Us</ButtonContainer>
-          </JoinUsText>
-        </JoinUsDiv>
-        <SponsorDiv>
-          <SponsorHeading>{join.SponsorUs.heading}</SponsorHeading>
-          <SponsorDescription>{join.SponsorUs.description}</SponsorDescription>
-          <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
-          <ButtonContainer>Sponsor Us</ButtonContainer>
-        </SponsorDiv>
-      </Wrapper>
-    </Container>
+    <SectionLayout id='joinUs'>
+      <Container>
+        <Wrapper>
+          <JoinUsDiv>
+            <JoinUsImg src={join.JoinUs.img.src} alt={join.JoinUs.img.alt} />
+            <JoinUsText>
+              <Head>{join.JoinUs.head}</Head>
+              <JoinHeading>{join.JoinUs.heading}</JoinHeading>
+              <JoinDescription>{join.JoinUs.description}</JoinDescription>
+              <ButtonContainer>Join Us</ButtonContainer>
+            </JoinUsText>
+          </JoinUsDiv>
+          <SponsorDiv>
+            <SponsorHeading>{join.SponsorUs.heading}</SponsorHeading>
+            <SponsorDescription>{join.SponsorUs.description}</SponsorDescription>
+            <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
+            <ButtonContainer>Sponsor Us</ButtonContainer>
+          </SponsorDiv>
+        </Wrapper>
+      </Container>
+    </SectionLayout>
   );
 }
 
