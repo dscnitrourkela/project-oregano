@@ -84,12 +84,6 @@ export default {
   ],
   delta: [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
-      name: 'Leading Learners',
-      size: '50%',
-      link: 'https://www.leadlearners.ca/',
-    },
-    {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
       name: 'Repl.it',
       size: '95%',
@@ -112,6 +106,12 @@ export default {
       name: 'Voiceflow',
       size: '95%',
       link: 'https://www.voiceflow.com/',
+    },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
+      name: 'Leading Learners',
+      size: '50%',
+      link: 'https://www.leadlearners.ca/',
     },
   ],
   'authentication-partner': [
