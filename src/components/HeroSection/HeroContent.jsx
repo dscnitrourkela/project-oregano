@@ -13,6 +13,7 @@ import {
   HighlightBody,
 } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
+import DiscordButton from '../shared/DiscordButton';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -62,6 +63,14 @@ const Slogan = styled(HighlightBody)`
   `}
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+`;
+
 // const SponsorInvite = styled.div`
 //   ${tw`my-6
 //   gap-1
@@ -105,7 +114,10 @@ function HeroContent() {
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
-      <DevfolioButton />
+      <Wrapper>
+        <DevfolioButton />
+        <DiscordButton />
+      </Wrapper>
       {/* <InlineWrapper>
         <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
           <ButtonDark>Join Discord</ButtonDark>
