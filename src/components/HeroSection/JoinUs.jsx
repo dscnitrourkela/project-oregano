@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
 import { join } from '../../../config/content';
+import config from '../../../config/website';
 
 const Wrapper = styled.div`
   ${tw`
@@ -27,19 +28,19 @@ const JoinUsDiv = styled.div`
   ${tw`
     col-span-2
     grid
-    grid-cols-3
+    grid-cols-5
     bg-secondary
     rounded-lg
     w-full
     h-full
     lg:grid-cols-1
-    lg:mb-6
+    overflow-x-hidden
+    overflow-y-hidden
     `}
 `;
 const JoinUsImg = styled.img`
   ${tw`
-    block
-    col-span-2
+    col-span-3
     w-auto
     max-w-full
     overflow-x-hidden
@@ -49,7 +50,7 @@ const JoinUsImg = styled.img`
 `;
 const JoinUsText = styled.div`
   ${tw`
-    col-span-1
+    col-span-2
     grid
     p-5
     h-full
@@ -62,6 +63,8 @@ const JoinUsText = styled.div`
 const Head = styled(Body)`
   ${tw`
     row-span-1
+    lg:justify-self-center
+    justify-self-start
     `}
 `;
 const JoinHeading = styled(Heading2)`
@@ -119,6 +122,14 @@ const SponsorImg = styled.img`
     `}
 `;
 
+const JoinUsHandler = () => {
+  window.open(config.join, '_blank', 'noreferrer');
+};
+
+const SponsorUsHandler = () => {
+  window.open(config.sponsor, '_blank', 'noreferrer');
+};
+
 function JoinUs() {
   return (
     <SectionLayout id='joinUs'>
@@ -130,14 +141,26 @@ function JoinUs() {
               <Head>{join.JoinUs.head}</Head>
               <JoinHeading>{join.JoinUs.heading}</JoinHeading>
               <JoinDescription>{join.JoinUs.description}</JoinDescription>
-              <ButtonContainer>Join Us</ButtonContainer>
+              <ButtonContainer
+                onClick={() => {
+                  JoinUsHandler();
+                }}
+              >
+                Join Us
+              </ButtonContainer>
             </JoinUsText>
           </JoinUsDiv>
           <SponsorDiv>
             <SponsorHeading>{join.SponsorUs.heading}</SponsorHeading>
             <SponsorDescription>{join.SponsorUs.description}</SponsorDescription>
             <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
-            <ButtonContainer>Sponsor Us</ButtonContainer>
+            <ButtonContainer
+              onClick={() => {
+                SponsorUsHandler();
+              }}
+            >
+              Sponsor Us
+            </ButtonContainer>
           </SponsorDiv>
         </Wrapper>
       </Container>
