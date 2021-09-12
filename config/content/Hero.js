@@ -8,7 +8,7 @@ export default {
   links: {
     discord: {
       icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1631460159/project-oregano/assets/zcbsoiannos8tyltlwjs.png',
-      link: 'https://discord.com/invite/SGzuZyp9nS',
+      link: 'https://hacknitr.tech/discord',
     },
   },
   img: {

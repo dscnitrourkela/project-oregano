@@ -186,12 +186,6 @@ export default {
       link: 'https://www.leadlearners.ca/',
       alt: 'Leading Learners',
     },
-    {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
-      name: 'Leading Learners',
-      size: '50%',
-      link: 'https://www.leadlearners.ca/',
-    },
   ],
   'authentication-partner': [
     {

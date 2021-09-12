@@ -52,7 +52,7 @@ export default {
     },
     {
       icon: faDiscord,
-      link: 'https://discord.com/invite/SGzuZyp9nS',
+      link: 'https://hacknitr.tech/discord',
     },
     {
       icon: faFacebook,
