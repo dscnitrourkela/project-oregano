@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { faq } from '../../../config/content';
+import { Heading2, Body } from '../shared';
 
 const Wrapper = styled.div`
   background-color: #000;
+  overflow: hidden;
   grid-column: span 2 / span 2;
   display: grid;
   grid-template-columns: 1;
@@ -20,20 +22,26 @@ const Wrapper = styled.div`
   }
 `;
 
-const GreenBg = styled.div`
-  background-color: #8fa963;
+const Content = styled.div`
+  padding: 7%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  background-color: #17171d;
   border-radius: 8px 8px 0 0;
-  height: 100%;
 `;
 
-const BlackBg = styled.div`
-  background-color: #000;
+const IllContainer = styled.div`
+  display: grid;
+  background-color: #17171d;
   border-radius: 8px 0 8px 0;
+  height: 100%;
 `;
 
 const Illustration = styled.img`
   position: absolute;
-  top: 25%;
+  width: 90%;
+  bottom: 0%;
   left: 50%;
   transform: translate(-50%, 0);
 `;
@@ -41,15 +49,17 @@ const Illustration = styled.img`
 function WhyWait() {
   return (
     <Wrapper>
-      <GreenBg />
-      <BlackBg>
-        <Illustration src={faq.laptop.src} alt={faq.laptop.alt} />
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio corrupti tenetur
-          pariatur, recusandae asperiores odio ut voluptatibus totam quod consectetur error at!
-          Beatae maiores dolores soluta, voluptatibus facere repudiandae et.
-        </p> */}
-      </BlackBg>
+      <Content>
+        <Heading2>Want to reach out to us?</Heading2>
+        <Body>
+          Drop us a mail on our official email ID. We would try to get back to you withing 48 hours.
+        </Body>
+      </Content>
+      <IllContainer>
+        <a href='mailto:team@hacknitr.tech'>
+          <Illustration src={faq.email.src} alt={faq.email.alt} />
+        </a>
+      </IllContainer>
     </Wrapper>
   );
 }

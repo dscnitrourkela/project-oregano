@@ -16,15 +16,15 @@ export default {
     src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png',
     alt: 'HackNITR Chat Profile',
   },
-  laptop: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627540413/project-oregano/assets/dubynkp6upfnx4cajztf.png',
-    alt: 'Laptop Illustration',
+  email: {
+    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
+    alt: 'Email Illustration',
   },
   questions: {
     one: {
       id: 'faq-1',
       question: 'How do I register for the hackathon?',
-      answer: `Click on any "Register Now" button on the website. Alternatively, you can head over to hacknitr3.devfolio.co`,
+      answer: `Click on any "Register Now" button on the website. Alternatively, you can head over to <a href="https://hacknitr3.devfolio.co">Devfolio</a>`,
     },
     two: {
       id: 'faq-2',
@@ -65,6 +65,12 @@ export default {
       question: 'How will the teams be judged?',
       answer:
         'The teams will be judged based on Viability, Technical Complexity, Presentation Skills and most importantly, Creativity.',
+    },
+    eight: {
+      id: 'faq-8',
+      question: 'What is the Code of Conduct?',
+      answer:
+        'To ensure a positive experience among all the participants, we follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. It is advised that you go through it once.',
     },
   },
 };
