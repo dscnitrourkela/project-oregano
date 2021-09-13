@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { ReactTypeformEmbed } from 'react-typeform-embed';
 import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
 import { join } from '../../../config/content';
 import config from '../../../config/website';
@@ -122,15 +123,18 @@ const SponsorImg = styled.img`
     `}
 `;
 
-const JoinUsHandler = () => {
-  window.open(config.join, '_blank', 'noreferrer');
-};
+// const JoinUsHandler = () => {
+//   window.open(config.join, '_blank', 'noreferrer');
+// };
 
 const SponsorUsHandler = () => {
   window.open(config.sponsor, '_blank', 'noreferrer');
 };
 
 function JoinUs() {
+  const joinUsTypeform = useRef();
+  const joinUsForm = () => joinUsTypeform.current.typeform.open();
+
   return (
     <SectionLayout id='joinUs'>
       <Container>
@@ -141,13 +145,18 @@ function JoinUs() {
               <Head>{join.JoinUs.head}</Head>
               <JoinHeading>{join.JoinUs.heading}</JoinHeading>
               <JoinDescription>{join.JoinUs.description}</JoinDescription>
-              <ButtonContainer
-                onClick={() => {
-                  JoinUsHandler();
-                }}
-              >
-                Join Us
-              </ButtonContainer>
+              <ReactTypeformEmbed
+                ref={joinUsTypeform}
+                hideHeaders
+                hideFooter
+                url={config.join}
+                mode='pop_up'
+                popup
+                autoOpen={false}
+                autoClose={100000000}
+                style={{ 'pointer-events': 'none' }}
+              />
+              <ButtonContainer onClick={joinUsForm}>Join Us</ButtonContainer>
             </JoinUsText>
           </JoinUsDiv>
           <SponsorDiv>

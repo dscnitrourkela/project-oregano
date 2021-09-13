@@ -1955,6 +1955,11 @@
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.1.tgz#57637d2a7d1860adb9f9cecbdcc966ce4f551d63"
   integrity sha512-M2BiThcbxMxSKX8W4z5u9jKZn6datnM3+FpEU+eYw0//l31E2xhqi7vTAuJ/Sf0P3yhp66SDJgPu3bRRpvrdQQ==
 
+"@typeform/embed@^1.18.1":
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.18.1.tgz#b9b724002cf65fa8067dc4deb5b8a2152f02611a"
+  integrity sha512-L9icCzZArjRmns2W08T+x9ZHUZ20gXo4Ry1YxDPl3Vcp6MUQtCcOPCxM24Z3xc/QY0WT3na4OnPgjOLuoSgIXg==
+
 "@types/cacheable-request@^6.0.1":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@types/cacheable-request/-/cacheable-request-6.0.2.tgz#c324da0197de0a98a2312156536ae262429ff6b9"
@@ -11692,6 +11697,13 @@ react-side-effect@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
+
+react-typeform-embed@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-typeform-embed/-/react-typeform-embed-1.0.3.tgz#35caa335a5f460e9195d9150e89da26f7c211dd6"
+  integrity sha512-jFBYm1lbZDvoWHTvsxuATCqgNA8iRP5X+QjMiUms0DF6VwrjfNXyCUvlnh1wifEO5V3aVbNWq/a9LAmSS46nAg==
+  dependencies:
+    "@typeform/embed" "^1.18.1"
 
 react@^17.0.1:
   version "17.0.2"
