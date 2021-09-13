@@ -17,6 +17,6 @@ export default {
     },
     heading: 'Help us conduct an awesome Hackathon!',
     description:
-      "Join us and be a part of the hackathon, which is one of its own kind! Let's make it bigger and better, together.",
+      "Become a part of the hackathon, which is one of its own kind! Let's make it bigger and better, together.",
   },
 };

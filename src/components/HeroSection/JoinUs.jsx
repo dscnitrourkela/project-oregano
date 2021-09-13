@@ -1,15 +1,18 @@
-import React, { useRef } from 'react';
+import React from 'react';
+
+// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { ReactTypeformEmbed } from 'react-typeform-embed';
+
+// Components
+import { Popup } from 'react-typeform-embed';
 import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
+
+// Assets
 import { join } from '../../../config/content';
-import config from '../../../config/website';
 
 const Wrapper = styled.div`
   ${tw`
-    items-center
-    justify-center
     w-full
     overflow-x-hidden
     overflow-y-hidden
@@ -19,67 +22,35 @@ const Wrapper = styled.div`
     gap-6
     `}
 `;
-const Description = styled(Body)`
-  ${tw`
-    pt-5
-    pb-5
-    `}
-`;
+
 const JoinUsDiv = styled.div`
   ${tw`
     col-span-2
     grid
     grid-cols-5
-    bg-secondary
-    rounded-lg
-    w-full
-    h-full
     lg:grid-cols-1
+    w-full
+    bg-secondary
     overflow-x-hidden
     overflow-y-hidden
     `}
 `;
+
 const JoinUsImg = styled.img`
   ${tw`
     col-span-3
-    w-auto
-    max-w-full
-    overflow-x-hidden
-    overflow-y-hidden
-    h-full
+    w-full
+    rounded-lg
     `}
 `;
+
 const JoinUsText = styled.div`
   ${tw`
     col-span-2
-    grid
     p-5
-    h-full
-    justify-center
-    items-center
-    justify-items-center
-    `}
-  grid-template-rows: repeat(10, minmax(0, 1fr));
-`;
-const Head = styled(Body)`
-  ${tw`
-    row-span-1
-    lg:justify-self-center
-    justify-self-start
     `}
 `;
-const JoinHeading = styled(Heading2)`
-  ${tw`
-    row-span-3
-    lg:text-center
-    `}
-`;
-const SponsorHeading = styled(Heading2)`
-  ${tw`
-    row-span-2
-    lg:text-center
-    `}
-`;
+
 const SponsorDiv = styled.div`
   ${tw`
     xl:hidden
@@ -87,54 +58,21 @@ const SponsorDiv = styled.div`
     bg-secondary
     rounded-lg
     w-full
-    h-full
     p-5
-    grid
-    justify-center
+    flex
+    flex-col
     items-center
-    justify-items-center
     `}
-  grid-template-rows: repeat(10, minmax(0, 1fr));
 `;
 
-const JoinDescription = styled(Description)`
-  ${tw`
-    row-span-4
-    justify-center
-    lg:text-center
-    `}
-`;
-const SponsorDescription = styled(Description)`
-  ${tw`
-    row-span-3
-    lg:text-center
-    `}
-`;
-const ButtonContainer = styled(ButtonLight)`
-  ${tw`
-    row-span-2
-    `}
-`;
 const SponsorImg = styled.img`
   ${tw`
-    h-28
-    justify-items-center
-    row-span-3
+    w-1/2
+    h-auto
     `}
 `;
 
-// const JoinUsHandler = () => {
-//   window.open(config.join, '_blank', 'noreferrer');
-// };
-
-const SponsorUsHandler = () => {
-  window.open(config.sponsor, '_blank', 'noreferrer');
-};
-
 function JoinUs() {
-  const joinUsTypeform = useRef();
-  const joinUsForm = () => joinUsTypeform.current.typeform.open();
-
   return (
     <SectionLayout id='joinUs'>
       <Container>
@@ -142,34 +80,27 @@ function JoinUs() {
           <JoinUsDiv>
             <JoinUsImg src={join.JoinUs.img.src} alt={join.JoinUs.img.alt} />
             <JoinUsText>
-              <Head>{join.JoinUs.head}</Head>
-              <JoinHeading>{join.JoinUs.heading}</JoinHeading>
-              <JoinDescription>{join.JoinUs.description}</JoinDescription>
-              <ReactTypeformEmbed
-                ref={joinUsTypeform}
-                hideHeaders
-                hideFooter
-                url={config.join}
-                mode='pop_up'
-                popup
-                autoOpen={false}
-                autoClose={100000000}
-                style={{ 'pointer-events': 'none' }}
-              />
-              <ButtonContainer onClick={joinUsForm}>Join Us</ButtonContainer>
+              <Body>{join.JoinUs.head}</Body>
+              <Heading2 style={{ marginTop: 15 }}>{join.JoinUs.heading}</Heading2>
+              <Body style={{ marginTop: 10 }}>{join.JoinUs.description}</Body>
+              {window && (
+                <Popup id='o2X7YSNf' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
+                  <ButtonLight style={{ marginTop: 15 }}>Join Us</ButtonLight>
+                </Popup>
+              )}
             </JoinUsText>
           </JoinUsDiv>
           <SponsorDiv>
-            <SponsorHeading>{join.SponsorUs.heading}</SponsorHeading>
-            <SponsorDescription>{join.SponsorUs.description}</SponsorDescription>
             <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
-            <ButtonContainer
-              onClick={() => {
-                SponsorUsHandler();
-              }}
-            >
-              Sponsor Us
-            </ButtonContainer>
+            {window && (
+              <Popup id='maI5lJ4t' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
+                <ButtonLight style={{ margin: 0 }}>Sponsor Us</ButtonLight>
+              </Popup>
+            )}
+            <Heading2 style={{ marginTop: 15, textAlign: 'center' }}>
+              {join.SponsorUs.heading}
+            </Heading2>
+            <Body style={{ marginTop: 10, textAlign: 'center' }}>{join.SponsorUs.description}</Body>
           </SponsorDiv>
         </Wrapper>
       </Container>
