@@ -83,20 +83,16 @@ function JoinUs() {
               <Body>{join.JoinUs.head}</Body>
               <Heading2 style={{ marginTop: 15 }}>{join.JoinUs.heading}</Heading2>
               <Body style={{ marginTop: 10 }}>{join.JoinUs.description}</Body>
-              {window && (
-                <Popup id='o2X7YSNf' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
-                  <ButtonLight style={{ marginTop: 15 }}>Join Us</ButtonLight>
-                </Popup>
-              )}
+              <Popup id='o2X7YSNf' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
+                <ButtonLight style={{ marginTop: 15 }}>Join Us</ButtonLight>
+              </Popup>
             </JoinUsText>
           </JoinUsDiv>
           <SponsorDiv>
             <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
-            {window && (
-              <Popup id='maI5lJ4t' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
-                <ButtonLight style={{ margin: 0 }}>Sponsor Us</ButtonLight>
-              </Popup>
-            )}
+            <Popup id='maI5lJ4t' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
+              <ButtonLight style={{ margin: 0 }}>Sponsor Us</ButtonLight>
+            </Popup>
             <Heading2 style={{ marginTop: 15, textAlign: 'center' }}>
               {join.SponsorUs.heading}
             </Heading2>
