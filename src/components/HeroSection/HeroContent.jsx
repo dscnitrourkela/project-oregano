@@ -29,11 +29,11 @@ const ContentContainer = styled.div`
 `;
 
 const TimeLine = styled(Body)`
-  color: black;
-  font-size: 1rem;
-  background-color: #ffffff;
+  /* color: black; */
+  /* font-size: 1rem; */
+  /* background-color: #ffffff; */
+  /* padding: 10px 15px; */
   border-radius: 25px;
-  padding: 10px 15px;
   width: fit-content;
   margin-bottom: 24px;
 `;
@@ -60,6 +60,11 @@ const Slogan = styled(HighlightBody)`
   md:mr-0
   sm:mr-0
   sm:text-justify
+  `}
+`;
+const TimeImg = styled.img`
+  ${tw`
+  max-w-xs
   `}
 `;
 
@@ -108,9 +113,11 @@ const Wrapper = styled.div`
 function HeroContent() {
   return (
     <ContentContainer>
-      <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
       <Slogan style={{ marginBottom: '20px' }}>{hero.tagline}</Slogan>
+      <TimeLine>
+        <TimeImg src={hero.dates.src} alt={hero.dates.alt} />
+      </TimeLine>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}

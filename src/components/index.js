@@ -6,6 +6,7 @@ export * from './shared';
 
 // Hero section exports
 export { default as HeroSection } from './HeroSection/HeroSection';
+export { default as JoinUs } from './HeroSection/JoinUs';
 
 // FAQ section exports
 export { default as FAQ } from './FaqSection/Faq';

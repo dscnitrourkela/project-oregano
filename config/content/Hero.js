@@ -1,6 +1,9 @@
 /* eslint-disable max-len */
 export default {
-  dates: '29th to 31st October 2021',
+  dates: {
+    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/xoptbvvefk1jrkb5pjnp.png',
+    alt: 'Image representing dates of the HackNITR Hackathon happening from 28-31 October 2021',
+  },
   title: 'HackNITR 3.0',
   tagline: 'IDEATE. IMPLEMENT. INNOVATE',
   content:

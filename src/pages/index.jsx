@@ -23,6 +23,7 @@ import {
   SEO,
   Footer,
   MLHBanner,
+  JoinUs,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -70,6 +71,7 @@ const Homepage = ({ location }) => {
 
       <Layout location={location}>
         <HeroSection />
+        <JoinUs />
         <Container>
           <Tracks />
           <Sponsors />
