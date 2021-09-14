@@ -8,7 +8,7 @@ import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles
 import { sponsors } from '../../../config/content';
 
 const links = {
-  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+  sponsor: 'https://partners.hacknitr.tech/',
 };
 
 function Sponsor() {
@@ -66,7 +66,7 @@ function Sponsor() {
       id='sponsors'
       title={sponsors.title}
       description={sponsors.content}
-      link={{ text: 'Sponsor Us', link: links.sponsor }}
+      link={{ text: 'Become a community partner.', link: links.sponsor }}
     >
       <div
         style={{

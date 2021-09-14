@@ -13,14 +13,6 @@ export default {
       alt: 'Major League Hacking',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
-      name: 'Devfolio',
-      size: '95%',
-      link: 'https://devfolio.co/',
-      width: '170px',
-      alt: 'Devfolio',
-    },
-    {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
       name: 'Github',
       size: '70%',
@@ -28,6 +20,15 @@ export default {
       width: '150px',
       alt: 'Github',
     },
+    {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      width: '170px',
+      alt: 'Devfolio',
+    },
+
     {
       src: null,
       name: 'Diamond Jubilee',
