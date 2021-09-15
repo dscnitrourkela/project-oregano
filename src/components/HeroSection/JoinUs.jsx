@@ -10,6 +10,7 @@ import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
 
 // Assets
 import { join } from '../../../config/content';
+import website from '../../../config/website';
 
 const Wrapper = styled.div`
   ${tw`
@@ -90,9 +91,11 @@ function JoinUs() {
           </JoinUsDiv>
           <SponsorDiv>
             <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
-            <Popup id='maI5lJ4t' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
-              <ButtonLight style={{ margin: 0 }}>Sponsor Us</ButtonLight>
-            </Popup>
+            <a href={website.communityPartners} target='_blank' rel='noopener noreferrer'>
+              <ButtonLight style={{ margin: 0 }}>
+                Become a <span style={{ display: 'grid' }}>Community Partner</span>
+              </ButtonLight>
+            </a>
             <Heading2 style={{ marginTop: 15, textAlign: 'center' }}>
               {join.SponsorUs.heading}
             </Heading2>
