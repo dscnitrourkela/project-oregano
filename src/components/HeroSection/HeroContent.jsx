@@ -29,10 +29,6 @@ const ContentContainer = styled.div`
 `;
 
 const TimeLine = styled(Body)`
-  /* color: black; */
-  /* font-size: 1rem; */
-  /* background-color: #ffffff; */
-  /* padding: 10px 15px; */
   border-radius: 25px;
   width: fit-content;
   margin-bottom: 24px;
@@ -76,40 +72,6 @@ const Wrapper = styled.div`
   margin-top: 20px;
 `;
 
-// const SponsorInvite = styled.div`
-//   ${tw`my-6
-//   gap-1
-//   inline-flex
-//   lg:block
-//   md:inline-flex
-//   `}
-// `;
-
-// const InlineWrapper = styled.div`
-//   ${tw`flex mr-10 sm:mr-0 sm:justify-between sm:items-center sm:mt-4`}
-// `;
-
-// const HighlightLink = styled.a`
-//   ${tw`
-//   font-normal
-//   text-base
-//   2xl:text-base
-//   lg:text-base
-//   md:text-base
-//   sm:text-sm
-//   text-color-primary
-//   font-roboto
-//   no-underline
-//   ml-2
-//   `}
-// `;
-
-// const NonStyledLink = styled.a`
-//   ${tw`
-//     no-underline
-//   `}
-// `;
-
 function HeroContent() {
   return (
     <ContentContainer>
@@ -125,17 +87,6 @@ function HeroContent() {
         <DevfolioButton />
         <DiscordButton />
       </Wrapper>
-      {/* <InlineWrapper>
-        <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
-          <ButtonDark>Join Discord</ButtonDark>
-        </NonStyledLink>
-      </InlineWrapper> */}
-      {/* <SponsorInvite>
-        <Body>Want to join the HackNITR family? </Body>
-        <HighlightLink href={config.join} target='_blank' rel='noreferrer'>
-          Join Us
-        </HighlightLink>
-      </SponsorInvite> */}
     </ContentContainer>
   );
 }

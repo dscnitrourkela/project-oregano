@@ -20,6 +20,7 @@ const Wrapper = styled.div`
     grid
     xl:grid-cols-2
     grid-cols-3
+    sm:grid-cols-1
     gap-6
     `}
 `;
@@ -54,8 +55,8 @@ const JoinUsText = styled.div`
 
 const SponsorDiv = styled.div`
   ${tw`
-    xl:hidden
     col-span-1
+    lg:col-span-2
     bg-secondary
     rounded-lg
     w-full
