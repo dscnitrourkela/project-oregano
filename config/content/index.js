@@ -5,3 +5,4 @@ export { default as faq } from './FAQ';
 export { default as hacker } from './BeHacker';
 export { default as nav } from './Navigation';
 export { default as footer } from './Footer';
+export { default as join } from './Join';

@@ -39,4 +39,7 @@ module.exports = {
   codeOfConduct: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
   privacyPolicy: 'https://mlh.io/privacy',
   termsConditions: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
+
+  // Community Partners Link
+  communityPartners: 'https://partners.hacknitr.tech/',
 };

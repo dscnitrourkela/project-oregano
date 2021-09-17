@@ -13,6 +13,7 @@ import {
   HighlightBody,
 } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
+import DiscordButton from '../shared/DiscordButton';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -28,11 +29,11 @@ const ContentContainer = styled.div`
 `;
 
 const TimeLine = styled(Body)`
-  color: black;
-  font-size: 1rem;
-  background-color: #ffffff;
+  /* color: black; */
+  /* font-size: 1rem; */
+  /* background-color: #ffffff; */
+  /* padding: 10px 15px; */
   border-radius: 25px;
-  padding: 10px 15px;
   width: fit-content;
   margin-bottom: 24px;
 `;
@@ -60,6 +61,19 @@ const Slogan = styled(HighlightBody)`
   sm:mr-0
   sm:text-justify
   `}
+`;
+const TimeImg = styled.img`
+  ${tw`
+  max-w-xs
+  `}
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
 `;
 
 // const SponsorInvite = styled.div`
@@ -99,13 +113,18 @@ const Slogan = styled(HighlightBody)`
 function HeroContent() {
   return (
     <ContentContainer>
-      <TimeLine>{hero.dates}</TimeLine>
       <TagLine>{hero.title}</TagLine>
       <Slogan style={{ marginBottom: '20px' }}>{hero.tagline}</Slogan>
+      <TimeLine>
+        <TimeImg src={hero.dates.src} alt={hero.dates.alt} />
+      </TimeLine>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
-      <DevfolioButton />
+      <Wrapper>
+        <DevfolioButton />
+        <DiscordButton />
+      </Wrapper>
       {/* <InlineWrapper>
         <NonStyledLink href={config.discord} target='_blank' rel='noreferrer'>
           <ButtonDark>Join Discord</ButtonDark>
