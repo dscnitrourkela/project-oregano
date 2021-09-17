@@ -52,7 +52,7 @@ function WhyWait() {
       <Content>
         <Heading2>Want to reach out to us?</Heading2>
         <Body>
-          Drop us a mail on our official email ID. We would try to get back to you withing 48 hours.
+          Drop us a mail on our official email ID. We would try to get back to you within 48 hours.
         </Body>
       </Content>
       <IllContainer>
