@@ -14,7 +14,7 @@ export default {
       link: 'https://hacknitr.tech/discord',
     },
     discordMobile: {
-      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1632032478/project-oregano/assets/fuiz4tzuclymzlvjoxse.png',
+      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1632037440/project-oregano/assets/nzkfrki74lszaodjzsaj.png',
       link: 'https://hacknitr.tech/discord',
     },
   },

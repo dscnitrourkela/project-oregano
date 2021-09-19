@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
   background-color: #fff;
   padding: 9px 14px 8px;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-left: 14px;
 
   @media (max-width: 542px) {
