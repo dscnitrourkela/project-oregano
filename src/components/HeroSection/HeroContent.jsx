@@ -14,6 +14,7 @@ import {
 } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
+import DiscordMobile from '../shared/DiscordMobile';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -24,7 +25,7 @@ const ContentContainer = styled.div`
   col-span-5
   md:col-span-12
   md:mt-6
-  ml-3
+  ${'' /* ml-3 */}
   `}
 `;
 
@@ -70,6 +71,11 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-top: 20px;
+
+  @media (max-width: 542px) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 `;
 
 function HeroContent() {
@@ -86,6 +92,7 @@ function HeroContent() {
       <Wrapper>
         <DevfolioButton />
         <DiscordButton />
+        <DiscordMobile />
       </Wrapper>
     </ContentContainer>
   );

@@ -5,12 +5,16 @@ import hero from '../../../config/content/Hero';
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: #fff;
   padding: 9px 14px 8px;
   border-radius: 5px;
   margin-left: 14px;
+
+  @media (max-width: 542px) {
+    display: none;
+  }
 `;
 
 const Image = styled.img`
