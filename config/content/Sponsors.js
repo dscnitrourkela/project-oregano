@@ -47,6 +47,14 @@ export default {
   ],
   beta: [
     {
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/kwoxuy26z8qsxc8w2g10.png',
+      name: 'Auth0',
+      size: '95%',
+      link: 'https://a0.to/hacknitr',
+      width: '160px',
+      alt: 'Auth0',
+    },
+    {
       src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
       name: 'Celo',
       size: '95%',
