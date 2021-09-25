@@ -20,13 +20,17 @@ import {
   Error,
 } from './ContactStyles';
 
-const FormSubmit = ({ submitForm, gmail }) => {
+const FormSubmit = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors, setErrors } = useForm(submitForm, validate);
 
   return (
     <>
       <Component1>
-        <Gmail src={`${gmail}.png`} alt='gmail' />
+        <Gmail
+          // eslint-disable-next-line max-len
+          src='https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/qwxuzfebtbrjwtdzlrrt.png'
+          alt='gmail'
+        />
         <HeadText>Drop us a mail</HeadText>
       </Component1>
       <Form>
