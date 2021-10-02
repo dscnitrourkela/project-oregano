@@ -4,4 +4,15 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
+const redirects = require('./redirects.json');
+
+exports.createPages = async ({ actions }) => {
+  const { createRedirect } = actions;
+
+  redirects.forEach(({ fromPath, toPath }) =>
+    createRedirect({
+      fromPath,
+      toPath,
+    }),
+  );
+};
