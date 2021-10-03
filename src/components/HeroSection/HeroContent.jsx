@@ -5,20 +5,13 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import {
-  Heading1,
-  Body,
-  // eslint-disable-next-line no-unused-vars
-  ButtonDark,
-  HighlightBody,
-} from '../shared';
+import { Heading1, Body, HighlightBody } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
 import DiscordMobile from '../shared/DiscordMobile';
 
 // Assets
 import { hero } from '../../../config/content';
-// import config from '../../../config/website';
 
 const ContentContainer = styled.div`
   ${tw`
