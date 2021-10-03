@@ -33,7 +33,7 @@ export const Sub = styled.div`
    `}
 `;
 
-export const Tracks1 = styled.div`
+export const TracksContainer = styled.div`
   ${tw`
        grid
        grid-cols-track
