@@ -12,7 +12,7 @@ import { Body, ButtonLight, SectionLayout, Container, Heading2 } from '..';
 import { join } from '../../../config/content';
 import website from '../../../config/website';
 
-const Wrapper = styled.div`
+const GridContainer = styled.div`
   ${tw`
     w-full
     overflow-x-hidden
@@ -78,31 +78,33 @@ function JoinUs() {
   return (
     <SectionLayout id='joinUs'>
       <Container>
-        <Wrapper>
+        <GridContainer>
           <JoinUsDiv>
             <JoinUsImg src={join.JoinUs.img.src} alt={join.JoinUs.img.alt} />
             <JoinUsText>
-              <Body>{join.JoinUs.head}</Body>
               <Heading2 style={{ marginTop: 15 }}>{join.JoinUs.heading}</Heading2>
+              <Body>{join.JoinUs.head}</Body>
               <Body style={{ marginTop: 10 }}>{join.JoinUs.description}</Body>
               <Popup id='o2X7YSNf' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
-                <ButtonLight style={{ marginTop: 15 }}>Join Us</ButtonLight>
+                <ButtonLight style={{ marginTop: 28 }}>Join Us</ButtonLight>
               </Popup>
             </JoinUsText>
           </JoinUsDiv>
+
           <SponsorDiv>
+            <Heading2 style={{ marginTop: 15, textAlign: 'center' }}>
+              {join.SponsorUs.heading}
+            </Heading2>
+            <Body style={{ marginTop: 10, textAlign: 'center' }}>{join.SponsorUs.description}</Body>
+
             <SponsorImg src={join.SponsorUs.img.src} alt={join.SponsorUs.img.alt} />
             <a href={website.communityPartners} target='_blank' rel='noopener noreferrer'>
               <ButtonLight style={{ margin: 0 }}>
                 Become a <span style={{ display: 'grid' }}>Community Partner</span>
               </ButtonLight>
             </a>
-            <Heading2 style={{ marginTop: 15, textAlign: 'center' }}>
-              {join.SponsorUs.heading}
-            </Heading2>
-            <Body style={{ marginTop: 10, textAlign: 'center' }}>{join.SponsorUs.description}</Body>
           </SponsorDiv>
-        </Wrapper>
+        </GridContainer>
       </Container>
     </SectionLayout>
   );
