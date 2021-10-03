@@ -11,9 +11,17 @@ import TestimonialComponent from './Component';
 const Wrapper = styled.div`
   background-color: #17171e;
   border-radius: 16px;
-  height: 320px;
-  width: 1345px;
-  margin: 32px auto 100px;
+  margin: 32px auto;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 const Heading = styled(Heading1)`
@@ -26,10 +34,10 @@ function Testimonial() {
       <Wrapper>
         <Heading>Testimonials</Heading>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', margin: 0 }}>
+        <Grid>
           <TestimonialComponent />
           <TestimonialComponent />
-        </div>
+        </Grid>
       </Wrapper>
     </SectionLayout>
   );
