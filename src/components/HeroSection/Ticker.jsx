@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Libraries
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
@@ -9,7 +9,6 @@ import TickerItem from './TickerItem';
 
 // Assets
 import { sponsors } from '../../../config/content';
-import '../../styles/styles.css';
 
 const TickerContainer = styled.div`
   ${tw`
@@ -20,8 +19,13 @@ const TickerContainer = styled.div`
   `}
 `;
 
-const TickerWrapper = styled.div`
-  ${tw`w-full`}
+const ticker = keyframes`
+  0% {
+    transform: translate(100vw, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 `;
 
 const TickerMover = styled.div`
@@ -29,20 +33,24 @@ const TickerMover = styled.div`
     inline-block
     whitespace-nowrap
   `}
+
+  animation: ${ticker} 20s linear 0s infinite;
+
+  &:hover {
+    animation-play-state: pause;
+  }
 `;
 
 function Ticker() {
   return (
     <TickerContainer className='TickerContainer'>
-      <TickerWrapper className='TickerWrapper'>
-        <TickerMover className='TickerMover'>
-          {[...sponsors.alpha, ...sponsors.beta, ...sponsors['authentication-partner']].map(
-            ({ name, src, width }) => (
-              <TickerItem key={name} source={src} alt={name} size={width} />
-            ),
-          )}
-        </TickerMover>
-      </TickerWrapper>
+      <TickerMover className='TickerMover'>
+        {[...sponsors.alpha, ...sponsors.beta, ...sponsors['authentication-partner']].map(
+          ({ name, src, width }) => (
+            <TickerItem key={name} source={src} alt={name} size={width} />
+          ),
+        )}
+      </TickerMover>
     </TickerContainer>
   );
 }
