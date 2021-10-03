@@ -2,36 +2,8 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const Background = styled.div`
-  height: 60px;
-  width: 60px;
-  border-radius: 8px;
-  background-color: ${(props) => props.color};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const TrackIcon = styled.img`
-  height: 38px;
-  width: auto;
-`;
-
-export const Heading = styled.div`
-  ${tw`
-        mt-20
-        grid
-        gap-2
-        lg:grid-rows-1 grid-cols-1
-   `}
-`;
-
-export const Sub = styled.div`
-  ${tw`
-       w-100
-       lg:w-full
-   `}
-`;
+// Components
+import { Body, Heading4 } from '..';
 
 export const TracksContainer = styled.div`
   ${tw`
@@ -42,28 +14,53 @@ export const TracksContainer = styled.div`
    `}
 `;
 
-export const Cards = styled.div`
+export const Card = styled.div`
   ${tw`
-      bg-secondary
+      w-full
+      h-full
       rounded-lg
-      p-4
-   `}
-`;
 
-export const Head2 = styled.div`
-  ${tw`
-      grid
-      grid-cols-4
+      flex
+      flex-col
       items-center
-      pb-5
-   `}
+      justify-start
+
+      pt-6
+      px-4
+      pb-0
+      m-0
+      relative
+  `};
+  background: ${({ color1, color2 }) => `linear-gradient(135deg, ${color1}, ${color2})`};
+  height: 430px;
+
+  @media (max-width: 560px) {
+    height: 370px;
+  }
 `;
 
-export const Text = styled.div`
+export const Heading = styled(Heading4)`
   ${tw`
-       col-start-2
-       col-end-5
-       justify-center
-       ml-3
-   `}
+    uppercase
+    font-bold
+  `}
+`;
+
+export const Para = styled(Body)`
+  ${tw`
+    text-left
+    mt-3
+  `}
+  color: white;
+`;
+
+export const Img = styled.img`
+  ${tw`
+    w-auto
+    h-auto
+    absolute
+    bottom-0
+  `}
+
+  width: ${({ width }) => width}
 `;
