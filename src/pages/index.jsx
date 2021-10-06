@@ -24,6 +24,7 @@ import {
   Footer,
   MLHBanner,
   JoinUs,
+  Prizes,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -74,6 +75,7 @@ const Homepage = ({ location }) => {
         <JoinUs />
         <Container>
           <Tracks />
+          <Prizes />
           <Sponsors />
           <FAQ />
           <BeAHacker />
