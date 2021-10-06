@@ -17,6 +17,28 @@ const MainContainer = styled.div`
   padding: 40px 50px;
   padding-top: 20px;
   margin-top: 20px;
+
+  @media (max-width: 800px) {
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    height: 50px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #182848;
+    border-radius: 5px;
+  }
 `;
 
 const STAGES = {

@@ -10,6 +10,7 @@ const Container = styled.div`
 
   margin: 0;
   background: transparent;
+  min-width: 640px;
 `;
 
 const PrizesContainer = styled.div`
@@ -48,6 +49,11 @@ const Medal = styled.div`
   color: white;
   line-height: 32px;
   border-radius: 50%;
+
+  @media (max-width: 800px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
 `;
 
 const PrizeAmount = styled.h3`
@@ -58,6 +64,11 @@ const PrizeAmount = styled.h3`
   margin: 0;
   padding: 0;
   color: white;
+
+  @media (max-width: 800px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
 `;
 
 const PrizeDescription = styled.p`
@@ -68,6 +79,11 @@ const PrizeDescription = styled.p`
   margin: 0;
   padding: 0;
   color: white;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 `;
 
 const SinglePrizeContainer = styled.div`
