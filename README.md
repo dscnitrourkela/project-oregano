@@ -44,7 +44,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#contribution-guidlines">Contribution guidlines</a></li>
+        <li><a href="#contribution-guidelines">Contribution guidelines</a></li>
         <li><a href="#local-repository-setup">Local Repository Setup</a></li>
         <li><a href="#running-the-project">Running the project</a></li>
       </ul>
@@ -119,7 +119,7 @@ To setup the project locally the steps below.
 
 ```
 
-### Contribution guidlines 🎃
+### Contribution Guidelines 🎃
 
 ---
 
