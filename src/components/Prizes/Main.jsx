@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import { SectionLayout } from '../shared';
 import Navbar from './Navbar';
 import Overall from './Overall';
+import Tracks from './Track';
 
 const MainContainer = styled.div`
   background: linear-gradient(90deg, #4b6cb7, #182848);
@@ -88,7 +89,8 @@ const BeAHacker = () => {
     >
       <MainContainer>
         <Navbar navItems={navItems} stage={stage} />
-        <Overall />
+        {false && <Overall />}
+        <Tracks />
       </MainContainer>
     </SectionLayout>
   );

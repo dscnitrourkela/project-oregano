@@ -1,4 +1,18 @@
 /* eslint-disable max-len */
+const TrackPrizes = [
+  '250$ Digital Ocean Credits',
+  'Egghead Coupon - 1 year',
+  'Wolfram Lifetime Access',
+  '',
+];
+
+const AdditionalTrackPrizes = [
+  '150$ Digital Ocean Credits',
+  'Egghead Coupon - 1 year',
+  'Leading Learners Access',
+  '',
+];
+
 export default {
   title: 'Tracks',
   content:
@@ -16,8 +30,7 @@ export default {
       },
       color1: '#FFC41D',
       color2: '#B98C0A',
-      hex: '#ebb722',
-      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/yw1ew4euvqmuqpow2h6g.png',
+      prizes: TrackPrizes,
     },
     {
       id: 'track-2',
@@ -31,8 +44,7 @@ export default {
       },
       color1: '#71A0CE',
       color2: '#3A7BD5',
-      hex: '#71a0ce',
-      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/pwcokehizmndjmltve3f.png',
+      prizes: TrackPrizes,
     },
     {
       id: 'track-3',
@@ -46,8 +58,7 @@ export default {
       },
       color1: '#8FA963',
       color2: '#648B23',
-      hex: '#e78967',
-      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/udxogwtrkzphm22s6aek.png',
+      prizes: TrackPrizes,
     },
     {
       id: 'track-4',
@@ -61,8 +72,37 @@ export default {
       },
       color1: '#E78967',
       color2: '#CA5024',
-      hex: '#8fa963',
-      icon: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1627730311/project-oregano/assets/c6wx3wso2fwzlk1gpdny.png',
+      prizes: TrackPrizes,
+    },
+  ],
+  additionalTracks: [
+    {
+      id: 'track-5',
+      title: 'BEST GIRLS TEAM',
+      content:
+        "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
+      alt: 'Open Innovity Icon',
+      img: {
+        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/kerjwdjmtjbedee6v71a.png',
+        width: '50%',
+      },
+      color1: '#D290FD',
+      color2: '#7209B7',
+      prizes: AdditionalTrackPrizes,
+    },
+    {
+      id: 'track-6',
+      title: 'BEST FRESHERS TEAM',
+      content:
+        "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
+      alt: 'Open Innovity Icon',
+      img: {
+        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/irpi7magfhm0ixwnnk2i.png',
+        width: '50%',
+      },
+      color1: '#8D8D8C',
+      color2: '#3F3F3F',
+      prizes: AdditionalTrackPrizes,
     },
   ],
 };
