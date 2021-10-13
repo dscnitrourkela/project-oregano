@@ -6,7 +6,7 @@ import { SectionLayout, Heading1 } from '..';
 import TestimonialComponent from './Component';
 
 // Content Imports
-// import { testimonial } from '../../../config/content';
+import { testimonial } from '../../../config/content';
 
 const Wrapper = styled.div`
   background-color: #17171e;
@@ -28,6 +28,8 @@ const Heading = styled(Heading1)`
   margin: 32px 32px 0;
 `;
 
+const testimonialArray = testimonial.testimonials;
+
 function Testimonial() {
   return (
     <SectionLayout>
@@ -35,8 +37,9 @@ function Testimonial() {
         <Heading>Testimonials</Heading>
 
         <Grid>
-          <TestimonialComponent />
-          <TestimonialComponent />
+          {testimonialArray.map((obj) => (
+            <TestimonialComponent key={obj.name} desc={obj.desc} name={obj.name} src={obj.src} />
+          ))}
         </Grid>
       </Wrapper>
     </SectionLayout>

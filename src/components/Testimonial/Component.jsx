@@ -49,13 +49,13 @@ const Logo = styled.img`
   }
 `;
 
-function Component() {
+function Component({ desc, name, src }) {
   return (
     <Container>
-      <Profile src='https://avatars.githubusercontent.com/u/56754747?v=4' alt='name of person' />
+      <Profile src={src} alt='name of person' />
       <DescWrapper>
-        <Description>{testimonial.lorem}</Description>
-        <HighlightBody>Abhibhaw Asthana</HighlightBody>
+        <Description>{desc}</Description>
+        <HighlightBody>{name}</HighlightBody>
       </DescWrapper>
       <Logo src={testimonial.apostrophe} alt='Apostrophe Logo' />
     </Container>
