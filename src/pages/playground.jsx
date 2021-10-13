@@ -15,6 +15,8 @@ import {
   ButtonDark,
   WhyWait,
   Modal,
+  TestimonialComponent,
+  TestimonialSection,
 } from '../components';
 
 const Element = styled.div`
@@ -59,10 +61,6 @@ const Playground = () => {
         <Heading5>Heading5</Heading5>
         <Body>Body</Body>
         <HighlightBody>Highlight Body</HighlightBody>
-        <WhyWait />
-        <Element>
-          <Paragraph>{partials.content}</Paragraph>
-        </Element>
         <ButtonLight>Button</ButtonLight>
         <ButtonDark>Button</ButtonDark>
       </div>
@@ -71,6 +69,8 @@ const Playground = () => {
       <button onClick={() => setOpen((current) => !current)}>Open Modal</button>
 
       <Modal isOpen={open} close={() => setOpen(false)} onProceed={() => console.log('hello')} />
+
+      <TestimonialSection />
     </Container>
   );
 };
