@@ -78,11 +78,27 @@ const BeAHacker = () => {
       key: STAGES.SPONSORED,
     },
     {
-      title: 'MLH Goodies',
+      title: 'MLH Tracks',
       setStage: setStageToMLH,
       key: STAGES.MLH,
     },
   ];
+
+  const renderPrizes = () => {
+    switch (stage) {
+      case STAGES.OVERALL:
+        return <Overall />;
+
+      case STAGES.TRACKS:
+        return <Tracks />;
+
+      case STAGES.MLH:
+        return <MLH />;
+
+      default:
+        return <Overall />;
+    }
+  };
 
   return (
     <SectionLayout
@@ -91,10 +107,7 @@ const BeAHacker = () => {
     >
       <MainContainer>
         <Navbar navItems={navItems} stage={stage} />
-        {/* {false && <Overall />} */}
-        {/* <Overall /> */}
-        {/* <Tracks /> */}
-        <MLH />
+        {renderPrizes()}
       </MainContainer>
     </SectionLayout>
   );
