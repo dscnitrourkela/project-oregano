@@ -12,6 +12,7 @@ import Tracks from './Track';
 import MLH from './MLH';
 import Swags from './Swags';
 import SponsoredTracks from './Sponsored';
+import AllSubmissions from './AllSubmissions';
 
 const MainContainer = styled.div`
   background: linear-gradient(90deg, #4b6cb7, #182848);
@@ -52,6 +53,7 @@ const STAGES = {
   SPONSORED: 'Sponsored Track Prizes',
   MLH: 'MLH Goodies',
   SWAGS: 'Swags for all',
+  ALL: 'All Submisssion Prizes',
 };
 
 // eslint-disable-next-line arrow-body-style
@@ -64,6 +66,7 @@ const BeAHacker = () => {
   const setStageToSponsored = () => setStage(STAGES.SPONSORED);
   const setStageToMLH = () => setStage(STAGES.MLH);
   const setStageToSwags = () => setStage(STAGES.SWAGS);
+  const setStageToAllSubs = () => setStage(STAGES.ALL);
 
   const navItems = [
     {
@@ -91,6 +94,11 @@ const BeAHacker = () => {
       setStage: setStageToSwags,
       key: STAGES.SWAGS,
     },
+    {
+      title: 'Prizes for all',
+      setStage: setStageToAllSubs,
+      key: STAGES.ALL,
+    },
   ];
 
   const renderPrizes = () => {
@@ -109,6 +117,9 @@ const BeAHacker = () => {
 
       case STAGES.SPONSORED:
         return <SponsoredTracks />;
+
+      case STAGES.ALL:
+        return <AllSubmissions />;
 
       default:
         return <Overall />;
