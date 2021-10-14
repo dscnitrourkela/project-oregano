@@ -72,14 +72,14 @@ const Homepage = ({ location }) => {
 
       <Layout location={location}>
         <HeroSection />
-        <JoinUs />
         <Container>
-          <Tracks />
           <Prizes />
+          <Tracks />
           <Sponsors />
           <FAQ />
           <BeAHacker />
         </Container>
+        <JoinUs />
         <Footer />
       </Layout>
     </>
