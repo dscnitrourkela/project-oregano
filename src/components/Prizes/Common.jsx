@@ -13,6 +13,7 @@ export const Container = styled.div`
   grid-gap: 1rem;
 
   min-height: 300px;
+  height: auto;
 `;
 
 export const Wrapper = styled.div`

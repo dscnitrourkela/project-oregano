@@ -11,6 +11,7 @@ import Overall from './Overall';
 import Tracks from './Track';
 import MLH from './MLH';
 import Swags from './Swags';
+import SponsoredTracks from './Sponsored';
 
 const MainContainer = styled.div`
   background: linear-gradient(90deg, #4b6cb7, #182848);
@@ -105,6 +106,9 @@ const BeAHacker = () => {
 
       case STAGES.SWAGS:
         return <Swags />;
+
+      case STAGES.SPONSORED:
+        return <SponsoredTracks />;
 
       default:
         return <Overall />;
