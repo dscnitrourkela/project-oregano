@@ -22,6 +22,11 @@ export { default as Sponsors } from './SponsorsSection/Sponsor';
 export { default as BeAHacker } from './HackerSection/BeAHacker';
 export { default as HackerCard } from './HackerSection/HackerCard';
 
+
+// Prizes section exports
+export { default as Prizes } from './Prizes/Main';
+
 // Testimonial Section Exports
 export { default as TestimonialComponent } from './Testimonial/Component';
 export { default as TestimonialSection } from './Testimonial/Testimonial';
+
