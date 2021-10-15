@@ -30,6 +30,7 @@ module.exports = {
         '28/100': '28%',
         '60/100': '60%',
         '70/100': '70%',
+        '8/10': '80%',
       },
       colors: {
         'color-primary': 'var(--text-color-primary)',

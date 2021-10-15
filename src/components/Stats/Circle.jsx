@@ -1,7 +1,7 @@
 import React from 'react';
 import { stats } from '../../../config/content/index';
 import { Heading2, Heading3, Heading4, Heading5 } from '..';
-import { StatsContainer2, YellowDiv, BlueDiv, OrangeDiv, Description } from './styles';
+import { StatsContainer2, YellowDiv, BlueDiv, GreenDiv, Description } from './styles';
 
 export const Circle = () => (
   <StatsContainer2>
@@ -19,11 +19,11 @@ export const Circle = () => (
         <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>2000+</Heading3>
       </div>
     </BlueDiv>
-    <OrangeDiv>
+    <GreenDiv>
       <div>
         <Heading5 style={{ fontWeight: 'inherit', color: 'white' }}>Registrations</Heading5>
         <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>2000+</Heading3>
       </div>
-    </OrangeDiv>
+    </GreenDiv>
   </StatsContainer2>
 );

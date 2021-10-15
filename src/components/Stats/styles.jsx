@@ -21,6 +21,14 @@ export const Description = styled.h2`
   `}
 `;
 
+export const Img = styled.img`
+  ${tw`
+    my-auto
+    ml-5
+    2xsm:w-14 2xsm:h-14
+`}
+`;
+
 export const YellowDiv = styled.div`
   ${tw`
        rounded-full h-52 w-52 flex items-center justify-center
@@ -58,7 +66,7 @@ export const BlueDiv = styled.div`
   box-shadow: 0 0 100px #71a0ce;
 `;
 
-export const OrangeDiv = styled.div`
+export const GreenDiv = styled.div`
   ${tw`
        rounded-full h-40 w-40 flex items-center justify-center
        xl:h-36 xl:w-36 xl:-right-64
@@ -108,14 +116,13 @@ export const CardContainer = styled.div`
   lg:mt-10
   md:mt-0
   md:w-2/3
-  mid:-mt-10
+  mid:-mt-1 mid:w-70/100
   sm:mt-0
   sm:w-70/100
   sxm:w-2/3 
   sxm:-mt-10
-  2xsm:w-60/100
-  2xsm:-mt-10
-  3xsm:-mt-16
+  2xsm:w-60/100 2xsm:-mt-10
+  3xsm:-mt-12 3xsm:w-2/3 3xsm:left-10
    `}
   grid-area: 1/1;
 `;
@@ -129,7 +136,7 @@ export const Cards = styled.div`
       flex
       gap-10
       p-5
-      2xsm:p-2
+      2xsm:p-1 2xsm:gap-4
       font-poppins
    `}
 `;
@@ -147,6 +154,7 @@ export const MobImage = styled.img`
   mid:w-60/100
   lg:w-4/10 lg:ml-96
   md:w-1/2 md:ml-64
+  3xsm:w-60/100 3xsm:ml-28 
   `}
   grid-area: 1/1;
 `;
