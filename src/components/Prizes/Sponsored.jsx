@@ -40,6 +40,8 @@ const Img = styled.img`
 
 const List = styled(Body)`
   color: white;
+  font-size: 13px;
+  padding: 4px;
 `;
 
 const TRACKS = [

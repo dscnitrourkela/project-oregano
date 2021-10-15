@@ -36,18 +36,20 @@ const Img = styled.img`
 
 const List = styled(Body)`
   color: white;
+  font-size: 15px;
+  padding: 4px;
 `;
 
 const TRACKS = [
   {
     id: 'mlh-prize-1',
-    title: 'Best Web Monetization',
+    title: 'Best Use of CockroachDB',
     content:
-      'Coil is all about providing better ways to access and reward the creators, publishers and platforms that you love. Build a web monetized hack using Coil for a chance to win an',
-    alt: 'Coil: Best Web Monetization Prize',
+      "Build your hackathon project on CockroachDB's open source and indestructible SQL database. Utilize CockroachDB in your hack for a chance to win a 3D printing pen for you and each of your team members. What's more, ALL projects submitted that use CockroachDB will receive a free t-shirt while supplies last!",
+    alt: 'CockroachDB: Best Use of CockroachDB',
     img: {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/xm6lhr5u8etpw3ui9sv8.png',
-      width: '80%',
+      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1634231634/project-oregano/assets/ma3vezn7ytbhajzii16y.png',
+      width: '45%',
     },
     color1: '#E83426',
     color2: '#E83426',
