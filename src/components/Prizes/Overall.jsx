@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Libraries
 import styled from 'styled-components';
+// import { Heading4, Body } from '..';
+
+// Components
+import DetailsBox from './DetailsBox';
+import { Heading3 } from '../shared';
 
 const Container = styled.div`
   display: flex;
@@ -93,48 +98,90 @@ const SinglePrizeContainer = styled.div`
   margin-bottom: 1.5rem;
 `;
 
+const List = styled.li`
+  margin-top: 10px;
+  color: white;
+  font-family: Roboto;
+  text-align: left;
+  padding: 3px;
+`;
+
 const PRIZES = [
   {
+    id: 'overall-prize-1',
     medal: {
       color1: '#F7971E',
       color2: '#FFD200',
       text: '1st',
     },
     amount: '₹25,000',
-    description: 'Click below for more prizes!',
+    title: 'Overall 1st Prize',
   },
   {
+    id: 'overall-prize-2',
     medal: {
       color1: '#757F9A',
       color2: '#D7DDE8',
       text: '2nd',
     },
     amount: '₹15,000',
-    description: 'Click below for more prizes!',
+    title: "Overall 2nd Prize",
   },
   {
+    id: 'overall-prize-3',
     medal: {
       color1: '#232526',
       color2: '#414345',
       text: '3rd',
     },
     amount: '₹10,000',
-    description: 'Click below for more prizes!',
-  },
+    title: 'Overall 3rd Prize',
+  }
 ];
 
-const OverallPrizes = () => (
+const OverallPrizes = () => {
+  const [modalOpen, setModalOpen] = useState();
+
+  return(
   <Container>
     <PrizesContainer>
-      {PRIZES.map(({ medal, amount, description }) => (
-        <SinglePrizeContainer key={amount}>
+      {PRIZES.map(({ medal, id, amount, title }) => (
+        <SinglePrizeContainer key={id}>
           <Medal color1={medal.color1} color2={medal.color2}>
             {medal.text}
           </Medal>
           <div style={{ marginLeft: 40 }}>
             <PrizeAmount>{amount}</PrizeAmount>
-            <PrizeDescription>{description}</PrizeDescription>
+            <PrizeDescription>
+              <a href type="button" 
+                 onClick={() => setModalOpen(id)} 
+                 id={id} 
+                 style={{ cursor: "pointer" }}
+              >
+                Click below for more prizes!
+              </a>
+            </PrizeDescription>
           </div>
+
+          <DetailsBox
+            prizeId={id}
+            isOpen={modalOpen === id}
+            close={() => setModalOpen()}
+          >
+            <Heading3 style={{ textAlign: "Left" }}>{title}</Heading3>
+            <List>
+              250$ Digitalocean credits <br />
+            </List>
+            <List>
+              EggHead Premium Coupons <br />
+            </List>
+            <List>
+              Leading Learners Student Pack <br />
+            </List>
+            <List>
+              Taskade Lifetime Pro Plan <br />
+            </List>
+          </DetailsBox>
         </SinglePrizeContainer>
       ))}
     </PrizesContainer>
@@ -147,6 +194,7 @@ const OverallPrizes = () => (
       />
     </ImgContainer>
   </Container>
-);
+  );
+};
 
 export default OverallPrizes;

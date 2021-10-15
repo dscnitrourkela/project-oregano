@@ -35,7 +35,7 @@ export const FlippingPrizeCard = styled.div`
 `;
 
 export const FlippingPrizeContainer = styled.div`
-  width: 80%;
+  width: 88%;
   height: 100%;
   background: transparent;
 
