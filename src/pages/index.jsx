@@ -23,7 +23,7 @@ import {
   SEO,
   Footer,
   MLHBanner,
-  JoinUs,
+  // JoinUs,
   Prizes,
   TestimonialSection,
 } from '../components';
@@ -81,7 +81,7 @@ const Homepage = ({ location }) => {
           <TestimonialSection />
           <BeAHacker />
         </Container>
-        <JoinUs />
+        {/* <JoinUs /> */}
         <Footer />
       </Layout>
     </>

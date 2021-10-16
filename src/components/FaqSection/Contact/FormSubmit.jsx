@@ -28,7 +28,7 @@ const FormSubmit = ({ submitForm }) => {
       <Component1>
         <Gmail
           // eslint-disable-next-line max-len
-          src='https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/qwxuzfebtbrjwtdzlrrt.png'
+          src='https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/qwxuzfebtbrjwtdzlrrt.png'
           alt='gmail'
         />
         <HeadText>Drop us a mail</HeadText>

@@ -10,7 +10,7 @@ export default {
       content:
         'Nope, it is not how it sounds. You should sleep, sleep and sleep and then wake up with great energy and do your work with great efficiency.',
       img: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/phgb0exycanxje0l0f77.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/phgb0exycanxje0l0f77.png',
         alt: '',
       },
       hasButton: false,
@@ -23,7 +23,7 @@ export default {
       content:
         'Make your Rest time during work productive by drinking a magical drink which we often called Coffee. This will make you smarter.',
       img: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/axlnny9dmql8xiq7imhk.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/axlnny9dmql8xiq7imhk.png',
         alt: '',
       },
       hasButton: false,
@@ -36,7 +36,7 @@ export default {
       content:
         'No warrior can be called a great warrior by only practising on the ground. He must go to war and fight. So, come and join us in HACKNITR 3.0.',
       img: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/uwj1asbcivyev4xbrp5y.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/uwj1asbcivyev4xbrp5y.png',
         alt: '',
       },
       hasButton: true,
