@@ -114,7 +114,7 @@ const PRIZES = [
       color2: '#FFD200',
       text: '1st',
     },
-    amount: '₹25,000',
+    amount: '₹20,000',
     title: 'Overall 1st Prize',
   },
   {
