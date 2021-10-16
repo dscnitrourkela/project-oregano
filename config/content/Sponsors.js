@@ -5,7 +5,7 @@ export default {
     'Our love for open source and drive to make an impact materialized as HackNITR 3.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
   alpha: [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/wdwlddhy9nix0p5jew4m.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/alpha/wdwlddhy9nix0p5jew4m.png',
       name: 'Major League Hacking',
       size: '65%',
       link: 'https://mlh.io/',
@@ -13,7 +13,7 @@ export default {
       alt: 'Major League Hacking',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/alpha/oigy7pgs2haeoh8dtqon.png',
       name: 'Github',
       size: '70%',
       link: 'https://github.com/',
@@ -21,7 +21,7 @@ export default {
       alt: 'Github',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/alpha/vlnvmirmr4r7tolmdrxt.png',
       name: 'Devfolio',
       size: '95%',
       link: 'https://devfolio.co/',
@@ -37,7 +37,7 @@ export default {
       alt: 'Diamond Jubilee',
     },
     // {
-    //   src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
+    //   src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/alpha/ogaeyl6batos4n5cumtz.png',
     //   name: 'Diamond Jubilee',
     //   size: '60%',
     //   link: 'https://www.nitrkl.ac.in/',
@@ -47,7 +47,7 @@ export default {
   ],
   beta: [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/kwoxuy26z8qsxc8w2g10.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/kwoxuy26z8qsxc8w2g10.png',
       name: 'Auth0',
       size: '95%',
       link: 'https://a0.to/hacknitr',
@@ -55,7 +55,7 @@ export default {
       alt: 'Auth0',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
       name: 'Celo',
       size: '95%',
       link: 'https://celo.org/',
@@ -63,7 +63,7 @@ export default {
       alt: 'Celo',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1628276570/project-oregano/sponsors/beta/pydzmkwjnnuwc5mqwnlz.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1628276570/project-oregano/sponsors/beta/pydzmkwjnnuwc5mqwnlz.png',
       name: 'DigitalOcean',
       size: '100%',
       link: 'https://www.digitalocean.com/',
@@ -71,7 +71,7 @@ export default {
       alt: 'DigitalOcean',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/ag8zpyl5g1ldxpxgfslh.png',
       name: 'Polygon',
       size: '100%',
       link: 'https://polygon.technology/',
@@ -79,7 +79,7 @@ export default {
       alt: 'Polygon',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
       name: 'Tezos',
       size: '95%',
       link: 'https://tezos.com/',
@@ -87,7 +87,7 @@ export default {
       alt: 'Tezos',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/iylv4cyswfjzoydb3why.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/iylv4cyswfjzoydb3why.png',
       name: 'Sashido',
       size: '98%',
       link: 'https://www.sashido.io/en/',
@@ -95,7 +95,7 @@ export default {
       alt: 'Sashido',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/zuvuxsxn7zukvrtx5swz.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/zuvuxsxn7zukvrtx5swz.png',
       name: '.xyz',
       size: '70%',
       link: 'https://gen.xyz/',
@@ -104,7 +104,7 @@ export default {
       margin: '0px',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/ps74duvfnma7sjh455de.svg',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/ps74duvfnma7sjh455de.svg',
       name: 'Filecoin',
       size: '100%',
       link: 'https://filecoin.io/',
@@ -113,7 +113,7 @@ export default {
       margin: '0px',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/beta/lr46yhbzdbtmv4vdm9yg.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/lr46yhbzdbtmv4vdm9yg.png',
       name: 'Egghead',
       size: '100%',
       link: 'https://egghead.io/',
@@ -124,21 +124,21 @@ export default {
   ],
   gamma: [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/xffabbcsz6p7ddyp3li0.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/xffabbcsz6p7ddyp3li0.png',
       name: 'EchoAR',
       size: '100%',
       link: 'https://www.echoar.xyz/',
       alt: 'EchoAR',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
       name: 'Linode',
       size: '100%',
       link: 'https://www.linode.com/',
       alt: 'Linode',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/bqlfwphjmjytpeuicdoe.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/bqlfwphjmjytpeuicdoe.png',
       name: 'StickerMule',
       size: '80%',
       link: 'https://www.stickermule.com/',
@@ -146,14 +146,14 @@ export default {
     },
 
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/yukdnno6o2y2hdbddnrk.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/yukdnno6o2y2hdbddnrk.png',
       name: 'Wolfram',
       size: '100%',
       link: 'https://www.wolfram.com/language/',
       alt: 'Wolfram',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1631042280/project-oregano/sponsors/gamma/zcnuwxnahcm8ai30npsp.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1631042280/project-oregano/sponsors/gamma/zcnuwxnahcm8ai30npsp.png',
       name: 'Koii Network',
       size: '85%',
       link: 'https://koii.network/',
@@ -162,42 +162,42 @@ export default {
   ],
   delta: [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
       name: 'Repl.it',
       size: '100%',
       link: 'https://replit.com/',
       alt: 'Repl.it',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
       name: 'Taskade',
       size: '100%',
       link: 'https://www.taskade.com/',
       alt: 'Taskade',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/wx7rpjho44bemgfrsgl9.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634369574/project-oregano/sponsors/delta/wx7rpjho44bemgfrsgl9.png',
       name: 'Tweetbeam',
       size: '100%',
       link: 'https://www.tweetbeam.com/',
       alt: 'Tweetbeam',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7so.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7.png',
       name: 'Voiceflow',
       size: '100%',
       link: 'https://www.voiceflow.com/',
       alt: 'Voiceflow',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jzu4m46qrkuheumwzrcx.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/jzu4m46qrkuheumwzrcx.png',
       name: 'Filter_Beans',
       size: '70%',
       link: 'https://www.instagram.com/filter_beans/?hl=en',
       alt: 'Filter_Beans',
     },
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/aksbtyjd4h8ekwtlwt2u.png',
       name: 'Leading Learners',
       size: '55%',
       link: 'https://www.leadlearners.ca/',
@@ -206,7 +206,7 @@ export default {
   ],
   'authentication-partner': [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1628159739/project-oregano/sponsors/tjxlxskmlgk87qego2cj.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1628159739/project-oregano/sponsors/tjxlxskmlgk87qego2cj.png',
       name: 'SAWO Labs',
       size: '11rem',
       link: 'https://sawolabs.com/',
@@ -216,7 +216,7 @@ export default {
   ],
   'community-partner': [
     {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1630820967/project-oregano/sponsors/Community%20Partners/rezmsmpf5b7ynktvufyt.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1630820967/project-oregano/sponsors/Community%20Partners/rezmsmpf5b7ynktvufyt.png',
       name: 'Raahee',
       size: '8rem',
       link: 'https://raahee.in/',

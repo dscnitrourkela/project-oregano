@@ -9,15 +9,15 @@ export default {
     alt: '',
   },
   toyImg: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png',
+    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/xbwwfhvfpz5q9cartqll.png',
     alt: 'Toy Chat Profile',
   },
   HackNITR: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png',
+    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/tu2yrxfthhkv6kg4bhjp.png',
     alt: 'HackNITR Chat Profile',
   },
   email: {
-    src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
+    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/iznbbtpkfze0xjp5shjv.png',
     alt: 'Email Illustration',
   },
   questions: {

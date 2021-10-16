@@ -125,7 +125,7 @@ const PRIZES = [
       text: '2nd',
     },
     amount: '₹15,000',
-    title: "Overall 2nd Prize",
+    title: 'Overall 2nd Prize',
   },
   {
     id: 'overall-prize-3',
@@ -136,64 +136,62 @@ const PRIZES = [
     },
     amount: '₹10,000',
     title: 'Overall 3rd Prize',
-  }
+  },
 ];
 
 const OverallPrizes = () => {
   const [modalOpen, setModalOpen] = useState();
 
-  return(
-  <Container>
-    <PrizesContainer>
-      {PRIZES.map(({ medal, id, amount, title }) => (
-        <SinglePrizeContainer key={id}>
-          <Medal color1={medal.color1} color2={medal.color2}>
-            {medal.text}
-          </Medal>
-          <div style={{ marginLeft: 40 }}>
-            <PrizeAmount>{amount}</PrizeAmount>
-            <PrizeDescription>
-              <a href type="button" 
-                 onClick={() => setModalOpen(id)} 
-                 id={id} 
-                 style={{ cursor: "pointer" }}
-              >
-                Click below for more prizes!
-              </a>
-            </PrizeDescription>
-          </div>
+  return (
+    <Container>
+      <PrizesContainer>
+        {PRIZES.map(({ medal, id, amount, title }) => (
+          <SinglePrizeContainer key={id}>
+            <Medal color1={medal.color1} color2={medal.color2}>
+              {medal.text}
+            </Medal>
+            <div style={{ marginLeft: 40 }}>
+              <PrizeAmount>{amount}</PrizeAmount>
+              <PrizeDescription>
+                <a
+                  href
+                  type='button'
+                  onClick={() => setModalOpen(id)}
+                  id={id}
+                  style={{ cursor: 'pointer' }}
+                >
+                  Click below for more prizes!
+                </a>
+              </PrizeDescription>
+            </div>
 
-          <DetailsBox
-            prizeId={id}
-            isOpen={modalOpen === id}
-            close={() => setModalOpen()}
-          >
-            <Heading3 style={{ textAlign: "Left" }}>{title}</Heading3>
-            <List>
-              250$ Digitalocean credits <br />
-            </List>
-            <List>
-              EggHead Premium Coupons <br />
-            </List>
-            <List>
-              Leading Learners Student Pack <br />
-            </List>
-            <List>
-              Taskade Lifetime Pro Plan <br />
-            </List>
-          </DetailsBox>
-        </SinglePrizeContainer>
-      ))}
-    </PrizesContainer>
+            <DetailsBox prizeId={id} isOpen={modalOpen === id} close={() => setModalOpen()}>
+              <Heading3 style={{ textAlign: 'Left' }}>{title}</Heading3>
+              <List>
+                250$ Digitalocean credits <br />
+              </List>
+              <List>
+                EggHead Premium Coupons <br />
+              </List>
+              <List>
+                Leading Learners Student Pack <br />
+              </List>
+              <List>
+                Taskade Lifetime Pro Plan <br />
+              </List>
+            </DetailsBox>
+          </SinglePrizeContainer>
+        ))}
+      </PrizesContainer>
 
-    <ImgContainer>
-      <Img
-        // eslint-disable-next-line max-len
-        src='https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/te02riyuhoh5gtxyska8abc.png'
-        alt='HackNITR 3.0 Prizes'
-      />
-    </ImgContainer>
-  </Container>
+      <ImgContainer>
+        <Img
+          // eslint-disable-next-line max-len
+          src='https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/te02riyuhoh5gtxyska8abc.png'
+          alt='HackNITR 3.0 Prizes'
+        />
+      </ImgContainer>
+    </Container>
   );
 };
 

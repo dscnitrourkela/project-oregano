@@ -11,7 +11,7 @@ import config from '../website';
 
 export default {
   hacknitr: {
-    img: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png',
+    img: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png',
     alt: 'HackNITR 3.0',
   },
   icons: {
@@ -27,7 +27,7 @@ export default {
       text: 'With a total strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
       id: 'footer-card-1',
       img: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/j1hylhwi5lv6kyaksvbj.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/j1hylhwi5lv6kyaksvbj.png',
         alt: 'NIT Rourkela',
       },
     },
@@ -36,7 +36,7 @@ export default {
       text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year. Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a beacon of knowledge.',
       id: 'footer-card-2',
       img: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/qevwkbokfctprtujrfhs.png',
         alt: 'Diamond Jubilee NIT Rourkela',
       },
     },
@@ -73,7 +73,7 @@ export default {
       link: 'https://dscnitrourkela.org/team.html',
       span: true,
       image: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/isjepabdq6poep7lmzxf.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/isjepabdq6poep7lmzxf.png',
         alt: 'Google DSC NIT Rourkela',
       },
     },
@@ -82,7 +82,7 @@ export default {
       link: 'https://opencodenitr.herokuapp.com/',
       span: false,
       image: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/gcezuprj0neujdhqanr4.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/gcezuprj0neujdhqanr4.png',
         alt: 'Opencode',
       },
     },
@@ -91,7 +91,7 @@ export default {
       link: 'https://education.github.com/',
       span: false,
       image: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/slbqxtegtcrzwbrni4na.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/slbqxtegtcrzwbrni4na.png',
         alt: 'Github Campus Expert',
       },
     },
@@ -100,7 +100,7 @@ export default {
       link: 'https://hackclub.com/',
       span: false,
       image: {
-        src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/po6v5ff92trierngzudg.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/po6v5ff92trierngzudg.png',
         alt: 'Hackclub NIT Rourkela',
       },
     },

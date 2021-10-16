@@ -48,7 +48,7 @@ const TRACKS = [
       "Build your hackathon project on CockroachDB's open source and indestructible SQL database. Utilize CockroachDB in your hack for a chance to win a 3D printing pen for you and each of your team members. What's more, ALL projects submitted that use CockroachDB will receive a free t-shirt while supplies last!",
     alt: 'CockroachDB: Best Use of CockroachDB',
     img: {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/v1634231634/project-oregano/assets/ma3vezn7ytbhajzii16y.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634231634/project-oregano/assets/ma3vezn7ytbhajzii16y.png',
       width: '45%',
     },
     color1: '#E83426',
@@ -61,7 +61,7 @@ const TRACKS = [
       "Use any one of Linode's wide array of cloud products and take your hack to the next level! Whether you're looking for data storage, compute power or hosting, Linode has what you need and the complimentary credits to get you started. Sign up and start hacking for your chance to win a Rasberry Pi 4 Kit",
     alt: 'Linode: Best Use of Linode Prize',
     img: {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
       width: '80%',
     },
     color1: '#1B4F97',
@@ -74,7 +74,7 @@ const TRACKS = [
       'GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport',
     alt: 'GoDaddt: Best Domain Prize',
     img: {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/pgi757nqnbf6sg81plgh.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/pgi757nqnbf6sg81plgh.png',
       width: '80%',
     },
     color1: '#F8BA29',
@@ -87,7 +87,7 @@ const TRACKS = [
       'Twilio allows you to incorporate mobile messaging, phone calls and a ton of other awesome communication features right into your hackathon project using web service APIs. Build a hack that simplifies your life using any one of Twilio’s APIs for a chance to win a Twilio Swag Box and GameGo Console',
     alt: 'Twilio: Creative use of Twilio',
     img: {
-      src: 'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/sponsors/anqmmhroafp5atvqbrb8.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/anqmmhroafp5atvqbrb8.png',
       width: '80%',
     },
     color1: '#8D8D8C',
