@@ -11,9 +11,9 @@ export const Container = styled.section`
     flex-col
     items-start
     justify-center
-    min-h-screen
+    /* min-h-screen */
   `}
-  padding-left: 10%;
+  padding-left: 8%;
   height: fit-content;
 `;
 
@@ -25,6 +25,7 @@ export const Time = styled.div`
     text-white
     h-0   
     font-roboto
+    mb-4
 `}
   grid-template-columns: repeat(7, minmax(300px,1fr));
 `;
@@ -61,12 +62,10 @@ export const RowContainer = styled.div`
     gap-5
     overflow-x-scroll
     overflow-y-hidden
+    pb-5
 `}
   grid-template-rows: auto;
   -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 export const ScheduleContainer = styled.div`
@@ -74,6 +73,7 @@ export const ScheduleContainer = styled.div`
     grid
     w-screen
     gap-5
+    mb-0
 `}grid-template-columns: repeat(7, minmax(300px,1fr));
 `;
 
@@ -108,10 +108,10 @@ export const DateContainer = styled.div`
   ${tw`
     grid
     grid-rows-1
-    gap-10
+    gap-6
     text-white
     h-full
-    mt-16
+    mt-14
     font-sixcaps
 `}
   font-size: 4rem;
@@ -122,6 +122,7 @@ export const Box = styled.div`
     bg-secondary
     rounded-2xl
     pt-5
+    pb-5
 `}
   position: relative;
   z-index: 1;
