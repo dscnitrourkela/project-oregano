@@ -57,7 +57,7 @@ export const RowContainer = styled.div`
   ${tw`
     mt-5
     grid
-    grid-rows-3
+    grid-rows-4
     grid-cols-1
     gap-5
     overflow-x-scroll

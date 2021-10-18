@@ -29,5 +29,13 @@ export const Events = () => (
         </Box>
       ))}
     </ScheduleContainer>
+    <ScheduleContainer>
+      {schedule.day4.map(({ id, head, subhead, color }) => (
+        <Box key={id} color={color}>
+          <Title>{head}</Title>
+          <Title2>{subhead}</Title2>
+        </Box>
+      ))}
+    </ScheduleContainer>
   </>
 );

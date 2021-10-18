@@ -159,11 +159,16 @@ table {
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 10px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
   background: #0e151c;
   height: 100px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {

@@ -99,18 +99,54 @@ export default {
       color: '#E78967',
     },
   ],
+  day4: [
+    {
+      id: 1,
+      head: 'Title of event or the lecture',
+      subhead: 'Subheading or name of speaker',
+      color: '#E78967',
+    },
+    {
+      id: 2,
+      head: 'Title of event or the lecture',
+      subhead: 'Subheading or name of speaker',
+      color: '#71A0CE',
+    },
+    {
+      id: 3,
+      head: 'Title of event or the lecture',
+      subhead: 'Subheading or name of speaker',
+      color: '#EBB722',
+    },
+    {
+      id: 4,
+      head: 'Title of event or the lecture',
+      subhead: 'Subheading or name of speaker',
+      color: '#8FA963',
+    },
+    {
+      id: 5,
+      head: 'Title of event or the lecture',
+      subhead: 'Subheading or name of speaker',
+      color: '#E78967',
+    },
+  ],
 
   date: [
     {
       id: 1,
-      day: '29th',
+      day: '28th',
     },
     {
       id: 2,
-      day: '30th',
+      day: '29th',
     },
     {
       id: 3,
+      day: '30th',
+    },
+    {
+      id: 4,
       day: '31st',
     },
   ],
