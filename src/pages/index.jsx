@@ -26,6 +26,7 @@ import {
   // JoinUs,
   Prizes,
   TestimonialSection,
+  ConferenceSection,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -80,6 +81,7 @@ const Homepage = ({ location }) => {
           <FAQ />
           <TestimonialSection />
           <BeAHacker />
+          <ConferenceSection />
         </Container>
         {/* <JoinUs /> */}
         <Footer />

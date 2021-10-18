@@ -1,0 +1,14 @@
+.center .slick-active {
+  margin-top: 30px;
+}
+
+.center .slick-center {
+  border-radius: 1rem;
+  opacity: 1;
+  margin-top: 50px;
+}
+
+.center {
+  opacity: 0.8;
+  color: #fff;
+}
