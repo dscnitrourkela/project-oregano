@@ -12,7 +12,7 @@ const Card = styled.div`
         border-4
         border-white
         bg-background-darker
-        h-auto
+        h-60
         m-2.5
         rounded-2xl
         p-3
@@ -21,6 +21,7 @@ const Card = styled.div`
         flex-col
         justify-center
         items-center
+        md:h-40
     `}
 `;
 
@@ -61,6 +62,7 @@ color:rgba(255, 255, 255, 0.4);
   ${tw`
         ml-5
         cursor-pointer
+        mid:ml-2.5
     `}
 `;
 
