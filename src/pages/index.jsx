@@ -18,6 +18,7 @@ import {
   Container,
   Tracks,
   Schedule,
+  Speakers,
   Sponsors,
   BeAHacker,
   Layout,
@@ -80,6 +81,7 @@ const Homepage = ({ location }) => {
           <Prizes />
           <Schedule />
           <Tracks />
+          <Speakers />
           <Sponsors />
           <CommunitySection />
           <FAQ />

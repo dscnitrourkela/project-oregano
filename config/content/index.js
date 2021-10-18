@@ -10,3 +10,4 @@ export { default as join } from './Join';
 export { default as stats } from './Stats';
 export { default as testimonial } from './Testimonial';
 export { default as community } from './Community';
+export { default as speakers } from './Speakers';
