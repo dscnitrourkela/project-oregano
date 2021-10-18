@@ -76,14 +76,16 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
+        </Container>
+        <Schedule />
+        <Container>
           <Tracks />
-
           <Sponsors />
           <FAQ />
           <TestimonialSection />
           <BeAHacker />
         </Container>
-        <Schedule />
+
         {/* <JoinUs /> */}
         <Footer />
       </Layout>
