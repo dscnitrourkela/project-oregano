@@ -24,7 +24,9 @@ import {
   Footer,
   MLHBanner,
   JoinUs,
-  Stats,
+  // JoinUs,
+  Prizes,
+    Stats,
   TestimonialSection,
 } from '../components';
 
@@ -73,8 +75,8 @@ const Homepage = ({ location }) => {
 
       <Layout location={location}>
         <HeroSection />
-        <JoinUs />
         <Container>
+          <Prizes />
           <Tracks />
           <Sponsors />
           <FAQ />
@@ -82,6 +84,7 @@ const Homepage = ({ location }) => {
           <TestimonialSection />
           <BeAHacker />
         </Container>
+        {/* <JoinUs /> */}
         <Footer />
       </Layout>
     </>
