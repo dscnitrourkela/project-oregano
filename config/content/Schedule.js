@@ -1,4 +1,53 @@
 /* eslint-disable max-len */
+import { google, ics } from 'calendar-link';
+
+const event = {
+  title: 'HackNITR Event 1',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event2 = {
+  title: 'HackNITR Event 2',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event3 = {
+  title: 'HackNITR Event 3',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event4 = {
+  title: 'HackNITR Event 4',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event5 = {
+  title: 'HackNITR Event 5',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const url1 = google(event);
+const url2 = google(event2);
+const url3 = google(event3);
+const url4 = google(event4);
+const url5 = google(event5);
+
+const link1 = ics(event);
+const link2 = ics(event2);
+const link3 = ics(event3);
+const link4 = ics(event4);
+const link5 = ics(event5);
+
 export default {
   title: 'Mark Your Calenders!',
   content:
@@ -9,30 +58,40 @@ export default {
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#71A0CE',
+      linkGoogle: url1,
+      linkics: link1,
     },
     {
       id: 2,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url2,
+      linkics: link2,
     },
     {
       id: 3,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#8FA963',
+      linkGoogle: url3,
+      linkics: link3,
     },
     {
       id: 4,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#71A0CE',
+      linkGoogle: url4,
+      linkics: link4,
     },
     {
       id: 5,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
     },
   ],
   day2: [
@@ -41,30 +100,40 @@ export default {
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#EBB722',
+      linkGoogle: url1,
+      linkics: link1,
     },
     {
       id: 2,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#8FA963',
+      linkGoogle: url2,
+      linkics: link2,
     },
     {
       id: 3,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url3,
+      linkics: link3,
     },
     {
       id: 4,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#EBB722',
+      linkGoogle: url4,
+      linkics: link4,
     },
     {
       id: 5,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
     },
   ],
   day3: [
@@ -73,30 +142,40 @@ export default {
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url1,
+      linkics: link1,
     },
     {
       id: 2,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
     },
     {
       id: 3,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
     },
     {
       id: 4,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
     },
     {
       id: 5,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
     },
   ],
   day4: [
@@ -105,30 +184,40 @@ export default {
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url1,
+      linkics: link1,
     },
     {
       id: 2,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
     },
     {
       id: 3,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
     },
     {
       id: 4,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
     },
     {
       id: 5,
       head: 'Title of event or the lecture',
       subhead: 'Subheading or name of speaker',
       color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
     },
   ],
 
