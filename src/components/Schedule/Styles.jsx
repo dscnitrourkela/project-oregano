@@ -26,8 +26,9 @@ export const Time = styled.div`
     h-0
     font-roboto
     mb-4
+    ml-12
 `}
-  grid-template-columns: repeat(7, minmax(300px,1fr));
+  grid-template-columns: repeat(15, minmax(340px,1fr));
 `;
 
 export const TimeR = styled.div`
@@ -35,7 +36,7 @@ export const TimeR = styled.div`
     border-left: 2px dashed #666666;
     content: '';
     display: block;
-    height: 20rem;
+    height: 30rem;
     text-align: center;
     margin-left: 19.5px;
     position: absolute;
@@ -48,7 +49,7 @@ export const TimeR = styled.div`
 export const TimeC = styled.div`
   ${tw`
     flex
-    gap-20
+    gap-40
     text-white
 `}
 `;
@@ -74,7 +75,7 @@ export const ScheduleContainer = styled.div`
     w-screen
     gap-5
     mb-0
-`}grid-template-columns: repeat(7, minmax(300px,1fr));
+`}grid-template-columns: repeat(15, minmax(340px,1fr));
 `;
 
 export const Title = styled.div`
@@ -108,10 +109,10 @@ export const DateContainer = styled.div`
   ${tw`
     grid
     grid-rows-1
-    gap-6
+    gap-12
     text-white
     h-full
-    mt-14
+    mt-18
     font-sixcaps
 `}
   font-size: 4rem;
@@ -121,9 +122,11 @@ export const Box = styled.div`
   ${tw`
     bg-secondary
     rounded-2xl
-    pt-5
-    pb-5
+    w-full
+    grid
 `}
+
+  height: 7rem;
   position: relative;
   z-index: 1;
 
@@ -135,7 +138,7 @@ export const Box = styled.div`
     content: '';
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 28%;
     height: 50px;
     width: 50%;
     border-left: solid 3px;
@@ -150,4 +153,11 @@ export const Date = styled.div`
 `}
   -ms-transform: rotate(20deg);
   transform: rotate(-90deg);
+`;
+export const Text = styled.div`
+  ${tw`
+  /* grid
+  items-center */
+    
+`}margin: auto 0 auto 0;
 `;

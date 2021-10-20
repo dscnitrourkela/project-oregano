@@ -63,41 +63,110 @@ export default {
   day1: [
     {
       id: 1,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#71A0CE',
       linkGoogle: url1,
       linkics: link1,
     },
     {
       id: 2,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#E78967',
       linkGoogle: url2,
       linkics: link2,
     },
     {
       id: 3,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#8FA963',
       linkGoogle: url3,
       linkics: link3,
     },
     {
       id: 4,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#71A0CE',
       linkGoogle: url4,
       linkics: link4,
     },
     {
       id: 5,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 6,
+
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 7,
+
+      color: '#71A0CE',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 8,
+
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 9,
+
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 10,
+
+      color: '#71A0CE',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 11,
+      head: 'Roadmap To Compettitive Programming and Career Guidance',
+      subhead: 'Shantanu Shubham -Coding Ninjas ',
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 12,
+      head: 'Codedamn',
+      subhead: 'Codedamn',
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 13,
+
+      color: '#71A0CE',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 14,
+      head: 'MiniEvent 1 -Team Building',
+      subhead: 'Mini Event',
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 15,
+      head: 'MiniEvent 1 -Team Building',
+      subhead: 'Mini Event',
+      color: '#8FA963',
       linkGoogle: url5,
       linkics: link5,
     },
@@ -105,127 +174,340 @@ export default {
   day2: [
     {
       id: 1,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+      head: 'Koii Network',
+      subhead: 'API Demo',
       color: '#EBB722',
       linkGoogle: url1,
       linkics: link1,
     },
     {
       id: 2,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#8FA963',
       linkGoogle: url2,
       linkics: link2,
     },
     {
       id: 3,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+      head: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
+      subhead: 'Rishi Raj Jain',
       color: '#E78967',
       linkGoogle: url3,
       linkics: link3,
     },
     {
       id: 4,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#EBB722',
       linkGoogle: url4,
       linkics: link4,
     },
     {
       id: 5,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#8FA963',
       linkGoogle: url5,
       linkics: link5,
+    },
+    {
+      id: 6,
+
+      color: '#E78967',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 7,
+
+      color: '#EBB722',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 8,
+      head: 'Introduction to the world of Product Management',
+      subhead: 'Suhaas & Smarth',
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 9,
+
+      color: '#E78967',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 10,
+      head: 'Opening Ceremony | Making a career out of hackathons',
+      subhead: 'Shaswat Lenka, Abel Mathew',
+      color: '#EBB722',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 11,
+      head: 'Opening Ceremony | Making a career out of hackathons',
+      subhead: 'Shaswat Lenka, Abel Mathew',
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 12,
+
+      color: '#E78967',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 13,
+      head: 'Consequences of UI/UX in our decisions',
+      subhead: 'Ayush Bajpai',
+      color: '#EBB722',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 14,
+      head: 'Mini Event 2 - Gaming',
+      subhead: 'Mini Event',
+      color: '#8FA963',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 15,
+      head: 'Mini Event 2 - Gaming',
+      subhead: 'Mini Event',
+      color: '#E78967',
+      linkGoogle: url3,
+      linkics: link3,
     },
   ],
   day3: [
     {
       id: 1,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+      head: 'How to ML in Hackathons',
+      subhead: 'Rakshaa Viswanathan',
       color: '#E78967',
       linkGoogle: url1,
       linkics: link1,
     },
     {
       id: 2,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+      head: 'Devfolio',
+      subhead: 'Workshop',
       color: '#71A0CE',
       linkGoogle: url2,
       linkics: link2,
     },
     {
       id: 3,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#EBB722',
       linkGoogle: url3,
       linkics: link3,
     },
     {
       id: 4,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+      head: 'Getting Started with SAWO SDK',
+      subhead: 'Abhishek Chandrasenan - SAWO',
       color: '#8FA963',
       linkGoogle: url4,
       linkics: link4,
     },
     {
       id: 5,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#E78967',
       linkGoogle: url5,
       linkics: link5,
+    },
+    {
+      id: 6,
+
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 7,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
+    },
+    {
+      id: 8,
+      head: 'Mini Event 3 - MLH Event',
+      subhead: 'Mini Event',
+      color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 9,
+      head: 'Ploomber Workshop',
+      subhead: 'Workshop',
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 10,
+      head: 'Solving Deep Tech Problems  with Open Source',
+      subhead: 'Roshini & Anurag',
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 11,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
+    },
+    {
+      id: 12,
+
+      color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 13,
+
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 14,
+
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 15,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
     },
   ],
   day4: [
     {
       id: 1,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#E78967',
       linkGoogle: url1,
       linkics: link1,
     },
     {
       id: 2,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#71A0CE',
       linkGoogle: url2,
       linkics: link2,
     },
     {
       id: 3,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#EBB722',
       linkGoogle: url3,
       linkics: link3,
     },
     {
       id: 4,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#8FA963',
       linkGoogle: url4,
       linkics: link4,
     },
     {
       id: 5,
-      head: 'Title of event or the lecture',
-      subhead: 'Subheading or name of speaker',
+
       color: '#E78967',
       linkGoogle: url5,
       linkics: link5,
+    },
+    {
+      id: 6,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
+    },
+    {
+      id: 7,
+
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 8,
+      head: 'Coding Contest - Coding Ninjas',
+      subhead: 'Contest',
+      color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 9,
+      head: 'Pitching Presentation of Top 15',
+      subhead: 'Overall',
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 10,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
+    },
+    {
+      id: 11,
+      head: 'Mini Event 4 - Raahee',
+      subhead: 'Mini Event',
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
+    },
+    {
+      id: 12,
+      head: 'Closing Ceremony',
+      subhead: 'Overall',
+      color: '#8FA963',
+      linkGoogle: url4,
+      linkics: link4,
+    },
+    {
+      id: 13,
+
+      color: '#71A0CE',
+      linkGoogle: url2,
+      linkics: link2,
+    },
+    {
+      id: 14,
+
+      color: '#E78967',
+      linkGoogle: url5,
+      linkics: link5,
+    },
+    {
+      id: 15,
+
+      color: '#EBB722',
+      linkGoogle: url3,
+      linkics: link3,
     },
   ],
 

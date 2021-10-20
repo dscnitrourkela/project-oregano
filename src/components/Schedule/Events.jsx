@@ -4,7 +4,7 @@ import './customstyling.css';
 import Modal from 'react-responsive-modal';
 
 import schedule from '../../../config/content/Schedule';
-import { ScheduleContainer, Box, Title, Title2 } from './Styles';
+import { ScheduleContainer, Box, Title, Title2, Text } from './Styles';
 
 const ModalComponent = ({ linkGoogle, linkics, open, onCloseModal }) => (
   <Modal
@@ -40,10 +40,17 @@ export const Events = () => {
         <ScheduleContainer key={key}>
           {schedule[key].map(({ id, head, subhead, color, linkGoogle, linkics }) => (
             <React.Fragment key={id}>
-              <Box key={id} color={color} onClick={onOpenModal}>
-                <Title>{head}</Title>
-                <Title2>{subhead}</Title2>
-              </Box>
+              {head ? (
+                <Box key={id} color={color} onClick={onOpenModal}>
+                  <Text>
+                    <Title>{head}</Title>
+                    <Title2>{subhead}</Title2>
+                  </Text>
+                </Box>
+              ) : (
+                <div />
+              )}
+
               <ModalComponent
                 open={open}
                 onCloseModal={onCloseModal}

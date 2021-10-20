@@ -23,6 +23,7 @@ module.exports = {
         schedule: 'repeat(4, minmax(500px, 1fr))',
       },
       spacing: {
+        18: '4rem',
         100: '41rem',
       },
       colors: {
