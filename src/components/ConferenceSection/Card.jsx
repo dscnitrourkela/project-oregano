@@ -9,7 +9,7 @@ import { Heading3 } from '..';
 const Card = styled.div`
   ${tw`
         border-solid
-        border-4
+        border-2
         border-white
         bg-background-darker
         h-60
@@ -22,7 +22,9 @@ const Card = styled.div`
         justify-center
         items-center
         md:h-40
-    `}
+    `};
+
+  max-width: 100%;
 `;
 
 const Title = styled(Heading3)`
@@ -58,7 +60,7 @@ const IconContainer = styled.div`
 `;
 
 const Icon = styled(FontAwesomeIcon)`
-color:rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
   ${tw`
         ml-5
         cursor-pointer
