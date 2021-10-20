@@ -1,6 +1,14 @@
 /* eslint-disable max-len */
 import { google, ics } from 'calendar-link';
 
+/**
+ * ! Make sure to include all the important links in the description
+ * 1. Website link
+ * 2. Event link
+ *    - Could be hacknitr.live
+ *    - Could be zoom or gmeet
+ * 3. Add all the necessary details appropriately (use spacing and line gapps in description : \n)
+ */
 const event = {
   title: 'HackNITR Event',
   description: 'Be there!',
