@@ -30,13 +30,15 @@ export const Card = styled.div`
 
       pb-2
       m-0
+      mb-4
       relative
   `};
   width: 380px;
-  height: 600px;
+  height: 550px;
 
   @media (max-width: 560px) {
     width: 340px;
+    height: 500px;
   }
 `;
 
@@ -48,9 +50,14 @@ export const Name = styled(Heading4)`
     z-20
     p-2
     px-4
-    pt-96
+    mt-16
+    pt-72
   `}
   font-family: 'Six Caps', sans-serif;
+
+  @media (max-width: 560px) {
+    margin-top: 0;
+  }
 `;
 
 export const Designation = styled(Heading4)`
@@ -92,15 +99,13 @@ export const Topic = styled.div`
 
 export const Img = styled.img`
   ${tw`
-    w-auto
     object-center
     absolute
     rounded-xl
     overflow-hidden
   `}
-  height: 600px;
-
   width: ${({ width }) => width}
+  object-fit: cover;
 `;
 
 export const Time = styled(Heading4)`
