@@ -3,10 +3,11 @@
   opacity: 0.1;
   color: aliceblue;
 }
+
 .customModal {
   background: #b6baea;
-  max-width: 500px;
-  width: 100%;
+  max-width: 350px;
+  width: 90%;
   height: auto;
   color: black;
   font-size: 1.5rem;
@@ -18,12 +19,17 @@
   background-color: black;
   font-family: roboto;
   font-size: large;
-  width: 40%;
+  width: auto;
+  min-width: 40%;
   padding: 20px 10px;
   border-radius: 10px;
   border: none;
   outline: none;
   color: white;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .customModal .buttonContainer {

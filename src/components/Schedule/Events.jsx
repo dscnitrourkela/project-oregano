@@ -21,9 +21,9 @@ const ModalComponent = ({ linkGoogle, linkics, open, onCloseModal }) => (
       <button type='button' onClick={() => window.open(linkGoogle, '_blank')} className='button'>
         Google Calender
       </button>
-      <button type='button' onClick={() => window.open(linkics, '_blank')} className='button'>
+      <a style={{ textDecoration: 'none', textAlign: 'center' }} href={linkics} className='button'>
         iCalendar
-      </button>
+      </a>
     </div>
   </Modal>
 );

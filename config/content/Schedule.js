@@ -2,7 +2,7 @@
 import { google, ics } from 'calendar-link';
 
 const event = {
-  title: 'HackNITR Event 1',
+  title: 'HackNITR Event',
   description: 'Be there!',
   start: '2019-12-29 18:00:00 +0100',
   duration: [3, 'hour'],

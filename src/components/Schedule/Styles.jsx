@@ -23,7 +23,7 @@ export const Time = styled.div`
     gap-5
     relative
     text-white
-    h-0   
+    h-0
     font-roboto
     mb-4
 `}
@@ -126,6 +126,10 @@ export const Box = styled.div`
 `}
   position: relative;
   z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:before {
     content: '';
