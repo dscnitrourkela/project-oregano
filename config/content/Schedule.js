@@ -17,34 +17,145 @@ const event = {
 };
 
 const event2 = {
-  title: 'HackNITR Event 2',
+  title: 'Codedamn',
   description: 'Be there!',
   start: '2019-12-29 18:00:00 +0100',
   duration: [3, 'hour'],
 };
 
 const event3 = {
-  title: 'HackNITR Event 3',
+  title: 'MiniEvent 1 -Team Building',
   description: 'Be there!',
   start: '2019-12-29 18:00:00 +0100',
   duration: [3, 'hour'],
 };
 
 const event4 = {
-  title: 'HackNITR Event 4',
+  title: 'Koii Network',
   description: 'Be there!',
   start: '2019-12-29 18:00:00 +0100',
   duration: [3, 'hour'],
 };
 
 const event5 = {
-  title: 'HackNITR Event 5',
+  title: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0 -Rishi Raj Jain',
   description: 'Be there!',
   start: '2019-12-29 18:00:00 +0100',
   duration: [3, 'hour'],
 };
 
-const url1 = google(event);
+const event6 = {
+  title: 'Introduction to the world of Product Management -Suhaas & Smarth',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event7 = {
+  title: 'Opening Ceremony | Making a career out of hackathons - Shaswat Lenka, Abel Mathew',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event8 = {
+  title: 'Consequences of UI/UX in our decisions -Ayush Bajpai',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event9 = {
+  title: 'Mini Event 2 - Gaming',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event10 = {
+  title: 'How to ML in Hackathons -Rakshaa Viswanathan',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event11 = {
+  title: 'Devfolio -workshop',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event12 = {
+  title: 'Getting Started with SAWO SDK, Abhishek Chandrasenan - SAWO',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event13 = {
+  title: 'Mini Event-3 -MLH Event',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event14 = {
+  title: 'Ploomber Workshop',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event15 = {
+  title: 'Solving Deep Tech Problems  with Open Source -Roshini & Anurag',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event16 = {
+  title: 'Coding Contest - Coding Ninjas',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event17 = {
+  title: 'Pitching Presentation of Top 15',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event18 = {
+  title: 'Mini Event 4 - Raahee',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event19 = {
+  title: 'Closing Ceremony',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event20 = {
+  title: 'Hacking Hour Starts',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
+const event21 = {
+  title: 'Hacking Hour Starts',
+  description: 'Be there!',
+  start: '2019-12-29 18:00:00 +0100',
+  duration: [3, 'hour'],
+};
+
 const url2 = google(event2);
 const url3 = google(event3);
 const url4 = google(event4);
@@ -63,88 +174,48 @@ export default {
   day1: [
     {
       id: 1,
-
-      color: '#71A0CE',
-      linkGoogle: url1,
-      linkics: link1,
     },
     {
       id: 2,
-
-      color: '#E78967',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 3,
-
-      color: '#8FA963',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 4,
-
-      color: '#71A0CE',
-      linkGoogle: url4,
-      linkics: link4,
     },
     {
       id: 5,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 6,
-
-      color: '#8FA963',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 7,
-
-      color: '#71A0CE',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 8,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 9,
-
-      color: '#8FA963',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 10,
-
-      color: '#71A0CE',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 11,
       head: 'Roadmap To Compettitive Programming and Career Guidance',
       subhead: 'Shantanu Shubham -Coding Ninjas ',
       color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
+      linkGoogle: google(event),
+      linkics: link1,
     },
     {
       id: 12,
       head: 'Codedamn',
       subhead: 'Codedamn',
       color: '#8FA963',
-      linkGoogle: url5,
+      linkGoogle: google(event2),
       linkics: link5,
     },
     {
@@ -159,7 +230,7 @@ export default {
       head: 'MiniEvent 1 -Team Building',
       subhead: 'Mini Event',
       color: '#E78967',
-      linkGoogle: url5,
+      linkGoogle: google(event3),
       linkics: link5,
     },
     {
@@ -167,7 +238,7 @@ export default {
       head: 'MiniEvent 1 -Team Building',
       subhead: 'Mini Event',
       color: '#8FA963',
-      linkGoogle: url5,
+      linkGoogle: google(event3),
       linkics: link5,
     },
   ],
@@ -177,7 +248,7 @@ export default {
       head: 'Koii Network',
       subhead: 'API Demo',
       color: '#EBB722',
-      linkGoogle: url1,
+      linkGoogle: google(event4),
       linkics: link1,
     },
     {
@@ -192,7 +263,7 @@ export default {
       head: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
       subhead: 'Rishi Raj Jain',
       color: '#E78967',
-      linkGoogle: url3,
+      linkGoogle: google(event5),
       linkics: link3,
     },
     {
@@ -228,7 +299,7 @@ export default {
       head: 'Introduction to the world of Product Management',
       subhead: 'Suhaas & Smarth',
       color: '#8FA963',
-      linkGoogle: url5,
+      linkGoogle: google(event6),
       linkics: link5,
     },
     {
@@ -243,7 +314,7 @@ export default {
       head: 'Opening Ceremony | Making a career out of hackathons',
       subhead: 'Shaswat Lenka, Abel Mathew',
       color: '#EBB722',
-      linkGoogle: url4,
+      linkGoogle: google(event7),
       linkics: link4,
     },
     {
@@ -251,14 +322,14 @@ export default {
       head: 'Opening Ceremony | Making a career out of hackathons',
       subhead: 'Shaswat Lenka, Abel Mathew',
       color: '#8FA963',
-      linkGoogle: url5,
+      linkGoogle: google(event7),
       linkics: link5,
     },
     {
       id: 12,
-
+      head: 'Hacking Hour Starts',
       color: '#E78967',
-      linkGoogle: url3,
+      linkGoogle: google(event20),
       linkics: link3,
     },
     {
@@ -266,7 +337,7 @@ export default {
       head: 'Consequences of UI/UX in our decisions',
       subhead: 'Ayush Bajpai',
       color: '#EBB722',
-      linkGoogle: url4,
+      linkGoogle: google(event8),
       linkics: link4,
     },
     {
@@ -274,7 +345,7 @@ export default {
       head: 'Mini Event 2 - Gaming',
       subhead: 'Mini Event',
       color: '#8FA963',
-      linkGoogle: url5,
+      linkGoogle: google(event9),
       linkics: link5,
     },
     {
@@ -282,7 +353,7 @@ export default {
       head: 'Mini Event 2 - Gaming',
       subhead: 'Mini Event',
       color: '#E78967',
-      linkGoogle: url3,
+      linkGoogle: google(event9),
       linkics: link3,
     },
   ],
@@ -292,7 +363,7 @@ export default {
       head: 'How to ML in Hackathons',
       subhead: 'Rakshaa Viswanathan',
       color: '#E78967',
-      linkGoogle: url1,
+      linkGoogle: google(event10),
       linkics: link1,
     },
     {
@@ -300,7 +371,7 @@ export default {
       head: 'Devfolio',
       subhead: 'Workshop',
       color: '#71A0CE',
-      linkGoogle: url2,
+      linkGoogle: google(event11),
       linkics: link2,
     },
     {
@@ -315,7 +386,7 @@ export default {
       head: 'Getting Started with SAWO SDK',
       subhead: 'Abhishek Chandrasenan - SAWO',
       color: '#8FA963',
-      linkGoogle: url4,
+      linkGoogle: google(event12),
       linkics: link4,
     },
     {
@@ -344,7 +415,7 @@ export default {
       head: 'Mini Event 3 - MLH Event',
       subhead: 'Mini Event',
       color: '#8FA963',
-      linkGoogle: url4,
+      linkGoogle: google(event13),
       linkics: link4,
     },
     {
@@ -352,7 +423,7 @@ export default {
       head: 'Ploomber Workshop',
       subhead: 'Workshop',
       color: '#E78967',
-      linkGoogle: url5,
+      linkGoogle: google(event14),
       linkics: link5,
     },
     {
@@ -360,7 +431,7 @@ export default {
       head: 'Solving Deep Tech Problems  with Open Source',
       subhead: 'Roshini & Anurag',
       color: '#EBB722',
-      linkGoogle: url3,
+      linkGoogle: google(event15),
       linkics: link3,
     },
     {
@@ -372,9 +443,9 @@ export default {
     },
     {
       id: 12,
-
+      head: 'Initial Evaluation Starts',
       color: '#8FA963',
-      linkGoogle: url4,
+      linkGoogle: google(event21),
       linkics: link4,
     },
     {
@@ -402,9 +473,10 @@ export default {
   day4: [
     {
       id: 1,
+      head: 'Hacking Hour Ends',
 
       color: '#E78967',
-      linkGoogle: url1,
+      linkGoogle: google(event20),
       linkics: link1,
     },
     {
@@ -454,7 +526,7 @@ export default {
       head: 'Coding Contest - Coding Ninjas',
       subhead: 'Contest',
       color: '#8FA963',
-      linkGoogle: url4,
+      linkGoogle: google(event16),
       linkics: link4,
     },
     {
@@ -462,7 +534,7 @@ export default {
       head: 'Pitching Presentation of Top 15',
       subhead: 'Overall',
       color: '#E78967',
-      linkGoogle: url5,
+      linkGoogle: google(event17),
       linkics: link5,
     },
     {
@@ -477,7 +549,7 @@ export default {
       head: 'Mini Event 4 - Raahee',
       subhead: 'Mini Event',
       color: '#EBB722',
-      linkGoogle: url3,
+      linkGoogle: google(event18),
       linkics: link3,
     },
     {
@@ -485,7 +557,7 @@ export default {
       head: 'Closing Ceremony',
       subhead: 'Overall',
       color: '#8FA963',
-      linkGoogle: url4,
+      linkGoogle: google(event19),
       linkics: link4,
     },
     {
@@ -504,9 +576,9 @@ export default {
     },
     {
       id: 15,
-
+      head: 'Initial Evaluation Ends',
       color: '#EBB722',
-      linkGoogle: url3,
+      linkGoogle: google(event21),
       linkics: link3,
     },
   ],

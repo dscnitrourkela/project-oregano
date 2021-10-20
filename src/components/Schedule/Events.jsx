@@ -6,7 +6,7 @@ import Modal from 'react-responsive-modal';
 import schedule from '../../../config/content/Schedule';
 import { ScheduleContainer, Box, Title, Title2, Text } from './Styles';
 
-const ModalComponent = ({ linkGoogle, linkics, open, onCloseModal }) => (
+const ModalComponent = ({ linkGoogle, linkics, open, onCloseModal, id }) => (
   <Modal
     open={open}
     onClose={onCloseModal}
@@ -18,7 +18,12 @@ const ModalComponent = ({ linkGoogle, linkics, open, onCloseModal }) => (
   >
     <h1 style={{ fontFamily: 'Roboto' }}>Add To</h1>
     <div className='buttonContainer'>
-      <button type='button' onClick={() => window.open(linkGoogle, '_blank')} className='button'>
+      <button
+        key={id}
+        type='button'
+        onClick={() => window.open(linkGoogle, '_blank')}
+        className='button'
+      >
         Google Calender
       </button>
       <a style={{ textDecoration: 'none', textAlign: 'center' }} href={linkics} className='button'>
@@ -41,7 +46,7 @@ export const Events = () => {
           {schedule[key].map(({ id, head, subhead, color, linkGoogle, linkics }) => (
             <React.Fragment key={id}>
               {head ? (
-                <Box key={id} color={color} onClick={onOpenModal}>
+                <Box key={id} color={color} onClick={() => window.open(linkGoogle, '_blank')}>
                   <Text>
                     <Title>{head}</Title>
                     <Title2>{subhead}</Title2>
@@ -50,7 +55,6 @@ export const Events = () => {
               ) : (
                 <div />
               )}
-
               <ModalComponent
                 open={open}
                 onCloseModal={onCloseModal}
