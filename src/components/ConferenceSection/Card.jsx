@@ -2,52 +2,45 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+// libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { Heading3 } from '..';
 
 const Card = styled.div`
   ${tw`
-        border-solid
-        border-2
-        border-white
-        bg-background-darker
         h-60
         m-2.5
         rounded-2xl
-        p-3
-        py-10
         flex
         flex-col
         justify-center
         items-center
-        md:h-40
+        mid:h-48
     `};
-
+  padding: 2px;
+  background: ${({ color1, color2 }) => `linear-gradient(135deg, ${color1}, ${color2})`};
   max-width: 100%;
 `;
 
-const Title = styled(Heading3)`
+const MainContainer = styled.div`
   ${tw`
-        mt-6
-        px-5
-        text-center
-        bg-transparent
-        mid:text-xl
-        mid:px-3
-        md:text-3xl
-        sm:text-base
-        sm:px-1
+        flex
+        flex-col
+        justify-center
+        items-center
+        rounded-2xl
+        rounded-br-none
+        rounded-bl-none
+        w-full
+        h-48
+        bg-background-darker
     `}
 `;
 
 const Image = styled.img`
   ${tw`
+        mt-4
+        mid:mt-2
         h-auto
-        w-28
-        mid:w-20
-        md:w-32
-        sm:w-20
     `}
 `;
 
@@ -55,27 +48,28 @@ const IconContainer = styled.div`
   ${tw`
         flex
         flex-row
-        mt-2
     `}
 `;
 
 const Icon = styled(FontAwesomeIcon)`
-  color: rgba(255, 255, 255, 0.4);
   ${tw`
-        ml-5
+        m-5
         cursor-pointer
-        mid:ml-2.5
+        mid:m-2
+        md:m-3
     `}
+  color: #fff;
 `;
 
-const CommunityCard = ({ card }) => (
-  <Card>
-    <Image src={card.image} alt={card.name} />
-    <Title>{card.name}</Title>
+const CommunityCard = ({ color, card }) => (
+  <Card color1={color.color1} color2={color.color2}>
+    <MainContainer>
+      <Image src={card.image} style={{ width: `${card.width}` }} alt={card.name} />
+    </MainContainer>
     <IconContainer>
       {card.socials.map(({ icon, link }) => (
         <a key={link} href={link} target='_blank' rel='noopener noreferrer'>
-          <Icon icon={icon} size='xl' />
+          <Icon icon={icon} size='lg' />
         </a>
       ))}
     </IconContainer>

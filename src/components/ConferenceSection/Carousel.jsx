@@ -1,8 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
 // libraries
 import Slider from 'react-slick';
-import styled from 'styled-components';
 
 // css
 import './carousel.css';
@@ -26,11 +26,12 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, transparent 30%, #121217 70%);
+  pointer-events: none;
+  background: radial-gradient(circle, transparent 50%, #121217 90%);
   z-index: 100;
 `;
 
-const Carousel = ({ cards }) => {
+const Carousel = ({ colors, cards }) => {
   const settings = {
     className: 'center',
     centerMode: true,
@@ -58,8 +59,8 @@ const Carousel = ({ cards }) => {
     <OverlayContainer>
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Slider {...settings}>
-        {cards.map((card) => (
-          <Card key={card.image} card={card} />
+        {cards.map((card, index) => (
+          <Card key={card.image} color={colors[index % colors.length]} card={card} />
         ))}
       </Slider>
       <Overlay />

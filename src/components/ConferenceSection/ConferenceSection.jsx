@@ -40,7 +40,7 @@ const ConfSection = () => (
         <Heading1>{conference.title}</Heading1>
         <Description>{conference.content}</Description>
       </SectionContainer>
-      <Carousel cards={conference.cards} />
+      <Carousel colors={conference.colors} cards={conference.cards} />
     </Container>
   </ConfContainer>
 );
