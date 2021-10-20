@@ -10,156 +10,166 @@ import { google, ics } from 'calendar-link';
  * 3. Add all the necessary details appropriately (use spacing and line gapps in description : \n)
  */
 const event = {
-  title: 'HackNITR Event',
+  title:
+    'Roadmap To Compettitive Programming and Career Guidance -Shantanu Shubham (Coding Ninjas)',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-28 19:00:00 ',
+  duration: [0.5, 'hour'],
 };
 
 const event2 = {
   title: 'Codedamn',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-28 20:00:00',
+  end: '2021-10-28 20:45:00',
 };
 
 const event3 = {
   title: 'MiniEvent 1 -Team Building',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-28 22:00:00',
+  end: '2021-10-29 00:00:00',
 };
 
 const event4 = {
   title: 'Koii Network',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 09:45:00',
+  end: '2021-10-29 10:00:00',
 };
 
 const event5 = {
   title: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0 -Rishi Raj Jain',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 12:00:00',
+  end: '2021-10-29 12:00:00',
 };
 
 const event6 = {
   title: 'Introduction to the world of Product Management -Suhaas & Smarth',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 16:00:00',
+  end: '2021-10-29 17:00:00',
 };
 
 const event7 = {
   title: 'Opening Ceremony | Making a career out of hackathons - Shaswat Lenka, Abel Mathew',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 18:00:00',
+  end: '2021-10-29 20:00:00',
 };
 
 const event8 = {
   title: 'Consequences of UI/UX in our decisions -Ayush Bajpai',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 21:00:00',
+  end: '2021-10-29 21:45:00',
 };
 
 const event9 = {
   title: 'Mini Event 2 - Gaming',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 22:00:00',
+  end: '2021-10-30 00:00:00',
 };
 
 const event10 = {
   title: 'How to ML in Hackathons -Rakshaa Viswanathan',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 09:00:00',
+  end: '2021-10-30 10:00:00',
 };
 
 const event11 = {
   title: 'Devfolio -workshop',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 10:30:00',
+  end: '2021-10-30 11:00:00',
 };
 
 const event12 = {
   title: 'Getting Started with SAWO SDK, Abhishek Chandrasenan - SAWO',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 12:00:00',
+  end: '2021-10-30 01:00:00',
 };
 
 const event13 = {
   title: 'Mini Event-3 -MLH Event',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 16:00:00',
+  end: '2021-10-30 16:30:00',
 };
 
 const event14 = {
   title: 'Ploomber Workshop',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 17:00:00',
+  end: '2021-10-30 17:30:00',
 };
 
 const event15 = {
   title: 'Solving Deep Tech Problems  with Open Source -Roshini & Anurag',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-30 19:00:00',
+  end: '2021-10-30 20:00:00',
 };
 
 const event16 = {
   title: 'Coding Contest - Coding Ninjas',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-31 16:00:00',
+  end: '2021-10-31 17:00:00',
 };
 
 const event17 = {
   title: 'Pitching Presentation of Top 15',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-31 17:00:00',
+  end: '2021-10-31 18:00:00',
 };
 
 const event18 = {
   title: 'Mini Event 4 - Raahee',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-31 19:30:00',
+  end: '2021-10-31 20:00:00',
 };
 
 const event19 = {
   title: 'Closing Ceremony',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-31 20:00:00',
+  end: '2021-10-31 21:00:00',
 };
 
 const event20 = {
   title: 'Hacking Hour Starts',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 20:00:00',
+  end: '2021-10-31 09:00:00',
 };
 
 const event21 = {
-  title: 'Hacking Hour Starts',
+  title: 'Hacking Hour Ends',
   description: 'Be there!',
-  start: '2019-12-29 18:00:00 +0100',
-  duration: [3, 'hour'],
+  start: '2021-10-29 20:00:00',
+  end: '2021-10-31 09:00:00',
 };
 
-const url2 = google(event2);
-const url3 = google(event3);
-const url4 = google(event4);
-const url5 = google(event5);
+const event22 = {
+  title: 'Initial Evaluation Starts',
+  description: 'Be there!',
+  start: '2021-10-30 20:00:00',
+  end: '2021-10-31 00:00:00',
+};
+
+const event23 = {
+  title: 'Initial Evaluation Ends',
+  description: 'Be there!',
+  start: '2021-10-30 20:00:00',
+  end: '2021-10-31 00:00:00',
+};
 
 const link1 = ics(event);
 const link2 = ics(event2);
@@ -220,10 +230,6 @@ export default {
     },
     {
       id: 13,
-
-      color: '#71A0CE',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 14,
@@ -253,10 +259,6 @@ export default {
     },
     {
       id: 2,
-
-      color: '#8FA963',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 3,
@@ -268,31 +270,15 @@ export default {
     },
     {
       id: 4,
-
-      color: '#EBB722',
-      linkGoogle: url4,
-      linkics: link4,
     },
     {
       id: 5,
-
-      color: '#8FA963',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 6,
-
-      color: '#E78967',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 7,
-
-      color: '#EBB722',
-      linkGoogle: url4,
-      linkics: link4,
     },
     {
       id: 8,
@@ -304,10 +290,6 @@ export default {
     },
     {
       id: 9,
-
-      color: '#E78967',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 10,
@@ -376,10 +358,6 @@ export default {
     },
     {
       id: 3,
-
-      color: '#EBB722',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 4,
@@ -391,24 +369,12 @@ export default {
     },
     {
       id: 5,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 6,
-
-      color: '#EBB722',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 7,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 8,
@@ -436,38 +402,22 @@ export default {
     },
     {
       id: 11,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 12,
       head: 'Initial Evaluation Starts',
       color: '#8FA963',
-      linkGoogle: google(event21),
+      linkGoogle: google(event22),
       linkics: link4,
     },
     {
       id: 13,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 14,
-
-      color: '#EBB722',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 15,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
   ],
   day4: [
@@ -476,50 +426,26 @@ export default {
       head: 'Hacking Hour Ends',
 
       color: '#E78967',
-      linkGoogle: google(event20),
+      linkGoogle: google(event21),
       linkics: link1,
     },
     {
       id: 2,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 3,
-
-      color: '#EBB722',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 4,
-
-      color: '#8FA963',
-      linkGoogle: url4,
-      linkics: link4,
     },
     {
       id: 5,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 6,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 7,
-
-      color: '#EBB722',
-      linkGoogle: url3,
-      linkics: link3,
     },
     {
       id: 8,
@@ -539,10 +465,6 @@ export default {
     },
     {
       id: 10,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 11,
@@ -562,23 +484,15 @@ export default {
     },
     {
       id: 13,
-
-      color: '#71A0CE',
-      linkGoogle: url2,
-      linkics: link2,
     },
     {
       id: 14,
-
-      color: '#E78967',
-      linkGoogle: url5,
-      linkics: link5,
     },
     {
       id: 15,
       head: 'Initial Evaluation Ends',
       color: '#EBB722',
-      linkGoogle: google(event21),
+      linkGoogle: google(event23),
       linkics: link3,
     },
   ],

@@ -36,7 +36,7 @@ export const TimeR = styled.div`
     border-left: 2px dashed #666666;
     content: '';
     display: block;
-    height: 30rem;
+    height: 32rem;
     text-align: center;
     margin-left: 19.5px;
     position: absolute;
@@ -139,7 +139,7 @@ export const Box = styled.div`
     position: absolute;
     left: 0;
     top: 28%;
-    height: 50px;
+    height: 55px;
     width: 50%;
     border-left: solid 3px;
     color: ${(props) => props.color};
