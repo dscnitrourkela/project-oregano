@@ -138,7 +138,7 @@ const event14 = {
 const event15 = {
   title: 'Solving Deep Tech Problems  with Open Source',
   description:
-    'Get ready for the great wave—the next big surge of innovation powered by emerging technologies and the approach of deep tech entrepreneurs. Its economic, business, and social impact will be felt everywhere because deep tech ventures aim to solve many of our most complex problems. \n\nSpeaker: Roshini Biswas and Anurag Saha Roy. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Get ready for the great wave—the next big surge of innovation powered by emerging technologies and the approach of deep tech entrepreneurs. Its economic, business, and social impact will be felt everywhere because deep tech ventures aim to solve many of our most complex problems. \n\nSpeaker: Roshni Biswas and Anurag Saha Roy. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
   start: '2021-10-30 19:00:00',
   end: '2021-10-30 20:00:00',
   location: 'https://hacknitr.tech/live',
@@ -422,7 +422,7 @@ export default {
     {
       id: 8,
       head: 'Solving Deep Tech Problems  with Open Source',
-      subhead: 'Roshini & Anurag',
+      subhead: 'Roshni & Anurag',
       color: '#EBB722',
       linkGoogle: google(event15),
       linkics: link3,
