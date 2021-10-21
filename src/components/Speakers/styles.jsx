@@ -28,9 +28,7 @@ export const Card = styled.div`
       flex-col
       justify-start
 
-      pb-2
       m-0
-      mb-4
       relative
   `};
   width: 380px;
