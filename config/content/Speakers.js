@@ -12,7 +12,7 @@ export default {
           'Roadmap To Competitive Programming and Career Guidance',
         alt: 'speaker: Shantanu Shubham',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794608/project-oregano/speakers/s-1_vvvemp.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-1_vqfeof.png',
           width: '100%',
           height: '100%',
         },
@@ -148,9 +148,9 @@ export default {
           'Solving Deep Tech Problems with Open Source',
         alt: 'speaker: Roshni Biswas',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794687/project-oregano/speakers/s-10_ukmheb.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-10_vlorjg.png',
           width: '100%',
-          height: '100%',
+          height: '100%'
         },
         date: '30th October 2021',
         time: '7:00pm IST'
@@ -163,9 +163,9 @@ export default {
           'Solving Deep Tech Problems with Open Source',
         alt: 'speaker: Anurag Saha Roy',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794673/project-oregano/speakers/s-11_pi0vgf.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-11_nhjevy.png',
           width: '100%',
-          height: '100%',
+          height: '100%'
         },
         date: '30th October 2021',
         time: '7:00pm IST'
