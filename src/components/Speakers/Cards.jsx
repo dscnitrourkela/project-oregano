@@ -5,7 +5,7 @@ import { faCalendarAlt, faClock } from '@fortawesome/free-solid-svg-icons';
 
 // Components
 import { Card, Name, Designation, Topic, Img, Timings, Time, Date } from './styles';
-import logo from "../../../images/speaker1.png";
+// import logo from "../../../images/speaker1.png";
 
 export default function SpeakerCard({ card }) {
   const { name, content, designation, alt, img, time, date } = card;
@@ -16,7 +16,7 @@ export default function SpeakerCard({ card }) {
       <Name>{name}</Name>
       <Designation>{designation}</Designation>
       <Topic>{content}</Topic>
-      <Img src={logo} alt={alt} width={img.width} />
+      <Img src={img.src} alt={alt} width={img.width} height={img.height} />
     </Card>
     <Timings>
       <Time>

@@ -6,59 +6,169 @@ export default {
     speakers: [
       {
         id: 'speaker-1',
-        name: 'sheldon lee cooper',
-        designation: 'Head of Design @Microsoft',
+        name: 'Shantanu Shubham',
+        designation: 'SDE @Schlumberger',
         content:
-          'Reinventing Skeumorphism for the modern UI',
-        alt: 'speaker: sheldon lee cooper',
+          'Roadmap To Competitive Programming and Career Guidance',
+        alt: 'speaker: Shantanu Shubham',
         img: {
-          src: ' ',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794608/project-oregano/speakers/s-1_vvvemp.png',
           width: '100%',
+          height: '100%',
         },
-        date: '29th October 2021',
-        time: '6:00pm IST'
+        date: '28th October 2021',
+        time: '7:00pm IST'
       },
       {
         id: 'speaker-2',
-        name: 'sheldon lee cooper',
-        designation: 'Head of Design @Microsoft',
+        name: 'Rishi Raj Jain',
+        designation: 'Solutions Engineer @Limelight Networks',
         content:
-          'Reinventing Skeumorphism for the modern UI',
-        alt: 'speaker: sheldon lee cooper',
+          'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
+        alt: 'speaker: Rishi Raj Jain',
         img: {
-          src: ' ',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794608/project-oregano/speakers/s-2_yu6zxq.png',
           width: '100%',
+          height: '100%',
         },
         date: '29th October 2021',
-        time: '6:00pm IST'
+        time: '11:00am IST'
       },
       {
         id: 'speaker-3',
-        name: 'sheldon lee cooper',
-        designation: 'Head of Design @Microsoft',
+        name: 'Suhas Motwani',
+        designation: '@PepsiCo',
         content:
-          'Reinventing Skeumorphism for the modern UI',
-        alt: 'speaker: sheldon lee cooper',
+          'Introduction to the world of Product Management',
+        alt: 'speaker: Suhas Motwani',
         img: {
-          src: ' ',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794636/project-oregano/speakers/s-3_rfbxi4.png',
           width: '100%',
+          height: '100%',
+        },
+        date: '29th October 2021',
+        time: '4:00pm IST'
+      },
+      {
+        id: 'speaker-4',
+        name: 'Smarth Vasdev',
+        designation: 'Growth Product Manager @PeopleGrove',
+        content:
+          'Introduction to the world of Product Management',
+        alt: 'speaker: Smarth Vasdev',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794623/project-oregano/speakers/s-4_kocahf.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '29th October 2021',
+        time: '4:00pm IST'
+      },
+      {
+        id: 'speaker-5',
+        name: 'Abel Mathew',
+        designation: 'HackNITR 1.0 Lead',
+        content:
+          'Making a career out of hackathons',
+        alt: 'speaker: Abel Mathew',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794674/project-oregano/speakers/s-5_p3tblx.png',
+          width: '100%',
+          height: '100%',
+          
         },
         date: '29th October 2021',
         time: '6:00pm IST'
       },
       {
-        id: 'speaker-4',
-        name: 'sheldon lee cooper',
-        designation: 'Head of Design @Microsoft',
+        id: 'speaker-6',
+        name: 'Shaswat Lenka',
+        designation: 'HackNITR 1.0 Lead',
         content:
-          'Reinventing Skeumorphism for the modern UI',
-        alt: 'speaker: sheldon lee cooper',
+          'Making a career out of hackathons',
+        alt: 'speaker: Shaswat Lenka',
         img: {
-          src: ' ',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794643/project-oregano/speakers/s-6_tseasg.png',
           width: '100%',
+          height: '100%',
         },
         date: '29th October 2021',
         time: '6:00pm IST'
+      },
+      {
+        id: 'speaker-7',
+        name: 'Ayush Bajpai',
+        designation: 'Graphic Designer @Starlax Aerospace',
+        content:
+          'Consequences of UI/UX in our decisions',
+        alt: 'speaker: Ayush Bajpai',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794626/project-oregano/speakers/s-7_dorm8n.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '29th October 2021',
+        time: '9:00pm IST'
+      },
+      {
+        id: 'speaker-8',
+        name: 'Rakshaa Viswanathan',
+        designation: 'Incoming SDE @Microsoft',
+        content:
+          'Basic Concepts of ML',
+        alt: 'speaker: Rakshaa Viswanathan',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794655/project-oregano/speakers/s-8_zhj56p.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '30th October 2021',
+        time: '9:00am IST'
+      },
+      {
+        id: 'speaker-9',
+        name: 'Abhishek Chandrasenan',
+        designation: 'Full Stack Developer @SAWO Labs',
+        content:
+          'Getting Started with SAWO SDK.',
+        alt: 'speaker: Abhishek Chandrasenan',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794646/project-oregano/speakers/s-9_y8oubi.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '30th October 2021',
+        time: '12:00pm IST'
+      },
+      {
+        id: 'speaker-10',
+        name: 'Roshni Biswas',
+        designation: 'SE @Knowledge Systems',
+        content:
+          'Solving Deep Tech Problems with Open Source',
+        alt: 'speaker: Roshni Biswas',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794687/project-oregano/speakers/s-10_ukmheb.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '30th October 2021',
+        time: '7:00pm IST'
+      },
+      {
+        id: 'speaker-11',
+        name: 'Anurag Saha Roy',
+        designation: 'Co-Founder of Wikilimo',
+        content:
+          'Solving Deep Tech Problems with Open Source',
+        alt: 'speaker: Anurag Saha Roy',
+        img: {
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794673/project-oregano/speakers/s-11_pi0vgf.png',
+          width: '100%',
+          height: '100%',
+        },
+        date: '30th October 2021',
+        time: '7:00pm IST'
       }
     ]
 }

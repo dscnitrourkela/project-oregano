@@ -34,7 +34,7 @@ export const Card = styled.div`
       relative
   `};
   width: 380px;
-  height: 550px;
+  height: 515px;
 
   @media (max-width: 560px) {
     width: 340px;
@@ -50,13 +50,12 @@ export const Name = styled(Heading4)`
     z-20
     p-2
     px-4
-    mt-16
     pt-72
   `}
   font-family: 'Six Caps', sans-serif;
 
   @media (max-width: 560px) {
-    margin-top: 0;
+    margin-top: -15px;
   }
 `;
 
