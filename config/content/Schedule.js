@@ -253,12 +253,6 @@ export default {
     },
     {
       id: 9,
-    },
-    {
-      id: 10,
-    },
-    {
-      id: 11,
       head: 'Roadmap To Compettitive Programming and Career Guidance',
       subhead: 'Shantanu Shubham -Coding Ninjas ',
       color: '#E78967',
@@ -266,7 +260,7 @@ export default {
       linkics: link1,
     },
     {
-      id: 12,
+      id: 10,
       head: 'Codedamn',
       subhead: 'Codedamn',
       color: '#8FA963',
@@ -274,10 +268,10 @@ export default {
       linkics: link5,
     },
     {
-      id: 13,
+      id: 11,
     },
     {
-      id: 14,
+      id: 12,
       head: 'MiniEvent 1 -Team Building',
       subhead: 'Mini Event',
       color: '#E78967',
@@ -285,7 +279,7 @@ export default {
       linkics: link5,
     },
     {
-      id: 15,
+      id: 13,
       head: 'MiniEvent 1 -Team Building',
       subhead: 'Mini Event',
       color: '#8FA963',
@@ -321,12 +315,6 @@ export default {
     },
     {
       id: 6,
-    },
-    {
-      id: 7,
-    },
-    {
-      id: 8,
       head: 'Introduction to the world of Product Management',
       subhead: 'Suhaas & Smarth',
       color: '#8FA963',
@@ -334,10 +322,10 @@ export default {
       linkics: link5,
     },
     {
-      id: 9,
+      id: 7,
     },
     {
-      id: 10,
+      id: 8,
       head: 'Opening Ceremony | Making a career out of hackathons',
       subhead: 'Shaswat Lenka, Abel Mathew',
       color: '#EBB722',
@@ -345,7 +333,7 @@ export default {
       linkics: link4,
     },
     {
-      id: 11,
+      id: 9,
       head: 'Opening Ceremony | Making a career out of hackathons',
       subhead: 'Shaswat Lenka, Abel Mathew',
       color: '#8FA963',
@@ -353,14 +341,14 @@ export default {
       linkics: link5,
     },
     {
-      id: 12,
+      id: 10,
       head: 'Hacking Hour Starts',
       color: '#E78967',
       linkGoogle: google(event20),
       linkics: link3,
     },
     {
-      id: 13,
+      id: 11,
       head: 'Consequences of UI/UX in our decisions',
       subhead: 'Ayush Bajpai',
       color: '#EBB722',
@@ -368,7 +356,7 @@ export default {
       linkics: link4,
     },
     {
-      id: 14,
+      id: 12,
       head: 'Mini Event 2 - Gaming',
       subhead: 'Mini Event',
       color: '#8FA963',
@@ -376,7 +364,7 @@ export default {
       linkics: link5,
     },
     {
-      id: 15,
+      id: 13,
       head: 'Mini Event 2 - Gaming',
       subhead: 'Mini Event',
       color: '#E78967',
@@ -417,12 +405,6 @@ export default {
     },
     {
       id: 6,
-    },
-    {
-      id: 7,
-    },
-    {
-      id: 8,
       head: 'Mini Event 3 - MLH Event',
       subhead: 'Mini Event',
       color: '#8FA963',
@@ -430,7 +412,7 @@ export default {
       linkics: link4,
     },
     {
-      id: 9,
+      id: 7,
       head: 'Ploomber Workshop',
       subhead: 'Workshop',
       color: '#E78967',
@@ -438,7 +420,7 @@ export default {
       linkics: link5,
     },
     {
-      id: 10,
+      id: 8,
       head: 'Solving Deep Tech Problems  with Open Source',
       subhead: 'Roshini & Anurag',
       color: '#EBB722',
@@ -446,23 +428,23 @@ export default {
       linkics: link3,
     },
     {
-      id: 11,
+      id: 9,
     },
     {
-      id: 12,
+      id: 10,
       head: 'Initial Evaluation Starts',
       color: '#8FA963',
       linkGoogle: google(event22),
       linkics: link4,
     },
     {
+      id: 11,
+    },
+    {
+      id: 12,
+    },
+    {
       id: 13,
-    },
-    {
-      id: 14,
-    },
-    {
-      id: 15,
     },
   ],
   day4: [
@@ -488,12 +470,6 @@ export default {
     },
     {
       id: 6,
-    },
-    {
-      id: 7,
-    },
-    {
-      id: 8,
       head: 'Coding Contest - Coding Ninjas',
       subhead: 'Contest',
       color: '#8FA963',
@@ -501,7 +477,7 @@ export default {
       linkics: link4,
     },
     {
-      id: 9,
+      id: 7,
       head: 'Pitching Presentation of Top 15',
       subhead: 'Overall',
       color: '#E78967',
@@ -509,10 +485,10 @@ export default {
       linkics: link5,
     },
     {
-      id: 10,
+      id: 8,
     },
     {
-      id: 11,
+      id: 9,
       head: 'Mini Event 4 - Raahee',
       subhead: 'Mini Event',
       color: '#EBB722',
@@ -520,7 +496,7 @@ export default {
       linkics: link3,
     },
     {
-      id: 12,
+      id: 10,
       head: 'Closing Ceremony',
       subhead: 'Overall',
       color: '#8FA963',
@@ -528,13 +504,13 @@ export default {
       linkics: link4,
     },
     {
+      id: 11,
+    },
+    {
+      id: 12,
+    },
+    {
       id: 13,
-    },
-    {
-      id: 14,
-    },
-    {
-      id: 15,
       head: 'Initial Evaluation Ends',
       color: '#EBB722',
       linkGoogle: google(event23),

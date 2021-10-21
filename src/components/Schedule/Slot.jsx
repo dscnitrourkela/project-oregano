@@ -19,14 +19,14 @@ export const Slot = () => (
       <TimeR>12:00</TimeR>
       <TimeR>01:00</TimeR>
     </TimeC>
-    <TimeC>
+    {/* <TimeC>
       <TimeR>01:00</TimeR>
       <TimeR>02:00</TimeR>
     </TimeC>
     <TimeC>
       <TimeR>02:00</TimeR>
       <TimeR>03:00</TimeR>
-    </TimeC>
+    </TimeC> */}
     <TimeC>
       <TimeR>03:00</TimeR>
       <TimeR>04:00</TimeR>
