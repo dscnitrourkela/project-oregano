@@ -121,6 +121,15 @@ export default {
       alt: 'Egghead',
       margin: '0px',
     },
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634795359/project-oregano/sponsors/Group_1968_gb9rmx.png',
+      name: 'Codedamn',
+      size: '100%',
+      link: 'https://codedamn.com/',
+      width: '200px',
+      alt: 'Codedamn',
+      margin: '0px',
+    },
   ],
   gamma: [
     {
@@ -214,7 +223,7 @@ export default {
       alt: 'SAWO Labs',
     },
   ],
-  'community-partner': [
+  'mental-health-partner': [
     {
       src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1630820967/project-oregano/sponsors/Community%20Partners/rezmsmpf5b7ynktvufyt.png',
       name: 'Raahee',
@@ -222,6 +231,17 @@ export default {
       link: 'https://raahee.in/',
       width: '180px',
       alt: 'Raahee',
+      margin: '0px',
+    },
+  ],
+  'coding-partner': [
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634795223/project-oregano/sponsors/Coding_Ninjas_Logo_3_kuymp5.png',
+      name: 'Coding Ninjas',
+      size: '10rem',
+      link: 'https://www.codingninjas.com/',
+      width: '180px',
+      alt: 'Coding Ninjas',
       margin: '0px',
     },
   ],

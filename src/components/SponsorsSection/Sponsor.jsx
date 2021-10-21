@@ -53,10 +53,17 @@ function Sponsor() {
       grid: '1fr 1fr 1fr ',
     },
     {
-      title: 'COMMUNITY PARTNER',
-      sponsors: sponsors['community-partner'],
+      title: 'MENTAL HEALTH PARTNER',
+      sponsors: sponsors['mental-health-partner'],
       bcolor: 'transparent',
       span: 'span 3',
+      grid: '1fr 1fr 1fr ',
+    },
+    {
+      title: 'CODING PARTNER',
+      sponsors: sponsors['coding-partner'],
+      bcolor: 'transparent',
+      span: 'span 2',
       grid: '1fr 1fr 1fr ',
     },
   ];

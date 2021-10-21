@@ -78,10 +78,10 @@ const Homepage = ({ location }) => {
           <Prizes />
           <Tracks />
           <Sponsors />
+          <ConferenceSection />
           <FAQ />
           <TestimonialSection />
           <BeAHacker />
-          <ConferenceSection />
         </Container>
         {/* <JoinUs /> */}
         <Footer />
