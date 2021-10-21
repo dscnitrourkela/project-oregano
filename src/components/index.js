@@ -27,7 +27,7 @@ export { default as HackerCard } from './HackerSection/HackerCard';
 export { default as Prizes } from './Prizes/Main';
 
 // Conference section Exports
-export { default as ConferenceSection } from './ConferenceSection/ConferenceSection';
+export { default as CommunitySection } from './CommunitySection/CommunitySection';
 
 // Testimonial Section Exports
 export { default as TestimonialComponent } from './Testimonial/Component';

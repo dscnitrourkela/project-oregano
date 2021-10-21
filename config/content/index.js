@@ -7,4 +7,4 @@ export { default as nav } from './Navigation';
 export { default as footer } from './Footer';
 export { default as join } from './Join';
 export { default as testimonial } from './Testimonial';
-export { default as conference } from './Conference';
+export { default as community } from './Community';

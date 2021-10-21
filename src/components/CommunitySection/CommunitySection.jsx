@@ -7,7 +7,7 @@ import { Heading1, Body, Container } from '..';
 import Carousel from './Carousel';
 
 // assets
-import { conference } from '../../../config/content';
+import { community } from '../../../config/content';
 
 const ConfContainer = styled.div`
   ${tw`
@@ -37,10 +37,10 @@ const ConfSection = () => (
   <ConfContainer>
     <Container>
       <SectionContainer>
-        <Heading1>{conference.title}</Heading1>
-        <Description>{conference.content}</Description>
+        <Heading1>{community.title}</Heading1>
+        <Description>{community.content}</Description>
       </SectionContainer>
-      <Carousel colors={conference.colors} cards={conference.cards} />
+      <Carousel colors={community.colors} cards={community.cards} />
     </Container>
   </ConfContainer>
 );

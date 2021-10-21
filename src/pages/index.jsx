@@ -26,7 +26,7 @@ import {
   // JoinUs,
   Prizes,
   TestimonialSection,
-  ConferenceSection,
+  CommunitySection,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -78,7 +78,7 @@ const Homepage = ({ location }) => {
           <Prizes />
           <Tracks />
           <Sponsors />
-          <ConferenceSection />
+          <CommunitySection />
           <FAQ />
           <TestimonialSection />
           <BeAHacker />

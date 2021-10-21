@@ -80,7 +80,7 @@ const PRIZES = [
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7so.png',
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634369574/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7.png',
       width: '70%',
     },
     title: 'Voiceflow Subscription',
