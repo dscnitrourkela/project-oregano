@@ -15,6 +15,7 @@ const event = {
   description: 'Be there!',
   start: '2021-10-28 19:00:00 ',
   duration: [0.5, 'hour'],
+  location: 'https://hacknitr.tech/live',
 };
 
 const event2 = {
@@ -22,6 +23,7 @@ const event2 = {
   description: 'Be there!',
   start: '2021-10-28 20:00:00',
   end: '2021-10-28 20:45:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event3 = {
@@ -29,6 +31,7 @@ const event3 = {
   description: 'Be there!',
   start: '2021-10-28 22:00:00',
   end: '2021-10-29 00:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event4 = {
@@ -36,6 +39,7 @@ const event4 = {
   description: 'Be there!',
   start: '2021-10-29 09:45:00',
   end: '2021-10-29 10:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event5 = {
@@ -43,6 +47,7 @@ const event5 = {
   description: 'Be there!',
   start: '2021-10-29 12:00:00',
   end: '2021-10-29 12:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event6 = {
@@ -50,6 +55,7 @@ const event6 = {
   description: 'Be there!',
   start: '2021-10-29 16:00:00',
   end: '2021-10-29 17:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event7 = {
@@ -57,6 +63,7 @@ const event7 = {
   description: 'Be there!',
   start: '2021-10-29 18:00:00',
   end: '2021-10-29 20:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event8 = {
@@ -64,6 +71,7 @@ const event8 = {
   description: 'Be there!',
   start: '2021-10-29 21:00:00',
   end: '2021-10-29 21:45:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event9 = {
@@ -71,6 +79,7 @@ const event9 = {
   description: 'Be there!',
   start: '2021-10-29 22:00:00',
   end: '2021-10-30 00:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event10 = {
@@ -78,6 +87,7 @@ const event10 = {
   description: 'Be there!',
   start: '2021-10-30 09:00:00',
   end: '2021-10-30 10:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event11 = {
@@ -85,6 +95,7 @@ const event11 = {
   description: 'Be there!',
   start: '2021-10-30 10:30:00',
   end: '2021-10-30 11:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event12 = {
@@ -92,6 +103,7 @@ const event12 = {
   description: 'Be there!',
   start: '2021-10-30 12:00:00',
   end: '2021-10-30 01:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event13 = {
@@ -99,6 +111,7 @@ const event13 = {
   description: 'Be there!',
   start: '2021-10-30 16:00:00',
   end: '2021-10-30 16:30:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event14 = {
@@ -106,6 +119,7 @@ const event14 = {
   description: 'Be there!',
   start: '2021-10-30 17:00:00',
   end: '2021-10-30 17:30:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event15 = {
@@ -113,6 +127,7 @@ const event15 = {
   description: 'Be there!',
   start: '2021-10-30 19:00:00',
   end: '2021-10-30 20:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event16 = {
@@ -120,6 +135,7 @@ const event16 = {
   description: 'Be there!',
   start: '2021-10-31 16:00:00',
   end: '2021-10-31 17:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event17 = {
@@ -127,6 +143,7 @@ const event17 = {
   description: 'Be there!',
   start: '2021-10-31 17:00:00',
   end: '2021-10-31 18:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event18 = {
@@ -134,6 +151,7 @@ const event18 = {
   description: 'Be there!',
   start: '2021-10-31 19:30:00',
   end: '2021-10-31 20:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event19 = {
@@ -141,6 +159,7 @@ const event19 = {
   description: 'Be there!',
   start: '2021-10-31 20:00:00',
   end: '2021-10-31 21:00:00',
+  location: 'https://hacknitr.tech/live',
 };
 
 const event20 = {
@@ -148,6 +167,7 @@ const event20 = {
   description: 'Be there!',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
+  location: 'https://hacknitr.tech',
 };
 
 const event21 = {
@@ -155,6 +175,7 @@ const event21 = {
   description: 'Be there!',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
+  location: 'https://hacknitr.tech',
 };
 
 const event22 = {
@@ -162,6 +183,7 @@ const event22 = {
   description: 'Be there!',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
+  location: 'https://hacknitr.tech',
 };
 
 const event23 = {
@@ -169,6 +191,7 @@ const event23 = {
   description: 'Be there!',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
+  location: 'https://hacknitr.tech',
 };
 
 const link1 = ics(event);
