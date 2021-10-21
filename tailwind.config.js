@@ -20,8 +20,10 @@ module.exports = {
       gridTemplateColumns: {
         track: 'repeat(auto-fit, minmax(300px, 1fr))',
         logo: 'repeat(auto-fit, minmax(50px, 1fr))',
+        schedule: 'repeat(4, minmax(500px, 1fr))',
       },
       spacing: {
+        18: '4rem',
         100: '41rem',
       },
       colors: {
@@ -35,6 +37,7 @@ module.exports = {
       },
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
+        sixcaps: ['Six Caps', ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {

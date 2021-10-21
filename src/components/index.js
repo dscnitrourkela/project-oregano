@@ -16,6 +16,9 @@ export { default as WhyWait } from './FaqSection/WhyWait';
 // Tracks section exports
 export { default as Tracks } from './TracksSection/Tracks';
 
+// Schedule section exports
+export { default as Schedule } from './Schedule/Schedule';
+
 // Sponsors section exports
 export { default as Sponsors } from './SponsorsSection/Sponsor';
 
