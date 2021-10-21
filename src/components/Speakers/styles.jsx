@@ -36,7 +36,7 @@ export const Card = styled.div`
 
   @media (max-width: 560px) {
     width: 340px;
-    height: 500px;
+    height: 450px;
   }
 `;
 
@@ -53,7 +53,8 @@ export const Name = styled(Heading4)`
   font-family: 'Six Caps', sans-serif;
 
   @media (max-width: 560px) {
-    margin-top: -15px;
+    margin-top: -50px;
+    font-size: 55px;
   }
 `;
 
@@ -74,7 +75,6 @@ export const Designation = styled(Heading4)`
 export const Topic = styled.div`
   ${tw`
     text-left
-    mt-2
     p-2
     px-4
     text-2xl
