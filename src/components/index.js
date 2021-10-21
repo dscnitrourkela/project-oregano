@@ -1,3 +1,4 @@
+/* eslint-disable import/named */
 /* eslint-disable import/no-cycle */
 
 // Shared components
@@ -27,6 +28,9 @@ export { default as HackerCard } from './HackerSection/HackerCard';
 
 // Prizes section exports
 export { default as Prizes } from './Prizes/Main';
+
+// Conference section Exports
+export { default as CommunitySection } from './CommunitySection/CommunitySection';
 
 // Testimonial Section Exports
 export { default as TestimonialComponent } from './Testimonial/Component';
