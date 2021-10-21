@@ -10,9 +10,9 @@ import { google, ics } from 'calendar-link';
  * 3. Add all the necessary details appropriately (use spacing and line gapps in description : \n)
  */
 const event = {
-  title:
-    'Roadmap To Compettitive Programming and Career Guidance -Shantanu Shubham (Coding Ninjas)',
-  description: 'Be there!',
+  title: 'Roadmap To Compettitive Programming and Career Guidance',
+  description:
+    'This workshop will help you create a roadmap on how to get started with competitive programming and improve with time to perform well in competitive programming contests. Speaker: Shantanu Shubham. Join live at https://hacknitr.tech/live',
   start: '2021-10-28 19:00:00 ',
   duration: [0.5, 'hour'],
   location: 'https://hacknitr.tech/live',
@@ -20,7 +20,7 @@ const event = {
 
 const event2 = {
   title: 'Codedamn',
-  description: 'Be there!',
+  description: ' Join live at https://hacknitr.tech/live',
   start: '2021-10-28 20:00:00',
   end: '2021-10-28 20:45:00',
   location: 'https://hacknitr.tech/live',
@@ -28,7 +28,8 @@ const event2 = {
 
 const event3 = {
   title: 'MiniEvent 1 -Team Building',
-  description: 'Be there!',
+  description:
+    'Discord Stages Talk Sessions -Topic: Hackathon Stories -Team Building -Make people come and speak (Sell yourself in 1 min)',
   start: '2021-10-28 22:00:00',
   end: '2021-10-29 00:00:00',
   location: 'https://hacknitr.tech/live',
@@ -36,39 +37,42 @@ const event3 = {
 
 const event4 = {
   title: 'Koii Network',
-  description: 'Be there!',
+  description: 'Join live at https://hacknitr.tech/live',
   start: '2021-10-29 09:45:00',
   end: '2021-10-29 10:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event5 = {
-  title: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0 -Rishi Raj Jain',
-  description: 'Be there!',
+  title: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
+  description:
+    'Join me in this session, and learn how I deployed a performance-first, incrementally static regenerated blogs without compromising my requirements. Speaker: Rishi Raj Jain. Join live at https://hacknitr.tech/live',
   start: '2021-10-29 12:00:00',
   end: '2021-10-29 12:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event6 = {
-  title: 'Introduction to the world of Product Management -Suhaas & Smarth',
-  description: 'Be there!',
+  title: 'Introduction to the world of Product Management',
+  description:
+    'This workshop will help you more about Product Management.  Product management is the practice of planning, developing, marketing and continuous improvement of a company’s product or products. Speaker: Suhas Motwani and Smarth Vasdev. Join live at https://hacknitr.tech/live',
   start: '2021-10-29 16:00:00',
   end: '2021-10-29 17:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event7 = {
-  title: 'Opening Ceremony | Making a career out of hackathons - Shaswat Lenka, Abel Mathew',
-  description: 'Be there!',
+  title: 'Opening Ceremony | Making a career out of hackathons',
+  description: 'Speakers: Shaswat Lenka, Abel Mathew. Join live at https://hacknitr.tech/live ',
   start: '2021-10-29 18:00:00',
   end: '2021-10-29 20:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event8 = {
-  title: 'Consequences of UI/UX in our decisions -Ayush Bajpai',
-  description: 'Be there!',
+  title: 'Consequences of UI/UX in our decisions',
+  description:
+    ' User Experience and Interface is critical to the success or failure of a product in the market but what do we mean by UI/UX? Join the workshop to know more. Speaker: Ayush Bajpai. Join live at https://hacknitr.tech/live ',
   start: '2021-10-29 21:00:00',
   end: '2021-10-29 21:45:00',
   location: 'https://hacknitr.tech/live',
@@ -76,15 +80,16 @@ const event8 = {
 
 const event9 = {
   title: 'Mini Event 2 - Gaming',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-29 22:00:00',
   end: '2021-10-30 00:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event10 = {
-  title: 'How to ML in Hackathons -Rakshaa Viswanathan',
-  description: 'Be there!',
+  title: 'How to ML in Hackathons',
+  description:
+    'The workshop will cover basic concepts of ML, how to use them in hackathons, various resources, and a practical exercise to help you understand better. Speaker: Rakshaa Viswanathan. Join live at https://hacknitr.tech/live ',
   start: '2021-10-30 09:00:00',
   end: '2021-10-30 10:00:00',
   location: 'https://hacknitr.tech/live',
@@ -92,15 +97,16 @@ const event10 = {
 
 const event11 = {
   title: 'Devfolio -workshop',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-30 10:30:00',
   end: '2021-10-30 11:00:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event12 = {
-  title: 'Getting Started with SAWO SDK, Abhishek Chandrasenan - SAWO',
-  description: 'Be there!',
+  title: 'Getting Started with SAWO SDK',
+  description:
+    'This workshop will help you learn more about SAWO SDK and how to use it in your projects. Speaker: Abhishek Chandrasenan. Join live at https://hacknitr.tech/live',
   start: '2021-10-30 12:00:00',
   end: '2021-10-30 01:00:00',
   location: 'https://hacknitr.tech/live',
@@ -108,7 +114,7 @@ const event12 = {
 
 const event13 = {
   title: 'Mini Event-3 -MLH Event',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-30 16:00:00',
   end: '2021-10-30 16:30:00',
   location: 'https://hacknitr.tech/live',
@@ -116,15 +122,16 @@ const event13 = {
 
 const event14 = {
   title: 'Ploomber Workshop',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-30 17:00:00',
   end: '2021-10-30 17:30:00',
   location: 'https://hacknitr.tech/live',
 };
 
 const event15 = {
-  title: 'Solving Deep Tech Problems  with Open Source -Roshini & Anurag',
-  description: 'Be there!',
+  title: 'Solving Deep Tech Problems  with Open Source',
+  description:
+    'Get ready for the great wave—the next big surge of innovation powered by emerging technologies and the approach of deep tech entrepreneurs. Its economic, business, and social impact will be felt everywhere because deep tech ventures aim to solve many of our most complex problems. Speaker: Roshini Biswas and Anurag Saha Roy. Join live at https://hacknitr.tech/live',
   start: '2021-10-30 19:00:00',
   end: '2021-10-30 20:00:00',
   location: 'https://hacknitr.tech/live',
@@ -132,7 +139,7 @@ const event15 = {
 
 const event16 = {
   title: 'Coding Contest - Coding Ninjas',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-31 16:00:00',
   end: '2021-10-31 17:00:00',
   location: 'https://hacknitr.tech/live',
@@ -140,7 +147,7 @@ const event16 = {
 
 const event17 = {
   title: 'Pitching Presentation of Top 15',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-31 17:00:00',
   end: '2021-10-31 18:00:00',
   location: 'https://hacknitr.tech/live',
@@ -148,7 +155,7 @@ const event17 = {
 
 const event18 = {
   title: 'Mini Event 4 - Raahee',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-31 19:30:00',
   end: '2021-10-31 20:00:00',
   location: 'https://hacknitr.tech/live',
@@ -156,7 +163,7 @@ const event18 = {
 
 const event19 = {
   title: 'Closing Ceremony',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-31 20:00:00',
   end: '2021-10-31 21:00:00',
   location: 'https://hacknitr.tech/live',
@@ -164,7 +171,7 @@ const event19 = {
 
 const event20 = {
   title: 'Hacking Hour Starts',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
   location: 'https://hacknitr.tech',
@@ -172,7 +179,7 @@ const event20 = {
 
 const event21 = {
   title: 'Hacking Hour Ends',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
   location: 'https://hacknitr.tech',
@@ -180,7 +187,7 @@ const event21 = {
 
 const event22 = {
   title: 'Initial Evaluation Starts',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
   location: 'https://hacknitr.tech',
@@ -188,7 +195,7 @@ const event22 = {
 
 const event23 = {
   title: 'Initial Evaluation Ends',
-  description: 'Be there!',
+  description: 'hacknitr.tech',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
   location: 'https://hacknitr.tech',
