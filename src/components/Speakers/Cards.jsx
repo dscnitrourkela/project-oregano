@@ -20,11 +20,11 @@ export default function SpeakerCard({ card }) {
     </Card>
     <Timings>
       <Time>
-      <FontAwesomeIcon icon={faClock} style={{ marginRight: '8px' }} />
+      <FontAwesomeIcon icon={faClock} style={{ marginRight: '6px' }} />
         {time}
       </Time>
       <Date>
-        <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: '8px' }} />
+        <FontAwesomeIcon icon={faCalendarAlt} style={{ marginRight: '6px' }} />
         {date}
       </Date>
     </Timings>

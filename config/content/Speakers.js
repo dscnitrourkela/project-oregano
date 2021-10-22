@@ -16,7 +16,7 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '28th October 2021',
+        date: '28th Oct 2021',
         time: '7:00pm IST'
       },
       {
@@ -24,14 +24,14 @@ export default {
         name: 'Rishi Raj Jain',
         designation: 'Solutions Engineer @Limelight Networks',
         content:
-          'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
+          'Build Your Personal Blog With Next.js, Storyblok, & Layer0',
         alt: 'speaker: Rishi Raj Jain',
         img: {
           src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794608/project-oregano/speakers/s-2_yu6zxq.png',
           width: '100%',
           height: '100%',
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '11:00am IST'
       },
       {
@@ -46,13 +46,13 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '4:00pm IST'
       },
       {
         id: 'speaker-4',
         name: 'Smarth Vasdev',
-        designation: 'Growth Product Manager @PeopleGrove',
+        designation: 'Growth PM @PeopleGrove',
         content:
           'Introduction to the world of Product Management',
         alt: 'speaker: Smarth Vasdev',
@@ -61,7 +61,7 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '4:00pm IST'
       },
       {
@@ -77,7 +77,7 @@ export default {
           height: '100%',
           
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '6:00pm IST'
       },
       {
@@ -92,13 +92,13 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '6:00pm IST'
       },
       {
         id: 'speaker-7',
         name: 'Ayush Bajpai',
-        designation: 'Graphic Designer @Starlax Aerospace',
+        designation: 'Graphics Designer @Starlax Aerospace',
         content:
           'Consequences of UI/UX in our decisions',
         alt: 'speaker: Ayush Bajpai',
@@ -107,7 +107,7 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '29th October 2021',
+        date: '29th Oct 2021',
         time: '9:00pm IST'
       },
       {
@@ -122,7 +122,7 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '30th October 2021',
+        date: '30th Oct 2021',
         time: '9:00am IST'
       },
       {
@@ -137,7 +137,7 @@ export default {
           width: '100%',
           height: '100%',
         },
-        date: '30th October 2021',
+        date: '30th Oct 2021',
         time: '12:00pm IST'
       },
       {
@@ -152,7 +152,7 @@ export default {
           width: '100%',
           height: '100%'
         },
-        date: '30th October 2021',
+        date: '30th Oct 2021',
         time: '7:00pm IST'
       },
       {
@@ -167,7 +167,7 @@ export default {
           width: '100%',
           height: '100%'
         },
-        date: '30th October 2021',
+        date: '30th Oct 2021',
         time: '7:00pm IST'
       }
     ]

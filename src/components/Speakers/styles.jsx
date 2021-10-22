@@ -31,11 +31,11 @@ export const Card = styled.div`
       m-0
       relative
   `};
-  width: 380px;
-  height: 515px;
+  width: 305px;
+  height: 435px;
 
   @media (max-width: 560px) {
-    width: 340px;
+    width: 330px;
     height: 450px;
   }
 `;
@@ -43,17 +43,16 @@ export const Card = styled.div`
 export const Name = styled(Heading4)`
   ${tw`
     uppercase
-    text-7xl
+    text-6xl
     text-left
+    font-sixcaps
     z-20
-    p-2
-    px-4
-    pt-72
+    p-1
+    px-2
+    pt-64
   `}
-  font-family: 'Six Caps', sans-serif;
 
   @media (max-width: 560px) {
-    margin-top: -50px;
     font-size: 55px;
   }
 `;
@@ -61,36 +60,45 @@ export const Name = styled(Heading4)`
 export const Designation = styled(Heading4)`
   ${tw`
     z-20
-    pb-2
+    pb-1
+    text-base
   `}
   border-bottom: 4px solid white;
-  width: 350px;
-  margin-left: 15px;
+  width: 285px;
+  margin-left: 8px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: normal;
 
   @media (max-width: 560px) {
     width: 310px;
+    font-size: 18px;
+    line-height: 1.2;
   }
 `;
 
 export const Topic = styled.div`
   ${tw`
     text-left
-    p-2
-    px-4
-    text-2xl
+    p-1
+    px-2
+    text-xl
     font-normal
     font-roboto
     flex-col
     z-20
   `}
+  line-height: 1.3;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  width: 380px;
+  width: 290px;
   color: white;
   white-space: normal;
 
   @media (max-width: 560px) {
     width: 340px;
+    font-size: 24px;
+    line-height: 1.2;
   }
 `;
 
@@ -107,24 +115,25 @@ export const Img = styled.img`
 
 export const Time = styled(Heading4)`
   ${tw`
-    text-xl
+    text-lg
     text-left
     font-roboto
-    p-2
     pt-2
+    px-2
   `}
   @media (max-width: 560px) {
     font-size: 18px;
+    margin-right: 35px;
   }
 `;
 
 export const Date = styled(Heading4)`
   ${tw`
-    text-xl
+    text-lg
     text-right
     font-roboto
-    p-2
-    px-4
+    p-1
+    px-3
     pt-2
   `}
   @media (max-width: 560px) {
@@ -135,6 +144,6 @@ export const Date = styled(Heading4)`
 export const Timings = styled.div`
   ${tw`
     flex
-    p-2
+    pb-2
   `}
 `;
