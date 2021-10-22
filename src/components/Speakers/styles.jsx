@@ -62,7 +62,7 @@ export const Designation = styled(Heading4)`
   ${tw`
     z-20
     pb-1
-    text-base
+    text-sm
   `}
   border-bottom: 3px solid white;
   width: 235px;
