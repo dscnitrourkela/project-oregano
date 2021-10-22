@@ -17,6 +17,7 @@ import {
   FAQ,
   Container,
   Tracks,
+  Schedule,
   Sponsors,
   BeAHacker,
   Layout,
@@ -28,6 +29,7 @@ import {
   Prizes,
     Stats,
   TestimonialSection,
+  CommunitySection,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -77,13 +79,18 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
+        </Container>
+        <Schedule />
+        <Container>
           <Tracks />
           <Sponsors />
+          <CommunitySection />
           <FAQ />
           <Stats />
           <TestimonialSection />
           <BeAHacker />
         </Container>
+
         {/* <JoinUs /> */}
         <Footer />
       </Layout>
