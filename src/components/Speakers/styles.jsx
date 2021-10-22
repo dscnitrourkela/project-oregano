@@ -31,8 +31,8 @@ export const Card = styled.div`
       m-0
       relative
   `};
-  width: 305px;
-  height: 435px;
+  width: 250px;
+  height: 350px;
 
   @media (max-width: 560px) {
     width: 330px;
@@ -43,17 +43,18 @@ export const Card = styled.div`
 export const Name = styled(Heading4)`
   ${tw`
     uppercase
-    text-6xl
+    text-5xl
     text-left
     font-sixcaps
     z-20
     p-1
     px-2
-    pt-64
+    pt-48
   `}
 
   @media (max-width: 560px) {
     font-size: 55px;
+    margin-top: 70px;
   }
 `;
 
@@ -63,9 +64,10 @@ export const Designation = styled(Heading4)`
     pb-1
     text-base
   `}
-  border-bottom: 4px solid white;
-  width: 285px;
-  margin-left: 8px;
+  border-bottom: 3px solid white;
+  width: 235px;
+  margin-left: 6px;
+  line-height: 1;
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space: normal;
@@ -82,16 +84,16 @@ export const Topic = styled.div`
     text-left
     p-1
     px-2
-    text-xl
+    text-lg
     font-normal
     font-roboto
     flex-col
     z-20
   `}
-  line-height: 1.3;
+  line-height: 1.2;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  width: 290px;
+  width: 240px;
   color: white;
   white-space: normal;
 
@@ -115,29 +117,30 @@ export const Img = styled.img`
 
 export const Time = styled(Heading4)`
   ${tw`
-    text-lg
+    text-base
     text-left
     font-roboto
     pt-2
-    px-2
+    px-1
   `}
   @media (max-width: 560px) {
-    font-size: 18px;
-    margin-right: 35px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 5px;
   }
 `;
 
 export const Date = styled(Heading4)`
   ${tw`
-    text-lg
+    text-base
     text-right
     font-roboto
     p-1
-    px-3
+    px-2
     pt-2
   `}
   @media (max-width: 560px) {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 
