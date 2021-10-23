@@ -26,6 +26,8 @@ export const Description = styled.h2`
 export const Name = styled.h1`
   ${tw`
    text-lg 
+   font-bold
+   font-black
    2xsm:text-base
    3xsm:text-sm 2xsm:pt-0.5
   `}
@@ -33,6 +35,7 @@ export const Name = styled.h1`
 
 export const Topic = styled.h2`
   ${tw`
+  font-medium
    mt-1
    mb-0
    text-base
@@ -159,15 +162,12 @@ export const Cards = styled.div`
   ${tw`
       w-full
       mt-5
-      /* bg-green-50 */
       rounded-3xl
       flex
       gap-10
       p-5
       xl:py-3 xl:px-1 xl:gap-5
       lg:py-3 lg:px-3
-      lg:gap-10
-      /* lg:pl-20 */
       sm:py-3 
       sxm:gap-4 sxm:px-2 sxm:py-2
       2xsm:p-1  2xsm:h-18 2xsm:mt-3 2xsm:gap-4
