@@ -44,7 +44,6 @@ export default {
   ],
   stats: {
     title: 'Numbers to Adore ❤',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac tempus quam in velit in varius purus. ',
+    content: 'Here are a few numbers that are more than just numbers for us. ',
   },
 };

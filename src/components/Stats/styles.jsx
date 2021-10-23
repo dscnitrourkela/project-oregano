@@ -18,21 +18,35 @@ export const Description = styled.h2`
     w-3/5
     text-color-secondary
     md:w-full
+    font-roboto
+    font-normal
   `}
 `;
 
-export const Name = styled.h2`
+export const Name = styled.h1`
   ${tw`
-   text-lg
+   text-lg 
    2xsm:text-base
+   3xsm:text-sm 2xsm:pt-0.5
   `}
 `;
 
-export const Img = styled.img`
+export const Topic = styled.h2`
   ${tw`
-    my-auto
+   mt-1
+   mb-0
+   text-base
+   2xsm:text-sm
+   2xsm:text-xs 2xsm:mt-1 
+  `}
+`;
+
+export const Img = styled.div`
+  ${tw`
+    text-5xl
+    /* my-auto */
     ml-5
-    2xsm:w-14 2xsm:h-14
+     2xsm:text-4xl 2xsm:my-auto
 `}
 `;
 
@@ -119,7 +133,7 @@ export const CardContainer = styled.div`
   left-20
   w-2/3
   z-30
-  xl:top-14
+  xl:top-11
   mid:top-20
   lg:w-2/3
   lg:top-16
@@ -132,6 +146,9 @@ export const CardContainer = styled.div`
   sxm:w-2/3 
   sxm:-mt-10
   sxm:top-24
+  sxm:w-3/4
+  sxm:left-8
+  2xsm:w-2/3 2xsm:left-20
   2xsm:w-60/100 2xsm:-mt-10 2xsm:top-20
   3xsm:-mt-12 3xsm:w-2/3 3xsm:left-10
    `}
@@ -147,10 +164,13 @@ export const Cards = styled.div`
       flex
       gap-10
       p-5
-      lg:pl-20
-      md:pl-5
+      xl:py-3 xl:px-1 xl:gap-5
+      lg:py-3 lg:px-3
+      lg:gap-10
+      /* lg:pl-20 */
       sm:py-3 
-      2xsm:p-1 2xsm:pl-5 2xsm:h-18 2xsm:mt-3 2xsm:gap-4
+      sxm:gap-4 sxm:px-2 sxm:py-2
+      2xsm:p-1  2xsm:h-18 2xsm:mt-3 2xsm:gap-4
       font-poppins
    `}
 `;
