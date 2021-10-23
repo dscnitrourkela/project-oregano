@@ -7,5 +7,6 @@ export { default as hacker } from './BeHacker';
 export { default as nav } from './Navigation';
 export { default as footer } from './Footer';
 export { default as join } from './Join';
+export { default as stats } from './Stats';
 export { default as testimonial } from './Testimonial';
 export { default as community } from './Community';
