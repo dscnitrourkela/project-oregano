@@ -4,7 +4,7 @@ import { CardContainer, Cards, Name } from './styles';
 
 export const CardContainers = () => (
   <CardContainer>
-    {stats.winners.map(({ id, img, name, competition, rank, color }) => (
+    {stats.winners.map(({ id, name, competition, color }) => (
       <Cards key={id} style={{ backgroundColor: color, color: 'white' }}>
         <div>
           <Name>{name}</Name>

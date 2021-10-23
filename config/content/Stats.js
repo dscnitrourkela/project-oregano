@@ -2,7 +2,7 @@
 export default {
   title: 'Good Old 2.0',
   content:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac tempus quam in velit in varius purus. Lacus suscipit lacus, risus libero pretium tellus et et lacinia. Tortor odio id aliquet nec.',
+    'Are you a stats-geek?🤓 We might just have perfect numbers which impress you! Here are our serious edition stats.',
   statsMobile: {
     icon: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/Mockup_e5fuxn.png',
     icon2:
