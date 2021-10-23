@@ -21,6 +21,13 @@ export const Description = styled.h2`
   `}
 `;
 
+export const Name = styled.h2`
+  ${tw`
+   text-lg
+   2xsm:text-base
+  `}
+`;
+
 export const Img = styled.img`
   ${tw`
     my-auto
@@ -112,7 +119,10 @@ export const CardContainer = styled.div`
   left-20
   w-2/3
   z-30
+  xl:top-14
+  mid:top-20
   lg:w-2/3
+  lg:top-16
   lg:mt-10
   md:mt-0
   md:w-2/3
@@ -121,7 +131,8 @@ export const CardContainer = styled.div`
   sm:w-70/100
   sxm:w-2/3 
   sxm:-mt-10
-  2xsm:w-60/100 2xsm:-mt-10
+  sxm:top-24
+  2xsm:w-60/100 2xsm:-mt-10 2xsm:top-20
   3xsm:-mt-12 3xsm:w-2/3 3xsm:left-10
    `}
   grid-area: 1/1;
@@ -136,7 +147,10 @@ export const Cards = styled.div`
       flex
       gap-10
       p-5
-      2xsm:p-1 2xsm:gap-4
+      lg:pl-20
+      md:pl-5
+      sm:py-3 
+      2xsm:p-1 2xsm:pl-5 2xsm:h-18 2xsm:mt-3 2xsm:gap-4
       font-poppins
    `}
 `;
