@@ -226,6 +226,7 @@ export default {
   title: 'Mark Your Calenders!',
   content:
     'We have prepared a list of simple steps one needs to follow to become a true hacker. The person who attains all these abilities will yield the power to hack anything.',
+  button: 'https://airtable.com/shr3hO4GmOExTOsWA/iCal?timeZone=Asia%2FCalcutta&userLocale=en',
   day1: [
     {
       id: 1,

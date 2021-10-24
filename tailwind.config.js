@@ -44,6 +44,7 @@ module.exports = {
         date: '#E78967',
         'b-blue': '#71A0CE',
         'b-green': '#8FA963',
+        hover: '#f8f0e3',
       },
       fontFamily: {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],

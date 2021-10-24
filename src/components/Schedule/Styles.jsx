@@ -17,6 +17,17 @@ export const Container = styled.section`
   height: fit-content;
 `;
 
+export const Buttton = styled.button`
+  ${tw`
+    mt-2
+    rounded-lg
+    py-2 px-2
+    outline-none border-none
+    bg-color-primary
+    hover:bg-hover
+  `}
+`;
+
 export const Time = styled.div`
   ${tw`
     grid
