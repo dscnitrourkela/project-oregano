@@ -27,7 +27,7 @@ import {
   JoinUs,
   // JoinUs,
   Prizes,
-    Stats,
+  Stats,
   TestimonialSection,
   CommunitySection,
 } from '../components';
@@ -79,9 +79,7 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
-        </Container>
-        <Schedule />
-        <Container>
+          <Schedule />
           <Tracks />
           <Sponsors />
           <CommunitySection />
