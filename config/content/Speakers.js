@@ -42,7 +42,7 @@ export default {
           'Introduction to the world of Product Management',
         alt: 'speaker: Suhas Motwani',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794636/project-oregano/speakers/s-3_rfbxi4.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-3_tpuc91.png',
           width: '100%',
           height: '100%',
         },
@@ -57,7 +57,7 @@ export default {
           'Introduction to the world of Product Management',
         alt: 'speaker: Smarth Vasdev',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794623/project-oregano/speakers/s-4_kocahf.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-4_owwsbg.png',
           width: '100%',
           height: '100%',
         },
