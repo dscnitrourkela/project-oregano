@@ -88,7 +88,7 @@ export default {
           'Making a career out of hackathons',
         alt: 'speaker: Shaswat Lenka',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794643/project-oregano/speakers/s-6_tseasg.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-6_osfdpw.png',
           width: '100%',
           height: '100%',
         },
@@ -103,7 +103,7 @@ export default {
           'Consequences of UI/UX in our decisions',
         alt: 'speaker: Ayush Bajpai',
         img: {
-          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794626/project-oregano/speakers/s-7_dorm8n.png',
+          src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-7_box7lm.png',
           width: '100%',
           height: '100%',
         },
