@@ -34,7 +34,7 @@ function Schedule() {
           frameborder='0'
           onmousewheel=''
           width='1250'
-          height='500'
+          height='600'
           style={{ background: 'transparent', border: '1px solid #ccc' }}
         ></iframe>
       </Wrapper>
