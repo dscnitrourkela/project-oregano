@@ -4,6 +4,7 @@ import {
   faTwitterSquare,
   faLinkedin,
   faFacebook,
+  faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -181,8 +182,16 @@ export default {
       width: '50%',
       socials: [
         {
-          icon: faLinkedin,
-          link: 'https://www.linkedin.com/company/designandcode/',
+          icon: faInstagram,
+          link: 'https://www.instagram.com/designandcode.community/',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/DesignandCode3',
+        },
+        {
+          icon: faDiscord,
+          link: 'https://discord.gg/druweDMn3s',
         },
       ],
     },
@@ -245,7 +254,7 @@ export default {
     },
     {
       image:
-        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182221/hacknitr/gdsc_usict_cg8epz.png',
       width: '85%',
       socials: [
         {
@@ -264,7 +273,7 @@ export default {
     },
     {
       image:
-        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182232/hacknitr/gdsc_ddu_c4npmb.png',
       width: '85%',
       socials: [
         {
@@ -283,7 +292,7 @@ export default {
     },
     {
       image:
-        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182242/hacknitr/gdsc_must_jdlljb.png',
       width: '85%',
       socials: [
         {
@@ -297,6 +306,17 @@ export default {
         {
           icon: faGlobe,
           link: 'https://gdsc.community.dev/mody-university-of-science-and-technology-laxmangarh/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182252/hacknitr/maverick_mooshroom_pvvcsj.png',
+      width: '50%',
+      socials: [
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/mooshroomcodes',
         },
       ],
     },
