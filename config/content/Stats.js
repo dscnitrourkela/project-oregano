@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 export default {
-  title: 'Good Old 2.0',
+  title: 'Good Old HackNITR 2.0',
   content:
     'Are you a stats-geek?🤓 We might just have perfect numbers which impress you! Here are our serious edition stats.',
   statsMobile: {
