@@ -243,5 +243,62 @@ export default {
         },
       ],
     },
+    {
+      image:
+        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faInstagram,
+          link: 'https://www.instagram.com/gdsc_usict/',
+        },
+        {
+          icon: faLinkedin,
+          link: 'https://in.linkedin.com/company/gdsc-usict',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/university-school-of-information-communication-technology-delhi/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faInstagram,
+          link: 'https://www.instagram.com/gdscddu/',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/gdscddu',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://www.dscddu.com/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634730998/project-oregano/community/Rectangle-Light-1_emy69d.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faLinkedin,
+          link: 'https://in.linkedin.com/company/gdsc-must',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/gdsc_must',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/mody-university-of-science-and-technology-laxmangarh/',
+        },
+      ],
+    },
   ],
 };
