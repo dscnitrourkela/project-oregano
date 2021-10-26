@@ -4,6 +4,7 @@ import {
   faTwitterSquare,
   faLinkedin,
   faFacebook,
+  faDiscord,
 } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
@@ -181,8 +182,16 @@ export default {
       width: '50%',
       socials: [
         {
-          icon: faLinkedin,
-          link: 'https://www.linkedin.com/company/designandcode/',
+          icon: faInstagram,
+          link: 'https://www.instagram.com/designandcode.community/',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/DesignandCode3',
+        },
+        {
+          icon: faDiscord,
+          link: 'https://discord.gg/druweDMn3s',
         },
       ],
     },
@@ -240,6 +249,89 @@ export default {
         {
           icon: faGlobe,
           link: 'http://acropolis.in/dsc/index.html',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182221/hacknitr/gdsc_usict_cg8epz.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faInstagram,
+          link: 'https://www.instagram.com/gdsc_usict/',
+        },
+        {
+          icon: faLinkedin,
+          link: 'https://in.linkedin.com/company/gdsc-usict',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/university-school-of-information-communication-technology-delhi/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182232/hacknitr/gdsc_ddu_c4npmb.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faInstagram,
+          link: 'https://www.instagram.com/gdscddu/',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/gdscddu',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://www.dscddu.com/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182242/hacknitr/gdsc_must_jdlljb.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faLinkedin,
+          link: 'https://in.linkedin.com/company/gdsc-must',
+        },
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/gdsc_must',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/mody-university-of-science-and-technology-laxmangarh/',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635182252/hacknitr/maverick_mooshroom_pvvcsj.png',
+      width: '50%',
+      socials: [
+        {
+          icon: faTwitterSquare,
+          link: 'https://twitter.com/mooshroomcodes',
+        },
+      ],
+    },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635263438/hacknitr/gdsc_iter_nxuaa8.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faLinkedin,
+          link: 'https://www.linkedin.com/company/gdsciter/',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/institute-of-technical-education-research-bhubaneswar/',
         },
       ],
     },
