@@ -163,6 +163,11 @@ table {
   width: 5px;
   height: 10px;
 }
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #0e151c;

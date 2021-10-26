@@ -21,6 +21,11 @@ export default {
       name: 'Schedule',
       link: '/schedule',
     },
+    {
+      id: 'speakers',
+      name: 'Speakers',
+      link: '/speakers',
+    },
     // {
     //   id: 'nav-about',
     //   name: 'About',
