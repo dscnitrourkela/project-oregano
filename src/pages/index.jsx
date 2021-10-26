@@ -80,8 +80,8 @@ const Homepage = ({ location }) => {
         <Container>
           <Prizes />
           <Schedule />
-          <Tracks />
           <Speakers />
+          <Tracks />
           <Sponsors />
           <CommunitySection />
           <FAQ />
