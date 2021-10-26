@@ -3,6 +3,9 @@ import React, { useEffect } from 'react';
 // Libraries
 import styled from 'styled-components';
 
+// Components
+import { Heading4, Heading3, Body } from '..';
+
 const PrimeContainer = styled.div`
   width: 100vw;
   max-width: 100vw;
@@ -28,7 +31,6 @@ const Box1 = styled.div`
   grid-column: 1/2;
   border-radius: 8px;
   background: #17171d;
-  min-height: 600px;
   overflow: hidden;
 `;
 
@@ -36,10 +38,33 @@ const Box2 = styled.div`
   grid-column: 2/3;
   border-radius: 8px;
   background: #17171d;
-  min-height: 600px;
 `;
 
-const LiveSection = () => {
+const DetailsContainer = styled.div`
+  width: 100%;
+  height: auto;
+  padding: 1.5rem 1.5rem;
+`;
+
+const SpeakerDetails = styled.div`
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+const Img = styled.img`
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 0.6rem;
+  border-radius: 100%;
+`;
+
+const LiveSection = ({ youtubeLiveLink, title, img, speaker, designation }) => {
   useEffect(() => {
     function iframeLoaded() {
       const iFrameID = document.getElementById('idIframe');
@@ -60,7 +85,7 @@ const LiveSection = () => {
           <iframe
             width='100%'
             height='500'
-            src='https://www.youtube.com/embed/5eO0IUj7sjU'
+            src={youtubeLiveLink}
             title='YouTube video player'
             frameBorder='0'
             // eslint-disable-next-line max-len
@@ -68,6 +93,18 @@ const LiveSection = () => {
             allowFullScreen
             id='idIframe'
           />
+
+          <DetailsContainer>
+            <Heading3>{title}</Heading3>
+
+            <SpeakerDetails>
+              <Img src={img} />
+              <div>
+                <Heading4>{speaker}</Heading4>
+                <Body>{designation}</Body>
+              </div>
+            </SpeakerDetails>
+          </DetailsContainer>
         </Box1>
         <Box2 id='chat-embed-wrapper' />
       </Container>

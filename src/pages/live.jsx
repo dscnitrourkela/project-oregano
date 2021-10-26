@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+/* eslint-disable max-len */
+import React, { useEffect, useState } from 'react';
 
 // Libraries
 import { initializeApp } from 'firebase/app';
@@ -24,14 +25,16 @@ const app = initializeApp(config);
 const db = getFirestore(app);
 
 const Live = () => {
+  const [activeSession, setActiveSession] = useState(null);
+
   useEffect(() => {
     if (app) {
       const fetchData = async () => {
-        const trialCollection = collection(db, 'trial');
+        const trialCollection = collection(db, 'activeStream');
         const snapshot = await getDocs(trialCollection);
-        const docList = snapshot.docs.map((doc) => doc.data());
+        const docList = snapshot.docs.map((d) => d.data());
 
-        console.log(docList);
+        setActiveSession(docList[0]);
       };
 
       fetchData();
@@ -40,7 +43,13 @@ const Live = () => {
 
   return (
     <Layout>
-      <LiveSection />
+      <LiveSection
+        youtubeLiveLink={activeSession?.link}
+        title={activeSession?.title}
+        speaker={activeSession?.speaker}
+        img={activeSession?.img}
+        designation={activeSession?.designation}
+      />
 
       <Footer />
     </Layout>
