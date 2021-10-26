@@ -11,16 +11,14 @@ export const SpeakersContainer = styled.div`
        gap-5
        mt-10
    `}
-   overflow-y: hidden;
-   overflow-x: auto;
-   white-space: nowrap;
-   width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
 `;
 
 export const Card = styled.div`
   ${tw`
-      w-full
-      h-full
       rounded-xl
       bg-background-darker
 
@@ -31,7 +29,7 @@ export const Card = styled.div`
       m-0
       relative
   `};
-  width: 250px;
+  width: 260px;
   height: 350px;
 
   @media (max-width: 560px) {
@@ -65,7 +63,7 @@ export const Designation = styled(Heading4)`
     text-sm
   `}
   border-bottom: 3px solid white;
-  width: 235px;
+  width: 95%;
   margin-left: 6px;
   line-height: 1;
   overflow-wrap: break-word;
@@ -93,7 +91,7 @@ export const Topic = styled.div`
   line-height: 1.2;
   overflow-wrap: break-word;
   word-wrap: break-word;
-  width: 240px;
+  width: 100%;
   color: white;
   white-space: normal;
 
@@ -111,7 +109,7 @@ export const Img = styled.img`
     rounded-xl
     overflow-hidden
   `}
-  width: ${({ width }) => width}
+  width: ${({ width }) => width};
   object-fit: cover;
 `;
 
@@ -149,4 +147,13 @@ export const Timings = styled.div`
     flex
     pb-2
   `}
+`;
+
+export const Overlay = styled.div`
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
 `;
