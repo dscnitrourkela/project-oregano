@@ -320,5 +320,20 @@ export default {
         },
       ],
     },
+    {
+      image:
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635263438/hacknitr/gdsc_iter_nxuaa8.png',
+      width: '85%',
+      socials: [
+        {
+          icon: faLinkedin,
+          link: 'https://www.linkedin.com/company/gdsciter/',
+        },
+        {
+          icon: faGlobe,
+          link: 'https://gdsc.community.dev/institute-of-technical-education-research-bhubaneswar/',
+        },
+      ],
+    },
   ],
 };
