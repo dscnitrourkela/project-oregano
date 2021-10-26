@@ -30,14 +30,43 @@ const Card = styled.div`
   justify-content: space-between;
 `;
 
-const SessionList = () => (
+const SpeakerDetails = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+
+const Img = styled.img`
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 0.6rem;
+  border-radius: 100%;
+`;
+
+const SessionList = ({ sessionDetails }) => (
   <Box>
-    {[1, 2, 3, 4, 5].map((number) => (
-      <Card key={number}>
-        <Heading4>Some Heading</Heading4>
-        <Body>Some Body</Body>
-      </Card>
-    ))}
+    {sessionDetails?.map(
+      ({ img, date, time, name, title, designation = 'HackNITR 3.0 Speaker' }) => (
+        <Card key={name}>
+          <Heading4>{title}</Heading4>
+          <Body>
+            {date}, {time}
+          </Body>
+
+          <SpeakerDetails>
+            <Img src={img} />
+            <div>
+              <Heading4>{name}</Heading4>
+              <Body>{designation}</Body>
+            </div>
+          </SpeakerDetails>
+        </Card>
+      ),
+    )}
   </Box>
 );
 

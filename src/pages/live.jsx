@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 
 // Libraries
@@ -26,15 +25,30 @@ const db = getFirestore(app);
 
 const Live = () => {
   const [activeSession, setActiveSession] = useState(null);
+  const [sessionDetails, setSessionDetails] = useState([]);
 
   useEffect(() => {
     if (app) {
-      const fetchData = async () => {
-        const trialCollection = collection(db, 'activeStream');
-        const snapshot = await getDocs(trialCollection);
+      const fetchActiveSession = async () => {
+        const activeStreamCollection = collection(db, 'activeStream');
+        const snapshot = await getDocs(activeStreamCollection);
         const docList = snapshot.docs.map((d) => d.data());
 
         setActiveSession(docList[0]);
+        return Promise.resolve();
+      };
+
+      const fetchSessionDetails = async () => {
+        const sessionDetailsCollection = collection(db, 'livestream');
+        const snapshot = await getDocs(sessionDetailsCollection);
+        const docList = snapshot.docs.map((d) => d.data());
+
+        setSessionDetails(docList);
+        return Promise.resolve();
+      };
+
+      const fetchData = async () => {
+        await Promise.all([fetchActiveSession(), fetchSessionDetails()]);
       };
 
       fetchData();
@@ -49,6 +63,7 @@ const Live = () => {
         speaker={activeSession?.speaker}
         img={activeSession?.img}
         designation={activeSession?.designation}
+        sessionDetails={sessionDetails}
       />
 
       <Footer />

@@ -14,7 +14,6 @@ const PrimeContainer = styled.div`
   min-height: calc(100vh - 100px);
   padding-top: 100px;
   overflow-x: hidden;
-  /* max-height: calc(100vh - 150px); */
 `;
 
 const Container = styled.div`
@@ -58,12 +57,11 @@ const Img = styled.img`
   width: 60px;
   height: 60px;
   object-fit: cover;
-  object-position: center;
   margin-right: 0.6rem;
   border-radius: 100%;
 `;
 
-const LiveSection = ({ youtubeLiveLink, title, img, speaker, designation }) => {
+const LiveSection = ({ youtubeLiveLink, title, img, speaker, designation, sessionDetails }) => {
   useEffect(() => {
     function iframeLoaded() {
       const iFrameID = document.getElementById('idIframe');
@@ -106,7 +104,7 @@ const LiveSection = ({ youtubeLiveLink, title, img, speaker, designation }) => {
           </DetailsContainer>
         </Box1>
 
-        <SessionList />
+        <SessionList sessionDetails={sessionDetails} />
       </Container>
     </PrimeContainer>
   );
