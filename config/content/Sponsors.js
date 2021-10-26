@@ -212,6 +212,13 @@ export default {
       link: 'https://www.leadlearners.ca/',
       alt: 'Leading Learners',
     },
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/Group_1959_jv8dvd.png',
+      name: 'Ploomber',
+      size: '55%',
+      link: 'https://ploomber.io/',
+      alt: 'Leading Learners',
+    },
   ],
   'authentication-partner': [
     {

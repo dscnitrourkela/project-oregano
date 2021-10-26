@@ -116,6 +116,47 @@ const PRIZES = [
     },
     amount: '₹20,000',
     title: 'Overall 1st Prize',
+    prizes: [
+      {
+        prize: 'HackNITR Special Swag Box',
+      },
+      {
+        prize: '2-months Codedamn Premium Coupons for all members',
+      },
+      {
+        prize: '250$ Digitalocean credits',
+      },
+      {
+        prize: 'CodedamnMerch for all members',
+      },
+      {
+        prize: 'EggHead Premium Coupons for all members',
+      },
+      {
+        prize: 'Leading Learners Student Pack',
+      },
+      {
+        prize: ' Taskade Lifetime Pro Plan for all members',
+      },
+      {
+        prize: 'EchoAR Credits for all memberss',
+      },
+      {
+        prize: 'Repl.it Subscription for all members',
+      },
+      {
+        prize: 'Sashido Subscription for all members',
+      },
+      {
+        prize: 'Voiceflow Premium for all members',
+      },
+      {
+        prize: 'XYZ domain names for all members',
+      },
+      {
+        prize: 'Linode Credits for all members',
+      },
+    ],
   },
   {
     id: 'overall-prize-2',
@@ -126,6 +167,38 @@ const PRIZES = [
     },
     amount: '₹15,000',
     title: 'Overall 2nd Prize',
+    prizes: [
+      {
+        prize: 'HackNITR Special Swag Box',
+      },
+      {
+        prize: '250$ Digitalocean credits',
+      },
+      {
+        prize: 'EggHead Premium Coupons',
+      },
+      {
+        prize: 'Leading Learners Student Pack',
+      },
+      {
+        prize: 'Taskade Lifetime Pro Plan',
+      },
+      {
+        prize: 'Repl.it Subscription for all members',
+      },
+      {
+        prize: 'Sashido Subscription for all members',
+      },
+      {
+        prize: 'Voiceflow Premium for all members',
+      },
+      {
+        prize: 'XYZ domain names for all members',
+      },
+      {
+        prize: 'Linode Credits for all members',
+      },
+    ],
   },
   {
     id: 'overall-prize-3',
@@ -136,6 +209,38 @@ const PRIZES = [
     },
     amount: '₹10,000',
     title: 'Overall 3rd Prize',
+    prizes: [
+      {
+        prize: 'HackNITR Special Swag Box',
+      },
+      {
+        prize: '250$ Digitalocean credits',
+      },
+      {
+        prize: 'EggHead Premium Coupons',
+      },
+      {
+        prize: 'Leading Learners Student Pack',
+      },
+      {
+        prize: 'Taskade Lifetime Pro Plan',
+      },
+      {
+        prize: 'Repl.it Subscription for all members',
+      },
+      {
+        prize: 'Sashido Subscription for all members',
+      },
+      {
+        prize: 'Voiceflow Premium for all members',
+      },
+      {
+        prize: 'XYZ domain names for all members',
+      },
+      {
+        prize: 'Linode Credits for all members',
+      },
+    ],
   },
 ];
 
@@ -145,7 +250,7 @@ const OverallPrizes = () => {
   return (
     <Container>
       <PrizesContainer>
-        {PRIZES.map(({ medal, id, amount, title }) => (
+        {PRIZES.map(({ medal, id, amount, title, prizes }) => (
           <SinglePrizeContainer key={id}>
             <Medal color1={medal.color1} color2={medal.color2}>
               {medal.text}
@@ -167,18 +272,12 @@ const OverallPrizes = () => {
 
             <DetailsBox prizeId={id} isOpen={modalOpen === id} close={() => setModalOpen()}>
               <Heading3 style={{ textAlign: 'Left' }}>{title}</Heading3>
-              <List>
-                250$ Digitalocean credits <br />
-              </List>
-              <List>
-                EggHead Premium Coupons <br />
-              </List>
-              <List>
-                Leading Learners Student Pack <br />
-              </List>
-              <List>
-                Taskade Lifetime Pro Plan <br />
-              </List>
+              {prizes.map(({ prize }) => (
+                <List key={id}>
+                  {prize}
+                  <br />
+                </List>
+              ))}
             </DetailsBox>
           </SinglePrizeContainer>
         ))}

@@ -148,6 +148,19 @@ const TRACKS = [
     color1: '#FFC41D',
     color2: '#B98C0A',
   },
+  {
+    id: 'sponsored-track-prize-8',
+    title: 'Best Use of Auth0',
+    content:
+      ' Implement Auth0 into your project. The more features, complexity and creativity, the better! Rocketbook Reusable Smart Notebook. Up to 4 winners total (one team).',
+    alt: 'Auth0: Best Use of Auth0',
+    img: {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/kwoxuy26z8qsxc8w2g10.png',
+      width: '80%',
+    },
+    color1: '#71A0CE',
+    color2: '#3A7BD5',
+  },
 ];
 
 const MLHPrizes = () => (
