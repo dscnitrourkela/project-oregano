@@ -22,5 +22,9 @@
   {
     "fromPath": "/mlh-code-of-conduct",
     "toPath": "/mlh-code-of-conduct.pdf"
+  },
+  {
+    "fromPath": "/livestream",
+    "toPath": "/live"
   }
 ]
