@@ -128,6 +128,7 @@ const BeAHacker = () => {
 
   return (
     <SectionLayout
+      id='prizes'
       title='Win Exciting Prizes and Swags'
       description='Click on the tabs to see the various prizes'
     >

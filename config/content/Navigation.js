@@ -11,6 +11,16 @@ export default {
       name: 'Home',
       link: '/home',
     },
+    {
+      id: 'prizes',
+      name: 'Prizes',
+      link: '/prizes',
+    },
+    {
+      id: 'schedule',
+      name: 'Schedule',
+      link: '/schedule',
+    },
     // {
     //   id: 'nav-about',
     //   name: 'About',
@@ -21,11 +31,6 @@ export default {
       name: 'Tracks',
       link: '/tracks',
     },
-    // {
-    //   id: 'prizes',
-    //   name: 'Prizes',
-    //   link: '/prizes',
-    // },
     {
       id: 'sponsors',
       name: 'Sponsors',

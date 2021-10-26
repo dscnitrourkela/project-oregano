@@ -24,7 +24,6 @@ import {
   SEO,
   Footer,
   MLHBanner,
-  JoinUs,
   // JoinUs,
   Prizes,
   Stats,
