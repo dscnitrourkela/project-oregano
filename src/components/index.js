@@ -16,12 +16,18 @@ export { default as WhyWait } from './FaqSection/WhyWait';
 // Tracks section exports
 export { default as Tracks } from './TracksSection/Tracks';
 
+// Schedule section exports
+export { default as Schedule } from './Schedule/Schedule';
+
 // Sponsors section exports
 export { default as Sponsors } from './SponsorsSection/Sponsor';
 
 // Hacker section exports
 export { default as BeAHacker } from './HackerSection/BeAHacker';
 export { default as HackerCard } from './HackerSection/HackerCard';
+
+// Stats section export
+export { default as Stats } from './Stats/Stats';
 
 // Prizes section exports
 export { default as Prizes } from './Prizes/Main';

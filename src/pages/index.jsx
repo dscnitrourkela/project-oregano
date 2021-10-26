@@ -17,14 +17,17 @@ import {
   FAQ,
   Container,
   Tracks,
+  Schedule,
   Sponsors,
   BeAHacker,
   Layout,
   SEO,
   Footer,
   MLHBanner,
+  JoinUs,
   // JoinUs,
   Prizes,
+  Stats,
   TestimonialSection,
   CommunitySection,
 } from '../components';
@@ -76,13 +79,16 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
+          <Schedule />
           <Tracks />
           <Sponsors />
           <CommunitySection />
           <FAQ />
+          <Stats />
           <TestimonialSection />
           <BeAHacker />
         </Container>
+
         {/* <JoinUs /> */}
         <Footer />
       </Layout>
