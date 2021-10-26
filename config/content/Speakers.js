@@ -5,18 +5,32 @@ export default {
     'We have prepared a list of simple steps one needs to follow to become a true hacker. The person who attains all these abilities will yield the power to hack anything.',
   speakers: [
     {
-      id: 'speaker-1',
+      id: 'speaker-0',
       name: 'Shantanu Shubham',
       designation: 'SDE @Schlumberger',
       content: 'Roadmap To Competitive Programming & Career Guidance',
       alt: 'speaker: Shantanu Shubham',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-1_vqfeof.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/1620977022846_bvc0ij.jpg',
         width: '100%',
         height: '100%',
       },
       date: '28th Oct 2021',
       time: '7:00pm IST',
+    },
+    {
+      id: 'speaker-1',
+      name: 'Mehul Mohan',
+      designation: 'Founder @Codedamn',
+      content: 'Deep Dive into how Web works',
+      alt: 'speaker: Mehul Mohan',
+      img: {
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/1_poDssxSNV7AnDTAkUU5qeQ_1_bv66vw.png',
+        width: '100%',
+        height: '100%',
+      },
+      date: '28th Oct 2021',
+      time: '8:00pm IST',
     },
     {
       id: 'speaker-2',
@@ -25,7 +39,7 @@ export default {
       content: 'Build Your Personal Blog With Next.js, Storyblok, & Layer0',
       alt: 'speaker: Rishi Raj Jain',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634794608/project-oregano/speakers/s-2_yu6zxq.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/p12DEFkn_400x400_nuxknv.jpg',
         width: '100%',
         height: '100%',
       },
@@ -39,7 +53,7 @@ export default {
       content: 'Introduction to the world of Product Management',
       alt: 'speaker: Suhas Motwani',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/s-3_tpuc91.png',
+        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/speakers/1545987875194_1_orfq4n.png',
         width: '100%',
         height: '100%',
       },
