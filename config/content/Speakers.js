@@ -143,7 +143,7 @@ export default {
         height: '100%',
       },
       date: '30th Oct 2021',
-      time: '9:00am IST',
+      time: '10:30am IST',
     },
     {
       id: 'speaker-8.2',
