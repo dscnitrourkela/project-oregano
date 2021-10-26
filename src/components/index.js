@@ -41,3 +41,6 @@ export { default as CommunitySection } from './CommunitySection/CommunitySection
 // Testimonial Section Exports
 export { default as TestimonialComponent } from './Testimonial/Component';
 export { default as TestimonialSection } from './Testimonial/Testimonial';
+
+// Livestream section
+export { default as LiveSection } from './Livestream/LiveSection';

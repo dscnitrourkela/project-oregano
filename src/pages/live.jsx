@@ -4,6 +4,9 @@ import React, { useEffect } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
+// Components
+import { Layout, Footer, LiveSection } from '../components';
+
 // Firebase web config
 const config = {
   type: process.env.GATSBY_TYPE,
@@ -36,9 +39,11 @@ const Live = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Livestream</h2>
-    </div>
+    <Layout>
+      <LiveSection />
+
+      <Footer />
+    </Layout>
   );
 };
 export default Live;
