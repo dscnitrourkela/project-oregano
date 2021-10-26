@@ -91,7 +91,7 @@ export default {
     {
       id: 'speaker-6',
       name: 'Shaswat Lenka',
-      designation: 'Opencode NITR',
+      designation: 'Founder Opencode NITR',
       content: 'Making a career out of hackathons',
       alt: 'speaker: Shaswat Lenka',
       img: {
