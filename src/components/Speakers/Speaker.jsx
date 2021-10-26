@@ -11,13 +11,11 @@ import { speakers } from '../../../config/content';
 function Speakers() {
   return (
     <SectionLayout id='speakers' title={speakers.title} description={speakers.content}>
-     <SpeakersContainer>
-       {speakers.speakers.map((card) => (
-         <>
+      <SpeakersContainer>
+        {speakers.speakers.map((card) => (
           <Card key={card.id} card={card} />
-          </>
-         ))}
-     </SpeakersContainer>
+        ))}
+      </SpeakersContainer>
     </SectionLayout>
   );
 }
