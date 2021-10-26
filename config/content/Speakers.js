@@ -77,7 +77,7 @@ export default {
     {
       id: 'speaker-5',
       name: 'Abel Mathew',
-      designation: 'HackNITR 1.0 Lead',
+      designation: 'Angelhack Ambassador',
       content: 'Making a career out of hackathons',
       alt: 'speaker: Abel Mathew',
       img: {
@@ -91,7 +91,7 @@ export default {
     {
       id: 'speaker-6',
       name: 'Shaswat Lenka',
-      designation: 'HackNITR 1.0 Lead',
+      designation: 'Opencode NITR',
       content: 'Making a career out of hackathons',
       alt: 'speaker: Shaswat Lenka',
       img: {
