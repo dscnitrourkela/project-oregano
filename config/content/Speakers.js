@@ -77,7 +77,7 @@ export default {
     {
       id: 'speaker-5',
       name: 'Abel Mathew',
-      designation: 'Angelhack Ambassador',
+      designation: 'Google Cloud Innovators Champion',
       content: 'Making a career out of hackathons',
       alt: 'speaker: Abel Mathew',
       img: {
