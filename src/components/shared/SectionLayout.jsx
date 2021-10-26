@@ -19,7 +19,7 @@ const SectionContainer = styled.div`
   `}
 `;
 
-const Description = styled(Body)`
+export const Description = styled(Body)`
   ${tw`
     mt-2
     w-3/4
