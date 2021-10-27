@@ -217,7 +217,45 @@ export default {
       name: 'Ploomber',
       size: '55%',
       link: 'https://ploomber.io/',
-      alt: 'Leading Learners',
+      alt: 'Ploomber',
+    },
+  ],
+  'media-partners': [
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/media%20partners/ts-bms-logo_m46bn9.svg',
+      name: 'TownScript',
+      size: '100%',
+      link: 'https://www.townscript.com/e/hacknitr-30-313200',
+      alt: 'TownScript',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/media%20partners/logo-claim-removebg-preview_pzhsmg.png',
+      name: 'CrossWeb',
+      size: '100%',
+      link: 'https://crossweb.pl/en/events/hacknitr-3-0-pazdziernik-2021/',
+      alt: 'CrossWeb',
+    },
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/media%20partners/1024px-Eventbrite_Logo.svg_gwrlq3.png',
+      name: 'EventBrite',
+      size: '85%',
+      link: 'https://www.eventbrite.com/e/hacknitr-30-tickets-182495126837',
+      alt: 'EventBrite',
+    },
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/media%20partners/noticeboard_j4kk4c.png',
+      name: 'Noticebard',
+      size: '80%',
+      link: '',
+      alt: 'Noticebard',
+    },
+    {
+      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/media%20partners/bootlogo_nwqfzn.png',
+      name: '10 Times',
+      size: '150%',
+      link: 'https://10times.com/e1z0-7r30-rpsz',
+      alt: '10 Times',
     },
   ],
   'authentication-partner': [
