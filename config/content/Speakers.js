@@ -188,7 +188,7 @@ export default {
       time: '12:00pm IST',
     },
     {
-      id: 'speaker-10',
+      id: 'speaker-9.1',
       name: 'Roshni Biswas',
       designation: 'SE @Knowledge Systems',
       content: 'Solving Deep Tech Problems with Open Source',
@@ -202,7 +202,7 @@ export default {
       time: '7:00pm IST',
     },
     {
-      id: 'speaker-11',
+      id: 'speaker-9.2',
       name: 'Anurag Saha Roy',
       designation: 'Co-Founder of Wikilimo',
       content: 'Solving Deep Tech Problems with Open Source',

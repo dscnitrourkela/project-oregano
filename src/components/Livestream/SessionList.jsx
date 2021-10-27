@@ -49,8 +49,9 @@ const Img = styled.img`
 
 const SessionList = ({ sessionDetails }) => (
   <Box>
-    {sessionDetails?.map(
-      ({ img, date, time, name, title, designation = 'HackNITR 3.0 Speaker' }) => (
+    {sessionDetails
+      ?.filter(({ hasCompleted }) => !hasCompleted)
+      ?.map(({ img, date, time, name, title, designation = 'HackNITR 3.0 Speaker' }) => (
         <Card key={name}>
           <Heading4>{title}</Heading4>
           <Body>
@@ -65,8 +66,7 @@ const SessionList = ({ sessionDetails }) => (
             </div>
           </SpeakerDetails>
         </Card>
-      ),
-    )}
+      ))}
   </Box>
 );
 

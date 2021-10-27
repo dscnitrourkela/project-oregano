@@ -27,6 +27,28 @@ const Live = () => {
   const [activeSession, setActiveSession] = useState(null);
   const [sessionDetails, setSessionDetails] = useState([]);
 
+  /**
+   * Script used to bulk update firestore details of scripts
+   */
+
+  // useEffect(() => {
+  //   const fetchData = () => {
+  //     speakers.speakers.forEach(async ({ id, designation, img, name, content, date, time }) => {
+  //       await setDoc(doc(db, 'livestream', `hacknitr-${id}`), {
+  //         img: img.src,
+  //         name,
+  //         date,
+  //         time,
+  //         title: content,
+  //         hasCompleted: false,
+  //         designation,
+  //       });
+  //     });
+  //   };
+
+  //   fetchData();
+  // }, []);
+
   useEffect(() => {
     if (app) {
       const fetchActiveSession = async () => {
