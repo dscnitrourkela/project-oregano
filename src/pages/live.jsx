@@ -26,28 +26,10 @@ const db = getFirestore(app);
 const Live = () => {
   const [activeSession, setActiveSession] = useState(null);
   const [sessionDetails, setSessionDetails] = useState([]);
-
-  /**
-   * Script used to bulk update firestore details of scripts
-   */
-
-  // useEffect(() => {
-  //   const fetchData = () => {
-  //     speakers.speakers.forEach(async ({ id, designation, img, name, content, date, time }) => {
-  //       await setDoc(doc(db, 'livestream', `hacknitr-${id}`), {
-  //         img: img.src,
-  //         name,
-  //         date,
-  //         time,
-  //         title: content,
-  //         hasCompleted: false,
-  //         designation,
-  //       });
-  //     });
-  //   };
-
-  //   fetchData();
-  // }, []);
+  const [containerDimensions, setContainerDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
 
   useEffect(() => {
     if (app) {
@@ -77,6 +59,21 @@ const Live = () => {
     }
   }, []);
 
+  useEffect(() => {
+    function containerLoaded() {
+      const container = document.getElementById('stream-container');
+      if (container) {
+        const { width, height } = container.getBoundingClientRect();
+        setContainerDimensions({
+          width,
+          height,
+        });
+      }
+    }
+
+    containerLoaded();
+  }, [activeSession]);
+
   return (
     <Layout>
       <LiveSection
@@ -86,6 +83,7 @@ const Live = () => {
         img={activeSession?.img}
         designation={activeSession?.designation}
         sessionDetails={sessionDetails}
+        containerDimensions={containerDimensions}
       />
 
       <Footer />
