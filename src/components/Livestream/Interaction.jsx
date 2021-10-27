@@ -15,6 +15,10 @@ const Box = styled.div`
   max-height: calc(100vh - 150px);
   overflow-y: hidden;
   padding-bottom: 0px;
+
+  @media (max-width: 700px) {
+    grid-column: 1/2;
+  }
 `;
 
 const NavContainer = styled.div`

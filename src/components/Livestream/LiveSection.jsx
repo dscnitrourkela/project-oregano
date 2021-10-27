@@ -28,6 +28,9 @@ const Container = styled.div`
 
   @media (max-width: 700px) {
     width: 95%;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    align-items: start;
   }
 `;
 
@@ -36,6 +39,10 @@ const Box1 = styled.div`
   border-radius: 8px;
   background: #17171d;
   overflow: hidden;
+
+  @media (max-width: 700px) {
+    grid-column: 1/2;
+  }
 `;
 
 const DetailsContainer = styled.div`
