@@ -30,7 +30,7 @@ export default {
   cards: [
     {
       image:
-        'https://res.cloudinary.com/riteshsp2000/image/upload/v1634731000/project-oregano/community/Rectangle-Light-10_wprvkx.png',
+        'https://res.cloudinary.com/sambitsankalp/image/upload/v1635348140/hacknitr/gdsc_iiit_s6gzte.png',
       width: '85%',
       socials: [
         {
