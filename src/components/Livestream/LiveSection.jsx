@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 
 // Libraries
@@ -6,8 +5,7 @@ import styled from 'styled-components';
 
 // Components
 import { Heading4, Heading3, Body } from '..';
-import SessionList from './SessionList';
-import Slido from './Slido';
+import Interaction from './Interaction';
 
 const PrimeContainer = styled.div`
   width: 100vw;
@@ -63,15 +61,6 @@ const Img = styled.img`
   border-radius: 100%;
 `;
 
-const Box = styled.div`
-  grid-column: 2/3;
-  border-radius: 4px;
-  height: auto;
-  max-height: calc(100vh - 150px);
-  overflow-y: auto;
-  padding-bottom: 0px;
-`;
-
 const LiveSection = ({
   youtubeLiveLink,
   title,
@@ -123,10 +112,7 @@ const LiveSection = ({
           </DetailsContainer>
         </Box1>
 
-        {/* <SessionList sessionDetails={sessionDetails} /> */}
-        <Box>
-          <Slido containerDimensions={containerDimensions} />
-        </Box>
+        <Interaction containerDimensions={containerDimensions} sessionDetails={sessionDetails} />
       </Container>
     </PrimeContainer>
   );

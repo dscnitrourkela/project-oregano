@@ -17,7 +17,7 @@ const Slido = ({ containerDimensions }) => (
       height='100%'
       width='100%'
       frameBorder='0'
-      style={{ minHeight: `${containerDimensions.height}px` }}
+      style={{ minHeight: `${containerDimensions.height - 50}px` }}
       title='Slido'
     />
   </Container>
