@@ -156,6 +156,9 @@ const PRIZES = [
       {
         prize: 'Linode Credits for all members',
       },
+      {
+        prize: 'Codedamn Premium for 1-month',
+      },
     ],
   },
   {
@@ -198,6 +201,9 @@ const PRIZES = [
       {
         prize: 'Linode Credits for all members',
       },
+      {
+        prize: 'Codedamn Premium for 1-month',
+      },
     ],
   },
   {
@@ -239,6 +245,9 @@ const PRIZES = [
       },
       {
         prize: 'Linode Credits for all members',
+      },
+      {
+        prize: 'Codedamn Premium for 1-month',
       },
     ],
   },

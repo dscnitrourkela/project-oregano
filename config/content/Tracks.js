@@ -1,15 +1,27 @@
 /* eslint-disable max-len */
 const TrackPrizes = [
-  '250$ Digital Ocean Credits',
+  '250$ Digital Ocean Credits ',
+  '2k Cash prize',
   'Egghead Coupon - 1 year',
   'Wolfram Lifetime Access',
+  'Taskade Lifetime Pro Plan',
+  'Repl.it Subscription for all members',
+  'Sashido Subscription for all members',
+  'Voiceflow Premium for all members',
   '',
+  // 'XYZ domain names for all members',
+  // 'Linode Credits for all members',
 ];
 
 const AdditionalTrackPrizes = [
   '150$ Digital Ocean Credits',
+  '2k Cash Prize',
   'Egghead Coupon - 1 year',
   'Leading Learners Access',
+  'Taskade Lifetime Pro Plan',
+  'Repl.it Subscription for all members',
+  'Sashido Subscription for all members',
+  'Voiceflow Premium for all members',
   '',
 ];
 

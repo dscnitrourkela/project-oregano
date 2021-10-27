@@ -25,11 +25,10 @@ const Front = styled(FlippingPrizeFront)`
 
 const Back = styled(FlippingPrizeBack)`
   background: ${({ deg, color1, color2 }) => `linear-gradient(${deg}, ${color1}, ${color2})`};
-
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 `;
 
 const Img = styled.img`
@@ -39,6 +38,7 @@ const Img = styled.img`
 
 const List = styled(Body)`
   color: white;
+  font-size: small;
 `;
 
 const TRACKS = [...TRACK_DETAILS.tracks, ...TRACK_DETAILS.additionalTracks];

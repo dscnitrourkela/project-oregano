@@ -46,6 +46,13 @@ function Sponsor() {
       span: 'span 3',
     },
     {
+      title: 'MEDIA PARTNERS',
+      sponsors: sponsors['media-partners'],
+      bcolor: 'transparent',
+      span: 'span 5',
+      gap: '0px',
+    },
+    {
       title: 'AUTHENTICATION PARTNER',
       sponsors: sponsors['authentication-partner'],
       bcolor: 'transparent',
