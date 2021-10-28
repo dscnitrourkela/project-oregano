@@ -8,6 +8,8 @@ const Layout = styled.div`
     relative
     w-full
   `}
+
+  overflow-x: hidden;
 `;
 const Nav = styled.div`
   ${tw`
