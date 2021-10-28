@@ -58,6 +58,10 @@ function MobileNav() {
               </Link>
             </li>
           ))}
+
+          <Link to='/live' style={{ textDecoration: 'none' }}>
+            <Body className='navLink'>Live</Body>
+          </Link>
         </ul>
       </div>
     </StyledMobileNav>

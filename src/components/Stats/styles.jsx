@@ -25,7 +25,7 @@ export const Description = styled.h2`
 
 export const Name = styled.h1`
   ${tw`
-   text-lg 
+   text-lg
    font-bold
    font-black
    2xsm:text-base
@@ -40,7 +40,7 @@ export const Topic = styled.h2`
    mb-0
    text-base
    2xsm:text-sm
-   2xsm:text-xs 2xsm:mt-1 
+   2xsm:text-xs 2xsm:mt-1
   `}
 `;
 
@@ -69,7 +69,6 @@ export const YellowDiv = styled.div`
        -top-10
    `}
   border: 1px solid #ebb722;
-  box-shadow: 0 0 100px #ebb722;
 `;
 
 export const BlueDiv = styled.div`
@@ -87,7 +86,6 @@ export const BlueDiv = styled.div`
        -top-20
    `}
   border: 1px solid #71A0CE;
-  box-shadow: 0 0 100px #71a0ce;
 `;
 
 export const GreenDiv = styled.div`
@@ -109,7 +107,6 @@ export const GreenDiv = styled.div`
 
    `}
   border: 1px solid #8FA963;
-  box-shadow: 0 0 100px #8fa963;
 `;
 
 export const StatsContainer = styled.div`
@@ -146,7 +143,7 @@ export const CardContainer = styled.div`
   mid:-mt-1 mid:w-70/100
   sm:mt-0
   sm:w-70/100
-  sxm:w-2/3 
+  sxm:w-2/3
   sxm:-mt-10
   sxm:top-24
   sxm:w-3/4
@@ -168,7 +165,7 @@ export const Cards = styled.div`
       p-5
       xl:py-3 xl:px-1 xl:gap-5
       lg:py-3 lg:px-3
-      sm:py-3 
+      sm:py-3
       sxm:gap-4 sxm:px-2 sxm:py-2
       2xsm:p-1  2xsm:h-18 2xsm:mt-3 2xsm:gap-4
       font-poppins
@@ -178,7 +175,7 @@ export const Cards = styled.div`
 export const MobImage = styled.img`
   ${tw`
   relative
-  w-1/2 
+  w-1/2
   ml-60
   mr-20
   -top-10
@@ -188,7 +185,7 @@ export const MobImage = styled.img`
   mid:w-60/100
   lg:w-4/10 lg:ml-96
   md:w-1/2 md:ml-64
-  3xsm:w-60/100 3xsm:ml-28 
+  3xsm:w-60/100 3xsm:ml-28
   `}
   grid-area: 1/1;
 `;

@@ -3,12 +3,13 @@ import React from 'react';
 // Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Link } from 'gatsby';
 
 // Components
-import { Heading1, Body, HighlightBody } from '../shared';
+import { Heading1, Body, HighlightBody, Heading4 } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
-import DiscordButton from '../shared/DiscordButton';
-import DiscordMobile from '../shared/DiscordMobile';
+// import DiscordButton from '../shared/DiscordButton';
+// import DiscordMobile from '../shared/DiscordMobile';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -60,15 +61,20 @@ const TimeImg = styled.img`
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
-  align-items: center;
   margin-top: 20px;
+`;
 
-  @media (max-width: 542px) {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 9px 14px;
+  border-radius: 4px;
+  margin-top: 14px;
 `;
 
 function HeroContent() {
@@ -84,8 +90,14 @@ function HeroContent() {
       ))}
       <Wrapper>
         <DevfolioButton />
-        <DiscordButton />
-        <DiscordMobile />
+
+        <Link to='/live' style={{ textDecoration: 'none', color: '#27333F' }}>
+          <ButtonWrapper>
+            <Heading4 style={{ color: '#27333F', fontWeight: 'bold' }}>Watch Live</Heading4>
+          </ButtonWrapper>
+        </Link>
+        {/* <DiscordButton /> */}
+        {/* <DiscordMobile /> */}
       </Wrapper>
     </ContentContainer>
   );

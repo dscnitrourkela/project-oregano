@@ -6,11 +6,11 @@ export default {
     alt: 'HackNITR 3.0',
   },
   navItems: [
-    {
-      id: 'home',
-      name: 'Home',
-      link: '/home',
-    },
+    // {
+    //   id: 'home',
+    //   name: 'Home',
+    //   link: '/home',
+    // },
     {
       id: 'prizes',
       name: 'Prizes',

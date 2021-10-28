@@ -37,7 +37,9 @@ function DesktopNav() {
       <Container>
         <nav className='navWrapper'>
           <div className='navLeft'>
-            <Logo src={nav.logo.src} alt={nav.logo.alt} />
+            <Link to='/'>
+              <Logo src={nav.logo.src} alt={nav.logo.alt} />
+            </Link>
           </div>
 
           <div className='navRight'>
@@ -59,6 +61,10 @@ function DesktopNav() {
                   </Link>
                 </li>
               ))}
+
+              <Link to='/live' style={{ textDecoration: 'none' }}>
+                <Body className='navLink'>Live</Body>
+              </Link>
             </ul>
           </div>
 
