@@ -62,6 +62,13 @@ function DesktopNav() {
                 </li>
               ))}
 
+              <Link
+                href='https://frames.hacknitr.tech'
+                style={{ textDecoration: 'none', marginRight: '5%' }}
+              >
+                <Body className='navLink'>Frame</Body>
+              </Link>
+
               <Link to='/live' style={{ textDecoration: 'none' }}>
                 <Body className='navLink'>Live</Body>
               </Link>
