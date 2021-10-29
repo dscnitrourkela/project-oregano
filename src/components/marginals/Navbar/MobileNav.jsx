@@ -60,7 +60,9 @@ function MobileNav() {
           ))}
 
           <Link to='/live' style={{ textDecoration: 'none' }}>
-            <Body className='navLink'>Live</Body>
+            <li className='listItem' role='menuitem' tabIndex='0'>
+              <Body className='link'>Live</Body>
+            </li>
           </Link>
         </ul>
       </div>
