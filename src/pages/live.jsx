@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 
 // Libraries
 import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore, collection, getDocs, onSnapshot, doc } from 'firebase/firestore';
 
 // Components
 import { Layout, Footer, LiveSection } from '../components';
@@ -34,21 +35,18 @@ const Live = () => {
   useEffect(() => {
     if (app) {
       const fetchActiveSession = async () => {
-        const activeStreamCollection = collection(db, 'activeStream');
-        const snapshot = await getDocs(activeStreamCollection);
-        const docList = snapshot.docs.map((d) => d.data());
-
-        setActiveSession(docList[0]);
-        return Promise.resolve();
+        const unsub = onSnapshot(doc(db, 'activeStream', 'ZolbxvkoBNzDU1o2JDTd'), (snap) => {
+          setActiveSession(snap.data());
+          return Promise.resolve();
+        });
       };
 
       const fetchSessionDetails = async () => {
-        const sessionDetailsCollection = collection(db, 'livestream');
-        const snapshot = await getDocs(sessionDetailsCollection);
-        const docList = snapshot.docs.map((d) => d.data());
-
-        setSessionDetails(docList);
-        return Promise.resolve();
+        const unsub = onSnapshot(collection(db, 'livestream'), (snap) => {
+          const docList = snap.docs.map((d) => d.data());
+          setSessionDetails(docList);
+          return Promise.resolve();
+        });
       };
 
       const fetchData = async () => {
