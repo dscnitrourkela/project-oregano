@@ -223,8 +223,9 @@ const link4 = ics(event4);
 const link5 = ics(event5);
 
 export default {
-  title: 'Moments',
-  content: ' Keep tweeting at #hacknitr to get featured',
+  title: 'Mark Your Calendars!',
+  content:
+    'We have prepared a list of simple steps one needs to follow to become a true hacker. The person who attains all these abilities will yield the power to hack anything.',
   button:
     'https://calendar.google.com/calendar/u/0/r?cid=b0buee3m61snoq0bfi0n5g7hgnof2st4@import.calendar.google.com',
   day1: [

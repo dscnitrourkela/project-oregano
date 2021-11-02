@@ -16,8 +16,11 @@ export { default as WhyWait } from './FaqSection/WhyWait';
 // Tracks section exports
 export { default as Tracks } from './TracksSection/Tracks';
 
-// Schedule section exports
-export { default as Schedule } from './Schedule/Schedule';
+// Moments section exports
+export { default as Moments } from './Moments/Moments';
+
+// // Schedule section exports
+// export { default as Schedule } from './Schedule/Schedule';
 
 // Speaker section exports
 export { default as Speakers } from './Speakers/Speaker';

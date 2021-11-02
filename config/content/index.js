@@ -1,5 +1,6 @@
 export { default as hero } from './Hero';
 export { default as tracks } from './Tracks';
+export { default as moments } from './Moments';
 export { default as schedule } from './Schedule';
 export { default as sponsors } from './Sponsors';
 export { default as faq } from './FAQ';
