@@ -74,6 +74,9 @@ module.exports = {
       sxm: { max: '600px' },
       // => @media {max-width: 600px}{...}
 
+      '1xsm': { max: '540px' },
+      // => @media {max-width: 540px}{...}
+
       '2xsm': { max: '500px' },
       // => @media {max-width: 500px}{...}
 

@@ -13,9 +13,9 @@ import { schedule } from '../../../config/content/index';
 function Schedule() {
   return (
     <SectionLayout id='schedule' title={schedule.title} description={schedule.content}>
-      <a href={schedule.button}>
+      {/* <a href={schedule.button}>
         <Buttton>Add To Calendar</Buttton>
-      </a>
+      </a> */}
 
       <Wrapper>
         {/* <DateContainer>

@@ -17,7 +17,8 @@ import {
   FAQ,
   Container,
   Tracks,
-  Schedule,
+  Moments,
+  // Schedule,
   Speakers,
   Sponsors,
   BeAHacker,
@@ -79,7 +80,7 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
-          <Schedule />
+          <Moments />
           <Speakers />
           <Tracks />
           <Sponsors />

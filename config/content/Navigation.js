@@ -17,10 +17,15 @@ export default {
       link: '/prizes',
     },
     {
-      id: 'schedule',
-      name: 'Schedule',
-      link: '/schedule',
+      id: 'moments',
+      name: 'Moments',
+      link: '/moments',
     },
+    // {
+    //   id: 'schedule',
+    //   name: 'Schedule',
+    //   link: '/schedule',
+    // },
     {
       id: 'speakers',
       name: 'Speakers',

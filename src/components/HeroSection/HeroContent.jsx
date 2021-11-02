@@ -8,8 +8,8 @@ import { Link } from 'gatsby';
 // Components
 import { Heading1, Body, HighlightBody, Heading4 } from '../shared';
 import DevfolioButton from '../shared/DevfolioButton';
-// import DiscordButton from '../shared/DiscordButton';
-// import DiscordMobile from '../shared/DiscordMobile';
+import DiscordButton from '../shared/DiscordButton';
+import DiscordMobile from '../shared/DiscordMobile';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -61,10 +61,13 @@ const TimeImg = styled.img`
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
+  ${tw`
+  1xsm:flex-col
+`}
 `;
 
 const ButtonWrapper = styled.div`
@@ -90,14 +93,13 @@ function HeroContent() {
       ))}
       <Wrapper>
         <DevfolioButton />
-
-        <Link to='/live' style={{ textDecoration: 'none', color: '#27333F' }}>
+        <DiscordButton />
+        {/* <Link to='/live' style={{ textDecoration: 'none', color: '#27333F' }}>
           <ButtonWrapper>
             <Heading4 style={{ color: '#27333F', fontWeight: 'bold' }}>Watch Live</Heading4>
           </ButtonWrapper>
-        </Link>
-        {/* <DiscordButton /> */}
-        {/* <DiscordMobile /> */}
+        </Link> */}
+        <DiscordMobile />
       </Wrapper>
     </ContentContainer>
   );
