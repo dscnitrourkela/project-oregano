@@ -53,9 +53,9 @@ function Ticker() {
   return (
     <TickerContainer className='TickerContainer'>
       <TickerMover className='TickerMover'>
-        <ItemContainer>
+        {/* <ItemContainer>
           <Heading2 style={{ marginBottom: 0 }}>HackNITR is now live!</Heading2>
-        </ItemContainer>
+        </ItemContainer> */}
         {[...sponsors.alpha, ...sponsors.beta, ...sponsors['authentication-partner']].map(
           ({ name, src, width }) => (
             <TickerItem key={name} source={src} alt={name} size={width} />

@@ -13,9 +13,9 @@ import { schedule } from '../../../config/content/index';
 function Schedule() {
   return (
     <SectionLayout id='schedule' title={schedule.title} description={schedule.content}>
-      <a href={schedule.button}>
+      {/* <a href={schedule.button}>
         <Buttton>Add To Calendar</Buttton>
-      </a>
+      </a> */}
 
       <Wrapper>
         {/* <DateContainer>
@@ -28,7 +28,7 @@ function Schedule() {
             <Events />
           </RowContainer> */}
 
-        <iframe
+        {/* <iframe
           className='airtable-embed'
           src='https://airtable.com/embed/shr3hO4GmOExTOsWA?backgroundColor=blue'
           frameborder='0'
@@ -36,6 +36,16 @@ function Schedule() {
           width='1250'
           height='600'
           style={{ background: 'transparent', border: '1px solid #ccc' }}
+        ></iframe> */}
+        <iframe
+          allowfullscreen
+          id='wallsio-iframe'
+          src='https://my.walls.io/k4eyr?nobackground=1&amp;show_header=0'
+          width='1250'
+          height='600'
+          style={{ background: 'transparent', border: '1px solid #ccc' }}
+          loading='lazy'
+          title='My social wall'
         ></iframe>
       </Wrapper>
     </SectionLayout>
