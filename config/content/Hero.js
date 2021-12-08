@@ -18,7 +18,7 @@ export default {
     },
   },
   img: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/v1638908198/HackNITR/Illustartion_qbdtpn.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/Illustartion_qbdtpn.webp',
     alt: 'Howdy buddy! We are back with another awesome virtual hackathon, HackNITR',
   },
 };
