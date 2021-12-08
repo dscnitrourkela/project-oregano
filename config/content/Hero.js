@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   dates: {
-    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/xoptbvvefk1jrkb5pjnp.png',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/v1638908245/HackNITR/Group_105_rascmq.webp',
     alt: 'Image representing dates of the HackNITR Hackathon happening from 28-31 October 2021',
   },
   title: 'HackNITR 3.0',
