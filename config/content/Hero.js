@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   dates: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/Group_105_rascmq.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_105_ymghqp.png',
     alt: 'Image representing dates of the HackNITR Hackathon happening from 28-31 October 2021',
   },
   title: 'HackNITR 3.0',
@@ -18,7 +18,7 @@ export default {
     },
   },
   img: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/Illustartion_qbdtpn.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Illustartion_vjqumg.png',
     alt: 'Howdy buddy! We are back with another awesome virtual hackathon, HackNITR',
   },
 };

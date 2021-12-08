@@ -9,15 +9,15 @@ export default {
     alt: '',
   },
   toyImg: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/ToyFaces_Colored_BG_8_mr5pca.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/ToyFaces_Colored_BG_8_qzkbcz.png',
     alt: 'Toy Chat Profile',
   },
   HackNITR: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/Group_86_okad4j.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_86_fgkka6.png',
     alt: 'HackNITR Chat Profile',
   },
   email: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/HackNITR/Group_97_ksr43m.webp',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_97_rjvij0.png',
     alt: 'Email Illustration',
   },
   questions: {
