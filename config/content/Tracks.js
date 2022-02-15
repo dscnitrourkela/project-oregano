@@ -34,7 +34,7 @@ export default {
         'This track is a reminder of the beauty of inclusion and equality. Base your hacks on altering the social norms and build for the society on the lines of women empowerment, gender emancipation and societal justice.',
       alt: 'Inclusivity Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/wmtxanr1wwg3eocbd9t4.png',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_1_nhwkro.png',
         width: '80%',
       },
       color1: '#FFC41D',
@@ -48,7 +48,7 @@ export default {
         'This track serves to build for the community. Build for solving the problems of the society. Find solutions for the problems in healthcare, education etc. Each and every project that makes our lives better will adore this track.',
       alt: 'Community Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/sbqv2czigt2ye3ajy2vx.png',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_121_2_dma5gh.png',
         width: '65%',
       },
       color1: '#71A0CE',
@@ -62,8 +62,8 @@ export default {
         'This track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
       alt: 'Sustainability Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/or6nxtwgfsfowpr0jvpa.png',
-        width: '48%',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/plant_ukfeoq.png',
+        width: '50%',
       },
       color1: '#8FA963',
       color2: '#648B23',
@@ -76,8 +76,8 @@ export default {
         "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
       alt: 'Open Innovity Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/uuaaziqsetssr8gz76dn.png',
-        width: '50%',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Saly-43_n6atnu.png',
+        width: '65%',
       },
       color1: '#E78967',
       color2: '#CA5024',
@@ -92,7 +92,7 @@ export default {
         "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
       alt: 'Open Innovity Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/kerjwdjmtjbedee6v71a.png',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/ToyFaces_Tansparent_BG_47_1_ggn8zl.png',
         width: '50%',
       },
       color1: '#D290FD',
@@ -106,7 +106,7 @@ export default {
         "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
       alt: 'Open Innovity Icon',
       img: {
-        src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/irpi7magfhm0ixwnnk2i.png',
+        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/clock_mba6wb.png',
         width: '50%',
       },
       color1: '#8D8D8C',

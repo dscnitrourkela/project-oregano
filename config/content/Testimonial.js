@@ -16,6 +16,5 @@ export default {
   ],
   lorem:
     'Lorem ipsum dolor sit amet, consec adipis elit. Diam posuere vierra in. Non varius quis et interdum acusan arcu, id tincidunt. Sem eget nulla eleifend ullamcorper lacus. Est, non',
-  apostrophe:
-    'https://res.cloudinary.com/riteshsp2000/image/upload/v1633168712/project-oregano/assets/dg9gjg3rhs3pkxmztmhg.png',
+  apostrophe: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/jbw8gaszeifeqnq2us0w.png',
 };

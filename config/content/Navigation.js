@@ -2,7 +2,7 @@
 export default {
   title: 'Navigation',
   logo: {
-    src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/hkmogkgvx6kpf07xbln8.png',
+    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/logo1_rg97i6.png',
     alt: 'HackNITR 3.0',
   },
   navItems: [

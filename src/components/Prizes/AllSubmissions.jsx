@@ -45,49 +45,49 @@ const PRIZES = [
   // },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/xffabbcsz6p7ddyp3li0.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/echoAR_-_Logo_2020_-_Knockout_c9smwf.png',
       width: '70%',
     },
     title: 'EchoAR Credits',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/jcr1qdx3oivszgrpxqml.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/lincode_y9pcdh.png',
       width: '70%',
     },
     title: 'Linode Credits',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/delta/vs6j6vhnblodwddpnxeu.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/Untitled_nqdjaf.png',
       width: '70%',
     },
     title: 'Repl.it Subscription',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/iylv4cyswfjzoydb3why.png',
-      width: '70%',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/sashido_xiu6is.png',
+      width: '75%',
     },
     title: 'Shashido Subscription',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/vgblcn40kjajxwxmph68.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/taskade-circle-logo-full-white_iakfy1.png',
       width: '70%',
     },
     title: 'Taskade 1yr Subscription',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1634369574/project-oregano/sponsors/gamma/hendtn2wfa16wyuxk7.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/Voiceflow_White_iczupf.png',
       width: '70%',
     },
     title: 'Voiceflow Subscription',
   },
   {
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/zuvuxsxn7zukvrtx5swz.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/xyz_ldytud.png',
       width: '70%',
     },
     title: 'XYZ Domains',

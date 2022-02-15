@@ -113,7 +113,7 @@ function Sponsor() {
               </Heading4>
             </HeadingSection>
             <SponsorContainer style={{ gap: details.gap, gridTemplateColumns: details.grid }}>
-              {details.sponsors.map(({ src, alt, size, link, margin }) => (
+              {details.sponsors.map(({ src, alt, size, link, margin, marginTop }) => (
                 // eslint-disable-next-line react/no-array-index-key
                 <SponsorIcon
                   key={link}
@@ -122,6 +122,7 @@ function Sponsor() {
                   size={size}
                   link={link}
                   margin={margin}
+                  marginTop={marginTop}
                 />
               ))}
             </SponsorContainer>
