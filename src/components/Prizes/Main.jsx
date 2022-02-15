@@ -79,11 +79,11 @@ const BeAHacker = () => {
       setStage: setStageToTracks,
       key: STAGES.TRACKS,
     },
-    {
-      title: 'Sponsored Tracks',
-      setStage: setStageToSponsored,
-      key: STAGES.SPONSORED,
-    },
+    // {
+    //   title: 'Sponsored Tracks',
+    //   setStage: setStageToSponsored,
+    //   key: STAGES.SPONSORED,
+    // },
     {
       title: 'MLH Tracks',
       setStage: setStageToMLH,

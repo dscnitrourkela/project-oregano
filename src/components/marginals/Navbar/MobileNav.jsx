@@ -59,7 +59,7 @@ function MobileNav() {
             </li>
           ))}
 
-          <Link href='https://frames.hacknitr.tech' style={{ textDecoration: 'none' }}>
+          <Link href='https://frameboi.netlify.app/' style={{ textDecoration: 'none' }}>
             <li className='listItem' role='menuitem' tabIndex='0'>
               <Body className='link'>Frame</Body>
             </li>

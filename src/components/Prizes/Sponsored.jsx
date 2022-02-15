@@ -65,7 +65,7 @@ const TRACKS = [
       '20000 INR for best Dapp built on Tezos, 25000 INR for building a Flutter Tezos Wallet App, Continuity grant opportunity up to 5,000 USD for an outstanding project, Every valid submission made in the Tezos track will be rewarded with exclusive Schwag Kits.',
     alt: 'Tezos: Best Use of Tezos Prize',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/pc6gl1q0iojabd98zfde.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/tezos_cnqvdn.png',
       width: '80%',
     },
     color1: '#71A0CE',
@@ -78,7 +78,7 @@ const TRACKS = [
       '20000 INR for best Dapp built on Celo. Celo is a mobile-first platform that makes financial dApps and crypto payments accessible to anyone with a mobile phone',
     alt: 'Belo: Best Dapp with Celo Prize',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/ogjutyp26djnh9lrzybl.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/celo-removebg-preview_b7usib.png',
       width: '80%',
     },
     color1: '#8FA963',
@@ -91,7 +91,7 @@ const TRACKS = [
       '20000 INR for best use of IPFS and/or Filecoin. Filecoin is an open-source cloud storage marketplace, protocol, and cryptocurrency',
     alt: 'Filecoin: Best Dapp with Filecoin',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/ps74duvfnma7sjh455de.svg',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/Filecoin_White_oztcqi.png',
       width: '80%',
     },
     color1: '#E78967',
@@ -104,7 +104,7 @@ const TRACKS = [
       '$100 Prize to winning team, , 1-month free Inaugurate Tier access, Feature in our Blogs & Articles, SAWO funds 100% of the Playstore/App store subscription fee for the best mobile apps, SAWO funds 100% of the hosting fee for the best web-apps. For extra special products - Special opportunity to pitch your hack to VCs',
     alt: 'Sawo: Creative use of Sawo',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/tjxlxskmlgk87qego2cj.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/sawo_ktm83d.png',
       width: '80%',
     },
     color1: '#E78967',
@@ -116,7 +116,7 @@ const TRACKS = [
     content: 'Goodies from Rahee',
     alt: 'Rahee: Mental health track',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/Community%20Partners/rezmsmpf5b7ynktvufyt.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/rahee1_bsa2ir.png',
       width: '60%',
     },
     color1: '#8FA963',
@@ -129,7 +129,7 @@ const TRACKS = [
       'First Prize - $1000 USDT, Second Prize - $500 USDT, 100 KOII - Most pull requests on Atomic NFT Repo, 100 KOII - Everyone who adds a new standard to Atomic NFT',
     alt: 'KOII: Creative use of KOII',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/gamma/zcnuwxnahcm8ai30npsp.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/koii_wsget6.png',
       width: '40%',
     },
     color1: '#71A0CE',
@@ -142,7 +142,7 @@ const TRACKS = [
       'All participants will have the chance to participate in our Machine Learning Challenge and apply for an Internship at SashiDo.',
     alt: 'Shashido: Creative use of ML/AI',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/iylv4cyswfjzoydb3why.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload//hacknitr/sponsors/sashido_xiu6is.png',
       width: '80%',
     },
     color1: '#FFC41D',
@@ -155,7 +155,7 @@ const TRACKS = [
       ' Implement Auth0 into your project. The more features, complexity and creativity, the better! Rocketbook Reusable Smart Notebook. Up to 4 winners total (one team).',
     alt: 'Auth0: Best Use of Auth0',
     img: {
-      src: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/sponsors/beta/kwoxuy26z8qsxc8w2g10.png',
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/auth0_ziq5l3.png',
       width: '80%',
     },
     color1: '#71A0CE',

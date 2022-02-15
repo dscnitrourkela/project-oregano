@@ -18,7 +18,7 @@ import {
   Container,
   Tracks,
   Moments,
-  // Schedule,
+  Schedule,
   Speakers,
   Sponsors,
   BeAHacker,
@@ -26,7 +26,7 @@ import {
   SEO,
   Footer,
   MLHBanner,
-  // JoinUs,
+  JoinUs,
   Prizes,
   Stats,
   TestimonialSection,
@@ -80,6 +80,7 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <Prizes />
+          <Schedule />
           <Moments />
           <Speakers />
           <Tracks />
@@ -91,7 +92,7 @@ const Homepage = ({ location }) => {
           <BeAHacker />
         </Container>
 
-        {/* <JoinUs /> */}
+        <JoinUs />
         <Footer />
       </Layout>
     </>

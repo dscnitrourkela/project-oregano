@@ -63,7 +63,7 @@ function DesktopNav() {
               ))}
 
               <Link
-                href='https://frames.hacknitr.tech'
+                href='https://frameboi.netlify.app/'
                 style={{ textDecoration: 'none', marginRight: '5%' }}
               >
                 <Body className='navLink'>Frame</Body>

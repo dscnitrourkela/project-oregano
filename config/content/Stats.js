@@ -4,9 +4,9 @@ export default {
   content:
     'Are you a stats-geek?🤓 We might just have perfect numbers which impress you! Here are our serious edition stats.',
   statsMobile: {
-    icon: 'https://res.cloudinary.com/riteshsp2000/image/upload/project-oregano/assets/Mockup_e5fuxn.png',
+    icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Mockup_rqlgbc.png',
     icon2:
-      'https://res.cloudinary.com/dscnitrourkela/image/upload/project-oregano/assets/v7hlmjra9fs024e0u1xz.png',
+      'https://res.cloudinary.com/db4zymomi/image/upload/v1644730155/hacknitr/phone_otycrb.png',
   },
   winners: [
     {
