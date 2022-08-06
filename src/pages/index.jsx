@@ -31,6 +31,7 @@ import {
   Stats,
   TestimonialSection,
   CommunitySection,
+  AboutSection,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -79,20 +80,21 @@ const Homepage = ({ location }) => {
       <Layout location={location}>
         <HeroSection />
         <Container>
-          <Prizes />
-          <Schedule />
+          <AboutSection />
+          {/* <Prizes /> */}
+          {/* <Schedule /> */}
           <Moments />
-          <Speakers />
-          <Tracks />
+          {/* <Speakers /> */}
+          {/* <Tracks /> */}
           <Sponsors />
-          <CommunitySection />
-          <FAQ />
+          {/* <CommunitySection /> */}
+          {/* <FAQ /> */}
           <Stats />
           <TestimonialSection />
           <BeAHacker />
         </Container>
 
-        <JoinUs />
+        {/* <JoinUs /> */}
         <Footer />
       </Layout>
     </>

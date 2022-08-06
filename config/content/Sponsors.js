@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 export default {
-  title: 'Our Awesome Sponsors',
+  title: 'Our Past Sponsors',
   content:
-    'Our love for open source and drive to make an impact materialized as HackNITR 3.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
+    'On behalf of team HackNITR, we would like to publicly thank the generous sponsors without whom this event could not be held so smoothly. We profoundly welcome the eagerness with which you have come forward and keep on supporting our endeavours. Our sponsors are an extension of our event,  we make their presence obvious by integrating them in natural ways such that their messages and branding are not ignored and as such our sponsors are very happy with us and eager to keep in business with us as it also helps meet their goals. The following is a list of all the sponsors:-',
   alpha: [
     {
       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/MLH_xejp6v.png',
