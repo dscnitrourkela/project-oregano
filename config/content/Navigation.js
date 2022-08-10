@@ -6,16 +6,6 @@ export default {
     alt: 'HackNITR 4.0',
   },
   navItems: [
-    // {
-    //   id: 'home',
-    //   name: 'Home',
-    //   link: '/home',
-    // },
-    // {
-    //   id: 'prizes',
-    //   name: 'Prizes',
-    //   link: '/prizes',
-    // },
     {
       id: 'about',
       name: 'About',
@@ -26,31 +16,11 @@ export default {
       name: 'Moments',
       link: '/moments',
     },
-    // {
-    //   id: 'schedule',
-    //   name: 'Schedule',
-    //   link: '/schedule',
-    // },
-    // {
-    //   id: 'speakers',
-    //   name: 'Speakers',
-    //   link: '/speakers',
-    // },
-    // {
-    //   id: 'tracks',
-    //   name: 'Tracks',
-    //   link: '/tracks',
-    // },
     {
       id: 'sponsors',
       name: 'Sponsors',
       link: '/sponsors',
     },
-    // {
-    //   id: 'faq',
-    //   name: 'FAQ',
-    //   link: '/faq',
-    // },
     {
       id: 'contact',
       name: 'Contact',

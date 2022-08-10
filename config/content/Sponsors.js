@@ -2,7 +2,7 @@
 export default {
   title: 'Our Past Sponsors',
   content:
-    'On behalf of team HackNITR, we would like to publicly thank the generous sponsors without whom this event could not be held so smoothly. We profoundly welcome the eagerness with which you have come forward and keep on supporting our endeavours. Our sponsors are an extension of our event,  we make their presence obvious by integrating them in natural ways such that their messages and branding are not ignored and as such our sponsors are very happy with us and eager to keep in business with us as it also helps meet their goals. The following is a list of all the sponsors:-',
+    'On behalf of team HackNITR, we would like to publicly thank the generous sponsors without whom this event could not be held so smoothly. Our sponsors are an extension of our event, we make their presence obvious by integrating them in natural ways which promote their vision and brand. Till date our sponsors are very happy and eager to keep in business with us by supporting our vision with whole heart.',
   alpha: [
     {
       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/MLH_xejp6v.png',

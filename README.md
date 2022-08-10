@@ -22,7 +22,7 @@
     The official repository for the website of HackNITR 3.0
     <br />
     <br />
-    <a href="https://hacknitr.tech">View Live</a>
+    <a href="https://hacknitr.com">View Live</a>
     ·
     <a href="https://github.com/dscnitrourkela/project-oregano/issues">Report Bugs</a>
     .

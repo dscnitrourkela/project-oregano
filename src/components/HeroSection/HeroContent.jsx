@@ -3,14 +3,9 @@ import React from 'react';
 // Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Link } from 'gatsby';
 
 // Components
-import { Heading1, Body, HighlightBody, Heading4 } from '../shared';
-import DevfolioButton from '../shared/DevfolioButton';
-import DiscordButton from '../shared/DiscordButton';
-import DiscordMobile from '../shared/DiscordMobile';
-
+import { Heading1, Body, HighlightBody, Heading3 } from '../shared';
 // Assets
 import { hero } from '../../../config/content';
 
@@ -53,11 +48,12 @@ const Slogan = styled(HighlightBody)`
   sm:text-justify
   `}
 `;
-const TimeImg = styled.img`
-  ${tw`
-  max-w-xs
-  `}
-`;
+
+// const TimeImg = styled.img`
+//   ${tw`
+//   max-w-xs
+//   `}
+// `;
 
 const Wrapper = styled.div`
   display: flex;
@@ -70,14 +66,41 @@ const Wrapper = styled.div`
 `}
 `;
 
-const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  padding: 9px 14px;
-  border-radius: 4px;
-  margin-top: 14px;
+// const ButtonWrapper = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #fff;
+//   padding: 9px 14px;
+//   border-radius: 4px;
+//   margin-top: 14px;
+// `;
+
+const SponsorButton = styled.a`
+  font-family: 'Nunito Sans', sans-serif;
+  height: 44px;
+  min-width: 280px;
+  text-decoration: none;
+  ${tw`
+    flex
+    justify-center
+    items-center
+    w-40
+    mt-6
+    mr-4
+    border-0
+    cursor-pointer
+    sm:m-0
+    rounded
+    sm:text-lg
+    md:text-xl
+    font-semibold
+    bg-white
+    text-black
+`}
+  :hover {
+    background-color: #f8f0e3;
+  }
 `;
 
 function HeroContent() {
@@ -86,20 +109,13 @@ function HeroContent() {
       <TagLine>{hero.title}</TagLine>
       <Slogan style={{ marginBottom: '20px' }}>{hero.tagline}</Slogan>
       <TimeLine>
-        <TimeImg src={hero.dates.src} alt={hero.dates.alt} />
+        <Heading3>DD MM YYYY</Heading3>
       </TimeLine>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
       <Wrapper>
-        <DevfolioButton />
-        <DiscordButton />
-        {/* <Link to='/live' style={{ textDecoration: 'none', color: '#27333F' }}>
-          <ButtonWrapper>
-            <Heading4 style={{ color: '#27333F', fontWeight: 'bold' }}>Watch Live</Heading4>
-          </ButtonWrapper>
-        </Link> */}
-        <DiscordMobile />
+        <SponsorButton href='#'>Sponsor Us</SponsorButton>
       </Wrapper>
     </ContentContainer>
   );

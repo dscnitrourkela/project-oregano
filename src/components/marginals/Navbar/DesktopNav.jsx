@@ -62,16 +62,12 @@ function DesktopNav() {
                 </li>
               ))}
 
-              <Link
+              {/* <Link
                 href='https://frameboi.netlify.app/'
                 style={{ textDecoration: 'none', marginRight: '5%' }}
               >
                 <Body className='navLink'>Frame</Body>
-              </Link>
-
-              <Link to='/live' style={{ textDecoration: 'none' }}>
-                <Body className='navLink'>Live</Body>
-              </Link>
+              </Link> */}
             </ul>
           </div>
 

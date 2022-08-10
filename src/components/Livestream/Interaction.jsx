@@ -60,7 +60,7 @@ const Interaction = ({ containerDimensions, sessionDetails }) => {
   const setStageToDiscord = () => {
     setStage(STAGE.DISCORD);
     if (window) {
-      window.open('https://hacknitr.tech/discord', '_blank');
+      window.open('https://hacknitr.com/discord', '_blank');
     }
   };
 

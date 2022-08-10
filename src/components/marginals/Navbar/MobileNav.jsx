@@ -59,17 +59,11 @@ function MobileNav() {
             </li>
           ))}
 
-          <Link href='https://frameboi.netlify.app/' style={{ textDecoration: 'none' }}>
+          {/* <Link href='https://frameboi.netlify.app/' style={{ textDecoration: 'none' }}>
             <li className='listItem' role='menuitem' tabIndex='0'>
               <Body className='link'>Frame</Body>
             </li>
-          </Link>
-
-          <Link to='/live' style={{ textDecoration: 'none' }}>
-            <li className='listItem' role='menuitem' tabIndex='0'>
-              <Body className='link'>Live</Body>
-            </li>
-          </Link>
+          </Link> */}
         </ul>
       </div>
     </StyledMobileNav>

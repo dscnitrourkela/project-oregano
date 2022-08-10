@@ -5,7 +5,7 @@ module.exports = {
   siteTitle: 'HackNITR 4.0', // Navigation and Site Title
   siteTitleAlt: 'Official Website of HackNITR', // Alternative Site title for SEO
   siteTitleShort: 'HackNITR 4.0', // short_name for manifest
-  siteUrl: 'https://hacknitr.tech', // Domain of your site. No trailing slash!
+  siteUrl: 'https://hacknitr.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
@@ -41,5 +41,5 @@ module.exports = {
   termsConditions: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
 
   // Community Partners Link
-  communityPartners: 'https://partners.hacknitr.tech/',
+  communityPartners: 'https://partners.hacknitr.com/',
 };

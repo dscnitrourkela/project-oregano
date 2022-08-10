@@ -16,15 +16,12 @@ import {
 // Components
 import {
   Grid,
-  EmptyDiv,
   FooterContainer,
   SecondaryContainer,
   Logo,
   IconContainer,
   LogoContainer,
   CardImage,
-  NoStyleNav,
-  LinksContainer,
 } from './styles';
 import FooterCard from './FooterCard';
 import { Container, Body } from '../../shared';
@@ -33,8 +30,6 @@ import { Container, Body } from '../../shared';
 import { footer } from '../../../../config/content';
 
 library.add(faInstagram, faTwitterSquare, faDiscord, faLinkedin, faGithubSquare);
-
-const LINKS = footer.impLinks;
 
 const NewBody = styled(Body)`
   text-align: right;
@@ -77,22 +72,7 @@ function Footer() {
           {footer.cards.map(({ title, text, id, img }) => (
             <FooterCard key={id} img={img.src} Title={title} Text={text} />
           ))}
-          <EmptyDiv>
-            {LINKS.map(({ text, href }) => (
-              <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
-                <Body style={{ color: '#ffffffbc' }}>{text}</Body>
-              </NoStyleNav>
-            ))}
-          </EmptyDiv>
         </Grid>
-
-        <LinksContainer>
-          {LINKS.map(({ text, href }) => (
-            <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
-              <Body style={{ color: '#ffffffbc' }}>{text}</Body>
-            </NoStyleNav>
-          ))}
-        </LinksContainer>
 
         <SecondaryContainer style={{ marginTop: '2rem', alignItems: 'center' }}>
           <Body>
