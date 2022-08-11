@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 // Components
-import { Heading1, Body, HighlightBody, Heading3 } from '../shared';
+import { Heading1, Body, HighlightBody, Heading4 } from '../shared';
 // Assets
 import { hero } from '../../../config/content';
 
@@ -22,6 +22,15 @@ const TimeLine = styled(Body)`
   border-radius: 25px;
   width: fit-content;
   margin-bottom: 24px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  `;
+
+const TimeComp = styled(Body)`
+  display: flex;
+  gap: 10px;
+  align-items: center;
 `;
 
 const TagLine = styled(Heading1)`
@@ -107,15 +116,24 @@ function HeroContent() {
   return (
     <ContentContainer>
       <TagLine>{hero.title}</TagLine>
-      <Slogan style={{ marginBottom: '20px' }}>{hero.tagline}</Slogan>
+      <Slogan style={{ marginBottom: '24px' }}>{hero.tagline}</Slogan>
       <TimeLine>
-        <Heading3>DD MM YYYY</Heading3>
+        <TimeComp>
+          <Heading4>Round 1 : </Heading4>
+          <Heading4>7th - 8th Jan 2023</Heading4>
+        </TimeComp>
+        <TimeComp>
+          <Heading4>Round 2 : </Heading4>
+          <Heading4>21st - 22nd Jan 2023</Heading4>
+        </TimeComp>
       </TimeLine>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
       <Wrapper>
-        <SponsorButton href='#'>Sponsor Us</SponsorButton>
+        <SponsorButton href='https://o0rqxa59g3k.typeform.com/to/GXfkpiIo'>
+          Sponsor Us
+        </SponsorButton>
       </Wrapper>
     </ContentContainer>
   );
