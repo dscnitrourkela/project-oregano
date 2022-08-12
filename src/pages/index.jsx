@@ -14,23 +14,16 @@ import {
 // Components
 import {
   HeroSection,
-  FAQ,
   Container,
-  Tracks,
   Moments,
-  Schedule,
-  Speakers,
   Sponsors,
   BeAHacker,
   Layout,
   SEO,
   Footer,
-  MLHBanner,
-  JoinUs,
-  Prizes,
   Stats,
   TestimonialSection,
-  CommunitySection,
+  AboutSection,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -74,25 +67,16 @@ const Homepage = ({ location }) => {
       </Helmet>
       <SEO />
 
-      <MLHBanner />
-
       <Layout location={location}>
         <HeroSection />
         <Container>
-          <Prizes />
-          <Schedule />
+          <AboutSection />
           <Moments />
-          <Speakers />
-          <Tracks />
           <Sponsors />
-          <CommunitySection />
-          <FAQ />
           <Stats />
           <TestimonialSection />
           <BeAHacker />
         </Container>
-
-        <JoinUs />
         <Footer />
       </Layout>
     </>

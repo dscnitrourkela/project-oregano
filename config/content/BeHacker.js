@@ -30,18 +30,18 @@ export default {
       buttonText: 'N/A',
       buttonLink: 'N/a',
     },
-    {
-      id: 'beahacker-3',
-      title: '3. Register for HACKNITR 3.0',
-      content:
-        'No warrior can be called a great warrior by only practising on the ground. He must go to war and fight. So, come and join us in HACKNITR 3.0.',
-      img: {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_83_nqwx9b.png',
-        alt: '',
-      },
-      hasButton: true,
-      buttonText: 'Register Now',
-      buttonLink: 'https://hacknitr3.devfolio.co/',
-    },
+    // {
+    //   id: 'beahacker-3',
+    //   title: '3. Register for HACKNITR 4.0',
+    //   content:
+    //     'No warrior can be called a great warrior by only practising on the ground. He must go to war and fight. So, come and join us in HACKNITR 4.0.',
+    //   img: {
+    //     src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_83_nqwx9b.png',
+    //     alt: '',
+    //   },
+    //   hasButton: false,
+    //   buttonText: 'Register Now',
+    //   buttonLink: 'https://hacknitr3.devfolio.co/',
+    // },
   ],
 };

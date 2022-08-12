@@ -12,208 +12,208 @@ import { google, ics } from 'calendar-link';
 const event = {
   title: 'Roadmap To Compettitive Programming and Career Guidance',
   description:
-    'This workshop will help you create a roadmap on how to get started with competitive programming and improve with time to perform well in competitive programming contests. \n\nSpeaker: Shantanu Shubham. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'This workshop will help you create a roadmap on how to get started with competitive programming and improve with time to perform well in competitive programming contests. \n\nSpeaker: Shantanu Shubham. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-28 19:00:00 ',
   duration: [0.5, 'hour'],
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event2 = {
   title: 'Codedamn',
   description:
-    'Join live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Join live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-28 20:00:00',
   end: '2021-10-28 20:45:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event3 = {
   title: 'MiniEvent 1 -Team Building',
   description:
-    'Discord Stages Talk Sessions \n\nTopic: \n-Hackathon Stories \n-Team Building \n-Make people come and speak (Sell yourself in 1 min) \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Discord Stages Talk Sessions \n\nTopic: \n-Hackathon Stories \n-Team Building \n-Make people come and speak (Sell yourself in 1 min) \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-28 22:00:00',
   end: '2021-10-29 00:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event4 = {
   title: 'Koii Network',
   description:
-    'Join live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Join live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 09:45:00',
   end: '2021-10-29 10:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event5 = {
   title: 'Build Your Personal Blog With Next.js, Storyblok, and Layer0',
   description:
-    'Join me in this session, and learn how I deployed a performance-first, incrementally static regenerated blogs without compromising my requirements. \n\nSpeaker: Rishi Raj Jain. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Join me in this session, and learn how I deployed a performance-first, incrementally static regenerated blogs without compromising my requirements. \n\nSpeaker: Rishi Raj Jain. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 12:00:00',
   end: '2021-10-29 12:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event6 = {
   title: 'Introduction to the world of Product Management',
   description:
-    'This workshop will help you more about Product Management. Product management is the practice of planning, developing, marketing and continuous improvement of a company’s product or products. \n\nSpeaker: Suhas Motwani and Smarth Vasdev. \n\nJoin live at https://hacknitr.tech/live  \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'This workshop will help you more about Product Management. Product management is the practice of planning, developing, marketing and continuous improvement of a company’s product or products. \n\nSpeaker: Suhas Motwani and Smarth Vasdev. \n\nJoin live at https://hacknitr.com/live  \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 16:00:00',
   end: '2021-10-29 17:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event7 = {
   title: 'Opening Ceremony | Making a career out of hackathons',
   description:
-    'Speakers: Shaswat Lenka, Abel Mathew. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Speakers: Shaswat Lenka, Abel Mathew. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 18:00:00',
   end: '2021-10-29 20:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event8 = {
   title: 'Consequences of UI/UX in our decisions',
   description:
-    ' User Experience and Interface is critical to the success or failure of a product in the market but what do we mean by UI/UX? Join the workshop to know more. \n\nSpeaker: Ayush Bajpai. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech ',
+    ' User Experience and Interface is critical to the success or failure of a product in the market but what do we mean by UI/UX? Join the workshop to know more. \n\nSpeaker: Ayush Bajpai. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com ',
   start: '2021-10-29 21:00:00',
   end: '2021-10-29 21:45:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event9 = {
   title: 'Mini Event 2 - Gaming',
   description:
-    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 22:00:00',
   end: '2021-10-30 00:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event10 = {
   title: 'How to ML in Hackathons',
   description:
-    'The workshop will cover basic concepts of ML, how to use them in hackathons, various resources, and a practical exercise to help you understand better. \n\nSpeaker: Rakshaa Viswanathan. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech ',
+    'The workshop will cover basic concepts of ML, how to use them in hackathons, various resources, and a practical exercise to help you understand better. \n\nSpeaker: Rakshaa Viswanathan. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com ',
   start: '2021-10-30 09:00:00',
   end: '2021-10-30 10:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event11 = {
   title: 'Devfolio -workshop',
   description:
-    '\n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 10:30:00',
   end: '2021-10-30 11:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event12 = {
   title: 'Getting Started with SAWO SDK',
   description:
-    'This workshop will help you learn more about SAWO SDK and how to use it in your projects. \n\nSpeaker: Abhishek Chandrasenan. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'This workshop will help you learn more about SAWO SDK and how to use it in your projects. \n\nSpeaker: Abhishek Chandrasenan. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 12:00:00',
   end: '2021-10-30 01:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event13 = {
   title: 'Mini Event-3 -MLH Event',
   description:
-    '\n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 16:00:00',
   end: '2021-10-30 16:30:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event14 = {
   title: 'Ploomber Workshop',
   description:
-    '\n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 17:00:00',
   end: '2021-10-30 17:30:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event15 = {
   title: 'Solving Deep Tech Problems  with Open Source',
   description:
-    'Get ready for the great wave—the next big surge of innovation powered by emerging technologies and the approach of deep tech entrepreneurs. Its economic, business, and social impact will be felt everywhere because deep tech ventures aim to solve many of our most complex problems. \n\nSpeaker: Roshni Biswas and Anurag Saha Roy. \n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    'Get ready for the great wave—the next big surge of innovation powered by emerging technologies and the approach of deep tech entrepreneurs. Its economic, business, and social impact will be felt everywhere because deep tech ventures aim to solve many of our most complex problems. \n\nSpeaker: Roshni Biswas and Anurag Saha Roy. \n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 19:00:00',
   end: '2021-10-30 20:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event16 = {
   title: 'Coding Contest - Coding Ninjas',
   description:
-    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-31 16:00:00',
   end: '2021-10-31 17:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event17 = {
   title: 'Pitching Presentation of Top 15',
   description:
-    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-31 17:00:00',
   end: '2021-10-31 18:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event18 = {
   title: 'Mini Event 4 - Raahee',
   description:
-    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-31 19:30:00',
   end: '2021-10-31 20:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event19 = {
   title: 'Closing Ceremony',
   description:
-    '\n\nJoin live at https://hacknitr.tech/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nJoin live at https://hacknitr.com/live \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-31 20:00:00',
   end: '2021-10-31 21:00:00',
-  location: 'https://hacknitr.tech/live',
+  location: 'https://hacknitr.com/live',
 };
 
 const event20 = {
   title: 'Hacking Hour Starts',
   description:
-    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
-  location: 'https://hacknitr.tech',
+  location: 'https://hacknitr.com',
 };
 
 const event21 = {
   title: 'Hacking Hour Ends',
   description:
-    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-29 20:00:00',
   end: '2021-10-31 09:00:00',
-  location: 'https://hacknitr.tech',
+  location: 'https://hacknitr.com',
 };
 
 const event22 = {
   title: 'Initial Evaluation Starts',
   description:
-    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
+    '\n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
-  location: 'https://hacknitr.tech',
+  location: 'https://hacknitr.com',
 };
 
 const event23 = {
   title:
-    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.tech',
-  description: 'hacknitr.tech',
+    ' \n\nDive deep into your innovation journey with HackNITR 3.0 and manifest your skills. Re-envision whats conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity. \n\nRegister at: https://hacknitr.com',
+  description: 'hacknitr.com',
   start: '2021-10-30 20:00:00',
   end: '2021-10-31 00:00:00',
-  location: 'https://hacknitr.tech',
+  location: 'https://hacknitr.com',
 };
 
 const link1 = ics(event);

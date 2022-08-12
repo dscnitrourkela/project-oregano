@@ -10,7 +10,7 @@ export const Circle = () => (
     <YellowDiv>
       <div>
         <Heading4 style={{ fontWeight: 'inherit' }}>Registrations</Heading4>
-        <Heading2 style={{ textAlign: 'center', fontWeight: 'bolder' }}>1180</Heading2>
+        <Heading2 style={{ textAlign: 'center', fontWeight: 'bolder' }}>2171</Heading2>
       </div>
     </YellowDiv>
     <BlueDiv>
@@ -18,7 +18,7 @@ export const Circle = () => (
         <Heading5 style={{ fontWeight: 'inherit', color: 'white', textAlign: 'center' }}>
           Project Submissions
         </Heading5>
-        <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>83</Heading3>
+        <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>127</Heading3>
       </div>
     </BlueDiv>
     <GreenDiv>
@@ -26,7 +26,7 @@ export const Circle = () => (
         <Heading5 style={{ fontWeight: 'inherit', color: 'white', textAlign: 'center' }}>
           Sessions Organised
         </Heading5>
-        <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>18</Heading3>
+        <Heading3 style={{ textAlign: 'center', fontWeight: 'bolder' }}>26</Heading3>
       </div>
     </GreenDiv>
   </StatsContainer2>

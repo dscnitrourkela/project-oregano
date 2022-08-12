@@ -80,7 +80,7 @@ function Sponsor() {
       id='sponsors'
       title={sponsors.title}
       description={sponsors.content}
-      link={{ text: 'Sponsor Us', link: links.sponsor }}
+      // link={{ text: 'Sponsor Us', link: links.sponsor }}
     >
       <div
         style={{

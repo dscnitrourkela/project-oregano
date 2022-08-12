@@ -2,10 +2,10 @@
 
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/blog your pathPrefix should be "blog"
-  siteTitle: 'HackNITR 3.0', // Navigation and Site Title
+  siteTitle: 'HackNITR 4.0', // Navigation and Site Title
   siteTitleAlt: 'Official Website of HackNITR', // Alternative Site title for SEO
-  siteTitleShort: 'HackNITR 3.0', // short_name for manifest
-  siteUrl: 'https://hacknitr.tech', // Domain of your site. No trailing slash!
+  siteTitleShort: 'HackNITR 4.0', // short_name for manifest
+  siteUrl: 'https://hacknitr.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
@@ -41,5 +41,5 @@ module.exports = {
   termsConditions: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
 
   // Community Partners Link
-  communityPartners: 'https://partners.hacknitr.tech/',
+  communityPartners: 'https://partners.hacknitr.com/',
 };

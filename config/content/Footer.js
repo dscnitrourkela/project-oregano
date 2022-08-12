@@ -4,7 +4,6 @@ import {
   faInstagram,
   faLinkedin,
   faGithubSquare,
-  faDiscord,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import config from '../website';
@@ -50,10 +49,10 @@ export default {
       icon: faLinkedin,
       link: 'https://www.linkedin.com/company/hacknitr/',
     },
-    {
-      icon: faDiscord,
-      link: 'https://hacknitr.tech/discord',
-    },
+    // {
+    //   icon: faDiscord,
+    //   link: 'https://hacknitr.com/discord',
+    // },
     {
       icon: faFacebook,
       link: 'https://facebook.com/hacknitr',
