@@ -182,7 +182,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Starware
 
-dscnitrourkela/project-guava is Starware.
+dscnitrourkela/project-oregano is Starware.
 This means you're free to use the project, as long as you star its GitHub repository.
 Your appreciation makes us grow and glow up. ⭐
 
