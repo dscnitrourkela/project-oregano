@@ -25,7 +25,7 @@ const TimeLine = styled(Body)`
   display: flex;
   gap: 10px;
   flex-direction: column;
-  `;
+`;
 
 const TimeComp = styled(Body)`
   display: flex;
@@ -70,9 +70,7 @@ const Wrapper = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
-  ${tw`
-  1xsm:flex-col
-`}
+  ${tw`sm:gap-2`}
 `;
 
 // const ButtonWrapper = styled.div`
@@ -85,10 +83,10 @@ const Wrapper = styled.div`
 //   margin-top: 14px;
 // `;
 
-const SponsorButton = styled.a`
+const PreRegisterButton = styled.a`
   font-family: 'Nunito Sans', sans-serif;
   height: 44px;
-  min-width: 280px;
+  /* min-width: 280px; */
   text-decoration: none;
   ${tw`
     flex
@@ -112,6 +110,21 @@ const SponsorButton = styled.a`
   }
 `;
 
+const SponsorButton = styled(PreRegisterButton)`
+  ${tw`
+    bg-transparent
+    text-[#c4c4c4]
+  `}
+  border: 2px solid #c4c4c4;
+  :hover {
+    ${tw`
+      bg-transparent
+      text-white
+      border-white
+    `}
+  }
+`;
+
 function HeroContent() {
   return (
     <ContentContainer>
@@ -119,18 +132,14 @@ function HeroContent() {
       <Slogan style={{ marginBottom: '24px' }}>{hero.tagline}</Slogan>
       <TimeLine>
         <TimeComp>
-          <Heading4>Round 1 : </Heading4>
-          <Heading4>7th - 8th Jan 2023</Heading4>
-        </TimeComp>
-        <TimeComp>
-          <Heading4>Round 2 : </Heading4>
-          <Heading4>21st - 22nd Jan 2023</Heading4>
+          <Heading4>6th - 8th Jan 2023</Heading4>
         </TimeComp>
       </TimeLine>
       {hero.content.split(' \n ').map((data) => (
         <Description key={data}>{data}</Description>
       ))}
       <Wrapper>
+        <PreRegisterButton href='https://preregister.hacknitr.com/'>Pre-Register</PreRegisterButton>
         <SponsorButton href='https://o0rqxa59g3k.typeform.com/to/GXfkpiIo'>
           Sponsor Us
         </SponsorButton>
