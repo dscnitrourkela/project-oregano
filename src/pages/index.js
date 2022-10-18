@@ -1,5 +1,7 @@
 import React from 'react';
+import Layout from '../components/molecules/Layout/Layout';
+import '../styles/global.css';
 
 export default function Home() {
-  return <h1 className='text-3xl font-bold underline text-color-primary'>HackNITR 4.0</h1>;
+  return <Layout />;
 }
