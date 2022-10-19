@@ -3,7 +3,7 @@ export default {
   title: 'Navigation',
   logo: {
     src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/logo1_rg97i6.png',
-    alt: 'HackNITR 3.0',
+    alt: 'HackNITR 4.0',
   },
   navItems: [
     {
