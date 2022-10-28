@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Heading1,
   Heading2,
   Heading3,
   Heading4,
@@ -14,6 +15,7 @@ import {
 export default function Playground() {
   return (
     <div>
+      <Heading1>Heading One</Heading1>
       <Heading2>Heading Two</Heading2>
       <Heading3>Heading Three</Heading3>
       <Heading4>Heading Four</Heading4>

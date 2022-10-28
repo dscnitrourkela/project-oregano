@@ -1,39 +1,52 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/pages/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
-
-     fontSize: {
-      H2 : ['40px','48px'],
-      H3 : ['32px','40px'],
-      H4 : ['24px','28px'],
-      B1 : ['20px', '24px'],
-      B2 : ['18px','20px'],
-      BML : ['18px','20px'],
-      C : ['14px','18px'],
-      N : ['18px','20px'],
-      BM : ['14px','18px'],
-      h2 : ['32px','36px'],
-      h3 : ['20px','24px'],
-      h4 : ['18px','18px'],
-      b1 : ['14px','18px'],
-      b2 : ['12px','14px'],
-      bml : ['14px','16px'],
-      c : ['10px','12px'],
-      n : ['14px','24px'],
-      bm : ['12px','14px'],
+    extend: {
+      fontSize: {
+        xm: ['10px', '12px'],
+        xs: '12px',
+        sm: '14px',
+        base: '16px',
+        lg: '18px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '30px',
+        '3.5xl': '32px',
+        '4xl': '36px',
+        '4.5xl': '40px',
+        '11xl': '86px',
+        '12xl': '120px',
       },
 
-    colors: {
-       'color-primary': '#EAEAEA',
-       'color-secondary': '#D6D6D6',
-       'color-tertiary': '#A3A3A3',
-     },
+      lineHeight: {
+        3: '12px',
+        3.5: '14px',
+        4: '16px',
+        4.5: '18px',
+        5: '20px',
+        6: '24px',
+        7: '28px',
+        9: '36px',
+        10: '40px',
+        11: '48px',
+        12: '108px',
+        13: '148px',
+      },
 
-    fontFamily: {
-      normal : ['San-Francisco','san']
-    }
+      colors: {
+        'color-primary': '#EAEAEA',
+        'color-secondary': '#D6D6D6',
+        'color-tertiary': '#A3A3A3',
+      },
+
+      // Noto: ['Noto Sans', 'sans-serif'],
+      fontFamily: {
+        Noto: ['Noto Sans', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
   plugins: [],
 };

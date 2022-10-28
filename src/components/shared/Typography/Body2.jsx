@@ -2,11 +2,14 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export default styled.p`
-  font-style: ${(props) => (props.bold ? 'bold' : 'normal')};
+  font-style: ${(props) => (props.semibold ? 'semibold' : 'normal')};
   ${tw`
-   font-normal
-   text-b2
-   sm:text-B2
+   text-xs
+   leading-3.5
+   
+   sm:text-lg
+   sm:leading-5
    text-color-primary
+   font-Noto
 `}
 `;

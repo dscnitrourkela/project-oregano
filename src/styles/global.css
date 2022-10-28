@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
 
 *,
 *:before,
@@ -168,11 +169,11 @@ table {
 }
 
 :root {
-  --background-primary: #00020C;
+  --background-primary: #00020c;
   --background-secondary: #001325;
   --text-color-primary: #f4f4f4;
-  --text-color-secondary: #403B3B;
-  --text-color-tertiary: #8C8C8C;
+  --text-color-secondary: #403b3b;
+  --text-color-tertiary: #8c8c8c;
 
   --max-width: 83.5em;
   --max-width-bleed: 90%;
