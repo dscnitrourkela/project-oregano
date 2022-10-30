@@ -1,38 +1,43 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import navList from '../../content/content';
-import Container from '../../atoms/Container';
 import { NavBar, Logo } from './style';
-import Nav from '../../Typography/Links';
+import {NavText} from '../../shared/index';
 import MLHbanner from '../../atoms/MLHbanner';
 
 function DesktopNav() {
   return (
     <NavBar>
-      <Container>
-        <nav className='navWrapper'>
-          <Logo src={navList.logo.src} alt={navList.logo.alt} />
+        <div className='navWrapper'>
 
-          <ul className='navList'>
-            {navList.navItems.map((elem) => (
-              <li
-                key={elem.id}
-                id={elem.name}
-                role='menuitem'
-                onClick={null}
-                onKeyPress={null}
-                className='NavListItem'
-              >
-                <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
-                  <Nav className='navLink'>{elem.name}</Nav>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className='nav-left'>
+            <Logo src={navList.logo.src} alt={navList.logo.alt} />
+          </div>
 
-          <MLHbanner />
-        </nav>
-      </Container>
+          <nav>
+            <ul className='navList'>
+              {navList.navItems.map((elem) => (
+                <li
+                  key={elem.id}
+                  id={elem.name}
+                  role='menuitem'
+                  onClick={null}
+                  onKeyPress={null}
+                  className='NavListItem'
+                >
+                  <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
+                    <NavText className='navLink'>{elem.name}</NavText>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className ='nav-right'>
+            <MLHbanner />
+          </div>
+
+        </div>
     </NavBar>
   );
 }

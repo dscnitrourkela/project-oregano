@@ -4,13 +4,17 @@ import styled from 'styled-components';
 
 const Banner = styled.a`
   display: block;
-  position: absolute;
+  position: sticky;
   top: 0;
   right: 5%;
-  width: 6%;
+  width: 100%;
   z-index: 3;
-  min-width: 50px;
-  max-width: 90px;
+  min-width: 28px;
+  max-width: 70px;
+  @media (max-width: 890px){
+    position: absolute;
+    width: 6%;
+  }
 `;
 
 function MLHbanner() {
