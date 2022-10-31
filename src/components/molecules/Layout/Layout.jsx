@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const NavBar = styled.div`
   ${tw`
     w-full
-    absolute
+    sticky
     top-0
   `}
 `;

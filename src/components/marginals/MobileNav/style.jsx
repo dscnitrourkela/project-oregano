@@ -12,7 +12,8 @@ const fadeDown = keyframes`
 `;
 
 export const NavBar = styled.header`
-  background-color: black;
+  background-color: ${({menuIsOpen}) => menuIsOpen ? 'black' : 'rgba(0, 8, 17, 0.81)'};
+  backdrop-filter: blur(10px);
   position: relative;
   z-index: 1;
   display: none;
@@ -43,6 +44,7 @@ export const NavBar = styled.header`
 export const Logo = styled.img`
   height: 26px;
   width: auto;
+  z-index: 4;
 
   @media (min-width: 680px) {
     height: 40px;
@@ -64,41 +66,41 @@ export const MenuButton = styled.button`
   .menu_burger,
   .menu_burger::before,
   .menu_burger::after {
-    height: 3px;
+    height: 2px;
     width: 24px;
     background-color: #fff;
-    transition: transform 400ms ease-in-out, background-color 700ms linear;
+    transition: all 400ms ease-in-out;
   }
 
   .menu_burger::before,
   .menu_burger::after {
     content: '';
     position: absolute;
+    width: ${({menuIsOpen}) => (menuIsOpen ? '12px': '24px')};
     left: 0;
   }
 
   .menu_burger {
-    transform: ${({ menuIsOpen }) => (menuIsOpen ? 'translateX(22px)' : 'translateX(0)')};
-    background-color: ${({ menuIsOpen }) => (menuIsOpen ? 'transparent' : '#fff')};
+    transform: ${({ menuIsOpen }) => (menuIsOpen ? 'rotate(-45deg)' : 'rotate(0)')};
   }
 
   .menu_burger::before {
-    bottom: 8px;
+    bottom: ${({menuIsOpen}) => (menuIsOpen ? '6px': '8px')};
     transform: ${({ menuIsOpen }) =>
-      menuIsOpen ? 'rotate(45deg) translate(-11px,22.5px)' : 'rotate(0deg)'};
+      menuIsOpen ? 'rotate(90deg) translate(0px, -6px)' : 'rotate(0deg)'};
   }
 
   .menu_burger::after {
-    top: 8px;
+    top: ${({menuIsOpen}) => (menuIsOpen ? '6px': '8px')};
     transform: ${({ menuIsOpen }) =>
-      menuIsOpen ? 'rotate(-45deg) translate(-11px,-22.5px)' : 'rotate(0deg)'};
+      menuIsOpen ? 'rotate(-90deg) translate(-0px, 6px)' : 'rotate(0deg)'};
   }
 
   @media (min-width: 680px){
     .menu_burger,
     .menu_burger::before,
     .menu_burger::after {
-      height: 4px;
+      height: 3px;
       width: 2em;
     }
 

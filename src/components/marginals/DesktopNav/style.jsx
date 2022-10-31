@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const NavBar = styled.header`
-  background-color: black;
+  background-color: rgba(0, 8, 17, 0.81);
+  backdrop-filter: blur(10px);
   position: relative;
-  padding: 2.5em 0;
+  padding: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
