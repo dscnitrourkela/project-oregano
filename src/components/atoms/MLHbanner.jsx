@@ -25,7 +25,7 @@ function MLHbanner() {
     >
       <img
         style={{ width: '100%' }}
-        src='https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg'
+        src='https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-blue.svg'
         alt='Major League Hacking 2023 Hackathon Season'
       />
     </Banner>
