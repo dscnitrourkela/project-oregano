@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import {NavText} from '../../shared/index';
+
+const fadeRight = keyframes`
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 32px;
+    }
+`;
 
 export const NavBar = styled.header`
   background-color: rgba(0, 8, 17, 0.81);
@@ -11,7 +21,7 @@ export const NavBar = styled.header`
 
   .navWrapper {
     display: flex;
-    border: 0.4px solid #6B6B6B;
+    border: 0.4px solid rgba(155, 155, 155, 0.4);
     border-width: 0.4px 0;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -31,16 +41,34 @@ export const NavBar = styled.header`
 
   .NavListItem{
     padding: 12px 1.5em;
-    border: 0.4px solid #6B6B6B;
+    border: 0.4px solid rgba(155, 155, 155, 0.4);
     border-width: 0 0.4px;
-  }
-
-  .navLink:hover {
-    color: #fff;
   }
 
   @media (max-width: 890px) {
     display: none;
+  }
+`;
+
+export const NavItem = styled(NavText)`
+  font-weight: 600;
+  color: var(--text-color-tertiary);
+  position: relative;
+  
+  &:active::after,
+  &:hover::after{
+    content: '';
+    height: 2px;
+    animation: ${fadeRight} 1s cubic-bezier(0.16, 1, 0.3, 1);
+    position: absolute;
+    bottom: -6px;
+    border-top: 1px solid #fff;
+    left: calc(50% - 16px);
+    box-shadow: 0 0 6px 2px rgb(237 236 81 / 70%);
+  }
+
+  &:hover{
+    color: #fff;
   }
 `;
 

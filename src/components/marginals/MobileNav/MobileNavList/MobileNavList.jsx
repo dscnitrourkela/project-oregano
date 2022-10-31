@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import navList from '../../../content/content';
-import {NavText} from '../../../shared/index';
-import { MobileNavList } from '../style';
+import { MobileNavList, NavItem } from '../style';
 
 export default () => (
   <MobileNavList>
@@ -16,7 +15,7 @@ export default () => (
         onKeyPress={null}
       >
         <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
-          <NavText className='navLink'>{elem.name}</NavText>
+          <NavItem>{elem.name}</NavItem>
         </Link>
       </li>
     ))}

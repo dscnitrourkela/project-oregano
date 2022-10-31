@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import navList from '../../content/content';
-import { NavBar, Logo } from './style';
-import {NavText} from '../../shared/index';
+import { NavBar, Logo, NavItem } from './style';
 import MLHbanner from '../../atoms/MLHbanner';
 
 function DesktopNav() {
@@ -26,7 +25,7 @@ function DesktopNav() {
                   className='NavListItem'
                 >
                   <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
-                    <NavText className='navLink'>{elem.name}</NavText>
+                    <NavItem>{elem.name}</NavItem>
                   </Link>
                 </li>
               ))}

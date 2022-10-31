@@ -1,4 +1,5 @@
 import styled, {keyframes} from 'styled-components';
+import {NavText} from '../../shared/index';
 
 const fadeDown = keyframes`
     0% {
@@ -131,13 +132,10 @@ export const MobileNavList = styled.ul`
   animation: ${fadeDown} 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   flex: 1;
 
-  .navLink:hover {
-    color: #fff;
-  }
-
   .NavListItem{
     padding: 16px;
-    border-bottom: 0.4px solid #6B6B6B;
+    border-bottom: 0.4px solid rgba(163, 163, 163, 1);
+    ;
   }
 
   *:last-child{
@@ -146,5 +144,14 @@ export const MobileNavList = styled.ul`
 
   @media (min-width: 865px) {
     display: none;
+  }
+`;
+
+export const NavItem = styled(NavText)`
+  font-weight: 600;
+  color: rgba(163, 163, 163, 1);
+
+  &:hover{
+    color: #fff;
   }
 `;
