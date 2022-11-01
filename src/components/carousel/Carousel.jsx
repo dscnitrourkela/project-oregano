@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
-import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
+import { Body1, Body2, Heading3, Heading2, Caption, ButtonMeta, ButtonMetaLarge } from '../shared';
 
 export default function Carousel() {
   const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-800 rounded-2xl`;
@@ -13,6 +13,7 @@ export default function Carousel() {
   const behindCardClass = `${styles.two} ${styles.wReq} absolute top-0 z-0 duration-300 ease-linear p-3`;
 
   const [cns, setCNS] = useState([leftCardClass, centerCardClass, rightCardClass, behindCardClass]);
+  
   const [cardDex, setCardDex] = useState(
     cns.map((item) => {
       if (item === centerCardClass) {
@@ -22,6 +23,8 @@ export default function Carousel() {
       }
     }),
   );
+
+  const [center, setCenter] = useState(1);
 
   let cards1 = [
     {
@@ -60,10 +63,12 @@ export default function Carousel() {
   function rotateLeft() {
     setCNS([...cns.slice(1), cns[0]]);
     setCardDex([...cardDex.slice(1), cardDex[0]]);
+    setCenter((center-1 + cards1.length)%cards1.length);
   }
   function rotateRight() {
     setCNS([cns[cns.length - 1], ...cns.slice(0, cns.length - 1)]);
     setCardDex([cardDex[cardDex.length - 1], ...cardDex.slice(0, cardDex.length - 1)]);
+    setCenter((center+1)%cards1.length);
   }
 
   return (
@@ -136,10 +141,30 @@ export default function Carousel() {
           </div>
         </div>
       </div>
-      <div className='bg-slate-300 col-span-2 relative max-w-md ml-auto mr-12' style={{top: "22px"}}>
+      <div
+        className='bg-slate-300 col-span-2 relative max-w-md ml-auto mr-12 flex flex-col justify-between'
+        style={{ top: '22px', height: '517px' }}
+      >
         <Heading2>SESSIONS</Heading2>
-        <Caption>Now to hackathon dont worry we got you covered with all the basic information</Caption>
-        <Heading3>How to present in a hackathon</Heading3>
+        <Caption>
+          Now to hackathon dont worry we got you covered with all the basic information
+        </Caption>
+        <Heading3>{cards1[center].heading}</Heading3>
+
+        <Body2>{cards1[center].name}</Body2>
+
+        <Body2>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
+          doloribus, maxime dignissimos, minus accusamus, distinctio ratione consequatur harum rerum
+          exercitationem beatae excepturi libero aut totam quam amet labore iure architecto.
+        </Body2>
+
+        <div className='flex justify-between pt-4'>
+          <button className='bg-yellow-400 py-4 px-6 text-sm rounded-full text-black'>JOIN LIVE</button>
+          <span className='h-fit my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer'>
+            GO TO YOUTUBE {'>'}
+          </span>
+        </div>
       </div>
     </div>
   );
