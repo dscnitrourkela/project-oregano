@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
 import {Body2, Heading1, Heading2} from '../shared';
 import Card from './Card'
@@ -38,6 +39,7 @@ export default function CarouselMob() {
           label: 'LABEL',
         },
       ];
+      const [focused, setFocused] = useState(2);
   return (
     <div>
         <Heading2>SESSIONS</Heading2>
@@ -46,7 +48,7 @@ export default function CarouselMob() {
             {
                 cards1.map(
                     item=>
-                        <Card id={item.id} designation={item.designation} name={item.name} key={item.key} focused={'true'} heading={item.heading} date={item.date} label={item.label} ></Card> 
+                        <Card id={item.id} designation={item.designation} name={item.name} key={item.key} focused={(item.id===focused)} heading={item.heading} date={item.date} label={item.label} ></Card> 
                     
                 )
             }

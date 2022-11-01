@@ -2,8 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
 import { Body1, Body2, Heading3, Heading2, Caption, ButtonMeta, ButtonMetaLarge } from '../shared';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Carousel() {
+  const [focused, setFocused] = useState(2);
   const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-900 rounded-2xl`;
 
   const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-900 ${styles.two}`;
@@ -81,6 +83,7 @@ export default function Carousel() {
             onClick={rotateLeft}
           >
             Left
+            <FontAwesomeIcon icon="fa-light fa-chevron-left" />
           </button>
           <button
             id='right-carousal-btn'
@@ -88,6 +91,7 @@ export default function Carousel() {
             onClick={rotateRight}
           >
             Right
+            <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
           </button>
 
           {/* card  */}
@@ -95,7 +99,7 @@ export default function Carousel() {
             return (
               <div
                 key={item.id}
-                className={cns[item.id - 1]}
+                className={`${(item.id===focused)?styles.focused:""} ${cns[item.id - 1]}`}
                 style={
                   cns[item.id - 1] !== centerCardClass
                     ? { filter: 'blur(2px)' }

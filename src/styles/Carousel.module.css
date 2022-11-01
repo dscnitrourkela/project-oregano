@@ -3,6 +3,8 @@
 }
 .two{
     left:0rem;
+}
+.focused{
     border: 4px solid yellow;
 }
 .three{
