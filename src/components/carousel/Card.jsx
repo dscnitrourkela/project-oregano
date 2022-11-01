@@ -1,25 +1,26 @@
 import React from 'react';
 import { useState } from 'react';
+import {Heading3, Heading4, Heading5, Body1} from '../shared'
 import * as styles from '../../styles/Carousel.module.css';
-export default function Card({ id, pos , heading}) {
-  
-  const leftCardClass = `${styles.wReq} absolute top-0 z-10 opacity-60 ${styles.one} duration-500 ease-linear`;
-
-  const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-500 ease-linear ${styles.two}`;
-
-  const rightCardClass = `${styles.three} ${styles.wReq} z-10 absolute top-0 opacity-60 duration-500 ease-linear`;
-  
-  const behindCardClass = `${styles.two} ${styles.wReq} absolute top-0 z-0 duration-500 ease-linear`;
-
-  const [applied, setApplied] = useState(
-    (pos==='left')?leftCardClass:((pos==='center')?centerCardClass:((pos==='right')?rightCardClass:behindCardClass))
-  );
-
+import { Item } from 'stream-chat-react/dist/components/AutoCompleteTextarea/Item';
+export default function Card({ id, heading, name, designation, date, label, focused}) {
 
   return (
-    <div id={id} className={applied} style={{border: "1px solid yellow"}} onClick={()=>setApplied(rightCardClass)}>
-      <div className='h-1/2 bg-white w-full'></div>
-      <div className='h-1/2 text-center  text-yellow-400'>{heading}</div>
+    <div id={id} className={`${styles.cardMob} rounded-lg p-3 ml-6`} style={focused?{border: "2px solid yellow"}:{}} onClick={()=>setApplied(rightCardClass)}>
+      <div className='h-1/2 bg-white w-full rounded-md'></div>
+      <div className='h-1/2  text-yellow-400 py-2 flex flex-col justify-between'>
+        <Heading3>{heading}</Heading3>
+        {/* {heading} */}
+        <Body1>{name} : {designation}</Body1>
+        <div className='flex justify-between'>
+          <div className='my-auto'>
+          <Heading4>{date}</Heading4>
+          </div>
+          <button className='bg-yellow-400 px-4 py-3 rounded-full text-black'>
+            {label}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

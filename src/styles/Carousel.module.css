@@ -34,13 +34,18 @@
     background-color: red;
 }
 
-#drag-scroll::-webkit-scrollbar{
+.dragScroll::-webkit-scrollbar{
     display: none;
 }
-#drag-scroll{
+.dragScroll{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 .carousCard.active{
     border: 3px solid #ffe81f;
+}
+
+.cardMob{
+    height: 359px;
+    width: 259px;
 }
