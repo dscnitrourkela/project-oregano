@@ -1,0 +1,46 @@
+.one{
+    left:-79.32px;
+}
+.two{
+    left:0rem;
+    border: 4px solid yellow;
+}
+.three{
+    left:112px;
+}
+.w-req{
+    width: 351.32px;
+    height: 473px;
+    /* border-radius: 29.28px; */
+    top: 22px;
+}
+.hComponent{
+    height: 549px;
+}
+
+.wScaled{
+    width: 384px;
+    height: 517px;
+    /* border-radius: 32px; */
+}
+.leftBtn{
+    left: -48.72px;
+    top: 351px;
+    background-color: red;
+}
+.rightBtn{
+    right: -49.02px;
+    top: 351px;
+    background-color: red;
+}
+
+#drag-scroll::-webkit-scrollbar{
+    display: none;
+}
+#drag-scroll{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.carousCard.active{
+    border: 3px solid #ffe81f;
+}
