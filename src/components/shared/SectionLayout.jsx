@@ -3,7 +3,8 @@ import React from 'react';
 // Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading2, Body1 } from '.';
+import Body1 from './Typography/Body1';
+import Heading2 from './Typography/Heading2';
 
 const SectionContainer = styled.div`
   ${tw`
@@ -36,27 +37,24 @@ const HighlightLink = styled.a`
     md:text-base
     sm:text-sm
     text-color-primary
-    font-roboto
     ml-2
     no-underline
   `}
 `;
 
-function Section({ children, id, title, description, link }) {
-  return (
-    <SectionContainer id={id}>
-      <Heading2 semibold>{title}</Heading2>
-      <Description>
-        {description}
-        {link && (
-          <HighlightLink href={link.link} target='_blank' rel='noreferrer'>
-            {link.text}
-          </HighlightLink>
-        )}
-      </Description>
-      {children}
-    </SectionContainer>
-  );
-}
+const Section = ({ children, id, title, description, link }) => (
+  <SectionContainer id={id}>
+    <Heading2 semibold>{title}</Heading2>
+    <Description>
+      {description}
+      {link && (
+        <HighlightLink href={link.link} target='_blank' rel='noreferrer'>
+          {link.text}
+        </HighlightLink>
+      )}
+    </Description>
+    {children}
+  </SectionContainer>
+);
 
 export default Section;
