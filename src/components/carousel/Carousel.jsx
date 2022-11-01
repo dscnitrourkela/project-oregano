@@ -4,11 +4,11 @@ import * as styles from '../../styles/Carousel.module.css';
 import { Body1, Body2, Heading3, Heading2, Caption, ButtonMeta, ButtonMetaLarge } from '../shared';
 
 export default function Carousel() {
-  const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-800 rounded-2xl`;
+  const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-900 rounded-2xl`;
 
-  const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-800 ${styles.two}`;
+  const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-900 ${styles.two}`;
 
-  const rightCardClass = `${styles.three} ${styles.wReq} z-10 absolute top-0 duration-300 ease-linear bg-gray-800 p-3 rounded-2xl`;
+  const rightCardClass = `${styles.three} ${styles.wReq} z-10 absolute top-0 duration-300 ease-linear bg-gray-900 p-3 rounded-2xl`;
 
   const behindCardClass = `${styles.two} ${styles.wReq} absolute top-0 z-0 duration-300 ease-linear p-3`;
 
@@ -72,7 +72,7 @@ export default function Carousel() {
   }
 
   return (
-    <div className='grid grid-cols-5 py-12 bg-gray-900'>
+    <div className='grid grid-cols-5 py-12'>
       <div className={`${styles.hComponent} col-span-3`}>
         <div className={`mx-auto relative ${styles.wScaled} `}>
           <button
@@ -110,7 +110,7 @@ export default function Carousel() {
                       : { borderRadius: '0.8rem' }
                   }
                 ></div>
-                <div className='h-1/2 text-white py-4 bg-gray-800 flex flex-col justify-between'>
+                <div className='h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between'>
                   <div>
                     <Heading3>{item.heading}</Heading3>
                     <div className='py-4'>
@@ -142,7 +142,7 @@ export default function Carousel() {
         </div>
       </div>
       <div
-        className='bg-slate-300 col-span-2 relative max-w-md ml-auto mr-12 flex flex-col justify-between'
+        className=' col-span-2 relative max-w-md ml-auto pr-3 mr-16 flex flex-col justify-between'
         style={{ top: '22px', height: '517px' }}
       >
         <Heading2>SESSIONS</Heading2>
