@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
-import { Body1, Body2, Heading3, Heading2, Caption, ButtonMeta, ButtonMetaLarge } from '../shared';
+import { Body1, Body2, Heading3, Heading2, Caption} from '../shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Carousel() {
