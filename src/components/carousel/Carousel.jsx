@@ -5,8 +5,7 @@ import { Body1, Body2, Heading3, Heading2, Caption} from '../shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
-export default function Carousel() {
-  const [focused, setFocused] = useState(2);
+export default function Carousel({cards, focused}) {
   const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-900 rounded-2xl`;
 
   const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-900 ${styles.two}`;
@@ -29,49 +28,15 @@ export default function Carousel() {
 
   const [center, setCenter] = useState(1);
 
-  let cards1 = [
-    {
-      id: 1,
-      heading: 'HOW TO PRESENT IN A HACKATHON',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 2,
-      heading: 'HOW TO PRESENT IN A EVENT',
-      name: 'Ayush Shaw',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 3,
-      heading: 'Random text3',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 4,
-      heading: 'Random text4',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-  ];
   function rotateLeft() {
     setCNS([...cns.slice(1), cns[0]]);
     setCardDex([...cardDex.slice(1), cardDex[0]]);
-    setCenter((center-1 + cards1.length)%cards1.length);
+    setCenter((center-1 + cards.length)%cards.length);
   }
   function rotateRight() {
     setCNS([cns[cns.length - 1], ...cns.slice(0, cns.length - 1)]);
     setCardDex([cardDex[cardDex.length - 1], ...cardDex.slice(0, cardDex.length - 1)]);
-    setCenter((center+1)%cards1.length);
+    setCenter((center+1)%cards.length);
   }
 
   return (
@@ -94,7 +59,7 @@ export default function Carousel() {
           </button>
 
           {/* card  */}
-          {cards1.map((item) => {
+          {cards.map((item) => {
             return (
               <div
                 key={item.id}
@@ -152,9 +117,9 @@ export default function Carousel() {
         <Caption>
           Now to hackathon dont worry we got you covered with all the basic information
         </Caption>
-        <Heading3>{cards1[center].heading}</Heading3>
+        <Heading3>{cards[center].heading}</Heading3>
 
-        <Body2>{cards1[center].name}</Body2>
+        <Body2>{cards[center].name}</Body2>
 
         <Body2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad

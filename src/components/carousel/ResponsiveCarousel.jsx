@@ -1,15 +1,56 @@
 import React from 'react'
+import { useEffect } from 'react';
+import { useState } from 'react';
 import Carousel from './Carousel';
 import CarouselMob from './CarouselMob';
 
 export default function ResponsiveCarousel() {
-  if(window.innerWidth >640){
+    let cards = [
+        {
+          id: 1,
+          heading: 'HOW TO PRESENT IN A HACKATHON',
+          name: 'Sivraj Rajshiv',
+          designation: 'MLH Lead',
+          date: '29 January',
+          label: 'LABEL',
+        },
+        {
+          id: 2,
+          heading: 'HOW TO PRESENT IN A EVENT',
+          name: 'Ayush Shaw',
+          designation: 'MLH Lead',
+          date: '29 January',
+          label: 'LABEL',
+        },
+        {
+          id: 3,
+          heading: 'Random text3',
+          name: 'Sivraj Rajshiv',
+          designation: 'MLH Lead',
+          date: '29 January',
+          label: 'LABEL',
+        },
+        {
+          id: 4,
+          heading: 'Random text4',
+          name: 'Sivraj Rajshiv',
+          designation: 'MLH Lead',
+          date: '29 January',
+          label: 'LABEL',
+        },
+      ];
+      const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+      
+      window.addEventListener('resize', ()=>{
+        setScreenWidth(window.innerWidth);
+      })
+  if(screenWidth >=640){
     return(
-        <Carousel />
+        <Carousel cards = {cards} focused={2} />
     )
   }else{
     return(
-        <CarouselMob />
+        <CarouselMob cards = {cards} focused={2} />
     )
   }
 }

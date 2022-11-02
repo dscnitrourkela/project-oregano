@@ -4,51 +4,17 @@ import * as styles from '../../styles/Carousel.module.css';
 import { Body2, Heading1, Heading2 } from '../shared';
 import Card from './Card';
 
-export default function CarouselMob() {
-  let cards1 = [
-    {
-      id: 1,
-      heading: 'HOW TO PRESENT IN A HACKATHON',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 2,
-      heading: 'HOW TO PRESENT IN A EVENT',
-      name: 'Ayush Shaw',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 3,
-      heading: 'Random text3',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-    {
-      id: 4,
-      heading: 'Random text4',
-      name: 'Sivraj Rajshiv',
-      designation: 'MLH Lead',
-      date: '29 January',
-      label: 'LABEL',
-    },
-  ];
+export default function CarouselMob({cards, focused}) {
+  
   const [right, setRight] = useState(0);
   function scrolled(e) {
     let cardwidth = 283;
-    let scrollpush = (e.target.scrollLeft * 240) / (cardwidth * cards1.length);
+    let scrollpush = (e.target.scrollLeft * 240) / (cardwidth * cards.length);
     setRight(scrollpush);
   }
   // function mouseDown(e){
   //   setStartX(e.pageX - )
   // }
-  const [focused, setFocused] = useState(2);
   return (
     <div>
       <div className='px-10'>
@@ -63,7 +29,7 @@ export default function CarouselMob() {
         style={{ height: '375px' }}
         onScroll={scrolled}
       >
-        {cards1.map((item) => (
+        {cards.map((item) => (
           <Card
             id={item.id}
             designation={item.designation}
@@ -81,7 +47,7 @@ export default function CarouselMob() {
         className='bg-gray-300 rounded-full mx-auto my-36'
       >
         <div
-          style={{ height: '12px', width: `${240 / cards1.length}px`, right: `-${right}px` }}
+          style={{ height: '12px', width: `${240 / cards.length}px`, right: `-${right}px` }}
           className='bg-yellow-400 relative rounded-full'
         ></div>
       </div>
