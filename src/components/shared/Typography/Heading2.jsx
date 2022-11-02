@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export default styled.h2`
-  font-style: ${(props) => (props.semibold ? 'semibold' : 'normal')};
+  font-weight: ${(props) => (props.semibold ? '600' : '400')};
   ${tw`
    text-3.5xl 
    leading-9
