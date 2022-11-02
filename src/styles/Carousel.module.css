@@ -25,6 +25,24 @@
     height: 517px;
     /* border-radius: 32px; */
 }
+.columnGrid{
+    grid-column: span 5/span 5;
+}
+.columnGrid2{
+    grid-column: span 5/span 5;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (min-width: 946px){
+    .columnGrid{
+        grid-column: span 3/span 3;
+    }
+    .columnGrid2{
+        margin-left: auto;
+        margin-right: 4rem;
+        grid-column: span 2/span 2;
+    }
+}
 .leftBtn{
     left: -48.72px;
     top: 351px;

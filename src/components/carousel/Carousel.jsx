@@ -76,7 +76,7 @@ export default function Carousel() {
 
   return (
     <div className='grid grid-cols-5 py-12 w-full'>
-      <div className={`${styles.hComponent} col-span-5 md:col-span-3 w-full`}>
+      <div className={`${styles.hComponent} ${styles.columnGrid}  w-full`}>
         <div className={`mx-auto relative ${styles.wScaled} `}>
           <button
             id='left-carousal-btn'
@@ -145,7 +145,7 @@ export default function Carousel() {
         </div>
       </div>
       <div
-        className='col-span-5 md:col-span-2 relative max-w-md mx-auto md:ml-auto pr-3 md:mr-16 flex flex-col justify-between'
+        className={` relative max-w-md   pr-3  flex flex-col justify-between ${styles.columnGrid2}`}
         style={{ top: '22px', height: '517px' }}
       >
         <Heading2>SESSIONS</Heading2>
