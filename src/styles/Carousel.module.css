@@ -28,12 +28,12 @@
 .leftBtn{
     left: -48.72px;
     top: 351px;
-    background-color: red;
+    background-color: rgb(168, 152, 27);
 }
 .rightBtn{
     right: -49.02px;
     top: 351px;
-    background-color: red;
+    background-color: rgb(168, 152, 27);
 }
 
 .dragScroll::-webkit-scrollbar{

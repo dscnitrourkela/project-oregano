@@ -5,7 +5,7 @@ import CarouselMob from '../components/carousel/CarouselMob';
 export default function carouseltest() {
   return (
     <>
-    {/* <Carousel /> */}
+    <Carousel />
     <CarouselMob />
     </>
   )

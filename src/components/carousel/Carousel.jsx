@@ -3,6 +3,7 @@ import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
 import { Body1, Body2, Heading3, Heading2, Caption} from '../shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
 
 export default function Carousel() {
   const [focused, setFocused] = useState(2);
@@ -74,24 +75,22 @@ export default function Carousel() {
   }
 
   return (
-    <div className='grid grid-cols-5 py-12'>
-      <div className={`${styles.hComponent} col-span-3`}>
+    <div className='grid grid-cols-5 py-12 w-full'>
+      <div className={`${styles.hComponent} col-span-5 md:col-span-3 w-full`}>
         <div className={`mx-auto relative ${styles.wScaled} `}>
           <button
             id='left-carousal-btn'
-            className={`z-50 absolute w-8 ${styles.leftBtn}`}
+            className={`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white ${styles.leftBtn}`}
             onClick={rotateLeft}
           >
-            Left
-            <FontAwesomeIcon icon="fa-light fa-chevron-left" />
+            <FontAwesomeIcon icon={faChevronLeft} />
           </button>
           <button
             id='right-carousal-btn'
-            className={`z-50 absolute w-8 ${styles.rightBtn}`}
+            className={`z-50 w-8 h-8 text-white bg-yellow-300 absolute p-2 rounded-full  ${styles.rightBtn}`}
             onClick={rotateRight}
           >
-            Right
-            <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
+            <FontAwesomeIcon icon={faChevronRight} />
           </button>
 
           {/* card  */}
@@ -146,7 +145,7 @@ export default function Carousel() {
         </div>
       </div>
       <div
-        className=' col-span-2 relative max-w-md ml-auto pr-3 mr-16 flex flex-col justify-between'
+        className='col-span-5 md:col-span-2 relative max-w-md mx-auto md:ml-auto pr-3 md:mr-16 flex flex-col justify-between'
         style={{ top: '22px', height: '517px' }}
       >
         <Heading2>SESSIONS</Heading2>
