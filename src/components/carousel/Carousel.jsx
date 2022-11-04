@@ -40,7 +40,7 @@ export default function Carousel({cards, focused}) {
   }
 
   return (
-    <div className='grid grid-cols-5 py-12 w-full'>
+    <div className={`grid grid-cols-5 py-12 w-full ${styles.largeGrid}`}>
       <div className={`${styles.hComponent} ${styles.columnGrid}  w-full`}>
         <div className={`mx-auto relative ${styles.wScaled} `}>
           <button

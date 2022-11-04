@@ -38,11 +38,21 @@
         grid-column: span 3/span 3;
     }
     .columnGrid2{
-        margin-left: auto;
-        margin-right: 4rem;
+        margin-right: auto;
         grid-column: span 2/span 2;
+        padding-right: 4rem;
     }
+    
 }
+/* @media screen and (min-width: 1145px){
+    .columnGrid2{
+        grid-column: span 3/ span 3;
+        margin-right: auto;
+    }
+    .largeGrid{
+        grid-template-columns: repeat();
+    }
+} */
 .leftBtn{
     left: -48.72px;
     top: 351px;
