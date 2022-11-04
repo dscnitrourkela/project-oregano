@@ -3,14 +3,16 @@ import tw from 'twin.macro';
 
 export const SponsorGrid = styled.section`
   ${tw`
-  rounded-3xl
-  bg-color-back
   md:bg-black
   py-4
   grid
   break-words 
   overflow-hidden
   lg:grid-cols-10
+  min-w-min
+  // px-12
+  // rounded-3xl
+  // bg-color-back
  `}
 `;
 export const GridBox = styled.div`
@@ -20,39 +22,36 @@ export const GridBox = styled.div`
   p-4 
   text-6xl 
   row-span-1 
-  // justify-center
   lg:col-start-2 
   lg:col-end-5 
+  // justify-center
   `}
 `;
 export const VidBlock = styled.image`
   ${tw`
   px-4 
-  pt-2
-  max-w-lg 
+  pt-4
+  //  /
+  max-w-lg
   text-6xl 
   row-span-1 
   row-start-3 
   m-auto
-
-  rounded-3xl
+  lg:max-w-2xl 
   lg:row-start-1
   lg:px-0 
   lg:pt-0
   lg:m-auto 
   lg:col-start-5 
   lg:col-end-12 
-  `}// @media only screen and (min-width: 1200px) {
-  //   height: 430px;
-  // }
+  `}
 `;
 export const ContentContainer = styled.div`
   ${tw`
-  p-0
-  text-white
   flex-col
   justify-center
   items-start
+  // px-3
   `}
 `;
 
@@ -60,29 +59,28 @@ export const Buttons = styled.div`
   ${tw`
   flex 
   flex-row 
-  // justify-evenly
+  justify-start
   mt-10 
-  lg:place-items-center 
-  lg:mx-auto
+  // lg:place-items-center 
+  // lg:mx-auto
   `}
 `;
 export const DescText = styled.p`
   ${tw`
-  // m-auto
-  text-sm 
   text-white 
   lg:pt-9 
   pt-4
   lg:max-w-xs
   max-w-md
+  // m-auto
 `}
 `;
 export const ContentTextSm = styled.div`
   ${tw`
-  text-color-primary
-  text-xs 
   text-justify 
-  sm:m-auto 
+  px-4
+  lg:px-0
+  m-auto 
   lg:ml-0
   lg:max-w-xs
   lg:hidden
@@ -91,20 +89,17 @@ export const ContentTextSm = styled.div`
   `}
 `;
 export const ContentTextlg = styled.div`
-  ${tw`
-  text-xs 
+  ${tw` 
   text-justify 
-  // sm:m-auto 
   lg:max-w-xs
   hidden 
   lg:block
+  // sm:m-auto 
   `}
 `;
 export const TitleTextSm = styled.div`
   ${tw`
-  text-3xl
-  pb-4
-  text-white
+  px-8
   text-center
   items-center
   block
@@ -114,7 +109,6 @@ export const TitleTextSm = styled.div`
 `;
 export const TitleTextlg = styled.div`
   ${tw`
-  // text-3xl 
   pb-4
   row-start-1 
   hidden 
@@ -156,12 +150,3 @@ export const BrochureBtn = styled.button`
   sm:py-3
   `}
 `;
-// export const TagLine = styled.p`
-//   ${tw`
-//   text-sm
-//   text-white
-//   pt-8
-//   max-w-none
-//   md:max-w-xs
-//   `}
-// `;

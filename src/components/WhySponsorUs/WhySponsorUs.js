@@ -17,8 +17,8 @@ import {
 
 import Sponsor from '../../../config/content/WhySponsor';
 
-import Title from '../shared/Typography/Heading2';
-import Caption from '../shared/Typography/Caption';
+import Title from '../shared/Typography/Heading3';
+import Caption from '../shared/Typography/ButtonMetaLarge';
 import Body from '../shared/Typography/Body2';
 
 export default function Grid() {
@@ -48,7 +48,7 @@ export default function Grid() {
         </ContentContainer>
       </GridBox>
       <VidBlock>
-        <img className='rounded-3xl' src={Sponsor.img.src} alt={Sponsor.img.alt} />
+        <img className='lg:rounded-3xl rounded-t-3xl' src={Sponsor.img.src} alt={Sponsor.img.alt} />
       </VidBlock>
     </SponsorGrid>
   );
