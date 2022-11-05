@@ -11,7 +11,7 @@ const Wrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     background-color: #fff;
-    padding: 4px 95px 3px;
+    padding: 4px 40px 3px;
     border-radius: 4px;
     margin-top: 14px;
     height: 40px;
@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  height: 33px;
+  height: 30px;
   width: auto;
 `;
 

@@ -23,9 +23,9 @@ const RegisterButton = () => {
     >
       <div
         className='apply-button'
-        data-hackathon-slug='hacknitr3'
+        data-hackathon-slug='hacknitr4'
         data-button-theme='dark-inverted'
-        style={{ height: '44px', minWidth: '312px', marginTop: '2rem', marginRight: '14px' }}
+        style={{ height: '44px', minWidth: '270px', marginTop: '2rem', marginRight: '14px' }}
       >
         Apply with Devfolio
       </div>

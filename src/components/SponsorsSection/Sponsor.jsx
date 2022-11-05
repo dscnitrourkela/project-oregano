@@ -7,9 +7,9 @@ import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles
 // Assets
 import { sponsors } from '../../../config/content';
 
-const links = {
-  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
-};
+// const links = {
+//   sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+// };
 
 function Sponsor() {
   const sponsorDetails = [
@@ -29,50 +29,50 @@ function Sponsor() {
       span: 'span 5',
       gap: '30px',
     },
-    {
-      title: 'GAMMA SPONSORS',
-      sponsors: sponsors.gamma,
-      bcolor: '#E78967',
-      color: '#E78967',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      span: 'span 2',
-    },
-    {
-      title: 'DELTA SPONSORS',
-      sponsors: sponsors.delta,
-      bcolor: '#8FA963',
-      color: '#8FA963',
-      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
-      span: 'span 3',
-    },
-    {
-      title: 'MEDIA PARTNERS',
-      sponsors: sponsors['media-partners'],
-      bcolor: 'transparent',
-      span: 'span 5',
-      gap: '0px',
-    },
-    {
-      title: 'AUTHENTICATION PARTNER',
-      sponsors: sponsors['authentication-partner'],
-      bcolor: 'transparent',
-      span: 'span 2',
-      grid: '1fr 1fr 1fr ',
-    },
-    {
-      title: 'MENTAL HEALTH PARTNER',
-      sponsors: sponsors['mental-health-partner'],
-      bcolor: 'transparent',
-      span: 'span 2',
-      grid: '1fr 1fr 1fr ',
-    },
-    {
-      title: 'CODING PARTNER',
-      sponsors: sponsors['coding-partner'],
-      bcolor: 'transparent',
-      span: 'span 1',
-      grid: '1fr 1fr 1fr ',
-    },
+    // {
+    //   title: 'GAMMA SPONSORS',
+    //   sponsors: sponsors.gamma,
+    //   bcolor: '#E78967',
+    //   color: '#E78967',
+    //   grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+    //   span: 'span 2',
+    // },
+    // {
+    //   title: 'DELTA SPONSORS',
+    //   sponsors: sponsors.delta,
+    //   bcolor: '#8FA963',
+    //   color: '#8FA963',
+    //   grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+    //   span: 'span 3',
+    // },
+    // {
+    //   title: 'MEDIA PARTNERS',
+    //   sponsors: sponsors['media-partners'],
+    //   bcolor: 'transparent',
+    //   span: 'span 5',
+    //   gap: '0px',
+    // },
+    // {
+    //   title: 'AUTHENTICATION PARTNER',
+    //   sponsors: sponsors['authentication-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 2',
+    //   grid: '1fr 1fr 1fr ',
+    // },
+    // {
+    //   title: 'MENTAL HEALTH PARTNER',
+    //   sponsors: sponsors['mental-health-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 2',
+    //   grid: '1fr 1fr 1fr ',
+    // },
+    // {
+    //   title: 'CODING PARTNER',
+    //   sponsors: sponsors['coding-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 1',
+    //   grid: '1fr 1fr 1fr ',
+    // },
   ];
 
   return (
