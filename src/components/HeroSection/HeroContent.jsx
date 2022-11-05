@@ -6,7 +6,6 @@ import tw from 'twin.macro';
 
 // Components
 import { Heading1, Body, HighlightBody, Heading4 } from '../shared';
-import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
 import DiscordMobile from '../shared/DiscordMobile';
 // Assets
@@ -91,32 +90,30 @@ const Wrapper = styled.div`
 //   margin-top: 14px;
 // `;
 
-// const PreRegisterButton = styled.a`
-//   font-family: 'Nunito Sans', sans-serif;
-//   height: 44px;
-//   /* min-width: 280px; */
-//   text-decoration: none;
-//   ${tw`
-//     flex
-//     justify-center
-//     items-center
-//     w-40
-//     mt-6
-//     mr-4
-//     border-0
-//     cursor-pointer
-//     sm:m-0
-//     rounded
-//     sm:text-lg
-//     md:text-xl
-//     font-semibold
-//     bg-white
-//     text-black
-// `}
-//   :hover {
-//     background-color: #f8f0e3;
-//   }
-// `;
+const PreRegisterButton = styled.a`
+  font-family: 'Nunito Sans', sans-serif;
+  height: 44px;
+  /* min-width: 280px; */
+  text-decoration: none;
+  ${tw`
+    flex
+    justify-center
+    items-center
+    w-48
+    border-0
+    cursor-pointer
+    sm:m-0
+    rounded
+    sm:text-lg
+    md:text-xl
+    font-semibold
+    bg-white
+    text-black
+`}
+  :hover {
+    background-color: #f8f0e3;
+  }
+`;
 
 // const SponsorButton = styled(PreRegisterButton)`
 //   ${tw`
@@ -147,7 +144,8 @@ function HeroContent() {
         <Description key={data}>{data}</Description>
       ))}
       <Wrapper>
-        <DevfolioButton />
+        <PreRegisterButton href='/'>Apply with Devfolio</PreRegisterButton>
+        {/* <DevfolioButton /> */}
         <DiscordButton />
         <DiscordMobile />
       </Wrapper>
