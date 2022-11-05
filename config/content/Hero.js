@@ -11,11 +11,11 @@ export default {
   links: {
     discord: {
       icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Discord-Logo-Black_ratsjn.svg',
-      link: 'https://hacknitr.com/discord',
+      link: 'https://discord.gg/rxMB9aWbJD',
     },
     discordMobile: {
-      icon: 'https://res.cloudinary.com/riteshsp2000/image/upload/v1632037440/project-oregano/assets/nzkfrki74lszaodjzsaj.png',
-      link: 'https://hacknitr.com/discord',
+      icon: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1667584745/hn/Discord__software_-Logo_Wordmark-Black-Logo.wine_rhsgsh.png',
+      link: 'https://discord.gg/rxMB9aWbJD',
     },
   },
   img: {
