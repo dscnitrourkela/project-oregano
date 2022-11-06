@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import {NavText} from '../../shared/index';
+import {NavText} from '../../../shared';
 
 const fade = keyframes`
     0% {

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import DesktopNav from '../../marginals/DesktopNav';
-import MobileNav from '../../marginals/MobileNav';
+import {DesktopNav, MobileNav} from '../marginals';
 
 const Wrapper = styled.div`
   ${tw`
