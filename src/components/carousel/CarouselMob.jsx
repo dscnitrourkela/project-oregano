@@ -3,29 +3,44 @@ import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
 import { Body2, Heading1, Heading2 } from '../shared';
 import Card from './Card';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
-export default function CarouselMob({cards, focused}) {
-  
+const PX10 = styled.div`
+  ${tw`px-10`}
+`;
+
+const DragScroll = styled.div`
+  ${tw`flex flex-wrap flex-col overflow-x-scroll pt-10 `}
+  height: 375px;
+`;
+
+const ScrollArea = styled.div`
+  ${tw`bg-gray-300 rounded-full mx-auto my-36`}
+  height: 10px;
+  width: 240px;
+`;
+
+export default function CarouselMob({ cards, focused }) {
   const [right, setRight] = useState(0);
   function scrolled(e) {
     let cardwidth = 283;
     let scrollpush = (e.target.scrollLeft * 240) / (cardwidth * cards.length);
     setRight(scrollpush);
   }
-  // function mouseDown(e){
-  //   setStartX(e.pageX - )
-  // }
   return (
     <div>
-      <div className='px-10'>
+      <PX10>
         <Heading2>SESSIONS</Heading2>
         <div className='pt-4 '>
-        <Body2>New to hackathon dont worry we got you covered with all the basic information</Body2>
+          <Body2>
+            New to hackathon dont worry we got you covered with all the basic information
+          </Body2>
         </div>
-      </div>
-      
+      </PX10>
+
       <div
-        className={`flex flex-wrap flex-col overflow-x-scroll pt-10 card-holder ${styles.dragScroll}`}
+        className={`flex flex-wrap flex-col overflow-x-scroll pt-10 ${styles.dragScroll}`}
         style={{ height: '375px' }}
         onScroll={scrolled}
       >
@@ -42,15 +57,12 @@ export default function CarouselMob({cards, focused}) {
           ></Card>
         ))}
       </div>
-      <div
-        style={{ height: '12px', width: '240px' }}
-        className='bg-gray-300 rounded-full mx-auto my-36'
-      >
+      <ScrollArea>
         <div
-          style={{ height: '12px', width: `${240 / cards.length}px`, right: `-${right}px` }}
+          style={{ height: '10px', width: `${240 / cards.length}px`, right: `-${right}px` }}
           className='bg-yellow-400 relative rounded-full'
         ></div>
-      </div>
+      </ScrollArea>
     </div>
   );
 }

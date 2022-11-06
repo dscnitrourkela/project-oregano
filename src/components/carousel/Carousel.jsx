@@ -1,11 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
 import * as styles from '../../styles/Carousel.module.css';
-import { Body1, Body2, Heading3, Heading2, Caption} from '../shared';
+import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
-export default function Carousel({cards, focused}) {
+const SecondCardBottom = styled.div`
+  ${tw`flex justify-between pt-4`}
+`;
+const ButtonYellow = styled.button`
+  ${tw`bg-yellow-400 py-4 px-6 text-sm rounded-full text-black`}
+`;
+
+const BottomLink = styled.div`
+  ${tw` my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer`}
+`;
+
+export default function Carousel({ cards, focused }) {
   const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-900 rounded-2xl`;
 
   const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-900 ${styles.two}`;
@@ -15,7 +28,7 @@ export default function Carousel({cards, focused}) {
   const behindCardClass = `${styles.two} ${styles.wReq} absolute top-0 z-0 duration-300 ease-linear p-3`;
 
   const [cns, setCNS] = useState([leftCardClass, centerCardClass, rightCardClass, behindCardClass]);
-  
+
   const [cardDex, setCardDex] = useState(
     cns.map((item) => {
       if (item === centerCardClass) {
@@ -31,12 +44,12 @@ export default function Carousel({cards, focused}) {
   function rotateLeft() {
     setCNS([...cns.slice(1), cns[0]]);
     setCardDex([...cardDex.slice(1), cardDex[0]]);
-    setCenter((center-1 + cards.length)%cards.length);
+    setCenter((center - 1 + cards.length) % cards.length);
   }
   function rotateRight() {
     setCNS([cns[cns.length - 1], ...cns.slice(0, cns.length - 1)]);
     setCardDex([cardDex[cardDex.length - 1], ...cardDex.slice(0, cardDex.length - 1)]);
-    setCenter((center+1)%cards.length);
+    setCenter((center + 1) % cards.length);
   }
 
   return (
@@ -63,7 +76,7 @@ export default function Carousel({cards, focused}) {
             return (
               <div
                 key={item.id}
-                className={`${(item.id===focused)?styles.focused:""} ${cns[item.id - 1]}`}
+                className={`${item.id === focused ? styles.focused : ''} ${cns[item.id - 1]}`}
                 style={
                   cns[item.id - 1] !== centerCardClass
                     ? { filter: 'blur(2px)' }
@@ -127,12 +140,10 @@ export default function Carousel({cards, focused}) {
           exercitationem beatae excepturi libero aut totam quam amet labore iure architecto.
         </Body2>
 
-        <div className='flex justify-between pt-4'>
-          <button className='bg-yellow-400 py-4 px-6 text-sm rounded-full text-black'>JOIN LIVE</button>
-          <span className='h-fit my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer'>
-            GO TO YOUTUBE {'>'}
-          </span>
-        </div>
+        <SecondCardBottom>
+          <ButtonYellow>JOIN LIVE</ButtonYellow>
+          <BottomLink>GO TO YOUTUBE {'>'}</BottomLink>
+        </SecondCardBottom>
       </div>
     </div>
   );
