@@ -17,29 +17,27 @@ import {
 
 import Sponsor from '../../../config/content/WhySponsor';
 
-import Title from '../shared/Typography/Heading3';
-import Caption from '../shared/Typography/ButtonMetaLarge';
-import Body from '../shared/Typography/Body2';
+import { Heading3, ButtonMeta, Body2 } from '../shared';
 
-export default function Grid() {
+export default function SponsorUs() {
   return (
     <SponsorGrid>
       <TitleTextSm>
-        <Title>{Sponsor.Title.TitleText}</Title>
+        <Heading3>{Sponsor.Title.TitleText}</Heading3>
       </TitleTextSm>
       <ContentTextSm>
-        <Caption>{Sponsor.Caption.CaptionText}</Caption>
+        <ButtonMeta>{Sponsor.Caption.CaptionText}</ButtonMeta>
       </ContentTextSm>
       <GridBox>
         <ContentContainer>
           <TitleTextlg>
-            <Title>{Sponsor.Title.TitleText}</Title>
+            <Heading3>{Sponsor.Title.TitleText}</Heading3>
           </TitleTextlg>
           <ContentTextlg>
-            <Caption>{Sponsor.Caption.CaptionText}</Caption>
+            <ButtonMeta>{Sponsor.Caption.CaptionText}</ButtonMeta>
           </ContentTextlg>
           <DescText>
-            <Body>{Sponsor.Description.Desc}</Body>
+            <Body2>{Sponsor.Description.Desc}</Body2>
           </DescText>
           <Buttons>
             <SponsorBtn>{Sponsor.Buttons.SponsorButton}</SponsorBtn>

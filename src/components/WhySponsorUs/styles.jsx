@@ -3,6 +3,7 @@ import tw from 'twin.macro';
 
 export const SponsorGrid = styled.section`
   ${tw`
+  m-auto
   md:bg-black
   py-4
   grid
@@ -100,6 +101,7 @@ export const ContentTextlg = styled.div`
 export const TitleTextSm = styled.div`
   ${tw`
   px-8
+  py-4
   text-center
   items-center
   block
