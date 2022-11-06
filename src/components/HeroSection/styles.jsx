@@ -7,7 +7,7 @@ export const HeroBody = styled.div`${
     h-screen
     justify-center
     items-center
-    bg-black
+    bg-bg-color
     text-white
     flex-col
     overflow-x-hidden
@@ -29,23 +29,26 @@ export const HeroTitle = styled.div`${
 export const HACK = styled.img`${
     tw`
     object-contain
-    h-24
+    h-20
+    sm:h-36
     `
 }`
 
 export const SubTitle = styled.p`${
     tw`
     tracking-wide
-    sm:tracking-widest
     text-lg
-    text-center`
+    text-center
+    sm:tracking-widest
+    sm:text-2xl`
 }`
 
 
 export const NITR = styled.img`${
     tw`
     object-contain
-    h-24
+    h-20
+    sm:h-36
     `
 }`
 

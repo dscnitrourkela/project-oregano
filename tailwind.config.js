@@ -40,7 +40,8 @@ module.exports = {
         'color-primary': '#EAEAEA',
         'color-secondary': '#D6D6D6',
         'color-tertiary': '#A3A3A3',
-        'btn-yellow':'#FFE81F'
+        'btn-yellow':'#FFE81F',
+        'bg-color':'#000811'
       },
 
       // Noto: ['Noto Sans', 'sans-serif'],
@@ -49,9 +50,9 @@ module.exports = {
       },
 
       letterSpacing: {
-        wide:'0.235em',
+        wide:'0.25em',
         wider:'0.37em',
-        widest: '0.42em',
+        widest: '0.62em',
       },
     },
   },

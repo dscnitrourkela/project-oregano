@@ -13,10 +13,6 @@ import{
   DiscBtn
 } from './styles'
 
-import Hackimg from '../../../images/hack.png'
-import NITRimg from '../../../images/NITR.png'
-import discord from '../../../images/discord.png'
-
 import content from '../../../config/hero'
 
 import Title from '../shared/Typography/Heading4'
@@ -25,9 +21,9 @@ export default function Hero(){
   return(
     <HeroBody>
       <HeroTitle>
-        <HACK src={Hackimg}/>
+        <HACK src={content.Hackimg.src} alt={content.Hackimg.alt}/>
         <SubTitle>{content.titleLine.text}</SubTitle>
-        <NITR src={NITRimg}/>
+        <NITR src={content.NITRimg.src} alt={content.NITRimg.alt}/>
       </HeroTitle>
 
       <Tagline>
@@ -37,7 +33,7 @@ export default function Hero(){
 
       <HeroButtons>
         <DevfolioBtn>{content.button.buttontext}</DevfolioBtn>
-        <DiscBtn src={discord}/>
+        <DiscBtn src={content.discordbtn.src} alt={content.discordbtn.alt}/>
       </HeroButtons>
     </HeroBody>
   )
