@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import Carousel from './Carousel';
 import CarouselMob from './CarouselMob';
-import { SectionLayout } from '../shared';
+import { SectionContainer } from '../shared';
 
 export default function ResponsiveCarousel() {
   let cards = [
@@ -47,15 +47,15 @@ export default function ResponsiveCarousel() {
   });
   if (screenWidth >= 640) {
     return (
-      <SectionLayout children={<Carousel cards={cards} focused={2} />}>
+      <SectionContainer children={<Carousel cards={cards} focused={2} />}>
         
-      </SectionLayout>
+      </SectionContainer>
     );
   } else {
     return (
-      <SectionLayout children={<CarouselMob cards={cards} focused={2} />}>
+      <SectionContainer children={<CarouselMob cards={cards} focused={2} />}>
         
-      </SectionLayout>
+      </SectionContainer>
     );
   }
 }
