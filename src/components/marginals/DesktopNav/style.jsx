@@ -1,14 +1,21 @@
 import styled, { keyframes } from 'styled-components';
 import {NavText} from '../../shared/index';
 
-const fadeRight = keyframes`
+const fade = keyframes`
     0% {
         width: 0;
+        opacity: 0;
+        box-shadow: none;
+
     }
     100% {
-        width: 32px;
+        width: 16px;
+        opacity: 1;
+        box-shadow: 0 0 6px 2px rgb(237 236 81 / 70%);
     }
 `;
+
+
 
 export const NavBar = styled.header`
   background-color: rgba(0, 8, 17, 0.81);
@@ -51,20 +58,32 @@ export const NavBar = styled.header`
 `;
 
 export const NavItem = styled(NavText)`
-  font-weight: 600;
+  font-weight: 400;
   color: var(--text-color-tertiary);
   position: relative;
   
   &:active::after,
-  &:hover::after{
+  &:hover::after,
+  &:visited::after{
     content: '';
     height: 2px;
-    animation: ${fadeRight} 1s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
     border-top: 1px solid #fff;
-    left: calc(50% - 16px);
-    box-shadow: 0 0 6px 2px rgb(237 236 81 / 70%);
+    left: 50%;
+  }
+
+  &:active::before,
+  &:hover::before,
+  &:visited::after{
+    content: '';
+    height: 2px;
+    animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
+    position: absolute;
+    bottom: -6px;
+    border-top: 1px solid #fff;
+    right: 50%;
   }
 
   &:hover{

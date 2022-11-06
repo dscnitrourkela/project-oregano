@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Container from '../../atoms/Container';
-import navList from '../../content/content';
+import navList from '../../../../config/content';
 import { MenuButton, NavBar, Logo } from './style';
 import MLHbanner from '../../atoms/MLHbanner';
 import MobileNavList from './MobileNavList/MobileNavList';

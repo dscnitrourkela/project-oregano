@@ -68,7 +68,7 @@ export const MenuButton = styled.button`
   .menu_burger::before,
   .menu_burger::after {
     height: 2px;
-    width: 24px;
+    width: 25px;
     background-color: #fff;
     transition: all 400ms ease-in-out;
   }
@@ -77,8 +77,7 @@ export const MenuButton = styled.button`
   .menu_burger::after {
     content: '';
     position: absolute;
-    width: ${({menuIsOpen}) => (menuIsOpen ? '12px': '24px')};
-    left: 0;
+    width: 15px;
   }
 
   .menu_burger {
@@ -86,15 +85,17 @@ export const MenuButton = styled.button`
   }
 
   .menu_burger::before {
-    bottom: ${({menuIsOpen}) => (menuIsOpen ? '6px': '8px')};
+    bottom: ${({menuIsOpen}) => (menuIsOpen ? '250%': '8px')};
+    left: 0;
     transform: ${({ menuIsOpen }) =>
-      menuIsOpen ? 'rotate(90deg) translate(0px, -6px)' : 'rotate(0deg)'};
+      menuIsOpen ? 'rotate(90deg) translate(0px, -275%)' : 'rotate(0deg)'};
   }
 
   .menu_burger::after {
-    top: ${({menuIsOpen}) => (menuIsOpen ? '6px': '8px')};
+    top: ${({menuIsOpen}) => (menuIsOpen ? '250%': '8px')};
+    right: 0;
     transform: ${({ menuIsOpen }) =>
-      menuIsOpen ? 'rotate(-90deg) translate(-0px, 6px)' : 'rotate(0deg)'};
+      menuIsOpen ? 'rotate(90deg) translate(0px, 250%)' : 'rotate(0deg)'};
   }
 
   @media (min-width: 680px){
@@ -142,7 +143,7 @@ export const MobileNavList = styled.ul`
     border: none;
   }
 
-  @media (min-width: 865px) {
+  @media (min-width: 890px) {
     display: none;
   }
 `;

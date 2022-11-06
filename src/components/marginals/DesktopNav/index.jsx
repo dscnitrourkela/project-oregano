@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import navList from '../../content/content';
+import navList from '../../../../config/content';
 import { NavBar, Logo, NavItem } from './style';
 import MLHbanner from '../../atoms/MLHbanner';
 

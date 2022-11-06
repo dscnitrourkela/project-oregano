@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import navList from '../../../content/content';
+import navList from '../../../../../config/content';
 import { MobileNavList, NavItem } from '../style';
 
 export default () => (
