@@ -7,6 +7,10 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+const Py4 = styled.div`
+  ${tw`py-4`}
+`;
+
 const SecondCardBottom = styled.div`
   ${tw`flex justify-between pt-4`}
 `;
@@ -14,8 +18,81 @@ const ButtonYellow = styled.button`
   ${tw`bg-yellow-400 py-4 px-6 text-sm rounded-full text-black`}
 `;
 
+const CarouselContainer = styled.div`
+  ${tw`grid grid-cols-5 py-12 w-full`}
+`;
+
 const BottomLink = styled.div`
   ${tw` my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer`}
+`;
+
+const AnimatedCarousel = styled.div`
+  ${tw`w-full`}
+  height: 549px;
+  grid-column: span 5 / span 5;
+  @media (min-width: 946px) {
+    grid-column: span 3 / span 3;
+  }
+`;
+
+const BaseCard = styled.div`
+  ${tw`mx-auto relative`}
+  width: 384px;
+  height: 517px;
+`;
+
+const ChevronButtonLeft = styled.button`
+  ${tw`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white`}
+  left: -48.72px;
+  top: 351px;
+  background-color: #8a8759;
+`;
+
+const ChevronButtonRight = styled.button`
+  ${tw`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white`}
+  right: -49.02px;
+  top: 351px;
+  background-color: #8a8759;
+`;
+const FirstHalfCard = styled.div`
+  ${tw`h-1/2 bg-white w-full`}
+  border-radius: ${(props) => props.radius};
+`;
+const SecondHalfCard = styled.div`
+  ${tw`h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between`}
+`;
+
+const CardBottom = styled.div`
+  ${tw`flex justify-between`}
+`;
+const CardLabel = styled.div`
+  ${tw` mt-auto`}
+`;
+
+const DownIndex = styled.div`
+  ${tw`mx-auto justify-between py-4 flex`}
+  width: ${(props) => props.cardcount}rem;
+`;
+
+const IndividualDownIndexSelected = styled.span`
+  ${tw`h-2 w-2 rounded-full mx-auto bg-yellow-400`}
+`;
+const IndividualDownIndexUnselected = styled.span`
+  ${tw`h-2 w-2 rounded-full mx-auto bg-gray-100`}
+`;
+
+const DataComponent = styled.div`
+  ${tw`relative max-w-md   pr-3  flex flex-col justify-between`}
+  grid-column: span 5/span 5;
+  margin-right: auto;
+  margin-left: auto;
+  top: 22px;
+  height: 517px;
+  @media (min-width: 946px) {
+    margin-right: auto;
+    grid-column: span 2 / span 2;
+    padding-right: 4rem;
+  }
 `;
 
 export default function Carousel({ cards, focused }) {
@@ -32,9 +109,9 @@ export default function Carousel({ cards, focused }) {
   const [cardDex, setCardDex] = useState(
     cns.map((item) => {
       if (item === centerCardClass) {
-        return 'bg-yellow-400';
+        return true;
       } else {
-        return 'bg-gray-100';
+        return false;
       }
     }),
   );
@@ -53,23 +130,15 @@ export default function Carousel({ cards, focused }) {
   }
 
   return (
-    <div className={`grid grid-cols-5 py-12 w-full ${styles.largeGrid}`}>
-      <div className={`${styles.hComponent} ${styles.columnGrid}  w-full`}>
-        <div className={`mx-auto relative ${styles.wScaled} `}>
-          <button
-            id='left-carousal-btn'
-            className={`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white ${styles.leftBtn}`}
-            onClick={rotateLeft}
-          >
+    <CarouselContainer>
+      <AnimatedCarousel>
+        <BaseCard>
+          <ChevronButtonLeft onClick={rotateLeft}>
             <FontAwesomeIcon icon={faChevronLeft} />
-          </button>
-          <button
-            id='right-carousal-btn'
-            className={`z-50 w-8 h-8 text-white bg-yellow-300 absolute p-2 rounded-full  ${styles.rightBtn}`}
-            onClick={rotateRight}
-          >
+          </ChevronButtonLeft>
+          <ChevronButtonRight onClick={rotateRight}>
             <FontAwesomeIcon icon={faChevronRight} />
-          </button>
+          </ChevronButtonRight>
 
           {/* card  */}
           {cards.map((item) => {
@@ -83,49 +152,40 @@ export default function Carousel({ cards, focused }) {
                     : { filter: 'blur(0px)' }
                 }
               >
-                <div
-                  className='h-1/2 bg-white w-full'
-                  style={
-                    cns[item.id - 1] !== centerCardClass
-                      ? { borderRadius: '1.0rem' }
-                      : { borderRadius: '0.8rem' }
-                  }
-                ></div>
-                <div className='h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between'>
+                <FirstHalfCard
+                  radius={cns[item.id - 1] !== centerCardClass ? '1.0rem' : '0.8rem'}
+                ></FirstHalfCard>
+                <SecondHalfCard>
                   <div>
                     <Heading3>{item.heading}</Heading3>
-                    <div className='py-4'>
+                    <Py4>
                       <Body2>
                         {item.name} : {item.designation}
                       </Body2>
-                    </div>
+                    </Py4>
                   </div>
-                  <div className='flex justify-between '>
+                  <CardBottom>
                     <Body1>{item.date}</Body1>
-                    <div className='h-fit mt-auto'>
+                    <CardLabel>
                       <Body2>{item.label}</Body2>
-                    </div>
-                  </div>
-                </div>
+                    </CardLabel>
+                  </CardBottom>
+                </SecondHalfCard>
               </div>
             );
           })}
-        </div>
+        </BaseCard>
         <div>
-          <div
-            className=' mx-auto justify-between py-4 flex'
-            style={{ width: `${cardDex.length}rem` }}
-          >
+          <DownIndex cardcount={cardDex.length}>
+            <div className='bg-yellow-400'></div>
             {cardDex.map((item) => {
-              return <span className={`${item} h-2 w-2 rounded-full mx-auto`}></span>;
+              if (item) return <IndividualDownIndexSelected></IndividualDownIndexSelected>;
+              else return <IndividualDownIndexUnselected></IndividualDownIndexUnselected>;
             })}
-          </div>
+          </DownIndex>
         </div>
-      </div>
-      <div
-        className={` relative max-w-md   pr-3  flex flex-col justify-between ${styles.columnGrid2}`}
-        style={{ top: '22px', height: '517px' }}
-      >
+      </AnimatedCarousel>
+      <DataComponent>
         <Heading2>SESSIONS</Heading2>
         <Caption>
           Now to hackathon dont worry we got you covered with all the basic information
@@ -144,7 +204,7 @@ export default function Carousel({ cards, focused }) {
           <ButtonYellow>JOIN LIVE</ButtonYellow>
           <BottomLink>GO TO YOUTUBE {'>'}</BottomLink>
         </SecondCardBottom>
-      </div>
-    </div>
+      </DataComponent>
+    </CarouselContainer>
   );
 }

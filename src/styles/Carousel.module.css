@@ -23,7 +23,6 @@
 .wScaled{
     width: 384px;
     height: 517px;
-    /* border-radius: 32px; */
 }
 .columnGrid{
     grid-column: span 5/span 5;
@@ -44,15 +43,6 @@
     }
     
 }
-/* @media screen and (min-width: 1145px){
-    .columnGrid2{
-        grid-column: span 3/ span 3;
-        margin-right: auto;
-    }
-    .largeGrid{
-        grid-template-columns: repeat();
-    }
-} */
 .leftBtn{
     left: -48.72px;
     top: 351px;

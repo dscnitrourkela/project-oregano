@@ -9,6 +9,9 @@ import tw from 'twin.macro';
 const PX10 = styled.div`
   ${tw`px-10`}
 `;
+const Pt4 = styled.div`
+  ${tw`pt-4`}
+`;
 
 const DragScroll = styled.div`
   ${tw`flex flex-wrap flex-col overflow-x-scroll pt-10 `}
@@ -32,11 +35,11 @@ export default function CarouselMob({ cards, focused }) {
     <div>
       <PX10>
         <Heading2>SESSIONS</Heading2>
-        <div className='pt-4 '>
+        <Pt4>
           <Body2>
             New to hackathon dont worry we got you covered with all the basic information
           </Body2>
-        </div>
+        </Pt4>
       </PX10>
 
       <div
