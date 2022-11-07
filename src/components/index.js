@@ -1,0 +1,1 @@
+export {default as SponsorSection} from './SponsorsSection/SponsorSection'
