@@ -85,14 +85,14 @@ export const MenuButton = styled.button`
   }
 
   .menu_burger::before {
-    bottom: ${({menuIsOpen}) => (menuIsOpen ? '250%': '8px')};
+    bottom: ${({menuIsOpen}) => (menuIsOpen ? '250%': '400%')};
     left: 0;
     transform: ${({ menuIsOpen }) =>
       menuIsOpen ? 'rotate(90deg) translate(0px, -275%)' : 'rotate(0deg)'};
   }
 
   .menu_burger::after {
-    top: ${({menuIsOpen}) => (menuIsOpen ? '250%': '8px')};
+    top: ${({menuIsOpen}) => (menuIsOpen ? '250%': '400%')};
     right: 0;
     transform: ${({ menuIsOpen }) =>
       menuIsOpen ? 'rotate(90deg) translate(0px, 250%)' : 'rotate(0deg)'};
@@ -103,24 +103,15 @@ export const MenuButton = styled.button`
     .menu_burger::before,
     .menu_burger::after {
       height: 3px;
-      width: 2em;
     }
 
-    .menu_burger {
-      transform: ${({ menuIsOpen }) => (menuIsOpen ? 'translateX(33.5px)' : 'translateX(0)')};
-      background-color: ${({ menuIsOpen }) => (menuIsOpen ? 'transparent' : '#fff')};
+    .menu_burger{
+      width: 37.5px;
     }
-  
-    .menu_burger::before {
-      bottom: 12px;
-      transform: ${({ menuIsOpen }) =>
-        menuIsOpen ? 'rotate(45deg) translate(-16.5px,33px)' : 'rotate(0deg)'};
-    }
-  
+
+    .menu_burger::before,
     .menu_burger::after {
-      top: 12px;
-      transform: ${({ menuIsOpen }) =>
-        menuIsOpen ? 'rotate(-45deg) translate(-16.5px,-33px)' : 'rotate(0deg)'};
+      width: 22.5px;
     }
 `;
 
