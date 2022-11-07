@@ -2,21 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const ContainerStyle = styled.div`
+const Wrapper = styled.div`
   ${tw`
-      w-11/12 
-      max-w-7xl 
-      my-0 
-      mx-auto  
-      overflow-hidden
-      px-0
-      py-2
-      sm:p-3
-  `}
+        w-11/12
+        max-w-7xl
+        my-0
+        mx-auto
+        p-2.5
+        sm:p-0
+        overflow-y-hidden
+    `}
 `;
 
 function Container({ children }) {
-  return <ContainerStyle>{children}</ContainerStyle>;
+  return <Wrapper>{children}</Wrapper>;
 }
 
 export default Container;

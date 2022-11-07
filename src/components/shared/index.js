@@ -12,3 +12,5 @@ export { default as NavText } from './Typography/NavText';
 export { default as MLHbanner } from './MLHbanner';
 export { default as Layout } from './Layout';
 export { default as Container } from './Container';
+export { default as SectionContainer } from './SectionContainer';
+export { default as SectionLayout } from './SectionLayout';
