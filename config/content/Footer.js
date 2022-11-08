@@ -121,9 +121,5 @@ export default {
       text: 'Sponsor Us',
       href: config.sponsor,
     },
-    {
-      text: 'Join Us',
-      href: config.join,
-    },
   ],
 };

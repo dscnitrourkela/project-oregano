@@ -24,6 +24,7 @@ import {
   Stats,
   TestimonialSection,
   AboutSection,
+  MLHBanner,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -66,6 +67,8 @@ const Homepage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
+
+      <MLHBanner />
 
       <Layout location={location}>
         <HeroSection />
