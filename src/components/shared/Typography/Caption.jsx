@@ -10,7 +10,7 @@ export default styled.p`
    sm:text-sm
    sm:leading-4.5
 
-   text-color-primary
+   text-color-tertiary
    font-Noto
 `}
 `;
