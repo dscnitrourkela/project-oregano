@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styled from 'styled-components';
 import {
   SponsorGrid,
   ContentContainer,
@@ -19,6 +19,10 @@ import Sponsor from '../../../config/content/WhySponsor';
 
 import { Heading3, ButtonMeta, Body2 } from '../shared';
 
+const Caption = styled(ButtonMeta)`
+  text-[#A3A3A3];
+`;
+
 export default function SponsorUs() {
   return (
     <SponsorGrid>
@@ -26,7 +30,7 @@ export default function SponsorUs() {
         <Heading3>{Sponsor.Title.TitleText}</Heading3>
       </TitleTextSm>
       <ContentTextSm>
-        <ButtonMeta>{Sponsor.Caption.CaptionText}</ButtonMeta>
+        <Caption>{Sponsor.Caption.CaptionText}</Caption>
       </ContentTextSm>
       <GridBox>
         <ContentContainer>
@@ -34,7 +38,7 @@ export default function SponsorUs() {
             <Heading3>{Sponsor.Title.TitleText}</Heading3>
           </TitleTextlg>
           <ContentTextlg>
-            <ButtonMeta>{Sponsor.Caption.CaptionText}</ButtonMeta>
+            <Caption>{Sponsor.Caption.CaptionText}</Caption>
           </ContentTextlg>
           <DescText>
             <Body2>{Sponsor.Description.Desc}</Body2>

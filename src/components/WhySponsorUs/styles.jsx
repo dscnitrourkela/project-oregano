@@ -1,14 +1,22 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+// export const Mobver = styled.div`
+//   ${tw`
+//   // block
+//   // lg:hidden
+//   bg-color-back
+//   rounded-t-3xl
+//   `}
+// `;
+
 export const SponsorGrid = styled.section`
   ${tw`
-  m-auto
-  md:bg-black
-  py-4
   grid
+  m-auto
+  py-4
   break-words 
-  overflow-hidden
+  // overflow-hidden
   lg:grid-cols-10
   min-w-min
   // px-12
@@ -21,10 +29,13 @@ export const GridBox = styled.div`
   flex
   m-auto
   p-4 
+  // sm:hidden
+  // lg:block
   text-6xl 
   row-span-1 
-  lg:col-start-2 
+  lg:col-start-1 
   lg:col-end-5 
+  overflow-hidden
   // justify-center
   `}
 `;
@@ -33,22 +44,26 @@ export const VidBlock = styled.image`
   px-4 
   pt-4
   //  /
+  // sm:hidden
+  // lg:block
+  // h-full
   max-w-lg
-  text-6xl 
   row-span-1 
   row-start-3 
   m-auto
-  lg:max-w-2xl 
+  lg:max-w-2xl
+  lg:max-h-screen
   lg:row-start-1
   lg:px-0 
   lg:pt-0
   lg:m-auto 
   lg:col-start-5 
-  lg:col-end-12 
+  lg:col-end-10
   `}
 `;
 export const ContentContainer = styled.div`
   ${tw`
+  flex-shrink
   flex-col
   justify-center
   items-start
@@ -69,7 +84,7 @@ export const Buttons = styled.div`
 export const DescText = styled.p`
   ${tw`
   text-white 
-  lg:pt-9 
+  lg:pt-6 
   pt-4
   lg:max-w-xs
   max-w-md
