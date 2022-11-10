@@ -51,19 +51,19 @@ export default function Faq() {
       <AnswerContainer>
         <Body1 semibold>R2D2 To Your Resque Ask Me Anything From There --</Body1>
         <Answer>
-          <Body2>{renderFaq()}</Body2>
+          <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
         </Answer>
         <BotContainer>
           <BotImg src={botImg.src} alt={botImg.alt} />
           <BotMessage>
-            <Caption>{botMessage}</Caption>
+            <Caption className='text-[#D6D6D6] sm:text-xs md:text-sm'>{botMessage}</Caption>
           </BotMessage>
         </BotContainer>
       </AnswerContainer>
       <FaqContainer>
         <Head>
           <Heading3 semibold>{title}</Heading3>
-          <Caption>{content}</Caption>
+          <Caption className='text-color-tertiary mt-1'>{content}</Caption>
         </Head>
         <Ques>
           <Ul>

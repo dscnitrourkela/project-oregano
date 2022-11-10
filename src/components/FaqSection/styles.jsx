@@ -7,6 +7,8 @@ const Wrapper = styled.div`
   grid-cols-1
   gap-x-20
 
+  mt-5
+  sm:mt-14
   sm:grid-cols-2
   sm:my-10
   sm:px-14
@@ -15,14 +17,17 @@ const Wrapper = styled.div`
 
 const FaqContainer = styled.div`
   ${tw`
-  p-2
+  pt-10
+  sm:p-2
   `}
 `;
 
 const AnswerContainer = styled.div`
   ${tw`
   relative
-  rounded-3xl
+  rounded-xl
+  sm:rounded-xl
+  lg:rounded-3xl
   p-4
   mt-4
   bg-[#202020]
@@ -36,7 +41,8 @@ const Answer = styled.div`
   border-solid 
   border-2 
   border-yellow-300 
-  rounded-xl
+  rounded-lg
+  sm:rounded-xl
   sm:mt-16 
   sm:p-4  
   lg:ml-20 
@@ -48,22 +54,26 @@ const BotContainer = styled.div`
   flex 
   flex-row 
   items-center 
-  bottom-12
+  md:bottom-12
   sm:absolute
   `}
 `;
 
 const BotImg = styled.img`
   ${tw`
-  sm:h-52 
-  sm:w-36 
+  sm:h-28 
+  sm:w-24 
+  lg:h-52 
+  lg:w-36
   sm:block
   hidden 
   `}
 `;
+
 const BotMessage = styled.div`
   ${tw`
-  p-3
+  py-3
+  px-2
   sm:p-6
   `}
 `;
@@ -86,6 +96,8 @@ const List = styled.li`
   ${tw`
     py-4
     mx-2
+    text-xs
+    sm:text-sm
     font-Noto
     leading-4
     cursor-pointer
@@ -93,7 +105,6 @@ const List = styled.li`
     border-solid
     border-b border-color-tertiary
     hover:text-white
-    sm:text-sm
     `}
 `;
 
