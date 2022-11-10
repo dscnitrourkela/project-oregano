@@ -31,14 +31,14 @@ module.exports = {
   facebook: 'https://facebook.com/hacknitr',
   instagram: 'https://instagram.com/hacknitr',
   discord: 'https://discord.com/invite/SGzuZyp9nS',
-  register: 'https://hacknitr3.devfolio.co/',
-  sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
-  join: 'https://hacknitr21.typeform.com/to/o2X7YSNf',
+  register: 'https://hacknitr-4.devfolio.co/',
+  sponsor: 'https://o0rqxa59g3k.typeform.com/to/GXfkpiIo',
+  join: 'https://preregister.hacknitr.com',
 
   // MLH Links
   codeOfConduct: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
   privacyPolicy: 'https://mlh.io/privacy',
-  termsConditions: 'https://github.com/MLH/mlh-policies/tree/master/prize-terms-and-conditions',
+  termsConditions: 'https://github.com/MLH/mlh-policies/blob/main/contest-terms.md',
 
   // Community Partners Link
   communityPartners: 'https://partners.hacknitr.com/',

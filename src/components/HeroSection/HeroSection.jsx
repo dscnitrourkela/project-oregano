@@ -7,6 +7,7 @@ import tw from 'twin.macro';
 // Components
 import { Container } from '../shared';
 import HeroContent from './HeroContent';
+import Ticker from './Ticker';
 
 // Assets
 import { hero } from '../../../config/content';
@@ -64,6 +65,7 @@ function HeroSection() {
           </HeroImageContainer>
         </HeroContainer>
       </Container>
+      <Ticker />
     </SectionContainer>
   );
 }
