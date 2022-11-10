@@ -40,6 +40,7 @@ module.exports = {
         'color-primary': '#EAEAEA',
         'color-secondary': '#D6D6D6',
         'color-tertiary': '#A3A3A3',
+        'color-back': '#F5F5F5',
       },
 
       // Noto: ['Noto Sans', 'sans-serif'],
