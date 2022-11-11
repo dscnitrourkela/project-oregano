@@ -1,15 +1,18 @@
 import React from 'react';
+import { Layout } from '../components/shared/index';
+import '../styles/global.css';
 
-import Faq from '../components/FaqSection/Faq';
+import FAQ from '../components/FaqSection/Faq';
 import Container from '../components/shared/Container';
 
 export default function Home() {
   return (
     <>
-      <Container>
-        <h1 className='text-3xl font-bold underline text-color-primary'>HackNITR 4.0</h1>
-        <Faq />
-      </Container>
+      <Layout>
+        <Container>
+          <FAQ />
+        </Container>
+      </Layout>
     </>
   );
 }
