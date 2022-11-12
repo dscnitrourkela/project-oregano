@@ -16,14 +16,22 @@ const Pt4 = styled.div`
 const DragScroll = styled.div`
   ${tw`flex flex-wrap flex-col overflow-x-scroll pt-10 `}
   height: 375px;
+  width: ${(props) => 240 / props.cardlength}px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  ::-webkit-scrollbar: {width: 12px;};
 `;
 
 const ScrollArea = styled.div`
   ${tw`bg-gray-300 rounded-full mx-auto my-36`}
-  height: 10px;
+  height: 8px;
   width: 240px;
 `;
-
+const ScrollBar = styled.div`
+  ${tw`bg-yellow-400 relative rounded-full`}
+  height: 8px;
+  width: ${props=>(240/(props.cardlength))}px;
+`;
 export default function CarouselMob({ cards, focused }) {
   const [right, setRight] = useState(0);
   function scrolled(e) {
@@ -42,11 +50,12 @@ export default function CarouselMob({ cards, focused }) {
         </Pt4>
       </PX10>
 
-      <div
+      {/* <div
         className={`flex flex-wrap flex-col overflow-x-scroll pt-10 ${styles.dragScroll}`}
         style={{ height: '375px' }}
         onScroll={scrolled}
-      >
+      > */}
+      <DragScroll onScroll={scrolled}>
         {cards.map((item) => (
           <Card
             id={item.id}
@@ -59,12 +68,10 @@ export default function CarouselMob({ cards, focused }) {
             label={item.label}
           ></Card>
         ))}
-      </div>
+        </DragScroll>
+      {/* </div> */}
       <ScrollArea>
-        <div
-          style={{ height: '10px', width: `${240 / cards.length}px`, right: `-${right}px` }}
-          className='bg-yellow-400 relative rounded-full'
-        ></div>
+        <ScrollBar style={{ right: `-${right}px` }} cardlength={cards.length}></ScrollBar>
       </ScrollArea>
     </div>
   );

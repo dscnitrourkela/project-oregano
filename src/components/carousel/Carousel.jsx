@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import * as styles from '../../styles/Carousel.module.css';
 import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -94,66 +93,114 @@ const DataComponent = styled.div`
     padding-right: 4rem;
   }
 `;
+function handleRound(pos) {
+  if (pos === 'left' || pos === 'right') {
+    return '1rem';
+  }
+  if (pos === 'center') {
+    return '1.5rem';
+  }
+  return '0rem';
+}
+function handleLeft(pos) {
+  if (pos === 'left') {
+    return '-79.32px';
+  }
+  if (pos === 'right') {
+    return '112px';
+  }
+  return '0px';
+}
+function handleZindex(pos) {
+  if (pos === 'center') {
+    return 30;
+  }
+  if (pos === 'back') {
+    return 0;
+  }
+  return 10;
+}
+const CardClass = styled.div`
+  ${tw`absolute p-3 duration-300 ease-linear bg-gray-900`}
+  border: ${(props) => (props.focused ? '4px solid yellow' : '0px')};
+  border-radius: ${(props) => handleRound(props.pos)};
 
+  width: ${(props) => (props.pos === 'center' ? '384px' : '351.32px')};
+  height: ${(props) => (props.pos === 'center' ? '517px' : '473px')};
+  top: ${(props) => (props.pos === 'center' ? '0px' : '22px')};
+  left: ${(props) => handleLeft(props.pos)};
+  filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(2px)')};
+  z-index: ${(props) => handleZindex(props.pos)};
+`;
+function setcard(cards){
+  let arr=[];
+  if(cards.length==0){
+    return arr;
+  }
+  if(cards.length==1){
+    arr.push("left");
+    return arr;
+  }
+  if(cards.length==2){
+    arr.push("left");
+    arr.push("center");
+    return arr;
+  }
+  if(cards.length==3){
+    arr=["left","center", "right"];
+    return arr;
+  }
+  arr=["left","center","right"]
+  for(let i=cards.length-3;i>=1;i--){
+    arr.push("back");
+  }
+  return arr;
+}
 export default function Carousel({ cards, focused }) {
-  const leftCardClass = `${styles.wReq} absolute top-0 z-10 ${styles.one} duration-300 ease-linear p-3 bg-gray-900 rounded-2xl`;
 
-  const centerCardClass = `${styles.wScaled} absolute top-0 z-30 duration-300 ease-linear rounded-3xl p-3 bg-gray-900 ${styles.two}`;
-
-  const rightCardClass = `${styles.three} ${styles.wReq} z-10 absolute top-0 duration-300 ease-linear bg-gray-900 p-3 rounded-2xl`;
-
-  const behindCardClass = `${styles.two} ${styles.wReq} absolute top-0 z-0 duration-300 ease-linear p-3`;
-
-  const [cns, setCNS] = useState([leftCardClass, centerCardClass, rightCardClass, behindCardClass]);
-
-  const [cardDex, setCardDex] = useState(
-    cns.map((item) => {
-      if (item === centerCardClass) {
+  const [cardpos, setcardpos] = useState(setcard(cards));
+  const [cardindex, setcardindex] = useState(
+    cardpos.map((item) => {
+      if (item === 'center') {
         return true;
       } else {
         return false;
       }
     }),
   );
-
-  const [center, setCenter] = useState(1);
-
-  function rotateLeft() {
-    setCNS([...cns.slice(1), cns[0]]);
-    setCardDex([...cardDex.slice(1), cardDex[0]]);
+  function rLeft() {
+    setcardpos([...cardpos.slice(1), cardpos[0]]);
+    setcardindex([...cardindex.slice(1), cardindex[0]]);
     setCenter((center - 1 + cards.length) % cards.length);
   }
-  function rotateRight() {
-    setCNS([cns[cns.length - 1], ...cns.slice(0, cns.length - 1)]);
-    setCardDex([cardDex[cardDex.length - 1], ...cardDex.slice(0, cardDex.length - 1)]);
+  function rRight() {
+    setcardpos([cardpos[cardpos.length - 1], ...cardpos.slice(0, cardpos.length - 1)]);
+    setcardindex([cardindex[cardindex.length - 1], ...cardindex.slice(0, cardindex.length - 1)]);
     setCenter((center + 1) % cards.length);
   }
+  const [center, setCenter] = useState(1);
 
   return (
     <CarouselContainer>
       <AnimatedCarousel>
         <BaseCard>
-          <ChevronButtonLeft onClick={rotateLeft}>
+          <ChevronButtonLeft onClick={rLeft}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </ChevronButtonLeft>
-          <ChevronButtonRight onClick={rotateRight}>
+          <ChevronButtonRight onClick={rRight}>
             <FontAwesomeIcon icon={faChevronRight} />
           </ChevronButtonRight>
 
           {/* card  */}
           {cards.map((item) => {
             return (
-              <div
+              <CardClass
+                pos={cardpos[item.id]}
+                focused={item.id === focused}
                 key={item.id}
-                className={`${item.id === focused ? styles.focused : ''} ${cns[item.id - 1]}`}
-                style={
-                  cns[item.id - 1] !== centerCardClass
-                    ? { filter: 'blur(2px)' }
-                    : { filter: 'blur(0px)' }
-                }
               >
                 <FirstHalfCard
-                  radius={cns[item.id - 1] !== centerCardClass ? '1.0rem' : '0.8rem'}
+                  radius={cardpos[item.id - 1] !== "center" ? '1.0rem' : '0.8rem'}
                 ></FirstHalfCard>
                 <SecondHalfCard>
                   <div>
@@ -171,14 +218,13 @@ export default function Carousel({ cards, focused }) {
                     </CardLabel>
                   </CardBottom>
                 </SecondHalfCard>
-              </div>
+              </CardClass>
             );
           })}
         </BaseCard>
         <div>
-          <DownIndex cardcount={cardDex.length}>
-            <div className='bg-yellow-400'></div>
-            {cardDex.map((item) => {
+          <DownIndex cardcount={cardindex.length}>
+            {cardindex.map((item) => {
               if (item) return <IndividualDownIndexSelected></IndividualDownIndexSelected>;
               else return <IndividualDownIndexUnselected></IndividualDownIndexUnselected>;
             })}
