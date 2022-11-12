@@ -48,7 +48,7 @@ export default function ResponsiveCarousel() {
       label: 'LABEL',
     },
   ];
-  const [screenWidth, setScreenWidth] = useState();
+  const [screenWidth, setScreenWidth] = useState(639);
   useEffect(() => {
     setScreenWidth(window.innerWidth);
   }, []);
