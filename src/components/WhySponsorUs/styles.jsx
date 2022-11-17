@@ -7,7 +7,7 @@ export const Wrapper = styled.section`
   ${tw`
    flex-col
    self-center
-   max-w-mid
+   max-w-2xl
    lg:max-w-none
  `}
 `;

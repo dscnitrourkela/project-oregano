@@ -22,7 +22,7 @@ module.exports = {
         '12xl': '120px',
       },
       maxWidth: {
-        mid: '400px',
+        '1/2': '700px',
       },
       lineHeight: {
         3: '12px',
