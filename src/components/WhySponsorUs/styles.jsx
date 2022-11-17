@@ -26,8 +26,6 @@ export const SponsorGrid = styled.section`
   lg:grid
   lg:gap-6
   lg:grid-cols-10
-  // lg:pr-6 
-  // lg:pl-0
  `}
 `;
 export const ContentContainer = styled.div`
@@ -47,7 +45,6 @@ export const VidBlock = styled.div`
   m-auto 
   row-span-1 
   row-start-3 
-  // sm:max-w-mid
   lg:max-w-none
   lg:row-start-1
   lg:px-0 
@@ -62,8 +59,6 @@ export const DescText = styled(Body2)`
   ${tw`
   text-justify
   lg:pt-6 
-  // max-w-mid
-  // lg:max-w-md
   lg:w-80
 `}
 `;
@@ -74,8 +69,6 @@ export const ContentTextSm = styled.div`
   px-6
   lg:px-0
   m-auto 
-  // lg:ml-0
-  // lg:max-w-xs
   lg:hidden
   row-start-2
   block
@@ -84,7 +77,6 @@ export const ContentTextSm = styled.div`
 export const ContentTextlg = styled(ButtonMeta)`
   ${tw`
   text-justify 
-  // lg:max-w-xs
   hidden 
   lg:block
   // w-auto
@@ -96,13 +88,9 @@ export const Heading = styled(Heading3)`
   ${tw`
   pb-2
   px-6
-  // text-center
-  // items-center
   block
   row-start-1
   lg:hidden
-  // sm:pl-0
-  // sm:m-auto
 `}
 `;
 
@@ -112,15 +100,9 @@ export const Tagline = styled(ButtonMeta)`
   px-6
   pb-4
   lg:px-0
-  // m-auto 
-  // lg:ml-0
-  // lg:max-w-xs
   lg:hidden
   row-start-2
   block
-  // sm:pl-0
-  // sm:m-auto
-
   `}
   color: #a3a3a3;
 `;
@@ -139,7 +121,6 @@ export const Buttons = styled.div`
   flex 
   flex-row 
   mt-10
-  // px-2
   pb-5
   lg:px-0 
   lg:place-items-center
