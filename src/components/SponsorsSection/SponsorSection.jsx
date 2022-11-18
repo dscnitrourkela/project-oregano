@@ -1,10 +1,12 @@
 import React from 'react';
 
-import { Wrapper, Header, SectionContainer, Heading, SponsorContainer, ImageContainer, Saber } from './styles'
+import { Wrapper, Header, SectionContainer, SponsorContainer, SponsorLogo, Saber } from './styles'
 import { sponsors } from '../../../config/content/sponsors'
 import saber1 from '../../../images/saberAlpha.svg'
 import saber2 from '../../../images/saberBeta.svg'
+import Heading2 from '../shared/Typography/Heading2';
 import Heading3 from '../shared/Typography/Heading3';
+import Section from '../shared/SectionLayout';
 
 function SponsorSection() {
   const sponsorDetails = [
@@ -64,11 +66,10 @@ function SponsorSection() {
   ];
 
   return (
-    <div className="w-100" style={{
-      backgroundColor: "#000811",
-    }}>
-      <div className='w-5/6 mx-auto my-3 p-5'>
-        <Header>SPONSORS</Header>
+
+    <Section>
+      <div className='w-5/6 mx-auto mb-9 p-5'>
+        <Heading2 semibold>SPONSORS</Heading2>
       </div>
       <div className='w-5/6 mx-auto grid gap-9 '>
         {
@@ -79,7 +80,7 @@ function SponsorSection() {
               }
             }>
               <SectionContainer>
-                <Heading3 semibold="true">
+                <Heading3 semibold>
                   {details.title}
                 </Heading3>
                 <Saber className="saber-img">
@@ -94,12 +95,16 @@ function SponsorSection() {
               <SponsorContainer style={{ gap: details.gap, gridTemplateColumns: details.grid }}>
                 {
                   details.sponsors.map(({ src, alt, size, link}) => (
-                    <ImageContainer
-                      src={src}
-                      alt={alt}
-                      size={size}
-                      link={link}
-                    />
+                    
+                      <SponsorLogo>
+                        {src ? (
+                        <a href={link} target='_blank' rel='noopener noreferrer'>
+                        <img src={src} alt={alt} style={{ width: size}} />
+                        </a>
+                        ) : (
+                         <div />
+                        )}
+                      </SponsorLogo>
                   )
                   )}
               </SponsorContainer>
@@ -107,7 +112,8 @@ function SponsorSection() {
           ))
         }
       </div>
-    </div>
+    </Section>
+    
   );
 }
 

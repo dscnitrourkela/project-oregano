@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import tw from "twin.macro"
-import saber1 from '../../../images/saberAlpha.svg'
-import saber2 from '../../../images/saberBeta.svg'
 
 export const Header = styled.h1`
   font-weight: 590;  
@@ -68,18 +66,6 @@ export const SponsorContainer = styled.div`
     }
 `;
 
-const SponsorLogo = styled.div`
+export const SponsorLogo = styled.div`
   ${tw`p-3  m-auto justify-center align-middle`}
 `;
-
-export const ImageContainer = ({ src, alt, size, link}) => (
-  <SponsorLogo>
-    {src ? (
-      <a href={link} target='_blank' rel='noopener noreferrer'>
-        <img src={src} alt={alt} style={{ width: size}} />
-      </a>
-    ) : (
-      <div />
-    )}
-  </SponsorLogo>
-);
