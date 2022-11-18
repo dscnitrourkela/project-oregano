@@ -1,6 +1,6 @@
 import React from 'react';
 
-import{
+import {
   HeroBody,
   HeroTitle,
   HACK,
@@ -8,33 +8,37 @@ import{
   NITR,
   Tagline,
   TaglineText,
-  HeroButtons,
-  DevfolioBtn,
-  DiscBtn
+  HeroButtons
 } from './styles'
 
 import content from '../../../config/hero'
-
+import SectionLayout from '../shared/SectionLayout'
+import DevfolioBtn from '../shared/DevfolioBtn'
+import DiscordBtn from '../shared/DiscordBtn'
+import DiscordBtnMobile from '../shared/DiscordBtnMobile';
 import Title from '../shared/Typography/Heading4'
 
-export default function Hero(){
-  return(
-    <HeroBody>
-      <HeroTitle>
-        <HACK src={content.Hackimg.src} alt={content.Hackimg.alt}/>
-        <SubTitle>{content.titleLine.text}</SubTitle>
-        <NITR src={content.NITRimg.src} alt={content.NITRimg.alt}/>
-      </HeroTitle>
+export default function Hero() {
+  return (
+    <SectionLayout>
+      <HeroBody>
+        <HeroTitle>
+          <HACK src={content.Hackimg.src} alt={content.Hackimg.alt} />
+          <SubTitle>{content.titleLine.text}</SubTitle>
+          <NITR src={content.NITRimg.src} alt={content.NITRimg.alt} />
+        </HeroTitle>
 
-      <Tagline>
-        <Title className=' font-Noto'>{content.tagline.taglinetext}</Title>
-        <TaglineText>{content.tagline.taglinedesc}</TaglineText>
-      </Tagline>
+        <Tagline>
+          <Title className='font-Noto'>{content.tagline.taglinetext}</Title>
+          <TaglineText>{content.tagline.taglinedesc}</TaglineText>
+        </Tagline>
 
-      <HeroButtons>
-        <DevfolioBtn>{content.button.buttontext}</DevfolioBtn>
-        <DiscBtn src={content.discordbtn.src} alt={content.discordbtn.alt}/>
-      </HeroButtons>
-    </HeroBody>
+        <HeroButtons>
+          <DevfolioBtn/>
+          <DiscordBtn/>
+          <DiscordBtnMobile/>
+        </HeroButtons>
+      </HeroBody>
+    </SectionLayout>
   )
 }

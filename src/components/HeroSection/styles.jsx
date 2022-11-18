@@ -4,7 +4,6 @@ import tw from 'twin.macro';
 export const HeroBody = styled.div`${
     tw`
     flex
-    h-screen
     justify-center
     items-center
     bg-bg-color
@@ -30,7 +29,7 @@ export const HACK = styled.img`${
     tw`
     object-contain
     h-20
-    sm:h-36
+    sm:h-32
     `
 }`
 
@@ -39,7 +38,7 @@ export const SubTitle = styled.p`${
     tracking-wide
     text-lg
     text-center
-    sm:tracking-widest
+    sm:tracking-wider
     sm:text-2xl`
 }`
 
@@ -48,7 +47,7 @@ export const NITR = styled.img`${
     tw`
     object-contain
     h-20
-    sm:h-36
+    sm:h-32
     `
 }`
 
@@ -58,7 +57,8 @@ export const Tagline = styled.div`${
     flex-col
     justify-center
     items-center
-    mt-8
+    mt-9
+    sm:mt-14
     `
 }`
 
@@ -74,27 +74,9 @@ export const TaglineText = styled.p`${
 export const HeroButtons = styled.div`${
     tw`
     flex
+    sm:flex-row
+    flex-col
     justify-center
     items-center
-    mt-8`
-}`
-
-export const DevfolioBtn = styled.button`${
-    tw`
-    text-btn-yellow
-    bg-transparent
-    border
-    border-btn-yellow
-    py-2.5
-    px-2
-    rounded-lg
-    h-11
-    `
-}`
-
-export const DiscBtn = styled.img`${
-    tw`
-    h-11
-    m-2
-    cursor-pointer`
+    mt-12`
 }`
