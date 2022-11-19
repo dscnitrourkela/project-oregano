@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-import { Heading3, ButtonMeta, Body2 } from '../shared';
+import { Heading2, ButtonMeta, Body2 } from '../shared';
 
 export const Wrapper = styled.section`
   ${tw`
@@ -14,35 +14,35 @@ export const Wrapper = styled.section`
 export const SponsorGrid = styled.section`
   ${tw`
   lg:m-auto
-  rounded-3xl
+  rounded-large
   bg-color-back
-  px-6
-  mx-4
+  px-4
   break-words 
   flex
   flex-col-reverse
   self-center
+  lg:space-x-6
   lg:bg-transparent
   lg:grid
   lg:gap-6
   lg:grid-cols-10
+  overflow-hidden
  `}
 `;
 export const ContentContainer = styled.div`
   ${tw`
   m-auto
   row-span-1 
-  col-span-4
-  pt-6
+  col-start-1
+  col-end-4
+  pt-side
   flex-col
-  justify-center
-  lg:pr-32
   `}
 `;
 export const VidBlock = styled.div`
   ${tw`
-  pt-5
-  m-auto 
+  pt-4
+  self-center
   row-span-1 
   row-start-3 
   lg:max-w-none
@@ -58,8 +58,8 @@ export const VidBlock = styled.div`
 export const DescText = styled(Body2)`
   ${tw`
   text-justify
-  lg:pt-6 
-  lg:w-80
+  lg:pt-8 
+  lg:w-96
 `}
 `;
 
@@ -79,15 +79,15 @@ export const ContentTextlg = styled(ButtonMeta)`
   text-justify 
   hidden 
   lg:block
-  // w-auto
-  lg:w-80
+  lg:w-96
   `}
   color: #8c8c8c;
 `;
-export const Heading = styled(Heading3)`
+export const Heading = styled(Heading2)`
   ${tw`
-  pb-2
-  px-6
+  pb-3
+  px-1
+  lg:px-6
   block
   row-start-1
   lg:hidden
@@ -97,8 +97,9 @@ export const Heading = styled(Heading3)`
 export const Tagline = styled(ButtonMeta)`
   ${tw`
   text-justify 
-  px-6
-  pb-4
+  px-2
+  lg:px-6
+  pb-8
   lg:px-0
   lg:hidden
   row-start-2
@@ -107,9 +108,8 @@ export const Tagline = styled(ButtonMeta)`
   color: #a3a3a3;
 `;
 
-export const TitleTextlg = styled(Heading3)`
+export const TitleTextlg = styled(Heading2)`
   ${tw`
-  tracking-wide
   pb-2
   row-start-1 
   hidden 
@@ -118,10 +118,11 @@ export const TitleTextlg = styled(Heading3)`
 `;
 export const Buttons = styled.div`
   ${tw`
+  space-x-6
   flex 
   flex-row 
-  mt-10
-  pb-5
+  mt-7
+  pb-side
   lg:px-0 
   lg:place-items-center
   lg:mx-auto

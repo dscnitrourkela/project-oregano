@@ -21,8 +21,8 @@ module.exports = {
         '11xl': '86px',
         '12xl': '120px',
       },
-      maxWidth: {
-        '1/2': '700px',
+      padding: {
+        side: '21.33px',
       },
       lineHeight: {
         3: '12px',
@@ -45,7 +45,9 @@ module.exports = {
         'color-tertiary': '#A3A3A3',
         'color-back': '#202020',
       },
-
+      borderRadius: {
+        large: '32px',
+      },
       // Noto: ['Noto Sans', 'sans-serif'],
       fontFamily: {
         Noto: ['Noto Sans', ...defaultTheme.fontFamily.sans],

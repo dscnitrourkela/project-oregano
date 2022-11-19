@@ -1,8 +1,5 @@
 import React from 'react';
 
-// import styled from 'styled-components';
-// import tw from 'twin.macro';
-
 import {
   SponsorGrid,
   ContentContainer,
@@ -26,7 +23,7 @@ export default function SponsorUs() {
   return (
     <SectionLayout>
       <Wrapper>
-        <Heading semibold>{Sponsor.Title.TitleText}</Heading>
+        <Heading>{Sponsor.Title.TitleText}</Heading>
         <Tagline>{Sponsor.Caption.CaptionText}</Tagline>
         <SponsorGrid>
           <ContentContainer>
@@ -39,11 +36,7 @@ export default function SponsorUs() {
             </Buttons>
           </ContentContainer>
           <VidBlock>
-            <img
-              className='rounded-t-3xl lg:rounded-3xl h-200'
-              src={Sponsor.img.src}
-              alt={Sponsor.img.alt}
-            />
+            <img className='rounded-large' src={Sponsor.img.src} alt={Sponsor.img.alt} />
           </VidBlock>
         </SponsorGrid>
       </Wrapper>
