@@ -6,7 +6,6 @@ export const HeroBody = styled.div`${
     flex
     justify-center
     items-center
-    bg-bg-color
     text-white
     flex-col
     overflow-x-hidden

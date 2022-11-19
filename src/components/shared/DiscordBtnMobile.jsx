@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import hero from '../../../config/Hero';
+import content from '../../../config/Hero';
 
 const Wrapper = styled.div`
   display: none;
@@ -27,8 +27,8 @@ const Image = styled.img`
 function DiscordMobile() {
   return (
     <Wrapper>
-      <a href={hero.links.discordMobile.link} target='_blank' rel='noreferrer noopener'>
-        <Image src={hero.links.discordMobile.icon} alt='Discord Icon' />
+      <a href={content.links.discordMobile.link} target='_blank' rel='noreferrer noopener'>
+        <Image src={content.links.discordMobile.icon} alt='Discord Icon' />
       </a>
     </Wrapper>
   );
