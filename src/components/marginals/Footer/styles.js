@@ -38,6 +38,7 @@ export const IconContainer = styled.div`
     flex-row
     flex-wrap
     justify-end
+    gap-[20px]
     mb-2
     sm:w-full
     sm:justify-between
