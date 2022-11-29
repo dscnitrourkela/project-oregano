@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import content from '../../../config/hero'
+import content from '../../../config/content/hero'
 
 const Wrapper = styled.div`
   display: flex;

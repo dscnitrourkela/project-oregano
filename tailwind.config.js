@@ -2,7 +2,6 @@
 
 const defaultTheme = require('tailwindcss/defaultTheme');
 
-
 module.exports = {
   content: ['./src/pages/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -22,7 +21,9 @@ module.exports = {
         '11xl': '86px',
         '12xl': '120px',
       },
-
+      padding: {
+        side: '21.33px',
+      },
       lineHeight: {
         3: '12px',
         3.5: '14px',
@@ -43,9 +44,12 @@ module.exports = {
         'color-secondary': '#D6D6D6',
         'color-tertiary': '#A3A3A3',
         'btn-yellow':'#FFE81F',
-        'bg-color':'#000811'
+        'bg-color':'#000811',
+        'color-back': '#202020',
       },
-
+      borderRadius: {
+        large: '32px',
+      },
       // Noto: ['Noto Sans', 'sans-serif'],
       fontFamily: {
         Noto: ['Noto Sans', ...defaultTheme.fontFamily.sans],

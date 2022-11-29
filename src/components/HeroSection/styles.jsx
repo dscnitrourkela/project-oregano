@@ -11,7 +11,6 @@ export const HeroBody = styled.div`${
     overflow-x-hidden
     overflow-y-hidden
     w-full
-    font-Noto
     `
 }`
 
@@ -38,7 +37,8 @@ export const SubTitle = styled.p`${
     text-lg
     text-center
     sm:tracking-wider
-    sm:text-2xl`
+    sm:text-2xl
+    font-Noto`
 }`
 
 
@@ -56,18 +56,22 @@ export const Tagline = styled.div`${
     flex-col
     justify-center
     items-center
+    font-Noto
     mt-9
-    sm:mt-14
+    sm:mt-16
     `
 }`
 
 export const TaglineText = styled.p`${
     tw`
-    mt-3
+    mt-5
     text-center
     text-color-secondary
-    text-base
-    text-color-tertiary`
+    text-color-tertiary
+    font-Noto
+    px-5
+    text-sm
+    sm:text-lg`
 }`
 
 export const HeroButtons = styled.div`${
@@ -77,5 +81,5 @@ export const HeroButtons = styled.div`${
     flex-col
     justify-center
     items-center
-    mt-12`
+    mt-10`
 }`

@@ -1,7 +1,7 @@
 export default{
     titleLine: {text: 'THE FOURTH EDITION'},
     tagline: {
-        taglinetext:'IDEATE.IMPLEMENT.INNOVATE',
+        taglinetext:'IDEATE. IMPLEMENT. INNOVATE',
         taglinedesc: 'in India largest student run hackathon. Join the forces on 6-8 January'
     },
     Hackimg:{
@@ -15,11 +15,11 @@ export default{
     links: {
         discord: {
           icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Discord-Logo-Black_ratsjn.svg',
-          link: 'https://hacknitr.tech/discord',
+          link: 'https://discord.com/invite/rxMB9aWbJD',
         },
         discordMobile: {
             icon: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1667584745/hn/Discord__software_-Logo_Wordmark-Black-Logo.wine_rhsgsh.png',
-            link: 'https://hacknitr.tech/discord',
+            link: 'https://discord.com/invite/rxMB9aWbJD',
         }
     }
 }

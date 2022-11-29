@@ -11,12 +11,12 @@ import {
   HeroButtons
 } from './styles'
 
-import content from '../../../config/hero'
+import content from '../../../config/content/hero'
 import SectionLayout from '../shared/SectionLayout'
 import DevfolioBtn from '../shared/DevfolioBtn'
 import DiscordBtn from '../shared/DiscordBtn'
 import DiscordBtnMobile from '../shared/DiscordBtnMobile';
-import Title from '../shared/Typography/Heading4'
+import Title from '../shared/Typography/Heading3'
 
 export default function Hero() {
   return (
