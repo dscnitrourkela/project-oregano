@@ -43,6 +43,8 @@ module.exports = {
         'color-primary': '#EAEAEA',
         'color-secondary': '#D6D6D6',
         'color-tertiary': '#A3A3A3',
+        'btn-yellow':'#FFE81F',
+        'bg-color':'#000811',
         'color-back': '#202020',
       },
       borderRadius: {
@@ -51,6 +53,12 @@ module.exports = {
       // Noto: ['Noto Sans', 'sans-serif'],
       fontFamily: {
         Noto: ['Noto Sans', ...defaultTheme.fontFamily.sans],
+      },
+
+      letterSpacing: {
+        wide:'0.25em',
+        wider:'0.51em',
+        widest: '0.62em',
       },
     },
   },
