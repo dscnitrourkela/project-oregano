@@ -7,7 +7,7 @@ export default styled.p`
    text-xs
    leading-3.5
 
-   sm: text-sm
+   sm:text-sm
    sm:leading-4.5
    
    text-color-primary

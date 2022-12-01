@@ -15,7 +15,7 @@ export const SponsorGrid = styled.section`
   ${tw`
   lg:m-auto
   rounded-large
-  bg-color-back
+  bg-background-dark
   px-4
   break-words 
   flex

@@ -8,15 +8,15 @@ import {
   NITR,
   Tagline,
   TaglineText,
-  HeroButtons
-} from './styles'
+  HeroButtons,
+} from './styles';
 
-import content from '../../../config/content/hero'
-import SectionLayout from '../shared/SectionLayout'
-import DevfolioBtn from '../shared/DevfolioBtn'
-import DiscordBtn from '../shared/DiscordBtn'
+import content from '../../../config/content/Hero';
+import SectionLayout from '../shared/SectionLayout';
+import DevfolioBtn from '../shared/DevfolioBtn';
+import DiscordBtn from '../shared/DiscordBtn';
 import DiscordBtnMobile from '../shared/DiscordBtnMobile';
-import Title from '../shared/Typography/Heading3'
+import Title from '../shared/Typography/Heading3';
 
 export default function Hero() {
   return (
@@ -34,11 +34,11 @@ export default function Hero() {
         </Tagline>
 
         <HeroButtons>
-          <DevfolioBtn/>
-          <DiscordBtn/>
-          <DiscordBtnMobile/>
+          <DevfolioBtn />
+          <DiscordBtn />
+          <DiscordBtnMobile />
         </HeroButtons>
       </HeroBody>
     </SectionLayout>
-  )
+  );
 }

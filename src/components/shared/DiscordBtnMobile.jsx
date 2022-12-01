@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import content from '../../../config/content/hero';
+import content from '../../../config/content/Hero';
 
 const Wrapper = styled.div`
   display: none;

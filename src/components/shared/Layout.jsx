@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {DesktopNav, MobileNav} from '../marginals';
+import { DesktopNav, Footer, MobileNav } from '../marginals';
 
 const Wrapper = styled.div`
   ${tw`
@@ -26,6 +26,7 @@ function Layout({ children }) {
         <MobileNav />
       </NavBar>
       {children}
+      <Footer />
     </Wrapper>
   );
 }

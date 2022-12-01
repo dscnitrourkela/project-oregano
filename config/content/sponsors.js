@@ -1,114 +1,114 @@
-
-export const sponsors = {
-    title: 'Our Awesome Sponsors',
-    content:
-      'Our love for open source and drive to make an impact materialized as HackNITR 3.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
-    alpha: [
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        width: '170px',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        width: '170px',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        width: '170px',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        width: '170px',
-        alt: 'Devfolio',
-      },
-    ],
-    beta: [
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-      {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
-        name: 'Devfolio',
-        size: '95%',
-        link: 'https://devfolio.co/',
-        alt: 'Devfolio',
-      },
-    ],
+/* eslint-disable max-len */
+export default {
+  title: 'Our Awesome Sponsors',
+  content:
+    'Our love for open source and drive to make an impact materialized as HackNITR 3.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
+  alpha: [
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      width: '170px',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      width: '170px',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      width: '170px',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      width: '170px',
+      alt: 'Devfolio',
+    },
+  ],
+  beta: [
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+    {
+      src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
+      name: 'Devfolio',
+      size: '95%',
+      link: 'https://devfolio.co/',
+      alt: 'Devfolio',
+    },
+  ],
   //   gamma: [
   //     {
   //       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/echoAR_-_Logo_2020_-_Knockout_c9smwf.png',
@@ -131,7 +131,7 @@ export const sponsors = {
   //       link: 'https://www.stickermule.com/',
   //       alt: 'StickerMule',
   //     },
-  
+
   //     {
   //       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/wolfram_sid6kv.png',
   //       name: 'Wolfram',
@@ -206,7 +206,7 @@ export const sponsors = {
   //       link: 'https://www.townscript.com/e/hacknitr-30-313200',
   //       alt: 'TownScript',
   //     },
-  
+
   //     {
   //       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/cross_web1-removebg-preview_q0jxv5.png',
   //       name: 'CrossWeb',
@@ -228,7 +228,7 @@ export const sponsors = {
   //       link: '',
   //       alt: 'Noticebard',
   //     },
-      
+
   //   ],
   //   'authentication-partner': [
   //     {
@@ -263,4 +263,4 @@ export const sponsors = {
   //       marginTop: '10px',
   //     },
   //   ],
-   };
+};

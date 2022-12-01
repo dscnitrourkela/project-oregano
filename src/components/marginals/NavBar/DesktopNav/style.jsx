@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import {NavText} from '../../../shared';
+import { NavText } from '../../../shared';
 
 const fade = keyframes`
     0% {
@@ -15,14 +15,12 @@ const fade = keyframes`
     }
 `;
 
-
-
 export const NavBar = styled.header`
   background-color: rgba(0, 8, 17, 0.81);
   backdrop-filter: blur(10px);
   position: relative;
   padding: 0;
-  z-index: 1;
+  z-index: 9999;
   display: flex;
   flex-direction: column;
 
@@ -36,7 +34,7 @@ export const NavBar = styled.header`
     padding: 0;
   }
 
-  .nav-right{
+  .nav-right {
     width: 6%;
     height: 42px;
   }
@@ -46,7 +44,7 @@ export const NavBar = styled.header`
     display: flex;
   }
 
-  .NavListItem{
+  .NavListItem {
     padding: 12px 1.5em;
     border: 0.4px solid rgba(155, 155, 155, 0.4);
     border-width: 0 0.4px;
@@ -61,10 +59,10 @@ export const NavItem = styled(NavText)`
   font-weight: 400;
   color: var(--text-color-tertiary);
   position: relative;
-  
+
   &:active::after,
   &:hover::after,
-  &:visited::after{
+  &:visited::after {
     content: '';
     height: 2px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
@@ -76,7 +74,7 @@ export const NavItem = styled(NavText)`
 
   &:active::before,
   &:hover::before,
-  &:visited::after{
+  &:visited::after {
     content: '';
     height: 2px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
@@ -86,7 +84,7 @@ export const NavItem = styled(NavText)`
     right: 50%;
   }
 
-  &:hover{
+  &:hover {
     color: #fff;
   }
 `;

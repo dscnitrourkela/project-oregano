@@ -1,8 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { useState } from 'react';
-import { Heading3, Heading4, Heading5, Body1 } from '../shared';
+import { Heading3, Heading4, Body1 } from '../shared';
 
 const CardMob = styled.div`
   ${tw`
@@ -36,7 +35,7 @@ const CenteredY = styled.div`
   ${tw`my-auto`}
 `;
 
-export default function Card({ id, heading, name, designation, date, label, focused }) {
+export default function Card({ heading, name, designation, date, label, focused }) {
   if (focused) {
     return (
       <CardMobFocused>
@@ -55,23 +54,22 @@ export default function Card({ id, heading, name, designation, date, label, focu
         </SecondHalf>
       </CardMobFocused>
     );
-  } else {
-    return (
-      <CardMob>
-        <FirstHalf />
-        <SecondHalf>
-          <Heading3>{heading}</Heading3>
-          <Body1>
-            {name} : {designation}
-          </Body1>
-          <Bottom>
-            <CenteredY>
-              <Heading4>{date}</Heading4>
-            </CenteredY>
-            <ButtonYellow>{label}</ButtonYellow>
-          </Bottom>
-        </SecondHalf>
-      </CardMob>
-    );
   }
+  return (
+    <CardMob>
+      <FirstHalf />
+      <SecondHalf>
+        <Heading3>{heading}</Heading3>
+        <Body1>
+          {name} : {designation}
+        </Body1>
+        <Bottom>
+          <CenteredY>
+            <Heading4>{date}</Heading4>
+          </CenteredY>
+          <ButtonYellow>{label}</ButtonYellow>
+        </Bottom>
+      </SecondHalf>
+    </CardMob>
+  );
 }

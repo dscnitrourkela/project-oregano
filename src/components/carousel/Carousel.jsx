@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -132,40 +132,38 @@ const CardClass = styled.div`
   filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(2px)')};
   z-index: ${(props) => handleZindex(props.pos)};
 `;
-function setcard(cards){
-  let arr=[];
-  if(cards.length==0){
+function setcard(cards) {
+  let arr = [];
+  if (cards.length === 0) {
     return arr;
   }
-  if(cards.length==1){
-    arr.push("left");
+  if (cards.length === 1) {
+    arr.push('left');
     return arr;
   }
-  if(cards.length==2){
-    arr.push("left");
-    arr.push("center");
+  if (cards.length === 2) {
+    arr.push('left');
+    arr.push('center');
     return arr;
   }
-  if(cards.length==3){
-    arr=["left","center", "right"];
+  if (cards.length === 3) {
+    arr = ['left', 'center', 'right'];
     return arr;
   }
-  arr=["left","center","right"]
-  for(let i=cards.length-3;i>=1;i--){
-    arr.push("back");
+  arr = ['left', 'center', 'right'];
+  for (let i = cards.length - 3; i >= 1; i -= 1) {
+    arr.push('back');
   }
   return arr;
 }
 export default function Carousel({ cards, focused }) {
-
   const [cardpos, setcardpos] = useState(setcard(cards));
   const [cardindex, setcardindex] = useState(
     cardpos.map((item) => {
       if (item === 'center') {
         return true;
-      } else {
-        return false;
       }
+      return false;
     }),
   );
   function rLeft() {
@@ -184,49 +182,43 @@ export default function Carousel({ cards, focused }) {
     <CarouselContainer>
       <AnimatedCarousel>
         <BaseCard>
-          <ChevronButtonLeft onClick={rLeft}>
+          <ChevronButtonLeft onClick={() => rLeft()}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </ChevronButtonLeft>
-          <ChevronButtonRight onClick={rRight}>
+          <ChevronButtonRight onClick={() => rRight()}>
             <FontAwesomeIcon icon={faChevronRight} />
           </ChevronButtonRight>
 
           {/* card  */}
-          {cards.map((item) => {
-            return (
-              <CardClass
-                pos={cardpos[item.id]}
-                focused={item.id === focused}
-                key={item.id}
-              >
-                <FirstHalfCard
-                  radius={cardpos[item.id - 1] !== "center" ? '1.0rem' : '0.8rem'}
-                ></FirstHalfCard>
-                <SecondHalfCard>
-                  <div>
-                    <Heading3>{item.heading}</Heading3>
-                    <Py4>
-                      <Body2>
-                        {item.name} : {item.designation}
-                      </Body2>
-                    </Py4>
-                  </div>
-                  <CardBottom>
-                    <Body1>{item.date}</Body1>
-                    <CardLabel>
-                      <Body2>{item.label}</Body2>
-                    </CardLabel>
-                  </CardBottom>
-                </SecondHalfCard>
-              </CardClass>
-            );
-          })}
+          {cards.map((item) => (
+            <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
+              <FirstHalfCard
+                radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
+              ></FirstHalfCard>
+              <SecondHalfCard>
+                <div>
+                  <Heading3>{item.heading}</Heading3>
+                  <Py4>
+                    <Body2>
+                      {item.name} : {item.designation}
+                    </Body2>
+                  </Py4>
+                </div>
+                <CardBottom>
+                  <Body1>{item.date}</Body1>
+                  <CardLabel>
+                    <Body2>{item.label}</Body2>
+                  </CardLabel>
+                </CardBottom>
+              </SecondHalfCard>
+            </CardClass>
+          ))}
         </BaseCard>
         <div>
           <DownIndex cardcount={cardindex.length}>
-            {cardindex.map((item) => {
-              if (item) return <IndividualDownIndexSelected></IndividualDownIndexSelected>;
-              else return <IndividualDownIndexUnselected></IndividualDownIndexUnselected>;
+            {cardindex.map((item, idx) => {
+              if (item) return <IndividualDownIndexSelected key={idx} />;
+              return <IndividualDownIndexUnselected key={idx} />;
             })}
           </DownIndex>
         </div>
