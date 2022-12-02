@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Carousel from './Carousel';
 import CarouselMob from './CarouselMob';
-import { SectionContainer } from '../shared';
+import { SectionLayout } from '../shared';
 import { cards } from '../../../config';
 
 export default function ResponsiveCarousel() {
@@ -17,14 +17,14 @@ export default function ResponsiveCarousel() {
 
   if (screenWidth >= 640) {
     return (
-      <SectionContainer>
-        <Carousel cards={cards.cardData} focused={2} />
-      </SectionContainer>
+      <SectionLayout>
+        <Carousel cards={cards.cardData} />
+      </SectionLayout>
     );
   }
   return (
-    <SectionContainer>
-      <CarouselMob cards={cards.cardData} focused={2} />
-    </SectionContainer>
+    <SectionLayout>
+      <CarouselMob cards={cards.cardData} />
+    </SectionLayout>
   );
 }

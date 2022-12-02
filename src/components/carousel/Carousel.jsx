@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -156,8 +155,9 @@ function setcard(cards) {
   }
   return arr;
 }
-export default function Carousel({ cards, focused }) {
+export default function Carousel({ cards }) {
   const [cardpos, setcardpos] = useState(setcard(cards));
+  const [focused, setFocused] = useState(1);
   const [cardindex, setcardindex] = useState(
     cardpos.map((item) => {
       if (item === 'center') {
@@ -170,11 +170,13 @@ export default function Carousel({ cards, focused }) {
     setcardpos([...cardpos.slice(1), cardpos[0]]);
     setcardindex([...cardindex.slice(1), cardindex[0]]);
     setCenter((center - 1 + cards.length) % cards.length);
+    setFocused(focused > 0 ? focused - 1 : cards.length - 1);
   }
   function rRight() {
     setcardpos([cardpos[cardpos.length - 1], ...cardpos.slice(0, cardpos.length - 1)]);
     setcardindex([cardindex[cardindex.length - 1], ...cardindex.slice(0, cardindex.length - 1)]);
     setCenter((center + 1) % cards.length);
+    setFocused(focused < cards.length - 1 ? focused + 1 : 0);
   }
   const [center, setCenter] = useState(1);
 
@@ -192,9 +194,7 @@ export default function Carousel({ cards, focused }) {
           {/* card  */}
           {cards.map((item) => (
             <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
-              <FirstHalfCard
-                radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
-              ></FirstHalfCard>
+              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'} />
               <SecondHalfCard>
                 <div>
                   <Heading3>{item.heading}</Heading3>
