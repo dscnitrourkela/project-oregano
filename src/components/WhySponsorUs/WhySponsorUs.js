@@ -15,28 +15,27 @@ import {
   Wrapper,
 } from './styles';
 
-import Sponsor from '../../../config/content/WhySponsor';
-
 import { SectionLayout } from '../shared';
+import { whySponsor } from '../../../config';
 
 export default function SponsorUs() {
   return (
     <SectionLayout>
       <Wrapper>
-        <Heading>{Sponsor.Title.TitleText}</Heading>
-        <Tagline>{Sponsor.Caption.CaptionText}</Tagline>
+        <Heading>{whySponsor.Title.TitleText}</Heading>
+        <Tagline>{whySponsor.Caption.CaptionText}</Tagline>
         <SponsorGrid>
           <ContentContainer>
-            <TitleTextlg semibold>{Sponsor.Title.TitleText}</TitleTextlg>
-            <ContentTextlg>{Sponsor.Caption.CaptionText}</ContentTextlg>
-            <DescText>{Sponsor.Description.Desc}</DescText>
+            <TitleTextlg semibold>{whySponsor.Title.TitleText}</TitleTextlg>
+            <ContentTextlg>{whySponsor.Caption.CaptionText}</ContentTextlg>
+            <DescText>{whySponsor.Description.Desc}</DescText>
             <Buttons>
-              <SponsorBtn>{Sponsor.Buttons.SponsorButton}</SponsorBtn>
-              <BrochureBtn>{Sponsor.Buttons.ViewBrochureButton}</BrochureBtn>
+              <SponsorBtn>{whySponsor.Buttons.SponsorButton}</SponsorBtn>
+              <BrochureBtn>{whySponsor.Buttons.ViewBrochureButton}</BrochureBtn>
             </Buttons>
           </ContentContainer>
           <VidBlock>
-            <img className='rounded-large' src={Sponsor.img.src} alt={Sponsor.img.alt} />
+            <img className='rounded-large' src={whySponsor.img.src} alt={whySponsor.img.alt} />
           </VidBlock>
         </SponsorGrid>
       </Wrapper>
