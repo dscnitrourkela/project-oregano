@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import content from '../../../config/content/Hero';
+import { hero } from '../../../config';
 
 const Wrapper = styled.div`
   display: flex;
@@ -24,8 +24,8 @@ const Image = styled.img`
 function DiscordButton() {
   return (
     <Wrapper>
-      <a href={content.links.discord.link} target='_blank' rel='noreferrer noopener'>
-        <Image src={content.links.discord.icon} alt='Discord Icon' />
+      <a href={hero.links.discord.link} target='_blank' rel='noreferrer noopener'>
+        <Image src={hero.links.discord.icon} alt='Discord Icon' />
       </a>
     </Wrapper>
   );

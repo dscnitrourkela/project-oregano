@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default {
   id: 'faq',
   title: 'HAVE A QUESTION?',

@@ -1,6 +1,20 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
+export const SectionContainer = styled.div`
+  ${tw`
+    w-full
+    h-auto
+    min-h-screen
+    overflow-x-hidden
+    overflow-y-hidden
+    flex
+    flex-col
+    items-start
+    justify-center
+  `}
+`;
+
 export const HeroBody = styled.div`
   ${tw`
     flex
@@ -18,34 +32,30 @@ export const HeroTitle = styled.div`
   ${tw`
     flex
     justify-center
+    gap-3
     items-center
     flex-col
-    px-5`}
+    px-5
+    `}
 `;
 
-export const HACK = styled.img`
+export const HeroHeading = styled.img`
   ${tw`
     object-contain
-    h-20
-    sm:h-32
+    h-16
+    sm:h-28
     `}
 `;
 
 export const SubTitle = styled.p`
   ${tw`
-    tracking-wide
+    tracking-[0.26em]
     text-lg
     text-center
     sm:tracking-wider
     sm:text-2xl
-    font-Noto`}
-`;
-
-export const NITR = styled.img`
-  ${tw`
-    object-contain
-    h-20
-    sm:h-32
+    font-Noto
+    font-bold
     `}
 `;
 
@@ -66,11 +76,11 @@ export const TaglineText = styled.p`
     mt-5
     text-center
     text-color-secondary
-    text-color-tertiary
     font-Noto
     px-5
     text-sm
-    sm:text-lg`}
+    sm:text-lg
+    `}
 `;
 
 export const HeroButtons = styled.div`
@@ -80,6 +90,7 @@ export const HeroButtons = styled.div`
     flex-col
     justify-center
     items-center
-    mt-10
+    mt-9
+    sm:mt-16
     `}
 `;

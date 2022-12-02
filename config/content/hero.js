@@ -6,11 +6,11 @@ export default {
     taglinedesc: 'in India largest student run hackathon. Join the forces on 6-8 January',
   },
   Hackimg: {
-    src: 'https://res.cloudinary.com/dmofs5r4h/image/upload/v1667742790/hack_gedkv2.png',
+    src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1669992432/hn/Hack_n8mngx.png',
     alt: 'Hack',
   },
   NITRimg: {
-    src: 'https://res.cloudinary.com/dmofs5r4h/image/upload/v1667742932/NITR_gx71ts.png',
+    src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1669992432/hn/NITR_cxww4q.png',
     alt: 'NITR',
   },
   links: {
