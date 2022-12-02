@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 import { faq } from '../../../config';
-import { Heading3, Caption, Body1, Body2, SectionLayout } from '../shared';
+import { Caption, Body1, Body2, SectionLayout, Heading2 } from '../shared';
 import { renderData } from '../../utils/parseLinks';
 
 const getUpdatedContent = (text) => {
@@ -63,7 +63,7 @@ export default function Faq() {
         </AnswerContainer>
         <FaqContainer>
           <Head>
-            <Heading3 semibold>{title}</Heading3>
+            <Heading2 semibold>{title}</Heading2>
             <Caption className='text-color-tertiary mt-1'>{content}</Caption>
           </Head>
           <Ques>

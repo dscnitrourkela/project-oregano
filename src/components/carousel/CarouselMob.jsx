@@ -4,58 +4,51 @@ import tw from 'twin.macro';
 import { Body2, Heading2 } from '../shared';
 import Card from './Card';
 
-const PX10 = styled.div`
-  ${tw`px-10`}
-`;
-const Pt4 = styled.div`
-  ${tw`pt-4`}
+const CarauselHead = styled.div`
+  ${tw`
+    flex
+    flex-col
+    gap-3
+  `}
 `;
 
 const DragScroll = styled.div`
-  ${tw`flex flex-wrap flex-col overflow-x-scroll pt-10 `}
+  ${tw`flex flex-wrap flex-col overflow-x-scroll pt-6 gap-6`}
   height: 375px;
-  width: ${(props) => 240 / props.cardlength}px;
+  /* width: ${(props) => 64 / props.cardlength}px; */
+  width: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  &::-webkit-scrollbar {
-    width: 12px;
+  ::-webkit-scrollbar {
+    display: none;
   }
 `;
 
 const ScrollArea = styled.div`
-  ${tw`bg-gray-300 rounded-full mx-auto my-2`}
-  height: 8px;
-  width: 240px;
+  ${tw`bg-btn-yellow/[0.4] rounded-full mx-auto my-3`}
+  height: 4px;
+  width: 64px;
 `;
 const ScrollBar = styled.div`
-  ${tw`bg-yellow-400 relative rounded-full`}
-  height: 8px;
-  width: ${(props) => 240 / props.cardlength}px;
+  ${tw`bg-btn-yellow relative rounded-full`}
+  height: 4px;
+  width: ${(props) => 64 / props.cardlength}px;
 `;
 export default function CarouselMob({ cards, focused }) {
   const [right, setRight] = useState(0);
   function scrolled(e) {
     const cardwidth = 283;
-    const scrollpush = (e.target.scrollLeft * 240) / (cardwidth * cards.length);
+    const scrollpush = (e.target.scrollLeft * 64) / (cardwidth * cards.length);
     setRight(scrollpush);
   }
   return (
-    <div>
-      <PX10>
+    <>
+      <CarauselHead>
         <Heading2>SESSIONS</Heading2>
-        <Pt4>
-          <Body2>
-            New to hackathon dont worry we got you covered with all the basic information
-          </Body2>
-        </Pt4>
-      </PX10>
+        <Body2>New to hackathon dont worry we got you covered with all the basic information</Body2>
+      </CarauselHead>
 
-      {/* <div
-        className={`flex flex-wrap flex-col overflow-x-scroll pt-10 ${styles.dragScroll}`}
-        style={{ height: '375px' }}
-        onScroll={scrolled}
-      > */}
-      <DragScroll onScroll={() => scrolled()}>
+      <DragScroll onScroll={(e) => scrolled(e)}>
         {cards.map((item) => (
           <Card
             id={item.id}
@@ -73,6 +66,6 @@ export default function CarouselMob({ cards, focused }) {
       <ScrollArea>
         <ScrollBar style={{ right: `-${right}px` }} cardlength={cards.length} />
       </ScrollArea>
-    </div>
+    </>
   );
 }

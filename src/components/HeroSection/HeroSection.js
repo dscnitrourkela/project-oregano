@@ -9,10 +9,11 @@ import {
   HeroButtons,
   HeroHeading,
   SectionContainer,
+  TagHead,
 } from './styles';
 
 import { hero } from '../../../config';
-import { DevfolioBtn, DiscordBtn, DiscordBtnMobile, Heading3 } from '../shared';
+import { DevfolioBtn, DiscordBtn, DiscordBtnMobile } from '../shared';
 
 export default function Hero() {
   return (
@@ -25,9 +26,7 @@ export default function Hero() {
         </HeroTitle>
 
         <Tagline>
-          <Heading3 semibold className='font-Noto'>
-            {hero.tagline.taglinetext}
-          </Heading3>
+          <TagHead>{hero.tagline.taglinetext}</TagHead>
           <TaglineText>{hero.tagline.taglinedesc}</TaglineText>
         </Tagline>
 

@@ -24,7 +24,7 @@ export default function ResponsiveCarousel() {
   }
   return (
     <SectionLayout>
-      <CarouselMob cards={cards.cardData} />
+      <CarouselMob cards={cards.cardData} focused={0} />
     </SectionLayout>
   );
 }

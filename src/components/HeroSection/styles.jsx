@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Heading3 } from '../shared';
 
 export const SectionContainer = styled.div`
   ${tw`
@@ -69,6 +70,13 @@ export const Tagline = styled.div`
     mt-9
     sm:mt-16
     `}
+`;
+
+export const TagHead = styled(Heading3)`
+  font-weight: 590;
+  ${tw`
+    font-Noto
+  `}
 `;
 
 export const TaglineText = styled.p`

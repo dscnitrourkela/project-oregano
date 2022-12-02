@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
+import { Body2, Heading3, Heading2, Caption, Heading4 } from '../shared';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -44,6 +44,10 @@ const ChevronButtonLeft = styled.button`
   left: -48.72px;
   top: 351px;
   background-color: #8a8759;
+  transition: all 0.1s linear;
+  &:hover {
+    ${tw`bg-btn-yellow text-black`}
+  }
 `;
 
 const ChevronButtonRight = styled.button`
@@ -51,7 +55,25 @@ const ChevronButtonRight = styled.button`
   right: -49.02px;
   top: 351px;
   background-color: #8a8759;
+  transition: all 0.1s linear;
+  &:hover {
+    ${tw`bg-btn-yellow text-black`}
+  }
 `;
+
+const CardClass = styled.div`
+  ${tw`absolute p-3 duration-300 ease-linear bg-gray-900`}
+  border: ${(props) => (props.focused ? '4px solid yellow' : '0px')};
+  border-radius: ${(props) => handleRound(props.pos)};
+
+  width: ${(props) => (props.pos === 'center' ? '384px' : '351.32px')};
+  height: ${(props) => (props.pos === 'center' ? '517px' : '473px')};
+  top: ${(props) => (props.pos === 'center' ? '0px' : '22px')};
+  left: ${(props) => handleLeft(props.pos)};
+  filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(3.65957px)')};
+  z-index: ${(props) => handleZindex(props.pos)};
+`;
+
 const FirstHalfCard = styled.div`
   ${tw`h-1/2 bg-white w-full`}
   border-radius: ${(props) => props.radius};
@@ -68,7 +90,7 @@ const CardLabel = styled.div`
 `;
 
 const DownIndex = styled.div`
-  ${tw`mx-auto justify-between py-4 flex`}
+  ${tw`mx-auto justify-between py-6 flex`}
   width: ${(props) => props.cardcount}rem;
 `;
 
@@ -92,6 +114,21 @@ const DataComponent = styled.div`
     padding-right: 4rem;
   }
 `;
+
+const DataHead = styled.div`
+  ${tw`
+    flex
+    flex-col
+    gap-3
+  `}
+`;
+
+const DataBody = styled(DataHead)`
+  ${tw`
+    gap-6
+  `}
+`;
+
 function handleRound(pos) {
   if (pos === 'left' || pos === 'right') {
     return '1rem';
@@ -119,18 +156,7 @@ function handleZindex(pos) {
   }
   return 10;
 }
-const CardClass = styled.div`
-  ${tw`absolute p-3 duration-300 ease-linear bg-gray-900`}
-  border: ${(props) => (props.focused ? '4px solid yellow' : '0px')};
-  border-radius: ${(props) => handleRound(props.pos)};
 
-  width: ${(props) => (props.pos === 'center' ? '384px' : '351.32px')};
-  height: ${(props) => (props.pos === 'center' ? '517px' : '473px')};
-  top: ${(props) => (props.pos === 'center' ? '0px' : '22px')};
-  left: ${(props) => handleLeft(props.pos)};
-  filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(2px)')};
-  z-index: ${(props) => handleZindex(props.pos)};
-`;
 function setcard(cards) {
   let arr = [];
   if (cards.length === 0) {
@@ -155,6 +181,7 @@ function setcard(cards) {
   }
   return arr;
 }
+
 export default function Carousel({ cards }) {
   const [cardpos, setcardpos] = useState(setcard(cards));
   const [focused, setFocused] = useState(1);
@@ -197,15 +224,15 @@ export default function Carousel({ cards }) {
               <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'} />
               <SecondHalfCard>
                 <div>
-                  <Heading3>{item.heading}</Heading3>
+                  <Heading3 semibold>{item.heading}</Heading3>
                   <Py4>
                     <Body2>
-                      {item.name} : {item.designation}
+                      <span className='font-semibold'>{item.name}</span> : {item.designation}
                     </Body2>
                   </Py4>
                 </div>
                 <CardBottom>
-                  <Body1>{item.date}</Body1>
+                  <Heading4>{item.date}</Heading4>
                   <CardLabel>
                     <Body2>{item.label}</Body2>
                   </CardLabel>
@@ -224,13 +251,17 @@ export default function Carousel({ cards }) {
         </div>
       </AnimatedCarousel>
       <DataComponent>
-        <Heading2>SESSIONS</Heading2>
-        <Caption>
-          Now to hackathon dont worry we got you covered with all the basic information
-        </Caption>
-        <Heading3>{cards[center].heading}</Heading3>
+        <DataHead>
+          <Heading2 semibold>SESSIONS</Heading2>
+          <Caption>
+            Now to hackathon dont worry we got you covered with all the basic information
+          </Caption>
+        </DataHead>
 
-        <Body2>{cards[center].name}</Body2>
+        <DataBody>
+          <Heading3>{cards[center].heading}</Heading3>
+          <Body2>{cards[center].name}</Body2>
+        </DataBody>
 
         <Body2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
