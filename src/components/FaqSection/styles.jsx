@@ -1,32 +1,34 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { Body2 } from '../shared';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   ${tw`
   grid
   grid-cols-1
   gap-x-20
 
   mt-5
-  sm:mt-14
-  sm:grid-cols-2
-  sm:my-10
-  sm:px-14
+  md:mt-14
+  md:grid-cols-2
+  md:my-10
+  md:pl-14
 `}
 `;
 
-const FaqContainer = styled.div`
+export const FaqContainer = styled.div`
   ${tw`
   pt-10
-  sm:p-2
+  md:p-2
   `}
 `;
 
-const AnswerContainer = styled.div`
+export const AnswerContainer = styled.div`
   ${tw`
   relative
   rounded-xl
-  sm:rounded-xl
+  md:max-w-[560px]
+  md:rounded-xl
   lg:rounded-3xl
   p-4
   mt-4
@@ -34,7 +36,15 @@ const AnswerContainer = styled.div`
   `}
 `;
 
-const Answer = styled.div`
+export const Arrow = styled.span`
+  ${tw`
+    inline-flex
+    text-btn-yellow
+    md:text-4xl
+  `}
+`;
+
+export const Answer = styled.div`
   ${tw`
   p-3 
   mt-4 
@@ -42,82 +52,78 @@ const Answer = styled.div`
   border-2 
   border-yellow-300 
   rounded-lg
-  sm:rounded-xl
-  sm:mt-16 
-  sm:p-4  
+  md:rounded-xl
+  md:mt-16 
+  md:p-4  
   lg:ml-20 
   `}
 `;
 
-const BotContainer = styled.div`
+export const BotContainer = styled.div`
   ${tw`
   flex 
   flex-row 
+  justify-end
   items-center 
   md:bottom-12
-  sm:absolute
+  md:absolute
   `}
 `;
 
-const BotImg = styled.img`
+export const BotImg = styled.img`
   ${tw`
-  sm:h-28 
-  sm:w-24 
-  lg:h-52 
-  lg:w-36
-  sm:block
+  absolute
+  -bottom-4
+  -left-14
+  object-contain
+  md:h-[300px] 
+  lg:h-[350px]
+  md:block
   hidden 
   `}
 `;
 
-const BotMessage = styled.div`
+export const BotMessage = styled.div`
   ${tw`
+  md:w-[60%]
   py-3
   px-2
-  sm:p-6
+  md:pr-6
+  md:py-0
   `}
 `;
 
-const Head = styled.div`
+export const Head = styled.div`
   ${tw`
-    p-2
+    flex
+    flex-col
+    gap-3
   `}
 `;
 
-const Ques = styled.div`
-  ${tw``}
-`;
+export const List = styled(Body2)`
+  color: ${(props) => (props.active ? 'rgba(234, 234, 234, 1)' : 'rgba(163, 163, 163, 1)')};
 
-const Ul = styled.ul`
-  ${tw``}
-`;
-
-const List = styled.li`
   ${tw`
     py-4
-    mx-2
-    text-xs
-    sm:text-sm
-    font-Noto
+    md:py-[24.33px]
     leading-4
     cursor-pointer
-    text-color-tertiary
     border-solid
     border-b border-color-tertiary
     hover:text-white
     `}
 `;
 
-export {
-  Wrapper,
-  AnswerContainer,
-  FaqContainer,
-  BotContainer,
-  BotMessage,
-  BotImg,
-  Head,
-  Ques,
-  Ul,
-  List,
-  Answer,
-};
+// export {
+//   Wrapper,
+//   AnswerContainer,
+//   FaqContainer,
+//   BotContainer,
+//   BotMessage,
+//   BotImg,
+//   Head,
+//   List,
+//   Answer,
+//   Arrow,
+// };

@@ -7,14 +7,13 @@ import {
   BotMessage,
   BotImg,
   Head,
-  Ques,
-  Ul,
   List,
   Answer,
+  Arrow,
 } from './styles';
 
 import { faq } from '../../../config';
-import { Caption, Body1, Body2, SectionLayout, Heading2 } from '../shared';
+import { Caption, Body2, SectionLayout, Heading2, Heading4 } from '../shared';
 import { renderData } from '../../utils/parseLinks';
 
 const getUpdatedContent = (text) => {
@@ -36,50 +35,54 @@ const getUpdatedContent = (text) => {
 export default function Faq() {
   const { title, content, botMessage, botImg } = faq;
   const [stage, setStage] = useState();
+  const [active, setActive] = useState(0);
 
   const renderFaq = () => {
-    let answer = '...';
-    Object.keys(faq.questions).forEach((key) => {
-      if (stage === faq.questions[key].question)
-        answer = getUpdatedContent(faq.questions[key].answer);
+    let result = '...';
+    faq.questions.forEach(({ question, answer }) => {
+      if (stage === question) result = getUpdatedContent(answer);
     });
-    return answer;
+    return result;
   };
 
   return (
     <SectionLayout>
       <Wrapper>
         <AnswerContainer>
-          <Body1 semibold>R2D2 To Your Resque Ask Me Anything From There --</Body1>
+          <Heading4 semibold>
+            R2D2 To Your Resque Ask Me Anything From There <Arrow>&#8594;</Arrow>
+          </Heading4>
           <Answer>
             <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
           </Answer>
+          <BotImg src={botImg.src} alt={botImg.alt} />
           <BotContainer>
-            <BotImg src={botImg.src} alt={botImg.alt} />
             <BotMessage>
-              <Caption className='text-[#D6D6D6] sm:text-xs md:text-sm'>{botMessage}</Caption>
+              <Caption className='text-color-tertiary'>{botMessage}</Caption>
             </BotMessage>
           </BotContainer>
         </AnswerContainer>
         <FaqContainer>
           <Head>
             <Heading2 semibold>{title}</Heading2>
-            <Caption className='text-color-tertiary mt-1'>{content}</Caption>
+            <Caption className='text-color-tertiary'>{content}</Caption>
           </Head>
-          <Ques>
-            <Ul>
-              {Object.keys(faq.questions).map((key) => (
+          <div>
+            <ul>
+              {faq.questions.map(({ id, question }) => (
                 <List
-                  key={key}
+                  key={id}
                   onClick={() => {
-                    setStage(faq.questions[key].question);
+                    setStage(question);
+                    setActive(id);
                   }}
+                  active={id === active}
                 >
-                  {faq.questions[key].question}
+                  {question}
                 </List>
               ))}
-            </Ul>
-          </Ques>
+            </ul>
+          </div>
         </FaqContainer>
       </Wrapper>
     </SectionLayout>
