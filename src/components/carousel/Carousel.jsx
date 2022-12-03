@@ -253,7 +253,7 @@ export default function Carousel({ cards }) {
       <DataComponent>
         <DataHead>
           <Heading2 semibold>SESSIONS</Heading2>
-          <Caption>
+          <Caption className='text-color-tertiary'>
             Now to hackathon dont worry we got you covered with all the basic information
           </Caption>
         </DataHead>

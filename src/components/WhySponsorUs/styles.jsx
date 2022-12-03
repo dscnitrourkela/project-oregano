@@ -1,65 +1,69 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-import { Heading2, ButtonMeta, Body2 } from '../shared';
+import { ButtonMeta, Body2 } from '../shared';
 
 export const Wrapper = styled.section`
   ${tw`
-   flex-col
-   self-center
-   max-w-2xl
-   lg:max-w-none
+  flex
+  flex-col
+  gap-6
+  max-w-2xl
+  w-full
+  lg:max-w-none
  `}
 `;
 export const SponsorGrid = styled.section`
   ${tw`
-  lg:m-auto
   rounded-large
   bg-background-dark
-  px-4
-  break-words 
+  p-3
+  pb-4
+  lg:p-0
   flex
   flex-col-reverse
-  self-center
-  lg:space-x-6
+  gap-4
   lg:bg-transparent
   lg:grid
   lg:gap-6
   lg:grid-cols-10
-  overflow-hidden
  `}
 `;
 export const ContentContainer = styled.div`
   ${tw`
-  m-auto
-  row-span-1 
-  col-start-1
-  col-end-4
-  pt-side
+  h-auto
+  flex
   flex-col
+  gap-5
+  lg:gap-9
+  items-start
+  justify-center
+  col-span-4
+  lg:py-6
+  lg:max-w-[384px]
   `}
 `;
 export const VidBlock = styled.div`
   ${tw`
-  pt-4
-  self-center
-  row-span-1 
-  row-start-3 
-  lg:max-w-none
-  lg:row-start-1
-  lg:px-0 
-  lg:pt-0
+  lg:max-w-[690px]
+  w-full
   lg:m-auto 
-  lg:col-start-5 
-  lg:col-end-11 
+  lg:col-span-6
+  `}
+`;
+
+export const HeadContainer = styled.div`
+  ${tw`
+  hidden
+  lg:flex
+  flex-col
+  gap-3
   `}
 `;
 
 export const DescText = styled(Body2)`
   ${tw`
-  text-justify
-  lg:pt-8 
-  lg:w-96
+  text-left
 `}
 `;
 
@@ -74,6 +78,7 @@ export const ContentTextSm = styled.div`
   block
   `}
 `;
+
 export const ContentTextlg = styled(ButtonMeta)`
   ${tw`
   text-justify 
@@ -83,59 +88,27 @@ export const ContentTextlg = styled(ButtonMeta)`
   `}
   color: #8c8c8c;
 `;
-export const Heading = styled(Heading2)`
-  ${tw`
-  pb-3
-  px-1
-  lg:px-6
-  block
-  row-start-1
-  lg:hidden
-`}
-`;
 
-export const Tagline = styled(ButtonMeta)`
+export const HeadContainerMob = styled(HeadContainer)`
   ${tw`
-  text-justify 
-  px-2
-  lg:px-6
-  pb-8
-  lg:px-0
+  flex
   lg:hidden
-  row-start-2
-  block
-  `}
-  color: #a3a3a3;
-`;
-
-export const TitleTextlg = styled(Heading2)`
-  ${tw`
-  pb-2
-  row-start-1 
-  hidden 
-  lg:block
   `}
 `;
+
 export const Buttons = styled.div`
   ${tw`
-  space-x-6
-  flex 
+  flex
+  gap-3
+  lg:gap-6
   flex-row 
-  mt-7
-  pb-side
-  lg:px-0 
-  lg:place-items-center
-  lg:mx-auto
   `}
 `;
 export const SponsorBtn = styled.button`
   ${tw`
-  inline-block 
-  px-3 
-  py-0 
-  bg-yellow-400 
-  text-white 
-  font-medium 
+  px-3
+  bg-btn-yellow 
+  text-black 
   text-xs 
   rounded-full 
   shadow-md 
@@ -151,13 +124,11 @@ export const SponsorBtn = styled.button`
 `;
 export const BrochureBtn = styled.button`
   ${tw`
-  inline-block 
   p-2 
   bg-transparent 
   text-yellow-500 
   hover:text-yellow-600 
   underline 
-  font-medium 
   text-xs 
   sm:px-6 
   sm:py-3

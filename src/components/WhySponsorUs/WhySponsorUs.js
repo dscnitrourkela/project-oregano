@@ -6,28 +6,31 @@ import {
   Buttons,
   VidBlock,
   DescText,
-  TitleTextlg,
   SponsorBtn,
   BrochureBtn,
-  Heading,
   ContentTextlg,
-  Tagline,
   Wrapper,
+  HeadContainer,
+  HeadContainerMob,
 } from './styles';
 
-import { SectionLayout } from '../shared';
+import { Caption, Heading2, SectionLayout } from '../shared';
 import { whySponsor } from '../../../config';
 
 export default function SponsorUs() {
   return (
     <SectionLayout>
       <Wrapper>
-        <Heading>{whySponsor.Title.TitleText}</Heading>
-        <Tagline>{whySponsor.Caption.CaptionText}</Tagline>
+        <HeadContainerMob>
+          <Heading2>{whySponsor.Title.TitleText}</Heading2>
+          <Caption className='text-color-tertiary'>{whySponsor.Caption.CaptionText}</Caption>
+        </HeadContainerMob>
         <SponsorGrid>
           <ContentContainer>
-            <TitleTextlg semibold>{whySponsor.Title.TitleText}</TitleTextlg>
-            <ContentTextlg>{whySponsor.Caption.CaptionText}</ContentTextlg>
+            <HeadContainer>
+              <Heading2 semibold>{whySponsor.Title.TitleText}</Heading2>
+              <ContentTextlg>{whySponsor.Caption.CaptionText}</ContentTextlg>
+            </HeadContainer>
             <DescText>{whySponsor.Description.Desc}</DescText>
             <Buttons>
               <SponsorBtn>{whySponsor.Buttons.SponsorButton}</SponsorBtn>
