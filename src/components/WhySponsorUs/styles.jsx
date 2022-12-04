@@ -104,33 +104,3 @@ export const Buttons = styled.div`
   flex-row 
   `}
 `;
-export const SponsorBtn = styled.button`
-  ${tw`
-  px-3
-  bg-btn-yellow 
-  text-black 
-  text-xs 
-  rounded-full 
-  shadow-md 
-  hover:bg-yellow-500 
-  hover:shadow-lg 
-  focus:bg-yellow-600 
-  focus:shadow-lg 
-  active:bg-yellow-700 
-  active:shadow-lg 
-  sm:px-8 
-  sm:py-3
-  `}
-`;
-export const BrochureBtn = styled.button`
-  ${tw`
-  p-2 
-  bg-transparent 
-  text-yellow-500 
-  hover:text-yellow-600 
-  underline 
-  text-xs 
-  sm:px-6 
-  sm:py-3
-  `}
-`;

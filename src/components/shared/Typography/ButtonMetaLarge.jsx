@@ -6,11 +6,8 @@ export default styled.p`
   ${tw`
    text-sm
    leading-4
-
-   sm:text-lg
+   sm:text-base
    sm:leading-6
-
-   text-color-primary
    font-Noto
 `}
 `;

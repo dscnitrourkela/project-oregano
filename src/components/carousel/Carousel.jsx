@@ -1,9 +1,10 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { Body2, Heading3, Heading2, Caption, Heading4 } from '../shared';
+import { Body2, Heading3, Heading2, Caption, Heading4, Button } from '../shared';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -12,16 +13,9 @@ const Py4 = styled.div`
 const SecondCardBottom = styled.div`
   ${tw`flex justify-between pt-4`}
 `;
-const ButtonYellow = styled.button`
-  ${tw`bg-yellow-400 py-4 px-6 text-sm rounded-full text-black`}
-`;
 
 const CarouselContainer = styled.div`
   ${tw`grid grid-cols-5 py-12 w-full`}
-`;
-
-const BottomLink = styled.div`
-  ${tw` my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer`}
 `;
 
 const AnimatedCarousel = styled.div`
@@ -270,8 +264,8 @@ export default function Carousel({ cards }) {
         </Body2>
 
         <SecondCardBottom>
-          <ButtonYellow>JOIN LIVE</ButtonYellow>
-          <BottomLink>GO TO YOUTUBE {'>'}</BottomLink>
+          <Button filled text='JOIN LIVE' />
+          <Button small arrowed text='GO TO YOUTUBE' />
         </SecondCardBottom>
       </DataComponent>
     </CarouselContainer>

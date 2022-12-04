@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { Heading3, Heading4, Body1 } from '../shared';
+import { Heading3, Heading4, Body1, Button } from '../shared';
 
 const CardMob = styled.div`
   ${tw`
@@ -25,10 +25,6 @@ const SecondHalf = styled.div`
   ${tw`h-1/2  text-yellow-400 flex flex-col justify-between`}
 `;
 
-const ButtonYellow = styled.button`
-  ${tw`bg-yellow-400 px-4 py-3 rounded-full text-black`}
-`;
-
 const Bottom = styled.div`
   ${tw`flex justify-between items-center`}
 `;
@@ -44,7 +40,7 @@ export default function Card({ heading, name, designation, date, label, focused 
         </Body1>
         <Bottom>
           <Heading4>{date}</Heading4>
-          <ButtonYellow>{label}</ButtonYellow>
+          <Button filled text={label} />
         </Bottom>
       </SecondHalf>
     </CardMob>

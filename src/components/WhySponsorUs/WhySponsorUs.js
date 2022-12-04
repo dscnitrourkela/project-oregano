@@ -6,15 +6,13 @@ import {
   Buttons,
   VidBlock,
   DescText,
-  SponsorBtn,
-  BrochureBtn,
   ContentTextlg,
   Wrapper,
   HeadContainer,
   HeadContainerMob,
 } from './styles';
 
-import { Caption, Heading2, SectionLayout } from '../shared';
+import { Button, Caption, Heading2, SectionLayout } from '../shared';
 import { whySponsor } from '../../../config';
 
 export default function SponsorUs() {
@@ -33,8 +31,8 @@ export default function SponsorUs() {
             </HeadContainer>
             <DescText>{whySponsor.Description.Desc}</DescText>
             <Buttons>
-              <SponsorBtn>{whySponsor.Buttons.SponsorButton}</SponsorBtn>
-              <BrochureBtn>{whySponsor.Buttons.ViewBrochureButton}</BrochureBtn>
+              <Button filled text={whySponsor.Buttons.SponsorButton} />
+              <Button small arrowed text={whySponsor.Buttons.ViewBrochureButton} />
             </Buttons>
           </ContentContainer>
           <VidBlock>
