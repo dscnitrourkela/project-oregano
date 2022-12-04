@@ -11,6 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const NavBar = styled.div`
+  z-index: 9999;
   ${tw`
     w-full
     sticky

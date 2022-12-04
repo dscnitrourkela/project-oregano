@@ -20,7 +20,7 @@ export const NavBar = styled.header`
   backdrop-filter: blur(10px);
   position: relative;
   padding: 0;
-  z-index: 9999;
+  z-index: 1;
   display: flex;
   flex-direction: column;
 

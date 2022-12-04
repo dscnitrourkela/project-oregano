@@ -30,15 +30,15 @@ export default {
         alt: 'NIT Rourkela',
       },
     },
-    {
-      title: 'About Diamond Jubilee',
-      text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year. Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a beacon of knowledge.',
-      id: 'footer-card-2',
-      img: {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/diamond_nrpehm.png',
-        alt: 'Diamond Jubilee NIT Rourkela',
-      },
-    },
+    // {
+    //   title: 'About Diamond Jubilee',
+    //   text: 'Established in the year 1961, NIT Rourkela celebrates its 60th anniversary this year. Through the years of the tireless striving of its administration, students, and all stakeholders, it has become a beacon of knowledge.',
+    //   id: 'footer-card-2',
+    //   img: {
+    //     src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/diamond_nrpehm.png',
+    //     alt: 'Diamond Jubilee NIT Rourkela',
+    //   },
+    // },
   ],
   socials: [
     {
