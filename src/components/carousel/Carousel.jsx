@@ -264,7 +264,7 @@ export default function Carousel({ cards }) {
         </Body2>
 
         <SecondCardBottom>
-          <Button filled text='JOIN LIVE' />
+          <Button small filled text='JOIN LIVE' />
           <Button small arrowed text='GO TO YOUTUBE' />
         </SecondCardBottom>
       </DataComponent>

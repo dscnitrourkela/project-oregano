@@ -15,7 +15,7 @@ export const Wrapper = styled.section`
 `;
 export const SponsorGrid = styled.section`
   ${tw`
-  rounded-large
+  rounded-4xl
   bg-background-dark
   p-3
   pb-4

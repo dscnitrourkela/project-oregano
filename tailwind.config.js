@@ -53,7 +53,8 @@ module.exports = {
         'background-darker': '#000811',
       },
       borderRadius: {
-        large: '32px',
+        '4xl': '32px',
+        '5xl': '40px',
       },
       // Noto: ['Noto Sans', 'sans-serif'],
       fontFamily: {

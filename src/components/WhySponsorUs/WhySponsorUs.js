@@ -31,12 +31,12 @@ export default function SponsorUs() {
             </HeadContainer>
             <DescText>{whySponsor.Description.Desc}</DescText>
             <Buttons>
-              <Button filled text={whySponsor.Buttons.SponsorButton} />
+              <Button small filled text={whySponsor.Buttons.SponsorButton} />
               <Button small arrowed text={whySponsor.Buttons.ViewBrochureButton} />
             </Buttons>
           </ContentContainer>
           <VidBlock>
-            <img className='rounded-large' src={whySponsor.img.src} alt={whySponsor.img.alt} />
+            <img className='rounded-4xl' src={whySponsor.img.src} alt={whySponsor.img.alt} />
           </VidBlock>
         </SponsorGrid>
       </Wrapper>

@@ -13,11 +13,11 @@ const ButtonContainer = styled.button`
   }
   color: ${(props) => (props.filled ? '#000' : '#FFE91F')};
   ${tw`
-    rounded-3xl
+    rounded-5xl
     px-6
     py-[10px]
     sm:px-9
-    sm:py-3
+    sm:py-4
   `}/* &>p {
     text-decoration: ${(props) => (props.filled ? 'none' : 'underline')};
   } */
