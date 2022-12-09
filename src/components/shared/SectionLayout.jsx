@@ -10,6 +10,7 @@ const SectionContainer = styled.div`
   ${tw`
     w-full
     h-auto
+    // min-h-screen
     overflow-x-hidden
     overflow-y-hidden
     flex

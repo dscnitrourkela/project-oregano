@@ -1,10 +1,10 @@
-import React from 'react';
-import { useState } from 'react';
-import { Body1, Body2, Heading3, Heading2, Caption } from '../shared';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+/* eslint-disable react/no-array-index-key */
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { Body2, Heading3, Heading2, Caption, Heading4, Button } from '../shared';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -13,16 +13,9 @@ const Py4 = styled.div`
 const SecondCardBottom = styled.div`
   ${tw`flex justify-between pt-4`}
 `;
-const ButtonYellow = styled.button`
-  ${tw`bg-yellow-400 py-4 px-6 text-sm rounded-full text-black`}
-`;
 
 const CarouselContainer = styled.div`
   ${tw`grid grid-cols-5 py-12 w-full`}
-`;
-
-const BottomLink = styled.div`
-  ${tw` my-auto font-semibold text-yellow-400 text-sm underline cursor-pointer`}
 `;
 
 const AnimatedCarousel = styled.div`
@@ -45,6 +38,10 @@ const ChevronButtonLeft = styled.button`
   left: -48.72px;
   top: 351px;
   background-color: #8a8759;
+  transition: all 0.1s linear;
+  &:hover {
+    ${tw`bg-btn-yellow text-black`}
+  }
 `;
 
 const ChevronButtonRight = styled.button`
@@ -52,7 +49,25 @@ const ChevronButtonRight = styled.button`
   right: -49.02px;
   top: 351px;
   background-color: #8a8759;
+  transition: all 0.1s linear;
+  &:hover {
+    ${tw`bg-btn-yellow text-black`}
+  }
 `;
+
+const CardClass = styled.div`
+  ${tw`absolute p-3 duration-300 ease-linear bg-gray-900`}
+  border: ${(props) => (props.focused ? '4px solid yellow' : '0px')};
+  border-radius: ${(props) => handleRound(props.pos)};
+
+  width: ${(props) => (props.pos === 'center' ? '384px' : '351.32px')};
+  height: ${(props) => (props.pos === 'center' ? '517px' : '473px')};
+  top: ${(props) => (props.pos === 'center' ? '0px' : '22px')};
+  left: ${(props) => handleLeft(props.pos)};
+  filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(3.65957px)')};
+  z-index: ${(props) => handleZindex(props.pos)};
+`;
+
 const FirstHalfCard = styled.div`
   ${tw`h-1/2 bg-white w-full`}
   border-radius: ${(props) => props.radius};
@@ -69,7 +84,7 @@ const CardLabel = styled.div`
 `;
 
 const DownIndex = styled.div`
-  ${tw`mx-auto justify-between py-4 flex`}
+  ${tw`mx-auto justify-between py-6 flex`}
   width: ${(props) => props.cardcount}rem;
 `;
 
@@ -93,6 +108,21 @@ const DataComponent = styled.div`
     padding-right: 4rem;
   }
 `;
+
+const DataHead = styled.div`
+  ${tw`
+    flex
+    flex-col
+    gap-3
+  `}
+`;
+
+const DataBody = styled(DataHead)`
+  ${tw`
+    gap-6
+  `}
+`;
+
 function handleRound(pos) {
   if (pos === 'left' || pos === 'right') {
     return '1rem';
@@ -120,63 +150,54 @@ function handleZindex(pos) {
   }
   return 10;
 }
-const CardClass = styled.div`
-  ${tw`absolute p-3 duration-300 ease-linear bg-gray-900`}
-  border: ${(props) => (props.focused ? '4px solid yellow' : '0px')};
-  border-radius: ${(props) => handleRound(props.pos)};
 
-  width: ${(props) => (props.pos === 'center' ? '384px' : '351.32px')};
-  height: ${(props) => (props.pos === 'center' ? '517px' : '473px')};
-  top: ${(props) => (props.pos === 'center' ? '0px' : '22px')};
-  left: ${(props) => handleLeft(props.pos)};
-  filter: ${(props) => (props.pos === 'center' ? 'blur(0px)' : 'blur(2px)')};
-  z-index: ${(props) => handleZindex(props.pos)};
-`;
-function setcard(cards){
-  let arr=[];
-  if(cards.length==0){
+function setcard(cards) {
+  let arr = [];
+  if (cards.length === 0) {
     return arr;
   }
-  if(cards.length==1){
-    arr.push("left");
+  if (cards.length === 1) {
+    arr.push('left');
     return arr;
   }
-  if(cards.length==2){
-    arr.push("left");
-    arr.push("center");
+  if (cards.length === 2) {
+    arr.push('left');
+    arr.push('center');
     return arr;
   }
-  if(cards.length==3){
-    arr=["left","center", "right"];
+  if (cards.length === 3) {
+    arr = ['left', 'center', 'right'];
     return arr;
   }
-  arr=["left","center","right"]
-  for(let i=cards.length-3;i>=1;i--){
-    arr.push("back");
+  arr = ['left', 'center', 'right'];
+  for (let i = cards.length - 3; i >= 1; i -= 1) {
+    arr.push('back');
   }
   return arr;
 }
-export default function Carousel({ cards, focused }) {
 
+export default function Carousel({ cards }) {
   const [cardpos, setcardpos] = useState(setcard(cards));
+  const [focused, setFocused] = useState(1);
   const [cardindex, setcardindex] = useState(
     cardpos.map((item) => {
       if (item === 'center') {
         return true;
-      } else {
-        return false;
       }
+      return false;
     }),
   );
   function rLeft() {
     setcardpos([...cardpos.slice(1), cardpos[0]]);
     setcardindex([...cardindex.slice(1), cardindex[0]]);
     setCenter((center - 1 + cards.length) % cards.length);
+    setFocused(focused > 0 ? focused - 1 : cards.length - 1);
   }
   function rRight() {
     setcardpos([cardpos[cardpos.length - 1], ...cardpos.slice(0, cardpos.length - 1)]);
     setcardindex([cardindex[cardindex.length - 1], ...cardindex.slice(0, cardindex.length - 1)]);
     setCenter((center + 1) % cards.length);
+    setFocused(focused < cards.length - 1 ? focused + 1 : 0);
   }
   const [center, setCenter] = useState(1);
 
@@ -184,61 +205,57 @@ export default function Carousel({ cards, focused }) {
     <CarouselContainer>
       <AnimatedCarousel>
         <BaseCard>
-          <ChevronButtonLeft onClick={rLeft}>
+          <ChevronButtonLeft onClick={() => rLeft()}>
             <FontAwesomeIcon icon={faChevronLeft} />
           </ChevronButtonLeft>
-          <ChevronButtonRight onClick={rRight}>
+          <ChevronButtonRight onClick={() => rRight()}>
             <FontAwesomeIcon icon={faChevronRight} />
           </ChevronButtonRight>
 
           {/* card  */}
-          {cards.map((item) => {
-            return (
-              <CardClass
-                pos={cardpos[item.id]}
-                focused={item.id === focused}
-                key={item.id}
-              >
-                <FirstHalfCard
-                  radius={cardpos[item.id - 1] !== "center" ? '1.0rem' : '0.8rem'}
-                ></FirstHalfCard>
-                <SecondHalfCard>
-                  <div>
-                    <Heading3>{item.heading}</Heading3>
-                    <Py4>
-                      <Body2>
-                        {item.name} : {item.designation}
-                      </Body2>
-                    </Py4>
-                  </div>
-                  <CardBottom>
-                    <Body1>{item.date}</Body1>
-                    <CardLabel>
-                      <Body2>{item.label}</Body2>
-                    </CardLabel>
-                  </CardBottom>
-                </SecondHalfCard>
-              </CardClass>
-            );
-          })}
+          {cards.map((item) => (
+            <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
+              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'} />
+              <SecondHalfCard>
+                <div>
+                  <Heading3 semibold>{item.heading}</Heading3>
+                  <Py4>
+                    <Body2>
+                      <span className='font-semibold'>{item.name}</span> : {item.designation}
+                    </Body2>
+                  </Py4>
+                </div>
+                <CardBottom>
+                  <Heading4>{item.date}</Heading4>
+                  <CardLabel>
+                    <Body2>{item.label}</Body2>
+                  </CardLabel>
+                </CardBottom>
+              </SecondHalfCard>
+            </CardClass>
+          ))}
         </BaseCard>
         <div>
           <DownIndex cardcount={cardindex.length}>
-            {cardindex.map((item) => {
-              if (item) return <IndividualDownIndexSelected></IndividualDownIndexSelected>;
-              else return <IndividualDownIndexUnselected></IndividualDownIndexUnselected>;
+            {cardindex.map((item, idx) => {
+              if (item) return <IndividualDownIndexSelected key={idx} />;
+              return <IndividualDownIndexUnselected key={idx} />;
             })}
           </DownIndex>
         </div>
       </AnimatedCarousel>
       <DataComponent>
-        <Heading2>SESSIONS</Heading2>
-        <Caption>
-          Now to hackathon dont worry we got you covered with all the basic information
-        </Caption>
-        <Heading3>{cards[center].heading}</Heading3>
+        <DataHead>
+          <Heading2 semibold>SESSIONS</Heading2>
+          <Caption className='text-color-tertiary'>
+            Now to hackathon dont worry we got you covered with all the basic information
+          </Caption>
+        </DataHead>
 
-        <Body2>{cards[center].name}</Body2>
+        <DataBody>
+          <Heading3>{cards[center].heading}</Heading3>
+          <Body2>{cards[center].name}</Body2>
+        </DataBody>
 
         <Body2>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
@@ -247,8 +264,8 @@ export default function Carousel({ cards, focused }) {
         </Body2>
 
         <SecondCardBottom>
-          <ButtonYellow>JOIN LIVE</ButtonYellow>
-          <BottomLink>GO TO YOUTUBE {'>'}</BottomLink>
+          <Button small filled text='JOIN LIVE' />
+          <Button small arrowed text='GO TO YOUTUBE' />
         </SecondCardBottom>
       </DataComponent>
     </CarouselContainer>

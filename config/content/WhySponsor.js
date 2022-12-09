@@ -14,7 +14,7 @@ export default {
     Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin justo nibh, porttitor quis varius eget, eleifend quis nisl. Mauris id interdum risus, a vestibulum neque. Nam facilisis lacus quis nisi malesuada vehicula. Nam ac erat massa. In felis tortor, laoreet. jnsrjn snrfn  fkooaffka akfawkkf. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor',
   },
   Buttons: {
-    SponsorButton: 'Sponsor Us',
-    ViewBrochureButton: 'View Brochure',
+    SponsorButton: 'SPONSOR US',
+    ViewBrochureButton: 'VIEW BROCHURE',
   },
 };

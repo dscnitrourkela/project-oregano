@@ -7,20 +7,22 @@ import {
   BotMessage,
   BotImg,
   Head,
-  Ques,
-  Ul,
   List,
   Answer,
+  Arrow,
+  QuestionContainer,
+  Container,
 } from './styles';
 
-import FAQ from '../../../config/content/FAQ';
-import { Heading3, Caption, Body1, Body2 } from '../shared';
+import { faq } from '../../../config';
+import { Caption, Body2, SectionLayout, Heading2, Heading4 } from '../shared';
 import { renderData } from '../../utils/parseLinks';
+import FaqSet from './FaqSet';
 
 const getUpdatedContent = (text) => {
   const updatedContent = {};
 
-  const urlPattern = /([^+>]*)[^<]*(<a [^>]*(href="([^>^\"]*)")[^>]*>)([^<]+)(<\/a>)/gi;
+  const urlPattern = /([^+>]*)[^<]*(<a [^>]*(href="([^>^"]*)")[^>]*>)([^<]+)(<\/a>)/gi;
   const output = text.replace(urlPattern, '$1_|_$2$3_|_$4_|_$5_|_$6').split('_|_');
 
   updatedContent[`body-${1}`] = output[0];
@@ -34,52 +36,85 @@ const getUpdatedContent = (text) => {
 };
 
 export default function Faq() {
-  const { title, content, botMessage, botImg } = FAQ;
+  const { title, content, botMessage, botImg } = faq;
   const [stage, setStage] = useState();
+  const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(-1);
+  const handleClick = (id, question) => {
+    if (open === id) {
+      setOpen(-1);
+    } else {
+      setOpen(id);
+    }
+    setStage(question);
+    setActive(id);
+  };
 
   const renderFaq = () => {
-    let answer = '...';
-    Object.keys(FAQ.questions).forEach((key) => {
-      if (stage === FAQ.questions[key].question)
-        answer = getUpdatedContent(FAQ.questions[key].answer);
+    let result = '...';
+    faq.questions.forEach(({ question, answer }) => {
+      if (stage === question) result = getUpdatedContent(answer);
     });
-    return answer;
+    return result;
   };
 
   return (
-    <Wrapper>
-      <AnswerContainer>
-        <Body1 semibold>R2D2 To Your Resque Ask Me Anything From There --</Body1>
-        <Answer>
-          <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
-        </Answer>
-        <BotContainer>
+    <SectionLayout>
+      <Wrapper>
+        <AnswerContainer>
+          <Heading4 semibold>
+            R2D2 To Your Resque Ask Me Anything From There <Arrow>&#8594;</Arrow>
+          </Heading4>
+          <Answer>
+            <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
+          </Answer>
           <BotImg src={botImg.src} alt={botImg.alt} />
-          <BotMessage>
-            <Caption className='text-[#D6D6D6] sm:text-xs md:text-sm'>{botMessage}</Caption>
-          </BotMessage>
-        </BotContainer>
-      </AnswerContainer>
-      <FaqContainer>
-        <Head>
-          <Heading3 semibold>{title}</Heading3>
-          <Caption className='text-color-tertiary mt-1'>{content}</Caption>
-        </Head>
-        <Ques>
-          <Ul>
-            {Object.keys(FAQ.questions).map((key) => (
-              <List
-                key={key}
-                onClick={() => {
-                  setStage(FAQ.questions[key].question);
-                }}
-              >
-                {FAQ.questions[key].question}
-              </List>
-            ))}
-          </Ul>
-        </Ques>
-      </FaqContainer>
-    </Wrapper>
+          <BotContainer>
+            <BotMessage>
+              <Caption className='text-color-tertiary'>{botMessage}</Caption>
+            </BotMessage>
+          </BotContainer>
+        </AnswerContainer>
+        <FaqContainer>
+          <Head>
+            <Heading2 semibold>{title}</Heading2>
+            <Caption className='text-color-tertiary'>{content}</Caption>
+          </Head>
+          <div>
+            <ul>
+              {faq.questions.map(({ id, question }) => (
+                <List
+                  key={id}
+                  onClick={() => {
+                    setStage(question);
+                    setActive(id);
+                  }}
+                  active={id === active}
+                >
+                  {question}
+                </List>
+              ))}
+            </ul>
+          </div>
+        </FaqContainer>
+      </Wrapper>
+      <Container>
+        <Heading2 semibold>Have A Question?</Heading2>
+        <QuestionContainer>
+          {faq.questions.map(({ id, question }) => (
+            <FaqSet
+              key={id}
+              openState={open}
+              idNum={id}
+              question={question}
+              answer={renderFaq()}
+              handleClick={() => {
+                handleClick(id, question);
+              }}
+            />
+          ))}
+        </QuestionContainer>
+      </Container>
+    </SectionLayout>
   );
 }

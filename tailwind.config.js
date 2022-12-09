@@ -6,6 +6,11 @@ module.exports = {
   content: ['./src/pages/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        track: 'repeat(auto-fit, minmax(300px, 1fr))',
+        logo: 'repeat(auto-fit, minmax(50px, 1fr))',
+        schedule: 'repeat(4, minmax(500px, 1fr))',
+      },
       fontSize: {
         xm: ['10px', '12px'],
         xs: '12px',
@@ -43,12 +48,13 @@ module.exports = {
         'color-primary': '#EAEAEA',
         'color-secondary': '#D6D6D6',
         'color-tertiary': '#A3A3A3',
-        'btn-yellow':'#FFE81F',
-        'bg-color':'#000811',
-        'color-back': '#202020',
+        'btn-yellow': '#FFE81F',
+        'background-dark': '#202020',
+        'background-darker': '#000811',
       },
       borderRadius: {
-        large: '32px',
+        '4xl': '32px',
+        '5xl': '40px',
       },
       // Noto: ['Noto Sans', 'sans-serif'],
       fontFamily: {
@@ -56,8 +62,8 @@ module.exports = {
       },
 
       letterSpacing: {
-        wide:'0.25em',
-        wider:'0.51em',
+        wide: '0.25em',
+        wider: '0.51em',
         widest: '0.62em',
       },
     },
