@@ -40,7 +40,15 @@ export default function Faq() {
   const [stage, setStage] = useState();
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(-1);
-  const handleClick = (id) => (open === id ? setOpen(-1) : setOpen(id));
+  const handleClick = (id, question) => {
+    if (open === id) {
+      setOpen(-1);
+    } else {
+      setOpen(id);
+    }
+    setStage(question);
+    setActive(id);
+  };
 
   const renderFaq = () => {
     let result = '...';
@@ -93,14 +101,16 @@ export default function Faq() {
       <Container>
         <Heading2 semibold>Have A Question?</Heading2>
         <QuestionContainer>
-          {faq.questions.map(({ id, question, answer }) => (
+          {faq.questions.map(({ id, question }) => (
             <FaqSet
               key={id}
               openState={open}
               idNum={id}
               question={question}
-              answer={answer}
-              handleClick={handleClick}
+              answer={renderFaq()}
+              handleClick={() => {
+                handleClick(id, question);
+              }}
             />
           ))}
         </QuestionContainer>
