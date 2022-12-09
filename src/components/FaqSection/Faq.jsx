@@ -10,11 +10,14 @@ import {
   List,
   Answer,
   Arrow,
+  QuestionContainer,
+  Container,
 } from './styles';
 
 import { faq } from '../../../config';
 import { Caption, Body2, SectionLayout, Heading2, Heading4 } from '../shared';
 import { renderData } from '../../utils/parseLinks';
+import FaqSet from './FaqSet';
 
 const getUpdatedContent = (text) => {
   const updatedContent = {};
@@ -36,6 +39,8 @@ export default function Faq() {
   const { title, content, botMessage, botImg } = faq;
   const [stage, setStage] = useState();
   const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(-1);
+  const handleClick = (id) => (open === id ? setOpen(-1) : setOpen(id));
 
   const renderFaq = () => {
     let result = '...';
@@ -85,6 +90,21 @@ export default function Faq() {
           </div>
         </FaqContainer>
       </Wrapper>
+      <Container>
+        <Heading2 semibold>Have A Question?</Heading2>
+        <QuestionContainer>
+          {faq.questions.map(({ id, question, answer }) => (
+            <FaqSet
+              key={id}
+              openState={open}
+              idNum={id}
+              question={question}
+              answer={answer}
+              handleClick={handleClick}
+            />
+          ))}
+        </QuestionContainer>
+      </Container>
     </SectionLayout>
   );
 }
