@@ -2,9 +2,7 @@ import React from 'react';
 import VidScroll from './VidScroll';
 
 const AboutUs = () => {
-  <>
-    <VidScroll />
-  </>;
+  return <VidScroll />;
 };
 
 export default AboutUs;

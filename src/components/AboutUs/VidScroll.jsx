@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import aboutVideo from '../../../assets/AboutUs.mp4';
 import { VideoBlock, VideoContainer } from './style';
 
 const VidScroll = () => {
@@ -23,7 +22,13 @@ const VidScroll = () => {
 
   return (
     <VideoContainer ref={containerRef}>
-      <VideoBlock ref={videoRef} src={aboutVideo} onLoadedMetadata={handler} controls preloaded />
+      <VideoBlock
+        ref={videoRef}
+        src='https://res.cloudinary.com/dmutbjmoo/video/upload/v1670678849/AboutUs_lelxbm.mp4'
+        onLoadedMetadata={handler}
+        controls
+        preloaded
+      />
     </VideoContainer>
   );
 };
