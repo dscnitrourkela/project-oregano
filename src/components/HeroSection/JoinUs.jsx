@@ -85,7 +85,7 @@ function JoinUs() {
               <Heading2 style={{ marginTop: 15 }}>{join.JoinUs.heading}</Heading2>
               <Body>{join.JoinUs.head}</Body>
               <Body style={{ marginTop: 10 }}>{join.JoinUs.description}</Body>
-              <Popup id='o2X7YSNf' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
+              <Popup id='di6YLmdD' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>
                 <ButtonLight style={{ marginTop: 28 }}>Join Us</ButtonLight>
               </Popup>
             </JoinUsText>

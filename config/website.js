@@ -31,7 +31,7 @@ module.exports = {
   facebook: 'https://facebook.com/hacknitr',
   instagram: 'https://instagram.com/hacknitr',
   discord: 'https://discord.com/invite/SGzuZyp9nS',
-  register: 'https://hacknitr-4.devfolio.co/',
+  register: 'https://hacknitr4.devfolio.co/',
   sponsor: 'https://o0rqxa59g3k.typeform.com/to/GXfkpiIo',
   join: 'https://preregister.hacknitr.com',
 
@@ -41,5 +41,5 @@ module.exports = {
   termsConditions: 'https://github.com/MLH/mlh-policies/blob/main/contest-terms.md',
 
   // Community Partners Link
-  communityPartners: 'https://partners.hacknitr.com/',
+  communityPartners: 'https://cp.hacknitr.com/',
 };

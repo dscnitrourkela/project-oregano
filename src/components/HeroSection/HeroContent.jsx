@@ -25,13 +25,12 @@ const TimeLine = styled(Body)`
   border-radius: 25px;
   width: fit-content;
   margin-bottom: 24px;
-  display: flex;
+
   gap: 10px;
   flex-direction: column;
 `;
 
 const TimeComp = styled(Body)`
-  display: flex;
   gap: 10px;
   align-items: center;
 `;
@@ -140,7 +139,8 @@ function HeroContent() {
       <Slogan style={{ marginBottom: '24px' }}>{hero.tagline}</Slogan>
       <TimeLine>
         <TimeComp>
-          <Heading4>6th - 8th Jan 2023</Heading4>
+          <Heading4>Round 1: 6th - 8th Jan 2023</Heading4>
+          <Heading4>Round 2: 28th - 29th Jan 2023</Heading4>
         </TimeComp>
       </TimeLine>
       {hero.content.split(' \n ').map((data) => (
