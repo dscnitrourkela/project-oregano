@@ -7,14 +7,18 @@ const VidScroll = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
 
-  window.onscroll = () => {
-    if (isLoaded) {
-      setCurrentTime(-containerRef.current.getBoundingClientRect().y / 160);
-      setTimeout(() => {
-        videoRef.current.currentTime = currentTime;
-      }, 1000);
-    }
-  };
+  const isBrowser = () => typeof window !== 'undefined';
+
+  if (isBrowser()) {
+    window.onscroll = () => {
+      if (isLoaded) {
+        setCurrentTime(-containerRef.current.getBoundingClientRect().y / 160);
+        setTimeout(() => {
+          videoRef.current.currentTime = currentTime;
+        }, 1000);
+      }
+    };
+  }
 
   const handler = () => {
     setLoaded(true);
@@ -26,7 +30,6 @@ const VidScroll = () => {
         ref={videoRef}
         src='https://res.cloudinary.com/dmutbjmoo/video/upload/v1670678849/AboutUs_lelxbm.mp4'
         onLoadedMetadata={handler}
-        controls
         preloaded
       />
     </VideoContainer>
