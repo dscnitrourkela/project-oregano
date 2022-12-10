@@ -15,6 +15,11 @@ const Banner = styled.a`
     position: absolute;
     width: 8%;
   }
+
+  @media (max-width: 540px) {
+    position: absolute;
+    width: 10%;
+  }
 `;
 
 function MLHbanner() {
