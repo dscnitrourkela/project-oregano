@@ -12,7 +12,23 @@ export const Header = styled.h1`
 export const Wrapper = styled.div`
   border: 2px solid transparent;
   transition: 0.8s;
-  &:hover {
+  @media (min-width: 720px) {
+    &:hover {
+      border: 2px solid ${(props) => props.brcol};
+      .saber-img {
+        & > .fix {
+          opacity: 1;
+          ${tw`right-0`}
+        }
+        & > .movable {
+          opacity: 1;
+          ${tw`right-2`}
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
     border: 2px solid ${(props) => props.brcol};
     .saber-img {
       & > .fix {
