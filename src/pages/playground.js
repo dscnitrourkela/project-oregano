@@ -1,10 +1,6 @@
 import React from 'react';
-import Prizes from '../components/Prizes';
+import VidScroll from '../components/AboutUs/VidScroll';
 
 export default function Playground() {
-  return (
-    <div>
-      <Prizes />
-    </div>
-  );
+  return <VidScroll />;
 }
