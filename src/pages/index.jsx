@@ -25,6 +25,8 @@ import {
   TestimonialSection,
   AboutSection,
   MLHBanner,
+  FAQ,
+  JoinUs,
 } from '../components';
 
 const Homepage = ({ location }) => {
@@ -76,9 +78,11 @@ const Homepage = ({ location }) => {
           <AboutSection />
           <Moments />
           <Sponsors />
+          <FAQ />
           <Stats />
           <TestimonialSection />
           <BeAHacker />
+          <JoinUs />
         </Container>
         <Footer />
       </Layout>
