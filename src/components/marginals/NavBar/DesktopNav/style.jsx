@@ -16,7 +16,7 @@ const fade = keyframes`
 `;
 
 export const NavBar = styled.header`
-  background-color: rgba(0, 8, 17, 0.81);
+  background-color: var(--background-primary);
   backdrop-filter: blur(10px);
   position: relative;
   padding: 0;
@@ -35,7 +35,7 @@ export const NavBar = styled.header`
   }
 
   .nav-right {
-    width: 6%;
+    width: 8%;
     height: 42px;
   }
 
@@ -64,7 +64,7 @@ export const NavItem = styled(NavText)`
   &:hover::after,
   &:visited::after {
     content: '';
-    height: 2px;
+    height: 0px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
@@ -76,7 +76,7 @@ export const NavItem = styled(NavText)`
   &:hover::before,
   &:visited::after {
     content: '';
-    height: 2px;
+    height: 0px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;

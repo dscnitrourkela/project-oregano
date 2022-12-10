@@ -28,8 +28,8 @@ export const Wrapper = styled.div`
   ${tw`
     flex
     flex-col
-    gap-6
-    md:gap-14
+    gap-0
+    md:gap-7
   bg-background-dark
     rounded-xl
     md:rounded-3xl

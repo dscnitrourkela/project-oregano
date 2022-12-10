@@ -120,7 +120,23 @@ const DataHead = styled.div`
 const DataBody = styled(DataHead)`
   ${tw`
     gap-6
+    `}
+`;
+
+const DescText = styled(Body2)`
+  ${tw`
+  leading-5
+  md:leading-6
   `}
+  transition : all 1s ease-in-out;
+`;
+
+const Heading = styled(Heading3)`
+  transition: all 1s ease-in-out;
+`;
+
+const Name = styled(Body2)`
+  transition: all 1s ease-in-out;
 `;
 
 function handleRound(pos) {
@@ -253,15 +269,15 @@ export default function Carousel({ cards }) {
         </DataHead>
 
         <DataBody>
-          <Heading3>{cards[center].heading}</Heading3>
-          <Body2>{cards[center].name}</Body2>
+          <Heading>{cards[center].heading}</Heading>
+          <Name>{cards[center].name}</Name>
         </DataBody>
 
-        <Body2>
+        <DescText>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
           doloribus, maxime dignissimos, minus accusamus, distinctio ratione consequatur harum rerum
           exercitationem beatae excepturi libero aut totam quam amet labore iure architecto.
-        </Body2>
+        </DescText>
 
         <SecondCardBottom>
           <Button small filled text='JOIN LIVE' />

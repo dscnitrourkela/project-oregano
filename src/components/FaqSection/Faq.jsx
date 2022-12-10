@@ -40,6 +40,9 @@ export default function Faq() {
   const [stage, setStage] = useState();
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState(-1);
+
+  const [isUsed, setUsed] = useState(false);
+
   const handleClick = (id, question) => {
     if (open === id) {
       setOpen(-1);
@@ -48,6 +51,7 @@ export default function Faq() {
     }
     setStage(question);
     setActive(id);
+    setUsed(true);
   };
 
   const renderFaq = () => {
@@ -65,9 +69,11 @@ export default function Faq() {
           <Heading4 semibold>
             R2D2 To Your Resque Ask Me Anything From There <Arrow>&#8594;</Arrow>
           </Heading4>
-          <Answer>
-            <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
-          </Answer>
+          {isUsed && (
+            <Answer>
+              <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
+            </Answer>
+          )}
           <BotImg src={botImg.src} alt={botImg.alt} />
           <BotContainer>
             <BotMessage>
@@ -88,6 +94,7 @@ export default function Faq() {
                   onClick={() => {
                     setStage(question);
                     setActive(id);
+                    setUsed(true);
                   }}
                   active={id === active}
                 >

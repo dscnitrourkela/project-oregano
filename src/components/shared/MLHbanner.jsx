@@ -13,7 +13,7 @@ const Banner = styled.a`
   max-width: 70px;
   @media (max-width: 890px) {
     position: absolute;
-    width: 6%;
+    width: 8%;
   }
 `;
 
