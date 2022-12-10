@@ -1,6 +1,6 @@
 import React from 'react';
-import VidScroll from '../components/AboutUs/VidScroll';
+import AboutUs from '../components/AboutUs';
 
 export default function Playground() {
-  return <VidScroll />;
+  return <AboutUs />;
 }

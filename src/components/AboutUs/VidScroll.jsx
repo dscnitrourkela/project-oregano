@@ -1,5 +1,3 @@
-/* eslint-disable react/no-this-in-sfc */
-/* eslint-disable jsx-a11y/media-has-caption */
 import React, { useRef, useState } from 'react';
 import aboutVideo from '../../../assets/AboutUs.mp4';
 import { VideoBlock, VideoContainer } from './style';
