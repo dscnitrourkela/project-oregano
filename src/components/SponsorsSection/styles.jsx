@@ -45,6 +45,7 @@ export const Wrapper = styled.div`
       }
       & > .movable {
         opacity: 1;
+        width: 320px;
         ${tw`right-2`}
       }
     }
