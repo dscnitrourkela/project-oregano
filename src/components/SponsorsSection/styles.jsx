@@ -12,17 +12,25 @@ export const Header = styled.h1`
 export const Wrapper = styled.div`
   border: 2px solid transparent;
   transition: 0.8s;
+  .saber-img {
+    & > .fix {
+      opacity: 1;
+      ${tw`right-0`}
+    }
+
+    & > .movable {
+      opacity: 1;
+      ${tw`right-2`}
+      width: 0;
+    }
+  }
   @media (min-width: 720px) {
     &:hover {
       border: 2px solid ${(props) => props.brcol};
       .saber-img {
-        & > .fix {
-          opacity: 1;
-          ${tw`right-0`}
-        }
         & > .movable {
           opacity: 1;
-          ${tw`right-2`}
+          width: 320px;
         }
       }
     }

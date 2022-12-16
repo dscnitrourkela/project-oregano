@@ -11,6 +11,6 @@ export default styled.h3`
    sm:leading-5 
 
    text-color-primary
-   font-Noto
+   font-Inter
 `}
 `;

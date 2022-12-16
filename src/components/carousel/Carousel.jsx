@@ -37,7 +37,7 @@ const ChevronButtonLeft = styled.button`
   ${tw`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white`}
   left: -48.72px;
   top: 351px;
-  background-color: #8a8759;
+  background-color: #fff4967a;
   transition: all 0.1s linear;
   &:hover {
     ${tw`bg-btn-yellow text-black`}
@@ -48,7 +48,7 @@ const ChevronButtonRight = styled.button`
   ${tw`z-50 absolute w-8 h-8  bg-yellow-500 p-2 rounded-full text-white`}
   right: -49.02px;
   top: 351px;
-  background-color: #8a8759;
+  background-color: #fff4967a;
   transition: all 0.1s linear;
   &:hover {
     ${tw`bg-btn-yellow text-black`}

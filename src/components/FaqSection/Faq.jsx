@@ -42,6 +42,7 @@ export default function Faq() {
   const [open, setOpen] = useState(-1);
 
   const [isUsed, setUsed] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   const handleClick = (id, question) => {
     if (open === id) {
@@ -52,6 +53,9 @@ export default function Faq() {
     setStage(question);
     setActive(id);
     setUsed(true);
+    setTimeout(() => {
+      setAnimate(true);
+    }, 10);
   };
 
   const renderFaq = () => {
@@ -70,7 +74,7 @@ export default function Faq() {
             R2D2 To Your Resque Ask Me Anything From There <Arrow>&#8594;</Arrow>
           </Heading4>
           {isUsed && (
-            <Answer>
+            <Answer className={animate && 'animate'}>
               <Body2 className='leading-4 sm:leading-5'>{renderFaq()}</Body2>
             </Answer>
           )}
@@ -85,7 +89,8 @@ export default function Faq() {
           <Head>
             <Heading2 semibold>{title}</Heading2>
             <Caption className='text-color-tertiary'>{content}</Caption>
-          </Head>
+          </Head>{' '}
+          setAnimate(true);
           <div>
             <ul>
               {faq.questions.map(({ id, question }) => (
@@ -95,6 +100,11 @@ export default function Faq() {
                     setStage(question);
                     setActive(id);
                     setUsed(true);
+                    setAnimate(false);
+
+                    setTimeout(() => {
+                      setAnimate(true);
+                    }, 100);
                   }}
                   active={id === active}
                 >

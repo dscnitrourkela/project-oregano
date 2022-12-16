@@ -11,7 +11,7 @@ const fade = keyframes`
     100% {
         width: 16px;
         opacity: 1;
-        box-shadow: 0 0 6px 2px rgb(237 236 81 / 70%);
+        box-shadow: 0 0 8px 4px rgb(237 236 81 / 70%);
     }
 `;
 
@@ -64,24 +64,26 @@ export const NavItem = styled(NavText)`
   &:hover::after,
   &:visited::after {
     content: '';
-    height: 0px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
-    border-top: 1px solid #fff;
-    left: 50%;
+    left: 49%;
   }
 
   &:active::before,
   &:hover::before,
   &:visited::after {
     content: '';
-    height: 0px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
-    border-top: 1px solid #fff;
-    right: 50%;
+    right: 49%;
   }
 
   &:hover {
