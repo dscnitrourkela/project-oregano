@@ -37,14 +37,14 @@ function Sponsor() {
     //   grid: 'repeat(auto-fit, minmax(120px, 1fr))',
     //   span: 'span 2',
     // },
-    // {
-    //   title: 'DELTA SPONSORS',
-    //   sponsors: sponsors.delta,
-    //   bcolor: '#8FA963',
-    //   color: '#8FA963',
-    //   grid: 'repeat(auto-fit, minmax(130px, 1fr))',
-    //   span: 'span 3',
-    // },
+    {
+      title: 'DELTA SPONSORS',
+      sponsors: sponsors.delta,
+      bcolor: '#8FA963',
+      color: '#8FA963',
+      // grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+      span: 'span 5',
+    },
     // {
     //   title: 'MEDIA PARTNERS',
     //   sponsors: sponsors['media-partners'],
