@@ -71,4 +71,15 @@ export default {
       alt: 'Replit',
     },
   ],
+
+  delta: [
+    {
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671300582/StandOut_Stickers_Logo_RGB_golbgq.svg',
+      name: 'Standout Stickers',
+      size: '70%',
+      link: 'https://www.standoutstickers.com/?utm_campaign=events-league-organizers-spring2022&utm_medium=email&utm_source=customerio-zoho_creator_-_standout_sticker_intro',
+      width: '150px',
+      alt: 'Standout Stickers',
+    },
+  ],
 };
