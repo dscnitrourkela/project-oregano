@@ -94,15 +94,6 @@ export default {
         alt: 'Github Campus Expert',
       },
     },
-    {
-      id: 4,
-      link: 'https://hackclub.com/',
-      span: false,
-      image: {
-        src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Hack_Club_NIT_Rourkela_rir04e.png',
-        alt: 'Hackclub NIT Rourkela',
-      },
-    },
   ],
   impLinks: [
     {

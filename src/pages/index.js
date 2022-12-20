@@ -15,8 +15,8 @@ export default function Home() {
         <Hero />
         <Container>
           <ResponsiveCarousel />
-          <SponsorUs />
           <FAQ />
+          <SponsorUs />
           <SponsorSection />
         </Container>
       </Layout>

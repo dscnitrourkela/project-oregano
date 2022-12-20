@@ -10,6 +10,6 @@ export default styled.p`
    sm:text-lg
    sm:leading-5
    text-color-primary
-   font-Noto
+   font-Inter
 `}
 `;

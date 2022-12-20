@@ -41,11 +41,17 @@ const NewBody2 = styled(Body2)`
   ${tw`
     text-right
     text-color-tertiary
+    leading-5
+    sm:leading-6
   `}
 
   @media (max-width: 600px) {
     text-align: center;
   }
+`;
+
+const LinkBody2 = styled(Body2)`
+  color: inherit;
 `;
 
 const LogoImgLink = styled.a`
@@ -84,7 +90,7 @@ function Footer() {
           <EmptyDiv>
             {LINKS.map(({ text, href }) => (
               <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
-                <Body2 className='text-color-secondary'>{text}</Body2>
+                <Body2>{text}</Body2>
               </NoStyleNav>
             ))}
           </EmptyDiv>
@@ -93,7 +99,7 @@ function Footer() {
         <LinksContainer>
           {LINKS.map(({ text, href }) => (
             <NoStyleNav key={href} href={href} target='_blank' rel='noreferrer'>
-              <Body2>{text}</Body2>
+              <LinkBody2>{text}</LinkBody2>
             </NoStyleNav>
           ))}
         </LinksContainer>

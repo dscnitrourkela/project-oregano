@@ -36,7 +36,11 @@ export default function SponsorUs() {
             </Buttons>
           </ContentContainer>
           <VidBlock>
-            <img className='rounded-4xl' src={whySponsor.img.src} alt={whySponsor.img.alt} />
+            <img
+              className='rounded-2xl sm:rounded-4xl'
+              src={whySponsor.img.src}
+              alt={whySponsor.img.alt}
+            />
           </VidBlock>
         </SponsorGrid>
       </Wrapper>

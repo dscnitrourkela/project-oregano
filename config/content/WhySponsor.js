@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   img: {
-    src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1666493522/my%20folder/Vector_dzulft.png',
+    src: 'https://source.unsplash.com/YiXsjwJKXmo',
     alt: 'WhySponsor',
   },
   Title: {

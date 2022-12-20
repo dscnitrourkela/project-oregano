@@ -11,12 +11,12 @@ const fade = keyframes`
     100% {
         width: 16px;
         opacity: 1;
-        box-shadow: 0 0 6px 2px rgb(237 236 81 / 70%);
+        box-shadow: 0 0 8px 4px rgb(237 236 81 / 70%);
     }
 `;
 
 export const NavBar = styled.header`
-  background-color: rgba(0, 8, 17, 0.81);
+  background-color: var(--background-primary);
   backdrop-filter: blur(10px);
   position: relative;
   padding: 0;
@@ -35,7 +35,7 @@ export const NavBar = styled.header`
   }
 
   .nav-right {
-    width: 6%;
+    width: 8%;
     height: 42px;
   }
 
@@ -65,11 +65,12 @@ export const NavItem = styled(NavText)`
   &:visited::after {
     content: '';
     height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
-    border-top: 1px solid #fff;
-    left: 50%;
+    left: 49%;
   }
 
   &:active::before,
@@ -77,11 +78,12 @@ export const NavItem = styled(NavText)`
   &:visited::after {
     content: '';
     height: 2px;
+    background-color: #fff;
+    border-radius: 10px;
     animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
     position: absolute;
     bottom: -6px;
-    border-top: 1px solid #fff;
-    right: 50%;
+    right: 49%;
   }
 
   &:hover {

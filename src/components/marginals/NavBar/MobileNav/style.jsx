@@ -1,5 +1,5 @@
-import styled, {keyframes} from 'styled-components';
-import {NavText} from '../../../shared';
+import styled, { keyframes } from 'styled-components';
+import { NavText } from '../../../shared';
 
 const fadeDown = keyframes`
     0% {
@@ -13,7 +13,7 @@ const fadeDown = keyframes`
 `;
 
 export const NavBar = styled.header`
-  background-color: ${({menuIsOpen}) => menuIsOpen ? 'black' : 'rgba(0, 8, 17, 0.81)'};
+  background-color: var(--background-primary);
   backdrop-filter: blur(10px);
   position: relative;
   z-index: 1;
@@ -22,7 +22,12 @@ export const NavBar = styled.header`
 
   .mobileNavWrapper {
     display: flex;
-    padding: 0;
+  }
+
+  @media (min-width: 640px) {
+    .mobileNavWrapper {
+      padding: 10px;
+    }
   }
 
   .mobileNavWrapper > img {
@@ -31,7 +36,7 @@ export const NavBar = styled.header`
 
   .btn__container {
     position: absolute;
-    @media( min-width: 680px){
+    @media (min-width: 680px) {
       top: 20px;
     }
   }
@@ -85,14 +90,14 @@ export const MenuButton = styled.button`
   }
 
   .menu_burger::before {
-    bottom: ${({menuIsOpen}) => (menuIsOpen ? '250%': '400%')};
+    bottom: ${({ menuIsOpen }) => (menuIsOpen ? '250%' : '400%')};
     left: 0;
     transform: ${({ menuIsOpen }) =>
       menuIsOpen ? 'rotate(90deg) translate(0px, -275%)' : 'rotate(0deg)'};
   }
 
   .menu_burger::after {
-    top: ${({menuIsOpen}) => (menuIsOpen ? '250%': '400%')};
+    top: ${({ menuIsOpen }) => (menuIsOpen ? '250%' : '400%')};
     right: 0;
     transform: ${({ menuIsOpen }) =>
       menuIsOpen ? 'rotate(90deg) translate(0px, 250%)' : 'rotate(0deg)'};
@@ -124,13 +129,12 @@ export const MobileNavList = styled.ul`
   animation: ${fadeDown} 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   flex: 1;
 
-  .NavListItem{
+  .NavListItem {
     padding: 16px;
     border-bottom: 0.4px solid rgba(163, 163, 163, 1);
-    ;
   }
 
-  *:last-child{
+  *:last-child {
     border: none;
   }
 
@@ -143,7 +147,7 @@ export const NavItem = styled(NavText)`
   font-weight: 600;
   color: rgba(163, 163, 163, 1);
 
-  &:hover{
+  &:hover {
     color: #fff;
   }
 `;

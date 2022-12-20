@@ -12,7 +12,31 @@ export const Header = styled.h1`
 export const Wrapper = styled.div`
   border: 2px solid transparent;
   transition: 0.8s;
-  &:hover {
+  .saber-img {
+    & > .fix {
+      opacity: 1;
+      ${tw`right-0`}
+    }
+
+    & > .movable {
+      opacity: 1;
+      ${tw`right-2`}
+      width: 0;
+    }
+  }
+  @media (min-width: 720px) {
+    &:hover {
+      border: 2px solid ${(props) => props.brcol};
+      .saber-img {
+        & > .movable {
+          opacity: 1;
+          width: 320px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
     border: 2px solid ${(props) => props.brcol};
     .saber-img {
       & > .fix {
@@ -21,6 +45,7 @@ export const Wrapper = styled.div`
       }
       & > .movable {
         opacity: 1;
+        width: 160px;
         ${tw`right-2`}
       }
     }
@@ -28,8 +53,8 @@ export const Wrapper = styled.div`
   ${tw`
     flex
     flex-col
-    gap-6
-    md:gap-14
+    gap-0
+    md:gap-7
   bg-background-dark
     rounded-xl
     md:rounded-3xl

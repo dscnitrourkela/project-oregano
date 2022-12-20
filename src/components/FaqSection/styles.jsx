@@ -2,6 +2,15 @@ import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
 import { Body1, Body2 } from '../shared';
 
+const fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }
+`;
+
 export const Wrapper = styled.div`
   ${tw`
   md:grid
@@ -57,6 +66,11 @@ export const Answer = styled.div`
   md:p-4  
   lg:ml-20 
   `}
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  &.animate {
+    animation: ${fade} 1s both cubic-bezier(0.16, 1, 0.3, 1);
+  }
 `;
 
 export const BotContainer = styled.div`

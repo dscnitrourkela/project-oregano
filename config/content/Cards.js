@@ -6,7 +6,7 @@ export default {
       name: 'Sivraj Rajshiv',
       designation: 'MLH Lead',
       date: '29 January',
-      label: 'LABEL',
+      label: 'JOIN',
     },
     {
       id: 1,
@@ -14,7 +14,7 @@ export default {
       name: 'Ayush Shaw',
       designation: 'MLH Lead',
       date: '29 January',
-      label: 'LABEL',
+      label: 'JOIN',
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ export default {
       name: 'Sivraj Rajshiv',
       designation: 'MLH Lead',
       date: '29 January',
-      label: 'LABEL',
+      label: 'JOIN',
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export default {
       name: 'Sivraj Rajshiv',
       designation: 'MLH Lead',
       date: '29 January',
-      label: 'LABEL',
+      label: 'JOIN',
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ export default {
       name: 'Ayush Shaw',
       designation: 'MLH Lead',
       date: '2 January',
-      label: 'LABEL',
+      label: 'JOIN',
     },
   ],
 };
