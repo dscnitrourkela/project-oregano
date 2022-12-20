@@ -7,6 +7,7 @@ import FAQ from '../components/FaqSection/Faq';
 import SponsorUs from '../components/WhySponsorUs/WhySponsorUs';
 import { SponsorSection } from '../components';
 import ResponsiveCarousel from '../components/carousel/ResponsiveCarousel';
+import Format from '../components/Format';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <SponsorUs />
           <FAQ />
           <SponsorSection />
+          <Format />
         </Container>
       </Layout>
     </>
