@@ -52,7 +52,7 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
   ${tw`
-    w-10/12
+    w-11/12
     mx-auto  
   `}
 `;
