@@ -7,6 +7,8 @@ import FAQ from '../components/FaqSection/Faq';
 import SponsorUs from '../components/WhySponsorUs/WhySponsorUs';
 import { SponsorSection } from '../components';
 import ResponsiveCarousel from '../components/carousel/ResponsiveCarousel';
+import Format from '../components/Format';
+import Prizes from '../components/Prizes';
 
 export default function Home() {
   return (
@@ -15,9 +17,11 @@ export default function Home() {
         <Hero />
         <Container>
           <ResponsiveCarousel />
-          <SponsorUs />
           <FAQ />
+          <SponsorUs />
           <SponsorSection />
+          <Format />
+          <Prizes />
         </Container>
       </Layout>
     </>

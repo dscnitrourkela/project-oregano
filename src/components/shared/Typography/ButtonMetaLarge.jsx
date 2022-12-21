@@ -8,6 +8,6 @@ export default styled.p`
    leading-4
    sm:text-base
    sm:leading-6
-   font-Noto
+   font-Inter
 `}
 `;

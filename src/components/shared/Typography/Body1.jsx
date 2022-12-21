@@ -11,6 +11,6 @@ export default styled.p`
    sm:leading-6
 
    text-color-primary
-   font-Noto
+   font-Inter
 `}
 `;

@@ -50,7 +50,6 @@ const Button = ({ text, small, filled, arrowed, link, method = undefined }) => {
           ) : (
             <ButtonMetaLarge>{textFinal}</ButtonMetaLarge>
           )}
-          <ButtonMeta>{text}</ButtonMeta>
         </Link>
       ) : (
         <>

@@ -65,7 +65,11 @@ export const NoStyleNav = styled.a`
     cursor-pointer
     text-color-secondary
     p-2
+    pr-0
   `}
+  &:hover {
+    color: var(--text-color-tertiary);
+  }
 
   @media (max-width: 1045px) {
     padding: 10;
@@ -74,7 +78,7 @@ export const NoStyleNav = styled.a`
 
 export const EmptyDiv = styled.div`
   background: transparent;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
 
   @media (max-width: 1045px) {
     display: none;
@@ -108,10 +112,10 @@ export const LinksContainer = styled.div`
 export const LogoContainer = styled.div`
   width: 45%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin: 15px 0;
 
   @media (max-width: 640px) {
     margin-top: 20px;
@@ -146,7 +150,7 @@ const CardContainer = styled.div`
 `;
 
 const CardImage = styled.img`
-  max-height: 30px;
+  max-height: 40px;
 `;
 
 const FooterCardImg = styled.div`

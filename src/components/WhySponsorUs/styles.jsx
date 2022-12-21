@@ -15,7 +15,8 @@ export const Wrapper = styled.section`
 `;
 export const SponsorGrid = styled.section`
   ${tw`
-  rounded-4xl
+  rounded-2xl
+  sm:rounded-4xl
   bg-background-dark
   p-3
   pb-4
@@ -64,6 +65,8 @@ export const HeadContainer = styled.div`
 export const DescText = styled(Body2)`
   ${tw`
   text-left
+  leading-5
+  md:leading-6
 `}
 `;
 

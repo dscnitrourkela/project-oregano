@@ -14,7 +14,7 @@ const CardMob = styled.div`
   `}
   height: 359px;
   width: 259px;
-  border: ${(props) => (props.focused ? '2px solid yellow' : '')};
+  sm:border: ${(props) => (props.focused ? '2px solid yellow' : '')};
 `;
 
 const FirstHalf = styled.div`

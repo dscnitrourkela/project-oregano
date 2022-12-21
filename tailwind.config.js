@@ -56,9 +56,9 @@ module.exports = {
         '4xl': '32px',
         '5xl': '40px',
       },
-      // Noto: ['Noto Sans', 'sans-serif'],
+      // Inter: ['inter', 'sans-serif'],
       fontFamily: {
-        Noto: ['Noto Sans', ...defaultTheme.fontFamily.sans],
+        Inter: ['Inter', ...defaultTheme.fontFamily.sans],
       },
 
       letterSpacing: {

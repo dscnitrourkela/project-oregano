@@ -55,7 +55,7 @@ export const SubTitle = styled.p`
     text-center
     sm:tracking-wider
     sm:text-2xl
-    font-Noto
+    font-Inter
     font-bold
     `}
 `;
@@ -66,7 +66,7 @@ export const Tagline = styled.div`
     flex-col
     justify-center
     items-center
-    font-Noto
+    font-Inter
     mt-9
     sm:mt-16
     `}
@@ -75,7 +75,7 @@ export const Tagline = styled.div`
 export const TagHead = styled(Heading3)`
   font-weight: 590;
   ${tw`
-    font-Noto
+    font-Inter
   `}
 `;
 
@@ -84,7 +84,7 @@ export const TaglineText = styled.p`
     mt-5
     text-center
     text-color-secondary
-    font-Noto
+    font-Inter
     px-5
     text-sm
     sm:text-lg
