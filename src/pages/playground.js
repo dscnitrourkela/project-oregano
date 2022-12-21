@@ -1,5 +1,7 @@
 import React from 'react';
-import JoinUs from '../components/HeroSection/JoinUs';
+
+import JoinUsSection from '../components/JoinUsSection/JoinUsSection'
+
 import {
   Heading1,
   Heading2,
@@ -16,7 +18,7 @@ import {
 export default function Playground() {
   return (
     <div>
-      <JoinUs />
+      <JoinUsSection />
     </div>
   );
 }
