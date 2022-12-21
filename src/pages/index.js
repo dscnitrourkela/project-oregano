@@ -9,6 +9,7 @@ import { SponsorSection } from '../components';
 import ResponsiveCarousel from '../components/carousel/ResponsiveCarousel';
 import Format from '../components/Format';
 import Prizes from '../components/Prizes';
+import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <SponsorSection />
           <Format />
           <Prizes />
+          <JoinUsSection />
         </Container>
       </Layout>
     </>
