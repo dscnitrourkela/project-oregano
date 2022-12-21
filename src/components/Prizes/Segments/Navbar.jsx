@@ -39,7 +39,7 @@ const PrizeNavItem = styled.h4`
   position: relative;
 
   ${tw`
-    font-Noto
+    font-Inter
   `}
 
   &::after {
