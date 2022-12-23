@@ -39,11 +39,11 @@ function DesktopNav() {
                 key={elem.id}
                 id={elem.name}
                 role='menuitem'
-                onClick={() => handleScroll(elem.id)}
-                onKeyPress={() => handleScroll(elem.id)}
+                onClick={elem.Link ? null : () => handleScroll(elem.id)}
+                onKeyPress={elem.Link ? null : () => handleScroll(elem.id)}
                 className='NavListItem'
               >
-                <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
+                <Link style={{ textDecoration: 'none' }} to={elem.Link || '/'} tabIndex='0'>
                   <NavItem>{elem.name}</NavItem>
                 </Link>
               </li>

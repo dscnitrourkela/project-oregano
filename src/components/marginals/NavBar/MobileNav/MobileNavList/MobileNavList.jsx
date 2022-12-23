@@ -10,13 +10,17 @@ export default ({ handleMenuClick }) => (
         key={elem.id}
         id={elem.name}
         role='menuitem'
-        onClick={() => handleMenuClick(elem.id)}
+        onClick={elem.Link ? null : () => handleMenuClick(elem.id)}
         className='NavListItem'
-        onKeyPress={() => handleMenuClick(elem.id)}
+        onKeyPress={elem.Link ? null : () => handleMenuClick(elem.id)}
       >
-        <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
-          <NavItem>{elem.name}</NavItem>
-        </Link>
+        {elem.Link ? (
+          <a href={elem.Link}>{elem.name}</a>
+        ) : (
+          <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
+            <NavItem>{elem.name}</NavItem>
+          </Link>
+        )}
       </li>
     ))}
   </MobileNavList>

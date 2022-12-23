@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(5, minmax(0, 1fr));
     gap: 24px;
-    background-image: url(https://res.cloudinary.com/dmutbjmoo/image/upload/v1671565643/HackNITR/Vector_gzlljh.svg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: 500px 600px;
   }

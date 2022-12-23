@@ -22,7 +22,7 @@ export default {
       link: '/faq',
     },
     {
-      id: 'sponsors',
+      id: 'why-sponsor-us',
       name: 'Sponsors',
       link: '/sponsors',
     },
@@ -45,6 +45,7 @@ export default {
       id: 'prizes',
       name: 'LeaderBoard',
       link: '/leader',
+      Link: 'http://bit.ly/3Vn3b4J',
     },
   ],
 };

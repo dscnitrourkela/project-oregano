@@ -6,29 +6,29 @@ export default {
   button: 'View details',
   eventList: [
     {
-      eventTitle: '6th January',
-      description: 'Round 1 begins',
+      eventTitle: '6th-8th January',
+      description: 'Round 1 (Online)',
       mode: 'Online',
-      eventcontent:
-        'The participating teams will have to submit a prototype in the 1st round. Based on that the top 20 teams will be selected and will move on to the next round. ',
+      eventcontent: 'The participating teams will have to submit a prototype in the 1st round.  ',
       eventNumber: 1,
       column: '5 / 9',
       row: '1/3',
       className: 'first',
     },
     {
-      eventTitle: '8th January',
+      eventTitle: '11th January',
       description: 'Result of Round 1',
       mode: 'Online',
-      eventcontent: '',
+      eventcontent:
+        'Based on that the top 20 teams will be selected and will move on to the next round.',
       eventNumber: 1,
       column: '10 / 14',
       row: '2/4',
       className: 'second',
     },
     {
-      eventTitle: '28th January',
-      description: 'Round 2 begins',
+      eventTitle: '28th-29th January',
+      description: 'Round 2 (Offline)',
       mode: 'Offline',
       eventcontent:
         'In the 2nd round the top 20 teams will have to finish the prototype in product and pitch it to the judges.',

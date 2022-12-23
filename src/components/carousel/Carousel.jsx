@@ -280,8 +280,11 @@ export default function Carousel({ cards }) {
         <DescText>{content.desc}</DescText>
 
         <SecondCardBottom>
-          <Button small filled text='JOIN LIVE' />
-          <Button small arrowed text='GO TO YOUTUBE' />
+          {Date.now() < Date.parse(cards[center].Date) ? (
+            <Button small filled text='JOIN LIVE' link='https://workshop.hacknitr.com' />
+          ) : (
+            <Button small arrowed text='GO TO YOUTUBE' link='https://youtube.com' />
+          )}
         </SecondCardBottom>
       </DataComponent>
     </CarouselContainer>

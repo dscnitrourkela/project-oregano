@@ -19,13 +19,13 @@ export default function Home() {
         <Hero />
         <Ticker />
         <Container>
-          <ResponsiveCarousel />
-          <FAQ />
-          <SponsorSection />
-          <SponsorUs />
-          <Format />
           <Prizes />
+          <ResponsiveCarousel />
+          <Format />
+          <SponsorUs />
+          <SponsorSection />
           <JoinUsSection />
+          <FAQ />
         </Container>
       </Layout>
     </>

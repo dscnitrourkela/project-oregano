@@ -50,7 +50,7 @@ const DaysLeft = ({ content }) => {
     <RegisterContainer style={{ gridColumn: `${column}`, gridRow: `${row}` }}>
       <div className='title'>
         <img
-          src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533672/Frame_78_eqq6fw.svg'
+          src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533672/HackNITR/Frame_78_eqq6fw.svg'
           alt='Logo'
         />
         <Heading4 semibold>{`${numberOfDays} Days Left`}</Heading4>

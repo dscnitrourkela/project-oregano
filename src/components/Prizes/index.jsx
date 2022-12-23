@@ -60,7 +60,7 @@ const Container = styled.div`
 const Prizes = () => {
   const { id, title, description, STAGES } = content;
 
-  const [stage, setStage] = useState(STAGES.TRACKS);
+  const [stage, setStage] = useState(STAGES.OVERALL);
 
   // Stage Handlers
   const setStageToOverall = () => setStage(STAGES.OVERALL);
@@ -69,14 +69,14 @@ const Prizes = () => {
   const setStageToAllSubs = () => setStage(STAGES.ALL);
 
   const navItems = [
-    // {
-    //   setStage: setStageToOverall,
-    //   key: STAGES.OVERALL,
-    // },
     {
-      setStage: setStageToTracks,
-      key: STAGES.TRACKS,
+      setStage: setStageToOverall,
+      key: STAGES.OVERALL,
     },
+    // {
+    //   setStage: setStageToTracks,
+    //   key: STAGES.TRACKS,
+    // },
     {
       setStage: setStageToSwags,
       key: STAGES.SWAGS,
@@ -89,11 +89,11 @@ const Prizes = () => {
 
   const renderPrizes = () => {
     switch (stage) {
-      // case STAGES.OVERALL:
-      //   return <Overall />;
+      case STAGES.OVERALL:
+        return <Overall />;
 
-      case STAGES.TRACKS:
-        return <Tracks />;
+      // case STAGES.TRACKS:
+      //   return <Tracks />;
 
       case STAGES.SWAGS:
         return <Swags />;
@@ -102,8 +102,7 @@ const Prizes = () => {
       //   return <PrizesForAll />;
 
       default:
-        // return <Overall />;
-        return <Tracks />;
+        return <Overall />;
     }
   };
 
