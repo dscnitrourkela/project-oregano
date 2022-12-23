@@ -12,8 +12,9 @@ import sponsors from '../../../config/content/Sponsors';
 
 const TickerContainer = styled.div`
   ${tw`
-    bg-background-darker
+    bg-background-dark
     w-full overflow-hidden
+    py-10
   `}
 `;
 

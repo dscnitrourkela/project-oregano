@@ -5,6 +5,7 @@ import tw from 'twin.macro';
 export const Wrapper = styled.div`
   grid-template-rows: repeat(7, minmax(0, 1fr));
   grid-template-columns: repeat(13, minmax(0, 1fr));
+  gap: 4px;
   background-image: url(https://res.cloudinary.com/dmutbjmoo/image/upload/v1671562171/HackNITR/Ellipse_55_l6ixzq.svg);
   background-repeat: no-repeat;
   background-position: 24% 45%;
@@ -12,6 +13,7 @@ export const Wrapper = styled.div`
   ${tw`
   grid  
   py-10
+  px-8
   w-full
   `}
   @media (max-width: 720px) {
@@ -26,7 +28,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   ${tw`
-    w-11/12
+    w-full
     mx-auto  
   `}
 `;
@@ -40,6 +42,7 @@ export const EventContainer = styled.div`
   gap: 20px;
   border-radius: 12px;
   background-color: #202020;
+  box-shadow: 0px 0px 12px #FFE500;
 
   @media (max-width: 720px) {
     &.first {
@@ -102,6 +105,7 @@ export const RegisterContainer = styled.div`
   gap: 10px;
   align-items: flex-start;
   justify-content: center;
+  background-color: #000;
   
   .title {
     display: flex;

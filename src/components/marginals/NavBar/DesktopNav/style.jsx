@@ -9,7 +9,7 @@ const fade = keyframes`
 
     }
     100% {
-        width: 16px;
+        width: 36%;
         opacity: 1;
         box-shadow: 0 0 8px 4px rgb(237 236 81 / 70%);
     }

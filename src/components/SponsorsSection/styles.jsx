@@ -14,24 +14,27 @@ export const Wrapper = styled.div`
   transition: 0.8s;
   .saber-img {
     & > .fix {
-      opacity: 1;
+      opacity: 0;
       ${tw`right-0`}
     }
 
     & > .movable {
-      opacity: 1;
-      ${tw`right-2`}
-      width: 0;
+      opacity: 0;
+      right: 10px;
+      transform: translateX(-70%);
     }
   }
-  @media (min-width: 720px) {
-    &:hover {
-      border: 2px solid ${(props) => props.brcol};
-      .saber-img {
-        & > .movable {
-          opacity: 1;
-          width: 320px;
-        }
+  &:hover {
+    border: 2px solid ${(props) => props.brcol};
+
+    .saber-img {
+      & > .fix {
+        opacity: 1;
+      }
+
+      & > .movable {
+        opacity: 1;
+        transform: translateX(0%);
       }
     }
   }
