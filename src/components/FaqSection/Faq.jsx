@@ -67,7 +67,7 @@ export default function Faq() {
   };
 
   return (
-    <SectionLayout>
+    <SectionLayout id={faq.id}>
       <Wrapper>
         <AnswerContainer>
           <Heading4 semibold>

@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 export default {
+  id: 'sessions',
   cardData: [
     {
       id: 0,

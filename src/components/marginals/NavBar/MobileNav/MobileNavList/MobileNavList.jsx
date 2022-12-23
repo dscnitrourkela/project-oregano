@@ -3,16 +3,16 @@ import { Link } from 'gatsby';
 import navList from '../../../../../../config/navigation';
 import { MobileNavList, NavItem } from '../style';
 
-export default () => (
+export default ({ handleMenuClick }) => (
   <MobileNavList>
     {navList.navItems.map((elem) => (
       <li
         key={elem.id}
         id={elem.name}
         role='menuitem'
-        onClick={null}
+        onClick={() => handleMenuClick(elem.id)}
         className='NavListItem'
-        onKeyPress={null}
+        onKeyPress={() => handleMenuClick(elem.id)}
       >
         <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>
           <NavItem>{elem.name}</NavItem>

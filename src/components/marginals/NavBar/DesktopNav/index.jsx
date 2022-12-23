@@ -4,6 +4,26 @@ import navList from '../../../../../config/navigation';
 import { NavBar, Logo, NavItem } from './style';
 import { MLHbanner } from '../../../shared';
 
+// Function Returning new scroll object
+const newScrollObject = () => {
+  // eslint-disable-next-line
+  const SmoothScroll = require('smooth-scroll');
+  return new SmoothScroll('', {
+    offset: () => 100,
+  });
+};
+
+const handleScroll = (id) => {
+  if (typeof window !== 'undefined' && id) {
+    const isHome = window.location.pathname === '/';
+    if (isHome) {
+      const scroll = newScrollObject();
+      const anchor = document.getElementById(id);
+      scroll.animateScroll(anchor);
+    }
+  }
+};
+
 function DesktopNav() {
   return (
     <NavBar>
@@ -19,8 +39,8 @@ function DesktopNav() {
                 key={elem.id}
                 id={elem.name}
                 role='menuitem'
-                onClick={null}
-                onKeyPress={null}
+                onClick={() => handleScroll(elem.id)}
+                onKeyPress={() => handleScroll(elem.id)}
                 className='NavListItem'
               >
                 <Link style={{ textDecoration: 'none' }} to='/' tabIndex='0'>

@@ -17,13 +17,13 @@ export default function ResponsiveCarousel() {
 
   if (screenWidth >= 640) {
     return (
-      <SectionLayout>
+      <SectionLayout id={cards.id}>
         <Carousel cards={cards.cardData} />
       </SectionLayout>
     );
   }
   return (
-    <SectionLayout>
+    <SectionLayout id={cards.id}>
       <CarouselMob cards={cards.cardData} focused={0} />
     </SectionLayout>
   );

@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 export default {
+  id: 'home',
   titleLine: { text: 'THE FOURTH EDITION' },
   tagline: {
     taglinetext: 'IDEATE. IMPLEMENT. INNOVATE',
