@@ -10,12 +10,14 @@ import ResponsiveCarousel from '../components/carousel/ResponsiveCarousel';
 import Format from '../components/Format';
 import Prizes from '../components/Prizes';
 import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
+import Ticker from '../components/Ticker';
 
 export default function Home() {
   return (
     <>
       <Layout>
         <Hero />
+        <Ticker />
         <Container>
           <ResponsiveCarousel />
           <FAQ />

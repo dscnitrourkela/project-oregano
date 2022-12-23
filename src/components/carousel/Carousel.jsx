@@ -5,6 +5,7 @@ import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Body2, Heading3, Heading2, Caption, Heading4, Button } from '../shared';
+import content from '../../../config/content/Sessions';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -263,9 +264,7 @@ export default function Carousel({ cards }) {
       <DataComponent>
         <DataHead>
           <Heading2 semibold>SESSIONS</Heading2>
-          <Caption className='text-color-tertiary'>
-            Now to hackathon dont worry we got you covered with all the basic information
-          </Caption>
+          <Caption className='text-color-tertiary'>{content.caption}</Caption>
         </DataHead>
 
         <DataBody>
@@ -273,11 +272,7 @@ export default function Carousel({ cards }) {
           <Name>{cards[center].name}</Name>
         </DataBody>
 
-        <DescText>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
-          doloribus, maxime dignissimos, minus accusamus, distinctio ratione consequatur harum rerum
-          exercitationem beatae excepturi libero aut totam quam amet labore iure architecto.
-        </DescText>
+        <DescText>{content.desc}</DescText>
 
         <SecondCardBottom>
           <Button small filled text='JOIN LIVE' />

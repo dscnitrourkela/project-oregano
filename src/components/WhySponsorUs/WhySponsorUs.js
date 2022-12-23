@@ -17,7 +17,7 @@ import { whySponsor } from '../../../config';
 
 export default function SponsorUs() {
   return (
-    <SectionLayout>
+    <SectionLayout id={whySponsor.id}>
       <Wrapper>
         <HeadContainerMob>
           <Heading2>{whySponsor.Title.TitleText}</Heading2>

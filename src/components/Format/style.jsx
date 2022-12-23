@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
 
 export const Container = styled.div`
   ${tw`
-    w-10/12
+    w-11/12
     mx-auto  
   `}
 `;
@@ -59,16 +59,20 @@ export const EventContainer = styled.div`
     border-radius: 44px 14px 14px 44px;
     position: relative;
     text-align: center;
-    padding: 8px 0;
+    padding: 4px 36px 4px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .event-number {
     background-color: #ffe81f;
     border-radius: 50%;
-    position: absolute;
+    // position: absolute;
     left: 0;
     top: 2px;
     padding: 12px 8px;
+    margin-right: auto;
   }
 
   button {

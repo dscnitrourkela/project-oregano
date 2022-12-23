@@ -58,7 +58,6 @@ const BackgroundContainer = styled.div`
 
 const BodyContainer = styled.div`
   ${tw`
-    text-center
     p-5
     flex-auto
     justify-center
