@@ -69,7 +69,7 @@ const CardClass = styled.div`
   z-index: ${(props) => handleZindex(props.pos)};
 `;
 
-const FirstHalfCard = styled.div`
+const FirstHalfCard = styled.img`
   ${tw`h-1/2 bg-white w-full`}
   border-radius: ${(props) => props.radius};
 `;
@@ -232,7 +232,10 @@ export default function Carousel({ cards }) {
           {/* card  */}
           {cards.map((item) => (
             <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
-              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'} />
+              <FirstHalfCard
+                radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
+                src={item.img}
+              />
               <SecondHalfCard>
                 <div>
                   <Heading3 semibold>{item.heading}</Heading3>

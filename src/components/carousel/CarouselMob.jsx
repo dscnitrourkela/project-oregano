@@ -59,6 +59,7 @@ export default function CarouselMob({ cards, focused }) {
             heading={item.heading}
             date={item.date}
             label={item.label}
+            img={item.img}
           />
         ))}
       </DragScroll>

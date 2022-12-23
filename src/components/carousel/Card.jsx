@@ -17,7 +17,7 @@ const CardMob = styled.div`
   sm:border: ${(props) => (props.focused ? '2px solid yellow' : '')};
 `;
 
-const FirstHalf = styled.div`
+const FirstHalf = styled.img`
   ${tw`h-1/2 bg-white w-full rounded-md`}
 `;
 
@@ -29,10 +29,10 @@ const Bottom = styled.div`
   ${tw`flex justify-between items-center`}
 `;
 
-export default function Card({ heading, name, designation, date, label, focused }) {
+export default function Card({ heading, name, designation, date, label, focused, img }) {
   return (
     <CardMob focused={focused}>
-      <FirstHalf />
+      <FirstHalf src={img} />
       <SecondHalf>
         <Heading3 semibold>{heading}</Heading3>
         <Body1>
