@@ -6,7 +6,7 @@ import {
   faGithubSquare,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import config from '../navigation';
+import config from '../website';
 
 export default {
   hacknitr: {

@@ -31,8 +31,18 @@ export default function SponsorUs() {
             </HeadContainer>
             <DescText>{whySponsor.Description.Desc}</DescText>
             <Buttons>
-              <Button small filled text={whySponsor.Buttons.SponsorButton} />
-              <Button small arrowed text={whySponsor.Buttons.ViewBrochureButton} />
+              <Button
+                small
+                filled
+                text={whySponsor.Buttons.SponsorButton}
+                link='https://o0rqxa59g3k.typeform.com/to/GXfkpiIo'
+              />
+              <Button
+                small
+                arrowed
+                text={whySponsor.Buttons.ViewBrochureButton}
+                link='https://www.hacknitr.com/brochure'
+              />
             </Buttons>
           </ContentContainer>
           <VidBlock>
