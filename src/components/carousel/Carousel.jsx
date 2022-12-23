@@ -70,8 +70,10 @@ const CardClass = styled.div`
 `;
 
 const FirstHalfCard = styled.img`
-  ${tw`h-1/2 bg-white w-full`}
   border-radius: ${(props) => props.radius};
+  width: auto;
+  margin: 0 auto;
+  ${tw`h-1/2`}
 `;
 const SecondHalfCard = styled.div`
   ${tw`h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between`}

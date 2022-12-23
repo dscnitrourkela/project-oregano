@@ -19,6 +19,7 @@ const CardMob = styled.div`
 
 const FirstHalf = styled.img`
   ${tw`h-1/2 bg-white w-full rounded-md`}
+  width: auto;
 `;
 
 const SecondHalf = styled.div`
