@@ -8,6 +8,10 @@ const ItemContainer = styled.div`
   margin: 0.5rem 3rem;
   height: 60px;
   width: auto;
+
+  @media (max-width: 768px) {
+    margin: 0.5rem 0.5rem;
+  }
 `;
 
 const TickerIcon = styled.img`
