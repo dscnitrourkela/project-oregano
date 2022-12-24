@@ -22,6 +22,7 @@ const DragScroll = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+  overflow-y: hidden;
 `;
 
 const ScrollArea = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
-import { Heading3, Heading4, Body1, Button } from '../shared';
+import { Heading3, Body1, Button, Body2 } from '../shared';
 
 const CardMob = styled.div`
   ${tw`
@@ -18,8 +18,10 @@ const CardMob = styled.div`
 `;
 
 const FirstHalf = styled.img`
-  ${tw`h-1/2 bg-white w-full rounded-md`}
+  ${tw`h-1/2 rounded-md`}
   width: auto;
+  margin: 0 auto;
+  object-fit: cover;
 `;
 
 const SecondHalf = styled.div`
@@ -36,12 +38,12 @@ export default function Card({ heading, name, designation, date, label, focused,
       <FirstHalf src={img} />
       <SecondHalf>
         <Heading3 semibold>{heading}</Heading3>
-        <Body1>
-          <span className='font-[590]'>{name}</span> : {designation}
-        </Body1>
+        <Body2>
+          <span style={{ 'font-weight': '900', 'font-size': '1.2em' }}>{name}</span> : {designation}
+        </Body2>
         <Bottom>
-          <Heading4>{date}</Heading4>
-          <Button filled text={label} />
+          <Body1>{date}</Body1>
+          <Button small text={label} />
         </Bottom>
       </SecondHalf>
     </CardMob>

@@ -73,6 +73,7 @@ const FirstHalfCard = styled.img`
   border-radius: ${(props) => props.radius};
   width: auto;
   margin: 0 auto;
+  object-fit: cover;
   ${tw`h-1/2`}
 `;
 const SecondHalfCard = styled.div`

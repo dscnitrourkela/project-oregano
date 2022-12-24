@@ -74,7 +74,9 @@ export const EventContainer = styled.div`
     // position: absolute;
     left: 0;
     top: 2px;
-    padding: 12px 8px;
+    height: 100%;
+    width: auto;
+    padding: 10px 6px;
     margin-right: auto;
   }
 
