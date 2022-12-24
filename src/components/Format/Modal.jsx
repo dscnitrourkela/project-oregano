@@ -51,7 +51,7 @@ const BackgroundContainer = styled.div`
       inset-0
       z-0
     `};
-
+  transform: translateY(-100%);
   animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
     forwards;
 `;
@@ -63,6 +63,7 @@ const BodyContainer = styled.div`
     justify-center
   `}
 
+  transform: translateY(-100%);
   animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
     forwards;
 `;
