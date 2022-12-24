@@ -17,6 +17,7 @@ function SponsorSection() {
       sponsors: sponsors.alpha,
       bcolor: '#A020F0',
       span: 'span 5',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber: 1,
     },
     {
@@ -25,6 +26,7 @@ function SponsorSection() {
       bcolor: '#00FF00',
       span: 'span 5',
       gap: '30px',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber: 2,
     },
     {
