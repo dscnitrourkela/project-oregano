@@ -12,19 +12,14 @@ export default {
       link: '/home',
     },
     {
+      id: 'prizes',
+      name: 'Prizes',
+      link: '/prizes',
+    },
+    {
       id: 'sessions',
       name: 'Sessions',
       link: '/sessions',
-    },
-    {
-      id: 'faq',
-      name: 'FAQ',
-      link: '/faq',
-    },
-    {
-      id: 'why-sponsor-us',
-      name: 'Sponsors',
-      link: '/sponsors',
     },
     {
       id: 'format',
@@ -32,17 +27,22 @@ export default {
       link: '/Format',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'why-sponsor-us',
+      name: 'Sponsors',
+      link: '/sponsors',
     },
     {
-      id: 'prizes',
-      name: 'Community',
-      link: '/community',
+      id: 'join-us',
+      name: 'Join us',
+      link: '/join-Us',
     },
     {
-      id: 'prizes',
+      id: 'faq',
+      name: 'FAQ',
+      link: '/faq',
+    },
+    {
+      id: 'home',
       name: 'LeaderBoard',
       link: '/leader',
       Link: 'http://bit.ly/3Vn3b4J',

@@ -44,7 +44,7 @@ const Event = ({
 const DaysLeft = ({ content }) => {
   const { description, column, row, link } = content;
   const today = new Date().toISOString().slice(0, 10);
-  const numberOfDays = (new Date('2023-01-06') - new Date(today)) / (1000 * 60 * 60 * 24);
+  const numberOfDays = (new Date('2023-01-05') - new Date(today)) / (1000 * 60 * 60 * 24);
 
   return (
     <RegisterContainer style={{ gridColumn: `${column}`, gridRow: `${row}` }}>

@@ -43,7 +43,7 @@ function DesktopNav() {
                 onKeyPress={elem.Link ? null : () => handleScroll(elem.id)}
                 className='NavListItem'
               >
-                <Link style={{ textDecoration: 'none' }} to={elem.Link || '/'} tabIndex='0'>
+                <Link style={{ textDecoration: 'none' }} to={elem.Link || null} tabIndex='0'>
                   <NavItem>{elem.name}</NavItem>
                 </Link>
               </li>
