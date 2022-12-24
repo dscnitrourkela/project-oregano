@@ -2,17 +2,16 @@ import React from "react";
 
 import Join from "../../../config/content/Join";
 import { Heading3, SectionLayout, Caption, Button } from "../shared";
-import speakerImage from '../../../images/speakers.png'
-import joinImage from '../../../images/joinUs.png'
-
 import { GridContainer, HackSpeakerDiv, ContentImage, ContentText, Head, Header, HeadImage, Image, ButtonContainer, CommunityPartnerDiv, CampusAmbassadorDiv, Head2 } from "./styles";
+
+import { Popup } from 'react-typeform-embed';
 
 function JoinUsSection() {
     return (
          <SectionLayout id='joinUs'>
              <GridContainer>
                  <HackSpeakerDiv>
-                     <ContentImage src={joinImage} alt={Join.Mentor.img.alt} />
+                     <ContentImage src={Join.Mentor.img.src} alt={Join.Mentor.img.alt} />
                      <ContentText>
                         <Head>
                              <Header>
@@ -20,7 +19,7 @@ function JoinUsSection() {
                              </Header>
                             
                              <HeadImage>
-                                <Image src={speakerImage} alt="hey there" />
+                                <Image src={Join.Mentor.speakerImages} alt="hey there" />
                                  <Caption>
                                      +{Join.Mentor.count} others
                                  </Caption>
@@ -29,21 +28,21 @@ function JoinUsSection() {
                          <Caption>{Join.Mentor.description}</Caption>
                      </ContentText>
                      <ButtonContainer>
-                        <a href={Join.Mentor.link} target='_blank' rel='noopener noreferrer'>
+                     <Popup id='di6YLmdD' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>    
                         <Button small filled text={Join.Mentor.buttonText}/>
-                        </a>
+                    </Popup>
                      </ButtonContainer>
                  </HackSpeakerDiv>
 
                 <HackSpeakerDiv>
-                    <ContentImage src={joinImage} alt={Join.Speaker.img.alt} />
+                    <ContentImage src={Join.Speaker.img.src} alt={Join.Speaker.img.alt} />
                     <ContentText>
                         <Head>
                             <Header>
                                 <Heading3 semibold>{Join.Speaker.head}</Heading3>
                             </Header>                     
                             <HeadImage>
-                                <Image src={speakerImage} />
+                                <Image src={Join.Mentor.speakerImages} />
                                 <Caption>
                                     +{Join.Speaker.count} others
                                 </Caption>
@@ -52,14 +51,14 @@ function JoinUsSection() {
                         <Caption>{Join.Speaker.description}</Caption>
                     </ContentText>
                     <ButtonContainer>
-                        <a href={Join.Speaker.link} target='_blank' rel='noopener noreferrer'>
+                    <Popup id='di6YLmdD' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>    
                         <Button small filled text={Join.Speaker.buttonText}/>
-                        </a>
+                    </Popup>
                     </ButtonContainer>
                 </HackSpeakerDiv>
 
                 <CommunityPartnerDiv>
-                    <ContentImage src={joinImage} alt={Join.CommunityPartner.img.alt} />
+                    <ContentImage src={Join.Speaker.img.src} alt={Join.CommunityPartner.img.alt} />
                     <ContentText>
                         <Head2>
                             <Heading3 semibold>
@@ -70,14 +69,14 @@ function JoinUsSection() {
                         
                     </ContentText>
                     <ButtonContainer>
-                        <a href={Join.CommunityPartner.link} target='_blank' rel='noopener noreferrer'>
-                           <Button small filled text={Join.CommunityPartner.buttonText}/>
-                         </a>    
+                    <Popup id='exOmpVto' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>    
+                        <Button small filled text={Join.CommunityPartner.buttonText} />
+                    </Popup>
                     </ButtonContainer>
                 </CommunityPartnerDiv>
 
                 <CampusAmbassadorDiv>
-                <ContentImage src={joinImage} alt={Join.CommunityPartner.img.alt} className="h-full w-auto"/>
+                <ContentImage src={Join.Speaker.img.src} alt={Join.CommunityPartner.img.alt} className="h-full w-auto"/>
                     <ContentText>
                         <Head2>
                             <Heading3 semibold>
@@ -88,10 +87,10 @@ function JoinUsSection() {
                         
                     </ContentText>
                     <ButtonContainer>
-                        <a href={Join.CampusAmbassador.link} target='_blank' rel='noopener noreferrer'>
-                           <Button small filled text={Join.CampusAmbassador.buttonText}/>
-                        </a>    
-                        </ButtonContainer>
+                        <Popup id='Z5qUomMI' hideHeaders hideFooter autoOpen={false} autoClose={100000000}>    
+                            <Button small filled text={Join.CampusAmbassador.buttonText}/>
+                        </Popup>    
+                    </ButtonContainer>
                 </CampusAmbassadorDiv>
             </GridContainer>
         </SectionLayout>
