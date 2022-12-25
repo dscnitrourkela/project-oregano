@@ -21,7 +21,7 @@ export default {
       mode: 'Online',
       eventcontent:
         'Based on that the top 20 teams will be selected and will move on to the next round.',
-      eventNumber: 1,
+      eventNumber: 2,
       column: '10 / 14',
       row: '2/4',
       className: 'second',
@@ -32,7 +32,7 @@ export default {
       mode: 'Offline',
       eventcontent:
         'In the 2nd round the top 20 teams will have to finish the prototype in product and pitch it to the judges.',
-      eventNumber: 1,
+      eventNumber: 3,
       column: '10 / 14',
       row: '5/7',
       className: 'first',
@@ -42,7 +42,7 @@ export default {
       description: 'Final Result Shown',
       mode: 'Offline',
       eventcontent: '',
-      eventNumber: 1,
+      eventNumber: 4,
       column: '5 / 9',
       row: '6/8',
       className: 'second',
