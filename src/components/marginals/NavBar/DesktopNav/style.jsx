@@ -48,6 +48,7 @@ export const NavBar = styled.header`
     padding: 12px 1.5em;
     border: 0.4px solid rgba(155, 155, 155, 0.4);
     border-width: 0 0.4px;
+    cursor: pointer;
   }
 
   @media (max-width: 890px) {

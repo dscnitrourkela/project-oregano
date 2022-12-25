@@ -7,6 +7,7 @@ import ButtonMetaLarge from './Typography/ButtonMetaLarge';
 
 const ButtonContainer = styled.button`
   background: ${(props) => (props.filled ? '#FFE91F' : 'transparent')};
+  cursor: pointer;
   :hover {
     background: ${(props) => (props.filled ? '#FFEF5A' : 'rgba(95, 95, 95, 0.5)')};
     color: ${(props) => (props.filled ? '#000' : '#FFEF5A')};
@@ -41,24 +42,22 @@ const Button = ({ text, small, filled, arrowed, link, method = undefined }) => {
       )}
     </>
   );
-  return (
+  return link ? (
+    <Link to={link}>
+      <ButtonContainer onClick={method} filled={filled}>
+        {small ? (
+          <ButtonMeta>{textFinal}</ButtonMeta>
+        ) : (
+          <ButtonMetaLarge>{textFinal}</ButtonMetaLarge>
+        )}
+      </ButtonContainer>
+    </Link>
+  ) : (
     <ButtonContainer onClick={method} filled={filled}>
-      {link ? (
-        <Link to={link}>
-          {small ? (
-            <ButtonMeta>{textFinal}</ButtonMeta>
-          ) : (
-            <ButtonMetaLarge>{textFinal}</ButtonMetaLarge>
-          )}
-        </Link>
+      {small ? (
+        <ButtonMeta>{textFinal}</ButtonMeta>
       ) : (
-        <>
-          {small ? (
-            <ButtonMeta>{textFinal}</ButtonMeta>
-          ) : (
-            <ButtonMetaLarge>{textFinal}</ButtonMetaLarge>
-          )}
-        </>
+        <ButtonMetaLarge>{textFinal}</ButtonMetaLarge>
       )}
     </ButtonContainer>
   );
