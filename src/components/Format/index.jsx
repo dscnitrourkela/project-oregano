@@ -36,7 +36,7 @@ const Event = ({
         <div className='event-number'>{`#${id}`}</div>
         <Body1>{description}</Body1>
       </div>
-      <Button text={formatContent.button} method={handleClick} />
+      <Button text={formatContent.button} method={handleClick} border />
     </EventContainer>
   );
 };

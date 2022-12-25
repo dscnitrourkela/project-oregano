@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Layout } from '../components/shared/index';
 import Container from '../components/shared/Container';
 import '../styles/global.css';
@@ -15,6 +16,16 @@ import SponsorSection from '../components/SponsorsSection/SponsorSection';
 export default function Home() {
   return (
     <>
+      <Helmet>
+        <script
+          type='text/javascript'
+          id='hs-script-loader'
+          async
+          defer
+          src='//js.hs-scripts.com/8898157.js'
+        />
+      </Helmet>
+
       <Layout>
         <Hero />
         <Ticker />

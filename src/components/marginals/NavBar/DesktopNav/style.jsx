@@ -51,7 +51,7 @@ export const NavBar = styled.header`
     cursor: pointer;
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 1190px) {
     display: none;
   }
 `;

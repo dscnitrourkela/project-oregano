@@ -69,12 +69,16 @@ const CardClass = styled.div`
   z-index: ${(props) => handleZindex(props.pos)};
 `;
 
-const FirstHalfCard = styled.img`
+const FirstHalfCard = styled.div`
+  ${tw`h-1/2`}
+  overflow: hidden;
   border-radius: ${(props) => props.radius};
-  width: auto;
+`;
+
+const Img = styled.img`
+  border-radius: ${(props) => props.radius};
   margin: 0 auto;
   object-fit: cover;
-  ${tw`h-1/2`}
 `;
 const SecondHalfCard = styled.div`
   ${tw`h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between`}
@@ -196,6 +200,14 @@ function setcard(cards) {
   return arr;
 }
 
+const Heading5 = styled(Heading3)`
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
 export default function Carousel({ cards }) {
   const [cardpos, setcardpos] = useState(setcard(cards));
   const [focused, setFocused] = useState(1);
@@ -235,17 +247,25 @@ export default function Carousel({ cards }) {
           {/* card  */}
           {cards.map((item) => (
             <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
-              <FirstHalfCard
-                radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
-                src={item.img}
-              />
+              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}>
+                <Img
+                  radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
+                  src={item.img}
+                />
+              </FirstHalfCard>
               <SecondHalfCard>
                 <div>
-                  <Heading3 semibold>{item.heading}</Heading3>
+                  <Heading5 semibold>{item.heading}</Heading5>
                   <Py4>
                     <Body2>
-                      <span className='font-semibold'>{item.name}</span> : {item.designation}
+                      <span
+                        className='font-semibold'
+                        style={{ paddingBottom: '6px', display: 'inline-block' }}
+                      >
+                        {item.name}
+                      </span>
                     </Body2>
+                    <Body2>{item.designation}</Body2>
                   </Py4>
                 </div>
                 <CardBottom>
@@ -284,7 +304,7 @@ export default function Carousel({ cards }) {
           {Date.now() < Date.parse(cards[center].Date) ? (
             <Button small filled text='JOIN LIVE' link='https://workshop.hacknitr.com' />
           ) : (
-            <Button small arrowed text='GO TO YOUTUBE' link='https://youtube.com' />
+            <Button small arrowed border text='GO TO YOUTUBE' link='https://youtube.com' />
           )}
         </SecondCardBottom>
       </DataComponent>

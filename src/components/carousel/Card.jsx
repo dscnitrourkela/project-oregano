@@ -17,9 +17,14 @@ const CardMob = styled.div`
   sm:border: ${(props) => (props.focused ? '2px solid yellow' : '')};
 `;
 
-const FirstHalf = styled.img`
+const FirstHalf = styled.div`
   ${tw`h-1/2 rounded-md`}
-  width: auto;
+  overflow: hidden;
+  border-radius: ${(props) => props.radius};
+`;
+
+const Img = styled.img`
+  border-radius: ${(props) => props.radius};
   margin: 0 auto;
   object-fit: cover;
 `;
@@ -35,11 +40,26 @@ const Bottom = styled.div`
 export default function Card({ heading, name, designation, date, label, focused, img }) {
   return (
     <CardMob focused={focused}>
-      <FirstHalf src={img} />
+      <FirstHalf>
+        <Img src={img} />
+      </FirstHalf>
       <SecondHalf>
         <Heading3 semibold>{heading}</Heading3>
         <Body2>
-          <span style={{ 'font-weight': '900', 'font-size': '1.2em' }}>{name}</span> : {designation}
+          <span className='font-semibold' style={{ display: 'inline-block' }}>
+            {name}
+          </span>
+        </Body2>
+        <Body2
+          style={{
+            display: '-webkit-box',
+            '-webkit-line-clamp': '1',
+            '-webkit-box-orient': 'vertical',
+            overflow: 'hidden',
+            'text-overflow': 'ellipsis',
+          }}
+        >
+          {designation}
         </Body2>
         <Bottom>
           <Body1>{date}</Body1>

@@ -7,6 +7,9 @@ import ButtonMetaLarge from './Typography/ButtonMetaLarge';
 
 const ButtonContainer = styled.button`
   background: ${(props) => (props.filled ? '#FFE91F' : 'transparent')};
+  border-color: ${(props) => (props.border ? '#FFE91F77' : 'transparent')};
+  border-width: ${(props) => (props.border ? '2px' : 0)};
+  border-style: ${(props) => (props.border ? 'solid' : 'none')};
   cursor: pointer;
   :hover {
     background: ${(props) => (props.filled ? '#FFEF5A' : 'rgba(95, 95, 95, 0.5)')};
@@ -29,7 +32,7 @@ const Arrow = styled.span`
   /* text-decoration: none ; */
 `;
 
-const Button = ({ text, small, filled, arrowed, link, method = undefined }) => {
+const Button = ({ text, small, filled, arrowed, link, method = undefined, border }) => {
   const textFinal = (
     <>
       {arrowed ? (
@@ -44,7 +47,7 @@ const Button = ({ text, small, filled, arrowed, link, method = undefined }) => {
   );
   return link ? (
     <Link to={link}>
-      <ButtonContainer onClick={method} filled={filled}>
+      <ButtonContainer onClick={method} filled={filled} border={border}>
         {small ? (
           <ButtonMeta>{textFinal}</ButtonMeta>
         ) : (
@@ -53,7 +56,7 @@ const Button = ({ text, small, filled, arrowed, link, method = undefined }) => {
       </ButtonContainer>
     </Link>
   ) : (
-    <ButtonContainer onClick={method} filled={filled}>
+    <ButtonContainer onClick={method} filled={filled} border={border}>
       {small ? (
         <ButtonMeta>{textFinal}</ButtonMeta>
       ) : (

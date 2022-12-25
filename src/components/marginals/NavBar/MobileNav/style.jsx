@@ -41,7 +41,7 @@ export const NavBar = styled.header`
     }
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 1190px) {
     height: ${({ menuIsOpen }) => (menuIsOpen ? '100vh' : 'auto')};
     display: flex;
   }

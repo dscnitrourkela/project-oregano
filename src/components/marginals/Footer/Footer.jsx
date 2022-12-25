@@ -114,9 +114,9 @@ function Footer() {
           </Body2>
 
           <LogoContainer>
-            {footer.organisers.map(({ id, link, image }) => (
+            {footer.organisers.map(({ id, link, image, column }) => (
               <LogoImgLink
-                style={{ marginLeft: '5px', marginRight: '5px' }}
+                style={{ marginLeft: '5px', marginRight: '5px', gridColumn: column }}
                 key={id}
                 href={link}
                 target='_blank'

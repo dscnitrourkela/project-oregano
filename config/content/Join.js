@@ -1,6 +1,7 @@
 /* eslint-disable max-len */
 export default {
   id: 'join-us',
+  title: 'JOIN US',
   Mentor: {
     head: 'Become a Hack Mentor',
     img: {

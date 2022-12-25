@@ -39,6 +39,7 @@ export default function SponsorUs() {
               />
               <Button
                 small
+                border
                 arrowed
                 text={whySponsor.Buttons.ViewBrochureButton}
                 link='https://www.hacknitr.com/brochure'
