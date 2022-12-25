@@ -77,6 +77,9 @@ export const EventContainer = styled.div`
     height: 100%;
     width: auto;
     padding: 10px 6px;
+    @media (max-width: 480px){
+      padding: 10px 8px;
+    }
     margin-right: auto;
   }
 
