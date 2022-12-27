@@ -5,7 +5,7 @@ export default {
   Mentor: {
     head: 'Become a Hack Mentor',
     img: {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671729665/joinUs_sbnnc5.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141607/HackNITR/Frame_286_nq71s7.svg',
       alt: 'Become a Hack Mentor',
     },
     description:
@@ -19,7 +19,7 @@ export default {
   Speaker: {
     head: 'Become a Hack Speaker',
     img: {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671729665/joinUs_sbnnc5.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141600/HackNITR/Frame_346_abu55k.svg',
       alt: 'Become a Hack Speaker',
     },
     heading: 'Help us conduct an awesome Hackathon!',
@@ -34,7 +34,7 @@ export default {
   CommunityPartner: {
     head: 'Join us as a Community Partner',
     img: {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671729665/joinUs_sbnnc5.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141601/HackNITR/Frame_286_1_ojketk.svg',
       alt: 'Join us as a Community Partner',
     },
     description:
@@ -45,7 +45,7 @@ export default {
   CampusAmbassador: {
     head: 'Become our Campus Ambassador',
     img: {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671729665/joinUs_sbnnc5.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141600/HackNITR/Frame_286_2_f52jfs.svg',
       alt: 'Become our Campus Ambassador',
     },
     description:

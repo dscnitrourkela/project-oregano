@@ -67,7 +67,7 @@ function JoinUsSection() {
           </HackSpeakerDiv>
 
           <CommunityPartnerDiv>
-            <ContentImage src={Join.Speaker.img.src} alt={Join.CommunityPartner.img.alt} />
+            <ContentImage src={Join.CommunityPartner.img.src} alt={Join.CommunityPartner.img.alt} />
             <ContentText>
               <Head2>
                 <Heading3 semibold>{Join.CommunityPartner.head}</Heading3>
@@ -83,8 +83,8 @@ function JoinUsSection() {
 
           <CampusAmbassadorDiv>
             <ContentImage
-              src={Join.Speaker.img.src}
-              alt={Join.CommunityPartner.img.alt}
+              src={Join.CampusAmbassador.img.src}
+              alt={Join.CampusAmbassador.img.alt}
               className='h-full w-auto'
             />
             <ContentText>

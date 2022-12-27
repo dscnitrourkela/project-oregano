@@ -35,6 +35,7 @@ export const ContentImage = styled.img`
         w-full
         h-auto
     `}
+  object-fit: contain
 `;
 
 export const ContentText = styled.div`
@@ -106,7 +107,6 @@ export const CampusAmbassadorDiv = styled.div`
   ${tw`
     md:col-span-5
     grid
-    grid-rows-2
     p-6
     bg-background-dark
     rounded-2xl
