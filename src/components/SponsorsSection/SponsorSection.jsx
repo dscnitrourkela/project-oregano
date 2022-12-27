@@ -34,14 +34,14 @@ function SponsorSection() {
       sponsors: sponsors.gamma,
       bcolor: '#0000FF',
       grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      span: 'span 2',
+      span: 'span 5',
     },
     {
       title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
       bcolor: '#FFA500',
-      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
-      span: 'span 3',
+      grid: 'repeat(auto-fit, minmax(200px, 1fr))',
+      span: 'span 5',
     },
   ];
 
