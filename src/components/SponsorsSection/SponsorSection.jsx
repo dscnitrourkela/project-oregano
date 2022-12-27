@@ -25,7 +25,7 @@ function SponsorSection() {
       sponsors: sponsors.beta,
       bcolor: '#00FF00',
       span: 'span 5',
-      gap: '30px',
+      //gap: '30px',
       grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber: 2,
     },
@@ -40,7 +40,7 @@ function SponsorSection() {
       title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
       bcolor: '#FFA500',
-      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       span: 'span 2',
     },
   ];
