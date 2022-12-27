@@ -13,17 +13,18 @@ import sponsors from '../../../config/content/Sponsors';
 const TickerContainer = styled.div`
   ${tw`
     bg-background-dark
-    w-full overflow-hidden
+    w-full 
+    overflow-hidden
     py-10
   `}
 `;
 
 const ticker = keyframes`
   0% {
-    transform: translate(100vw, 0);
+    transform: translate(50vw, 0);
   }
   100% {
-    transform: translate(-100%, 0);
+    transform: translate(-200%, 0);
   }
 `;
 
@@ -44,6 +45,18 @@ function Ticker() {
   return (
     <TickerContainer className='TickerContainer'>
       <TickerMover className='TickerMover'>
+        {[...sponsors.alpha, ...sponsors.beta].map(({ name, src, width }) => (
+          <TickerItem key={name} source={src} alt={name} size={width} />
+        ))}
+
+        <div style={{ margin: '0 20vw', display: 'inline-block' }} />
+
+        {[...sponsors.alpha, ...sponsors.beta].map(({ name, src, width }) => (
+          <TickerItem key={name} source={src} alt={name} size={width} />
+        ))}
+
+        <div style={{ margin: '0 20vw', display: 'inline-block' }} />
+
         {[...sponsors.alpha, ...sponsors.beta].map(({ name, src, width }) => (
           <TickerItem key={name} source={src} alt={name} size={width} />
         ))}
