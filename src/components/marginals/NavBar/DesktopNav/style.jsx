@@ -34,9 +34,12 @@ export const NavBar = styled.header`
     padding: 0;
   }
 
-  .nav-right {
-    width: 8%;
+  .nav-right,
+  .nav-left {
+    width: 4%;
     height: 42px;
+    display: flex;
+    justify-content: center;
   }
 
   .navList {
@@ -51,7 +54,7 @@ export const NavBar = styled.header`
     cursor: pointer;
   }
 
-  @media (max-width: 1190px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;

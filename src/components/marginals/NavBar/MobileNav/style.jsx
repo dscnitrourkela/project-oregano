@@ -41,7 +41,7 @@ export const NavBar = styled.header`
     }
   }
 
-  @media (max-width: 1190px) {
+  @media (max-width: 1000px) {
     height: ${({ menuIsOpen }) => (menuIsOpen ? '100vh' : 'auto')};
     display: flex;
   }
@@ -138,7 +138,7 @@ export const MobileNavList = styled.ul`
     border: none;
   }
 
-  @media (min-width: 890px) {
+  @media (min-width: 1000px) {
     display: none;
   }
 `;

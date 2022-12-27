@@ -51,7 +51,7 @@ export default {
 
   registerNow: {
     description:
-      'Come and hop on the ship to endless endeavour of technology or shit. Register till 6th',
+      'Buckle up for a once-in-a-lifetime experience. Climb aboard the spaceship for a never-ending technological adventure.  The road to the future is brought to you by HackNITR.',
     column: '1/4',
     row: '3/6',
     link: 'https://hacknitr4.devfolio.co/ ',
