@@ -43,34 +43,10 @@ function SponsorSection() {
       grid: 'repeat(auto-fit, minmax(130px, 1fr))',
       span: 'span 3',
     },
-    // {
-    //   title: 'MEDIA PARTNERS',
-    //   sponsors: sponsors['media-partners'],
-    //   bcolor: 'white',
-    //   span: 'span 5',
-    // },
-    // {
-    //   title: 'AUTHENTICATION PARTNER',
-    //   sponsors: sponsors['authentication-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 2',
-    // },
-    // {
-    //   title: 'MENTAL HEALTH PARTNER',
-    //   sponsors: sponsors['mental-health-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 2',
-    // },
-    // {
-    //   title: 'CODING PARTNER',
-    //   sponsors: sponsors['coding-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 1',
-    // },
   ];
 
   return (
-    <SectionLayout>
+    <SectionLayout id={sponsors.id}>
       <div className='w-full  mb-9'>
         <Heading2 semibold>SPONSORS</Heading2>
       </div>

@@ -5,6 +5,7 @@ import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Body2, Heading3, Heading2, Caption, Heading4, Button } from '../shared';
+import content from '../../../config/content/Sessions';
 
 const Py4 = styled.div`
   ${tw`py-4`}
@@ -69,8 +70,15 @@ const CardClass = styled.div`
 `;
 
 const FirstHalfCard = styled.div`
-  ${tw`h-1/2 bg-white w-full`}
+  ${tw`h-1/2`}
+  overflow: hidden;
   border-radius: ${(props) => props.radius};
+`;
+
+const Img = styled.img`
+  border-radius: ${(props) => props.radius};
+  margin: 0 auto;
+  object-fit: cover;
 `;
 const SecondHalfCard = styled.div`
   ${tw`h-1/2 text-white py-4 bg-gray-900 flex flex-col justify-between`}
@@ -192,6 +200,14 @@ function setcard(cards) {
   return arr;
 }
 
+const Heading5 = styled(Heading3)`
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
+
 export default function Carousel({ cards }) {
   const [cardpos, setcardpos] = useState(setcard(cards));
   const [focused, setFocused] = useState(1);
@@ -231,14 +247,25 @@ export default function Carousel({ cards }) {
           {/* card  */}
           {cards.map((item) => (
             <CardClass pos={cardpos[item.id]} focused={item.id === focused} key={item.id}>
-              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'} />
+              <FirstHalfCard radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}>
+                <Img
+                  radius={cardpos[item.id - 1] !== 'center' ? '1.0rem' : '0.8rem'}
+                  src={item.img}
+                />
+              </FirstHalfCard>
               <SecondHalfCard>
                 <div>
-                  <Heading3 semibold>{item.heading}</Heading3>
+                  <Heading5 semibold>{item.heading}</Heading5>
                   <Py4>
                     <Body2>
-                      <span className='font-semibold'>{item.name}</span> : {item.designation}
+                      <span
+                        className='font-semibold'
+                        style={{ paddingBottom: '6px', display: 'inline-block' }}
+                      >
+                        {item.name}
+                      </span>
                     </Body2>
+                    <Body2>{item.designation}</Body2>
                   </Py4>
                 </div>
                 <CardBottom>
@@ -263,9 +290,7 @@ export default function Carousel({ cards }) {
       <DataComponent>
         <DataHead>
           <Heading2 semibold>SESSIONS</Heading2>
-          <Caption className='text-color-tertiary'>
-            Now to hackathon dont worry we got you covered with all the basic information
-          </Caption>
+          <Caption className='text-color-tertiary'>{content.caption}</Caption>
         </DataHead>
 
         <DataBody>
@@ -273,15 +298,14 @@ export default function Carousel({ cards }) {
           <Name>{cards[center].name}</Name>
         </DataBody>
 
-        <DescText>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. In nulla nisi facere itaque ad
-          doloribus, maxime dignissimos, minus accusamus, distinctio ratione consequatur harum rerum
-          exercitationem beatae excepturi libero aut totam quam amet labore iure architecto.
-        </DescText>
+        <DescText>{content.desc}</DescText>
 
         <SecondCardBottom>
-          <Button small filled text='JOIN LIVE' />
-          <Button small arrowed text='GO TO YOUTUBE' />
+          {Date.now() < Date.parse(cards[center].Date) ? (
+            <Button small filled text='JOIN LIVE' link='https://workshop.hacknitr.com' />
+          ) : (
+            <Button small arrowed border text='GO TO YOUTUBE' link='https://youtube.com' />
+          )}
         </SecondCardBottom>
       </DataComponent>
     </CarouselContainer>

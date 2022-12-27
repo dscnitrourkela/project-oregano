@@ -7,8 +7,8 @@ export default styled.h3`
    text-sm
    leading-6 
 
-   sm:text-lg
-   sm:leading-5 
+   sm:text-sm
+   sm:leading-4 
 
    text-color-primary
    font-Inter

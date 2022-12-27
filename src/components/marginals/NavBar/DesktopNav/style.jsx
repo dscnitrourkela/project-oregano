@@ -9,7 +9,7 @@ const fade = keyframes`
 
     }
     100% {
-        width: 16px;
+        width: 36%;
         opacity: 1;
         box-shadow: 0 0 8px 4px rgb(237 236 81 / 70%);
     }
@@ -34,9 +34,12 @@ export const NavBar = styled.header`
     padding: 0;
   }
 
-  .nav-right {
-    width: 8%;
+  .nav-right,
+  .nav-left {
+    width: 4%;
     height: 42px;
+    display: flex;
+    justify-content: center;
   }
 
   .navList {
@@ -48,9 +51,10 @@ export const NavBar = styled.header`
     padding: 12px 1.5em;
     border: 0.4px solid rgba(155, 155, 155, 0.4);
     border-width: 0 0.4px;
+    cursor: pointer;
   }
 
-  @media (max-width: 890px) {
+  @media (max-width: 1000px) {
     display: none;
   }
 `;

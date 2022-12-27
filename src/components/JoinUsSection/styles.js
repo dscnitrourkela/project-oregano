@@ -1,19 +1,26 @@
-import styled from "styled-components";
-import tw from "twin.macro";
+import styled from 'styled-components';
+import tw from 'twin.macro';
+
+export const Container = styled.div`
+  ${tw`
+    w-full
+    mx-auto  
+  `}
+`;
 
 export const GridContainer = styled.div`
-    ${tw`
+  ${tw`
     overflow-x-hidden
     overflow-y-hidden
     grid
     md:grid-cols-12
     gap-12
-    md:mx-20
+    md: my-6
     `}
 `;
 
 export const HackSpeakerDiv = styled.div`
-    ${tw`
+  ${tw`
     md:col-span-6
     grid
     p-6
@@ -24,21 +31,21 @@ export const HackSpeakerDiv = styled.div`
 `;
 
 export const ContentImage = styled.img`
-    ${tw`
+  ${tw`
         w-full
         h-auto
     `}
-    
+  object-fit: contain
 `;
 
 export const ContentText = styled.div`
-    ${tw`
+  ${tw`
         w-full
     `}
 `;
 
 export const Head = styled.div`
-    ${tw`
+  ${tw`
     w-full
     grid
     md:grid-cols-6
@@ -48,7 +55,7 @@ export const Head = styled.div`
 `;
 
 export const Header = styled.div`
-    ${tw`
+  ${tw`
     md:col-span-5
     md:grid
     md:justify-items-start
@@ -58,7 +65,7 @@ export const Header = styled.div`
 `;
 
 export const HeadImage = styled.div`
-    ${tw`
+  ${tw`
     md:col-span-1
     col-span-2
     grid
@@ -67,7 +74,7 @@ export const HeadImage = styled.div`
 `;
 
 export const Image = styled.img`
-    ${tw`
+  ${tw`
     md:w-full
     //w-1/4
     h-auto
@@ -75,7 +82,7 @@ export const Image = styled.img`
 `;
 
 export const ButtonContainer = styled.div`
-    ${tw`
+  ${tw`
     grid
     content-end
     md:justify-items-end
@@ -85,7 +92,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const CommunityPartnerDiv = styled.div`
-    ${tw`
+  ${tw`
     md:col-span-7
     grid
     p-6
@@ -97,10 +104,9 @@ export const CommunityPartnerDiv = styled.div`
 `;
 
 export const CampusAmbassadorDiv = styled.div`
-    ${tw`
+  ${tw`
     md:col-span-5
     grid
-    grid-rows-2
     p-6
     bg-background-dark
     rounded-2xl
@@ -110,7 +116,7 @@ export const CampusAmbassadorDiv = styled.div`
 `;
 
 export const Head2 = styled.div`
-    ${tw`
+  ${tw`
     w-full
     mb-3
     uppercase

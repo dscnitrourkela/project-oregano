@@ -41,7 +41,7 @@ export const ContentContainer = styled.div`
   justify-center
   col-span-4
   lg:py-6
-  lg:max-w-[384px]
+  lg:max-w-[420px]
   `}
 `;
 export const VidBlock = styled.div`

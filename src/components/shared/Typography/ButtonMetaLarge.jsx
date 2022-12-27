@@ -4,10 +4,10 @@ import tw from 'twin.macro';
 export default styled.p`
   font-weight: ${(props) => (props.semibold ? '600' : '400')};
   ${tw`
-   text-sm
-   leading-4
+   text-xs
+   leading-3.5
    sm:text-base
-   sm:leading-6
+   sm:leading-5
    font-Inter
 `}
 `;

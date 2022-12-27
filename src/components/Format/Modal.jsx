@@ -51,19 +51,16 @@ const BackgroundContainer = styled.div`
       inset-0
       z-0
     `};
-
-  animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
-    forwards;
 `;
 
 const BodyContainer = styled.div`
   ${tw`
-    text-center
     p-5
     flex-auto
     justify-center
   `}
 
+  transform: translateY(-100%);
   animation: ${(isOpen) => (isOpen ? scaleDown : scaleUp)} 0.5s cubic-bezier(0.165, 0.84, 0.44, 1)
     forwards;
 `;

@@ -5,11 +5,24 @@ import { Container, Wrapper, EventContainer, RegisterContainer } from './style';
 import formatContent from '../../../config/content/Format';
 import Modal from './Modal';
 
-const Event = ({ title, description, id, column, row, setModal, setModalContent, className }) => {
+const Event = ({
+  title,
+  description,
+  id,
+  column,
+  row,
+  setModal,
+  setModalContent,
+  className,
+  mode,
+  content,
+}) => {
   const handleClick = () => {
     setModalContent({
       title,
       description,
+      mode,
+      content,
       id,
     });
 
@@ -21,9 +34,9 @@ const Event = ({ title, description, id, column, row, setModal, setModalContent,
       <Body1 style={{ fontWeight: '590', paddingBottom: '4px' }}>{title}</Body1>
       <div className='event-description'>
         <div className='event-number'>{`#${id}`}</div>
-        <Heading4>{description}</Heading4>
+        <Body1>{description}</Body1>
       </div>
-      <Button text={formatContent.button} method={handleClick} />
+      <Button text={formatContent.button} method={handleClick} border />
     </EventContainer>
   );
 };
@@ -31,13 +44,13 @@ const Event = ({ title, description, id, column, row, setModal, setModalContent,
 const DaysLeft = ({ content }) => {
   const { description, column, row, link } = content;
   const today = new Date().toISOString().slice(0, 10);
-  const numberOfDays = (new Date('2023-01-06') - new Date(today)) / (1000 * 60 * 60 * 24);
+  const numberOfDays = (new Date('2023-01-05') - new Date(today)) / (1000 * 60 * 60 * 24);
 
   return (
     <RegisterContainer style={{ gridColumn: `${column}`, gridRow: `${row}` }}>
       <div className='title'>
         <img
-          src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533672/Frame_78_eqq6fw.svg'
+          src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533672/HackNITR/Frame_78_eqq6fw.svg'
           alt='Logo'
         />
         <Heading4 semibold>{`${numberOfDays} Days Left`}</Heading4>
@@ -59,19 +72,32 @@ const Format = () => {
         <SectionLayout id={id} title={title} description={content}>
           <Wrapper>
             <DaysLeft content={registerNow} />
-            {eventList.map(({ eventTitle, description, eventNumber, column, row, className }) => (
-              <Event
-                key={id}
-                title={eventTitle}
-                description={description}
-                id={eventNumber}
-                column={column}
-                row={row}
-                setModalContent={setModalContent}
-                setModal={setModal}
-                className={className}
-              />
-            ))}
+            {eventList.map(
+              ({
+                eventTitle,
+                description,
+                eventNumber,
+                column,
+                row,
+                className,
+                mode,
+                eventcontent,
+              }) => (
+                <Event
+                  key={id}
+                  title={eventTitle}
+                  description={description}
+                  id={eventNumber}
+                  column={column}
+                  row={row}
+                  setModalContent={setModalContent}
+                  setModal={setModal}
+                  className={className}
+                  mode={mode}
+                  content={eventcontent}
+                />
+              ),
+            )}
           </Wrapper>
         </SectionLayout>
       </Container>
@@ -83,10 +109,23 @@ const Format = () => {
             setModal(false);
           }}
         >
-          <Body1 style={{ fontWeight: '590', paddingBottom: '4px' }}>{modalContent.title}</Body1>
-          <div className='event-description'>
-            <Heading4>{modalContent.description}</Heading4>
-          </div>
+          <Heading4 style={{ fontWeight: '590', paddingBottom: '20px' }}>
+            {modalContent.description}
+          </Heading4>
+          <ol
+            className='modal-body'
+            style={{
+              color: '#fff',
+              paddingBottom: '20px',
+              display: 'flex',
+              gap: '20px',
+              flexDirection: 'column',
+            }}
+          >
+            <li>Mode: {modalContent.mode}</li>
+            <li>Date: {modalContent.title}</li>
+            <Body1>{modalContent.content}</Body1>
+          </ol>
         </Modal>
       )}
     </>

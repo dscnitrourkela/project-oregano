@@ -7,9 +7,9 @@ export default {
   },
   navItems: [
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'home',
+      name: 'Home',
+      link: '/home',
     },
     {
       id: 'prizes',
@@ -17,35 +17,35 @@ export default {
       link: '/prizes',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'sessions',
+      name: 'Sessions',
+      link: '/sessions',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'format',
+      name: 'Our Format',
+      link: '/Format',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'why-sponsor-us',
+      name: 'Sponsors',
+      link: '/sponsors',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'join-us',
+      name: 'Join us',
+      link: '/join-Us',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'faq',
+      name: 'FAQ',
+      link: '/faq',
     },
     {
-      id: 'prizes',
-      name: 'Prizes',
-      link: '/prizes',
+      id: 'home',
+      name: 'LeaderBoard',
+      link: '/leader',
+      Link: 'http://bit.ly/3Vn3b4J',
     },
-    
   ],
 };

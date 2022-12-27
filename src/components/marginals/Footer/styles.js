@@ -124,6 +124,8 @@ export const LogoContainer = styled.div`
 
   @media (max-width: 464px) {
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
@@ -151,6 +153,7 @@ const CardContainer = styled.div`
 
 const CardImage = styled.img`
   max-height: 40px;
+  margin: 0 auto;
 `;
 
 const FooterCardImg = styled.div`
