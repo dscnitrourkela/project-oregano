@@ -17,7 +17,7 @@ import { DevfolioBtn, DiscordBtn, DiscordBtnMobile } from '../shared';
 
 export default function Hero() {
   return (
-    <SectionContainer>
+    <SectionContainer id={hero.id}>
       <HeroBody>
         <HeroTitle>
           <HeroHeading src={hero.Hackimg.src} alt={hero.Hackimg.alt} />

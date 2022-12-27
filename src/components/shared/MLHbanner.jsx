@@ -11,7 +11,7 @@ const Banner = styled.a`
   z-index: 3;
   min-width: 28px;
   max-width: 70px;
-  @media (max-width: 890px) {
+  @media (max-width: 1190px) {
     position: absolute;
     width: 8%;
   }

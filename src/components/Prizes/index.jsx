@@ -73,18 +73,18 @@ const Prizes = () => {
       setStage: setStageToOverall,
       key: STAGES.OVERALL,
     },
-    {
-      setStage: setStageToTracks,
-      key: STAGES.TRACKS,
-    },
+    // {
+    //   setStage: setStageToTracks,
+    //   key: STAGES.TRACKS,
+    // },
     {
       setStage: setStageToSwags,
       key: STAGES.SWAGS,
     },
-    {
-      setStage: setStageToAllSubs,
-      key: STAGES.ALL,
-    },
+    // {
+    //   setStage: setStageToAllSubs,
+    //   key: STAGES.ALL,
+    // },
   ];
 
   const renderPrizes = () => {
@@ -92,14 +92,14 @@ const Prizes = () => {
       case STAGES.OVERALL:
         return <Overall />;
 
-      case STAGES.TRACKS:
-        return <Tracks />;
+      // case STAGES.TRACKS:
+      //   return <Tracks />;
 
       case STAGES.SWAGS:
         return <Swags />;
 
-      case STAGES.ALL:
-        return <PrizesForAll />;
+      // case STAGES.ALL:
+      //   return <PrizesForAll />;
 
       default:
         return <Overall />;

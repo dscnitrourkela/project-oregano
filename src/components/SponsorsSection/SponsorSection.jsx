@@ -17,6 +17,7 @@ function SponsorSection() {
       sponsors: sponsors.alpha,
       bcolor: '#A020F0',
       span: 'span 5',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber: 1,
     },
     {
@@ -25,50 +26,27 @@ function SponsorSection() {
       bcolor: '#00FF00',
       span: 'span 5',
       gap: '30px',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber: 2,
     },
-    // {
-    //   title: 'GAMMA SPONSORS',
-    //   sponsors: sponsors.gamma,
-    //   bcolor: '#0000FF',
-    //   grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-    //   span: 'span 2',
-    // },
-    // {
-    //   title: 'DELTA SPONSORS',
-    //   sponsors: sponsors.delta,
-    //   bcolor: '#FFA500',
-    //   grid: 'repeat(auto-fit, minmax(130px, 1fr))',
-    //   span: 'span 3',
-    // },
-    // {
-    //   title: 'MEDIA PARTNERS',
-    //   sponsors: sponsors['media-partners'],
-    //   bcolor: 'white',
-    //   span: 'span 5',
-    // },
-    // {
-    //   title: 'AUTHENTICATION PARTNER',
-    //   sponsors: sponsors['authentication-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 2',
-    // },
-    // {
-    //   title: 'MENTAL HEALTH PARTNER',
-    //   sponsors: sponsors['mental-health-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 2',
-    // },
-    // {
-    //   title: 'CODING PARTNER',
-    //   sponsors: sponsors['coding-partner'],
-    //   bcolor: 'white',
-    //   span: 'span 1',
-    // },
+    {
+      title: 'GAMMA SPONSORS',
+      sponsors: sponsors.gamma,
+      bcolor: '#0000FF',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+      span: 'span 2',
+    },
+    {
+      title: 'DELTA SPONSORS',
+      sponsors: sponsors.delta,
+      bcolor: '#FFA500',
+      grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+      span: 'span 3',
+    },
   ];
 
   return (
-    <SectionLayout>
+    <SectionLayout id={sponsors.id}>
       <div className='w-full  mb-9'>
         <Heading2 semibold>SPONSORS</Heading2>
       </div>
