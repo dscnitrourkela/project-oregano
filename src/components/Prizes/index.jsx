@@ -73,10 +73,10 @@ const Prizes = () => {
       setStage: setStageToOverall,
       key: STAGES.OVERALL,
     },
-    // {
-    //   setStage: setStageToTracks,
-    //   key: STAGES.TRACKS,
-    // },
+    {
+      setStage: setStageToTracks,
+      key: STAGES.TRACKS,
+    },
     {
       setStage: setStageToSwags,
       key: STAGES.SWAGS,
@@ -92,8 +92,8 @@ const Prizes = () => {
       case STAGES.OVERALL:
         return <Overall />;
 
-      // case STAGES.TRACKS:
-      //   return <Tracks />;
+      case STAGES.TRACKS:
+        return <Tracks />;
 
       case STAGES.SWAGS:
         return <Swags />;

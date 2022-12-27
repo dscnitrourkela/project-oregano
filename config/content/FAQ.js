@@ -57,5 +57,5 @@ export default {
   },
 
   botMessage:
-    'Not able to find your questiion? Dont worry my subordinate in the down right down corner is exicited to chat with you.',
+    'Not able to find your question? Dont worry my subordinate in the down right down corner is exicited to chat with you.',
 };

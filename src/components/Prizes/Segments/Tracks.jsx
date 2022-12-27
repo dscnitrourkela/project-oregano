@@ -25,15 +25,18 @@ const Front = styled(FlippingPrizeFront)`
 
 const Back = styled(FlippingPrizeBack)`
   background: ${({ deg, color1, color2 }) => `linear-gradient(${deg}, ${color1}, ${color2})`};
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 `;
 
 const Img = styled.img`
-  width: auto;
-  height: 80%;
+  width: 70%;
+  height: auto;
+  margin: auto;
 `;
 
 const List = styled(Body1)`

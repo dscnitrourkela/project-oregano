@@ -12,8 +12,8 @@ export default {
       'Want to shape the future of tech? Become a hackathon mentor and guide the next generation of coders to success! Use your skills and experience to mentor the next generation of hackers at our hackathon event!',
     link: 'https://www.hacknitr.com/',
     speakerImages:
-      'https://res.cloudinary.com/dme9vltjf/image/upload/v1671729664/speakers_tocius.png',
-    count: '10',
+      'https://res.cloudinary.com/dme9vltjf/image/upload/v1672154153/Sponsors/Frame_277_hlo05g.png',
+    count: '2',
     buttonText: 'Apply Now',
   },
   Speaker: {
