@@ -304,7 +304,7 @@ export default function Carousel({ cards }) {
           {Date.now() < Date.parse(cards[center].Date) ? (
             <Button small filled text='JOIN LIVE' link='https://workshop.hacknitr.com' />
           ) : (
-            <Button small arrowed border text='GO TO YOUTUBE' link='https://youtube.com' />
+            <Button small arrowed border text='GO TO YOUTUBE' link={cards[center].vidLink} />
           )}
         </SecondCardBottom>
       </DataComponent>
