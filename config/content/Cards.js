@@ -29,7 +29,7 @@ export default {
       designation: 'Developer Advocate @ Appwrite, Microsoft MVP, Twilio Champion',
       date: '28th December',
       Date: '2022-12-28',
-      label: '6:30 pm IST',
+      label: '8:00 pm IST',
       img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671951110/HackNITR/20221111_171044_xxvgru.jpg',
     },
   ],
