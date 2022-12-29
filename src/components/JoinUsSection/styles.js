@@ -15,7 +15,7 @@ export const GridContainer = styled.div`
     grid
     md:grid-cols-12
     gap-12
-    md: my-6
+    md:my-6
     `}
 `;
 
