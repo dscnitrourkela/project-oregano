@@ -130,13 +130,6 @@ export default {
       link: 'https://www.cockroachlabs.com/',
       alt: 'CockRoachDB',
     },
-    // {
-    //   src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148508/Sponsors/Cockroach_DB_g34nei.png',
-    //   name: 'CockroachDB',
-    //   size: '100%',
-    //   link: 'https://www.cockroachlabs.com/',
-    //   alt: 'CockroachDB',
-    // },
     {
       src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672145676/HackNITR/GoDaddy-White-Logo.wine_w2zbub.svg',
       name: 'GoDaddy',
@@ -164,27 +157,6 @@ export default {
       size: '90%',
       link: 'https://www.wix.com/velo',
       alt: 'velo',
-    },
-    // {
-    //   src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148509/Sponsors/GoDaddy_uhfn0e.png',
-    //   name: 'GoDaddy Registry',
-    //   size: '100%',
-    //   link: 'https://registry.godaddy/',
-    //   alt: 'GoDaddy Registry',
-    // },
-    // {
-    //   src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148510/Sponsors/auth0_yispya.png',
-    //   name: 'Auth0',
-    //   size: '100%',
-    //   link: 'https://auth0.com/',
-    //   alt: 'Auth0',
-    // },
-    {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148509/Sponsors/velo_wsx1yf.png',
-      name: 'Wix',
-      size: '100%',
-      link: 'https://www.wix.com/velo',
-      alt: 'Wix',
     },
   ],
 };
