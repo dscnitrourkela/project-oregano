@@ -110,28 +110,24 @@ export const SponsorContainer = styled.div`
   ${tw`
     w-full
     grid
-    gap-[30px]
+    gap-[10px]
     justify-center
-    flex
   `}
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  @media (max-width: 1380px) {
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+  }
   @media (max-width: 639px) {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
   }
 `;
 
 export const SponsorLogo = styled.div`
   ${tw`
-  p-3 
-  m-auto
-  justify-center
-  align-middle
+    p-3 
+    m-auto
+    justify-center
+    align-middle
   `}
-
-  @media (min-width: 639px) {
-    flex: 1 1 0;
-  }
-
-  & img {
-    margin: 0 auto;
-  }
 `;

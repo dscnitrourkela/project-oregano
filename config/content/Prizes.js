@@ -1,25 +1,53 @@
 /* eslint-disable max-len */
-const TrackPrizes = [
-  '250$ Digital Ocean Credits ',
-  'Egghead Coupon - 1 year',
-  'Wolfram Lifetime Access',
-  'Taskade Lifetime Pro Plan',
-  'Repl.it Subscription for all members',
-  'Sashido Subscription for all members',
-  'Voiceflow Premium for all members',
-  'XYZ domain names for all members',
+// const TrackPrizes = [
+//   '250$ Digital Ocean Credits ',
+//   'Egghead Coupon - 1 year',
+//   'Wolfram Lifetime Access',
+//   'Taskade Lifetime Pro Plan',
+//   'Repl.it Subscription for all members',
+//   'Sashido Subscription for all members',
+//   'Voiceflow Premium for all members',
+//   'XYZ domain names for all members',
+// ];
+const TrackPrizesPolygon = [
+  '₹10,000 for the best hack built on Ethereum',
+  '₹15,000 for the best hack built on Ethereum + Polygon',
+  'Eligibilty to apply for internship/full-time roles and seed funding of up to 5000 USD for winners!',
+];
+const TrackPrizesFilecoin = [
+  'Filecoin is an open-source cloud storage marketplace, protocol, and cryptocurrency.',
+  '₹20000 for best use of IPFS and/or Filecoin',
+];
+const TrackPrizesSolana = [
+  'Young gun - $USDC 100 for the best project beginners just starting out on Solana and/or',
+  'Rising teknoking - $USDC 250 for the best project that goes into depth, demonstrating higher-order code and/or',
+  'Master glasseater - $USDC 500 for the best advanced project that is almost ready for full-time development.',
+];
+const TrackPrizesReplit = [
+  '5,000 INR to winning project of the hackathon (must be deployed on Replit)',
+  'Replit schwags to 5 eligible submissions deployed on Replit.',
+  'Eligibility to apply for internship/full-time roles at Replit',
+];
+const TrackPrizesGoDaddy = [
+  'Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit!',
+  'Each Kit contains wireless earbuds, blue light glasses, selfie ring light and a pouch for easy transport.',
+];
+const TrackPrizesTwilio = [
+  'Build a hack that simplifies your life using any Twilio API for a chance to win some awesome prizes!',
+  'Get started with $50 in free credit!',
+  'GameGo Console and more!',
 ];
 
-const AdditionalTrackPrizes = [
-  '150$ Digital Ocean Credits',
-  'Egghead Coupon - 1 year',
-  'Leading Learners Access',
-  'Taskade Lifetime Pro Plan',
-  'Repl.it Subscription for all members',
-  'Sashido Subscription for all members',
-  'Voiceflow Premium for all members',
-  'XYZ domain names for all members',
-];
+// const AdditionalTrackPrizes = [
+//   '150$ Digital Ocean Credits',
+//   'Egghead Coupon - 1 year',
+//   'Leading Learners Access',
+//   'Taskade Lifetime Pro Plan',
+//   'Repl.it Subscription for all members',
+//   'Sashido Subscription for all members',
+//   'Voiceflow Premium for all members',
+//   'XYZ domain names for all members',
+// ];
 
 export default {
   id: 'prizes',
@@ -75,89 +103,89 @@ export default {
     tracks: [
       {
         id: 'track-1',
-        title: 'INCLUSIVITY',
+        title: 'POLYGON',
         content:
           'This track is a reminder of the beauty of inclusion and equality. Base your hacks on altering the social norms and build for the society on the lines of women empowerment, gender emancipation and societal justice.',
-        alt: 'Inclusivity Icon',
+        alt: 'Polygon logo',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_1_nhwkro.png',
-          width: '80%',
+          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/polygon_vvmhvg.png',
+          width: '60%',
         },
         color1: '#FFC41D',
         color2: '#B98C0A',
-        prizes: TrackPrizes,
+        prizes: TrackPrizesPolygon,
       },
       {
         id: 'track-2',
-        title: 'COMMUNITY',
+        title: 'FILECOIN',
         content:
           'This track serves to build for the community. Build for solving the problems of the society. Find solutions for the problems in healthcare, education etc. Each and every project that makes our lives better will adore this track.',
-        alt: 'Community Icon',
+        alt: 'FILECOIN LOGO',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_121_2_dma5gh.png',
+          src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1667588043/hn/Filecoin_Coloured_White_Text-1_q7q08w.png',
           width: '65%',
         },
         color1: '#71A0CE',
         color2: '#3A7BD5',
-        prizes: TrackPrizes,
+        prizes: TrackPrizesFilecoin,
       },
       {
         id: 'track-3',
-        title: 'SUSTAINABILITY',
+        title: 'SOLANA',
         content:
           'This track will seek to build projects that will make our lives more sustainable, including but not limited to teaching others how to ethically consume and creating greener technologies for the future.',
-        alt: 'Sustainability Icon',
+        alt: 'SOLANA LOGO',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/plant_ukfeoq.png',
+          src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1667587758/hn/Solana_Dark_wmguj1.svg',
           width: '50%',
         },
         color1: '#8FA963',
         color2: '#648B23',
-        prizes: TrackPrizes,
+        prizes: TrackPrizesSolana,
       },
       {
         id: 'track-4',
-        title: 'OPEN INNOVITY',
+        title: 'REPLIT',
         content:
           "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
-        alt: 'Open Innovity Icon',
+        alt: 'REPLIT LOGO',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Saly-43_n6atnu.png',
+          src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1667588167/hn/replit_fpppab.svg',
           width: '65%',
         },
         color1: '#E78967',
         color2: '#CA5024',
-        prizes: TrackPrizes,
+        prizes: TrackPrizesReplit,
       },
     ],
     additionalTracks: [
       {
         id: 'track-5',
-        title: 'BEST GIRLS TEAM',
+        title: 'TWILIO',
         content:
           "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
-        alt: 'Open Innovity Icon',
+        alt: 'Twilio Logo',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/ToyFaces_Tansparent_BG_47_1_ggn8zl.png',
+          src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148510/Sponsors/twilio_xahhqf.png',
           width: '50%',
         },
         color1: '#D290FD',
         color2: '#7209B7',
-        prizes: AdditionalTrackPrizes,
+        prizes: TrackPrizesTwilio,
       },
       {
         id: 'track-6',
-        title: 'BEST FRESHERS TEAM',
+        title: 'GoDaddy Registry',
         content:
           "This track demands creativity. Don't feel afraid to think out of the box and bend the rules. Be innovative by taking inspiration from existing ideas and build something unique that aligns with your ideas. Like we did to the track name!",
-        alt: 'Open Innovity Icon',
+        alt: 'GoDaddy Registry Logo',
         img: {
-          src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/clock_mba6wb.png',
+          src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1672148509/Sponsors/GoDaddy_uhfn0e.png',
           width: '50%',
         },
         color1: '#8D8D8C',
         color2: '#3F3F3F',
-        prizes: AdditionalTrackPrizes,
+        prizes: TrackPrizesGoDaddy,
       },
     ],
   },

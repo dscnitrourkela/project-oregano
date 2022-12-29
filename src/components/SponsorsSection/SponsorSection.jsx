@@ -25,7 +25,6 @@ function SponsorSection() {
       sponsors: sponsors.beta,
       bcolor: '#00FF00',
       span: 'span 5',
-      gap: '30px',
       grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber1:
         'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160912/HackNITR/Rectangle_635_lie4ss.svg',
@@ -37,7 +36,7 @@ function SponsorSection() {
       sponsors: sponsors.gamma,
       bcolor: '#0000FF',
       grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      span: 'span 5',
+      span: 'span 3',
       saber1:
         'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672161089/HackNITR/orange1_dxpjir.svg',
       saber2:
@@ -47,8 +46,8 @@ function SponsorSection() {
       title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
       bcolor: '#FFA500',
-      grid: 'repeat(auto-fit, minmax(200px, 1fr))',
-      span: 'span 5',
+      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+      span: 'span 2',
       saber1:
         'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160505/HackNITR/orange1_g28dnp.svg',
       saber2:

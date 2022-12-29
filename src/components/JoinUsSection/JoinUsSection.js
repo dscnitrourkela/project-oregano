@@ -15,7 +15,7 @@ import {
   CommunityPartnerDiv,
   CampusAmbassadorDiv,
   Head2,
-  Container,
+  Container
 } from './styles';
 
 function JoinUsSection() {
@@ -30,9 +30,8 @@ function JoinUsSection() {
                 <Header>
                   <Heading3 semibold>{Join.Mentor.head}</Heading3>
                 </Header>
-
                 <HeadImage>
-                  <Image src={Join.Mentor.speakerImages} alt='hey there' />
+                  <Image src={Join.Mentor.speakerImages} alt='speakers' />
                   <Caption>+{Join.Mentor.count} others</Caption>
                 </HeadImage>
               </Head>
@@ -53,7 +52,7 @@ function JoinUsSection() {
                   <Heading3 semibold>{Join.Speaker.head}</Heading3>
                 </Header>
                 <HeadImage>
-                  <Image src={Join.Mentor.speakerImages} />
+                  <Image src={Join.Speaker.speakerImages} alt='speakers'/>
                   <Caption>+{Join.Speaker.count} others</Caption>
                 </HeadImage>
               </Head>
@@ -85,7 +84,6 @@ function JoinUsSection() {
             <ContentImage
               src={Join.CampusAmbassador.img.src}
               alt={Join.CampusAmbassador.img.alt}
-              className='h-full w-auto'
             />
             <ContentText>
               <Head2>
