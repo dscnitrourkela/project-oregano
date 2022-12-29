@@ -133,14 +133,14 @@ export default {
     {
       src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672145676/HackNITR/GoDaddy-White-Logo.wine_w2zbub.svg',
       name: 'GoDaddy',
-      size: '75%',
+      size: '100%',
       link: 'https://www.godaddy.com/en-in',
       alt: 'GoDaddy',
     },
     {
       src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672146014/HackNITR/unnamed_ckyvcj.png',
       name: 'Twilio',
-      size: '65%',
+      size: '100%',
       link: 'https://www.twilio.com/',
       alt: 'Twilio',
     },
