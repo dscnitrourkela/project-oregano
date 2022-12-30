@@ -10,6 +10,7 @@ export default {
       date: '21st December',
       Date: '2022-12-21',
       label: '6pm IST',
+      Link: 'https://www.youtube.com/watch?v=xYbmPh2Igbc&t=1s',
       img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671788870/HackNITR/Siddharth-Storyblok_ftnrtt.jpg',
     },
     {
@@ -20,6 +21,7 @@ export default {
       date: '26th December',
       Date: '2022-12-26',
       label: '6:30 pm IST',
+      Link: 'https://www.youtube.com/watch?v=kY1v_bJq7HQ',
       img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671788868/HackNITR/IMG-20200126-WA0014_e33aax.jpg',
     },
     {
@@ -30,6 +32,7 @@ export default {
       date: '28th December',
       Date: '2022-12-28',
       label: '8:00 pm IST',
+      Link: 'https://www.youtube.com/watch?v=C9ADE6lDUjY',
       img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671951110/HackNITR/20221111_171044_xxvgru.jpg',
     },
   ],
