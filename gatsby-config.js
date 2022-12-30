@@ -1,30 +1,78 @@
-/* eslint-disable max-len */
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const config = require('./config/website');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
 module.exports = {
-  /* Your site config here */
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: 'HackNITR 4.0',
-    description:
-      'HackNITR 4.0 is one of a kind hackathon brought to you by DSC NIT Rourkela and OpenCode. A unique opportunity to bring out your ideas and technological skills to win awesome prizes and swags.',
-    siteUrl: 'https://hacknitr.com',
-    twitterUsername: '@hacknitr',
-    author: 'HackNITR',
+    siteUrl: config.siteUrl + pathPrefix,
+    title: config.siteTitle,
+    twitterHandle: config.twitterHandle,
+    description: config.siteDescription,
+    canonicalUrl: config.siteUrl,
+    image: config.siteLogo,
+    author: {
+      name: config.author,
+      minibio: config.siteDescription,
+    },
+    organization: {
+      name: config.organization,
+      url: config.siteUrl,
+      logo: config.siteLogo,
+    },
+    social: {
+      twitter: config.twitterHandle,
+      fbAppID: config.siteFBAppID,
+    },
   },
-
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
-    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
+        description: config.siteDescription,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: 'standalone',
+        icon: 'static/logo.png',
+        icons: [
+          {
+            src: '/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [config.googleAnalyticsID],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 };

@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+
+import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
+
 import { Layout } from '../components/shared/index';
 import Container from '../components/shared/Container';
 import '../styles/global.css';
@@ -12,8 +15,32 @@ import Prizes from '../components/Prizes';
 import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
 import Ticker from '../components/Ticker';
 import SponsorSection from '../components/SponsorsSection/SponsorSection';
+import SEO from '../components/shared/SEO/SEO';
 
-export default function Home() {
+const HomePage = ({ location }) => {
+  const isHome = location?.pathname === '/';
+  const [loading, setLoading] = useState(isHome);
+
+  useEffect(() => {
+    if (loading) {
+      return;
+    }
+
+    if (location.hash) {
+      const id = location.hash.substring(1); // location.hash without the '#'
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({
+            block: id === 'sponsors' ? 'nearest' : 'center',
+          });
+          el.focus();
+        }
+        setLoading(true);
+      }, 0);
+    }
+  }, [location.hash, loading]);
+
   return (
     <>
       <Helmet>
@@ -24,7 +51,10 @@ export default function Home() {
           defer
           src='//js.hs-scripts.com/8898157.js'
         />
+        <script type='application/ld+json'>{JSON.stringify(eventData)}</script>
+        <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
+      <SEO />
 
       <Layout>
         <Hero />
@@ -41,4 +71,6 @@ export default function Home() {
       </Layout>
     </>
   );
-}
+};
+
+export default HomePage;
