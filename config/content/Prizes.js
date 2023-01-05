@@ -1,14 +1,4 @@
 /* eslint-disable max-len */
-// const TrackPrizes = [
-//   '250$ Digital Ocean Credits ',
-//   'Egghead Coupon - 1 year',
-//   'Wolfram Lifetime Access',
-//   'Taskade Lifetime Pro Plan',
-//   'Repl.it Subscription for all members',
-//   'Sashido Subscription for all members',
-//   'Voiceflow Premium for all members',
-//   'XYZ domain names for all members',
-// ];
 const TrackPrizesPolygon = [
   '₹10,000 for the best hack built on Ethereum',
   '₹15,000 for the best hack built on Ethereum + Polygon',
@@ -37,17 +27,6 @@ const TrackPrizesTwilio = [
   'Get started with $50 in free credit!',
   'GameGo Console and more!',
 ];
-
-// const AdditionalTrackPrizes = [
-//   '150$ Digital Ocean Credits',
-//   'Egghead Coupon - 1 year',
-//   'Leading Learners Access',
-//   'Taskade Lifetime Pro Plan',
-//   'Repl.it Subscription for all members',
-//   'Sashido Subscription for all members',
-//   'Voiceflow Premium for all members',
-//   'XYZ domain names for all members',
-// ];
 
 export default {
   id: 'prizes',
