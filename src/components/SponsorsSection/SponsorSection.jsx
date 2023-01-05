@@ -25,7 +25,6 @@ function SponsorSection() {
       sponsors: sponsors.beta,
       bcolor: '#00FF00',
       span: 'span 3',
-      gap: '50px',
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
       saber1:
         'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160912/HackNITR/Rectangle_635_lie4ss.svg',
