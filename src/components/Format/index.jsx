@@ -16,6 +16,7 @@ const Event = ({
   className,
   mode,
   content,
+  guidelines,
 }) => {
   const handleClick = () => {
     setModalContent({
@@ -24,6 +25,7 @@ const Event = ({
       mode,
       content,
       id,
+      guidelines,
     });
 
     setModal(true);
@@ -82,6 +84,7 @@ const Format = () => {
                 className,
                 mode,
                 eventcontent,
+                guidelines,
               }) => (
                 <Event
                   key={id}
@@ -95,6 +98,7 @@ const Format = () => {
                   className={className}
                   mode={mode}
                   content={eventcontent}
+                  guidelines={guidelines}
                 />
               ),
             )}
@@ -125,6 +129,12 @@ const Format = () => {
             <li>Mode: {modalContent.mode}</li>
             <li>Date: {modalContent.title}</li>
             <Body1>{modalContent.content}</Body1>
+            <li>
+              Links:{' '}
+              <a style={{ color: 'blue' }} href={modalContent.guidelines}>
+                Submission Guidelines
+              </a>
+            </li>
           </ol>
         </Modal>
       )}

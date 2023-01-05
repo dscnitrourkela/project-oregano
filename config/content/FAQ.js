@@ -55,6 +55,12 @@ export default {
       answer:
         "Food, snacks, unlimited coffee and accommodation. As we are a student-run hackathon, travelling expenses won't be covered.",
     },
+    {
+      id: 10,
+      question: 'What are the guidelines for the submissions?',
+      answer:
+        'Kindly refer to the <a href="https://rattle-teal-0c8.notion.site/Submission-Guidelines-for-HackNITR-4-0-472969cd9e8a4dddb2f35319c09ed928">Submission guidelines</a>.',
+    },
   ],
 
   botImg: {
