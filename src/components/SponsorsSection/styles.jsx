@@ -96,7 +96,7 @@ export const Saber = styled.div`
     @media (min-width: 768px) {
       margin-left: -10px;
     }
-    transition: all 0.5s linear;
+    transition: all 0.4s ease-in-out;
   }
   & > .fix {
     margin-left: -4px;
