@@ -9,11 +9,14 @@ export default {
       eventTitle: '6th-8th January',
       description: 'Round 1 (Online)',
       mode: 'Online',
-      eventcontent: 'The participating teams will have to submit a prototype in the 1st round.  ',
+      eventcontent:
+        'The participating teams will have to submit a prototype in the 1st round. Kindly refer to the following guidelines for further info.',
       eventNumber: 1,
       column: '5 / 9',
       row: '1/3',
       className: 'first',
+      guidelines:
+        'https://rattle-teal-0c8.notion.site/Submission-Guidelines-for-HackNITR-4-0-472969cd9e8a4dddb2f35319c09ed928',
     },
     {
       eventTitle: '11th January',

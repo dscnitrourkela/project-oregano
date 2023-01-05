@@ -34,10 +34,14 @@ const TickerMover = styled.div`
     whitespace-nowrap
   `}
 
-  animation: ${ticker} 20s linear 0s infinite;
+  animation: ${ticker} 40s linear 0s infinite;
 
   &:hover {
     animation-play-state: paused;
+  }
+
+  @media (max-width: 720px) {
+    animation: ${ticker} 15s linear 0s infinite;
   }
 `;
 

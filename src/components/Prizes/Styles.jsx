@@ -13,7 +13,9 @@ export const Container = styled.div`
   grid-gap: 1rem;
 
   min-height: 300px;
-  height: auto;
+  height: 472px;
+
+  overflow: auto;
 `;
 
 export const Wrapper = styled.div`
