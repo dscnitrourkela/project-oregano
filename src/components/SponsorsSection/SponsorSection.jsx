@@ -5,7 +5,7 @@ import { Heading4, SectionLayout } from '..';
 import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles';
 
 // Assets
-import { sponsors } from '../../../config/content';
+import { sponsors } from '../../../config';
 
 // const links = {
 //   sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
