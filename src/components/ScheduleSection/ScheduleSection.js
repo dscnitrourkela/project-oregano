@@ -1,6 +1,6 @@
 import React from "react";
 import schedule from "../../../config/content/Schedule";
-import { Body1, Body2, Caption, Heading3, Heading4 } from "../shared";
+import { Body1, Body2, Caption, Heading2, Heading3, Heading4 } from "../shared";
 import { SectionLayout } from "../shared";
 import { GridContainer, DateContainer, EventContainer, EventDetailContainer, EventDetails, EventSpeaker, StarJediFont, EventCompletion, EventIndividualContainer, DottedLine } from "./styles";
 import styled from "styled-components";
@@ -21,6 +21,9 @@ font-weight: ${(props) => (props.semibold ? '600' : '400')};
 export default function ScheduleSection() {
     return (
         <>
+        <div className='w-full  mb-9'>
+            <Heading2 semibold>ROUND 1</Heading2>
+        </div>
         <StarJediFont />
         <SectionLayout>
             <GridContainer>
