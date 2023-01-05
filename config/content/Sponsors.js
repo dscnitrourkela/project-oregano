@@ -152,7 +152,7 @@ export default {
       alt: 'Fueler',
     },
     {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671881152/Sponsors/Axure_logo_175_o3d91l.svg',
+      src: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052019/axure_logo_4001x.png?bkzcT4rEHbOSEpTxkZdEi6G3aoPwy1xH&itok=eVx3xGaP',
       name: 'Axure',
       size: '100%',
       link: 'https://www.axure.com/',
@@ -180,7 +180,7 @@ export default {
       alt: 'interviewbuddy',
     },
     {
-      src: 'https://assets.devfolio.co/hackathons/63b3a379347c43328212ef6618c1aaa3/sponsors/2097f9b2d6024cfe920da61dce9cd883/299.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672944027/HackNITR/xyz-logo-white_uc8th5.svg',
       name: 'xyz',
       size: '100%',
       link: 'https://gen.xyz/',
