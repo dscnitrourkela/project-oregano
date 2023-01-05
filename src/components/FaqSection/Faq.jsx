@@ -25,7 +25,7 @@ const getUpdatedContent = (text) => {
   const urlPattern = /([^+>]*)[^<]*(<a [^>]*(href="([^>^"]*)")[^>]*>)([^<]+)(<\/a>)/gi;
   const output = text.replace(urlPattern, '$1_|_$2$3_|_$4_|_$5_|_$6').split('_|_');
 
-  updatedContent[`body-${1}`] = output[0];
+  [updatedContent[`body-${1}`]] = output;
   updatedContent[`link-${1}`] = {
     href: output[2],
     text: output[3],
