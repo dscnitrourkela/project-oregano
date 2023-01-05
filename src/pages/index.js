@@ -12,6 +12,8 @@ import Prizes from '../components/Prizes';
 import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
 import Ticker from '../components/Ticker';
 import SponsorSection from '../components/SponsorsSection/SponsorSection';
+import ScheduleSection from '../components/ScheduleSection/ScheduleSection';
+import Schedule from '../../config/content/Schedule';
 
 export default function Home() {
   return (
@@ -33,6 +35,7 @@ export default function Home() {
           <Prizes />
           <ResponsiveCarousel />
           <Format />
+          <ScheduleSection />
           <SponsorUs />
           <SponsorSection />
           <JoinUsSection />

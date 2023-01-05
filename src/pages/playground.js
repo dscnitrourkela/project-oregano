@@ -1,7 +1,7 @@
 import React from 'react';
 
 import JoinUsSection from '../components/JoinUsSection/JoinUsSection'
-
+import { ScheduleSection } from '../components';
 import {
   Heading1,
   Heading2,
@@ -18,7 +18,7 @@ import {
 export default function Playground() {
   return (
     <div>
-      <JoinUsSection />
+      <ScheduleSection />
     </div>
   );
 }
