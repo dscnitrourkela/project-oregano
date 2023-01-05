@@ -4,7 +4,7 @@ export default {
   titleLine: { text: 'THE FOURTH EDITION' },
   tagline: {
     taglinetext: 'IDEATE. IMPLEMENT. INNOVATE',
-    taglinedesc: 'in India largest student run hackathon. Join the forces on 6-8 January',
+    taglinedesc: "One of India's largest student run hackathon. Join the forces on 6-8th January.",
   },
   Hackimg: {
     src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1669992432/hn/Hack_n8mngx.png',

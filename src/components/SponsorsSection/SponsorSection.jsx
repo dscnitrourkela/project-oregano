@@ -1,95 +1,129 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable no-nested-ternary */
 import React from 'react';
 
-import { Wrapper, SectionContainer, SponsorContainer, SponsorLogo, Saber } from './styles';
-import { sponsors } from '../../../config';
-import { Heading2, Heading3, SectionLayout } from '../shared';
-import saberAlpha1 from '../../../images/saberAlpha1.png';
-import saberAlpha2 from '../../../images/saberAlpha2.png';
-import saberBeta1 from '../../../images/saberBeta1.png';
-import saberBeta2 from '../../../images/saberBeta2.png';
+// Components
+import { Heading4, SectionLayout } from '..';
+import { SponsorContainer, HeadingSection, SponsorIcon, Wrapper } from './styles';
 
-function SponsorSection() {
+// Assets
+import { sponsors } from '../../../config/content';
+
+// const links = {
+//   sponsor: 'https://hacknitr21.typeform.com/to/maI5lJ4t',
+// };
+
+function Sponsor() {
   const sponsorDetails = [
     {
       title: 'ALPHA SPONSORS',
       sponsors: sponsors.alpha,
-      bcolor: '#A020F0',
+      bcolor: '#EBB722',
+      color: '#EBB722',
       span: 'span 5',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      saber: 1,
+      gap: '0px',
     },
     {
       title: 'BETA SPONSORS',
       sponsors: sponsors.beta,
-      bcolor: '#00FF00',
+      bcolor: '#71A0CE',
+      color: '#71A0CE',
       span: 'span 5',
-      //gap: '30px',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      saber: 2,
+      gap: '30px',
     },
-    {
-      title: 'GAMMA SPONSORS',
-      sponsors: sponsors.gamma,
-      bcolor: '#0000FF',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      span: 'span 3',
-    },
+    // {
+    //   title: 'GAMMA SPONSORS',
+    //   sponsors: sponsors.gamma,
+    //   bcolor: '#E78967',
+    //   color: '#E78967',
+    //   grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+    //   span: 'span 2',
+    // },
     {
       title: 'DELTA SPONSORS',
       sponsors: sponsors.delta,
-      bcolor: '#FFA500',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
-      span: 'span 2',
+      bcolor: '#8FA963',
+      color: '#8FA963',
+      // grid: 'repeat(auto-fit, minmax(130px, 1fr))',
+      span: 'span 5',
     },
+    // {
+    //   title: 'MEDIA PARTNERS',
+    //   sponsors: sponsors['media-partners'],
+    //   bcolor: 'transparent',
+    //   span: 'span 5',
+    //   gap: '0px',
+    // },
+    // {
+    //   title: 'AUTHENTICATION PARTNER',
+    //   sponsors: sponsors['authentication-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 2',
+    //   grid: '1fr 1fr 1fr ',
+    // },
+    // {
+    //   title: 'MENTAL HEALTH PARTNER',
+    //   sponsors: sponsors['mental-health-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 2',
+    //   grid: '1fr 1fr 1fr ',
+    // },
+    // {
+    //   title: 'CODING PARTNER',
+    //   sponsors: sponsors['coding-partner'],
+    //   bcolor: 'transparent',
+    //   span: 'span 1',
+    //   grid: '1fr 1fr 1fr ',
+    // },
   ];
 
   return (
-    <SectionLayout id={sponsors.id}>
-      <div className='w-full  mb-9'>
-        <Heading2 semibold>SPONSORS</Heading2>
-      </div>
-      <div className='w-full grid gap-9 '>
-        {sponsorDetails.map((details, idx) => (
+    <SectionLayout
+      id='sponsors'
+      title={sponsors.title}
+      description={sponsors.content}
+      // link={{ text: 'Sponsor Us', link: links.sponsor }}
+    >
+      <div
+        style={{
+          marginTop: '1rem',
+        }}
+      />
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 0.5fr 0.5fr 0.5fr 1fr',
+          gridGap: '30px',
+        }}
+      >
+        {sponsorDetails.map((details) => (
           <Wrapper
-            key={idx}
-            brcol={details.bcolor}
             style={{
+              borderColor: details.bcolor,
               gridColumnEnd: details.span,
             }}
+            key={details.title}
           >
-            <SectionContainer>
-              <Heading3 semibold>{details.title}</Heading3>
-              <Saber className='saber-img'>
-                {details.saber === 1 ? (
-                  // <img src={} />
-                  <>
-                    <img src={saberAlpha1} alt='saber' className='fix' />
-                    <img src={saberAlpha2} alt='saber' className='movable' />
-                  </>
-                ) : details.saber === 2 ? (
-                  <>
-                    <img src={saberBeta1} alt='saber' className='fix' />
-                    <img src={saberBeta2} alt='saber' className='movable' />
-                  </>
-                ) : (
-                  <div />
-                )}
-              </Saber>
-            </SectionContainer>
-
+            <HeadingSection>
+              <Heading4
+                style={{
+                  fontWeight: '700',
+                  color: details.color,
+                }}
+              >
+                {details.title}
+              </Heading4>
+            </HeadingSection>
             <SponsorContainer style={{ gap: details.gap, gridTemplateColumns: details.grid }}>
-              {details.sponsors.map(({ src, alt, size, link }, index) => (
-                <SponsorLogo key={index}>
-                  {src ? (
-                    <a href={link} target='_blank' rel='noopener noreferrer'>
-                      <img src={src} alt={alt} style={{ width: size }} />
-                    </a>
-                  ) : (
-                    <div />
-                  )}
-                </SponsorLogo>
+              {details.sponsors.map(({ src, alt, size, link, margin, marginTop }) => (
+                // eslint-disable-next-line react/no-array-index-key
+                <SponsorIcon
+                  key={link}
+                  pic={src}
+                  alt={alt}
+                  size={size}
+                  link={link}
+                  margin={margin}
+                  marginTop={marginTop}
+                />
               ))}
             </SponsorContainer>
           </Wrapper>
@@ -99,4 +133,4 @@ function SponsorSection() {
   );
 }
 
-export default SponsorSection;
+export default Sponsor;

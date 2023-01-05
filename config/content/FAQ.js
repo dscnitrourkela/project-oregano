@@ -49,6 +49,12 @@ export default {
       answer:
         'To ensure a positive experience among all the participants, we follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>. It is advised that you go through it once.',
     },
+    {
+      id: 9,
+      question: 'What all expenses will be covered by us for Round 2?',
+      answer:
+        "Food, snacks, unlimited coffee and accommodation. As we are a student-run hackathon, travelling expenses won't be covered.",
+    },
   ],
 
   botImg: {
