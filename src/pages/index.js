@@ -16,6 +16,7 @@ import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
 import Ticker from '../components/Ticker';
 import SponsorSection from '../components/SponsorsSection/SponsorSection';
 import SEO from '../components/shared/SEO/SEO';
+import { CommunitySection } from '../components';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -65,6 +66,7 @@ const HomePage = ({ location }) => {
           <Format />
           <SponsorUs />
           <SponsorSection />
+          <CommunitySection />
           <JoinUsSection />
           <FAQ />
         </Container>
