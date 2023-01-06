@@ -45,8 +45,9 @@ const Event = ({
 
 const DaysLeft = ({ content }) => {
   const { description, column, row, link } = content;
-  const today = new Date().toISOString().slice(0, 10);
-  const numberOfDays = (new Date('2023-01-05') - new Date(today)) / (1000 * 60 * 60 * 24);
+  const today = new Date().getTime();
+  const lastDay = new Date('2023-01-07 00:00').getTime();
+  const numberOfHours = Math.round((lastDay - today) / (1000 * 60 * 60));
 
   return (
     <RegisterContainer style={{ gridColumn: `${column}`, gridRow: `${row}` }}>
@@ -55,7 +56,9 @@ const DaysLeft = ({ content }) => {
           src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533672/HackNITR/Frame_78_eqq6fw.svg'
           alt='Logo'
         />
-        <Heading4 semibold>{`${numberOfDays} Days Left`}</Heading4>
+        <Heading4 semibold>
+          {numberOfHours > 0 ? `${numberOfHours} Hours Left` : 'Registration is Over'}
+        </Heading4>
       </div>
       <Button small filled text='REGISTER NOW' link={link} />
       <Body2>{description}</Body2>
