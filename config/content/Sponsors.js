@@ -63,6 +63,22 @@ export default {
       width: '170px',
       alt: 'Replit',
     },
+    {
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672944961/HackNITR/Shardeum_Logo_Light_thajcd.svg',
+      name: 'shardeum',
+      size: '90%',
+      link: 'https://shardeum.org/',
+      width: '170px',
+      alt: 'shardeum',
+    },
+    {
+      src: 'https://assets.devfolio.co/hackathons/63b3a379347c43328212ef6618c1aaa3/sponsors/71d81da18cfa4892a24f0cb7d9b0ea18/854.png',
+      name: 'digitalocean',
+      size: '90%',
+      link: 'https://digitalocean.com/',
+      width: '170px',
+      alt: 'digitalocean',
+    },
   ],
   gamma: [
     {
@@ -75,7 +91,7 @@ export default {
     {
       src: 'https://assets.devfolio.co/hackathons/63b3a379347c43328212ef6618c1aaa3/sponsors/2989606dfb894c4b8df46a5e7f71a24f/202.jpeg',
       name: 'Tezos',
-      size: '80%',
+      size: '100%',
       link: 'https://tezos.com/',
       alt: 'Tezos',
     },
@@ -85,6 +101,13 @@ export default {
       size: '100%',
       link: 'https://li.fi/',
       alt: 'LIFI',
+    },
+    {
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672945012/HackNITR/download_6_ooswsx.png',
+      name: 'earthhacks',
+      size: '100%',
+      link: 'https://earthhacks.io/',
+      alt: 'earthhacks',
     },
   ],
   delta: [
@@ -152,7 +175,7 @@ export default {
       alt: 'Fueler',
     },
     {
-      src: 'https://res.cloudinary.com/dme9vltjf/image/upload/v1671881152/Sponsors/Axure_logo_175_o3d91l.svg',
+      src: 'https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052019/axure_logo_4001x.png?bkzcT4rEHbOSEpTxkZdEi6G3aoPwy1xH&itok=eVx3xGaP',
       name: 'Axure',
       size: '100%',
       link: 'https://www.axure.com/',
@@ -180,7 +203,7 @@ export default {
       alt: 'interviewbuddy',
     },
     {
-      src: 'https://assets.devfolio.co/hackathons/63b3a379347c43328212ef6618c1aaa3/sponsors/2097f9b2d6024cfe920da61dce9cd883/299.png',
+      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672944027/HackNITR/xyz-logo-white_uc8th5.svg',
       name: 'xyz',
       size: '100%',
       link: 'https://gen.xyz/',
