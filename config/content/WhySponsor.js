@@ -2,7 +2,7 @@
 export default {
   id: 'why-sponsor-us',
   img: {
-    src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672945307/HackNITR/Chart_13_3_u7hhoh.png',
+    src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027909/HackNITR/Chart_13_3_u7hhoh_s8ut1a.png',
     alt: 'WhySponsor',
   },
   Title: {

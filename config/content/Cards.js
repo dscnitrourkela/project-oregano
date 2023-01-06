@@ -21,7 +21,7 @@ export default {
       date: '26th December',
       Date: '2022-12-26',
       label: '6:30 pm IST',
-      img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671788868/HackNITR/IMG-20200126-WA0014_e33aax.jpg',
+      img: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027915/HackNITR/IMG-20200126-WA0014_e33aax_bnxfor.jpg',
       vidLink: 'https://youtu.be/kY1v_bJq7HQ',
     },
     {
@@ -32,7 +32,7 @@ export default {
       date: '28th December',
       Date: '2022-12-28',
       label: '8:00 pm IST',
-      img: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671951110/HackNITR/20221111_171044_xxvgru.jpg',
+      img: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027910/HackNITR/20221111_171044_xxvgru_fvfg6a.jpg',
       vidLink: 'https://youtu.be/C9ADE6lDUjY',
     },
   ],

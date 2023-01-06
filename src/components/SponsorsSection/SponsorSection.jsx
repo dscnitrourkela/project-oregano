@@ -16,9 +16,9 @@ function SponsorSection() {
       span: 'span 5',
       grid: 'repeat(auto-fit, minmax(120px, 1fr))',
       saber1:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672162046/HackNITR/Rectangle_635_qzr4xr.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_635_qzr4xr_lvuqxu.svg',
       saber2:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672161960/HackNITR/Rectangle_636_aubgds.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_636_aubgds_n0mcnd.svg',
     },
     {
       title: 'BETA SPONSORS',
@@ -27,9 +27,9 @@ function SponsorSection() {
       span: 'span 3',
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
       saber1:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160912/HackNITR/Rectangle_635_lie4ss.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_635_lie4ss_u78l00.svg',
       saber2:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160934/HackNITR/Rectangle_636_ngz5bl.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_636_ngz5bl_p3mxvc.svg',
     },
     {
       title: 'GAMMA SPONSORS',
@@ -38,9 +38,9 @@ function SponsorSection() {
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
       span: 'span 2',
       saber1:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672161089/HackNITR/orange1_dxpjir.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673027915/HackNITR/orange1_dxpjir_ioffgz.svg',
       saber2:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672161891/HackNITR/Rectangle_636_bqza2e.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_636_bqza2e_x369n0.svg',
     },
     {
       title: 'DELTA SPONSORS',
@@ -49,9 +49,9 @@ function SponsorSection() {
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
       span: 'span 5',
       saber1:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672160505/HackNITR/orange1_g28dnp.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673027915/HackNITR/orange1_g28dnp_zrrmz8.svg',
       saber2:
-        'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672161983/HackNITR/Rectangle_636_ghtugd.svg',
+        'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_636_ghtugd_hnah07.svg',
     },
   ];
 

@@ -72,7 +72,7 @@ export default {
       link: 'https://dscnitrourkela.org/team.html',
       span: true,
       image: {
-        src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1671951954/HackNITR/Frame_11_ilwmzh.png',
+        src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027911/HackNITR/Frame_11_ilwmzh_nugoqr.png',
         alt: 'Google DSC NIT Rourkela',
       },
       column: 'span 2',

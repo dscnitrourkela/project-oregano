@@ -5,7 +5,7 @@ export default {
   Mentor: {
     head: 'Become a Hack Mentor',
     img: {
-      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141607/HackNITR/Frame_286_nq71s7.svg',
+      src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027915/HackNITR/Frame_286_nq71s7_zv0ydx.svg',
       alt: 'Become a Hack Mentor',
     },
     description:
@@ -19,7 +19,7 @@ export default {
   Speaker: {
     head: 'Become a Hack Speaker',
     img: {
-      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141600/HackNITR/Frame_346_abu55k.svg',
+      src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027913/HackNITR/Frame_346_abu55k_rk5lnc.svg',
       alt: 'Become a Hack Speaker',
     },
     heading: 'Help us conduct an awesome Hackathon!',
@@ -34,7 +34,7 @@ export default {
   CommunityPartner: {
     head: 'Join us as a Community Partner',
     img: {
-      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141601/HackNITR/Frame_286_1_ojketk.svg',
+      src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027911/HackNITR/Frame_286_1_ojketk_hkrxdy.svg',
       alt: 'Join us as a Community Partner',
     },
     description:
@@ -45,8 +45,8 @@ export default {
   CampusAmbassador: {
     head: 'Become our Campus Ambassador',
     img: {
-      src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672141600/HackNITR/Frame_286_2_f52jfs.svg',
-      alt: 'Become our Campus Ambassador',
+      src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027913/HackNITR/Frame_286_2_f52jfs_ibamc8.svg',
+      alt: 'Be  come our Campus Ambassador',
     },
     description:
       'Be the brand ambassador of HackNITR 4.0. Be our campus ambassador and become the face of the hackathon by promoting the event in the campus and recruiting students to participate.',
