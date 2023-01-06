@@ -17,6 +17,7 @@ import Ticker from '../components/Ticker';
 import SponsorSection from '../components/SponsorsSection/SponsorSection';
 import SEO from '../components/shared/SEO/SEO';
 import { CommunitySection } from '../components';
+import ScheduleSection from '../components/ScheduleSection/ScheduleSection'
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -64,6 +65,7 @@ const HomePage = ({ location }) => {
           <Prizes />
           <ResponsiveCarousel />
           <Format />
+          <ScheduleSection />
           <SponsorUs />
           <SponsorSection />
           <CommunitySection />
