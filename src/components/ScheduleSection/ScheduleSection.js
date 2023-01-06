@@ -5,6 +5,7 @@ import { SectionLayout } from "../shared";
 import { GridContainer, DateContainer, EventContainer, EventDetailContainer, EventDetails, EventSpeaker, StarJediFont, EventCompletion, EventIndividualContainer, DottedLine } from "./styles";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { SectionHeading } from "./styles";
 const Caption1 = styled(Caption)`
 ${tw`
     text-[#FFD60A] 
@@ -22,11 +23,11 @@ text-overflow: ellipsis;
 export default function ScheduleSection() {
     return (
         <>
-            <div className='w-full  mb-9'>
-                <Heading2 semibold>ROUND 1</Heading2>
-            </div>
             <StarJediFont />
             <SectionLayout>
+            <SectionHeading>
+                <Heading2 semibold>ROUND 1</Heading2>
+            </SectionHeading>
                 <GridContainer>
                     {
                         schedule.schedule.map(({ date, events }) => (

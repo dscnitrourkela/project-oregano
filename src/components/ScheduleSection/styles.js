@@ -12,6 +12,15 @@ export const StarJediFont = createGlobalStyle`
   }
   `
 
+export const SectionHeading = styled.div`
+font-family: 'starjedi';
+${tw`
+w-full
+md:mb-9
+mb-4
+`}
+`
+
 export const GridContainer = styled.div`
 ${tw`
 w-full
