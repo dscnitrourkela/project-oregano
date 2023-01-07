@@ -196,7 +196,7 @@ export default {
         title: 'Auth0',
         alt: 'Auth0 Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672146559/HackNITR/brand_evolution_logo_Auth0_white_m8hcor.svg',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027909/HackNITR/brand_evolution_logo_Auth0_white_m8hcor_rl1thh.svg',
           width: '50%',
         },
         color1: '#8D8D8C',
@@ -208,7 +208,7 @@ export default {
         title: 'CockRoach DB',
         alt: 'CockRoach DB Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672145667/HackNITR/Screenshot_from_2022-12-27_18-20-16_zuupj6.png',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673028465/HackNITR/Screenshot_from_2022-12-27_18-20-16_zuupj6_nu8pzj.png',
           width: '50%',
         },
         color1: '#FFC41D',
@@ -220,7 +220,7 @@ export default {
         title: 'Velo',
         alt: 'Velo Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672147160/HackNITR/download_qjusxz.png',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027910/HackNITR/download_qjusxz_dccnpa.png',
           width: '50%',
         },
         color1: '#D290FD',
@@ -232,7 +232,7 @@ export default {
         title: 'EarthHacks',
         alt: 'EarthHacks Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672945012/HackNITR/download_6_ooswsx.png',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027910/HackNITR/download_6_ooswsx_d9idrb.png',
           width: '50%',
         },
         color1: '#8FA963',
@@ -244,7 +244,7 @@ export default {
         title: 'Shardeum',
         alt: 'Shardeum Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672944961/HackNITR/Shardeum_Logo_Light_thajcd.svg',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673028465/HackNITR/Shardeum_Logo_Light_thajcd_zsfpax.svg',
           width: '50%',
         },
         color1: '#8D8D8C',
@@ -256,7 +256,7 @@ export default {
         title: 'ApyHub',
         alt: 'ApyHub Logo',
         img: {
-          src: 'https://res.cloudinary.com/dmutbjmoo/image/upload/v1672147854/HackNITR/apyhub-logo-negative-tm_hncnyj.svg',
+          src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673027909/HackNITR/apyhub-logo-negative-tm_hncnyj_m2segf.svg',
           width: '50%',
         },
         color1: '#E78967',

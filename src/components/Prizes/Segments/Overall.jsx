@@ -151,7 +151,7 @@ const OverallPrizes = () => {
       <ImgContainer>
         <Img
           // eslint-disable-next-line max-len
-          src='https://res.cloudinary.com/dmutbjmoo/image/upload/v1671533673/HackNITR/Group_143_hcigik.svg'
+          src='https://res.cloudinary.com/dujqfyato/image/upload/v1673027913/HackNITR/Group_143_hcigik_ihlt5h.svg'
           alt='HackNITR 4.0 Prizes'
         />
       </ImgContainer>
