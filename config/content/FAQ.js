@@ -63,7 +63,7 @@ export default {
     },
     {
       id: 11,
-      question: 'What are the rules and regulations for HackNITR 4.0?',
+      question: 'What are the rules and regulations for HackNITR?',
       answer:
         'Kindly refer to the <a href="https://rattle-teal-0c8.notion.site/Rulebook-HackNITR-4-0-3626449b995c40b4afea4ee4b7245739">Rulebook: HackNITR 4.0</a>.',
     },
