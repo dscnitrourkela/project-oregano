@@ -3,9 +3,19 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
 
-import { Wrapper, SectionContainer, SponsorContainer, SponsorLogo, Saber } from './styles';
 import { sponsors } from '../../../config';
-import { Heading2, Heading3, SectionLayout } from '../shared';
+import {
+  Heading2,
+  Heading3,
+  SectionLayout,
+} from '../shared';
+import {
+  Saber,
+  SectionContainer,
+  SponsorContainer,
+  SponsorLogo,
+  Wrapper,
+} from './styles';
 
 function SponsorSection() {
   const sponsorDetails = [
@@ -13,8 +23,9 @@ function SponsorSection() {
       title: 'ALPHA SPONSORS',
       sponsors: sponsors.alpha,
       bcolor: '#A020F0',
-      span: 'span 5',
-      grid: 'repeat(auto-fit, minmax(120px, 1fr))',
+      span: 'span 3',
+      grid: 'repeat(auto-fit, minmax(200px, 1fr))',
+      gap: '30px',
       saber1:
         'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_635_qzr4xr_lvuqxu.svg',
       saber2:
@@ -24,7 +35,7 @@ function SponsorSection() {
       title: 'BETA SPONSORS',
       sponsors: sponsors.beta,
       bcolor: '#00FF00',
-      span: 'span 3',
+      span: 'span 2',
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
       saber1:
         'https://res.cloudinary.com/dujqfyato/image/upload/v1673028463/HackNITR/Rectangle_635_lie4ss_u78l00.svg',
@@ -36,7 +47,7 @@ function SponsorSection() {
       sponsors: sponsors.gamma,
       bcolor: '#0000FF',
       grid: 'repeat(auto-fit, minmax(200px, 1fr))',
-      span: 'span 2',
+      span: 'span 5',
       saber1:
         'https://res.cloudinary.com/dujqfyato/image/upload/v1673027915/HackNITR/orange1_dxpjir_ioffgz.svg',
       saber2:

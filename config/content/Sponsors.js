@@ -109,6 +109,13 @@ export default {
       link: 'https://earthhacks.io/',
       alt: 'earthhacks',
     },
+    {
+      src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673792160/HackNITR/BuidlersTribe-Logo-White_w0hh5f.png',
+      name: 'buidlerstribe',
+      size: '100%',
+      link: 'https://buidlerstribe.com/',
+      alt: 'buidlerstribe',
+    },
   ],
   delta: [
     {
