@@ -7,3 +7,5 @@ export { default as footer } from './content/Footer';
 export { default as join } from './content/Join';
 export { default as website } from './website';
 export { default as community } from './content/Community';
+export { default as moments } from './content/Moments';
+export { default as about } from './content/About';

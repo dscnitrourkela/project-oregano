@@ -16,16 +16,16 @@ export default {
     //   name: 'Prizes',
     //   link: '/prizes',
     // },
-    // {
-    //   id: 'sessions',
-    //   name: 'Sessions',
-    //   link: '/sessions',
-    // },
-    // {
-    //   id: 'format',
-    //   name: 'Our Format',
-    //   link: '/Format',
-    // },
+    {
+      id: 'about',
+      name: 'About Us',
+      link: '/about',
+    },
+    {
+      id: 'moments',
+      name: 'Moments',
+      link: '/moments',
+    },
     {
       id: 'sponsors',
       name: 'Sponsors',
