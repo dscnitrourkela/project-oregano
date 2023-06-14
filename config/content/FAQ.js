@@ -61,6 +61,12 @@ export default {
       answer:
         'Kindly refer to the <a href="https://rattle-teal-0c8.notion.site/Submission-Guidelines-for-HackNITR-4-0-472969cd9e8a4dddb2f35319c09ed928">Submission guidelines</a>.',
     },
+    {
+      id: 11,
+      question: 'What are the rules and regulations for HackNITR?',
+      answer:
+        'Kindly refer to the <a href="https://rattle-teal-0c8.notion.site/Rulebook-HackNITR-4-0-3626449b995c40b4afea4ee4b7245739">Rulebook: HackNITR 4.0</a>.',
+    },
   ],
 
   botImg: {
