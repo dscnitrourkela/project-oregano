@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import navList from '../../../../../config/navigation';
 import { MenuButton, NavBar, Logo } from './style';
-import { MLHbanner, Container } from '../../../shared';
+import { Container } from '../../../shared';
 import MobileNavList from './MobileNavList/MobileNavList';
 
 // Function Returning new scroll object
@@ -46,7 +46,7 @@ function MobileNav() {
 
           <Logo src={navList.logo.src} alt={navList.logo.alt} />
 
-          <MLHbanner />
+          {/* <MLHbanner /> */}
         </nav>
       </Container>
 

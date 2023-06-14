@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import navList from '../../../../../config/navigation';
 import { NavBar, Logo, NavItem } from './style';
-import { MLHbanner } from '../../../shared';
+// import { MLHbanner } from '../../../shared';
 
 // Function Returning new scroll object
 const newScrollObject = () => {
@@ -51,9 +51,7 @@ function DesktopNav() {
           </ul>
         </nav>
 
-        <div className='nav-right'>
-          <MLHbanner />
-        </div>
+        <div className='nav-right'>{/* <MLHbanner /> */}</div>
       </div>
     </NavBar>
   );

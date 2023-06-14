@@ -3,9 +3,9 @@ import { faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 export default {
-  title: 'Our Community Partners',
+  title: 'Past Community Partners',
   content:
-    'Our partners help us make HackNITR 4.0 great and help us spread the HackNITR vibes far and wide',
+    'Our partners helped us make HackNITR 4.0 great and spread the HackNITR vibes far and wide',
   buttonText: 'Claim',
   colors: [
     {

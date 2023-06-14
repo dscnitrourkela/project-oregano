@@ -1,10 +1,10 @@
 /* eslint-disable max-len */
 export default {
   id: 'home',
-  titleLine: { text: 'THE FOURTH EDITION' },
+  titleLine: { text: 'THE FIFTH EDITION' },
   tagline: {
     taglinetext: 'IDEATE. IMPLEMENT. INNOVATE',
-    taglinedesc: "One of India's largest student run hackathon. Join the forces on 6-8th January.",
+    taglinedesc: "India's largest student run hackathon. Join the forces on 12-14th January.",
   },
   Hackimg: {
     src: 'https://res.cloudinary.com/ratnakar5938/image/upload/v1669992432/hn/Hack_n8mngx.png',

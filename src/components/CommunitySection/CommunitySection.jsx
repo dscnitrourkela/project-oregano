@@ -35,7 +35,7 @@ const Description = styled(Body1)`
 `;
 
 const ConfSection = () => (
-  <ConfContainer>
+  <ConfContainer id='community'>
     <Container>
       <SectionContainer>
         <Heading2 semibold>{community.title}</Heading2>

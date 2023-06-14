@@ -3,21 +3,17 @@ import { Helmet } from 'react-helmet';
 
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
-import { Layout } from '../components/shared/index';
+import { Layout, SectionLayout } from '../components/shared/index';
 import Container from '../components/shared/Container';
 import '../styles/global.css';
 import Hero from '../components/HeroSection/HeroSection';
 import FAQ from '../components/FaqSection/Faq';
-import SponsorUs from '../components/WhySponsorUs/WhySponsorUs';
-import ResponsiveCarousel from '../components/carousel/ResponsiveCarousel';
-import Format from '../components/Format';
-import Prizes from '../components/Prizes';
-import JoinUsSection from '../components/JoinUsSection/JoinUsSection';
 import Ticker from '../components/Ticker';
 import SponsorSection from '../components/SponsorsSection/SponsorSection';
 import SEO from '../components/shared/SEO/SEO';
 import { CommunitySection } from '../components';
-import ScheduleSection from '../components/ScheduleSection/ScheduleSection'
+import Moments from '../components/Moments';
+import { about } from '../../config';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -62,14 +58,11 @@ const HomePage = ({ location }) => {
         <Hero />
         <Ticker />
         <Container>
-          <Prizes />
-          <ResponsiveCarousel />
-          <Format />
-          <ScheduleSection />
-          <SponsorUs />
+          <SectionLayout id='about' title={about.title} description={about.content} />;
+          <Moments />
           <SponsorSection />
           <CommunitySection />
-          <JoinUsSection />
+          {/* <JoinUsSection /> */}
           <FAQ />
         </Container>
       </Layout>
