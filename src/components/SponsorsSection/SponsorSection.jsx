@@ -4,18 +4,8 @@
 import React from 'react';
 
 import { sponsors } from '../../../config';
-import {
-  Heading2,
-  Heading3,
-  SectionLayout,
-} from '../shared';
-import {
-  Saber,
-  SectionContainer,
-  SponsorContainer,
-  SponsorLogo,
-  Wrapper,
-} from './styles';
+import { Heading2, Heading3, SectionLayout } from '../shared';
+import { Saber, SectionContainer, SponsorContainer, SponsorLogo, Wrapper } from './styles';
 
 function SponsorSection() {
   const sponsorDetails = [
@@ -69,7 +59,7 @@ function SponsorSection() {
   return (
     <SectionLayout id={sponsors.id}>
       <div className='w-full  mb-9'>
-        <Heading2 semibold>SPONSORS</Heading2>
+        <Heading2 semibold>OUR PAST SPONSORS</Heading2>
       </div>
       <div className='w-full grid gap-9 '>
         {sponsorDetails.map((details, idx) => (
