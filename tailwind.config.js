@@ -50,6 +50,7 @@ module.exports = {
         roboto: ['Roboto', ...defaultTheme.fontFamily.sans],
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
         sixcaps: ['Six Caps', ...defaultTheme.fontFamily.sans],
+        prompt: ['Prompt', ...defaultTheme.fontFamily.sans],
       },
     },
     screens: {
