@@ -3,13 +3,13 @@ import tw from 'twin.macro';
 
 export default styled.h1`
   ${tw`
-        font-normal
-        text-5xl
+        font-medium
+        text-[48px]
         xl:text-5xl
         lg:text-4xl
-        md:text-3xl
+        md:text-[64px]
         sm:text-3xl
         text-color-primary
-        font-roboto
+        font-prompt
     `}
 `;
