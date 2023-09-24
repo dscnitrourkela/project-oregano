@@ -3,7 +3,7 @@ import tw from 'twin.macro';
 
 export default styled.h1`
   ${tw`
-        font-normal
+        font-medium
         text-[48px]
         xl:text-5xl
         lg:text-4xl
@@ -11,7 +11,5 @@ export default styled.h1`
         sm:text-3xl
         text-color-primary
         font-prompt
-        color: #000;
-
     `}
 `;

@@ -4,12 +4,12 @@ import tw from 'twin.macro';
 export default styled.h2`
   ${tw`
         font-normal
-        text-4xl
+        text-[32px]
         2xl:text-4xl
         lg:text-3xl
-        md:text-2xl
+        md:text-[48px]
         sm:text-2xl
         text-color-primary
-        font-roboto
+        font-prompt
     `}
 `;
