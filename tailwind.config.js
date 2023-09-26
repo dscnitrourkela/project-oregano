@@ -62,7 +62,7 @@ module.exports = {
         200: '#FF3FC0',
         300: '#CC329A',
       }
-        ,'Primary-purple': {
+        ,'primary-purple': {
         50: '#C48DFF' ,
         100: '#B067FF',
         200: '#9C41FF',
