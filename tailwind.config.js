@@ -47,9 +47,9 @@ module.exports = {
 
       colors: {
 
-        'background-primary':  '#0E0812',
+      'background-primary':  '#0E0812',
 
-      'neutral-yellow': {
+        'neutral-yellow': {
         50:'#FEE27F',
         100: '#FED954',
         200 : '#FECF29',
@@ -91,12 +91,7 @@ module.exports = {
         500: '#858585',
         600: '#545454',
         }
-        // 'color-primary': '#EAEAEA',
-        // 'color-secondary': '#D6D6D6',
-        // 'color-tertiary': '#A3A3A3',
-        // 'btn-yellow': '#FFE81F',
-        // 'background-dark': '#202020',
-        // 'background-darker': '#000811',
+        
       },
       borderRadius: {
         '4xl': '32px',
