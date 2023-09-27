@@ -65,6 +65,7 @@ module.exports = {
       fontFamily: {
         Inter: ['Inter', ...defaultTheme.fontFamily.sans],
         Prompt: ['Prompt', ...defaultTheme.fontFamily.sans],
+
       },
 
       letterSpacing: {

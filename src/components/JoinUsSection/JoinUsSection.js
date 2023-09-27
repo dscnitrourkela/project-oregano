@@ -1,7 +1,7 @@
 import React from 'react';
 import { Popup } from 'react-typeform-embed';
 import Join from '../../../config/content/Join';
-import { Heading3, SectionLayout, Caption, Button } from '../shared';
+import { Heading1,Heading2,Heading3,Heading4, SectionLayout, Caption, Button } from '../shared';
 import {
   GridContainer,
   HackSpeakerDiv,
@@ -21,6 +21,7 @@ import {
 function JoinUsSection() {
   return (
     <Container>
+
       <SectionLayout id={Join.id} title={Join.title}>
         <GridContainer>
           <HackSpeakerDiv>
