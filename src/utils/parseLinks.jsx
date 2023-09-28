@@ -8,7 +8,6 @@ import tw from 'twin.macro';
 const NonStyledLink = styled.a`
   ${tw`
     underline
-    text-[#FFE91F]
   `}
 `;
 
