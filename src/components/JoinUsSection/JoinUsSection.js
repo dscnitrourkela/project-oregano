@@ -1,7 +1,7 @@
 import React from 'react';
 import { Popup } from 'react-typeform-embed';
 import Join from '../../../config/content/Join';
-import { Heading1,Heading2,Heading3,Heading4, SectionLayout, Caption, Button } from '../shared';
+import { Heading3, SectionLayout, Caption, Button } from '../shared';
 import {
   GridContainer,
   HackSpeakerDiv,
