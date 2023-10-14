@@ -1,0 +1,66 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&family=Varela+Round&display=swap');
+
+button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+ 
+}
+
+button a {
+  
+  color: rgb(0, 0, 0);
+  font-family: 'Prompt', sans-serif, 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+  display: block;
+  position: relative;
+  padding: 30px 85px;
+  text-shadow: 0px 1px 0px #000;
+  box-shadow: #C48DFF 3px 3px, #FF8CD9 6px 6px, #35E1FF 9px 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 15px;
+  transition: box-shadow 0.3s; /* Add a transition for smooth shadow changes */
+}
+
+button a:active {
+  top: 10px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 0 #000000, inset 0 -2px 0 #a30fd4;
+}
+
+button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Add new rules to handle disappearing box shadows on click */
+button.clicked a {
+  display: none !important; /* Remove all box shadows */
+}
+
+@media (max-width: 640px) {
+  button a {
+    font-size: 15px;
+    padding: 15px 40px;
+    box-shadow: #C48DFF 1px 1px, #FF8CD9 2px 2px, #35E1FF 3px 3px;
+    border-radius: 10px;
+  }
+}
