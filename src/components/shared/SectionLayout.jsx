@@ -37,7 +37,6 @@ const HighlightLink = styled.a`
     lg:text-base
     md:text-base
     sm:text-sm
-    text-color-primary
     ml-2
     no-underline
   `}

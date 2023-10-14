@@ -9,12 +9,6 @@ export { default as ButtonMetaLarge } from './Typography/ButtonMetaLarge';
 export { default as Caption } from './Typography/Caption';
 export { default as NavText } from './Typography/NavText';
 
-export { default as MLHbanner } from './MLHbanner';
-export { default as Layout } from './Layout';
 export { default as Container } from './Container';
 export { default as SectionContainer } from './SectionContainer';
 export { default as SectionLayout } from './SectionLayout';
-export { default as DevfolioBtn } from './DevfolioBtn';
-export { default as DiscordBtn } from './DiscordBtn';
-export { default as DiscordBtnMobile } from './DiscordBtnMobile';
-export { default as Button } from './Button';

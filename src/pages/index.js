@@ -3,17 +3,10 @@ import { Helmet } from 'react-helmet';
 
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
-import { Layout, SectionLayout } from '../components/shared/index';
 import Container from '../components/shared/Container';
 import '../styles/global.css';
-import Hero from '../components/HeroSection/HeroSection';
-import FAQ from '../components/FaqSection/Faq';
-import Ticker from '../components/Ticker';
-import SponsorSection from '../components/SponsorsSection/SponsorSection';
 import SEO from '../components/shared/SEO/SEO';
-import { CommunitySection } from '../components';
-import Moments from '../components/Moments';
-import { about } from '../../config';
+import Heading1 from "../components/shared/Typography/Heading1"
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -54,18 +47,9 @@ const HomePage = ({ location }) => {
       </Helmet>
       <SEO />
 
-      <Layout>
-        <Hero />
-        <Ticker />
         <Container>
-          <SectionLayout id='about' title={about.title} description={about.content} />;
-          <Moments />
-          <SponsorSection />
-          <CommunitySection />
-          {/* <JoinUsSection /> */}
-          <FAQ />
+          <Heading1>Hello World</Heading1>
         </Container>
-      </Layout>
     </>
   );
 };
