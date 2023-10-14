@@ -18,6 +18,8 @@ import {
   Container
 } from './styles';
 
+//JoinUsSection
+
 function JoinUsSection() {
   return (
     <Container>
