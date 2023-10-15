@@ -169,7 +169,13 @@ table {
 }
 
 :root {
- 
+  --background-primary: #0E0812;
+  --color-primary-pink: #FF8CD9;
+  --color-primary-purple: #C48DFF;
+  --color-primary-blue: #67E9FF;
+  --color-primary-green: #72F7BF;
+  --color-neutral-white: #FFFFFF;
+  --color-neutral-yellow: #FEE27F;
 
   --max-width: 83.5em;
   --max-width-bleed: 90%;
