@@ -25,6 +25,8 @@ module.exports = {
         '4.5xl': '40px',
         '11xl': '86px',
         '12xl': '120px',
+        '13xl': '48px',
+        '14xl':'64px',
       },
       padding: {
         side: '21.33px',
@@ -43,6 +45,8 @@ module.exports = {
         11: '48px',
         12: '108px',
         13: '148px',
+        14: '64px',
+        15: '96px',
       },
 
       colors: {
@@ -60,6 +64,8 @@ module.exports = {
       // Inter: ['inter', 'sans-serif'],
       fontFamily: {
         Inter: ['Inter', ...defaultTheme.fontFamily.sans],
+        Prompt: ['Prompt', ...defaultTheme.fontFamily.sans],
+
       },
 
       letterSpacing: {

@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export default styled.p`
-  font-weight: ${(props) => (props.semibold ? '600' : '400')};
+  font-weight: ${(props) => (props.medium ? '500' : '400')};
   ${tw`
-   text-xs
-   leading-3.5
-   sm:text-base
-   sm:leading-5
-   font-Inter
+  text-sm
+  leading-5
+  md:text-base
+  md:leading-6
+  font-Prompt
+
 `}
 `;
