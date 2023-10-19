@@ -9,7 +9,7 @@ export default styled.p`
    
    sm:text-base
    sm:leading-5
-   text-color-primary
+   text-white
    font-Inter
 `}
 `;

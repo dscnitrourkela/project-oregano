@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0E0812; 
+    color: #FFFFFF;
+
+    padding: 6px,24px,6px,24px;
+  }
+  
+  .logo img {
+    max-width: 67.83px;
+    height: 68.09px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .register-button a {
+    text-decoration: none;
+    background-color: #ffffff; 
+    color: #0e0e0e;
+    padding: 8px,36px,8px,36px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .register-button a:hover {
+    background-color: ; /* Change to the hover color you prefer */
+  }
+  

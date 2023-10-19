@@ -10,7 +10,7 @@ export default styled.h2`
    sm:text-4.5xl
    sm:leading-11
 
-   text-color-primary
+   text-white
    font-Inter
 `}
 `;

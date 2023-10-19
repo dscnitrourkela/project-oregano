@@ -10,6 +10,6 @@ export default styled.h1`
    sm:text-12xl
    sm:leading-13
 
-   text-color-primary
+   text-white
 `}
 `;

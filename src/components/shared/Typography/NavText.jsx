@@ -10,7 +10,7 @@ export default styled.h3`
    sm:text-sm
    sm:leading-4 
 
-   text-color-primary
+   text-white
    font-Inter
 `}
 `;

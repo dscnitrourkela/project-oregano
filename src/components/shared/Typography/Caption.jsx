@@ -10,7 +10,7 @@ export default styled.p`
    sm:text-lg
    sm:leading-4.5
 
-   text-color-primary
+   text-white
    font-Inter
 `}
 `;
