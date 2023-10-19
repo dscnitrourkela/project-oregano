@@ -4,13 +4,14 @@ import tw from 'twin.macro';
 export default styled.h3`
   font-weight: ${(props) => (props.semibold ? '600' : '400')};
   ${tw` 
-   text-xl
-   leading-6 
+   text-2xl
+   leading-9
 
-   sm:text-3.5xl
-   sm:leading-10
+   md:text-3.5xl
+   md:leading-11
 
    text-color-primary
-   font-Inter
+   font-Prompt
 `}
+${(props) => props.italic && 'font-style: italic;'}
 `;
