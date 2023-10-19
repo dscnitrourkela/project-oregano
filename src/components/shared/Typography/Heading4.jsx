@@ -10,7 +10,7 @@ export default styled.h4`
    md:text-2xl
    md:leading-9
 
-   text-color-primary
+   text-white
    font-Prompt
 
 
