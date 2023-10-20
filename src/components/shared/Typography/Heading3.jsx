@@ -10,7 +10,7 @@ export default styled.h3`
    md:text-3.5xl
    md:leading-11
 
-   text-white
+   text-color-primary
    font-Prompt
 `}
 ${(props) => props.italic && 'font-style: italic;'}

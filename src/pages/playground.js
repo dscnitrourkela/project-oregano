@@ -1,5 +1,5 @@
 import React from 'react';
-import { Body1, Body2, Heading1, Heading2, Heading3, Heading4, NavText, ButtonMeta, ButtonMetaLarge } from '../components';
+import { Body1, Body2, Heading1, Heading2, Heading3, Heading4 } from '../components';
 
 export default function Playground() {
   return (
