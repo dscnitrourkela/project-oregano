@@ -49,8 +49,8 @@ const FAQ = () => {
               <FAQIcon isOpen={openQuestions.includes(index)}>
                 {openQuestions.includes(index) ? <FAQCloseIcon /> : <FAQOpenIcon />}
               </FAQIcon>
-           
-            <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
+
+              <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
             </FAQQuestion>
           </div>
         ))}

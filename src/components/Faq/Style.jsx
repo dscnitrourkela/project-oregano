@@ -25,7 +25,7 @@ export const FAQCaption = styled.div`
   font-weight: 400;
   line-height: 36px;
 
-    color: #fff;
+  color: #fff;
 `;
 
 export const FAQQuestionContainer = styled.div`
@@ -58,13 +58,10 @@ export const FAQIcon = styled.div`
   position: absolute;
   left: 12px;
   top: 12px;
-  
-
 `;
 
 export const FAQOpenIcon = styled.div`
   content: '+';
-  
 `;
 
 export const FAQCloseIcon = styled.div`
@@ -73,6 +70,6 @@ export const FAQCloseIcon = styled.div`
 
 export const FAQAnswer = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
-  margin-top:16px;
-  color:#fff;
+  margin-top: 16px;
+  color: #fff;
 `;
