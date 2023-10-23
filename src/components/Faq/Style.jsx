@@ -28,26 +28,20 @@ export const FAQCaption = styled.div`
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
-  text-align:center;
+  text-align: center;
   color: #fff;
 `;
 
 export const FAQQuestionContainer = styled.div`
   width: auto;
-    height: 80px;
-display: inline-flex;
+  height: 80px;
+  display: inline-flex;
   flex-direction: column;
-  
-  gap: 32px;
-  
-    
 
-  
-  
+  gap: 32px;
 `;
 
 export const FAQQuestion = styled.div`
- 
   display: flex;
   padding: 16px 36px;
   align-items: flex-start;
@@ -63,7 +57,6 @@ export const FAQQuestion = styled.div`
   width: 638px;
   cursor: pointer;
   white-space: nowrap;
-
 `;
 
 export const FAQIcon = styled.div`
@@ -72,7 +65,7 @@ export const FAQIcon = styled.div`
   position: absolute;
   left: 12px;
   top: 12px;
-  cursor:pointer;
+  cursor: pointer;
 `;
 
 export const FAQOpenIcon = styled.div`
@@ -87,10 +80,8 @@ export const FAQAnswer = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   margin-top: 16px;
   color: #fff;
-  width: 100%; 
-  position :relative;
+  width: 100%;
+  position: relative;
   padding: 20px;
   text-align: center;
-   
-
 `;
