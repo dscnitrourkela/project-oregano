@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body1, Body2, Heading1, Heading2, Heading3, Heading4, NavText, ButtonMeta, ButtonMetaLarge } from '../components';
 import AboutUs from '../components/About/About';
-import MentorCarousel from '../components/About/Mentor';
+import Slid from '../components/About/Slid'
 export default function Playground() {
   return (
     <div>
@@ -17,7 +17,7 @@ export default function Playground() {
        <ButtonMeta>GDSC</ButtonMeta>
        <ButtonMetaLarge>GDSC</ButtonMetaLarge>
         <AboutUs />
-        <MentorCarousel />
+        <Slid />
     </div>
   );
 }

@@ -1,5 +1,3 @@
-// AboutUs.js
-
 import React from 'react';
 import styled from 'styled-components';
 
@@ -25,6 +23,7 @@ const Paragraph = styled.p`
   color: white;
   ${'' /* max-width: 1000px; */}
   max-width: 60%;
+  margin-bottom: 20px;
   @media (max-width: 768px) {
     max-width: 80%;
   }
