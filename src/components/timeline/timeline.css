@@ -26,6 +26,13 @@ h1 {
     width: 1240px;
     margin: auto
 }
+.extension-container {
+    display: grid;
+    grid-template-columns: 352px 201px 134px 201px 1fr;
+    grid-template-rows: 134px;
+    width: 1240px;
+    margin: auto
+}
 
 .box1 {
     /* background-color: orange; */
