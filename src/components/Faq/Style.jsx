@@ -11,6 +11,10 @@ export const FAQContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
 `;
 
 export const FAQHeading = styled.div`
@@ -20,6 +24,10 @@ export const FAQHeading = styled.div`
   font-weight: 600;
   line-height: 64px;
   color: #fff;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 export const FAQCaption = styled.div`
@@ -30,6 +38,10 @@ export const FAQCaption = styled.div`
   line-height: 36px;
   text-align: center;
   color: #fff;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const FAQQuestionContainer = styled.div`
@@ -40,6 +52,10 @@ export const FAQQuestionContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
+
+  @media (max-width: 768px) {
+    gap: 12px;
+  }
 `;
 
 export const FAQQuestion = styled.div`
@@ -58,6 +74,10 @@ export const FAQQuestion = styled.div`
   width: 638px;
   cursor: pointer;
   white-space: nowrap;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 `;
 
 export const FAQIcon = styled.div`
@@ -68,6 +88,8 @@ export const FAQIcon = styled.div`
   //   top: 12px;
   right: 300px;
   position: absolute;
+  tarnsform: translateY(-50%);
+  transition: 1.3s;
 `;
 
 export const FAQAnswer = styled.div`
