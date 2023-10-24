@@ -1,4 +1,6 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import {
   FAQContainer,
   FAQHeading,
@@ -6,8 +8,7 @@ import {
   FAQQuestionContainer,
   FAQQuestion,
   FAQIcon,
-  FAQOpenIcon,
-  FAQCloseIcon,
+  
   FAQAnswer,
 } from './Style';
 
@@ -39,6 +40,12 @@ const FAQ = () => {
 
   return (
     <FAQContainer>
+        <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+      </Helmet>
       <FAQHeading>Do You Have A Question?</FAQHeading>
       <FAQCaption>New to Hackathon! Dont worry</FAQCaption>
       <FAQQuestionContainer>
@@ -47,7 +54,11 @@ const FAQ = () => {
             <FAQQuestion onClick={() => toggleQuestion(index)}>
               {faq.question}
               <FAQIcon isOpen={openQuestions.includes(index)}>
-                {openQuestions.includes(index) ? <FAQCloseIcon /> : <FAQOpenIcon />}
+                {openQuestions.includes(index) ? (
+                  <span className="material-symbols-outlined" >close</span>
+                ) : (
+                  <span className="material-symbols-outlined">add</span>
+                )}
               </FAQIcon>
 
               <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>

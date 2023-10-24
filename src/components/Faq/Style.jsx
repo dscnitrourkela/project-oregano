@@ -37,7 +37,8 @@ export const FAQQuestionContainer = styled.div`
   height: 80px;
   display: inline-flex;
   flex-direction: column;
-
+  justify-content: flex-start;
+    align-items: flex-start;
   gap: 32px;
 `;
 
@@ -60,28 +61,24 @@ export const FAQQuestion = styled.div`
 `;
 
 export const FAQIcon = styled.div`
-  width: 24px;
-  height: 24px;
+//   width: 24px;
+//   height: 24px;
   position: absolute;
-  left: 12px;
-  top: 12px;
-  cursor: pointer;
+//   left: 12px;
+//   top: 12px;
+  right: 300px;
+  position: absolute;
+  
 `;
 
-export const FAQOpenIcon = styled.div`
-  content: '+';
-`;
 
-export const FAQCloseIcon = styled.div`
-  content: '×';
-`;
 
 export const FAQAnswer = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   margin-top: 16px;
   color: #fff;
-  width: 100%;
+  right: 380px;
   position: relative;
   padding: 20px;
-  text-align: center;
+  
 `;
