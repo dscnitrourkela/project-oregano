@@ -29,7 +29,7 @@ const FAQ = () => {
     },
     {
       question: 'How do I register for the hackathon?',
-      answer: 'Answer to question 2.',
+      answer: 'Answer to question 2..',
     },
     {
       question: 'How do I register for the hackathon?',

@@ -24,7 +24,7 @@ export const FAQHeading = styled.div`
   font-weight: 600;
   line-height: 64px;
   color: #fff;
-
+  margin-bottom: -35px;
   @media (max-width: 768px) {
     font-size: 24px;
   }
@@ -52,7 +52,7 @@ export const FAQQuestionContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
-
+ 
   @media (max-width: 768px) {
     gap: 12px;
   }
@@ -74,7 +74,7 @@ export const FAQQuestion = styled.div`
   width: 638px;
   cursor: pointer;
   white-space: nowrap;
-
+  transition: 0.3s;
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -89,7 +89,10 @@ export const FAQIcon = styled.div`
   right: 300px;
   position: absolute;
   tarnsform: translateY(-50%);
-  transition: 1.3s;
+  transition: transform 0.3s ease;
+  &.opened {
+    transform: translateY(-50%) scale(1.2); 
+  }
 `;
 
 export const FAQAnswer = styled.div`
@@ -99,4 +102,6 @@ export const FAQAnswer = styled.div`
   right: 380px;
   position: relative;
   padding: 20px;
+  transition: 0.3s;
+  
 `;
