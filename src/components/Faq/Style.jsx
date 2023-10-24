@@ -52,7 +52,7 @@ export const FAQQuestionContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
- 
+
   @media (max-width: 768px) {
     gap: 12px;
   }
@@ -91,7 +91,7 @@ export const FAQIcon = styled.div`
   tarnsform: translateY(-50%);
   transition: transform 0.3s ease;
   &.opened {
-    transform: translateY(-50%) scale(1.2); 
+    transform: translateY(-50%) scale(1.2);
   }
 `;
 
@@ -103,5 +103,4 @@ export const FAQAnswer = styled.div`
   position: relative;
   padding: 20px;
   transition: 0.3s;
-  
 `;
