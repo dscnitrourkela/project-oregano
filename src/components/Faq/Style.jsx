@@ -1,4 +1,4 @@
-import styled,{keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 // const fadeOutAndIn = keyframes`
 //   0%, 100% {
@@ -13,22 +13,44 @@ import styled,{keyframes} from 'styled-components';
 const fadeIn = keyframes`
   from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) ;
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) ;
   }
 `;
 
 const fadeOut = keyframes`
   from {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) ;
   }
   to {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.8) ;
+  }
+`;
+
+const rotateOut = keyframes`
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+`;
+
+const rotateIn = keyframes`
+  from {
+    opacity: 0;
+    transform: rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
   }
 `;
 
@@ -39,7 +61,7 @@ export const FAQContainer = styled.div`
   top: 6109px;
   left: 139px;
   gap: 32px;
-  display: flex; /* Center the heading */
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -91,13 +113,13 @@ export const FAQQuestionContainer = styled.div`
 `;
 
 export const FAQQuestion = styled.div`
- justify-content: space-between;
+  justify-content: space-between;
   display: flex;
   padding: 16px 36px;
   align-items: flex-start;
   gap: 404px;
   border-radius: 16px;
-  border: 2px solid var(--neutral-3, #d9d9d9) ;
+  border: 2px solid var(--neutral-3, #d9d9d9);
   gap: 36px;
   color: #fff;
   font-family: Prompt;
@@ -108,13 +130,12 @@ export const FAQQuestion = styled.div`
   cursor: pointer;
   white-space: nowrap;
   transition: 0.4s;
-  
+
   &.opened {
-    border: 2px solid #00ccff; /* Light water blue border color */
-    background: rgba(0, 0, 255, 0.1); /* Magenta blue background color with transparency */
+    border: 2px solid #00ccff;
+    background: rgba(0, 0, 255, 0.1);
   }
-  
- 
+
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -130,15 +151,14 @@ export const FAQIcon = styled.div`
   position: absolute;
   tarnsform: translateY(-50%);
   transition: 0.4s;
-  
+
   &.closing {
-    animation: ${fadeOut} 1s ease-in-out;
+    animation: ${rotateOut} 0.3s ease-in-out, ${fadeOut} 0.3s ease-in-out;
   }
 
   &.opened {
-    animation: ${fadeIn} 1s ease-in-out;
+    animation: ${rotateIn} 0.3s ease-in-out, , ${fadeIn} 0.3s ease-in-out;
   }
-  
 `;
 
 export const FAQAnswer = styled.div`
@@ -149,5 +169,4 @@ export const FAQAnswer = styled.div`
   position: relative;
   padding: 20px;
   transition: 0.4s;
-  
 `;
