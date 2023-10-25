@@ -11,7 +11,7 @@ const Container = styled.div`
     @media (max-width: 640px) {
   }
 `
-const MobileContainer = styled.div`
+export const MobileContainer = styled.div`
   display:grid;
   grid-template-columns: 1fr 30px 1fr;
   grid-template-rows: 90.9px;
@@ -133,7 +133,7 @@ const Verticalwrapper = styled.div`
       background: #FED954;
   }
   @media(max-width:640px){
-      display:none;
+      /* display:none; */
   }
 `
 export const Vertical = () => {
@@ -351,12 +351,12 @@ export const Circledline = () => {
 }
 
 
-const Desktop = styled.div`
+export const Desktop = styled.div`
   @media(max-width:640px){
       display:none;
   }
 `
-const Mobile = styled.div`
+export const Mobile = styled.div`
   @media(min-width:640px){
       display:none;
   }

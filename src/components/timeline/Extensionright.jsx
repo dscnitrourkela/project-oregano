@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Wheel, Vertical, Line} from './Extensionboth'
+import { Box, Wheel, Vertical, Line, MobileContainer, Mobile, Desktop} from './Extensionboth'
+import './timeline.css'
 import styled from 'styled-components'
 
 const Rightcontainer = styled.div`
@@ -9,13 +10,11 @@ grid-template-rows: 134px;
 width: 1240px;
 margin: auto;
 color:#FFF;
-@media (max-width: 640px) {
-      display:none;
-  }
 `
 export default function Extensionright(props) {
   return (
-    <section>
+    <>
+    <Desktop>
     <Rightcontainer>
         <div></div>
         <div></div>
@@ -26,7 +25,18 @@ export default function Extensionright(props) {
         <div></div>
         <Vertical></Vertical>
     </Rightcontainer>
-    </section>
+    </Desktop>
+    <Mobile>
+      <MobileContainer>
+        <div></div>
+        <Wheel color={props.wheelcolor}></Wheel>
+        <Line color={props.boxcolor} className="right-line"></Line>
+        <div></div>
+        <Vertical></Vertical>
+        <Box color={props.boxcolor}></Box>
+      </MobileContainer>
+    </Mobile>
+    </>
   )
 };
 

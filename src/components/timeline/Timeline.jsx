@@ -23,7 +23,7 @@ const Wrapper = styled.div`
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    /* gap: 24px; */
     h1{
       color: var(--neutral-1, #FFF);
       font-family: Prompt;
