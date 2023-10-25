@@ -14,7 +14,6 @@ import {
   TagHead,
   HeroHeadingBase,
   FIVEimg,
-  
 } from './styles';
 
 export default function Hero() {
