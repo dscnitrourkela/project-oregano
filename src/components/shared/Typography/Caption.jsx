@@ -10,7 +10,7 @@ export default styled.p`
    md:text-sm
    md:leading-5
 
-   text-color-primary
+   text-white
    font-Prompt
 `}
 `;
