@@ -1,26 +1,10 @@
 import React from 'react';
-import {
-  HeroBody,
-  NITRimg,
-  HACKimg,
-  HeroTitle,
-  HeroInside,
-  SubTitle,
-  Tagline,
-  TaglineText,
-  HeroButtons,
-  HeroHeading,
-  SectionContainer,
-  TagHead,
-  HeroHeadingBase,
-  FIVEimg,
-  
-} from './styles';
+import Hero from '../components/HeroSection/HeroSection';
 
-export default function Hero() {
+export default function Playground() {
   return (
     <div>
-      <Hero />
+      <Hero/>
     </div>
   );
 }
