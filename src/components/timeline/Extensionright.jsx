@@ -8,7 +8,10 @@ grid-template-columns: 352px 201px 134px 201px 1fr;
 grid-template-rows: 134px;
 width: 1240px;
 margin: auto;
-color:#FFF
+color:#FFF;
+@media (max-width: 640px) {
+      display:none;
+  }
 `
 export default function Extensionright(props) {
   return (

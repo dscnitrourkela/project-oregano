@@ -19,7 +19,23 @@ const Wrapper = styled.div`
       margin: 0;
       margin-bottom: 24px;
   }
-`
+  @media (max-width: 640px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    h1{
+      color: var(--neutral-1, #FFF);
+      font-family: Prompt;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 96px;
+      margin-top: 32px;
+      margin-bottom:32px;
+    }
+  }
+`;
 export default function timeline() {
   return (
     <section>
