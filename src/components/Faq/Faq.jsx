@@ -10,6 +10,7 @@ import {
   FAQIcon,
   FAQAnswer,
 } from './Style';
+import faqData from '../config/content';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
@@ -22,20 +23,20 @@ const FAQ = () => {
     }
   };
 
-  const faqData = [
-    {
-      question: 'How do I register for the hackathon?',
-      answer: 'Answer to question 1.',
-    },
-    {
-      question: 'How do I register for the hackathon?',
-      answer: 'Answer to question 2..',
-    },
-    {
-      question: 'How do I register for the hackathon?',
-      answer: 'Answer to question 3.',
-    },
-  ];
+  //   const faqData = [
+  //     {
+  //       question: 'How do I register for the hackathon?',
+  //       answer: 'Answer to question 1.',
+  //     },
+  //     {
+  //       question: 'How do I register for the hackathon?',
+  //       answer: 'Answer to question 2..',
+  //     },
+  //     {
+  //       question: 'How do I register for the hackathon?',
+  //       answer: 'Answer to question 3.',
+  //     },
+  //   ];
 
   return (
     <FAQContainer>

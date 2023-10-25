@@ -56,8 +56,8 @@ const rotateIn = keyframes`
 
 export const FAQContainer = styled.div`
   width: 1162px;
-  height: 1400px;
-  position: absolute;
+  margin: auto;
+
   top: 6109px;
   left: 139px;
   gap: 32px;
@@ -147,7 +147,7 @@ export const FAQIcon = styled.div`
   position: absolute;
   //   left: 12px;
   font-size: 24px;
-  right: 36px;
+  right: 188px;
   position: absolute;
   tarnsform: translateY(-50%);
   transition: 0.3s;
