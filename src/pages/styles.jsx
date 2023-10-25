@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading3 } from '../shared';
+import { Heading3 } from '../components/shared';
 
 
 export const SectionContainer = styled.div`
@@ -38,12 +38,9 @@ export const HeroTitle = styled.div`
     gap-3
     items-center
     flex-col
-    px-5
-    pt-28
-    pl-64
-    pb-20
-    pr-64
-    
+    px-16
+    mx-10
+    mt-32
     `}
     
 `;
@@ -54,8 +51,10 @@ export const HeroInside = styled.div`
     justify-center
     items-center
     flex-row
-    px-5
+    px-0
     gap-0
+    sm:gap-0
+    w-full
     `}
 `;
 
@@ -64,12 +63,54 @@ export const HACKimg = styled.img`
     flex
     justify-center
     items-center
-    w-96
+    w-32
+    sm:w-48
+    md:w-72
+    lg:w-96
     flex-row
-    px-5
+    px-2
     gap-3
     `}
 `;
+
+export const NITRimg = styled.img`
+ ${tw`
+    w-32
+    sm:w-48
+    md:w-72
+    lg:w-96
+ `}
+`;
+
+export const HeroHeading = styled.div`
+  ${tw`
+      flex
+      // border-white
+      // bg-red-500
+      
+  `}
+`;
+
+export const HeroHeadingBase = styled.div`
+  ${tw`
+      flex
+      justify-end
+      w-full
+      mx-3
+      sm:mx-1
+
+  `}
+`
+
+export const FIVEimg = styled.img`
+  ${tw`
+    w-12
+    sm:w-12
+    md:w-24
+    lg:w-28
+    
+  `}
+`
 
 
 export const SubTitle = styled.p`
@@ -106,12 +147,14 @@ export const TagHead = styled(Heading3)`
 export const TaglineText = styled.p`
   ${tw`
     mt-4
-    text-center
-    // text-color-secondary
-    // font-Inter
+    text-left
+    md:text-center
+    lg:text-center
+    text-xs
+    leading-6
+    md:text-base
+    lg:text-lg
     px-8
-    // text-sm
-    // sm:text-lg
     `}
 `;
 
@@ -126,29 +169,8 @@ export const HeroButtons = styled.div`
     `}
 `;
 
-
-export const HeroHeading = styled.div`
+export const DevFolioButton = styled.button`
   ${tw`
-  flex
-    // float-right
-    // pt-0
-    // pl-96
-    // ml-80
-    w-full
-    pr-0
-    sm:pr-28
-    md:pr-4
-    lg:pr-0
-    xl:pr-16
-    2xl:pr-72
-    `}
-`;
-export const HeroHeadingBase = styled.div`
-  ${tw`
-    flex
-    justify-end
-    w-full
+    w-16
   `}
-`;
-
-
+`

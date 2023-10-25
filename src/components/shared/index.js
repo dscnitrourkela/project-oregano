@@ -12,5 +12,3 @@ export { default as NavText } from './Typography/NavText';
 export { default as Container } from './Container';
 export { default as SectionContainer } from './SectionContainer';
 export { default as SectionLayout } from './SectionLayout';
-export { default as DevfolioBtn } from './DevfolioBtn';
-export { default as DiscordBtn } from './DiscordBtn';

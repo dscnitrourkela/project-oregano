@@ -1,13 +1,14 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
 import Container from '../components/shared/Container';
 import '../styles/global.css';
-import Hero from '../components/HeroSection/HeroSection';
+// import Hero from '../components/HeroSection/HeroSection';
 import SEO from '../components/shared/SEO/SEO';
 import Heading1 from "../components/shared/Typography/Heading1"
+import Playground from './playground';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -50,7 +51,7 @@ const HomePage = ({ location }) => {
       <>
         
         <Container>
-        <Hero />
+          <Playground />
           
         </Container>
         
