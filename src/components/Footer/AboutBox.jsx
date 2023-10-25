@@ -26,7 +26,7 @@ export const Para = styled.p`
 export const Content = styled.p`
     ${tw`
     my-5
-    text-text-slate-500	
+    text-slate-500	
     `}
 `;
 
