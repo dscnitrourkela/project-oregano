@@ -56,7 +56,7 @@ const rotateIn = keyframes`
 
 export const FAQContainer = styled.div`
   width: 1162px;
-  height: 1380px;
+  min-height: 100vh;
   position: absolute;
   top: 6109px;
   left: 139px;
@@ -150,14 +150,14 @@ export const FAQIcon = styled.div`
   right: 36px;
   position: absolute;
   tarnsform: translateY(-50%);
-  transition: 0.4s;
+  transition: 0.3s;
 
   &.closing {
-    animation: ${rotateOut} 0.3s ease-in-out, ${fadeOut} 0.3s ease-in-out;
+    animation: ${rotateOut} 1.3s ease-in-out, ${fadeOut} 0.3s ease-in-out;
   }
 
   &.opened {
-    animation: ${rotateIn} 0.3s ease-in-out, , ${fadeIn} 0.3s ease-in-out;
+    animation: ${rotateIn} 1.3s ease-in-out, , ${fadeIn} 0.3s ease-in-out;
   }
 `;
 
