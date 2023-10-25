@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading3 } from '../components/shared';
+import { Heading3 } from '../shared';
 
 
 export const SectionContainer = styled.div`
@@ -38,7 +38,9 @@ export const HeroTitle = styled.div`
     gap-3
     items-center
     flex-col
-    px-16
+    px-36
+    md:px-16
+    lg:px-36
     mx-10
     mt-32
     `}
