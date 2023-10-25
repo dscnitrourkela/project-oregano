@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Heading2, Heading3 } from '..';
 import {Comp1, FooterContainer, ImgCont, FirstRow, FrItems,Comp2} from './styles';
 import { AboutBox, Para, Content, LogoCont, LogoImg } from './AboutBox';
-import FooterImg from '../../../public/Frame 791.png';
-import NitLogo from '../../../public/nitr_logo.png';
+import FooterImg from './images/Frame 791.png';
+import NitLogo from './images/nitr_logo.png';
 
 export const Footer = () => {
   return (
