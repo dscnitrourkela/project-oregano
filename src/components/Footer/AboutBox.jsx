@@ -26,7 +26,7 @@ export const Para = styled.p`
 export const Content = styled.p`
     ${tw`
     my-5
-    text-neutral-white-600
+    text-neutral-white-400
     `}
 `;
 
