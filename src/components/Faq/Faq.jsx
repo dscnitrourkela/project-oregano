@@ -50,16 +50,17 @@ const FAQ = () => {
       <FAQQuestionContainer>
         {faqData.map((faq, index) => (
           <div key={faq.question}>
-            <FAQQuestion onClick={() => toggleQuestion(index)}>
+            <FAQQuestion onClick={() => toggleQuestion(index)} className={openQuestions.includes(index) ? 'opened' : 'closing'}>
               {faq.question}
-              <FAQIcon isOpen={openQuestions.includes(index)}>
+             
+              <FAQIcon isOpen={openQuestions.includes(index)} className={openQuestions.includes(index) ? 'opened' : 'closing'}>
                 {openQuestions.includes(index) ? (
                   <span className='material-symbols-outlined'>close</span>
                 ) : (
                   <span className='material-symbols-outlined'>add</span>
                 )}
               </FAQIcon>
-
+               
               <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
             </FAQQuestion>
           </div>

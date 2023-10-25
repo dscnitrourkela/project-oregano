@@ -1,4 +1,36 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
+
+// const fadeOutAndIn = keyframes`
+//   0%, 100% {
+//     opacity: 1;
+//     transform: scale(1);
+//   }
+//   50% {
+//     opacity: 0;
+//     transform: scale(0.8);
+//   }
+// `;
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+`;
 
 export const FAQContainer = styled.div`
   width: 1162px;
@@ -45,7 +77,7 @@ export const FAQCaption = styled.div`
 `;
 
 export const FAQQuestionContainer = styled.div`
-  width: auto;
+  width: 100%;
   height: 80px;
   display: inline-flex;
   flex-direction: column;
@@ -59,22 +91,30 @@ export const FAQQuestionContainer = styled.div`
 `;
 
 export const FAQQuestion = styled.div`
+ justify-content: space-between;
   display: flex;
   padding: 16px 36px;
   align-items: flex-start;
   gap: 404px;
   border-radius: 16px;
-  border: 2px solid var(--neutral-3, #d9d9d9);
+  border: 2px solid var(--neutral-3, #d9d9d9) ;
   gap: 36px;
   color: #fff;
   font-family: Prompt;
   font-size: 18px;
   font-weight: 500;
   line-height: 36px;
-  width: 638px;
+  width: 1162px;
   cursor: pointer;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.4s;
+  
+  &.opened {
+    border: 2px solid #00ccff; /* Light water blue border color */
+    background: rgba(0, 0, 255, 0.1); /* Magenta blue background color with transparency */
+  }
+  
+ 
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -86,21 +126,28 @@ export const FAQIcon = styled.div`
   position: absolute;
   //   left: 12px;
   //   top: 12px;
-  right: 300px;
+  right: 36px;
   position: absolute;
   tarnsform: translateY(-50%);
-  transition: transform 0.3s ease;
-  &.opened {
-    transform: translateY(-50%) scale(1.2);
+  transition: 0.4s;
+  
+  &.closing {
+    animation: ${fadeOut} 1s ease-in-out;
   }
+
+  &.opened {
+    animation: ${fadeIn} 1s ease-in-out;
+  }
+  
 `;
 
 export const FAQAnswer = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   margin-top: 16px;
   color: #fff;
-  right: 380px;
+  right: 878px;
   position: relative;
   padding: 20px;
-  transition: 0.3s;
+  transition: 0.4s;
+  
 `;
