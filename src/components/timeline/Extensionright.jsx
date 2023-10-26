@@ -18,9 +18,9 @@ export default function Extensionright(props) {
     <Rightcontainer>
         <div></div>
         <div></div>
-        <Wheel color={props.wheelcolor}></Wheel>
+        <Wheel color={props.wheelcolor} node={props.node}></Wheel>
         <Line color={props.boxcolor} ></Line>
-        <Box color={props.boxcolor}></Box>
+        <Box color={props.boxcolor} node={props.node}></Box>
         <div></div>
         <div></div>
         <Vertical></Vertical>
@@ -29,11 +29,11 @@ export default function Extensionright(props) {
     <Mobile>
       <MobileContainer>
         <div></div>
-        <Wheel color={props.wheelcolor}></Wheel>
+        <Wheel color={props.wheelcolor} node={props.node}></Wheel>
         <Rightline color={props.boxcolor} ></Rightline>
         <div></div>
         <Vertical></Vertical>
-        <Box color={props.boxcolor}></Box>
+        <Box color={props.boxcolor} node={props.node}></Box>
       </MobileContainer>
     </Mobile>
     </>

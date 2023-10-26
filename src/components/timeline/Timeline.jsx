@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import './timeline.css'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
+import {timelinecontent} from '../../../config/content/Timelinecontent'
 const Wrapper = styled.div`
     width:1240px;
     margin: auto;
@@ -30,8 +31,6 @@ const Wrapper = styled.div`
     transform: translate(-50%, -50%);
     /* gap: 24px; */
     h1{
-      color: var(--neutral-1, #FFF);
-      font-family: Prompt;
       font-size: 32px;
       font-style: normal;
       font-weight: 700;
@@ -46,10 +45,16 @@ export default function timeline() {
     <section>
 
       <Wrapper>
-        <h1>Timeline</h1>
-        <Extensionboth boxcolor="#14F195" wheelcolor="#35E1FF" ellipsecolor="#B067FF"></Extensionboth>
-        <Extensionright boxcolor="#C48DFF"></Extensionright>
-        <Extensionboth></Extensionboth>
+        <h1>{timelinecontent.title}</h1>
+        {timelinecontent.nodes.length===0? "":  
+            timelinecontent.nodes.map((node)=>{
+                if (node && node.ellipsecontent){
+                return (<Extensionboth key ={node.sno} boxcolor={node.boxcolor} wheelcolor={node.wheelcolor} ellipsecolor={node.ellipsecolor} node={node}></Extensionboth>   
+                );}
+                else{
+                  return(<Extensionright key ={node.sno} boxcolor="#C48DFF" node={node}></Extensionright>);
+                }
+            })}
       </Wrapper>
 
     </section>
