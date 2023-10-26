@@ -7,23 +7,28 @@ const faqData = [
   },
   {
     question: 'How do I register for the hackathon?',
-    answer: 'Answer to question 2.',
+    answer:
+      'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swags.',
   },
   {
     question: 'How do I register for the hackathon?',
-    answer: 'Answer to question 3.',
+    answer:
+      'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swags.',
   },
   {
     question: 'How do I register for the hackathon?',
-    answer: 'Answer to question 3.',
+    answer:
+      'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swags.',
   },
   {
     question: 'How do I register for the hackathon?',
-    answer: 'Answer to question 3.',
+    answer:
+      'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swags.',
   },
   {
     question: 'How do I register for the hackathon?',
-    answer: 'Answer to question 3.',
+    answer:
+      'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool swags.',
   },
 ];
 

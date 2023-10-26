@@ -3,11 +3,11 @@ import { Caption } from '../shared';
 
 const rotateOut = keyframes`
   from {
-    opacity: 1;
+    
     transform: rotate(0deg);
   }
   to {
-    opacity: 0;
+    
     transform: rotate(45deg);
   }
 `;
@@ -74,7 +74,7 @@ export const FAQQuestion = styled.div`
   line-height: 36px;
   width: 1162px;
   cursor: pointer;
-  white-space: nowrap;
+
   transition: 0.3s;
 
   &.opened {
@@ -101,6 +101,9 @@ export const FAQIcon = styled.div`
   &.closing {
     animation: ${rotateOut} 0.3s ease-in-out;
   }
+    &.opened {
+        transform: rotate(0deg);
+    }
 `;
 
 export const FAQAnswer = styled(Caption)`
