@@ -147,7 +147,7 @@ export const FAQIcon = styled.div`
   position: absolute;
   //   left: 12px;
   font-size: 24px;
-  right: 200px;
+  right: 250px;
   position: absolute;
   tarnsform: translateY(-50%);
   transition: 0.3s;
