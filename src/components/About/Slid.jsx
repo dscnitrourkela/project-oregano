@@ -9,29 +9,51 @@ import img4 from '../images/img1.png';
 
 const images = [img1, img2, img3,img4];
 
+
+// function SampleNextArrow({onClick}) {
+//   return (
+//     <div className='arrow arrow-right' onClick={onClick}>
+//       <BsArrowRight/>
+//     </div>
+//   );
+// }
+
+// function SamplePrevArrow({onClick}) {
+//   return (
+//     <div className='arrow arrow-left' onClick={onClick}>
+//       <BsArrowLeft/>
+//     </div>
+//   );
+// }
+// function EmptyArrow({onClick}) {
+//   return (
+//     <div></div>
+//   );
+// }
+
 function slid() {
 
   const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1200,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
     beforeChange: (current, next)=>setSlideIndex(next),
     centerMode: true,
-    appendDots: (dots) => (
-      <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: (current, next) => (
-      <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
-      </div>
-    ),
+    // appendDots: (dots) => (
+    //   <div>
+    //     <ul style={{ margin: "0px" }}> {dots} </ul>
+    //   </div>
+    // ),
+    // customPaging: (current, next) => (
+    //   <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
+    //   </div>
+    // ),
     responsive: [
       {
         breakpoint: 768,
