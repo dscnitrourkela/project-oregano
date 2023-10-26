@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { Caption } from '../shared';
 
 const fadeIn = keyframes`
   from {
@@ -91,7 +92,7 @@ export const FAQQuestionContainer = styled.div`
 `;
 
 export const FAQQuestion = styled.div`
-  justify-content: space-between;
+  flex-direction: column;
   display: flex;
   padding: 16px 36px;
   align-items: flex-start;
@@ -139,12 +140,19 @@ export const FAQIcon = styled.div`
   }
 `;
 
-export const FAQAnswer = styled.div`
+export const FAQAnswer = styled(Caption)`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
-  margin-top: 16px;
-
-  right: 878px;
+  margin-top: -25px;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+  height:auto
   position: relative;
-  padding: 16px 20px;
+  padding: 0px 20px;
   transition: 0.4s;
+`;
+
+export const FAQQuestionText = styled.div`
+  height: auto;
+  padding: 0px 20px;
+  position: relative;
 `;

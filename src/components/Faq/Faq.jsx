@@ -8,9 +8,10 @@ import {
   FAQQuestion,
   FAQIcon,
   FAQAnswer,
+  FAQQuestionText,
 } from './Style';
 import faqData from '../config/content';
-import { Heading2, Heading4, Body1 } from '../shared';
+import { Heading2, Heading4 } from '../shared';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
@@ -45,7 +46,7 @@ const FAQ = () => {
               onClick={() => toggleQuestion(index)}
               className={openQuestions.includes(index) ? 'opened' : 'closing'}
             >
-              {faq.question}
+              <FAQQuestionText>{faq.question}</FAQQuestionText>
 
               <FAQIcon
                 isOpen={openQuestions.includes(index)}
@@ -58,9 +59,7 @@ const FAQ = () => {
                 )}
               </FAQIcon>
 
-              <FAQAnswer isOpen={openQuestions.includes(index)}>
-                <Body1>{faq.answer}</Body1>
-              </FAQAnswer>
+              <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
             </FAQQuestion>
           </div>
         ))}
