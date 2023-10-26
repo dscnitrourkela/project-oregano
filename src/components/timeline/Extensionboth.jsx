@@ -13,7 +13,7 @@ const Container = styled.div`
 `
 export const MobileContainer = styled.div`
   display:grid;
-  grid-template-columns: 1fr 30px 1fr;
+  grid-template-columns: 1fr 24px 1fr;
   grid-template-rows: 90.9px;
   width: 362.885px;
   margin:auto;
@@ -105,10 +105,10 @@ const Linewrapper = styled.div`
     svg{
       width: 86.267px;
       height: 1px;
-      transform: rotate(-45deg) translate(-15px, 60px);;
+      transform:rotate(-45deg) translate(-15px, 60px);
       flex-shrink: 0;
     }
-  }
+}
 `
 export const Line = (props) => {
   return (
@@ -119,6 +119,30 @@ export const Line = (props) => {
           fill={props.color} />
       </svg>
     </Linewrapper>
+  )
+}
+const Rightlinewrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  @media (max-width: 640px) {
+    svg{
+      width: 86.267px;
+      height: 1px;
+      transform:rotate(44deg) translate(5px, 39px);
+      flex-shrink: 0;
+    }
+}
+`
+export const Rightline = (props) => {
+  return (
+    <Rightlinewrapper>
+      <svg xmlns="http://www.w3.org/2000/svg" width="202" height="2" viewBox="0 0 202 2" fill="none">
+        <path
+          d="M1 0.5C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5L1 0.5ZM1 1.5L202 1.49998L202 0.499982L1 0.5L1 1.5Z"
+          fill={props.color} />
+      </svg>
+    </Rightlinewrapper>
   )
 }
 
@@ -324,7 +348,7 @@ const Mvwrapper = styled.div`
   }
   #circle2{
     position: absolute;
-    bottom: 39px;
+    bottom: 26px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -336,15 +360,15 @@ export const Circledline = () => {
   return (
     <Mvwrapper>
       <svg id="line" xmlns="http://www.w3.org/2000/svg" width="4" height="158" viewBox="0 0 4 158" fill="none">
-        <line x1="2" x2="2" y2="158" stroke="#FED954" stroke-width="4" />
+        <line x1="2" x2="2" y2="158" stroke="#FED954" strokeWidth="4" />
       </svg>
       <svg id="circle1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <circle cx="8" cy="8" r="7" fill="#0E0812" stroke="#EDEDED" stroke-width="2" />
-        <circle cx="8.00022" cy="7.99998" r="5.30476" fill="#0E0812" stroke="#EDEDED" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5" />
+        <circle cx="8" cy="8" r="7" fill="#0E0812" stroke="#EDEDED" strokeWidth="2" />
+        <circle cx="8.00022" cy="7.99998" r="5.30476" fill="#0E0812" stroke="#EDEDED" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="5 5" />
       </svg>
       <svg id="circle2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <circle cx="8" cy="8" r="7" fill="#0E0812" stroke="#EDEDED" stroke-width="2" />
-        <circle cx="8.00022" cy="7.99998" r="5.30476" fill="#0E0812" stroke="#EDEDED" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5" />
+        <circle cx="8" cy="8" r="7" fill="#0E0812" stroke="#EDEDED" strokeWidth="2" />
+        <circle cx="8.00022" cy="7.99998" r="5.30476" fill="#0E0812" stroke="#EDEDED" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="5 5" />
       </svg>
     </Mvwrapper>
   )
@@ -367,7 +391,7 @@ export default function Extensionboth(props) {
       <Desktop>
         <Container>
           <Box color={props.boxcolor}></Box>
-          <Line color={props.boxcolor}></Line>
+          <Line color={props.boxcolor} right={false}></Line>
           <Wheel color={props.wheelcolor}></Wheel>
           <Arrow></Arrow>
           <Ellipse color={props.ellipsecolor}></Ellipse>
@@ -398,3 +422,6 @@ Extensionboth.defaultProps = {
   wheelcolor: "#C4C4C4",
   ellipsecolor: "#FF65CD"
 }
+// Linewrapper.defaultProps={
+//   right:"false"
+// }

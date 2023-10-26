@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Wheel, Vertical, Line, MobileContainer, Mobile, Desktop} from './Extensionboth'
+import { Box, Wheel, Vertical, Line, MobileContainer, Mobile, Desktop, Rightline} from './Extensionboth'
 import './timeline.css'
 import styled from 'styled-components'
 
@@ -19,7 +19,7 @@ export default function Extensionright(props) {
         <div></div>
         <div></div>
         <Wheel color={props.wheelcolor}></Wheel>
-        <Line color={props.boxcolor}></Line>
+        <Line color={props.boxcolor} ></Line>
         <Box color={props.boxcolor}></Box>
         <div></div>
         <div></div>
@@ -30,7 +30,7 @@ export default function Extensionright(props) {
       <MobileContainer>
         <div></div>
         <Wheel color={props.wheelcolor}></Wheel>
-        <Line color={props.boxcolor} className="right-line"></Line>
+        <Rightline color={props.boxcolor} ></Rightline>
         <div></div>
         <Vertical></Vertical>
         <Box color={props.boxcolor}></Box>

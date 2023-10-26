@@ -4,7 +4,7 @@ import './timeline.css'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
 const Wrapper = styled.div`
-    width: 362.885px;
+    width:1240px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -18,11 +18,16 @@ const Wrapper = styled.div`
       line-height: 96px;
       margin: 0;
       margin-bottom: 24px;
-  }
-  @media (max-width: 640px) {
+    }
+    @media (max-width: 640px) {
+    width: 362.885px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     /* gap: 24px; */
     h1{
       color: var(--neutral-1, #FFF);
