@@ -74,19 +74,7 @@ export const FAQHeading = styled.div`
   }
 `;
 
-export const FAQCaption = styled.div`
-  width: 958px;
-  height: 36px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
-  text-align: center;
-  color: #fff;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
+export const FAQCaption = styled.div``;
 
 export const FAQQuestionContainer = styled.div`
   width: 100%;
@@ -154,10 +142,9 @@ export const FAQIcon = styled.div`
 export const FAQAnswer = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   margin-top: 16px;
-  color: #fff;
+
   right: 878px;
   position: relative;
-  padding: 20px 16px;
+  padding: 16px 20px;
   transition: 0.4s;
-  font-weight: 100 !important;
 `;
