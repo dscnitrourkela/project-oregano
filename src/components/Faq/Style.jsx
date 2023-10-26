@@ -1,28 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Caption } from '../shared';
 
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: scale(0.8) ;
-  }
-  to {
-    opacity: 1;
-    transform: scale(1) ;
-  }
-`;
-
-const fadeOut = keyframes`
-  from {
-    opacity: 1;
-    transform: scale(1) ;
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.8) ;
-  }
-`;
-
 const rotateOut = keyframes`
   from {
     opacity: 1;
@@ -31,17 +9,6 @@ const rotateOut = keyframes`
   to {
     opacity: 0;
     transform: rotate(45deg);
-  }
-`;
-
-const rotateIn = keyframes`
-  from {
-    opacity: 0;
-    transform: rotate(-45deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(0deg);
   }
 `;
 
@@ -108,10 +75,10 @@ export const FAQQuestion = styled.div`
   width: 1162px;
   cursor: pointer;
   white-space: nowrap;
-  transition: 0.4s;
+  transition: 0.3s;
 
   &.opened {
-    border: 2px solid #00ccff;
+    border: 2px solid var(--color-primary-blue);
     background: rgba(0, 0, 255, 0.1);
   }
 
@@ -132,11 +99,7 @@ export const FAQIcon = styled.div`
   transition: 0.3s;
   padding-top: 6px;
   &.closing {
-    animation: ${rotateOut} 1.3s ease-in-out, ${fadeOut} 0.3s ease-in-out;
-  }
-
-  &.opened {
-    animation: ${rotateIn} 1.3s ease-in-out, , ${fadeIn} 0.3s ease-in-out;
+    animation: ${rotateOut} 0.3s ease-in-out;
   }
 `;
 
@@ -148,7 +111,7 @@ export const FAQAnswer = styled(Caption)`
   height:auto
   position: relative;
   padding: 0px 20px;
-  transition: 0.4s;
+  transition: 0.3s;
 `;
 
 export const FAQQuestionText = styled.div`
