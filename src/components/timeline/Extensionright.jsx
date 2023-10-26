@@ -1,16 +1,40 @@
 import React from 'react'
-import { Box, Wheel, Vertical, Line, MobileContainer, Mobile, Desktop, Rightline} from './Extensionboth'
+import { Box, Wheel, Line, MobileContainer, Mobile, Desktop, Rightline} from './Extensionboth'
 import './timeline.css'
 import styled from 'styled-components'
 
 const Rightcontainer = styled.div`
 display: grid;
 grid-template-columns: 352px 201px 134px 201px 1fr;
-grid-template-rows: 134px;
+grid-template-rows: 141px 103px;
 width: 1240px;
 margin: auto;
 color:#FFF;
 `
+const Verticalwrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .line1 {
+      width: 4px;
+      height: 165.242px;
+      background: #FED954;
+      transform: translateY(27px);
+  }
+  @media(max-width:640px){
+    .line1{
+      height: 114px;
+      transform: translateY(0px);
+    }
+  }
+`
+export const Vertical = () => {
+  return (
+    <Verticalwrapper>
+      <div className="line1"></div>
+    </Verticalwrapper>
+  )
+}
 export default function Extensionright(props) {
   return (
     <>

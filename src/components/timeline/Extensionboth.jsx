@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 201px 134px 243px 1fr;
-    grid-template-rows: 134px;
+    grid-template-rows: 248px 135px;
     width: 1240px;
     margin: auto;
     color:#FFF;
@@ -153,8 +153,9 @@ const Verticalwrapper = styled.div`
     align-items: center;
     .line1 {
       width: 4px;
-      height: 114px;
+      height: 197px;
       background: #FED954;
+      transform: translateY(-27px);
   }
   @media(max-width:640px){
       /* display:none; */
