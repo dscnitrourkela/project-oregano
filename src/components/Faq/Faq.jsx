@@ -10,7 +10,7 @@ import {
   FAQAnswer,
   FAQQuestionText,
 } from './Style';
-import faqData from '../config/content';
+import faqData from '../../../config/content/Faq';
 import { Heading2, Heading4 } from '../shared';
 
 const FAQ = () => {
