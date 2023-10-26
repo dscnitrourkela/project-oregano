@@ -1,15 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-// const fadeOutAndIn = keyframes`
-//   0%, 100% {
-//     opacity: 1;
-//     transform: scale(1);
-//   }
-//   50% {
-//     opacity: 0;
-//     transform: scale(0.8);
-//   }
-// `;
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -147,7 +137,7 @@ export const FAQIcon = styled.div`
   position: absolute;
   //   left: 12px;
   font-size: 24px;
-  right: 250px;
+  right: 225px;
   position: absolute;
   tarnsform: translateY(-50%);
   transition: 0.3s;
