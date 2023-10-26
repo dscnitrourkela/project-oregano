@@ -4,7 +4,7 @@ import './timeline.css'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
 const Wrapper = styled.div`
-    width: 1240px;
+    width: 362.885px;
     margin: auto;
     display: flex;
     flex-direction: column;
