@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Wheel, Line, MobileContainer, Mobile, Desktop, Rightline} from './Extensionboth'
-import './timeline.css'
 import styled from 'styled-components'
 
 const Rightcontainer = styled.div`

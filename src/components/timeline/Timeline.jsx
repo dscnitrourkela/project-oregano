@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import './timeline.css'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
 import {timelinecontent} from '../../../config/content/Timelinecontent'
@@ -43,7 +42,6 @@ const Wrapper = styled.div`
 export default function timeline() {
   return (
     <section>
-
       <Wrapper>
         <h1>{timelinecontent.title}</h1>
         {timelinecontent.nodes.length===0? "":  
