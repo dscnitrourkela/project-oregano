@@ -2,7 +2,7 @@ name: Development CI/CD
 
 on:
   pull_request:
-    branches: [main]
+    branches: [dev]
     types: [opened, synchronize, reopened, edited, ready_for_review]
 
 jobs:
