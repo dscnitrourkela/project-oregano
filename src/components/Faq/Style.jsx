@@ -75,7 +75,7 @@ export const FAQQuestion = styled.div`
   width: 1162px;
   cursor: pointer;
 
-  transition: 0.3s;
+  transition: 0.5s;
 
   &.opened {
     border: 2px solid var(--color-primary-blue);
@@ -96,10 +96,10 @@ export const FAQIcon = styled.div`
   right: 225px;
   position: absolute;
   tarnsform: translateY(-50%);
-  transition: 0.3s;
+  transition: 0.5s;
   padding-top: 6px;
   &.closing {
-    animation: ${rotateOut} 0.3s ease-in-out;
+    animation: ${rotateOut} 0.5s ease-in-out;
   }
     &.opened {
         transform: rotate(0deg);
@@ -114,7 +114,7 @@ export const FAQAnswer = styled(Caption)`
   height:auto
   position: relative;
   padding: 0px 20px;
-  transition: 0.3s;
+  transition: 0.5s;
 `;
 
 export const FAQQuestionText = styled.div`
