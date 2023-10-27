@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
 import { timelinecontent } from '../../../config/content/Timelinecontent'
-import { Container, Heading1, Heading3 } from '..';
+import { Heading1 } from '..';
 const Wrapper = styled.div`
     width:1240px;
     margin: auto;
