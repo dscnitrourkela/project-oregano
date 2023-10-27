@@ -13,5 +13,5 @@ export default styled.h3`
    text-white
    font-Prompt
 `}
-${(props) => props.italic && 'font-style: italic;'}
+  ${(props) => props.italic && 'font-style: italic;'}
 `;
