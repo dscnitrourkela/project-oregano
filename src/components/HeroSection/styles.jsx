@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Heading3 } from '../shared';
+import { Body1 } from '../shared';
 
 
 export const SectionContainer = styled.div`
@@ -14,6 +15,8 @@ export const SectionContainer = styled.div`
     flex-row
     items-start
     justify-center
+    
+  
     
   `}
 `;
@@ -33,9 +36,10 @@ export const HeroBody = styled.div`
 
 export const HeroTitle = styled.div`
   ${tw`
+  // bg-white
     flex
     justify-center
-    gap-3
+    gap-2
     items-center
     flex-col
     px-36
@@ -132,21 +136,16 @@ export const Tagline = styled.div`
     text-center 
     text-lg 
     not-italic 
-    font-semibold 
+    // font-extrabold 
     leading-7
-    
+    // bg-red-100
 
     `}
 `;
 
-export const TagHead = styled(Heading3)`
-  font-weight: 590;
-  ${tw`
-    font-Inter
-  `}
-`;
 
-export const TaglineText = styled.p`
+
+export const TaglineText = styled(Body1)`
   ${tw`
     mt-4
     text-left

@@ -1,3 +1,7 @@
+export { default as DevFolioButton } from '../shared';
+export { default as DiscordButton } from '../shared';
+
+
 export { default as Heading1 } from './Typography/Heading1';
 export { default as Heading2 } from './Typography/Heading2';
 export { default as Heading3 } from './Typography/Heading3';
