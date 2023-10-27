@@ -2,20 +2,14 @@ import styled, { keyframes } from 'styled-components';
 import { Caption } from '../shared';
 
 const rotateOut = keyframes`
-  from {
-    
-    transform: rotate(0deg);
-  }
-  to {
-    
-    transform: rotate(45deg);
+  from { transform: rotate(0deg);
+  }to {transform: rotate(45deg);
   }
 `;
 
 export const FAQContainer = styled.div`
   width: 1162px;
   margin: auto;
-
   top: 6109px;
   left: 139px;
   gap: 32px;
@@ -41,8 +35,6 @@ export const FAQHeading = styled.div`
     font-size: 24px;
   }
 `;
-
-export const FAQCaption = styled.div``;
 
 export const FAQQuestionContainer = styled.div`
   width: 100%;
@@ -88,10 +80,8 @@ export const FAQQuestion = styled.div`
 `;
 
 export const FAQIcon = styled.div`
-  //   width: 24px;
-  //   height: 24px;
   position: absolute;
-  //   left: 12px;
+
   font-size: 24px;
   right: 225px;
   position: absolute;
@@ -101,9 +91,9 @@ export const FAQIcon = styled.div`
   &.closing {
     animation: ${rotateOut} 0.5s ease-in-out;
   }
-    &.opened {
-        transform: rotate(0deg);
-    }
+  &.opened {
+    transform: rotate(0deg);
+  }
 `;
 
 export const FAQAnswer = styled(Caption)`

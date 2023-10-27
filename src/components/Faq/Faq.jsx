@@ -32,11 +32,10 @@ const FAQ = () => {
           href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
         />
       </Helmet>
-      {/* <FAQHeading>Do You Have A Question?</FAQHeading> */}
+
       <Heading2>Do You Have A Question?</Heading2>
-      {/* <FAQCaption>New to Hackathon! Dont worry</FAQCaption> */}
+
       <FAQCaption>
-        {' '}
         <Heading4>New to Hackathon! Dont worry we go</Heading4>
       </FAQCaption>
       <FAQQuestionContainer>
