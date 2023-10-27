@@ -38,6 +38,7 @@ export default function Extensionright(props) {
   return (
     <>
     <Desktop>
+      {props.position!=="end"?(
     <Rightcontainer>
         <div></div>
         <div></div>
@@ -48,6 +49,15 @@ export default function Extensionright(props) {
         <div></div>
         <Vertical></Vertical>
     </Rightcontainer>
+      ):(
+        <Rightcontainer>
+        <div></div>
+        <div></div>
+        <Wheel color={props.wheelcolor} node={props.node}></Wheel>
+        <Line color={props.boxcolor} ></Line>
+        <Box color={props.boxcolor} node={props.node}></Box>
+    </Rightcontainer>
+      )}
     </Desktop>
     <Mobile>
       <MobileContainer>

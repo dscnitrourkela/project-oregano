@@ -390,18 +390,29 @@ export default function Extensionboth(props) {
   return (
     <>
       <Desktop>
+        {props.position!=="end"?(
         <Container>
-          <Box color={props.boxcolor} node={props.node}></Box>
-          <Line color={props.boxcolor} right={false}></Line>
-          <Wheel color={props.wheelcolor} node={props.node}></Wheel>
-          <Arrow></Arrow>
-          <Ellipse color={props.ellipsecolor} node={props.node}></Ellipse>
-          <div></div>
-          <div></div>
-          <Vertical></Vertical>
-          <div></div>
-          <div></div>
-        </Container>
+        <Box color={props.boxcolor} node={props.node}></Box>
+        <Line color={props.boxcolor} right={false}></Line>
+        <Wheel color={props.wheelcolor} node={props.node}></Wheel>
+        <Arrow></Arrow>
+        <Ellipse color={props.ellipsecolor} node={props.node}></Ellipse>
+        <div></div>
+        <div></div>
+        <Vertical></Vertical>
+        <div></div>
+        <div></div>
+      </Container>
+        ):(
+          <Container>
+        <Box color={props.boxcolor} node={props.node}></Box>
+        <Line color={props.boxcolor} right={false}></Line>
+        <Wheel color={props.wheelcolor} node={props.node}></Wheel>
+        <Arrow></Arrow>
+        <Ellipse color={props.ellipsecolor} node={props.node}></Ellipse>
+      </Container>
+        )}
+        
       </Desktop>
       <Mobile>
         <MobileContainer>

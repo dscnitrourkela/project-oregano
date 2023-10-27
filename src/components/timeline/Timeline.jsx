@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Extensionboth from './Extensionboth'
 import Extensionright from './Extensionright'
-import {timelinecontent} from '../../../config/content/Timelinecontent'
+import { timelinecontent } from '../../../config/content/Timelinecontent'
+import { Container, Heading1, Heading3 } from '..';
 const Wrapper = styled.div`
     width:1240px;
     margin: auto;
@@ -10,12 +11,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     h1 {
-      color: #FFF;
-      font-family: Prompt;
-      font-size: 64px;
-      font-style: normal;
       font-weight: 700;
-      line-height: 96px;
       margin: 0;
       margin-bottom: 24px;
     }
@@ -28,7 +24,6 @@ const Wrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* gap: 24px; */
     h1{
       font-size: 32px;
       font-style: normal;
@@ -43,16 +38,29 @@ export default function timeline() {
   return (
     <section>
       <Wrapper>
-        <h1>{timelinecontent.title}</h1>
-        {timelinecontent.nodes.length===0? "":  
-            timelinecontent.nodes.map((node)=>{
-                if (node && node.ellipsecontent){
-                return (<Extensionboth key ={node.sno} boxcolor={node.boxcolor} wheelcolor={node.wheelcolor} ellipsecolor={node.ellipsecolor} node={node}></Extensionboth>   
-                );}
-                else{
-                  return(<Extensionright key ={node.sno} boxcolor="#C48DFF" node={node}></Extensionright>);
-                }
-            })}
+        <Heading1>{timelinecontent.title}</Heading1>
+        {timelinecontent.nodes.length === 0 ? "" :
+          timelinecontent.nodes.map((node, index) => {
+            if (index === timelinecontent.nodes.length - 1) {
+              if (node && node.ellipsecontent) {
+                return (<Extensionboth key={node.sno} boxcolor={node.boxcolor} wheelcolor={node.wheelcolor} ellipsecolor={node.ellipsecolor} node={node} position="end"></Extensionboth>
+                );
+              }
+              else {
+                return (<Extensionright key={node.sno} boxcolor="#C48DFF" node={node} position="end"></Extensionright>);
+              }
+            }
+            else {
+              if (node && node.ellipsecontent) {
+                return (<Extensionboth key={node.sno} boxcolor={node.boxcolor} wheelcolor={node.wheelcolor} ellipsecolor={node.ellipsecolor} node={node} position="notend"></Extensionboth>
+                );
+              }
+              else {
+                return (<Extensionright key={node.sno} boxcolor="#C48DFF" node={node} position="notend"></Extensionright>);
+              }
+            }
+          }
+          )}
       </Wrapper>
 
     </section>
