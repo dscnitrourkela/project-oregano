@@ -11,7 +11,7 @@ import {
   FAQQuestionText,
 } from './Style';
 import faqData from '../../../config/content/Faq';
-import { Heading2, Heading4 } from '../shared';
+import { Heading2 } from '../shared';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
@@ -35,9 +35,8 @@ const FAQ = () => {
 
       <Heading2>Do You Have A Question?</Heading2>
 
-      <FAQCaption>
-        <Heading4>New to Hackathon! Dont worry we go</Heading4>
-      </FAQCaption>
+      <FAQCaption>New to Hackathon! Dont worry we go</FAQCaption>
+
       <FAQQuestionContainer>
         {faqData.map((faq, index) => (
           <div key={faq.question}>

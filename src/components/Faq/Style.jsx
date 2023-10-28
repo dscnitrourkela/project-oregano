@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { Caption } from '../shared';
+import { Caption,Heading4 } from '../shared';
 
 const rotateOut = keyframes`
   from { transform: rotate(0deg);
@@ -34,6 +34,10 @@ export const FAQHeading = styled.div`
   @media (max-width: 768px) {
     font-size: 24px;
   }
+`;
+
+export const FAQCaption = styled(Heading4)`
+   margin-top: -30px;
 `;
 
 export const FAQQuestionContainer = styled.div`
