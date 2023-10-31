@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading3 } from '../shared';
 import { Body1 } from '../shared';
-
 
 export const SectionContainer = styled.div`
   ${tw`
@@ -15,9 +13,6 @@ export const SectionContainer = styled.div`
     flex-row
     items-start
     justify-center
-    
-  
-    
   `}
 `;
 
@@ -33,22 +28,26 @@ export const HeroBody = styled.div`
     w-full
     `}
 `;
+export const heroBelow = styled.div`
+  ${tw`
+    
+    `}
+`;
 
 export const HeroTitle = styled.div`
   ${tw`
-  // bg-white
     flex
     justify-center
     gap-2
     items-center
     flex-col
     px-36
-    md:px-16
-    lg:px-36
+    md:px-12
+    // lg:px-36
     mx-10
     mt-32
+   
     `}
-    
 `;
 
 export const HeroInside = styled.div`
@@ -61,6 +60,7 @@ export const HeroInside = styled.div`
     gap-0
     sm:gap-0
     w-full
+    
     `}
 `;
 
@@ -80,7 +80,7 @@ export const HACKimg = styled.img`
 `;
 
 export const NITRimg = styled.img`
- ${tw`
+  ${tw`
     w-32
     sm:w-48
     md:w-72
@@ -93,6 +93,8 @@ export const HeroHeading = styled.div`
       flex
       // border-white
       // bg-red-500
+      // px-8
+      // lg: px-12
       
   `}
 `;
@@ -106,7 +108,7 @@ export const HeroHeadingBase = styled.div`
       sm:mx-1
 
   `}
-`
+`;
 
 export const FIVEimg = styled.img`
   ${tw`
@@ -116,8 +118,7 @@ export const FIVEimg = styled.img`
     lg:w-28
     
   `}
-`
-
+`;
 
 export const SubTitle = styled.p`
   ${tw`
@@ -139,11 +140,10 @@ export const Tagline = styled.div`
     // font-extrabold 
     leading-7
     // bg-red-100
+    // lg: px-12
 
     `}
 `;
-
-
 
 export const TaglineText = styled(Body1)`
   ${tw`
@@ -163,10 +163,10 @@ export const HeroButtons = styled.div`
   ${tw`
     flex
     sm:flex-row
-    flex-row
+    flex-col
     justify-center
     items-center
-    mt-6
+    mt-12
     `}
 `;
 
@@ -174,4 +174,4 @@ export const DevFolioButton = styled.button`
   ${tw`
     w-16
   `}
-`
+`;

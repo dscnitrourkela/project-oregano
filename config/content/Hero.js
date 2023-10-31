@@ -1,13 +1,8 @@
 /* eslint-disable max-len */
 export default {
-  dates: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Group_105_ymghqp.png',
-    alt: 'Image representing dates of the HackNITR Hackathon happening from 28-31 October 2021',
-  },
-  title: 'HackNITR 4.0',
   tagline: 'IMAGINE. INITIATE. IMPLEMENT',
   content:
-    'Explore further into your innovation journey with HackNITR 4.0 and manifest your skills.', // "Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
+    'Hop on the bandwagon, and join one of India’s largest Student-run hackathons. HackNITR is back with version 5.0, which is now fully offline!', // "Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
   links: {
     discord: {
       icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Discord-Logo-Black_ratsjn.svg',
@@ -18,8 +13,18 @@ export default {
       link: 'https://discord.gg/rxMB9aWbJD',
     },
   },
-  img: {
-    src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Illustartion_vjqumg.png',
-    alt: 'Howdy buddy! We are back with another awesome virtual hackathon, HackNITR',
-  },
-};
+  imgs: {
+    hack:{
+    src: 'https://res.cloudinary.com/dra96qhox/image/upload/v1698403802/ezgif.com-gif-maker_xtnlan.gif',
+    alt: 'Hack',
+    },
+    nitr:{
+      src: 'https://res.cloudinary.com/dra96qhox/image/upload/v1698055003/NITREdited_gaxxwc.png',
+      alt: 'NITR',
+    },
+    five:{
+      src: 'https://res.cloudinary.com/dra96qhox/image/upload/v1698054060/FIVE_kux2hx.png',
+      alt: 'FIVE',
+    },
+},
+}

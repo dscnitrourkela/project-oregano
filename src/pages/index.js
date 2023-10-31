@@ -51,7 +51,7 @@ const HomePage = ({ location }) => {
       <>
         
         <Container>
-          <Playground/>
+          {/* <Playground/> */}
           
         </Container>
         
