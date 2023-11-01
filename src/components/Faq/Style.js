@@ -50,7 +50,11 @@ export const FAQQuestionContainer = styled.div`
   gap: 32px;
 
   @media (max-width: 768px) {
-    gap: 12px;
+    gap: 16px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 6px 24px;
   }
 `;
 
@@ -80,6 +84,7 @@ export const FAQQuestion = styled.div`
 
   @media (max-width: 768px) {
     font-size: 16px;
+    border: 12px;
   }
 `;
 
