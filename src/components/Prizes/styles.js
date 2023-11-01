@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const smallScreen = '768px';
 const mediumScreen = '1024px';
-const largeScreen = '1280px';
+// const largeScreen = '1280px';
 
 export const PrizesContainerWrapper = styled.div`
   padding-left: 0;
@@ -38,7 +38,6 @@ export const TotalPrizes = styled.div`
   letter-spacing: 0em;
   text-align: center;
   background: transparent;
-  
 `;
 
 export const Box = styled.div`
@@ -92,8 +91,6 @@ export const Description = styled.div`
   flex-direction: column;
   margin-top: 20px;
 `;
-
-
 
 export const PrizeDescriptions = styled.div`
   display: flex;

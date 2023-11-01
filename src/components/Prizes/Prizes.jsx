@@ -10,12 +10,10 @@ import {
   Swags,
   Merchandise,
   PrizesContainerWrapper,
-} from './Prizes.styles';
-import goldImageURL from './static/gold.png';
-import silverImageURL from '.static/silver.png';
-import bronzeImageURL from '.static/bronze.png';
+} from './styles';
 
-const imageUrls = [goldImageURL, silverImageURL, bronzeImageURL];
+// eslint-disable-next-line max-len
+const imageUrls = ["https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/gold_zvb6fu.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/silver_ramqno.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/bronze_vlzvme.png"];
 const prizeValues = ['100k', '30k', '20k'];
 const prizeShadowColors = ['aqua', 'darkblue', 'purple'];
 
@@ -56,25 +54,59 @@ const Prizes = () => {
         <PrizesContainer>
           {imageUrls.map((imageUrl, index) => (
             <div
-              key={index}
+              key={imageUrl}
               onMouseEnter={() => handleBoxHover(index)}
               onMouseLeave={handleBoxLeave}
             >
               <Box expanded={expandedIndex === index} shadowColor={prizeShadowColors[index]}>
-                <img src={imageUrl} alt="Medal" style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                <img src={imageUrl} alt='Medal' style={{ maxWidth: '100%', maxHeight: '100%' }} />
 
                 {expandedIndex === index && (
                   <Description>
-                    <TotalPrizes  style={{ marginTop: '10px' }}>
+                    <TotalPrizes style={{ marginTop: '10px' }}>
                       Total Prize - {prizeValues[index]}
                     </TotalPrizes>
-                    <PrizeText style={{ bottom: '20px',marginTop: '32px' }}>
-                    <CashPrize style={{ color: 'var(--primary-blue-3, #02DAFF)', textAlign: 'center', fontFamily: 'Prompt', fontSize: '18px', fontStyle: 'normal', fontWeight: '500', lineHeight: '24px' }}>
-                      Cash Prize {prizeDescriptions[index].cash}
+                    <PrizeText style={{ bottom: '20px', marginTop: '32px' }}>
+                      <CashPrize
+                        style={{
+                          color: 'var(--primary-blue-3, #02DAFF)',
+                          textAlign: 'center',
+                          fontFamily: 'Prompt',
+                          fontSize: '18px',
+                          fontStyle: 'normal',
+                          fontWeight: '500',
+                          lineHeight: '24px',
+                        }}
+                      >
+                        Cash Prize {prizeDescriptions[index].cash}
                       </CashPrize>
 
-                      <Swags style={{ color: 'var(--primary-purple-2, #B067FF)', textAlign: 'center', fontFamily: 'Prompt', fontSize: '18px', fontStyle: 'normal', fontWeight: '500', lineHeight: '24px' }}>+ {prizeDescriptions[index].swags}</Swags>
-                      <Merchandise style={{ color: 'var(--primary-green-2, #43F4AA)', textAlign: 'center', fontFamily: 'Prompt', fontSize: '18px', fontStyle: 'normal', fontWeight: '500', lineHeight: '24px' }}>+ {prizeDescriptions[index].merchandise}</Merchandise>
+                      <Swags
+                        style={{
+                          color: 'var(--primary-purple-2, #B067FF)',
+                          textAlign: 'center',
+                          fontFamily: 'Prompt',
+                          fontSize: '18px',
+                          fontStyle: 'normal',
+                          fontWeight: '500',
+                          lineHeight: '24px',
+                        }}
+                      >
+                        + {prizeDescriptions[index].swags}
+                      </Swags>
+                      <Merchandise
+                        style={{
+                          color: 'var(--primary-green-2, #43F4AA)',
+                          textAlign: 'center',
+                          fontFamily: 'Prompt',
+                          fontSize: '18px',
+                          fontStyle: 'normal',
+                          fontWeight: '500',
+                          lineHeight: '24px',
+                        }}
+                      >
+                        + {prizeDescriptions[index].merchandise}
+                      </Merchandise>
                     </PrizeText>
                   </Description>
                 )}
