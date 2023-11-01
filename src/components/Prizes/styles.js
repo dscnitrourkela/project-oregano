@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { Heading4 } from '../shared';
 
 const smallScreen = '768px';
 const mediumScreen = '1024px';
-// const largeScreen = '1280px';
 
 export const PrizesContainerWrapper = styled.div`
   padding-left: 0;
+  height: 100vh;
 
   @media (max-width: ${smallScreen}) {
     padding: 0 20px;
@@ -28,6 +29,8 @@ export const PrizeText = styled.div`
   align-items: center;
   font-size: 20px;
   color: #000;
+  visibility: hidden;
+  transition: visibility 0.1s ease 0.3s;
 `;
 
 export const TotalPrizes = styled.div`
@@ -38,27 +41,34 @@ export const TotalPrizes = styled.div`
   letter-spacing: 0em;
   text-align: center;
   background: transparent;
+  visibility: hidden;
+  transition: visibility 0.1s ease 0.3s;
 `;
 
 export const Box = styled.div`
   width: 400px;
   height: ${(props) => (props.expanded ? '546px' : '360px')};
-  border-radius: 12px;
+  border-radius: 10px;
   background: #272727;
   margin: 10px;
-  transition: height 1s, box-shadow 1s;
+  transition: height 1s, box-shadow 3s;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   position: relative;
-  box-shadow: 0 8px 16px 0 #272727;
+  box-shadow: 0 8px 8px 0 rgba(39, 39, 39, 0.6);
   margin-bottom: 24px;
 
   &:hover {
-    box-shadow: 0 16px 32px 0 ${(props) => props.shadowColor || '#272727'};
+    box-shadow: 0 8px 24px 0 ${(props) => props.shadowColor || '#272727'};
   }
-
+  &:hover ${PrizeText} {
+    visibility: visible;
+  }
+  &:hover ${TotalPrizes} {
+    visibility: visible;
+  }
   @media (max-width: ${mediumScreen}) {
     width: 100%;
     height: ${(props) => (props.expanded ? '500px' : '380px')};
@@ -100,19 +110,17 @@ export const PrizeDescriptions = styled.div`
   font-weight: 400;
 `;
 
-export const CashPrize = styled.div`
+export const CashPrize = styled(Heading4)`
   color: aqua;
-  font-size: 18px;
-  font-weight: 400;
 `;
 
-export const Swags = styled.div`
+export const Swags = styled(Heading4)`
   color: #c600ff;
   font-size: 18px;
   font-weight: 400;
 `;
 
-export const Merchandise = styled.div`
+export const Merchandise = styled(Heading4)`
   color: #00ff91;
   font-size: 18px;
   font-weight: 400;

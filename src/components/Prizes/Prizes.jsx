@@ -15,7 +15,7 @@ import {
 // eslint-disable-next-line max-len
 const imageUrls = ["https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/gold_zvb6fu.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/silver_ramqno.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/bronze_vlzvme.png"];
 const prizeValues = ['100k', '30k', '20k'];
-const prizeShadowColors = ['aqua', 'darkblue', 'purple'];
+const prizeShadowColors = ['#43F4AA', '#02AECC', '#7D34CC'];
 
 const prizeDescriptions = [
   {
@@ -71,11 +71,7 @@ const Prizes = () => {
                         style={{
                           color: 'var(--primary-blue-3, #02DAFF)',
                           textAlign: 'center',
-                          fontFamily: 'Prompt',
-                          fontSize: '18px',
-                          fontStyle: 'normal',
-                          fontWeight: '500',
-                          lineHeight: '24px',
+                          
                         }}
                       >
                         Cash Prize {prizeDescriptions[index].cash}
