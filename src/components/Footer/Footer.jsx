@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Heading2, Heading3 } from '..';
 import {FooterContainer, InitialCont, ImgCont, FirstRow, FrItems, FirstAboutContainer, SecondPendulumContainer} from './styles';
+import {NitLogo, FooterImg} from './images';
 import TermsNCredits from './TermsNCredits';
-import { AboutBox, Para, Content, LogoCont, LogoImg } from './AboutBox';
-import {NitLogo, FooterImg} from './images'
-import Pendulum from './Pendulum';
+import AboutContainer from './AboutBox';
+import PendulumGpt from './Pendulum_gpt';
+import Pendulums from './Pendulums';
 
 export const Footer = () => {
   return (
@@ -13,28 +14,10 @@ export const Footer = () => {
     <FooterContainer>
       
       <InitialCont>
-        <FirstAboutContainer>
-          <FirstRow>
-            <FrItems>About US</FrItems>
-            <FrItems>Contact US</FrItems>
-            <FrItems>Sponsor US</FrItems>
-          </FirstRow>
-
-          <AboutBox>
-            <LogoCont> <LogoImg src={NitLogo} alt="nit logo" /> </LogoCont>
-            <Para>
-              <Heading3>About NIT Rourkela</Heading3>
-              <Content>
-              With a strength of around 7000 students, NIT Rourkela is one of the most 
-              coveted institutes for higher studies by future technocrats. With its lush green
-              and humongous area, it indeed makes a pleasant campus impression.
-              </Content>
-              </Para>
-          </AboutBox>
-        </FirstAboutContainer>
+        <AboutContainer AbtLogo={NitLogo}/>
 
         <SecondPendulumContainer>
-          <Pendulum></Pendulum>
+          <PendulumGpt/>
         </SecondPendulumContainer>
       </InitialCont>
 

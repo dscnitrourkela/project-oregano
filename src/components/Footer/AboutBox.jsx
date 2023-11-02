@@ -1,6 +1,59 @@
+import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Container, Heading4, NavText, Body1, Body2 } from '..';
+import {Heading3 } from '..';
+
+const AboutContainer = ({AbtLogo})=>{
+  return(
+    <FirstAboutContainer>
+    <FirstRow>
+      <FrItems>About US</FrItems>
+      <FrItems>Contact US</FrItems>
+      <FrItems>Sponsor US</FrItems>
+    </FirstRow>
+
+    <AboutBox>
+      <LogoCont> <LogoImg src={AbtLogo} alt="nit logo" /> </LogoCont>
+      <Para>
+        <Heading3>About NIT Rourkela</Heading3>
+        <Content>
+        With a strength of around 7000 students, NIT Rourkela is one of the most 
+        coveted institutes for higher studies by future technocrats. With its lush green
+        and humongous area, it indeed makes a pleasant campus impression.
+        </Content>
+        </Para>
+    </AboutBox>
+  </FirstAboutContainer>
+  )
+}
+
+export const FirstAboutContainer = styled.div`
+  ${tw`
+  text-white
+  p-4
+`}
+  background: #060616;
+`;
+
+export const FirstRow = styled.div`
+  ${tw`
+  w-full
+  flex
+  flex-row
+  justify-start	
+  p-2
+  `}
+`;
+
+export const FrItems = styled.span`
+  ${tw`
+  text-white
+  text-xl
+  px-4
+  py-6
+`}
+`;
+
 
 export const AboutBox = styled.div`
   ${tw`
@@ -8,7 +61,8 @@ export const AboutBox = styled.div`
     flex-row
     text-lg
     w-[851px]
-    m-4
+    mx-4
+    my-8
     p-5
     `}
     background: #080822;
@@ -41,3 +95,5 @@ export const LogoImg = styled.img`
     w-full
     `}
 `;
+
+export default AboutContainer;

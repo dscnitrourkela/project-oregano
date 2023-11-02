@@ -11,7 +11,7 @@ const PendulumContainer = styled.div`
   transition: transform 0.1s;
 `;
 
-const Pendulum = () => {
+const PendulumGpt = () => {
   const [angle, setAngle] = useState(0);
   const [direction, setDirection] = useState(1);
 
@@ -38,4 +38,4 @@ const Pendulum = () => {
   return <PendulumContainer style={pendulumStyle} />;
 };
 
-export default Pendulum;
+export default PendulumGpt;

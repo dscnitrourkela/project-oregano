@@ -20,13 +20,7 @@ export const InitialCont = styled.div`
   justify-between		
   `}
 `;
-export const FirstAboutContainer = styled.div`
-  ${tw`
-  text-white
-  p-4
-`}
-  background: #060616;
-`;
+
 
 export const SecondPendulumContainer = styled.div`
   ${tw` 
@@ -38,24 +32,6 @@ export const SecondPendulumContainer = styled.div`
 `;
 
 
-export const FirstRow = styled.div`
-  ${tw`
-  w-full
-  flex
-  flex-row
-  justify-start	
-  p-2
-  `}
-`;
-
-export const FrItems = styled.span`
-  ${tw`
-  text-white
-  text-xl
-  px-4
-  py-6
-`}
-`;
 
 
 export const ImgCont = styled.img`
