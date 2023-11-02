@@ -26,7 +26,7 @@ export default function Hero() {
             <HACKimg src={hero.imgs.hack.src} alt={hero.imgs.hack.alt}/>
             <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt}/>
           </HeroInside>
-          <heroBelow className='max-w-3xl mx-4 md:mx-4 '>
+          <heroBelow className='mx-8 md:max-w-xl lg:max-w-3xl'>
             <HeroHeading className='flex border-white w-full'>
               <HeroHeadingBase>
                 <FIVEimg src={hero.imgs.five.src}/>

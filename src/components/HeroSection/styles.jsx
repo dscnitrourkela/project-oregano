@@ -104,8 +104,8 @@ export const HeroHeadingBase = styled.div`
       flex
       justify-end
       w-full
-      mx-3
-      sm:mx-1
+      // mx-3
+      // sm:mx-1
 
   `}
 `;
