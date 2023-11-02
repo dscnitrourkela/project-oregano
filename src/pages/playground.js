@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Body1,
   Body2,
@@ -11,10 +10,12 @@ import {
   ButtonMeta,
   ButtonMetaLarge,
 } from '../components';
+import Hero from '../components/HeroSection/HeroSection';
 
 export default function Playground() {
   return (
     <div>
+      <Hero/>
       <Heading1>GDSC</Heading1>
       <Heading1 className='italic'>GDSC</Heading1>
       <Heading2>GDSC</Heading2>
