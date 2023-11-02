@@ -1,4 +1,4 @@
-"use client"
+
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
@@ -47,7 +47,11 @@ const HomePage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
-
+        
+      <Container>
+        <Heading1>Hello World</Heading1>
+      </Container>
+        
     </>
   );
 };
