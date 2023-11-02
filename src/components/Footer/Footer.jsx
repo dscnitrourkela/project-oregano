@@ -21,7 +21,7 @@ export const Footer = () => {
           </SecondPendulumContainer>
         </InitialCont>
 
-        <TermsNCredits />
+        <TermsNCredits copyw={footer.copyright} />
       </FooterContainer>
     </>
   );

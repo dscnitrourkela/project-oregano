@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const TermsNCredits = () => {
+const TermsNCredits = ({ copyw }) => {
   return (
     <LastLine>
       <Terms>
@@ -10,7 +10,7 @@ const TermsNCredits = () => {
         <ConditionItems>Terms and Conditions</ConditionItems>
       </Terms>
 
-      <Credits>Architected with ❤️ by HackNITR Team</Credits>
+      <Credits>{ copyw.content }</Credits>
     </LastLine>
   );
 };
