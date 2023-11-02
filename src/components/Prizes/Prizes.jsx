@@ -67,13 +67,15 @@ const Prizes = () => {
                       Total Prize - {prizeValues[index]}
                     </TotalPrizes>
                     <PrizeText style={{ bottom: '20px', marginTop: '32px' }}>
+                      <div className='flex justify-center items-center'>
+
                       <CashPrize
                         style={{
                           color: 'var(--primary-blue-3, #02DAFF)',
                           textAlign: 'center',
                           
                         }}
-                      >
+                        >
                         Cash Prize {prizeDescriptions[index].cash}
                       </CashPrize>
 
@@ -82,14 +84,15 @@ const Prizes = () => {
                           color: 'var(--primary-purple-2, #B067FF)',
                           textAlign: 'center',
                           fontFamily: 'Prompt',
-                          fontSize: '18px',
+                          
                           fontStyle: 'normal',
-                          fontWeight: '500',
                           lineHeight: '24px',
                         }}
-                      >
+                        >
+                        
                         + {prizeDescriptions[index].swags}
                       </Swags>
+                      </div>
                       <Merchandise
                         style={{
                           color: 'var(--primary-green-2, #43F4AA)',
@@ -101,7 +104,7 @@ const Prizes = () => {
                           lineHeight: '24px',
                         }}
                       >
-                        + {prizeDescriptions[index].merchandise}
+                       +  {prizeDescriptions[index].merchandise}
                       </Merchandise>
                     </PrizeText>
                   </Description>

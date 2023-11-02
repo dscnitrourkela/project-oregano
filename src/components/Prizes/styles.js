@@ -26,11 +26,12 @@ export const PrizesContainer = styled.div`
 
 export const PrizeText = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-size: 20px;
   color: #000;
   visibility: hidden;
-  transition: visibility 0.1s ease 0.3s;
+  transition: visibility 0.7s ease-in-out 0.6s;
 `;
 
 export const TotalPrizes = styled.div`
@@ -42,7 +43,7 @@ export const TotalPrizes = styled.div`
   text-align: center;
   background: transparent;
   visibility: hidden;
-  transition: visibility 0.1s ease 0.3s;
+  transition: visibility 0.9s ease-in-out 0.8s;
 `;
 
 export const Box = styled.div`
@@ -57,7 +58,7 @@ export const Box = styled.div`
   align-items: center;
   padding: 20px;
   position: relative;
-  box-shadow: 0 8px 8px 0 rgba(39, 39, 39, 0.6);
+  box-shadow: 0 4px 24px 0 rgba(39, 39, 39, 0.6);
   margin-bottom: 24px;
 
   &:hover {
@@ -65,9 +66,11 @@ export const Box = styled.div`
   }
   &:hover ${PrizeText} {
     visibility: visible;
+    transition-delay: 0.3s;
   }
   &:hover ${TotalPrizes} {
     visibility: visible;
+    transition-delay: 0.3s;
   }
   @media (max-width: ${mediumScreen}) {
     width: 100%;
@@ -79,12 +82,14 @@ export const Box = styled.div`
     height: ${(props) => (props.expanded ? '480px' : '360px')};
   }
 `;
+
 export const PrizesTitle = styled.h1`
   font-family: Prompt;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: 96px;
+  text-align: center;
 `;
 
 export const ExpandedHeader = styled.div`
@@ -112,16 +117,20 @@ export const PrizeDescriptions = styled.div`
 
 export const CashPrize = styled(Heading4)`
   color: aqua;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 500;
 `;
 
 export const Swags = styled(Heading4)`
   color: #c600ff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
+  white-space: nowrap;
 `;
 
 export const Merchandise = styled(Heading4)`
   color: #00ff91;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
 `;
