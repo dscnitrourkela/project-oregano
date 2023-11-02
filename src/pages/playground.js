@@ -12,12 +12,12 @@ export default function Playground() {
       <Heading3 >GDSC</Heading3>
       <Heading4 >GDSC</Heading4>
       <NavText >GDSC</NavText>
-       <Body1>GDSC</Body1>
-       <Body2>GDSC</Body2>
-       <ButtonMeta>GDSC</ButtonMeta>
-       <ButtonMetaLarge>GDSC</ButtonMetaLarge>
-        <AboutUs />
-        <Carousel />
+      <Body1>GDSC</Body1>
+      <Body2>GDSC</Body2>
+      <ButtonMeta>GDSC</ButtonMeta>
+      <ButtonMetaLarge>GDSC</ButtonMetaLarge>
+      <AboutUs />
+      <Carousel />
     </div>
   );
 }
