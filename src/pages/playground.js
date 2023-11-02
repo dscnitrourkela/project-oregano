@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../components/HeroSection/HeroSection';
+
 import {
   Body1,
   Body2,
@@ -15,7 +15,6 @@ import {
 export default function Playground() {
   return (
     <div>
-      <Hero/>
       <Heading1>GDSC</Heading1>
       <Heading1 className='italic'>GDSC</Heading1>
       <Heading2>GDSC</Heading2>

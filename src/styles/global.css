@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
-
 *,
 *:before,
 *:after {
@@ -172,13 +171,13 @@ table {
 }
 
 :root {
-  --background-primary: #0E0812;
-  --color-primary-pink: #FF8CD9;
-  --color-primary-purple: #C48DFF;
-  --color-primary-blue: #67E9FF;
-  --color-primary-green: #72F7BF;
-  --color-neutral-white: #FFFFFF;
-  --color-neutral-yellow: #FEE27F;
+  --background-primary: #0e0812;
+  --color-primary-pink: #ff8cd9;
+  --color-primary-purple: #c48dff;
+  --color-primary-blue: #67e9ff;
+  --color-primary-green: #72f7bf;
+  --color-neutral-white: #ffffff;
+  --color-neutral-yellow: #fee27f;
 
   --max-width: 83.5em;
   --max-width-bleed: 90%;
