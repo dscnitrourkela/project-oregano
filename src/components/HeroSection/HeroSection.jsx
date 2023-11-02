@@ -15,20 +15,18 @@ import {
 } from './styles';
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
-import { hero } from '../../../config';
 import DiscordBtnMobile from '../shared/DiscordBtnMobile';
-
+import { hero } from '../../../config';
 export default function Hero() {
   return (
     <SectionContainer >
       <HeroBody >
         <HeroTitle className='hero h-100'>
-        
           <HeroInside>
             <HACKimg src={hero.imgs.hack.src} alt={hero.imgs.hack.alt}/>
             <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt}/>
           </HeroInside>
-          <heroBelow className=' mx-4 md:mx-4 lg:mx-36 xl:mx-40 2xl:mx-44'>
+          <heroBelow className='max-w-3xl mx-4 md:mx-4 '>
             <HeroHeading className='flex border-white w-full'>
               <HeroHeadingBase>
                 <FIVEimg src={hero.imgs.five.src}/>
