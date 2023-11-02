@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Heading3 } from '..';
 
-const AboutContainer = ({ AbtLogo }) => {
+const AboutContainer = ({ AbtLogo, about_content }) => {
+  console.log(about_content);
   return (
     <FirstAboutContainer>
       <FirstRow>
@@ -18,12 +19,8 @@ const AboutContainer = ({ AbtLogo }) => {
           <LogoImg src={AbtLogo} alt='nit logo' />{' '}
         </LogoCont>
         <Para>
-          <Heading3>About NIT Rourkela</Heading3>
-          <Content>
-            With a strength of around 7000 students, NIT Rourkela is one of the most coveted
-            institutes for higher studies by future technocrats. With its lush green and humongous
-            area, it indeed makes a pleasant campus impression.
-          </Content>
+          <Heading3>{about_content.title}</Heading3>
+          <Content>{about_content.text}</Content>
         </Para>
       </AboutBox>
     </FirstAboutContainer>

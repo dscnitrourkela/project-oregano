@@ -23,7 +23,7 @@ export default {
   cards: [
     {
       title: 'About NIT Rourkela',
-      text: 'With a total strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
+      text: 'With a strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
       id: 'footer-card-1',
       img: {
         src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/nitr_huzgbq.png',
