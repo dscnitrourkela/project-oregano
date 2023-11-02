@@ -11,5 +11,6 @@ export default styled.p`
    md:leading-5
    text-white
    font-Prompt
+   
 `}
 `;

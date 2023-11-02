@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import {useState } from 'react';
 import Slider from 'react-slick';
 import './App.css';
 import img1 from '../images/img1.png';
@@ -8,33 +8,8 @@ import img3 from '../images/img3.png';
 import img4 from '../images/img1.png';
 
 const images = [img1, img2, img3,img4];
-
-
-// function SampleNextArrow({onClick}) {
-//   return (
-//     <div className='arrow arrow-right' onClick={onClick}>
-//       <BsArrowRight/>
-//     </div>
-//   );
-// }
-
-// function SamplePrevArrow({onClick}) {
-//   return (
-//     <div className='arrow arrow-left' onClick={onClick}>
-//       <BsArrowLeft/>
-//     </div>
-//   );
-// }
-// function EmptyArrow({onClick}) {
-//   return (
-//     <div></div>
-//   );
-// }
-
-function slid() {
-
+function Carousel() {
   const [slideIndex, setSlideIndex] = useState(0);
-
   const settings = {
     // dots: true,
     infinite: true,
@@ -45,15 +20,6 @@ function slid() {
     autoplaySpeed: 1000,
     beforeChange: (current, next)=>setSlideIndex(next),
     centerMode: true,
-    // appendDots: (dots) => (
-    //   <div>
-    //     <ul style={{ margin: "0px" }}> {dots} </ul>
-    //   </div>
-    // ),
-    // customPaging: (current, next) => (
-    //   <div className={current === slideIndex ? 'dot dot-active' : 'dot'}>
-    //   </div>
-    // ),
     responsive: [
       {
         breakpoint: 768,
@@ -64,7 +30,6 @@ function slid() {
         }
       }]
   };
-
   return (
     <div className="container">
         <div className="slider">
@@ -76,12 +41,9 @@ function slid() {
               </div>
             ))
           }
-
       </Slider>
-
         </div>
     </div>
   );
 }
-
-export default slid;
+export default Carousel;
