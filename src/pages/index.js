@@ -8,7 +8,6 @@ import '../styles/global.css';
 // import Hero from '../components/HeroSection/HeroSection';
 import SEO from '../components/shared/SEO/SEO';
 import Heading1 from "../components/shared/Typography/Heading1"
-import Playground from './playground';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -50,10 +49,9 @@ const HomePage = ({ location }) => {
       <SEO />
       <>
         
-        <Container>
-          {/* <Playground/> */}
-          
-        </Container>
+      <Container>
+        <Heading1>Hello World</Heading1>
+      </Container>
         
     </>
     </>
