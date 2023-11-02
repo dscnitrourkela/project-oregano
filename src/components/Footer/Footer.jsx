@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Heading2, Heading3 } from '..';
 import {FooterContainer, InitialCont, ImgCont, FirstRow, FrItems, FirstAboutContainer, SecondPendulumContainer} from './styles';
-import {LastLine, Terms, ConditionItems, Credits} from './TermsNCredits';
+import TermsNCredits from './TermsNCredits';
 import { AboutBox, Para, Content, LogoCont, LogoImg } from './AboutBox';
 import {NitLogo, FooterImg} from './images'
 import Pendulum from './Pendulum';
@@ -38,14 +38,7 @@ export const Footer = () => {
         </SecondPendulumContainer>
       </InitialCont>
 
-      <LastLine>
-        <Terms>
-        <ConditionItems>Privacy & Cookies</ConditionItems>
-        <ConditionItems>Terms and Conditions</ConditionItems>
-        </Terms>
-
-        <Credits>Architected with ❤️ by HackNITR Team</Credits>
-      </LastLine>   
+      <TermsNCredits/>
     </FooterContainer>
     </>
     
