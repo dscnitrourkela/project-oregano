@@ -10,6 +10,7 @@ import {
   ButtonMeta,
   ButtonMetaLarge,
 } from '../components';
+import { Footer } from '../components/Footer/Footer';
 
 export default function Playground() {
   return (
@@ -25,6 +26,7 @@ export default function Playground() {
       <Body2>GDSC</Body2>
       <ButtonMeta>GDSC</ButtonMeta>
       <ButtonMetaLarge>GDSC</ButtonMetaLarge>
+      <Footer />
     </div>
   );
 }
