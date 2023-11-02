@@ -9,6 +9,7 @@ import {
   FAQIcon,
   FAQAnswer,
   FAQQuestionText,
+  FAQDiv,
 } from './Style';
 import faqData from '../../../config/content/Faq';
 import { Heading2 } from '../shared';
@@ -44,18 +45,16 @@ const FAQ = () => {
               onClick={() => toggleQuestion(index)}
               className={openQuestions.includes(index) ? 'opened' : 'closing'}
             >
-              <FAQQuestionText>{faq.question}</FAQQuestionText>
+              <FAQDiv>
+                <FAQQuestionText>{faq.question}</FAQQuestionText>
 
-              <FAQIcon
-                isOpen={openQuestions.includes(index)}
-                className={openQuestions.includes(index) ? 'opened' : 'closing'}
-              >
-                {openQuestions.includes(index) ? (
-                  <span className='material-symbols-outlined'>close</span>
-                ) : (
+                <FAQIcon
+                  isOpen={openQuestions.includes(index)}
+                  className={openQuestions.includes(index) ? 'opened' : 'closing'}
+                >
                   <span className='material-symbols-outlined'>add</span>
-                )}
-              </FAQIcon>
+                </FAQIcon>
+              </FAQDiv>
 
               <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
             </FAQQuestion>

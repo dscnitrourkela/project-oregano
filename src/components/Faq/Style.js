@@ -10,8 +10,6 @@ const rotateOut = keyframes`
 export const FAQContainer = styled.div`
   width: 1162px;
   margin: auto;
-  top: 6109px;
-  left: 139px;
   gap: 32px;
   display: flex;
   flex-direction: column;
@@ -23,21 +21,9 @@ export const FAQContainer = styled.div`
   }
 `;
 
-export const FAQHeading = styled.div`
-  width: 612px;
-  height: 64px;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 64px;
-  color: #fff;
-  margin-bottom: -35px;
-  @media (max-width: 768px) {
-    font-size: 24px;
-  }
-`;
-
 export const FAQCaption = styled(Heading4)`
   margin-top: -30px;
+  text-align: center;
 `;
 
 export const FAQQuestionContainer = styled.div`
@@ -51,16 +37,13 @@ export const FAQQuestionContainer = styled.div`
 
   @media (max-width: 768px) {
     gap: 16px;
-  }
-
-  @media (max-width: 768px) {
     padding: 6px 24px;
   }
 `;
 
 export const FAQQuestion = styled.div`
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   padding: 16px 36px;
   align-items: flex-start;
   gap: 404px;
@@ -89,19 +72,15 @@ export const FAQQuestion = styled.div`
 `;
 
 export const FAQIcon = styled.div`
-  position: absolute;
-
   font-size: 24px;
-  right: 225px;
-  position: absolute;
   tarnsform: translateY(-50%);
-  transition: 0.5s;
+  transition: tarnsform 0.5s;
   padding-top: 6px;
   &.closing {
     animation: ${rotateOut} 0.5s ease-in-out;
   }
   &.opened {
-    transform: rotate(0deg);
+    transform: rotate(45deg);
   }
 `;
 
@@ -110,7 +89,7 @@ export const FAQAnswer = styled(Caption)`
   margin-top: -25px;
    word-wrap: break-word;
    overflow-wrap: break-word;
-  height:auto
+   height:auto
   position: relative;
   padding: 0px 20px;
   transition: 0.5s;
@@ -120,4 +99,10 @@ export const FAQQuestionText = styled.div`
   height: auto;
   padding: 0px 20px;
   position: relative;
+`;
+
+export const FAQDiv = styled.div`
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
 `;
