@@ -23,6 +23,12 @@
   opacity: 1;
   transform: scale(1.1);
 }
+.container{
+  margin-top: 20px;
+}
+.slick-prev:before, .slick-next:before{
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .header{
     font-size: 7vw;

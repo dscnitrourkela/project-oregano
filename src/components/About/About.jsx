@@ -11,7 +11,6 @@ const AboutContainer = styled.div`
   overflow: hidden;
   width: 100%;
 `;
-// const modifiedHead = styled(Heading2)`
 const AboutUs = () => {
   return (
     <AboutContainer>
