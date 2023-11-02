@@ -28,11 +28,6 @@ export const HeroBody = styled.div`
     w-full
     `}
 `;
-export const heroBelow = styled.div`
-  ${tw`
-    
-    `}
-`;
 
 export const HeroTitle = styled.div`
   ${tw`
@@ -104,8 +99,6 @@ export const HeroHeadingBase = styled.div`
       flex
       justify-end
       w-full
-      // mx-3
-      // sm:mx-1
 
   `}
 `;
@@ -132,18 +125,6 @@ export const SubTitle = styled.p`
     `}
 `;
 
-export const Tagline = styled.div`
-  ${tw`
-    text-center 
-    text-lg 
-    not-italic 
-    // font-extrabold 
-    leading-7
-    // bg-red-100
-    // lg: px-12
-
-    `}
-`;
 
 export const TaglineText = styled(Body1)`
   ${tw`
@@ -168,10 +149,4 @@ export const HeroButtons = styled.div`
     items-center
     mt-12
     `}
-`;
-
-export const DevFolioButton = styled.button`
-  ${tw`
-    w-16
-  `}
 `;

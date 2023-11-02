@@ -5,7 +5,6 @@ import {
   HACKimg,
   HeroTitle,
   HeroInside,
-  Tagline,
   TaglineText,
   HeroButtons,
   HeroHeading,
@@ -26,23 +25,21 @@ export default function Hero() {
             <HACKimg src={hero.imgs.hack.src} alt={hero.imgs.hack.alt}/>
             <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt}/>
           </HeroInside>
-          <heroBelow className='mx-8 md:max-w-xl lg:max-w-3xl'>
+          <contentBlock className='mx-8 md:max-w-xl lg:max-w-3xl'>
             <HeroHeading className='flex border-white w-full'>
               <HeroHeadingBase>
                 <FIVEimg src={hero.imgs.five.src}/>
               </HeroHeadingBase>
             </HeroHeading>
-            <Tagline>
               <TaglineText>{hero.content}</TaglineText>
-            </Tagline>
-          </heroBelow>
+          </contentBlock>
           <HeroButtons className='sm:gap-8'>
             <DevfolioButton/>
             <DiscordButton />
             <DiscordBtnMobile/>
           </HeroButtons>
         </HeroTitle>
-      </HeroBody>
-    </SectionContainer>
+       </HeroBody>
+     </SectionContainer>
   );
 }
