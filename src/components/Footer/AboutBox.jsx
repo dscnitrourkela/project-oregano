@@ -15,8 +15,7 @@ const AboutContainer = ({ AbtLogo, about_content }) => {
 
       <AboutBox>
         <LogoCont>
-          {' '}
-          <LogoImg src={AbtLogo} alt='nit logo' />{' '}
+          <LogoImg src={AbtLogo} alt={about_content.img.alt} />
         </LogoCont>
         <Para>
           <Heading3>{about_content.title}</Heading3>

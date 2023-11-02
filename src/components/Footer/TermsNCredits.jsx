@@ -10,7 +10,7 @@ const TermsNCredits = ({ copyw }) => {
         <ConditionItems>Terms and Conditions</ConditionItems>
       </Terms>
 
-      <Credits>{ copyw.content }</Credits>
+      <Credits>{copyw.content}</Credits>
     </LastLine>
   );
 };
