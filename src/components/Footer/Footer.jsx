@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container, Heading2, Heading3 } from '..';
-import {Comp1, FooterContainer, ImgCont, FirstRow, FrItems,Comp2} from './styles';
-import { AboutBox, Para, Content, LogoCont, LogoImg } from './AboutBox';
-import FooterImg from './images/Frame 791.png';
-import NitLogo from './images/nitr_logo.png';
+import {FooterContainer, ImgCont, FirstRow, FrItems} from './styles';
+import { AboutBox, Para, Content, LogoCont, LogoImg,  } from './AboutBox';
+import {NitLogo, FooterImg} from './images'
 
 export const Footer = () => {
   return (
@@ -11,6 +10,7 @@ export const Footer = () => {
     <ImgCont src={FooterImg} alt="footer" />
 
     <FooterContainer>
+
       <FirstRow>
         <FrItems>About US</FrItems>
         <FrItems>Contact US</FrItems>
@@ -30,16 +30,9 @@ export const Footer = () => {
         </Para>
       </AboutBox>
 
-        <Heading2> Footer </Heading2>
-        <Comp1>list item 1</Comp1>
-        <Comp1>list item 2</Comp1>
-        <Comp1>Smaller Componenets</Comp1>
-
-        <Comp2>another component</Comp2>
+        
     </FooterContainer>
     </>
     
   )
 }
-console.log(Comp1.componentStyle.rules)
-console.log(Comp2.componentStyle.rules)

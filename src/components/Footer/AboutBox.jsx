@@ -2,6 +2,22 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { Container, Heading4, NavText, Body1, Body2 } from '..';
 
+export const FirstAboutContainer = styled(Container)`
+  ${tw`
+  text-white
+  p-4
+`}
+  background: #060616;
+`;
+
+export const SecondPendulumContainer = styled(Container)`
+  ${tw` 
+  text-white
+  p-4
+  `}
+  background: #080822;
+`;
+
 export const AboutBox = styled.div`
   ${tw`
     flex
@@ -26,7 +42,7 @@ export const Para = styled.p`
 export const Content = styled.p`
     ${tw`
     my-5
-    text-gray-400
+    text-neutral-white-700
     `}
 `;
 

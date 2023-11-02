@@ -36,13 +36,17 @@ export const ImgCont = styled.img`
 `}
 `;
 
-export const Comp1= styled.div`
+export const LastLine = styled.div`
   ${tw`
-  text-white
-  border-white
-  border-2
-`}
+    h-[10px]
+    bg-white
+    w-full
+    flex
+    flex-row
+    items-start
+  `}
 `;
+
 
 export const Comp2 = styled(Container)`
 background-color: red;
