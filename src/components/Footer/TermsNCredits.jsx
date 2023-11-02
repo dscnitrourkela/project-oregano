@@ -2,18 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-const TermsNCredits = ()=>{
-    return(
-        <LastLine>
-        <Terms>
+const TermsNCredits = () => {
+  return (
+    <LastLine>
+      <Terms>
         <ConditionItems>Privacy & Cookies</ConditionItems>
         <ConditionItems>Terms and Conditions</ConditionItems>
-        </Terms>
+      </Terms>
 
-        <Credits>Architected with ❤️ by HackNITR Team</Credits>
-      </LastLine>
-    )
-}
+      <Credits>Architected with ❤️ by HackNITR Team</Credits>
+    </LastLine>
+  );
+};
 
 export const LastLine = styled.div`
   ${tw`
@@ -33,7 +33,7 @@ export const Terms = styled.div`
   flex-row
   justify-start	
   `}
-`
+`;
 
 export const ConditionItems = styled.span`
   ${tw`
@@ -48,5 +48,5 @@ export const Credits = styled.div`
   mx-2
   px-8
   `}
-`
+`;
 export default TermsNCredits;

@@ -1,7 +1,16 @@
 import React from 'react';
-import { Body1, Body2, Heading1, Heading2, Heading3, Heading4, NavText, ButtonMeta, ButtonMetaLarge } from '../components';
+import {
+  Body1,
+  Body2,
+  Heading1,
+  Heading2,
+  Heading3,
+  Heading4,
+  NavText,
+  ButtonMeta,
+  ButtonMetaLarge,
+} from '../components';
 import { Footer } from '../components/Footer/Footer';
-
 
 export default function Playground() {
   return (
@@ -17,7 +26,7 @@ export default function Playground() {
       <Body2>GDSC</Body2>
       <ButtonMeta>GDSC</ButtonMeta>
       <ButtonMetaLarge>GDSC</ButtonMetaLarge>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

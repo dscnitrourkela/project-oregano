@@ -25,13 +25,13 @@ const Pendulum = () => {
     }
   }, [angle, direction]);
 
-  return <div className="pendulum" style={pendulumStyle}></div>;
+  return <div className='pendulum' style={pendulumStyle}></div>;
 };
 
 function Pendulums() {
   return (
-    <div className="Pendulums">
-      <div className="pendulum-container">
+    <div className='Pendulums'>
+      <div className='pendulum-container'>
         <Pendulum />
         <Pendulum />
         <Pendulum />

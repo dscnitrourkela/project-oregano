@@ -1,31 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import {Heading3 } from '..';
+import { Heading3 } from '..';
 
-const AboutContainer = ({AbtLogo})=>{
-  return(
+const AboutContainer = ({ AbtLogo }) => {
+  return (
     <FirstAboutContainer>
-    <FirstRow>
-      <FrItems>About US</FrItems>
-      <FrItems>Contact US</FrItems>
-      <FrItems>Sponsor US</FrItems>
-    </FirstRow>
+      <FirstRow>
+        <FrItems>About US</FrItems>
+        <FrItems>Contact US</FrItems>
+        <FrItems>Sponsor US</FrItems>
+      </FirstRow>
 
-    <AboutBox>
-      <LogoCont> <LogoImg src={AbtLogo} alt="nit logo" /> </LogoCont>
-      <Para>
-        <Heading3>About NIT Rourkela</Heading3>
-        <Content>
-        With a strength of around 7000 students, NIT Rourkela is one of the most 
-        coveted institutes for higher studies by future technocrats. With its lush green
-        and humongous area, it indeed makes a pleasant campus impression.
-        </Content>
+      <AboutBox>
+        <LogoCont>
+          {' '}
+          <LogoImg src={AbtLogo} alt='nit logo' />{' '}
+        </LogoCont>
+        <Para>
+          <Heading3>About NIT Rourkela</Heading3>
+          <Content>
+            With a strength of around 7000 students, NIT Rourkela is one of the most coveted
+            institutes for higher studies by future technocrats. With its lush green and humongous
+            area, it indeed makes a pleasant campus impression.
+          </Content>
         </Para>
-    </AboutBox>
-  </FirstAboutContainer>
-  )
-}
+      </AboutBox>
+    </FirstAboutContainer>
+  );
+};
 
 export const FirstAboutContainer = styled.div`
   ${tw`
@@ -54,7 +57,6 @@ export const FrItems = styled.span`
 `}
 `;
 
-
 export const AboutBox = styled.div`
   ${tw`
     flex
@@ -65,12 +67,11 @@ export const AboutBox = styled.div`
     my-8
     p-5
     `}
-    background: #080822;
-    ;
+  background: #080822;
 `;
 
 export const Para = styled.p`
-    ${tw`
+  ${tw`
     flex
     flex-col
     mx-5
@@ -78,7 +79,7 @@ export const Para = styled.p`
     `}
 `;
 export const Content = styled.p`
-    ${tw`
+  ${tw`
     my-5
     text-neutral-white-700
     `}
@@ -91,7 +92,7 @@ export const LogoCont = styled.span`
 `;
 
 export const LogoImg = styled.img`
-    ${tw`
+  ${tw`
     w-full
     `}
 `;
