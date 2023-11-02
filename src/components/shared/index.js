@@ -14,6 +14,3 @@ export { default as NavText } from './Typography/NavText';
 export { default as Container } from './Container';
 export { default as SectionContainer } from './SectionContainer';
 export { default as SectionLayout } from './SectionLayout';
-export { default as DevfolioButton } from './DevfolioButton';
-export { default as DiscordButton } from './DiscordButton';
-export { default as DiscordBtnMobile } from './DiscordBtnMobile';
