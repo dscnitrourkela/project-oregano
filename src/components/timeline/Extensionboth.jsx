@@ -1,70 +1,22 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Body1, Body2, Heading3, Heading4 } from '../shared';
+import {
+  Container,
+  BoxWrapper,
+  MobileContainer,
+  LineWrapper,
+  RightLineWrapper,
+  VerticalBox,
+  WheelWrapper,
+  ArrowWrapper,
+  EllipseWrapper,
+  CircledLineWrapper,
+  Mobile,
+  Desktop,
+} from './styles';
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 201px 134px 243px 1fr;
-  grid-template-rows: 248px 135px;
-  width: 1240px;
-  margin: auto;
-  color: #fff;
-`;
-export const MobileContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 24px 1fr;
-  grid-template-rows: 90.9px;
-  width: 362.885px;
-  margin: auto;
-  color: #fff;
-`;
-const Boxwrapper = styled.div`
-  display: inline-flex;
-  padding: 26px 24px;
-  flex-direction: column;
-  gap: 16px;
-  border-radius: 20px;
-  border: 0.4px solid ${(props) => props.color};
-  place-self: center;
-  white-space: nowrap;
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    h3 {
-      color: ${(props) => props.color};
-    }
-  }
-  p {
-    color: var(--neutral-5, #a1a1a1);
-  }
-  @media (max-width: 640px) {
-    display: inline-flex;
-    padding: 13px 18px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    background: #0e0812;
-    place-self: center;
-
-    div {
-      h3 {
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 20px;
-      }
-    }
-    p {
-      font-size: 10px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 18px;
-    }
-  }
-`;
 export const Box = ({ color, node }) => (
-  <Boxwrapper color={color}>
+  <BoxWrapper color={color}>
     <div>
       <Heading3 semibold>{node.title}</Heading3>
       <img
@@ -73,23 +25,10 @@ export const Box = ({ color, node }) => (
       />
     </div>
     <Body2>Duration - {node.duration}</Body2>
-  </Boxwrapper>
+  </BoxWrapper>
 );
-
-const Linewrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 640px) {
-    svg {
-      width: 86.267px;
-      height: 1px;
-      transform: rotate(-45deg) translate(-15px, 60px);
-    }
-  }
-`;
 export const Line = ({ color }) => (
-  <Linewrapper>
+  <LineWrapper>
     <svg xmlns='http://www.w3.org/2000/svg' width='202' height='2' viewBox='0 0 202 2' fill='none'>
       <path
         d='M1 0.5C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5L1 0.5ZM1 1.5L202
@@ -97,23 +36,10 @@ export const Line = ({ color }) => (
         fill={color}
       />
     </svg>
-  </Linewrapper>
+  </LineWrapper>
 );
-const Rightlinewrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 640px) {
-    svg {
-      width: 86.267px;
-      height: 1px;
-      transform: rotate(44deg) translate(5px, 39px);
-      flex-shrink: 0;
-    }
-  }
-`;
 export const Rightline = ({ color }) => (
-  <Rightlinewrapper>
+  <RightLineWrapper>
     <svg xmlns='http://www.w3.org/2000/svg' width='202' height='2' viewBox='0 0 202 2' fill='none'>
       <path
         d='M1 0.5C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5L1 0.5ZM1 1.5L202
@@ -121,75 +47,15 @@ export const Rightline = ({ color }) => (
         fill={color}
       />
     </svg>
-  </Rightlinewrapper>
+  </RightLineWrapper>
 );
-const Verticalwrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .line1 {
-    width: 4px;
-    height: 197px;
-    background: #fed954;
-    transform: translateY(-27px);
-  }
-`;
-export const Vertical = () => (
-  <Verticalwrapper>
-    <div className='line1' />
-  </Verticalwrapper>
+export const VerticalLine = () => (
+  <VerticalBox>
+    <div />
+  </VerticalBox>
 );
-
-const Wheelwrapper = styled.div`
-  position: relative;
-  height: 134px;
-  place-self: center;
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #date {
-    font-family: Prompt;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 42px;
-    margin: 0;
-  }
-  @media (max-width: 640px) {
-    width: 90.9px;
-    height: 90.9px;
-    svg {
-      width: 90.9px;
-      height: 90.9px;
-    }
-    .content {
-      display: flex;
-      width: 43.2px;
-      height: 39.6px;
-      flex-direction: column;
-      align-items: center;
-      #date {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 21.6px;
-      }
-      #month {
-        font-size: 10.8px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 18px;
-      }
-    }
-  }
-`;
 export const Wheel = ({ color, node }) => (
-  <Wheelwrapper>
+  <WheelWrapper>
     <svg
       xmlns='http://www.w3.org/2000/svg'
       width='134'
@@ -213,28 +79,10 @@ export const Wheel = ({ color, node }) => (
       <p id='date'>{node.date}</p>
       <Body1 id='month'>{node.month}</Body1>
     </div>
-  </Wheelwrapper>
+  </WheelWrapper>
 );
-
-const Arrowwrapper = styled.div`
-  position: relative;
-  place-self: center;
-  #mobile {
-    display: none;
-  }
-  @media (max-width: 640px) {
-    #desktop {
-      display: none;
-    }
-    #mobile {
-      display: block;
-    }
-    width: 106.262px;
-    height: 20.251px;
-  }
-`;
 export const Arrow = () => (
-  <Arrowwrapper>
+  <ArrowWrapper>
     <img
       id='desktop'
       src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698111649/Group_762_ijeczd.svg'
@@ -245,45 +93,10 @@ export const Arrow = () => (
       src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698244205/Group_762_1_my98zs.svg'
       alt=''
     />
-  </Arrowwrapper>
+  </ArrowWrapper>
 );
-
-const Ellipsewrapper = styled.div`
-  place-self: center;
-  position: relative;
-  #ellipse {
-    line-height: 32px;
-    width: 202px;
-    margin: 0;
-    margin-left: 25px;
-  }
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media (max-width: 640px) {
-    svg {
-      width: 137.885px;
-      height: 123px;
-    }
-    #ellipse {
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 20px;
-      width: 112.75px;
-      height: 55.909px;
-      margin-left: 11.43px;
-    }
-  }
-`;
 export const Ellipse = ({ color, node }) => (
-  <Ellipsewrapper>
+  <EllipseWrapper>
     <svg
       xmlns='http://www.w3.org/2000/svg'
       width='276'
@@ -304,35 +117,10 @@ export const Ellipse = ({ color, node }) => (
         {node.ellipsecontent}
       </Heading4>
     </div>
-  </Ellipsewrapper>
+  </EllipseWrapper>
 );
-
-const Mvwrapper = styled.div`
-  position: relative;
-  place-self: center;
-  #line {
-    width: 4px;
-    height: 158px;
-    flex-shrink: 0;
-  }
-  #circle1 {
-    position: absolute;
-    top: 39px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  #circle2 {
-    position: absolute;
-    bottom: 26px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  @media (min-width: 640px) {
-    display: none;
-  }
-`;
 export const Circledline = () => (
-  <Mvwrapper>
+  <CircledLineWrapper>
     <svg
       id='line'
       xmlns='http://www.w3.org/2000/svg'
@@ -385,20 +173,9 @@ export const Circledline = () => (
         strokeDasharray='5 5'
       />
     </svg>
-  </Mvwrapper>
+  </CircledLineWrapper>
 );
-
-export const Desktop = styled.div`
-  @media (max-width: 640px) {
-    display: none;
-  }
-`;
-export const Mobile = styled.div`
-  @media (min-width: 640px) {
-    display: none;
-  }
-`;
-export default function Extensionboth({ position, boxcolor, node, wheelcolor, ellipsecolor }) {
+export default function ExtensionBoth({ position, boxcolor, node, wheelcolor, ellipsecolor }) {
   return (
     <>
       <Desktop>
@@ -411,7 +188,7 @@ export default function Extensionboth({ position, boxcolor, node, wheelcolor, el
             <Ellipse color={ellipsecolor} node={node} />
             <div />
             <div />
-            <Vertical />
+            <VerticalLine />
             <div />
             <div />
           </Container>

@@ -1,46 +1,18 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Box, Wheel, Line, MobileContainer, Mobile, Desktop, Rightline } from './Extensionboth';
+import { Box, Wheel, Line, Rightline } from './ExtensionBoth';
+import { MobileContainer, Mobile, Desktop, RightContainer, VerticalWrapper } from './styles';
 
-const Rightcontainer = styled.div`
-  display: grid;
-  grid-template-columns: 352px 201px 134px 201px 1fr;
-  grid-template-rows: 141px 103px;
-  width: 1240px;
-  margin: auto;
-  color: #fff;
-  @media (max-width: 768px) {
-    grid-template-columns: 330px 201px 134px 201px 352px;
-  }
-`;
-const Verticalwrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .line1 {
-    width: 4px;
-    height: 165.242px;
-    background: #fed954;
-    transform: translateY(27px);
-  }
-  @media (max-width: 640px) {
-    .line1 {
-      height: 114px;
-      transform: translateY(0px);
-    }
-  }
-`;
-export const Vertical = () => (
-  <Verticalwrapper>
-    <div className='line1' />
-  </Verticalwrapper>
+export const VerticalLine = () => (
+  <VerticalWrapper>
+    <div />
+  </VerticalWrapper>
 );
-export default function Extensionright({ position, wheelcolor, node, boxcolor }) {
+export default function ExtensionRight({ position, wheelcolor, node, boxcolor }) {
   return (
     <>
       <Desktop>
         {position !== 'end' ? (
-          <Rightcontainer>
+          <RightContainer>
             <div />
             <div />
             <Wheel color={wheelcolor} node={node} />
@@ -48,16 +20,16 @@ export default function Extensionright({ position, wheelcolor, node, boxcolor })
             <Box color={boxcolor} node={node} />
             <div />
             <div />
-            <Vertical />
-          </Rightcontainer>
+            <VerticalLine />
+          </RightContainer>
         ) : (
-          <Rightcontainer>
+          <RightContainer>
             <div />
             <div />
             <Wheel color={wheelcolor} node={node} />
             <Line color={boxcolor} />
             <Box color={boxcolor} node={node} />
-          </Rightcontainer>
+          </RightContainer>
         )}
       </Desktop>
       <Mobile>
@@ -66,7 +38,7 @@ export default function Extensionright({ position, wheelcolor, node, boxcolor })
           <Wheel color={wheelcolor} node={node} />
           <Rightline color={boxcolor} />
           <div />
-          <Vertical />
+          <VerticalLine />
           <Box color={boxcolor} node={node} />
         </MobileContainer>
       </Mobile>
@@ -74,7 +46,7 @@ export default function Extensionright({ position, wheelcolor, node, boxcolor })
   );
 }
 
-Extensionright.defaultProps = {
+ExtensionRight.defaultProps = {
   boxcolor: '#FEE27F',
   wheelcolor: '#C4C4C4',
 };
