@@ -5,17 +5,26 @@ import Extensionright from './Extensionright';
 import { timelinecontent } from '../../../config/content/Timelinecontent';
 import { Heading1 } from '..';
 
+const Theading = styled(Heading1)`
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+    @media (max-width: 640px) {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 96px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+`
 const Wrapper = styled.div`
   width: 1240px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  h1 {
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 24px;
-  }
+
   @media (max-width: 640px) {
     width: 362.885px;
     display: inline-flex;
@@ -25,21 +34,13 @@ const Wrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    h1 {
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 96px;
-      margin-top: 32px;
-      margin-bottom: 32px;
-    }
   }
 `;
 export default function timeline() {
   return (
     <section>
       <Wrapper>
-        <Heading1>{timelinecontent.title}</Heading1>
+        <Theading>{timelinecontent.title}</Theading>
         {timelinecontent.nodes.length === 0
           ? ''
           : timelinecontent.nodes.map((node, index) => {

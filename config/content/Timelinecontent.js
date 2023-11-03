@@ -22,7 +22,7 @@ export const timelinecontent= {
             wheelcolor: "#35E1FF",
         },
         {
-            sno:1,
+            sno:3,
             date: "15",
             month: "October",
             title: "Registration Opens",
@@ -33,7 +33,7 @@ export const timelinecontent= {
             ellipsecontent: "Get extra perks with early registration",
         },
         {
-            sno:2,
+            sno:4,
             date: "15",
             month: "October",
             title: "Registration Opens",

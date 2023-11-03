@@ -9,6 +9,9 @@ const Rightcontainer = styled.div`
   width: 1240px;
   margin: auto;
   color: #fff;
+  @media (max-width: 768px) {
+    grid-template-columns: 330px 201px 134px 201px 352px;
+  }
 `;
 const Verticalwrapper = styled.div`
   display: flex;

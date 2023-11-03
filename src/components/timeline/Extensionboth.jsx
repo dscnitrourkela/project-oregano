@@ -16,12 +16,12 @@ export const MobileContainer = styled.div`
   grid-template-rows: 90.9px;
   width: 362.885px;
   margin: auto;
+  color: #fff;
 `;
 const Boxwrapper = styled.div`
   display: inline-flex;
   padding: 26px 24px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 16px;
   border-radius: 20px;
   border: 0.4px solid ${(props) => props.color};
@@ -54,11 +54,6 @@ const Boxwrapper = styled.div`
         font-weight: 500;
         line-height: 20px;
       }
-      #dotted-line {
-        height: 2px;
-        width: 132px;
-        align-self: stretch;
-      }
     }
     p {
       font-size: 10px;
@@ -73,7 +68,6 @@ export const Box = ({ color, node }) => (
     <div>
       <Heading3 semibold>{node.title}</Heading3>
       <img
-        id='dotted-line'
         src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698431749/Line_3_o1ztvt.svg'
         alt=''
       />
@@ -91,7 +85,6 @@ const Linewrapper = styled.div`
       width: 86.267px;
       height: 1px;
       transform: rotate(-45deg) translate(-15px, 60px);
-      flex-shrink: 0;
     }
   }
 `;
@@ -161,13 +154,11 @@ const Wheelwrapper = styled.div`
     align-items: center;
   }
   #date {
-    color: #fff;
     font-family: Prompt;
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 42px;
-    /* 116.667% */
     margin: 0;
   }
   @media (max-width: 640px) {
@@ -183,20 +174,16 @@ const Wheelwrapper = styled.div`
       height: 39.6px;
       flex-direction: column;
       align-items: center;
-      flex-shrink: 0;
       #date {
-        color: #fff;
-        font-family: Prompt;
         font-size: 18px;
-        font-style: normal;
         font-weight: 600;
-        line-height: 21.6px; /* 120% */
+        line-height: 21.6px;
       }
       #month {
         font-size: 10.8px;
         font-style: normal;
         font-weight: 300;
-        line-height: 18px; /* 166.667% */
+        line-height: 18px;
       }
     }
   }
