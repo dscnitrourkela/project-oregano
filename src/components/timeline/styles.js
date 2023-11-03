@@ -14,19 +14,13 @@ export const TimelineHead = styled(Heading1)`
 `;
 export const TimelineWrapper = styled.div`
   width: 1240px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media (max-width: 640px) {
     width: 362.885px;
-    display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 `;
 export const Container = styled.div`
