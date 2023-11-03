@@ -6,7 +6,7 @@ import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredD
 import Container from '../components/shared/Container';
 import '../styles/global.css';
 import SEO from '../components/shared/SEO/SEO';
-import Heading1 from "../components/shared/Typography/Heading1"
+import Heading1 from '../components/shared/Typography/Heading1';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -47,9 +47,9 @@ const HomePage = ({ location }) => {
       </Helmet>
       <SEO />
 
-        <Container>
-          <Heading1>Hello World</Heading1>
-        </Container>
+      <Container>
+        <Heading1>Hello World</Heading1>
+      </Container>
     </>
   );
 };

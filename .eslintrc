@@ -16,14 +16,14 @@
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module",
-    "ecmaFeatures": {"jsx": true},
+    "ecmaFeatures": { "jsx": true },
     "allowImportExportEverywhere": false,
     "codeFrame": false
   },
   "settings": {
     "react": {
       "pragma": "React",
-      "version": "detect",
+      "version": "detect"
     }
   },
   "rules": {

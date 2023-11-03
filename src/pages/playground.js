@@ -4,7 +4,7 @@ import SponsorSection from '../components/Sponsor/Sponsor';
 export default function Playground() {
   return (
     <div>
-      <SponsorSection/>
+      <SponsorSection />
     </div>
   );
 }

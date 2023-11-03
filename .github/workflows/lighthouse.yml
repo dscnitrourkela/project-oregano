@@ -5,7 +5,7 @@ on:
 
 env:
   PR_URL: https://deploy-preview-${{github.event.number}}--hacknitr.netlify.app
-  
+
 jobs:
   lighthouse:
     runs-on: ubuntu-latest

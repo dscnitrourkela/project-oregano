@@ -55,7 +55,7 @@ export const AlphaSponsors = styled.div`
     margin: 24px auto;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute; /* Position the pseudo-element absolutely */
     top: 0;
     left: 0;
@@ -92,12 +92,12 @@ export const SponsorHeader = styled(Heading1)`
 `;
 
 export const AlphaHeader = styled(Heading3)`
-${tw`
+  ${tw`
 text-center
 leading-[48px]
 text-[32px]
 `}
-font-weight: 600;
+  font-weight: 600;
   @media (max-width: 761px) {
     color: var(--neutral-1, #fff);
     font-size: 20px;
@@ -108,12 +108,12 @@ font-weight: 600;
 `;
 
 export const SmallHeader = styled(Heading4)`
-${tw`
+  ${tw`
 text-center
 leading-[36px]
 text-[24px]
 `}
-font-weight: 600;
+  font-weight: 600;
   @media (max-width: 761px) {
     color: var(--neutral-1, #fff);
     font-size: 18px;
@@ -163,7 +163,7 @@ export const BetaSponsors = styled.div`
     margin: 24px auto;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute; /* Position the pseudo-element absolutely */
     top: 0;
     left: 0;
@@ -243,7 +243,7 @@ export const GammaSponsors = styled.div`
     padding: 12px 24px;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute; /* Position the pseudo-element absolutely */
     top: 0;
     left: 0;
@@ -304,8 +304,8 @@ export const DeltaSponsors = styled.div`
     background: linear-gradient(180deg, rgba(255, 63, 192, 0.6) 0%, rgba(58, 58, 58, 0.15) 100%);
     padding: 12px 24px;
   }
-    &::before {
-    content: "";
+  &::before {
+    content: '';
     position: absolute; /* Position the pseudo-element absolutely */
     top: 0;
     left: 0;
