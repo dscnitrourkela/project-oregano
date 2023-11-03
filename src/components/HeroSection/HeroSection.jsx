@@ -7,7 +7,6 @@ import {
   HeroInside,
   TaglineText,
   HeroButtons,
-  HeroHeading,
   SectionContainer,
   HeroHeadingBase,
   FIVEimg,
@@ -15,7 +14,7 @@ import {
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
 import DiscordBtnMobile from '../shared/DiscordBtnMobile';
-import { hero } from '../../../config';
+import {hero} from '../../../config';
 export default function Hero() {
   return (
     <SectionContainer >
@@ -26,20 +25,18 @@ export default function Hero() {
             <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt}/>
           </HeroInside>
           <contentBlock className='mx-8 md:max-w-xl lg:max-w-3xl'>
-            <HeroHeading className='flex border-white w-full'>
-              <HeroHeadingBase>
-                <FIVEimg src={hero.imgs.five.src}/>
-              </HeroHeadingBase>
-            </HeroHeading>
-              <TaglineText>{hero.content}</TaglineText>
+            <HeroHeadingBase>
+              <FIVEimg src={hero.imgs.five.src} />
+            </HeroHeadingBase>
+            <TaglineText>{hero.content}</TaglineText>
           </contentBlock>
           <HeroButtons className='sm:gap-8'>
-            <DevfolioButton/>
+            <DevfolioButton />
             <DiscordButton />
-            <DiscordBtnMobile/>
+            <DiscordBtnMobile />
           </HeroButtons>
         </HeroTitle>
-       </HeroBody>
-     </SectionContainer>
+      </HeroBody>
+    </SectionContainer>
   );
 }

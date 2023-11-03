@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 
 const RegisterButton = () => {
@@ -34,4 +33,3 @@ const RegisterButton = () => {
 };
 
 export default RegisterButton;
-

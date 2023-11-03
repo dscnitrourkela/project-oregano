@@ -83,17 +83,6 @@ export const NITRimg = styled.img`
  `}
 `;
 
-export const HeroHeading = styled.div`
-  ${tw`
-      flex
-      // border-white
-      // bg-red-500
-      // px-8
-      // lg: px-12
-      
-  `}
-`;
-
 export const HeroHeadingBase = styled.div`
   ${tw`
       flex
@@ -124,7 +113,6 @@ export const SubTitle = styled.p`
     font-bold
     `}
 `;
-
 
 export const TaglineText = styled(Body1)`
   ${tw`

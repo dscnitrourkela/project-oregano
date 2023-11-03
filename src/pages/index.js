@@ -5,7 +5,6 @@ import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredD
 
 import Container from '../components/shared/Container';
 import '../styles/global.css';
-// import Hero from '../components/HeroSection/HeroSection';
 import SEO from '../components/shared/SEO/SEO';
 import Heading1 from '../components/shared/Typography/Heading1';
 
