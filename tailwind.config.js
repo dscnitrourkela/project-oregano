@@ -25,6 +25,8 @@ module.exports = {
         '4.5xl': '40px',
         '11xl': '86px',
         '12xl': '120px',
+        '13xl': '48px',
+        '14xl': '64px',
       },
       padding: {
         side: '21.33px',
@@ -43,15 +45,55 @@ module.exports = {
         11: '48px',
         12: '108px',
         13: '148px',
+        14: '64px',
+        15: '96px',
       },
 
       colors: {
-        'color-primary': '#EAEAEA',
-        'color-secondary': '#D6D6D6',
-        'color-tertiary': '#A3A3A3',
-        'btn-yellow': '#FFE81F',
-        'background-dark': '#202020',
-        'background-darker': '#000811',
+        'background-primary': '#0E0812',
+
+        'primary-pink': {
+          50: '#FF8CD9',
+          100: '#FF65CD',
+          200: '#FF3FC0',
+          300: '#CC329A',
+        },
+        'primary-purple': {
+          50: '#C48DFF',
+          100: '#B067FF',
+          200: '#9C41FF',
+          300: '#7D34CC',
+        },
+        'primary-blue ': {
+          50: '#67E9FF',
+          100: '35E1FF',
+          200: '#02DAFF',
+          300: '#02AECC',
+        },
+
+        'primary-green': {
+          50: '#72F7BF',
+          100: '#43F4AA',
+          200: '#14F195',
+          300: '#10C177',
+        },
+
+        'neutral-white': {
+          50: '#FFFFFF',
+          100: '#EDEDED',
+          200: '#D9D9D9',
+          300: '#C3C3C3',
+          400: '#A1A1A1',
+          500: '#858585',
+          600: '#545454',
+        },
+
+        'neutral-yellow': {
+          50: '#FEE27F',
+          100: '#FED954',
+          200: '#FECF29',
+          300: '#E5BA25',
+        },
       },
       borderRadius: {
         '4xl': '32px',
@@ -60,6 +102,7 @@ module.exports = {
       // Inter: ['inter', 'sans-serif'],
       fontFamily: {
         Inter: ['Inter', ...defaultTheme.fontFamily.sans],
+        Prompt: ['Prompt', ...defaultTheme.fontFamily.sans],
       },
 
       letterSpacing: {
