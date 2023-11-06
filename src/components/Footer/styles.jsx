@@ -21,6 +21,9 @@ export const InitialCont = styled.div`
 
 export const SecondPendulumContainer = styled.div`
   ${tw` 
+  flex
+  flex-col
+  items-center
   w-[30%]
   text-white
   p-4

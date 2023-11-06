@@ -5,10 +5,6 @@ const CradleContainer = styled.div`
   position: absolute;
   width: 200px;
   height: 40px;
-  top: 50%;
-  left: 50%;
-  margin-top: -40px;
-  margin-left: -100px;
   padding-top: 100px;
   color: white;
   position: absolute;
@@ -38,7 +34,7 @@ const Ball = styled.div`
     content: '';
     display: block;
     position: absolute;
-    height: 100px;
+    height: 200px;
     width: 1px;
     top: -100px;
     left: 19px;

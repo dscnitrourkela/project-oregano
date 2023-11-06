@@ -5,26 +5,23 @@ import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from '
 import { NitLogo, FooterImg } from './images';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';
-import PendulumGpt from './Pendulum_gpt';
-import Pendulums from './Pendulum';
+import Cradle from './Final_pend';
 
 export const Footer = () => {
   return (
-    <>
+    <div>
       <ImgCont src={FooterImg} />
       <FooterContainer>
         <InitialCont>
           <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
 
           <SecondPendulumContainer>
-            <Pendulums />
+            <Cradle />
           </SecondPendulumContainer>
         </InitialCont>
 
         <TermsNCredits copyw={footer.copyright} />
       </FooterContainer>
-    </>
+    </div>
   );
 };
-
-console.log(footer);
