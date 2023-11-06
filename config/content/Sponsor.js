@@ -92,48 +92,57 @@ export default {
     },
   ],
 
-  delta: [
+  deltaFirst: [
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861840/MLH_kl7xle.png',
       name: 'Major League Hacking',
       link: 'https://mlh.io/',
       alt: 'Major League Hacking',
+      width: '42%',
     },
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861840/Polygon_klk8a1.png',
       name: 'Polygon',
       link: 'https://polygon.technology/',
       alt: 'Polygon',
+      width: '42%',
     },
     {
-      src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861847/Wolfram_np1crm.png',
+      src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1699283820/Wolfram_Logo_tzkyao.png',
       name: 'Wolfram',
       link: 'https://www.wolfram.com/',
       alt: 'Wolfram',
+      width: '42%',
     },
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861844/Twilio_cq7m3h.png',
       name: 'Twilio',
       link: 'https://www.twilio.com/',
       alt: 'Twilio',
+      width: '42%',
     },
+  ],
+  deltaSecond: [
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861902/a25k67wos9exof9hxxfm.png',
       name: 'Echo3d',
       link: 'https://www.echo3d.com/',
       alt: 'Echo3d',
+      width: '542%',
     },
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861847/Velo_v20ync.png',
       name: 'Velo',
       link: 'https://www.wix.com/velo',
       alt: 'Velo',
+      width: '542%',
     },
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861847/Xyz_tyhkq9.png',
       name: 'xyz',
       link: 'https://gen.xyz/',
       alt: 'xyz',
+      width: '542%',
     },
   ],
 };

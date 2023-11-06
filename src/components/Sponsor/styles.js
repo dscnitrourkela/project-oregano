@@ -170,11 +170,7 @@ export const BetaSponsors = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    background: linear-gradient(
-      180deg,
-      rgba(53, 225, 255, 0.4) -6.4%,
-      rgba(58, 58, 58, 0.15) 99.89%
-    );
+    background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) 0%, rgba(58, 58, 58, 0.15) 100%);
     transition: opacity 0.5s linear;
     z-index: -1;
     opacity: 0;
@@ -222,12 +218,6 @@ export const GammaContainer = styled.div`
 `;
 
 export const GammaSponsors = styled.div`
-  ${tw`
-  flex
-  flex-col
-  items-center
-  justify-center`}
-
   padding: 16px 32px;
   width: 90%;
   margin: 0px auto;
@@ -250,11 +240,7 @@ export const GammaSponsors = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    background: linear-gradient(
-      180deg,
-      rgba(53, 225, 255, 0.4) -6.4%,
-      rgba(58, 58, 58, 0.15) 99.89%
-    );
+    background: linear-gradient(180deg, rgba(176, 103, 255, 0.6) 0%, rgba(58, 58, 58, 0.15) 100%);
     transition: opacity 0.5s linear;
     z-index: -1;
     opacity: 0;
@@ -265,17 +251,32 @@ export const GammaSponsors = styled.div`
   }
 `;
 
+export const DeltaLogoFirst = styled.div`
+  ${tw`
+      flex
+      flex-row
+      md:gap-[48px]
+      gap-[24px]
+  `}
+`;
+
+export const DeltaLogoSecond = styled.div`
+  ${tw`
+      flex
+      flex-row
+      md:gap-[78px]
+      gap-[24px]
+  `}
+`;
+
 export const DeltaLogoContainer = styled.div`
   ${tw`
-      grid
-      md:grid-cols-4
-      md:grid-rows-2
-      grid-cols-4
-      grid-rows-2
-      md:gap-x-[48px]
-      md:gap-y-[32px]
-      gap-x-[24px]
-      gap-y-[16px]
+      flex
+      flex-col
+      md:gap-[32px]
+      gap-[16px]
+      items-center
+      justify-center
       `}
 `;
 
@@ -312,11 +313,7 @@ export const DeltaSponsors = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 12px;
-    background: linear-gradient(
-      180deg,
-      rgba(53, 225, 255, 0.4) -6.4%,
-      rgba(58, 58, 58, 0.15) 99.89%
-    );
+    background: linear-gradient(180deg, rgba(255, 63, 192, 0.6) 0%, rgba(58, 58, 58, 0.15) 100%);
     transition: opacity 0.5s linear;
     z-index: -1;
     opacity: 0;

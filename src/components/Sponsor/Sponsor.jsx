@@ -16,6 +16,8 @@ import {
   GammaContainer,
   GammaSponsors,
   DeltaLogoContainer,
+  DeltaLogoFirst,
+  DeltaLogoSecond,
   DeltaContainer,
   DeltaSponsors,
 } from './styles';
@@ -24,7 +26,8 @@ function SponsorSection() {
   const alphaSponsors = Sponsor.alpha;
   const betaSponsors = Sponsor.beta;
   const gammaSponsors = Sponsor.gamma;
-  const deltaSponsors = Sponsor.delta;
+  const deltaSponsorsFirst = Sponsor.deltaFirst;
+  const deltaSponsorsSecond = Sponsor.deltaSecond;
 
   return (
     <div>
@@ -76,13 +79,24 @@ function SponsorSection() {
           <DeltaContainer>
             <SmallHeader>Delta Sponsors</SmallHeader>
             <DeltaLogoContainer>
-              {deltaSponsors.map(({ src, alt, link }) => (
-                <SponsorLogo key={src}>
-                  <a href={link} target='_blank' rel='noopener noreferrer'>
-                    <img src={src} alt={alt} />
-                  </a>
-                </SponsorLogo>
-              ))}
+              <DeltaLogoFirst>
+                {deltaSponsorsFirst.map(({ src, alt, link }) => (
+                  <SponsorLogo key={src}>
+                    <a href={link} target='_blank' rel='noopener noreferrer'>
+                      <img src={src} alt={alt} />
+                    </a>
+                  </SponsorLogo>
+                ))}
+              </DeltaLogoFirst>
+              <DeltaLogoSecond>
+                {deltaSponsorsSecond.map(({ src, alt, link, width }) => (
+                  <SponsorLogo key={src}>
+                    <a href={link} target='_blank' rel='noopener noreferrer'>
+                      <img src={src} alt={alt} width={width} />
+                    </a>
+                  </SponsorLogo>
+                ))}
+              </DeltaLogoSecond>
             </DeltaLogoContainer>
           </DeltaContainer>
         </DeltaSponsors>
