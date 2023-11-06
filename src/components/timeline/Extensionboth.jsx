@@ -18,8 +18,8 @@ import {
   EllipseContent,
 } from './styles';
 
-export const Box = ({ color, node }) => (
-  <BoxWrapper color={color}>
+export const Box = ({ node }) => (
+  <BoxWrapper color={node.boxcolor}>
     <div>
       <Heading3 semibold>{node.title}</Heading3>
       <img
@@ -57,7 +57,7 @@ export const VerticalLine = () => (
     <div />
   </VerticalBox>
 );
-export const Wheel = ({ color, node }) => (
+export const Wheel = ({ node }) => (
   <WheelWrapper>
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -66,12 +66,12 @@ export const Wheel = ({ color, node }) => (
       viewBox='0 0 134 134'
       fill='none'
     >
-      <circle cx='67' cy='67' r='65' stroke={color} strokeWidth='4' />
+      <circle cx='67' cy='67' r='65' stroke={node.wheelcolor} strokeWidth='4' />
       <circle
         cx='67.0002'
         cy='67'
         r='48.8524'
-        stroke={color}
+        stroke={node.wheelcolor}
         strokeWidth='1.2'
         strokeLinecap='round'
         strokeLinejoin='round'
@@ -98,7 +98,7 @@ export const Arrow = () => (
     />
   </ArrowWrapper>
 );
-export const Ellipse = ({ color, node }) => (
+export const Ellipse = ({ node }) => (
   <EllipseWrapper>
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -112,7 +112,7 @@ export const Ellipse = ({ color, node }) => (
         52.6718 195.905C17.252 165.831 0 133.933 0 95.8345C0 58.2022 51.5256 51.5085 77.9542 
         28.8803C99.3749 10.5398 122.932 0 153.275 0C183.618 0 216.656 24.5467 238.076
         42.8872C264.505 65.5155 276 85.2053 276 122.838Z'
-        fill={color}
+        fill={node.ellipsecolor}
       />
     </svg>
     <div>
@@ -176,17 +176,17 @@ export const Circledline = () => (
     </svg>
   </CircledLineWrapper>
 );
-export default function ExtensionBoth({ position, boxcolor, node, wheelcolor, ellipsecolor }) {
+export default function ExtensionBoth({ position, node }) {
   return (
     <>
       <Desktop>
         {position !== 'end' ? (
           <Container>
-            <Box color={boxcolor} node={node} />
-            <Line color={boxcolor} right={false} />
-            <Wheel color={wheelcolor} node={node} />
+            <Box node={node} />
+            <Line color={node.boxcolor} />
+            <Wheel node={node} />
             <Arrow />
-            <Ellipse color={ellipsecolor} node={node} />
+            <Ellipse node={node} />
             <div />
             <div />
             <VerticalLine />
@@ -195,22 +195,22 @@ export default function ExtensionBoth({ position, boxcolor, node, wheelcolor, el
           </Container>
         ) : (
           <Container>
-            <Box color={boxcolor} node={node} />
-            <Line color={boxcolor} right={false} />
-            <Wheel color={wheelcolor} node={node} />
+            <Box node={node} />
+            <Line color={node.boxcolor} />
+            <Wheel node={node} />
             <Arrow />
-            <Ellipse color={ellipsecolor} node={node} />
+            <Ellipse node={node} />
           </Container>
         )}
       </Desktop>
       <Mobile>
         <MobileContainer>
-          <Line color={boxcolor} />
-          <Wheel color={wheelcolor} node={node} />
+          <Line color={node.boxcolor} />
+          <Wheel node={node} />
           <Arrow />
-          <Box color={boxcolor} node={node} />
+          <Box node={node} />
           <Circledline />
-          <Ellipse color={ellipsecolor} node={node} />
+          <Ellipse node={node} />
         </MobileContainer>
       </Mobile>
     </>

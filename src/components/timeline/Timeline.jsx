@@ -13,46 +13,14 @@ export default function Timeline() {
         : timelinecontent.nodes.map((node, index) => {
             if (index === timelinecontent.nodes.length - 1) {
               if (node && node.ellipsecontent) {
-                return (
-                  <ExtensionBoth
-                    key={node.serialid}
-                    boxcolor={node.boxcolor}
-                    wheelcolor={node.wheelcolor}
-                    ellipsecolor={node.ellipsecolor}
-                    node={node}
-                    position='end'
-                  />
-                );
+                return <ExtensionBoth key={node.serialid} node={node} position='end' />;
               }
-              return (
-                <ExtensionRight
-                  key={node.serialid}
-                  boxcolor={node.boxcolor}
-                  node={node}
-                  position='end'
-                />
-              );
+              return <ExtensionRight key={node.serialid} node={node} position='end' />;
             }
             if (node && node.ellipsecontent) {
-              return (
-                <ExtensionBoth
-                  key={node.serialid}
-                  boxcolor={node.boxcolor}
-                  wheelcolor={node.wheelcolor}
-                  ellipsecolor={node.ellipsecolor}
-                  node={node}
-                  position='notend'
-                />
-              );
+              return <ExtensionBoth key={node.serialid} node={node} position='notend' />;
             }
-            return (
-              <ExtensionRight
-                key={node.serialid}
-                boxcolor={node.boxcolor}
-                node={node}
-                position='notend'
-              />
-            );
+            return <ExtensionRight key={node.serialid} node={node} position='notend' />;
           })}
     </TimelineWrapper>
   );
