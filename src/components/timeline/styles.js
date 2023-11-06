@@ -18,7 +18,7 @@ export const TimelineWrapper = styled.div`
   align-items: center;
   padding: 0 15px;
   @media (max-width: 640px) {
-    width: 360px;
+    width: 390px;
   }
 `;
 export const Container = styled.div`
@@ -131,7 +131,6 @@ export const WheelWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
-
   @media (max-width: 640px) {
     width: 91px;
     height: 91px;
@@ -148,7 +147,6 @@ export const WheelWrapper = styled.div`
     }
   }
 `;
-
 export const ArrowWrapper = styled.div`
   position: relative;
   place-self: center;
@@ -236,7 +234,7 @@ export const RightContainer = styled.div`
   margin: auto;
   color: #fff;
   @media (max-width: 768px) {
-    grid-template-columns: 313px 201px 134px 201px 352px;
+    grid-template-columns: 313px 236px 134px 201px 352px;
   }
 `;
 export const VerticalWrapper = styled.div`
