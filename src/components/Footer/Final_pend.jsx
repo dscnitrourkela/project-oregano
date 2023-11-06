@@ -27,7 +27,7 @@ const Ball = styled.div`
   float: left;
   width: 40px;
   height: 40px;
-  background: #000;
+  background: white;
   border-radius: 50%;
   transform-origin: 50% -100px;
   &:before {
