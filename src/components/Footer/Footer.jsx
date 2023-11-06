@@ -6,7 +6,7 @@ import { NitLogo, FooterImg } from './images';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';
 import PendulumGpt from './Pendulum_gpt';
-import Pendulums from './Pendulums';
+import Pendulums from './Pendulum';
 
 export const Footer = () => {
   return (
@@ -17,7 +17,7 @@ export const Footer = () => {
           <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
 
           <SecondPendulumContainer>
-            <PendulumGpt />
+            <Pendulums />
           </SecondPendulumContainer>
         </InitialCont>
 

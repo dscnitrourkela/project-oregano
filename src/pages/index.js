@@ -7,6 +7,8 @@ import Container from '../components/shared/Container';
 import '../styles/global.css';
 import SEO from '../components/shared/SEO/SEO';
 import Heading1 from '../components/shared/Typography/Heading1';
+import { Cradle } from '../components/Footer/Cradle';
+import Pendulums from '../components/Footer/Pendulum';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -46,10 +48,6 @@ const HomePage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
-
-      <Container>
-        <Heading1>Hello World</Heading1>
-      </Container>
     </>
   );
 };
