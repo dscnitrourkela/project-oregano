@@ -1,0 +1,35 @@
+export default {
+  title: 'Prizes',
+  prizeData: [
+    {
+      id: '1',
+      cash: '50k',
+      swags: '40k worth of swags',
+      merchandise: 'official merchandise',
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/gold_zvb6fu.png',
+      alt: 'Gold Prize Image',
+      prizeValue: '100k',
+      prizeShadowColor: 'var(--color-primary-green)',
+    },
+    {
+      id: '2',
+      cash: '50k',
+      swags: '40k worth of swags',
+      merchandise: 'official merchandise',
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/silver_ramqno.png',
+      alt: 'Silver Prize Image',
+      prizeValue: '30k',
+      prizeShadowColor: 'var(--color-primary-blue)',
+    },
+    {
+      id: '3',
+      cash: '50k',
+      swags: '40k worth of swags',
+      merchandise: 'official merchandise',
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/bronze_vlzvme.png',
+      alt: 'Bronze Prize Image',
+      prizeValue: '20k',
+      prizeShadowColor: 'var(--color-primary-purple)',
+    },
+  ],
+};

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Heading4 } from '../shared';
+import { Heading1, Heading4 } from '../shared';
 
 const smallScreen = '768px';
 const mediumScreen = '1024px';
@@ -34,7 +34,7 @@ export const PrizeText = styled.div`
   transition: visibility 0.7s ease-in-out 0.6s;
 `;
 
-export const TotalPrizes = styled.div`
+export const TotalPrizes = styled(Heading1)`
   font-family: 'Prompt';
   font-size: 40px;
   font-weight: 600;
@@ -76,19 +76,13 @@ export const Box = styled.div`
     width: 100%;
     height: ${(props) => (props.expanded ? '500px' : '380px')};
   }
-
   @media (max-width: ${smallScreen}) {
     width: 90%;
-    height: ${(props) => (props.expanded ? '480px' : '360px')};
+    height: ${(props) => (props.expanded ? '280px' : '340px')};
   }
 `;
 
-export const PrizesTitle = styled.h1`
-  font-family: Prompt;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 96px;
+export const PrizesTitle = styled(Heading1)`
   text-align: center;
 `;
 
@@ -120,6 +114,10 @@ export const CashPrize = styled(Heading4)`
   white-space: nowrap;
   font-size: 18px;
   font-weight: 500;
+  &::after {
+    content: '+';
+    color: white;
+  }
 `;
 
 export const Swags = styled(Heading4)`
@@ -127,6 +125,11 @@ export const Swags = styled(Heading4)`
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
+
+  &::after {
+    content: '+';
+    color: white;
+  }
 `;
 
 export const Merchandise = styled(Heading4)`

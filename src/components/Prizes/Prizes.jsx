@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
 import {
   PrizesContainer,
@@ -11,29 +12,7 @@ import {
   Merchandise,
   PrizesContainerWrapper,
 } from './styles';
-
-// eslint-disable-next-line max-len
-const imageUrls = ["https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/gold_zvb6fu.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/silver_ramqno.png", "https://res.cloudinary.com/dkpdi1wek/image/upload/v1698839425/bronze_vlzvme.png"];
-const prizeValues = ['100k', '30k', '20k'];
-const prizeShadowColors = ['#43F4AA', '#02AECC', '#7D34CC'];
-
-const prizeDescriptions = [
-  {
-    cash: '50k',
-    swags: '40k worth of swags',
-    merchandise: 'official merchandise',
-  },
-  {
-    cash: '50k',
-    swags: '40k worth of swags',
-    merchandise: 'official merchandise',
-  },
-  {
-    cash: '50k',
-    swags: '40k worth of swags',
-    merchandise: 'official merchandise',
-  },
-];
+import { PrizesContent } from '../../../config';
 
 const Prizes = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -48,35 +27,32 @@ const Prizes = () => {
 
   return (
     <PrizesContainerWrapper>
-      <div style={{ margin: '60px', paddingLeft: '0px', color: 'white' }}>
-        <PrizesTitle>Prizes</PrizesTitle>
+      <PrizesTitle>{PrizesContent.title}</PrizesTitle>
 
-        <PrizesContainer>
-          {imageUrls.map((imageUrl, index) => (
-            <div
-              key={imageUrl}
-              onMouseEnter={() => handleBoxHover(index)}
-              onMouseLeave={handleBoxLeave}
-            >
-              <Box expanded={expandedIndex === index} shadowColor={prizeShadowColors[index]}>
-                <img src={imageUrl} alt='Medal' style={{ maxWidth: '100%', maxHeight: '100%' }} />
+      <PrizesContainer>
+        {PrizesContent.prizeData.map((item) => (
+          <div
+            key={item.id}
+            onMouseEnter={() => handleBoxHover(item.id)}
+            onMouseLeave={handleBoxLeave}
+          >
+            <Box expanded={expandedIndex === item.id} shadowColor={item.prizeShadowColor}>
+              <img src={item.src} alt='Medal' style={{ maxWidth: '100%', maxHeight: '100%' }} />
 
-                {expandedIndex === index && (
-                  <Description>
-                    <TotalPrizes style={{ marginTop: '10px' }}>
-                      Total Prize - {prizeValues[index]}
-                    </TotalPrizes>
-                    <PrizeText style={{ bottom: '20px', marginTop: '32px' }}>
-                      <div className='flex justify-center items-center'>
-
+              {expandedIndex === item.id && (
+                <Description>
+                  <TotalPrizes style={{ marginTop: '10px' }}>
+                    Total Prize - {item.prizeValue}
+                  </TotalPrizes>
+                  <PrizeText style={{ bottom: '20px', marginTop: '32px' }}>
+                    <div className='flex justify-center items-center'>
                       <CashPrize
                         style={{
                           color: 'var(--primary-blue-3, #02DAFF)',
                           textAlign: 'center',
-                          
                         }}
-                        >
-                        Cash Prize {prizeDescriptions[index].cash}
+                      >
+                        Cash Prize {item.cash}
                       </CashPrize>
 
                       <Swags
@@ -84,36 +60,33 @@ const Prizes = () => {
                           color: 'var(--primary-purple-2, #B067FF)',
                           textAlign: 'center',
                           fontFamily: 'Prompt',
-                          
                           fontStyle: 'normal',
-                          lineHeight: '24px',
-                        }}
-                        >
-                        
-                        + {prizeDescriptions[index].swags}
-                      </Swags>
-                      </div>
-                      <Merchandise
-                        style={{
-                          color: 'var(--primary-green-2, #43F4AA)',
-                          textAlign: 'center',
-                          fontFamily: 'Prompt',
-                          fontSize: '18px',
-                          fontStyle: 'normal',
-                          fontWeight: '500',
                           lineHeight: '24px',
                         }}
                       >
-                       +  {prizeDescriptions[index].merchandise}
-                      </Merchandise>
-                    </PrizeText>
-                  </Description>
-                )}
-              </Box>
-            </div>
-          ))}
-        </PrizesContainer>
-      </div>
+                        {item.swags}
+                      </Swags>
+                    </div>
+                    <Merchandise
+                      style={{
+                        color: 'var(--primary-green-2, #43F4AA)',
+                        textAlign: 'center',
+                        fontFamily: 'Prompt',
+                        fontSize: '18px',
+                        fontStyle: 'normal',
+                        fontWeight: '500',
+                        lineHeight: '24px',
+                      }}
+                    >
+                      {item.merchandise}
+                    </Merchandise>
+                  </PrizeText>
+                </Description>
+              )}
+            </Box>
+          </div>
+        ))}
+      </PrizesContainer>
     </PrizesContainerWrapper>
   );
 };
