@@ -1,6 +1,6 @@
 import React from 'react';
-import Extensionboth from './ExtensionBoth';
-import Extensionright from './ExtensionRight';
+import ExtensionBoth from './Extensionboth';
+import ExtensionRight from './Extensionright';
 import { timelinecontent } from '../../../config/content/Timelinecontent';
 import { TimelineHead, TimelineWrapper } from './styles';
 
@@ -14,7 +14,7 @@ export default function Timeline() {
             if (index === timelinecontent.nodes.length - 1) {
               if (node && node.ellipsecontent) {
                 return (
-                  <Extensionboth
+                  <ExtensionBoth
                     key={node.serialid}
                     boxcolor={node.boxcolor}
                     wheelcolor={node.wheelcolor}
@@ -25,7 +25,7 @@ export default function Timeline() {
                 );
               }
               return (
-                <Extensionright
+                <ExtensionRight
                   key={node.serialid}
                   boxcolor={node.boxcolor}
                   node={node}
@@ -35,7 +35,7 @@ export default function Timeline() {
             }
             if (node && node.ellipsecontent) {
               return (
-                <Extensionboth
+                <ExtensionBoth
                   key={node.serialid}
                   boxcolor={node.boxcolor}
                   wheelcolor={node.wheelcolor}
@@ -46,7 +46,7 @@ export default function Timeline() {
               );
             }
             return (
-              <Extensionright
+              <ExtensionRight
                 key={node.serialid}
                 boxcolor={node.boxcolor}
                 node={node}

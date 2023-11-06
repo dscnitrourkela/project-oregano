@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Wheel, Line, Rightline } from './ExtensionBoth';
+import { Box, Wheel, Line, RightLine } from './Extensionboth';
 import { MobileContainer, Mobile, Desktop, RightContainer, VerticalWrapper } from './styles';
 
 export const VerticalLine = () => (
@@ -36,7 +36,7 @@ export default function ExtensionRight({ position, wheelcolor, node, boxcolor })
         <MobileContainer>
           <div />
           <Wheel color={wheelcolor} node={node} />
-          <Rightline color={boxcolor} />
+          <RightLine color={boxcolor} />
           <div />
           <VerticalLine />
           <Box color={boxcolor} node={node} />

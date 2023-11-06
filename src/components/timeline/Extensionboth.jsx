@@ -1,5 +1,5 @@
 import React from 'react';
-import { Body1, Body2, Heading3, Heading4 } from '../shared';
+import { Body2, Heading3 } from '../shared';
 import {
   Container,
   BoxWrapper,
@@ -13,6 +13,9 @@ import {
   CircledLineWrapper,
   Mobile,
   Desktop,
+  Date,
+  Month,
+  EllipseContent,
 } from './styles';
 
 export const Box = ({ color, node }) => (
@@ -21,7 +24,7 @@ export const Box = ({ color, node }) => (
       <Heading3 semibold>{node.title}</Heading3>
       <img
         src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698431749/Line_3_o1ztvt.svg'
-        alt=''
+        alt='line'
       />
     </div>
     <Body2>Duration - {node.duration}</Body2>
@@ -38,7 +41,7 @@ export const Line = ({ color }) => (
     </svg>
   </LineWrapper>
 );
-export const Rightline = ({ color }) => (
+export const RightLine = ({ color }) => (
   <RightLineWrapper>
     <svg xmlns='http://www.w3.org/2000/svg' width='202' height='2' viewBox='0 0 202 2' fill='none'>
       <path
@@ -75,9 +78,9 @@ export const Wheel = ({ color, node }) => (
         strokeDasharray='10 10'
       />
     </svg>
-    <div className='content'>
-      <p id='date'>{node.date}</p>
-      <Body1 id='month'>{node.month}</Body1>
+    <div>
+      <Date>{node.date}</Date>
+      <Month>{node.month}</Month>
     </div>
   </WheelWrapper>
 );
@@ -86,12 +89,12 @@ export const Arrow = () => (
     <img
       id='desktop'
       src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698111649/Group_762_ijeczd.svg'
-      alt=''
+      alt='arrow'
     />
     <img
       id='mobile'
       src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698244205/Group_762_1_my98zs.svg'
-      alt=''
+      alt='arrow'
     />
   </ArrowWrapper>
 );
@@ -113,9 +116,7 @@ export const Ellipse = ({ color, node }) => (
       />
     </svg>
     <div>
-      <Heading4 id='ellipse' className='content' medium>
-        {node.ellipsecontent}
-      </Heading4>
+      <EllipseContent medium>{node.ellipsecontent}</EllipseContent>
     </div>
   </EllipseWrapper>
 );

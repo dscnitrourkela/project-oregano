@@ -1,31 +1,29 @@
 import styled from 'styled-components';
-import { Heading1 } from '../shared';
+import { Body1, Heading1, Heading4 } from '../shared';
 
 export const TimelineHead = styled(Heading1)`
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
   @media (max-width: 640px) {
     font-size: 32px;
     line-height: 96px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 32px 0px;
   }
 `;
 export const TimelineWrapper = styled.div`
-  width: 1240px;
-  margin: 0 auto;
+  width: 1280px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 15px;
   @media (max-width: 640px) {
-    width: 362.885px;
-    flex-direction: column;
+    width: 360px;
   }
 `;
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: 1fr 201px 134px 243px 1fr;
+  grid-template-columns: 1fr 201px 134px 243px 316px;
   grid-template-rows: 248px 135px;
   margin: auto;
   color: #fff;
@@ -33,8 +31,8 @@ export const Container = styled.div`
 export const MobileContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 24px 1fr;
-  grid-template-rows: 90.9px;
-  width: 362.885px;
+  grid-template-rows: 91px;
+  width: 363px;
   margin: auto;
   color: #fff;
 `;
@@ -59,25 +57,17 @@ export const BoxWrapper = styled.div`
     color: var(--neutral-5, #a1a1a1);
   }
   @media (max-width: 640px) {
-    display: inline-flex;
     padding: 13px 18px;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
-    background: #0e0812;
-    place-self: center;
-
     div {
       h3 {
         font-size: 14px;
-        font-style: normal;
         font-weight: 500;
         line-height: 20px;
       }
     }
     p {
       font-size: 10px;
-      font-style: normal;
       font-weight: 300;
       line-height: 18px;
     }
@@ -89,41 +79,50 @@ export const LineWrapper = styled.div`
   align-items: center;
   @media (max-width: 640px) {
     svg {
-      width: 86.267px;
+      width: 86px;
       height: 1px;
       transform: rotate(-45deg) translate(-15px, 60px);
     }
   }
 `;
-export const RightLineWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const RightLineWrapper = styled(LineWrapper)`
   @media (max-width: 640px) {
     svg {
-      width: 86.267px;
-      height: 1px;
       transform: rotate(44deg) translate(5px, 39px);
-      flex-shrink: 0;
     }
   }
 `;
 export const VerticalBox = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   div {
     width: 4px;
     height: 197px;
     background: #fed954;
-    transform: translateY(-27px);
+    transform: translateY(-58px);
+  }
+`;
+export const Date = styled(Heading4)`
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+  margin: 0;
+  @media (max-width: 640px) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+`;
+export const Month = styled(Body1)`
+  @media (max-width: 640px) {
+    font-size: 11px;
+    line-height: 18px;
   }
 `;
 export const WheelWrapper = styled.div`
   position: relative;
   height: 134px;
   place-self: center;
-  .content {
+  div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -132,41 +131,24 @@ export const WheelWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  #date {
-    font-family: Prompt;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 42px;
-    margin: 0;
-  }
+
   @media (max-width: 640px) {
-    width: 90.9px;
-    height: 90.9px;
+    width: 91px;
+    height: 91px;
     svg {
-      width: 90.9px;
-      height: 90.9px;
+      width: 91px;
+      height: 91px;
     }
-    .content {
+    div {
       display: flex;
-      width: 43.2px;
-      height: 39.6px;
+      width: 43px;
+      height: 40px;
       flex-direction: column;
       align-items: center;
-      #date {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 21.6px;
-      }
-      #month {
-        font-size: 10.8px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 18px;
-      }
     }
   }
 `;
+
 export const ArrowWrapper = styled.div`
   position: relative;
   place-self: center;
@@ -180,41 +162,37 @@ export const ArrowWrapper = styled.div`
     #mobile {
       display: block;
     }
-    width: 106.262px;
-    height: 20.251px;
+    width: 106px;
+    height: 20px;
+  }
+`;
+export const EllipseContent = styled(Heading4)`
+  line-height: 32px;
+  width: 202px;
+  margin: 0 0 0 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 640px) {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    width: 113px;
+    height: 56px;
+    margin: 0 0 0 11px;
   }
 `;
 export const EllipseWrapper = styled.div`
   place-self: center;
   position: relative;
-  #ellipse {
-    line-height: 32px;
-    width: 202px;
-    margin: 0;
-    margin-left: 25px;
-  }
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-  }
   @media (max-width: 640px) {
     svg {
-      width: 137.885px;
+      width: 138px;
       height: 123px;
-    }
-    #ellipse {
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 20px;
-      width: 112.75px;
-      height: 55.909px;
-      margin-left: 11.43px;
     }
   }
 `;
@@ -224,7 +202,6 @@ export const CircledLineWrapper = styled.div`
   #line {
     width: 4px;
     height: 158px;
-    flex-shrink: 0;
   }
   #circle1 {
     position: absolute;
@@ -268,7 +245,7 @@ export const VerticalWrapper = styled.div`
   align-items: center;
   div {
     width: 4px;
-    height: 165.242px;
+    height: 165px;
     background: #fed954;
     transform: translateY(27px);
   }
