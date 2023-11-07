@@ -40,33 +40,28 @@ export const BoxWrapper = styled.div`
   display: inline-flex;
   padding: 26px 24px;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   border-radius: 20px;
   border: 0.4px solid ${(props) => props.color};
   place-self: center;
   white-space: nowrap;
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    h3 {
-      color: ${(props) => props.color};
-    }
+  h3 {
+    color: ${(props) => props.color};
   }
   p {
     color: var(--neutral-5, #a1a1a1);
+    margin: 8px 0 0 0;
   }
   @media (max-width: 640px) {
     padding: 13px 18px;
     gap: 8px;
-    div {
-      h3 {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-      }
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
     }
     p {
+      margin: 0;
       font-size: 10px;
       font-weight: 300;
       line-height: 18px;

@@ -20,13 +20,11 @@ import {
 
 export const Box = ({ node }) => (
   <BoxWrapper color={node.boxcolor}>
-    <div>
-      <Heading3 semibold>{node.title}</Heading3>
-      <img
-        src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698431749/Line_3_o1ztvt.svg'
-        alt='line'
-      />
-    </div>
+    <Heading3 semibold>{node.title}</Heading3>
+    <img
+      src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1698431749/Line_3_o1ztvt.svg'
+      alt='line'
+    />
     <Body2>Duration - {node.duration}</Body2>
   </BoxWrapper>
 );
