@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-  const AboutContainer = styled.div`
+import { Body1 } from '../shared';
+ export  const AboutContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,5 +8,10 @@ import styled from 'styled-components';
     margin-top: 0px;
     overflow: hidden;
     width: 100%;
+    margin-bottom: 50px;
   `;
-  export default AboutContainer;
+  export const AboutContent = styled(Body1)`
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+  `;

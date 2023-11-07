@@ -1,7 +1,7 @@
 import React from 'react';
 import { Body2, Heading1 } from '../shared';
 import Content from '../../../config/content/About';
-import AboutContainer from './styles';
+import {AboutContainer,AboutContent} from './styles';
 import Carousel from './Carousel';
 
 const AboutUs = () => {
@@ -9,7 +9,7 @@ const AboutUs = () => {
     <>
       <AboutContainer>
         <Heading1>About Us</Heading1>
-        <Body2>{Content.desc}</Body2>
+        <AboutContent>{Content.desc}</AboutContent>
       </AboutContainer>
       <Carousel />
     </>
