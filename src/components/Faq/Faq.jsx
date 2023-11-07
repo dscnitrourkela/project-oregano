@@ -16,21 +16,23 @@ import faqData from '../../../config/content/Faq';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
-  const [animationState, setAnimationState] = useState('');
+  const [animationState, setAnimationState] = useState(Array(faqData.length).fill(''));
 
   const toggleQuestion = (index) => {
-    if (animationState === '') {
-      setAnimationState('opened');
-    } else if (animationState === 'opened') {
-      setAnimationState('closing');
+    const newAnimationStates = [...animationState];
+    if (newAnimationStates[index] === '') {
+      newAnimationStates[index] = 'opened';
+    } else if (newAnimationStates[index] === 'opened') {
+      newAnimationStates[index] = 'closing';
     } else {
-      setAnimationState('opened');
+      newAnimationStates[index] = 'opened';
     }
     if (openQuestions.includes(index)) {
       setOpenQuestions(openQuestions.filter((item) => item !== index));
     } else {
       setOpenQuestions([...openQuestions, index]);
     }
+    setAnimationState(newAnimationStates);
   };
 
   return (
@@ -55,7 +57,7 @@ const FAQ = () => {
               <FAQDiv>
                 <FAQQuestionText>{faq.question}</FAQQuestionText>
 
-                <FAQIcon isOpen={openQuestions.includes(index)} className={animationState}>
+                <FAQIcon isOpen={openQuestions.includes(index)} className={animationState[index]}>
                   <span className='material-symbols-outlined'>add</span>
                 </FAQIcon>
               </FAQDiv>
