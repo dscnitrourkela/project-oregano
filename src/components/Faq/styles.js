@@ -12,6 +12,7 @@ export const FAQHeading = styled(Heading2)`
     font-style: normal;
     font-weight: 600;
     line-height: 64px;
+    text-align: center;
   }
 `;
 export const FAQContainer = styled.div`
