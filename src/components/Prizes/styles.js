@@ -1,13 +1,11 @@
 import styled from 'styled-components';
-import { Heading1, Heading4 } from '../shared';
+import { Body1, Heading1 } from '../shared';
 
 const smallScreen = '768px';
-const mediumScreen = '1024px';
 
 export const PrizesContainerWrapper = styled.div`
   padding-left: 0;
-  height: 100vh;
-
+  height: auto;
   @media (max-width: ${smallScreen}) {
     padding: 0 20px;
   }
@@ -17,21 +15,28 @@ export const PrizesContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 60px 0;
-
   @media (max-width: ${smallScreen}) {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 `;
 
 export const PrizeText = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   font-size: 20px;
   color: #000;
   visibility: hidden;
   transition: visibility 0.7s ease-in-out 0.6s;
+  bottom: 20px;
+  margin-top: 32px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
 `;
 
 export const TotalPrizes = styled(Heading1)`
@@ -44,6 +49,10 @@ export const TotalPrizes = styled(Heading1)`
   background: transparent;
   visibility: hidden;
   transition: visibility 0.9s ease-in-out 0.8s;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    margin-top: 16px;
+  }
 `;
 
 export const Box = styled.div`
@@ -60,25 +69,20 @@ export const Box = styled.div`
   position: relative;
   box-shadow: 0 4px 24px 0 rgba(39, 39, 39, 0.6);
   margin-bottom: 24px;
-
   &:hover {
     box-shadow: 0 8px 24px 0 ${(props) => props.shadowColor || '#272727'};
   }
   &:hover ${PrizeText} {
     visibility: visible;
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
   }
   &:hover ${TotalPrizes} {
     visibility: visible;
-    transition-delay: 0.3s;
-  }
-  @media (max-width: ${mediumScreen}) {
-    width: 100%;
-    height: ${(props) => (props.expanded ? '500px' : '380px')};
+    transition-delay: 0.5s;
   }
   @media (max-width: ${smallScreen}) {
     width: 90%;
-    height: ${(props) => (props.expanded ? '280px' : '340px')};
+    height: ${(props) => (props.expanded ? '460px' : '350px')};
   }
 `;
 
@@ -109,8 +113,8 @@ export const PrizeDescriptions = styled.div`
   font-weight: 400;
 `;
 
-export const CashPrize = styled(Heading4)`
-  color: aqua;
+export const CashPrize = styled(Body1)`
+  color: var(--color-primary-blue);
   white-space: nowrap;
   font-size: 18px;
   font-weight: 500;
@@ -118,22 +122,29 @@ export const CashPrize = styled(Heading4)`
     content: '+';
     color: white;
   }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
-export const Swags = styled(Heading4)`
-  color: #c600ff;
+export const Swags = styled(Body1)`
+  color: var(--color-primary-purple);
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
-
   &::after {
     content: '+';
     color: white;
   }
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
-export const Merchandise = styled(Heading4)`
-  color: #00ff91;
-  font-size: 18px;
-  font-weight: 500;
+export const Merchandise = styled(Body1)`
+  color: var(--color-primary-green);
+  text-align: center;
+  @media (max-width: ${smallScreen}) {
+    font-size: 14px;
+  }
 `;

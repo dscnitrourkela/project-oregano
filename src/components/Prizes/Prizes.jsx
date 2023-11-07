@@ -1,5 +1,6 @@
-/* eslint-disable max-len */
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState, useEffect, useRef } from 'react';
 import {
   PrizesContainer,
   Box,
@@ -16,70 +17,58 @@ import { PrizesContent } from '../../../config';
 
 const Prizes = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const isSmallerScreenRef = useRef(window.innerWidth <= 768);
 
   const handleBoxHover = (index) => {
     setExpandedIndex(index);
   };
-
   const handleBoxLeave = () => {
     setExpandedIndex(null);
   };
+  const handleBoxClick = (index) => {
+    if (expandedIndex === index) {
+      setExpandedIndex(null);
+    } else {
+      setExpandedIndex(index);
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        isSmallerScreenRef.current = true;
+      } else {
+        isSmallerScreenRef.current = false;
+        setExpandedIndex(null);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <PrizesContainerWrapper>
       <PrizesTitle>{PrizesContent.title}</PrizesTitle>
-
       <PrizesContainer>
         {PrizesContent.prizeData.map((item) => (
           <div
             key={item.id}
             onMouseEnter={() => handleBoxHover(item.id)}
             onMouseLeave={handleBoxLeave}
+            onClick={isSmallerScreenRef.current ? () => handleBoxClick(item.id) : undefined}
           >
             <Box expanded={expandedIndex === item.id} shadowColor={item.prizeShadowColor}>
-              <img src={item.src} alt='Medal' style={{ maxWidth: '100%', maxHeight: '100%' }} />
-
+              <img src={item.src} alt='Medal' />
               {expandedIndex === item.id && (
                 <Description>
-                  <TotalPrizes style={{ marginTop: '10px' }}>
-                    Total Prize - {item.prizeValue}
-                  </TotalPrizes>
-                  <PrizeText style={{ bottom: '20px', marginTop: '32px' }}>
-                    <div className='flex justify-center items-center'>
-                      <CashPrize
-                        style={{
-                          color: 'var(--primary-blue-3, #02DAFF)',
-                          textAlign: 'center',
-                        }}
-                      >
-                        Cash Prize {item.cash}
-                      </CashPrize>
-
-                      <Swags
-                        style={{
-                          color: 'var(--primary-purple-2, #B067FF)',
-                          textAlign: 'center',
-                          fontFamily: 'Prompt',
-                          fontStyle: 'normal',
-                          lineHeight: '24px',
-                        }}
-                      >
-                        {item.swags}
-                      </Swags>
-                    </div>
-                    <Merchandise
-                      style={{
-                        color: 'var(--primary-green-2, #43F4AA)',
-                        textAlign: 'center',
-                        fontFamily: 'Prompt',
-                        fontSize: '18px',
-                        fontStyle: 'normal',
-                        fontWeight: '500',
-                        lineHeight: '24px',
-                      }}
-                    >
-                      {item.merchandise}
-                    </Merchandise>
+                  <TotalPrizes>Total Prize - {item.prizeValue}</TotalPrizes>
+                  <PrizeText>
+                    <CashPrize>Cash Prize {item.cash}</CashPrize>
+                    <Swags>{item.swags}</Swags>
+                    <Merchandise>{item.merchandise}</Merchandise>
                   </PrizeText>
                 </Description>
               )}
