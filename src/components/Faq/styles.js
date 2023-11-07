@@ -3,7 +3,7 @@ import { Caption, Heading4, Heading2, Body1 } from '../shared';
 
 const rotateOut = keyframes`
   from { transform: rotate(-45deg);
-  }to {transform: rotate(45deg);
+  }to {transform: rotate(0deg);
   }
 `;
 export const FAQHeading = styled(Heading2)`
@@ -44,6 +44,7 @@ export const FAQQuestionContainer = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   gap: 32px;
+  transition: max-height 1s ease-in-out;
   @media (max-width: 768px) {
     gap: 16px;
     padding: 8px;
@@ -60,7 +61,7 @@ export const FAQQuestion = styled(Body1)`
   border: 2px solid var(--neutral-3, #d9d9d9);
   gap: 36px;
   cursor: pointer;
-  transition: 0.5s;
+  animation-delay: 1s;
   &.opened {
     border: 2px solid var(--color-primary-blue);
     background: rgba(0, 0, 255, 0.1);
@@ -78,11 +79,11 @@ export const FAQQuestion = styled(Body1)`
 `;
 export const FAQIcon = styled.div`
   tarnsform: translateY(-50%);
-  transition: transform 0.5s;
+  transition: transform 1s;
   display: flex;
   align-items: center;
   &.closing {
-    animation: ${rotateOut} 0.5s;
+    animation: ${rotateOut} 1s;
   }
   &.opened {
     transform: rotate(45deg);
@@ -93,9 +94,9 @@ export const FAQAnswer = styled(Caption)`
   margin-top: -25px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  height:auto
+  height: auto;
   position: relative;
-  transition: 0.5s;
+  transition: 1s;
 `;
 export const FAQQuestionText = styled.div`
   height: auto;

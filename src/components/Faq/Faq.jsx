@@ -16,7 +16,7 @@ import faqData from '../../../config/content/Faq';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
-  const [animationState, setAnimationState] = useState(Array(faqData.length).fill(''));
+  const [animationState, setAnimationState] = useState(Array(faqData.questions.length).fill(''));
 
   const toggleQuestion = (index) => {
     const newAnimationStates = [...animationState];
@@ -43,12 +43,10 @@ const FAQ = () => {
           href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
         />
       </Helmet>
-      <FAQHeading>Do You Have A Question?</FAQHeading>
-      <FAQCaption>
-        New to Hackathon! Don’t worry we got you covered with all the basic information.
-      </FAQCaption>
+      <FAQHeading>{faqData.title}</FAQHeading>
+      <FAQCaption>{faqData.content}</FAQCaption>
       <FAQQuestionContainer>
-        {faqData.map((faq, index) => (
+        {faqData.questions.map((faq, index) => (
           <div key={faq.question} className='w-full'>
             <FAQQuestion
               onClick={() => toggleQuestion(index)}
