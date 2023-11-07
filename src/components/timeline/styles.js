@@ -19,6 +19,7 @@ export const TimelineWrapper = styled.div`
   padding: 0 15px;
   @media (max-width: 640px) {
     width: 390px;
+    padding: 0 8px;
   }
 `;
 export const Container = styled.div`

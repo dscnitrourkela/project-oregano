@@ -1,11 +1,12 @@
 import React from 'react';
-import { Box, Wheel, Line, RightLine } from './Extensionboth';
+import { Box, Wheel, Line } from './Extensionboth';
 import {
   MobileContainer,
   MobileView,
   DesktopView,
   RightContainer,
   VerticalWrapper,
+  RightLineWrapper,
 } from './styles';
 
 export const VerticalLine = () => (
@@ -13,7 +14,18 @@ export const VerticalLine = () => (
     <div />
   </VerticalWrapper>
 );
-export default function ExtensionRight({ position, wheelcolor, node, boxcolor }) {
+const RightLine = ({ color }) => (
+  <RightLineWrapper>
+    <svg xmlns='http://www.w3.org/2000/svg' width='202' height='2' viewBox='0 0 202 2' fill='none'>
+      <path
+        d='M1 0.5C0.723858 0.5 0.5 0.723858 0.5 1C0.5 1.27614 0.723858 1.5 1 1.5L1 0.5ZM1 1.5L202
+        1.49998L202 0.499982L1 0.5L1 1.5Z'
+        fill={color}
+      />
+    </svg>
+  </RightLineWrapper>
+);
+export default function ExtensionRight({ position, node }) {
   return (
     <>
       <DesktopView>
@@ -21,9 +33,9 @@ export default function ExtensionRight({ position, wheelcolor, node, boxcolor })
           <RightContainer>
             <div />
             <div />
-            <Wheel color={wheelcolor} node={node} />
-            <Line color={boxcolor} />
-            <Box color={boxcolor} node={node} />
+            <Wheel node={node} />
+            <Line color={node.boxcolor} />
+            <Box node={node} />
             <div />
             <div />
             <VerticalLine />
@@ -32,20 +44,20 @@ export default function ExtensionRight({ position, wheelcolor, node, boxcolor })
           <RightContainer>
             <div />
             <div />
-            <Wheel color={wheelcolor} node={node} />
-            <Line color={boxcolor} />
-            <Box color={boxcolor} node={node} />
+            <Wheel node={node} />
+            <Line color={node.boxcolor} />
+            <Box node={node} />
           </RightContainer>
         )}
       </DesktopView>
       <MobileView>
         <MobileContainer>
           <div />
-          <Wheel color={wheelcolor} node={node} />
-          <RightLine color={boxcolor} />
+          <Wheel node={node} />
+          <RightLine color={node.boxcolor} />
           <div />
           <VerticalLine />
-          <Box color={boxcolor} node={node} />
+          <Box node={node} />
         </MobileContainer>
       </MobileView>
     </>
