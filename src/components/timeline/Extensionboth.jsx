@@ -11,8 +11,8 @@ import {
   ArrowWrapper,
   EllipseWrapper,
   CircledLineWrapper,
-  Mobile,
-  Desktop,
+  MobileView,
+  DesktopView,
   Date,
   Month,
   EllipseContent,
@@ -179,7 +179,7 @@ export const Circledline = () => (
 export default function ExtensionBoth({ position, node }) {
   return (
     <>
-      <Desktop>
+      <DesktopView>
         {position !== 'end' ? (
           <Container>
             <Box node={node} />
@@ -202,8 +202,8 @@ export default function ExtensionBoth({ position, node }) {
             <Ellipse node={node} />
           </Container>
         )}
-      </Desktop>
-      <Mobile>
+      </DesktopView>
+      <MobileView>
         <MobileContainer>
           <Line color={node.boxcolor} />
           <Wheel node={node} />
@@ -212,7 +212,7 @@ export default function ExtensionBoth({ position, node }) {
           <Circledline />
           <Ellipse node={node} />
         </MobileContainer>
-      </Mobile>
+      </MobileView>
     </>
   );
 }

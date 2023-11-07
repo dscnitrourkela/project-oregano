@@ -1,6 +1,12 @@
 import React from 'react';
 import { Box, Wheel, Line, RightLine } from './Extensionboth';
-import { MobileContainer, Mobile, Desktop, RightContainer, VerticalWrapper } from './styles';
+import {
+  MobileContainer,
+  MobileView,
+  DesktopView,
+  RightContainer,
+  VerticalWrapper,
+} from './styles';
 
 export const VerticalLine = () => (
   <VerticalWrapper>
@@ -10,7 +16,7 @@ export const VerticalLine = () => (
 export default function ExtensionRight({ position, wheelcolor, node, boxcolor }) {
   return (
     <>
-      <Desktop>
+      <DesktopView>
         {position !== 'end' ? (
           <RightContainer>
             <div />
@@ -31,8 +37,8 @@ export default function ExtensionRight({ position, wheelcolor, node, boxcolor })
             <Box color={boxcolor} node={node} />
           </RightContainer>
         )}
-      </Desktop>
-      <Mobile>
+      </DesktopView>
+      <MobileView>
         <MobileContainer>
           <div />
           <Wheel color={wheelcolor} node={node} />
@@ -41,7 +47,7 @@ export default function ExtensionRight({ position, wheelcolor, node, boxcolor })
           <VerticalLine />
           <Box color={boxcolor} node={node} />
         </MobileContainer>
-      </Mobile>
+      </MobileView>
     </>
   );
 }

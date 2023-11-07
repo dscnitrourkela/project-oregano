@@ -217,12 +217,12 @@ export const CircledLineWrapper = styled.div`
     display: none;
   }
 `;
-export const Desktop = styled.div`
+export const DesktopView = styled.div`
   @media (max-width: 640px) {
     display: none;
   }
 `;
-export const Mobile = styled.div`
+export const MobileView = styled.div`
   @media (min-width: 640px) {
     display: none;
   }
