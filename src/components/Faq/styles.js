@@ -7,12 +7,24 @@ const rotateOut = keyframes`
   }
 `;
 export const FAQHeading = styled(Heading2)`
-  @media (max-width: 768px) {
-    font-size: 24px;
-    font-style: normal;
+  @media (max-width: 335px) {
+    text-align: center;
+    font-size: 10px;
     font-weight: 600;
     line-height: 64px;
+  }
+
+  @media (max-width: 396px) and (min-width: 336px) {
     text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 64px;
+  }
+  @media (max-width: 768px) and (min-width: 397px) {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 64px;
   }
 `;
 export const FAQContainer = styled.div`
