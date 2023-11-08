@@ -45,7 +45,6 @@ export const SecondPendulumContainer = styled.div`
   text-white
   p-4
   `}
-  background: #080822;
   @media (max-width: 800px) {
     ${tw`
     p-[0px]
@@ -132,6 +131,17 @@ export const Ball = styled.div`
     top-[80px]
     `}
   }
+
+  &:hover {
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
 `;
 
 // Define keyframes
@@ -205,6 +215,11 @@ export const FrItems = styled.span`
   px-4
   py-6
 `}
+  @media (max-width: 1000px) {
+    ${tw`
+    p-4
+    `}
+  }
 `;
 
 export const AboutBox = styled.div`
@@ -273,7 +288,7 @@ export const LastLine = styled.div`
   @media (max-width: 1000px) {
     ${tw`
     flex-col-reverse
-    m-4
+    my-8
     `}
   }
 `;
