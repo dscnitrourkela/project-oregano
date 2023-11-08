@@ -54,40 +54,47 @@ export const SocialsCont = styled.div`
   `}
 `;
 export const CradleContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  padding-top: 100px;
+  ${tw`
+  flex
+  flex-row 
+  items-center
+  justify-center 
+  w-auto 
+  h-auto 
+  pt-[100px]
+  `}
+  font-size: 16px;
 `;
 
 export const Ball = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: black;
-  top: 100px;
-  float: left;
-  width: 40px;
-  height: 40px;
-  background: white;
-  border-radius: 50%;
   transform-origin: 50% -200px;
-  &:before {
+  ${tw`
+  flex
+  flex-row 
+  items-center
+  justify-center
+  relative
+  text-black
+  top-[100px]
+  float-left
+  w-[40px]
+  h-[40px]
+  bg-white
+  rounded-full
+  `}
+  &::before {
     content: '';
-    color: black;
-    background: black;
-    display: block;
-    position: absolute;
-    height: 200px;
-    width: 3px;
-    top: -200px;
-    left: 19px;
-    background: #575757;
+    ${tw`
+    text-black
+    bg-black
+    block
+    absolute
+    h-[200px]
+    w-[3px]
+    top-[-200px]
+    left-[19px]
+    bg-[#575757]
+    `}
   }
 `;
 
@@ -112,11 +119,11 @@ const ball5Animation = keyframes`
 
 // Apply animations to specific elements
 export const Ball1 = styled(Ball)`
-  animation: ${ball1Animation} 0.8s ease-out infinite alternate;
+  animation: ${ball1Animation} 1s ease-out infinite alternate;
 `;
 
 export const Ball5 = styled(Ball)`
-  animation: ${ball5Animation} 0.8s ease-out 0.8s infinite alternate;
+  animation: ${ball5Animation} 1s ease-out 1s infinite alternate;
 `;
 
 export const ImgCont = styled.img`

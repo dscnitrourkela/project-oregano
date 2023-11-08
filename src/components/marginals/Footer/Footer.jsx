@@ -9,17 +9,14 @@ import Cradle from './Cradle';
 
 export const Footer = () => {
   return (
-    <div>
-      <ImgCont src={FooterImg} />
-      <FooterContainer>
-        <InitialCont>
-          <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
-          <SecondPendulumContainer>
-            <Cradle socials={footer.socials} text={footer.icons} />
-          </SecondPendulumContainer>
-        </InitialCont>
-        <TermsNCredits copyw={footer.copyright} />
-      </FooterContainer>
-    </div>
+    <FooterContainer>
+      <InitialCont>
+        <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
+        <SecondPendulumContainer>
+          <Cradle socials={footer.socials} text={footer.icons} />
+        </SecondPendulumContainer>
+      </InitialCont>
+      <TermsNCredits copyw={footer.copyright} />
+    </FooterContainer>
   );
 };
