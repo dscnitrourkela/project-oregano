@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect, useRef } from 'react';
 import {
@@ -17,29 +16,27 @@ import { PrizesContent } from '../../../config';
 
 const Prizes = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const isSmallerScreenRef = useRef(window.innerWidth <= 768);
+  const [selectedBackgroundColor, setSelectedBackgroundColor] = useState('#272727');
+  const isMobile = window.innerWidth <= 768;
+  const isSmallerScreenRef = useRef(isMobile);
 
-  const handleBoxHover = (index) => {
-    setExpandedIndex(index);
-  };
-  const handleBoxLeave = () => {
-    setExpandedIndex(null);
-  };
-  const handleBoxClick = (index) => {
+  const handleBoxInteraction = (index) => {
     if (expandedIndex === index) {
       setExpandedIndex(null);
+      setSelectedBackgroundColor('#272727');
     } else {
       setExpandedIndex(index);
+      setSelectedBackgroundColor(PrizesContent.prizeData[index - 1].prizeShadowColor);
     }
   };
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        isSmallerScreenRef.current = true;
-      } else {
-        isSmallerScreenRef.current = false;
+      const newIsMobile = window.innerWidth <= 768;
+      isSmallerScreenRef.current = newIsMobile;
+      if (!newIsMobile) {
         setExpandedIndex(null);
+        setSelectedBackgroundColor('#272727');
       }
     };
     window.addEventListener('resize', handleResize);
@@ -54,13 +51,17 @@ const Prizes = () => {
       <PrizesTitle>{PrizesContent.title}</PrizesTitle>
       <PrizesContainer>
         {PrizesContent.prizeData.map((item) => (
+          // eslint-disable-next-line jsx-a11y/no-static-element-interactions
           <div
             key={item.id}
-            onMouseEnter={() => handleBoxHover(item.id)}
-            onMouseLeave={handleBoxLeave}
-            onClick={isSmallerScreenRef.current ? () => handleBoxClick(item.id) : undefined}
+            onClick={() => (isMobile ? handleBoxInteraction(item.id) : undefined)}
+            onMouseEnter={() => (!isMobile ? handleBoxInteraction(item.id) : undefined)}
           >
-            <Box expanded={expandedIndex === item.id} shadowColor={item.prizeShadowColor}>
+            <Box
+              expanded={expandedIndex === item.id}
+              shadowColor={item.prizeShadowColor}
+              backgroundColor={expandedIndex === item.id ? selectedBackgroundColor : '#272727'}
+            >
               <img src={item.src} alt='Medal' />
               {expandedIndex === item.id && (
                 <Description>
