@@ -21,6 +21,10 @@ export const TimelineWrapper = styled.div`
     width: 390px;
     padding: 0 8px;
   }
+  @media (max-width: 390px) {
+    width: 300px;
+    padding: 0 8px;
+  }
 `;
 export const Container = styled.div`
   display: grid;
@@ -36,6 +40,10 @@ export const MobileContainer = styled.div`
   width: 363px;
   margin: auto;
   color: #fff;
+  @media (max-width: 390px) {
+    width: 278px;
+    grid-template-rows: 71px;
+  }
 `;
 export const BoxWrapper = styled.div`
   display: inline-flex;
@@ -68,6 +76,21 @@ export const BoxWrapper = styled.div`
       line-height: 18px;
     }
   }
+  @media (max-width: 390px) {
+    padding: 10px 14px;
+    gap: 8px;
+    h3 {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    p {
+      margin: 0;
+      font-size: 7px;
+      font-weight: 300;
+      line-height: 14px;
+    }
+  }
 `;
 export const LineWrapper = styled.div`
   display: flex;
@@ -80,11 +103,17 @@ export const LineWrapper = styled.div`
       transform: rotate(-45deg) translate(-15px, 60px);
     }
   }
+  @media (max-width: 390px) {
+    svg {
+      width: 66px;
+      transform: rotate(-45deg) translate(-11px, 71px);
+    }
+  }
 `;
 export const RightLineWrapper = styled(LineWrapper)`
   @media (max-width: 640px) {
     svg {
-      transform: rotate(44deg) translate(5px, 39px);
+      transform: rotate(44deg) translate(11px, 39px);
     }
   }
 `;
@@ -107,11 +136,19 @@ export const Date = styled(Heading4)`
     font-size: 18px;
     line-height: 22px;
   }
+  @media (max-width: 390px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 export const Month = styled(Body1)`
   @media (max-width: 640px) {
-    font-size: 11px;
+    font-size: 12px;
     line-height: 18px;
+  }
+  @media (max-width: 390px) {
+    font-size: 9px;
+    line-height: 15px;
   }
 `;
 export const WheelWrapper = styled.div`
@@ -141,6 +178,20 @@ export const WheelWrapper = styled.div`
       flex-direction: column;
       align-items: center;
     }
+  @media (max-width: 390px) {
+    width: 70px;
+    height: 70px;
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+    div {
+      display: flex;
+      width: 35px;
+      height: 33px;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 export const ArrowWrapper = styled.div`
@@ -158,6 +209,9 @@ export const ArrowWrapper = styled.div`
     }
     width: 106px;
     height: 20px;
+  }
+  @media (max-width: 390px) {
+    width: 82px;
   }
 `;
 export const EllipseContent = styled(Heading4)`
@@ -179,6 +233,10 @@ export const EllipseContent = styled(Heading4)`
     height: 56px;
     margin: 0 0 0 11px;
   }
+  @media (max-width: 390px) {
+    width: 87px;
+    font-size: 10px;
+  }
 `;
 export const EllipseWrapper = styled.div`
   place-self: center;
@@ -186,6 +244,12 @@ export const EllipseWrapper = styled.div`
   @media (max-width: 640px) {
     svg {
       width: 138px;
+      height: 123px;
+    }
+  }
+  @media (max-width: 390px) {
+    svg {
+      width: 128px;
       height: 123px;
     }
   }
