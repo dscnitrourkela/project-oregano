@@ -15,5 +15,5 @@ export default styled.h4`
 
 
 `}
-${(props) => props.italic && 'font-style: italic;'}
+  ${(props) => props.italic && 'font-style: italic;'}
 `;
