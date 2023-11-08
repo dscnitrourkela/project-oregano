@@ -32,7 +32,7 @@ export default function Hero() {
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
           <HeroButtons >
-            <DevfolioButton />
+            <DevfolioButton/>
             <DiscordButton />
           </HeroButtons>
         </HeroTitle>

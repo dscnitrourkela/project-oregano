@@ -59,7 +59,7 @@ export const HeroInside = styled.div`
 export const ContentBlock = styled.div`
   ${tw`
     // mx-8
-    md:max-w-xl 
+    md:max-w-xl
     lg:max-w-3xl
   `}
 `;
