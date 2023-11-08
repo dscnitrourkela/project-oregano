@@ -11,7 +11,6 @@ import {
   ButtonMetaLarge,
 } from '../components';
 import { Footer } from '../components/Footer/Footer';
-import Cradle from '../components/Footer/Final_pend';
 
 export default function Playground() {
   return (

@@ -5,7 +5,7 @@ import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from '
 import { NitLogo, FooterImg } from './images';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';
-import Cradle from './Final_pend';
+import Cradle from './Cradle';
 
 export const Footer = () => {
   return (
