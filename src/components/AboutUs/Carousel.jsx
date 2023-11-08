@@ -2,13 +2,18 @@ import React from 'react';
 import { useState } from 'react';
 import Slider from 'react-slick';
 import './carouselstyles.css';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { AboutUs } from '../../../config';
+import { Helmet } from 'react-helmet';
 
 function CustomPrevArrow({ onClick }) {
   return (
     <div className='arrow custom-prev-arrow' onClick={onClick}>
-      <BsArrowLeft />
+   <Helmet>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   </Helmet>
+   <span class="material-symbols-outlined">
+arrow_back_ios_new
+</span>
     </div>
   );
 }
@@ -16,7 +21,12 @@ function CustomPrevArrow({ onClick }) {
 function CustomNextArrow({ onClick }) {
   return (
     <div className='arrow custom-next-arrow' onClick={onClick}>
-      <BsArrowRight />
+    <Helmet>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   </Helmet>
+   <span class="material-symbols-outlined">
+arrow_forward_ios
+</span>
     </div>
   );
 }
@@ -31,17 +41,31 @@ function Carousel() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
-    beforeChange: (current, next) => setSlideIndex(next),
+    beforeChange: (current,next) => setSlideIndex(next),
     centerMode: true,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 507,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
           prevArrow: <CustomPrevArrow />,
           nextArrow: <CustomNextArrow />,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
     ],

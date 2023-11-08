@@ -70,8 +70,12 @@
     border-radius: 5px;
   }
 }
-@media screen and (max-width: 698px) and (min-width: 402px) {
-  .container {
-    width: 85%;
+@media screen and (max-width: 554px) {
+  .slide,
+  .slide img {
+    height: 200px;
+    border-radius: 5px;
   }
 }
+
+
