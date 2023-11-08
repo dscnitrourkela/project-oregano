@@ -91,7 +91,6 @@ export const FAQQuestion = styled(Body1)`
   }
 `;
 export const FAQIcon = styled.div`
-  transform: translateY(-50%);
   transition: transform 1s;
   display: flex;
   align-items: center;
