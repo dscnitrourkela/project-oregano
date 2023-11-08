@@ -59,7 +59,6 @@ export const TotalPrizes = styled(Heading1)`
 `;
 
 export const Box = styled.div`
-  width: 100%;
   max-width: 400px;
   height: ${(props) => (props.expanded ? '546px' : '360px')};
   border-radius: 10px;
@@ -94,7 +93,6 @@ export const Box = styled.div`
     `
       : ''}
   @media (max-width: ${smallScreen}) {
-    max-width: 90%;
     height: ${(props) => (props.expanded ? '460px' : '350px')};
   }
 `;
