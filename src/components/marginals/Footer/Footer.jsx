@@ -60,7 +60,6 @@ function Footer() {
               {footer.socials.map(({ icon, link }) => (
                 <a key={link} href={link} target='_blank' rel='noreferrer'>
                   <FontAwesomeIcon
-                    style={{ marginLeft: 20 }}
                     icon={icon}
                     color=' rgba(255, 255, 255, 0.4)'
                     size='2x'
