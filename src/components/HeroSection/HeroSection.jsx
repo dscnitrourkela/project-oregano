@@ -5,6 +5,7 @@ import {
   HACKimg,
   HeroTitle,
   HeroInside,
+  ContentBlock,
   TaglineText,
   HeroButtons,
   SectionContainer,
@@ -14,22 +15,23 @@ import {
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
 import DiscordBtnMobile from '../shared/DiscordBtnMobile';
-import {hero} from '../../../config';
+import { hero } from '../../../config';
+
 export default function Hero() {
   return (
-    <SectionContainer >
-      <HeroBody >
-        <HeroTitle className='hero h-100'>
+    <SectionContainer>
+      <HeroBody>
+        <HeroTitle classname='hero h-100'>
           <HeroInside>
-            <HACKimg src={hero.imgs.hack.src} alt={hero.imgs.hack.alt}/>
-            <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt}/>
+            <HACKimg src={hero.imgs.hack.src} alt={hero.imgs.hack.alt} />
+            <NITRimg src={hero.imgs.nitr.src} alt={hero.imgs.nitr.alt} />
           </HeroInside>
-          <contentBlock className='mx-8 md:max-w-xl lg:max-w-3xl'>
+          <ContentBlock>
             <HeroHeadingBase>
               <FIVEimg src={hero.imgs.five.src} />
             </HeroHeadingBase>
             <TaglineText>{hero.content}</TaglineText>
-          </contentBlock>
+          </ContentBlock>
           <HeroButtons className='sm:gap-8'>
             <DevfolioButton />
             <DiscordButton />

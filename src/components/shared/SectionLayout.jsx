@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Body1 from './Typography/Body1';

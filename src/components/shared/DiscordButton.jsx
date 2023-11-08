@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import hero from '../../../config/content/Hero';
 
 const Wrapper = styled.div`

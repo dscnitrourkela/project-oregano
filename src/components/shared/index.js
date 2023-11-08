@@ -1,5 +1,3 @@
-
-
 export { default as Heading1 } from './Typography/Heading1';
 export { default as Heading2 } from './Typography/Heading2';
 export { default as Heading3 } from './Typography/Heading3';
@@ -10,7 +8,6 @@ export { default as ButtonMeta } from './Typography/ButtonMeta';
 export { default as ButtonMetaLarge } from './Typography/ButtonMetaLarge';
 export { default as Caption } from './Typography/Caption';
 export { default as NavText } from './Typography/NavText';
-
 export { default as Container } from './Container';
 export { default as SectionContainer } from './SectionContainer';
 export { default as SectionLayout } from './SectionLayout';
