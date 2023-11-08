@@ -186,8 +186,8 @@ export const BottomContainer = styled.div`
     flex
     md:flex-row
     flex-col
-    w-[90%]
-    mx-auto
+    md:w-[90%]
+    md:mx-auto
     text-center
     md:gap-x-[21px]
     gap-y-[24px]

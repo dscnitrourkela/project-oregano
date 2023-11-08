@@ -19,7 +19,6 @@ export default {
       alt: 'Polygon',
     },
   ],
-
   beta: [
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861840/Quine_efnzpr.png',
@@ -58,7 +57,6 @@ export default {
       alt: 'Digitalocean',
     },
   ],
-
   gamma: [
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861839/Apyhub_tnqfbm.png',
@@ -91,7 +89,6 @@ export default {
       alt: 'Buidlerstribe',
     },
   ],
-
   deltaFirst: [
     {
       src: 'https://res.cloudinary.com/dv1src8un/image/upload/v1698861840/MLH_kl7xle.png',
