@@ -58,8 +58,8 @@ export const HeroInside = styled.div`
 
 export const ContentBlock = styled.div`
   ${tw`
-    mx-8
-    md:max-w-xl
+    // mx-8
+    md:max-w-xl 
     lg:max-w-3xl
   `}
 `;
@@ -69,7 +69,7 @@ export const HACKimg = styled.img`
     flex
     justify-center
     items-center
-    w-32
+    w-40
     sm:w-48
     md:w-72
     lg:w-96
@@ -81,7 +81,7 @@ export const HACKimg = styled.img`
 
 export const NITRimg = styled.img`
   ${tw`
-    w-32
+    w-40
     sm:w-48
     md:w-72
     lg:w-96
@@ -127,7 +127,7 @@ export const TaglineText = styled(Body1)`
     leading-6
     md:text-base
     lg:text-lg
-    px-8
+    px-4
     `}
 `;
 
@@ -135,9 +135,9 @@ export const HeroButtons = styled.div`
   ${tw`
     flex
     sm:flex-row
-    flex-col
+    flex-row
     justify-center
     items-center
-    mt-12
+    mt-4
     `}
 `;

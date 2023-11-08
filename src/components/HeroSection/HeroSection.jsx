@@ -14,7 +14,6 @@ import {
 } from './styles';
 import DevfolioButton from '../shared/DevfolioButton';
 import DiscordButton from '../shared/DiscordButton';
-import DiscordBtnMobile from '../shared/DiscordBtnMobile';
 import { hero } from '../../../config';
 
 export default function Hero() {
@@ -32,10 +31,9 @@ export default function Hero() {
             </HeroHeadingBase>
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
-          <HeroButtons className='sm:gap-8'>
+          <HeroButtons >
             <DevfolioButton />
             <DiscordButton />
-            <DiscordBtnMobile />
           </HeroButtons>
         </HeroTitle>
       </HeroBody>

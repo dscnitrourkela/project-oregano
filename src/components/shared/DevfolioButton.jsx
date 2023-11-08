@@ -1,35 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import "./DevfolioBtn.css"
 
-const RegisterButton = () => {
-  React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
+const RegisterButton = () =>{
+  {
+    const [clicked, setClicked] = useState(false);
+
+    const handleButtonClick = () => {
+      setClicked(true);
     };
-  }, []);
 
-  return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignContent: 'center',
-      }}
-    >
-      <div
-        className='apply-button'
-        data-hackathon-slug='hacknitr4'
-        data-button-theme='dark-inverted'
-        style={{ height: '64px', minWidth: '290px', marginTop: '2rem', marginRight: '14px' }}
-      >
-        Apply with Devfolio
+    return (
+      <div className={`btn ${clicked ? 'clicked' : ''}`} >
+        <div className="register_btn">
+          <button type="submit" onClick={handleButtonClick}>
+            REGISTER
+          </button>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  };
+}
 
-export default RegisterButton;
+  export default RegisterButton;
