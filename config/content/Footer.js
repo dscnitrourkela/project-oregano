@@ -8,9 +8,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import config from '../website';
 
-import { insta, fb, twitter, gh, li } from '../../src/components/marginals/Footer/images';
-
 export default {
+  Nitr: {
+    imgSrc: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/nitr_logo_vdj3aw.png',
+  },
+
   hacknitr: {
     img: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/logo1_rg97i6.png',
     alt: 'HackNITR 4.0',
@@ -44,33 +46,38 @@ export default {
   ],
   socials: [
     {
-      name: fb,
+      name: 'fb',
       icon: faFacebook,
       link: 'https://facebook.com/hacknitr',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/fb_zzl91w.png',
     },
     {
-      name: insta,
+      name: 'insta',
       icon: faInstagram,
       link: 'https://www.instagram.com/hacknitr/',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/insta_aktzjs.png',
     },
     {
-      name: li,
+      name: 'li',
       icon: faLinkedin,
       link: 'https://www.linkedin.com/company/hacknitr/',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/linkedin_eoenzs.png',
     },
     // {
     //   icon: faDiscord,
     //   link: 'https://hacknitr.com/discord',
     // },
     {
-      name: gh,
+      name: 'gh',
       icon: faGithubSquare,
       link: 'https://github.com/dscnitrourkela/project-oregano',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/github_ve2kbe.png',
     },
     {
-      name: twitter,
+      name: 'twitter',
       icon: faTwitterSquare,
       link: 'https://twitter.com/hacknitr',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/TwitterX_uua6eg.png',
     },
   ],
   organisers: [

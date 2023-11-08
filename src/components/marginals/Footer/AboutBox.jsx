@@ -23,7 +23,7 @@ const AboutContainer = ({ AbtLogo, about_content }) => {
 
       <AboutBox>
         <LogoCont>
-          <LogoImg src={AbtLogo} alt={about_content.img.alt} />
+          <LogoImg src={AbtLogo.imgSrc} alt={about_content.img.alt} />
         </LogoCont>
         <Para>
           <Heading3>{about_content.title}</Heading3>

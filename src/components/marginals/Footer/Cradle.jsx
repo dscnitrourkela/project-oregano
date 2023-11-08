@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SocialLogo, SocialText, SocialsCont, CradleContainer, Ball, Ball1, Ball5 } from './styles';
-import { fb, twitter } from './images';
 
 const Cradle = ({ socials, text }) => {
   return (
@@ -9,19 +8,19 @@ const Cradle = ({ socials, text }) => {
       <CradleContainer>
         <a href='https://facebook.com/hacknitr'>
           <Ball1>
-            <SocialLogo src={fb} />
+            <SocialLogo src={socials[0].imgLink} />
           </Ball1>
         </a>
         {socials.slice(1, -1).map((s) => (
           <a href={s.link}>
             <Ball>
-              <SocialLogo src={s.name} />
+              <SocialLogo src={s.imgLink} />
             </Ball>
           </a>
         ))}
         <a href='https://twitter.com/hacknitr'>
           <Ball5>
-            <SocialLogo src={twitter} />
+            <SocialLogo src={socials[socials.length - 1].imgLink} />
           </Ball5>
         </a>
       </CradleContainer>
