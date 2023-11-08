@@ -6,7 +6,7 @@ import Timeline from '../components/timeline/Timeline';
 export default function Playground() {
   return (
     <div>
-      <SponsorSection/>
+      <SponsorSection />
       <Timeline />
       <FAQ />
     </div>
