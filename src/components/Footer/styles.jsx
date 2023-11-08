@@ -37,6 +37,12 @@ export const ImgCont = styled.img`
 `}
 `;
 
+export const SocialLogo = styled.img`
+  ${tw`
+  w-[20px]
+`}
+`;
+
 export const Comp2 = styled(Container)`
   background-color: red;
   ${tw`

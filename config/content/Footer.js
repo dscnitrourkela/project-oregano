@@ -8,6 +8,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import config from '../website';
 
+import { insta, fb, twitter, gh, li } from '../../src/components/Footer/images';
+
 export default {
   hacknitr: {
     img: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/logo1_rg97i6.png',
@@ -42,10 +44,17 @@ export default {
   ],
   socials: [
     {
+      name: fb,
+      icon: faFacebook,
+      link: 'https://facebook.com/hacknitr',
+    },
+    {
+      name: insta,
       icon: faInstagram,
       link: 'https://www.instagram.com/hacknitr/',
     },
     {
+      name: li,
       icon: faLinkedin,
       link: 'https://www.linkedin.com/company/hacknitr/',
     },
@@ -54,14 +63,12 @@ export default {
     //   link: 'https://hacknitr.com/discord',
     // },
     {
-      icon: faFacebook,
-      link: 'https://facebook.com/hacknitr',
-    },
-    {
+      name: gh,
       icon: faGithubSquare,
       link: 'https://github.com/dscnitrourkela/project-oregano',
     },
     {
+      name: twitter,
       icon: faTwitterSquare,
       link: 'https://twitter.com/hacknitr',
     },

@@ -14,12 +14,10 @@ export const Footer = () => {
       <FooterContainer>
         <InitialCont>
           <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
-
           <SecondPendulumContainer>
-            <Cradle />
+            <Cradle socials={footer.socials} />
           </SecondPendulumContainer>
         </InitialCont>
-
         <TermsNCredits copyw={footer.copyright} />
       </FooterContainer>
     </div>

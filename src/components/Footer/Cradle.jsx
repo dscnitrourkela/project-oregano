@@ -1,15 +1,17 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { SocialLogo } from './styles';
+import { insta, fb, twitter, gh, li } from './images';
 
 const CradleContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: auto;
   height: auto;
   padding-top: 100px;
-  position: absolute;
 `;
 
 const CradleBefore = styled.div`
@@ -25,7 +27,12 @@ const CradleBefore = styled.div`
 `;
 
 const Ball = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  color: black;
   top: 100px;
   float: left;
   width: 40px;
@@ -35,13 +42,15 @@ const Ball = styled.div`
   transform-origin: 50% -200px;
   &:before {
     content: '';
+    color: black;
+    background: black;
     display: block;
     position: absolute;
     height: 200px;
-    width: 1px;
+    width: 3px;
     top: -200px;
     left: 19px;
-    background: #bdc3c7;
+    background: #575757;
   }
 `;
 
@@ -73,14 +82,24 @@ const Ball5 = styled(Ball)`
   animation: ${ball5Animation} 0.8s ease-out 0.8s infinite alternate;
 `;
 
-const Cradle = () => {
+const Cradle = ({ socials }) => {
   return (
     <CradleContainer>
-      <Ball1></Ball1>
-      <Ball></Ball>
-      <Ball></Ball>
-      <Ball></Ball>
-      <Ball5></Ball5>
+      <Ball1>
+        <a href={''}>
+          <SocialLogo src={fb} />
+        </a>
+      </Ball1>
+      {socials.slice(1, -1).map((s) => (
+        <Ball>
+          <a href={s.link}>
+            <SocialLogo src={s.name} />
+          </a>
+        </Ball>
+      ))}
+      <Ball5>
+        <SocialLogo src={twitter} />
+      </Ball5>
     </CradleContainer>
   );
 };
