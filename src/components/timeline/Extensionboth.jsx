@@ -101,9 +101,7 @@ export const Ellipse = ({ node }) => (
         fill={node.ellipsecolor}
       />
     </svg>
-    <div>
-      <EllipseContent medium>{node.ellipsecontent}</EllipseContent>
-    </div>
+    <EllipseContent medium>{node.ellipsecontent}</EllipseContent>
   </EllipseWrapper>
 );
 export const Circledline = () => (
