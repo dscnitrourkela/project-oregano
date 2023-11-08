@@ -37,6 +37,8 @@ function Carousel() {
   const settings = {
     infinite: true,
     speed: 1200,
+    centerMode: true,
+    centerPadding: '0px',
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -45,27 +47,13 @@ function Carousel() {
     centerMode: true,
     responsive: [
       {
-        breakpoint: 507,
+        breakpoint: 491,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: false,
           prevArrow: <CustomPrevArrow />,
           nextArrow: <CustomNextArrow />,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
         },
       },
     ],

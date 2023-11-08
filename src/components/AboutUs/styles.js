@@ -14,4 +14,5 @@ import { Body1 } from '../shared';
     margin-top: 20px;
     margin-bottom: 50px;
     width: 80%;
+ 
   `;
