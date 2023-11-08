@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container, Heading2, Heading3 } from '../..';
 import footer from '../../../../config/content/Footer';
 import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from './styles';
-import { NitLogo, FooterImg } from './images';
+import { NitLogo } from './images';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';
 import Cradle from './Cradle';

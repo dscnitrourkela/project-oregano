@@ -1,5 +1,4 @@
 import React from 'react';
-import tw from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SocialLogo, SocialText, SocialsCont, CradleContainer, Ball, Ball1, Ball5 } from './styles';
 import { fb, twitter } from './images';

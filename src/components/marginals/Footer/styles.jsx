@@ -6,8 +6,15 @@ export const FooterContainer = styled(Body1)`
   ${tw`
   text-white
   p-4
+  bg-[#060616]
 `}
-  background: #060616;
+  @media (max-width: 800px) {
+    ${tw`
+    flex-col
+    items-center
+    justify-between
+    `}
+  }
 `;
 
 export const InitialCont = styled.div`
@@ -17,6 +24,13 @@ export const InitialCont = styled.div`
   flex-row
   justify-between		
   `}
+  @media (max-width: 800px) {
+    ${tw`
+    flex-col-reverse
+    items-center
+    justify-between
+    `}
+  }
 `;
 
 // Cradle Container
@@ -27,11 +41,18 @@ export const SecondPendulumContainer = styled.div`
   flex-col
   items-center
   justify-between
-  w-[30%]
+  w-[500px]
   text-white
   p-4
   `}
   background: #080822;
+  @media (max-width: 800px) {
+    ${tw`
+    p-[0px]
+    w-full
+    h-[370px]
+    `}
+  }
 `;
 
 export const SocialText = styled.div`
@@ -59,11 +80,20 @@ export const CradleContainer = styled.div`
   flex-row 
   items-center
   justify-center 
-  w-auto 
+  w-full 
   h-auto 
+  p-4
+  mx-4
   pt-[100px]
+  text-[16px]
   `}
-  font-size: 16px;
+  @media (max-width: 800px) {
+    ${tw`
+    w-full
+    h-[300px]
+    pt-[0px]
+    `}
+  }
 `;
 
 export const Ball = styled.div`
@@ -94,6 +124,12 @@ export const Ball = styled.div`
     top-[-200px]
     left-[19px]
     bg-[#575757]
+    `}
+  }
+
+  @media (max-width: 800px) {
+    ${tw`
+    top-[80px]
     `}
   }
 `;
@@ -155,6 +191,11 @@ export const FirstRow = styled.div`
   justify-start	
   p-2
   `}
+  @media (max-width: 1000px) {
+    ${tw`
+    flex-col
+    `}
+  }
 `;
 
 export const FrItems = styled.span`
@@ -171,12 +212,21 @@ export const AboutBox = styled.div`
     flex
     flex-row
     text-lg
-    w-[851px]
+    w-[55vw]
     mx-4
     my-8
     p-5
+    bg-[#080822]
     `}
-  background: #080822;
+  @media (max-width: 800px) {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    ${tw`
+    w-[80vw]
+    m-auto
+    `}
+  }
 `;
 
 export const Para = styled.p`
@@ -198,6 +248,9 @@ export const LogoCont = styled.span`
   ${tw`
   w-[250px]
 `}
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export const LogoImg = styled.img`
@@ -217,6 +270,12 @@ export const LastLine = styled.div`
     justify-start	
     items-center
   `}
+  @media (max-width: 1000px) {
+    ${tw`
+    flex-col-reverse
+    m-4
+    `}
+  }
 `;
 
 export const Terms = styled.div`
@@ -240,13 +299,4 @@ export const Credits = styled.div`
   mx-2
   px-8
   `}
-`;
-
-export const Comp2 = styled(Container)`
-  background-color: red;
-  ${tw`
-   text-white
-   border-4
-   border-white
-`}
 `;
