@@ -74,7 +74,6 @@ export const FAQQuestion = styled(Body1)`
   border: 2px solid var(--neutral-3, #d9d9d9);
   gap: 36px;
   cursor: pointer;
-  animation-delay: 1s;
   &.opened {
     border: 2px solid var(--color-primary-blue);
     background: rgba(0, 0, 255, 0.1);
@@ -91,11 +90,11 @@ export const FAQQuestion = styled(Body1)`
   }
 `;
 export const FAQIcon = styled.div`
-  transition: transform 1s;
+  transition: transform 0.5s;
   display: flex;
   align-items: center;
   &.closing {
-    animation: ${rotateOut} 1s;
+    animation: ${rotateOut} 0.25s;
   }
   &.opened {
     transform: rotate(45deg);
@@ -108,7 +107,7 @@ export const FAQAnswer = styled(Caption)`
   overflow-wrap: break-word;
   height: auto;
   position: relative;
-  transition: 1s;
+  transition: 0.5s;
 `;
 export const FAQQuestionText = styled.div`
   height: auto;
