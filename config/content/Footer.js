@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import config from '../website';
 
-import { insta, fb, twitter, gh, li } from '../../src/components/Footer/images';
+import { insta, fb, twitter, gh, li } from '../../src/components/marginals/Footer/images';
 
 export default {
   hacknitr: {

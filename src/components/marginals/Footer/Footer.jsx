@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Heading2, Heading3 } from '..';
-import footer from '../../../config/content/Footer';
+import { Container, Heading2, Heading3 } from '../..';
+import footer from '../../../../config/content/Footer';
 import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from './styles';
 import { NitLogo, FooterImg } from './images';
 import TermsNCredits from './TermsNCredits';
@@ -15,7 +15,7 @@ export const Footer = () => {
         <InitialCont>
           <AboutContainer AbtLogo={NitLogo} about_content={footer.cards[0]} />
           <SecondPendulumContainer>
-            <Cradle socials={footer.socials} />
+            <Cradle socials={footer.socials} text={footer.icons} />
           </SecondPendulumContainer>
         </InitialCont>
         <TermsNCredits copyw={footer.copyright} />

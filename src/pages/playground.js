@@ -10,7 +10,8 @@ import {
   ButtonMeta,
   ButtonMetaLarge,
 } from '../components';
-import { Footer } from '../components/Footer/Footer';
+
+import { Footer } from '../components/marginals/Footer/Footer';
 
 export default function Playground() {
   return (
