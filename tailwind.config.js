@@ -48,10 +48,8 @@ module.exports = {
         14: '64px',
         15: '96px',
       },
-
       colors: {
         'background-primary': '#0E0812',
-
         'primary-pink': {
           50: '#FF8CD9',
           100: '#FF65CD',
@@ -70,14 +68,12 @@ module.exports = {
           200: '#02DAFF',
           300: '#02AECC',
         },
-
         'primary-green': {
           50: '#72F7BF',
           100: '#43F4AA',
           200: '#14F195',
           300: '#10C177',
         },
-
         'neutral-white': {
           50: '#FFFFFF',
           100: '#EDEDED',
@@ -88,7 +84,6 @@ module.exports = {
           600: '#545454',
           700: '#9FA3A9',
         },
-
         'neutral-yellow': {
           50: '#FEE27F',
           100: '#FED954',
@@ -105,7 +100,6 @@ module.exports = {
         Inter: ['Inter', ...defaultTheme.fontFamily.sans],
         Prompt: ['Prompt', ...defaultTheme.fontFamily.sans],
       },
-
       letterSpacing: {
         wide: '0.25em',
         wider: '0.51em',
