@@ -230,6 +230,13 @@ export const FirstRow = styled.div`
     mx-0
     `}
   }
+  @media (max-width: 500px) {
+    ${tw`
+    flex-col
+    w-[40vw]
+    mx-0
+    `}
+  }
 `;
 
 export const FrItems = styled.span`
@@ -340,7 +347,7 @@ export const ConditionItems = styled.span`
 `}
   @media (max-width: 800px) {
     ${tw`
-    px-2
+    px-1
     py-4
     `}
 `;
