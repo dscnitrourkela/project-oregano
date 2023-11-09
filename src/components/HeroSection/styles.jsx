@@ -69,7 +69,6 @@ export const HACKimg = styled.img`
     flex
     justify-center
     items-center
-    // w-32
     w-40
     sm:w-48
     md:w-72
@@ -85,16 +84,14 @@ export const HACKimg = styled.img`
 
 export const NITRimg = styled.img`
   ${tw`
-    // w-32
     w-40
     sm:w-48
     md:w-72
     lg:w-96
-
  `}
- @media (max-width: 320px) {
-  ${tw`w-32`}
-}
+  @media (max-width: 320px) {
+    ${tw`w-32`}
+  }
 `;
 
 export const HeroHeadingBase = styled.div`
@@ -123,7 +120,7 @@ export const SubTitle = styled.p`
     sm:text-2xl
     font-Inter
     font-bold
-    `}
+  `}
 `;
 
 export const TaglineText = styled(Body1)`
@@ -137,7 +134,7 @@ export const TaglineText = styled(Body1)`
     md:text-base
     lg:text-lg
     px-4
-    `}
+  `}
 `;
 
 export const HeroButtons = styled.div`
@@ -148,5 +145,5 @@ export const HeroButtons = styled.div`
     justify-center
     items-center
     mt-4
-    `}
+ `}
 `;
