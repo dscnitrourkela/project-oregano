@@ -193,8 +193,13 @@ export const FirstAboutContainer = styled.div`
   ${tw`
   text-white
   p-4
-`}
-  background: #060616;
+  bg-[#060616]
+  `}
+  @media (max-width: 800px) {
+    ${tw`
+    px-0
+  `}
+  }
 `;
 
 export const FirstRow = styled.div`
@@ -205,10 +210,11 @@ export const FirstRow = styled.div`
   justify-start	
   p-2
   `}
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     ${tw`
     flex-col
     w-[50vw]
+    mx-0
     `}
   }
 `;
@@ -222,7 +228,7 @@ export const FrItems = styled.span`
 `}
   @media (max-width: 1000px) {
     ${tw`
-    px-4
+    px-2
     py-6
     `}
   }
@@ -294,7 +300,6 @@ export const LastLine = styled.div`
   @media (max-width: 1000px) {
     ${tw`
     h-auto
-    w-[50vw]
     flex-col-reverse
     items-baseline
     `}
