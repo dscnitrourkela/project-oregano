@@ -9,7 +9,11 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <InitialCont>
-        <AboutContainer AbtLogo={footer.Nitr} about_content={footer.cards[0]} />
+        <AboutContainer
+          AbtLogo={footer.Nitr}
+          about_content={footer.cards[0]}
+          abtLinks={footer.links}
+        />
         <TermsNCredits copyw={footer.copyright} />
       </InitialCont>
       <SecondPendulumContainer>

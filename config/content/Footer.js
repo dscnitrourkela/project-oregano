@@ -9,6 +9,23 @@ import {
 import config from '../website';
 
 export default {
+  links: [
+    {
+      title: 'About Us',
+      id: 'about-us',
+      url: '',
+    },
+    {
+      title: 'Contact Us',
+      id: 'contact-us',
+      url: '',
+    },
+    {
+      title: 'Sponsor Us',
+      id: 'sponsor-us',
+      url: '',
+    },
+  ],
   Nitr: {
     imgSrc: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/nitr_logo_vdj3aw.png',
   },

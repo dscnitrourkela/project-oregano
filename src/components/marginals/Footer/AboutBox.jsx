@@ -11,14 +11,14 @@ import {
   LogoImg,
 } from './styles';
 
-const AboutContainer = ({ AbtLogo, about_content }) => {
+const AboutContainer = ({ AbtLogo, about_content, abtLinks }) => {
   console.log(about_content);
   return (
     <FirstAboutContainer>
       <FirstRow>
-        <FrItems>About US</FrItems>
-        <FrItems>Contact US</FrItems>
-        <FrItems>Sponsor US</FrItems>
+        {abtLinks.map((link) => (
+          <FrItems key={link.id}>{link.title}</FrItems>
+        ))}
       </FirstRow>
 
       <AboutBox>
