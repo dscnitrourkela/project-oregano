@@ -1,5 +1,5 @@
 import React from 'react';
-import footer from '../../../../config/content/Footer';
+import { footer } from '../../../../config';
 import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from './styles';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';

@@ -12,7 +12,6 @@ import {
 } from './styles';
 
 const AboutContainer = ({ AbtLogo, about_content, abtLinks }) => {
-  console.log(about_content);
   return (
     <FirstAboutContainer>
       <FirstRow>
