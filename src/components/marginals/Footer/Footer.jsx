@@ -10,11 +10,11 @@ export const Footer = () => {
     <FooterContainer>
       <InitialCont>
         <AboutContainer AbtLogo={footer.Nitr} about_content={footer.cards[0]} />
-        <SecondPendulumContainer>
-          <Cradle socials={footer.socials} text={footer.icons} />
-        </SecondPendulumContainer>
+        <TermsNCredits copyw={footer.copyright} />
       </InitialCont>
-      <TermsNCredits copyw={footer.copyright} />
+      <SecondPendulumContainer>
+        <Cradle socials={footer.socials} text={footer.icons} />
+      </SecondPendulumContainer>
     </FooterContainer>
   );
 };

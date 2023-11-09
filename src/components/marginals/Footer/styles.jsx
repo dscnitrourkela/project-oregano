@@ -4,13 +4,16 @@ import { Container, Heading4, NavText, Body1, Body2 } from '../..';
 
 export const FooterContainer = styled(Body1)`
   ${tw`
+  flex
+  flex-row
+  justify-between
   text-white
   p-4
   bg-[#060616]
 `}
   @media (max-width: 800px) {
     ${tw`
-    flex-col
+    flex-col-reverse
     items-center
     justify-between
     `}
@@ -19,14 +22,15 @@ export const FooterContainer = styled(Body1)`
 
 export const InitialCont = styled.div`
   ${tw`
-  w-full
+  w-[70vw]
   flex
-  flex-row
+  flex-col
   justify-between		
   `}
   @media (max-width: 800px) {
     ${tw`
-    flex-col-reverse
+    w-full
+    flex-row
     items-center
     justify-between
     `}
@@ -204,6 +208,7 @@ export const FirstRow = styled.div`
   @media (max-width: 1000px) {
     ${tw`
     flex-col
+    w-[50vw]
     `}
   }
 `;
@@ -217,7 +222,8 @@ export const FrItems = styled.span`
 `}
   @media (max-width: 1000px) {
     ${tw`
-    p-4
+    px-4
+    py-6
     `}
   }
 `;
@@ -282,13 +288,15 @@ export const LastLine = styled.div`
     w-full
     flex
     flex-row
-    justify-start	
+    justify-around	
     items-center
   `}
   @media (max-width: 1000px) {
     ${tw`
+    h-auto
+    w-[50vw]
     flex-col-reverse
-    my-8
+    items-baseline
     `}
   }
 `;
@@ -299,6 +307,11 @@ export const Terms = styled.div`
   flex-row
   justify-start	
   `}
+  @media (max-width: 1000px) {
+    ${tw`
+    flex-col
+    items-baseline
+    `}
 `;
 
 export const ConditionItems = styled.span`
@@ -314,4 +327,10 @@ export const Credits = styled.div`
   mx-2
   px-8
   `}
+  @media (max-width: 1000px) {
+    ${tw`
+    m-[0px]
+    px-4
+    py-6
+    `}
 `;
