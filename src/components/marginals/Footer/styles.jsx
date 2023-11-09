@@ -170,6 +170,19 @@ const ball5Animation = keyframes`
 // Apply animations to specific elements
 export const Ball1 = styled(Ball)`
   animation: ${ball1Animation} 1s ease-out infinite alternate;
+  @media (max-width: 600px) {
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+    &:hover {
+      background: white;
+    }
+  }
 `;
 
 export const Ball5 = styled(Ball)`
@@ -325,6 +338,11 @@ export const ConditionItems = styled.span`
   px-4
   py-6
 `}
+  @media (max-width: 800px) {
+    ${tw`
+    px-2
+    py-4
+    `}
 `;
 
 export const Credits = styled.div`
@@ -335,7 +353,7 @@ export const Credits = styled.div`
   @media (max-width: 1000px) {
     ${tw`
     m-[0px]
-    px-4
+    px-2
     py-6
     `}
 `;
