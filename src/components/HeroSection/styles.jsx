@@ -58,7 +58,6 @@ export const HeroInside = styled.div`
 
 export const ContentBlock = styled.div`
   ${tw`
-    // mx-8
     sm:max-w-sm
     md:max-w-xl
     lg:max-w-3xl
@@ -70,6 +69,7 @@ export const HACKimg = styled.img`
     flex
     justify-center
     items-center
+    // w-32
     w-40
     sm:w-48
     md:w-72
@@ -78,15 +78,23 @@ export const HACKimg = styled.img`
     px-2
     gap-3
   `}
+  @media (max-width: 320px) {
+    ${tw`w-32`}
+  }
 `;
 
 export const NITRimg = styled.img`
   ${tw`
+    // w-32
     w-40
     sm:w-48
     md:w-72
     lg:w-96
+
  `}
+ @media (max-width: 320px) {
+  ${tw`w-32`}
+}
 `;
 
 export const HeroHeadingBase = styled.div`
