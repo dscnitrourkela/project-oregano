@@ -64,7 +64,7 @@ export const Box = styled.div`
   border-radius: 10px;
   background: #272727;
   margin: 20px;
-  transition: height 1s, box-shadow 0.5s;
+  transition: height 0.5s, box-shadow 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +89,7 @@ export const Box = styled.div`
             visibility: visible;
              transition-delay: 0.5s;
            }
-           &:click
+           &:clicked
     `
       : ''}
   @media (max-width: ${smallScreen}) {

@@ -63,6 +63,7 @@ const Prizes = () => {
               expanded={expandedIndex === item.id}
               shadowColor={item.prizeShadowColor}
               backgroundColor={expandedIndex === item.id ? selectedBackgroundColor : '#272727'}
+              className={expandedIndex === item.id ? 'clicked' : ''}
             >
               <img src={item.src} alt='Medal' />
               {expandedIndex === item.id && (
