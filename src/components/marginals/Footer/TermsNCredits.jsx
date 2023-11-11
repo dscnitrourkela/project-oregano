@@ -5,8 +5,8 @@ const TermsNCredits = ({ copyw }) => {
   return (
     <LastLine>
       <Terms>
-        <ConditionItems>Privacy & Cookies</ConditionItems>
-        <ConditionItems>Terms and Conditions</ConditionItems>
+        <ConditionItems href='#'>Privacy & Cookies</ConditionItems>
+        <ConditionItems href='#'>Terms and Conditions</ConditionItems>
       </Terms>
       <Credits>{copyw.content}</Credits>
     </LastLine>

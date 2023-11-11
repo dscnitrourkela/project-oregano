@@ -284,7 +284,7 @@ export const FirstRow = styled.div`
   }
 `;
 
-export const FrItems = styled.span`
+export const FrItems = styled.a`
   ${tw`
   text-white
   text-xl
@@ -392,7 +392,7 @@ export const Terms = styled.div`
     `}
 `;
 
-export const ConditionItems = styled.span`
+export const ConditionItems = styled.a`
   ${tw`
   text-xl
   px-4
