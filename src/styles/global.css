@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
 *,
 *:before,
@@ -176,7 +177,6 @@ table {
   --color-primary-green: #72F7BF;
   --color-neutral-white: #FFFFFF;
   --color-neutral-yellow: #FEE27F;
-
   --max-width: 83.5em;
   --max-width-bleed: 90%;
   --max-width-narrow: 50em;

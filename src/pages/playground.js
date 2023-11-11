@@ -13,7 +13,5 @@ export default function Playground() {
       <NavBar />
     </MenuContext.Provider>
   </>
-
-    
   );
 }
