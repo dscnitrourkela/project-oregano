@@ -35,6 +35,7 @@ export const PrizeText = styled.div`
   transition: visibility 0.5s ease-in-out;
   bottom: 20px;
   margin-top: 32px;
+  gap: 5px;
   @media (max-width: 768px) {
     font-size: 14px;
     margin-top: 12px;
