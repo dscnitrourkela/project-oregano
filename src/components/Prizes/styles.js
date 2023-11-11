@@ -46,7 +46,6 @@ export const TotalPrizes = styled(Heading1)`
   font-size: 40px;
   line-height: 40px;
   font-weight: 600;
-  line-height: 28px;
   letter-spacing: 0em;
   text-align: center;
   background: transparent;
@@ -56,19 +55,22 @@ export const TotalPrizes = styled(Heading1)`
   @media (max-width: 768px) {
     font-size: 24px;
     margin-top: 12px;
+    line-height: 100px;
   }
 `;
 
 export const Box = styled.div`
   max-width: 400px;
+ 
   height: ${(props) => (props.expanded ? '546px' : '360px')};
   border-radius: 10px;
   background: #272727;
-  margin: 20px;
+  margin: 20px ;
+  align-items:center;
+
   transition: height 0.5s, box-shadow 0.5s;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
   position: relative;
   margin-bottom: 20px;
@@ -93,8 +95,12 @@ export const Box = styled.div`
     `
       : ''}
   @media (max-width: ${smallScreen}) {
+    align-items:center;
+    justify-content:center;
     height: ${(props) => (props.expanded ? '460px' : '350px')};
+    j
   }
+  
   &:not(:hover) {
     height: 360px;
     padding: 20px;
