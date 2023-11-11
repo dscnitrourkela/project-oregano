@@ -158,6 +158,23 @@ const ball1Animation = keyframes`
   }
 `;
 
+const ball1Mob = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(15deg);
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
 const ball5Animation = keyframes`
   0%, 50% {
     transform: rotate(0);
@@ -167,10 +184,12 @@ const ball5Animation = keyframes`
   }
 `;
 
-// Apply animations to specific elements
-export const Ball1 = styled(Ball)`
-  animation: ${ball1Animation} 1s ease-out infinite alternate;
-  @media (max-width: 600px) {
+const ball5Mob = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-15deg);
     background: linear-gradient(
       -17.61deg,
       #ff3fc0 0%,
@@ -179,14 +198,39 @@ export const Ball1 = styled(Ball)`
       #14f195 75%,
       #fecf29 100%
     );
-    &:hover {
-      background: white;
-    }
+  }
+`;
+
+const ballColour = keyframes`
+  0%, 50% {
+    background: white;
+  }
+  100% {
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
+// Apply animations to specific elements
+export const Ball1 = styled(Ball)`
+  animation: ${ball1Animation} 1s infinite alternate;
+  @media (max-width: 600px) {
+    animation: ${ball1Mob} 1s ease-out infinite alternate, ${ballColour} 1s infinite alternate;
   }
 `;
 
 export const Ball5 = styled(Ball)`
   animation: ${ball5Animation} 1s ease-out 1s infinite alternate;
+  @media (max-width: 600px) {
+    animation: ${ball5Mob} 1s ease-out 1s infinite alternate,
+      ${ballColour} 1s ease-out 1s infinite alternate;
+  }
 `;
 
 export const ImgCont = styled.img`
@@ -311,7 +355,7 @@ export const LastLine = styled.div`
   ${tw`
   text-gray-500
     h-[50px]
-    w-full
+    w-[60vw]
     flex
     flex-row
     justify-around	
