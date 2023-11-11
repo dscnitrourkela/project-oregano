@@ -28,7 +28,8 @@
   border-radius: 20px;
 }
 .container {
-  margin-top: 20px;
+  margin-top: 10px;
+  height: 450px;
 }
 .slick-prev:before,
 .slick-next:before {
