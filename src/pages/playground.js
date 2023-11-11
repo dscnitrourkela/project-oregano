@@ -1,15 +1,19 @@
-import React from 'react';
-import { Body1, Body2, Heading1, Heading2, Heading3, Heading4 } from '../components';
+import React, { useState } from 'react';
+import NavBar  from '../components/marginals/Navbar/navbar';
+import { MenuContext } from '../components/marginals/Navbar/Menuontext';
 
 export default function Playground() {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+  const toggleMenuOpen = () =>
+    menuOpen ? setMenuOpen(false) : setMenuOpen(true)
   return (
-    <div>
-      <Heading1>Heading1</Heading1>
-      <Heading2>Heading1</Heading2>
-      <Heading3>Heading1</Heading3>
-      <Heading4>Heading1</Heading4>
-      <Body1>Heading1</Body1>
-      <Body2>Heading1</Body2>
-    </div>
+    <>
+    <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
+      <NavBar />
+    </MenuContext.Provider>
+  </>
+
+    
   );
 }
