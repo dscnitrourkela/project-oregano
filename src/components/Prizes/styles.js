@@ -34,7 +34,7 @@ export const PrizeText = styled.div`
   visibility: ${(props) => (props.expanded ? 'visible' : 'hidden')};
   transition: visibility 0.5s ease-in-out;
   bottom: 20px;
-  margin-top: 16px;
+  margin-top: 32px;
   @media (max-width: 768px) {
     font-size: 14px;
     margin-top: 12px;
@@ -43,7 +43,8 @@ export const PrizeText = styled.div`
 
 export const TotalPrizes = styled(Heading1)`
   font-family: 'Prompt';
-  font-size: 28px;
+  font-size: 40px;
+  line-height: 40px;
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0em;
@@ -142,7 +143,8 @@ export const PrizeDescriptions = styled.div`
 export const CashPrize = styled(Body1)`
   color: var(--color-primary-blue);
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 24px;
   &::after {
     content: '+';
     color: white;
