@@ -219,17 +219,17 @@ const ballColour = keyframes`
 
 // Apply animations to specific elements
 export const Ball1 = styled(Ball)`
-  animation: ${ball1Animation} 1s infinite alternate;
+  animation: ${ball1Animation} 1s infinite alternate, ${ballColour} 1s infinite alternate;
   @media (max-width: 600px) {
-    animation: ${ball1Mob} 1s ease-out infinite alternate, ${ballColour} 1s infinite alternate;
+    animation: ${ball1Mob} 1s ease-out infinite alternate;
   }
 `;
 
 export const Ball5 = styled(Ball)`
-  animation: ${ball5Animation} 1s ease-out 1s infinite alternate;
+  animation: ${ball5Animation} 1s ease-out 1s infinite alternate,
+    ${ballColour} 1s ease-out 1s infinite alternate;
   @media (max-width: 600px) {
-    animation: ${ball5Mob} 1s ease-out 1s infinite alternate,
-      ${ballColour} 1s ease-out 1s infinite alternate;
+    animation: ${ball5Mob} 1s ease-out 1s infinite alternate;
   }
 `;
 
@@ -252,8 +252,9 @@ export const FirstAboutContainer = styled.div`
   p-4
   bg-[#060616]
   `}
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     ${tw`
+    h-[250px]
     px-0
   `}
   }
@@ -353,7 +354,7 @@ export const LogoImg = styled.img`
 // Terms and Credits
 export const LastLine = styled.div`
   ${tw`
-  text-gray-500
+    text-gray-500
     h-[50px]
     w-[60vw]
     flex
@@ -361,9 +362,17 @@ export const LastLine = styled.div`
     justify-around	
     items-center
   `}
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     ${tw`
-    h-auto
+    w-full
+    h-[250px]
+    flex-col-reverse
+    items-baseline
+    `}
+  }
+  @media (max-width: 600px) {
+    ${tw`
+    h-[250px]
     flex-col-reverse
     items-baseline
     `}
@@ -376,7 +385,7 @@ export const Terms = styled.div`
   flex-row
   justify-start	
   `}
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     ${tw`
     flex-col
     items-baseline
