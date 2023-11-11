@@ -13,6 +13,10 @@ import {
 import { Footer } from '../components/marginals/Footer/Footer';
 
 export default function Playground() {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+  const toggleMenuOpen = () =>
+    menuOpen ? setMenuOpen(false) : setMenuOpen(true)
   return (
     <div>
       <Footer />
