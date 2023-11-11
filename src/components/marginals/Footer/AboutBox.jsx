@@ -11,7 +11,7 @@ import {
   LogoImg,
 } from './styles';
 
-const AboutContainer = ({ AbtLogo, about_content, abtLinks }) => {
+const AboutContainer = ({ AbtLogo, aboutContent, abtLinks }) => {
   return (
     <FirstAboutContainer>
       <FirstRow>
@@ -24,11 +24,11 @@ const AboutContainer = ({ AbtLogo, about_content, abtLinks }) => {
 
       <AboutBox>
         <LogoCont>
-          <LogoImg src={AbtLogo.imgSrc} alt={about_content.img.alt} />
+          <LogoImg src={AbtLogo.imgSrc} alt={aboutContent.img.alt} />
         </LogoCont>
         <Para>
-          <Heading3>{about_content.title}</Heading3>
-          <Content>{about_content.text}</Content>
+          <Heading3>{aboutContent.title}</Heading3>
+          <Content>{aboutContent.text}</Content>
         </Para>
       </AboutBox>
     </FirstAboutContainer>

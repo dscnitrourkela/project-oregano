@@ -1,6 +1,6 @@
 import React from 'react';
 import { footer } from '../../../../config';
-import { FooterContainer, InitialCont, ImgCont, SecondPendulumContainer } from './styles';
+import { FooterContainer, InitialCont, SecondPendulumContainer } from './styles';
 import TermsNCredits from './TermsNCredits';
 import AboutContainer from './AboutBox';
 import Cradle from './Cradle';
@@ -11,7 +11,7 @@ export const Footer = () => {
       <InitialCont>
         <AboutContainer
           AbtLogo={footer.Nitr}
-          about_content={footer.cards[0]}
+          aboutContent={footer.cards[0]}
           abtLinks={footer.links}
         />
         <TermsNCredits copyw={footer.copyright} />

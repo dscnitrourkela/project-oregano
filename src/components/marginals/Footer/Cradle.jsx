@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { SocialLogo, SocialText, SocialsCont, CradleContainer, Ball, Ball1, Ball5 } from './styles';
 
 const Cradle = ({ socials, text }) => {
@@ -14,7 +13,7 @@ const Cradle = ({ socials, text }) => {
         {socials.slice(1, -1).map((s) => (
           <a href={s.link}>
             <Ball>
-              <SocialLogo src={s.imgLink} />
+              <SocialLogo key={socials.indexOf(s)} src={s.imgLink} />
             </Ball>
           </a>
         ))}
