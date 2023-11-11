@@ -1,14 +1,13 @@
 import React from 'react';
-import { Heading1 } from '../shared';
 import Content from '../../../config/content/About';
-import {AboutContainer,AboutContent} from './styles';
+import {AboutContainer,AboutContent,Heading} from './styles';
 import Carousel from './Carousel';
 
 const AboutUs = () => {
   return (
     <>
       <AboutContainer>
-        <Heading1>About Us</Heading1>
+        <Heading>About Us</Heading>
         <AboutContent>{Content.desc}</AboutContent>
       </AboutContainer>
       <Carousel />   
