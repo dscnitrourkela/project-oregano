@@ -80,7 +80,6 @@ export const Box = styled.div`
       padding:10px;
       &:hover {
         box-shadow: 0 8px 16px 0 ${props.shadowColor || '#272727'};
-        
       }
        &:hover ${TotalPrizes} {
           visibility: visible;
@@ -96,6 +95,15 @@ export const Box = styled.div`
   @media (max-width: ${smallScreen}) {
     height: ${(props) => (props.expanded ? '460px' : '350px')};
   }
+  &:not(:hover) {
+    height: 360px;
+    padding: 20px;
+    box-shadow: 0 4px 16px 0 rgba(39, 39, 39, 0.6);
+    ${TotalPrizes}, ${PrizeText} {
+      visibility: hidden;
+      opacity: 0;
+      transition-delay: 0.5s;
+    }
 `;
 
 export const PrizesTitle = styled(Heading1)`
