@@ -146,6 +146,8 @@ export const CashPrize = styled(Body1)`
   &::after {
     content: '+';
     color: white;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   @media (max-width: 768px) {
     font-size: 14px;
@@ -160,6 +162,8 @@ export const Swags = styled(Body1)`
   &::after {
     content: '+';
     color: white;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   @media (max-width: 768px) {
     font-size: 14px;
