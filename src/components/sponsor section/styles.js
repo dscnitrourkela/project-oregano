@@ -251,7 +251,6 @@ export const GammaSponsors = styled.div`
   }
 `;
 
-
 export const DeltaLogoFirst = styled.div`
   ${tw`
       flex
@@ -259,7 +258,7 @@ export const DeltaLogoFirst = styled.div`
       md:gap-[48px]
       gap-[24px]
   `}
-`
+`;
 
 export const DeltaLogoSecond = styled.div`
   ${tw`
@@ -268,7 +267,7 @@ export const DeltaLogoSecond = styled.div`
       md:gap-[78px]
       gap-[24px]
   `}
-`
+`;
 
 export const DeltaLogoContainer = styled.div`
   ${tw`
@@ -279,7 +278,6 @@ export const DeltaLogoContainer = styled.div`
       items-center
       justify-center
       `}
-
 `;
 
 export const DeltaContainer = styled.div`
