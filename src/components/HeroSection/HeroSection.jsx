@@ -31,8 +31,8 @@ export default function Hero() {
             </HeroHeadingBase>
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
-          <HeroButtons >
-            <DevfolioButton/>
+          <HeroButtons>
+            <DevfolioButton />
             <DiscordButton />
           </HeroButtons>
         </HeroTitle>
