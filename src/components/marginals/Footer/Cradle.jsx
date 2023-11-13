@@ -11,9 +11,9 @@ const Cradle = ({ socials, text }) => {
           </Ball1>
         </a>
         {socials.slice(1, -1).map((s) => (
-          <a href={s.link}>
+          <a key={socials.indexOf(s)} href={s.link}>
             <Ball>
-              <SocialLogo key={socials.indexOf(s)} src={s.imgLink} />
+              <SocialLogo src={s.imgLink} />
             </Ball>
           </a>
         ))}

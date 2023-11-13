@@ -9,7 +9,7 @@ export const NavContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 6px 64px;
-  gap:240px;
+  gap: 240px;
   border-radius: 12px;
   @media (max-width: 1024px) {
     padding: '6px 24px 6px 24px';
@@ -35,8 +35,8 @@ export const NavLink = styled.a`
   color: white;
   transition-duration: 500ms;
   font-size: 18px;
-  font-weight:700;
-  line-height:24px;
+  font-weight: 700;
+  line-height: 24px;
   transition: 0.5s;
   display: flex;
   align-items: centre;
