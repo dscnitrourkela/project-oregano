@@ -4,7 +4,6 @@ import SponsorSection from '../components/sponsor section/Sponsor';
 import FAQ from '../components/Faq/Faq';
 import Timeline from '../components/timeline/Timeline';
 import Hero from '../components/HeroSection/HeroSection';
-import Footer from '../components/Footer/Footer';
 
 export default function Playground() {
   return (
@@ -14,7 +13,6 @@ export default function Playground() {
       <SponsorSection />
       <Timeline />
       <FAQ />
-      <Footer />
     </div>
   );
 }
