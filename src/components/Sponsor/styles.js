@@ -33,7 +33,7 @@ export const AlphaContainer = styled.div`
 export const AlphaSponsors = styled.div`
   padding: 26px 60px;
   width: 90%;
-  margin: 82px auto 64px auto;
+  margin: 64px auto 0px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
@@ -79,23 +79,25 @@ export const AlphaSponsors = styled.div`
 
 export const SponsorHeader = styled(Heading1)`
   ${tw`
-    text-center
+    mt-5
+    m-auto
     leading-[96px]
     text-[64px]
     `}
-    font-weight: 700;
+  font-weight: 700;
   @media (max-width: 761px) {
-    color: var(--neutral-1, #FFF);
+    color: var(--neutral-1, #fff);
     font-size: 32px;
     font-style: normal;
-    line-height: 96px; /* 300% */
+    line-height: 96px;
+  }
 `;
 
 export const AlphaHeader = styled(Heading3)`
   ${tw`
-text-center
-leading-[48px]
-text-[32px]
+  text-center
+  leading-[48px]
+  text-[32px]
 `}
   font-weight: 600;
   @media (max-width: 761px) {
@@ -109,9 +111,9 @@ text-[32px]
 
 export const SmallHeader = styled(Heading4)`
   ${tw`
-text-center
-leading-[36px]
-text-[24px]
+  text-center
+  leading-[36px]
+  text-[24px]
 `}
   font-weight: 600;
   @media (max-width: 761px) {

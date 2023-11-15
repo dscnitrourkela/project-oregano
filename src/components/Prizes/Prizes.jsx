@@ -13,6 +13,7 @@ import {
   PrizesContainerWrapper,
 } from './styles';
 import { PrizesContent } from '../../../config';
+import { SectionContainer } from '../shared';
 
 const Prizes = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -49,38 +50,40 @@ const Prizes = () => {
   }, []);
 
   return (
-    <PrizesContainerWrapper>
-      <PrizesTitle>{PrizesContent.title}</PrizesTitle>
-      <PrizesContainer>
-        {PrizesContent.prizeData.map((item) => (
-          // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-          <div
-            key={item.id}
-            onClick={() => (isMobile ? handleBoxInteraction(item.id) : undefined)}
-            onMouseEnter={() => (!isMobile ? handleBoxInteraction(item.id) : undefined)}
-          >
-            <Box
-              expanded={expandedIndex === item.id}
-              shadowColor={item.prizeShadowColor}
-              backgroundColor={expandedIndex === item.id ? selectedBackgroundColor : '#272727'}
-              className={expandedIndex === item.id ? 'clicked' : ''}
+    <SectionContainer>
+      <PrizesContainerWrapper>
+        <PrizesTitle>{PrizesContent.title}</PrizesTitle>
+        <PrizesContainer>
+          {PrizesContent.prizeData.map((item) => (
+            // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+            <div
+              key={item.id}
+              onClick={() => (isMobile ? handleBoxInteraction(item.id) : undefined)}
+              onMouseEnter={() => (!isMobile ? handleBoxInteraction(item.id) : undefined)}
             >
-              <img src={item.src} alt='Medal' />
-              {expandedIndex === item.id && (
-                <Description>
-                  <TotalPrizes>Total Prize - {item.prizeValue}</TotalPrizes>
-                  <PrizeText>
-                    <CashPrize>Cash Prize {item.cash}</CashPrize>
-                    <Swags>{item.swags}</Swags>
-                    <Merchandise>{item.merchandise}</Merchandise>
-                  </PrizeText>
-                </Description>
-              )}
-            </Box>
-          </div>
-        ))}
-      </PrizesContainer>
-    </PrizesContainerWrapper>
+              <Box
+                expanded={expandedIndex === item.id}
+                shadowColor={item.prizeShadowColor}
+                backgroundColor={expandedIndex === item.id ? selectedBackgroundColor : '#272727'}
+                className={expandedIndex === item.id ? 'clicked' : ''}
+              >
+                <img src={item.src} alt='Medal' />
+                {expandedIndex === item.id && (
+                  <Description>
+                    <TotalPrizes>Total Prize - {item.prizeValue}</TotalPrizes>
+                    <PrizeText>
+                      <CashPrize>Cash Prize {item.cash}</CashPrize>
+                      <Swags>{item.swags}</Swags>
+                      <Merchandise>{item.merchandise}</Merchandise>
+                    </PrizeText>
+                  </Description>
+                )}
+              </Box>
+            </div>
+          ))}
+        </PrizesContainer>
+      </PrizesContainerWrapper>
+    </SectionContainer>
   );
 };
 

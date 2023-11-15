@@ -13,6 +13,7 @@ import {
   FAQHeading,
 } from './styles';
 import faqData from '../../../config/content/Faq';
+import { SectionContainer } from '../shared';
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
@@ -36,36 +37,38 @@ const FAQ = () => {
   };
 
   return (
-    <FAQContainer>
-      <Helmet>
-        <link
-          rel='stylesheet'
-          href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
-        />
-      </Helmet>
-      <FAQHeading>{faqData.title}</FAQHeading>
-      <FAQCaption>{faqData.content}</FAQCaption>
-      <FAQQuestionContainer>
-        {faqData.questions.map((faq, index) => (
-          <div key={faq.question} className='w-full'>
-            <FAQQuestion
-              onClick={() => toggleQuestion(index)}
-              className={openQuestions.includes(index) ? 'opened' : 'closing'}
-            >
-              <FAQDiv>
-                <FAQQuestionText>{faq.question}</FAQQuestionText>
+    <SectionContainer>
+      <FAQContainer>
+        <Helmet>
+          <link
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0'
+          />
+        </Helmet>
+        <FAQHeading>{faqData.title}</FAQHeading>
+        <FAQCaption>{faqData.content}</FAQCaption>
+        <FAQQuestionContainer>
+          {faqData.questions.map((faq, index) => (
+            <div key={faq.question} className='w-full'>
+              <FAQQuestion
+                onClick={() => toggleQuestion(index)}
+                className={openQuestions.includes(index) ? 'opened' : 'closing'}
+              >
+                <FAQDiv>
+                  <FAQQuestionText>{faq.question}</FAQQuestionText>
 
-                <FAQIcon isOpen={openQuestions.includes(index)} className={animationState[index]}>
-                  <span className='material-symbols-outlined'>add</span>
-                </FAQIcon>
-              </FAQDiv>
+                  <FAQIcon isOpen={openQuestions.includes(index)} className={animationState[index]}>
+                    <span className='material-symbols-outlined'>add</span>
+                  </FAQIcon>
+                </FAQDiv>
 
-              <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
-            </FAQQuestion>
-          </div>
-        ))}
-      </FAQQuestionContainer>
-    </FAQContainer>
+                <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
+              </FAQQuestion>
+            </div>
+          ))}
+        </FAQQuestionContainer>
+      </FAQContainer>
+    </SectionContainer>
   );
 };
 

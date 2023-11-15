@@ -1,12 +1,14 @@
 /* eslint-disable max-len */
 import styled from 'styled-components';
+import tw from 'twin.macro';
 import { Body1, Heading1 } from '../shared';
 
 const smallScreen = '768px';
 
 export const PrizesContainerWrapper = styled.div`
+  margin-top: 0px;
   padding-left: 0;
-  height: auto;
+  width: 100%;
   @media (max-width: ${smallScreen}) {
     padding: 0 20px;
   }
@@ -15,7 +17,6 @@ export const PrizesContainerWrapper = styled.div`
 export const PrizesContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin: 20px 0;
   flex-wrap: wrap;
   @media (max-width: ${smallScreen}) {
     flex-direction: column;
@@ -114,10 +115,19 @@ export const Box = styled.div`
 `;
 
 export const PrizesTitle = styled(Heading1)`
-  text-align: center;
-  margin-top: 20px;
-  @media (max-width: 768px) {
-    margin-top: 16px;
+  ${tw`
+  text-center
+  mt-5
+  m-auto
+  leading-[96px]
+  text-[64px]
+`}
+  font-weight: 700;
+  @media (max-width: 761px) {
+    color: var(--neutral-1, #fff);
+    font-size: 32px;
+    font-style: normal;
+    line-height: 96px;
   }
 `;
 

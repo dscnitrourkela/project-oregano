@@ -1,19 +1,18 @@
 import styled, { keyframes } from 'styled-components';
-import { Caption, Heading4, Heading2, Body1 } from '../shared';
+import { Caption, Heading4, Body1, Heading1 } from '../shared';
 
 const rotateOut = keyframes`
   from { transform: rotate(-45deg);
   }to {transform: rotate(0deg);
   }
 `;
-export const FAQHeading = styled(Heading2)`
+export const FAQHeading = styled(Heading1)`
   @media (max-width: 335px) {
     text-align: center;
     font-size: 10px;
     font-weight: 600;
     line-height: 64px;
   }
-
   @media (max-width: 396px) and (min-width: 336px) {
     text-align: center;
     font-size: 20px;
@@ -29,7 +28,7 @@ export const FAQHeading = styled(Heading2)`
 `;
 export const FAQContainer = styled.div`
   width: 90%;
-  margin: auto;
+  margin: 2% auto 70% auto;
   gap: 32px;
   display: flex;
   flex-direction: column;

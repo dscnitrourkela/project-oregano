@@ -11,8 +11,8 @@ export const TimelineHead = styled(Heading1)`
   }
 `;
 export const TimelineWrapper = styled.div`
-  width: 1280px;
-  margin: auto;
+  // width: 1280px;
+  margin: 4% auto -6% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
