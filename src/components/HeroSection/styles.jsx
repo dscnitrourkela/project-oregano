@@ -6,7 +6,8 @@ export const SectionContainer = styled.div`
   ${tw`
     w-full
     h-auto
-    min-h-screen
+    min-h-[500px]
+    sm:min-h-screen
     overflow-x-hidden
     overflow-y-hidden
     flex
@@ -61,6 +62,7 @@ export const HeroInside = styled.div`
 
 export const ContentBlock = styled.div`
   ${tw`
+    max-w-[360px]
     sm:max-w-sm
     md:max-w-xl
     lg:max-w-3xl
