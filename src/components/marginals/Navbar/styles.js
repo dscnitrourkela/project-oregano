@@ -17,6 +17,8 @@ export const NavContainer = styled.div`
   .open-nav {
     top: 80px;
     padding-top: 0px;
+    background: #0e0812;
+    z-index: 100;
     @media (max-width: 1023px) {
       padding-top: 70px;
       height: 100vh;

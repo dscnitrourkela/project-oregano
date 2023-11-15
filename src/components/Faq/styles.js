@@ -28,15 +28,12 @@ export const FAQHeading = styled(Heading1)`
 `;
 export const FAQContainer = styled.div`
   width: 90%;
-  margin: 2% auto 70% auto;
+  margin: 5% auto 7% auto;
   gap: 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (max-width: 768px) {
-    padding: 8px;
-  }
 `;
 export const FAQCaption = styled(Heading4)`
   margin-top: -30px;
@@ -50,7 +47,6 @@ export const FAQCaption = styled(Heading4)`
 `;
 export const FAQQuestionContainer = styled.div`
   width: 100%;
-  height: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

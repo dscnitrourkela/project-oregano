@@ -56,12 +56,10 @@ const FAQ = () => {
               >
                 <FAQDiv>
                   <FAQQuestionText>{faq.question}</FAQQuestionText>
-
                   <FAQIcon isOpen={openQuestions.includes(index)} className={animationState[index]}>
                     <span className='material-symbols-outlined'>add</span>
                   </FAQIcon>
                 </FAQDiv>
-
                 <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
               </FAQQuestion>
             </div>
