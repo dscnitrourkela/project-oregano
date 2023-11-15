@@ -38,9 +38,10 @@ export const HeroTitle = styled.div`
     gap-2
     items-center
     flex-col
-    px-36
+    px-0
     md:px-12
-    mx-10
+    mx-5
+    md:mx-10
     mt-32
   `}
 `;
@@ -135,7 +136,10 @@ export const TaglineText = styled(Body1)`
     leading-6
     md:text-base
     lg:text-lg
-    px-4
+    px-0
+    md:px-4
+    mx-10
+    md:mx-0
   `}
 `;
 

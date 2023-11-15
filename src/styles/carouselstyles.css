@@ -27,7 +27,6 @@
 .container {
   overflow: hidden;
   margin-top: 10px;
-  height: 450px;
   width: 100%;
 }
 .slick-prev:before,

@@ -17,7 +17,7 @@ import { hero } from '../../../config';
 
 export default function HeroSection() {
   return (
-    <SectionContainer>
+    <SectionContainer id='Home'>
       <HeroBody>
         <HeroTitle classname='hero h-100'>
           <HeroInside>

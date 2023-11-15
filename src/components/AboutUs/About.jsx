@@ -5,7 +5,7 @@ import Carousel from './Carousel';
 import { Container } from '../shared';
 
 const AboutSection = () => (
-  <Container>
+  <Container id='About'>
     <AboutContainer>
       <Heading>About Us</Heading>
       <AboutContent>{Content.desc}</AboutContent>
