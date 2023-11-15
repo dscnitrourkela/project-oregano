@@ -18,6 +18,8 @@ export const SectionContainer = styled.div`
 
 export const HeroBody = styled.div`
   ${tw`
+    mt-[8%]
+    h-full
     flex
     justify-center
     items-center
@@ -146,4 +148,18 @@ export const HeroButtons = styled.div`
     items-center
     mt-4
  `}
+`;
+
+export const DevButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
 `;

@@ -8,16 +8,17 @@ export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 64px;
-  gap: 240px;
+  margin: 1rem 6rem;
   border-radius: 12px;
+  height: 80px;
   @media (max-width: 1024px) {
     padding: '6px 24px 6px 24px';
   }
-  height: 80px;
   .open-nav {
     top: 80px;
     padding-top: 0px;
+    background: #0e0812;
+    z-index: 100;
     @media (max-width: 1023px) {
       padding-top: 70px;
       height: 100vh;
@@ -29,6 +30,9 @@ export const NavContainer = styled.div`
     @media (max-width: 1023px) {
       height: 100vh;
     }
+  }
+  @media (max-width: 720px) {
+    margin: 0.5rem 3rem;
   }
 `;
 export const NavLink = styled.a`
@@ -96,23 +100,12 @@ export const StyledHamburger = styled.button`
     bottom: ${({ menuOpen }) => (menuOpen ? '12px' : '8px')};
     transform: ${({ menuOpen }) => (menuOpen ? 'rotate(-40deg)' : null)};
   }
-  @media all and (min-width: 1023px) {
+  @media all and (min-width: 1024px) {
     display: none;
   }
 `;
 
 /* Tailwind CSS */
-
-export const Nav = styled.nav`
-  ${tw`
-    flex
-    p-2
-    w-full
-    md:p-8
-    md:gap-28
-    z-[100]
-`}
-`;
 
 export const LogoContainer = styled.div`
   ${tw`
@@ -190,8 +183,8 @@ const spin = keyframes`
 
 export const CustomLogo = styled.div`
   background: #191c29;
-  width: auto;
-  height: auto;
+  width: 68px;
+  aspect-ratio: 1;
   position: relative;
   border-radius: 50%;
   justify-content: center;
@@ -224,6 +217,9 @@ export const CustomLogo = styled.div`
 
   &::after {
     display: none;
+  }
+  @media (max-width: 1024px) {
+    width: 48px;
   }
 `;
 

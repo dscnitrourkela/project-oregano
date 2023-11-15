@@ -1,16 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import NavBar from '../marginals/Navbar/navbar';
+import { MenuContext } from '../marginals/Navbar/MenuContext';
 
-const Wrapper = styled.div`
+const LayoutContainer = styled.div`
   ${tw`
-    w-full
     relative
+    w-full
+  `}
+
+  overflow-x: hidden;
+`;
+const Nav = styled.div`
+  ${tw`
+    absolute
+    top-0
+    w-full
   `}
 `;
 
-function Layout({ children }) {
-  return <Wrapper>{children}</Wrapper>;
+export default function Layout({ children }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenuOpen = () => (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
+  return (
+    <LayoutContainer>
+      <Nav>
+        <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
+          <NavBar />
+        </MenuContext.Provider>
+      </Nav>
+      {children}
+    </LayoutContainer>
+  );
 }
-
-export default Layout;
