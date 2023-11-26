@@ -9,6 +9,7 @@ export const FooterContainer = styled(Body1)`
   justify-between
   text-white
   p-4
+  pb-8
   bg-[#060616]
 `}
   @media (max-width: 800px) {
