@@ -223,6 +223,9 @@ export const Ball1 = styled(Ball)`
   @media (max-width: 600px) {
     animation: ${ball1Mob} 1s ease-out infinite alternate;
   }
+  &:hover {
+    animation: none;
+  }
 `;
 
 export const Ball5 = styled(Ball)`
@@ -230,6 +233,9 @@ export const Ball5 = styled(Ball)`
     ${ballColour} 1s ease-out 1s infinite alternate;
   @media (max-width: 600px) {
     animation: ${ball5Mob} 1s ease-out 1s infinite alternate;
+  }
+  &:hover {
+    animation: none;
   }
 `;
 
