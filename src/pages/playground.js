@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Footer } from '../components/marginals/Footer/Footer';
-
-export default function Playground() {
-  return (
-    <div>
-      <Footer />
-    </div>
-  );
-}
-=======
 import React, { useState, useEffect } from 'react';
 
 // Libraries
@@ -76,20 +64,3 @@ const Homepage = ({ location }) => {
   );
 };
 export default Homepage;
-
-// import React, { useState } from 'react';
-// import NavBar from '../components/marginals/Navbar/navbar';
-// import { MenuContext } from '../components/marginals/Navbar/MenuContext';
-
-// export default function Playground() {
-//   const [menuOpen, setMenuOpen] = useState(false);
-//   const toggleMenuOpen = () => (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
-//   return (
-//     <>
-//       <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
-//         <NavBar />
-//       </MenuContext.Provider>
-//     </>
-//   );
-// }
->>>>>>> 20a2fe7f3d87618b67ac7fcdb769fd3edf67d9e8
