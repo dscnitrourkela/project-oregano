@@ -7,7 +7,7 @@ export const Container = styled.section`
     w-full
     h-auto
     overflow-x-hidden
-    overflow-y-auto
+    overflow-y-hidden
     flex
     flex-col
     items-start
@@ -15,7 +15,7 @@ export const Container = styled.section`
     min-h-screen
   `}
   height: fit-content;
-  margin: 15% auto 10%;
+  margin: 2% auto 3%;
 `;
 
 function Layout({ children }) {

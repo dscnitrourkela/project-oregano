@@ -21,6 +21,7 @@ import {
   DeltaContainer,
   DeltaSponsors,
 } from './styles';
+import { SectionContainer } from '../shared';
 
 function SponsorSection() {
   const alphaSponsors = Sponsor.alpha;
@@ -30,7 +31,7 @@ function SponsorSection() {
   const deltaSponsorsSecond = Sponsor.deltaSecond;
 
   return (
-    <div>
+    <SectionContainer>
       <SponsorHeader>Sponsors</SponsorHeader>
       <AlphaSponsors>
         <AlphaContainer>
@@ -101,7 +102,7 @@ function SponsorSection() {
           </DeltaContainer>
         </DeltaSponsors>
       </BottomContainer>
-    </div>
+    </SectionContainer>
   );
 }
 

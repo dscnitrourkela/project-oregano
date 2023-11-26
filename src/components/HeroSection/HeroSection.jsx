@@ -11,12 +11,11 @@ import {
   SectionContainer,
   HeroHeadingBase,
   FIVEimg,
+  DevButton,
 } from './styles';
-import DevfolioButton from '../shared/DevfolioButton';
-import DiscordButton from '../shared/DiscordButton';
 import { hero } from '../../../config';
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <SectionContainer>
       <HeroBody>
@@ -32,8 +31,7 @@ export default function Hero() {
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
           <HeroButtons>
-            <DevfolioButton />
-            <DiscordButton />
+            <DevButton href='/'>Pre Register</DevButton>
           </HeroButtons>
         </HeroTitle>
       </HeroBody>
