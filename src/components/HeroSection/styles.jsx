@@ -6,7 +6,7 @@ export const SectionContainer = styled.div`
   ${tw`
     w-full
     h-auto
-    min-h-[500px]
+    min-h-[400px]
     sm:min-h-screen
     overflow-x-hidden
     overflow-y-hidden
@@ -19,7 +19,7 @@ export const SectionContainer = styled.div`
 
 export const HeroBody = styled.div`
   ${tw`
-    mt-[8%]
+    mt-[6%]
     h-full
     flex
     justify-center
@@ -43,7 +43,8 @@ export const HeroTitle = styled.div`
     md:px-12
     mx-5
     md:mx-10
-    mt-32
+    sm:mt-32
+    mt-10
   `}
 `;
 
@@ -131,6 +132,7 @@ export const SubTitle = styled.p`
 export const TaglineText = styled(Body1)`
   ${tw`
     mt-4
+    sm:mt-6
     text-left
     md:text-center
     lg:text-center
@@ -140,32 +142,74 @@ export const TaglineText = styled(Body1)`
     lg:text-lg
     px-0
     md:px-4
-    mx-10
-    md:mx-0
+    sm:mx-10
+    mx-0
+    md:max-w-[700px]
+    max-w-[266px]
   `}
 `;
 
-export const HeroButtons = styled.div`
+export const Button = styled.button`
   ${tw`
-    flex
-    sm:flex-row
-    flex-row
-    justify-center
-    items-center
-    mt-4
- `}
-`;
+  relative
+  inline-block
+  mt-[20px]
+  sm:mt-[30px]
+  mb-[20px]
+  border-none
+  rounded-[30px]
+  bg-transparent
+`}
+  & a {
+    color: rgb(0, 0, 0);
+    font-family: 'Prompt', sans-serif, 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    padding: 30px 85px;
+    text-shadow: 0px 1px 0px #000;
+    box-shadow: #c48dff 3px 3px, #ff8cd9 6px 6px, #35e1ff 9px 9px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 15px;
+    transition: box-shadow 0.3s;
 
-export const DevButton = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 200px;
-  background-color: #ffffff;
-  color: #000000;
-  border-radius: 5px;
-  border: none;
-  margin: 0 10px;
-  cursor: pointer;
+    &:active {
+      top: 10px;
+      background-color: #ffffff;
+      box-shadow: inset 0 1px 0 #000000, inset 0 -2px 0 #a30fd4;
+    }
+  }
+
+  &:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  &.clicked a {
+    display: inline-block !important;
+  }
+
+  @media (max-width: 768px) {
+    & a {
+      font-size: 15px;
+      font-weight: 500;
+      padding: 15px 40px;
+      box-shadow: #c48dff 1px 1px, #ff8cd9 2px 2px, #35e1ff 3px 3px;
+      border-radius: 10px;
+    }
+  }
 `;
