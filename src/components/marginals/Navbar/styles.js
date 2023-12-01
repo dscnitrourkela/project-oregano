@@ -12,15 +12,16 @@ export const NavContainer = styled.div`
   padding: 10px 1rem;
   border-radius: 12px;
   height: 90px;
+  z-index: 100;
   background-color: ${(props) => (props.scrolled ? 'rgba(235,235,235,0.1)' : 'transparent')};
   transition: background-color 0.3s ease;
   .open-nav {
-    top: 80px;
+    top: 0px;
     padding-top: 0px;
     background: #0e0812;
-    z-index: 100;
+    z-index: 1;
     @media (max-width: 1023px) {
-      padding-top: 70px;
+      padding-top: 150px;
       height: 100vh;
       position: fixed;
     }
@@ -79,6 +80,7 @@ export const StyledHamburger = styled.button`
   position: relative;
   border: none;
   border-radius: 50%;
+  z-index: 100;
   cursor: pointer;
   &::before,
   &::after {
@@ -188,6 +190,7 @@ export const CustomLogo = styled.div`
   color: rgb(88, 199, 250, 0%);
   cursor: pointer;
   font-family: cursive;
+  z-index: 100;
 
   &::before {
     content: '';
