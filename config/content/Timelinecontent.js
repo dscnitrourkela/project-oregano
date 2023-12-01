@@ -19,7 +19,7 @@ export const timelinecontent = {
       title: 'Registration Opens',
       duration: '15 oct to 15 dec',
       boxcolor: '#72F7BF',
-      wheelcolor: '#35E1FF',
+      wheelcolor: '#C3C3C3',
     },
     {
       serialid: 3,
@@ -27,9 +27,9 @@ export const timelinecontent = {
       month: 'October',
       title: 'Registration Opens',
       duration: '15 oct to 15 dec',
-      boxcolor: '#72F7BF',
-      wheelcolor: '#35E1FF',
-      ellipsecolor: '#B067FF',
+      boxcolor: '#FEE27F',
+      wheelcolor: '#C3C3C3',
+      ellipsecolor: '#9C41FF',
       ellipsecontent: 'Get extra perks with early registration',
     },
     {
@@ -38,8 +38,8 @@ export const timelinecontent = {
       month: 'October',
       title: 'Registration Opens',
       duration: '15 oct to 15 dec',
-      boxcolor: '#72F7BF',
-      wheelcolor: '#35E1FF',
+      boxcolor: '#FEE27F',
+      wheelcolor: '#FEE27F',
     },
   ],
 };
