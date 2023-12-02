@@ -10,7 +10,7 @@ import AboutSection from '../components/AboutUs/About';
 import SponsorSection from '../components/Sponsor/Sponsor';
 import FAQ from '../components/Faq/Faq';
 import TimelineSection from '../components/TimelineSection/Timeline';
-import { Footer } from '../components/marginals/Footer/Footer';
+import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
 
 const Homepage = ({ location }) => {

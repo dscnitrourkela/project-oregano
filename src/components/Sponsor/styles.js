@@ -8,11 +8,8 @@ export const SponsorLogo = styled.div`
     items-center
     justify-center
     `}
-  @media (max-width: 545px) {
-    height: 41.288px;
-  }
 `;
-export const LogoImg = styled.img`
+export const AlphaLogoImg = styled.img`
   ${tw`
     h-[41.288px]
     `}
@@ -297,6 +294,12 @@ export const DeltaContainer = styled.div`
       md:gap-[32px]
       gap-[16px]
       `}
+`;
+
+export const DeltaLogoImg = styled.img`
+  ${tw`
+    h-[16px]
+    `}
 `;
 
 export const DeltaSponsors = styled.div`

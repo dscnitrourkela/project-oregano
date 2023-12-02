@@ -401,7 +401,6 @@ export const Terms = styled.div`
 
 export const ConditionItems = styled.a`
   ${tw`
-  text-xl
   px-4
   py-6
 `}
