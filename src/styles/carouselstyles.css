@@ -73,6 +73,9 @@
   }
 }
 @media screen and (max-width: 554px) {
+  .slider {
+    height: 300px;
+  }
   .slide,
   .slide img {
     height: 200px;
