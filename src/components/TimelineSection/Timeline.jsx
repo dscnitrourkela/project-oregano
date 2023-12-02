@@ -7,7 +7,7 @@ import { SectionContainer } from '../shared';
 
 function TimelineSection() {
   return (
-    <SectionContainer>
+    <SectionContainer id='Timeline'>
       <TimelineWrapper>
         <TimelineHead>{timelinecontent.title}</TimelineHead>
         {timelinecontent.nodes.length === 0

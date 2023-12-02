@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import navbar from '../../../../config/content/navbar';
 import { MenuContext } from './MenuContext';
 
@@ -20,8 +20,26 @@ const NavBar = () => {
     toggleMenuOpen(false);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <NavContainer>
+    <NavContainer scrolled={isScrolled}>
       <CustomLogo>
         <img
           src='https://res.cloudinary.com/dhnkuonev/image/upload/v1699458313/hnlogo_ei64kd.png'

@@ -5,6 +5,18 @@ import { Body1, Heading1 } from '../shared';
 
 const smallScreen = '768px';
 
+export const SectionContainer = styled.section`
+  ${tw`
+    w-full
+    h-auto
+    flex
+    flex-col
+    items-start
+  `}
+  height: fit-content;
+  margin: 2% auto 3%;
+`;
+
 export const PrizesContainerWrapper = styled.div`
   margin-top: 0px;
   padding-left: 0;
@@ -63,27 +75,23 @@ export const TotalPrizes = styled(Heading1)`
 
 export const Box = styled.div`
   max-width: 400px;
- 
   height: ${(props) => (props.expanded ? '546px' : '360px')};
   border-radius: 10px;
   background: #272727;
-  margin: 20px ;
-  align-items:center;
-
+  margin: 20px;
+  align-items: center;
   transition: height 0.5s, box-shadow 0.5s;
   display: flex;
   flex-direction: column;
   padding: 20px;
   position: relative;
   margin-bottom: 20px;
-  box-shadow: 0 4px 16px 0 rgba(39, 39, 39, 0.6);
   ${(props) =>
     props.expanded
       ? `
-      box-shadow: 0 4px 24px 0 rgba(39, 39, 39, 0.6);
       padding:10px;
       &:hover {
-        box-shadow: 0 8px 16px 0 ${props.shadowColor || '#272727'};
+        box-shadow: 0 0px 16px 0px ${props.shadowColor || '#272727'};
       }
        &:hover ${TotalPrizes} {
           visibility: visible;
@@ -97,12 +105,11 @@ export const Box = styled.div`
     `
       : ''}
   @media (max-width: ${smallScreen}) {
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     height: ${(props) => (props.expanded ? '460px' : '350px')};
-    j
   }
-  
+
   &:not(:hover) {
     height: 360px;
     padding: 20px;
@@ -112,6 +119,7 @@ export const Box = styled.div`
       opacity: 0;
       transition-delay: 0.5s;
     }
+  }
 `;
 
 export const PrizesTitle = styled(Heading1)`
@@ -131,37 +139,12 @@ export const PrizesTitle = styled(Heading1)`
   }
 `;
 
-export const ExpandedHeader = styled.div`
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: white;
-  font-size: 24px;
-  font-weight: 600;
-  @media (max-width: ${smallScreen}) {
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-  }
-`;
-
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 20px;
   @media (max-width: ${smallScreen}) {
     margin-top: 10px;
-  }
-`;
-
-export const PrizeDescriptions = styled.div`
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
-  @media (max-width: 768px) {
-    font-size: 14px;
   }
 `;
 
@@ -204,4 +187,76 @@ export const Merchandise = styled(Body1)`
   @media (max-width: ${smallScreen}) {
     font-size: 14px;
   }
+`;
+
+// Mobile Card Stars here
+export const MobileBox = styled.div`
+  max-width: 400px;
+  border-radius: 10px;
+  background: #272727;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0px 14px 0px ${(props) => props.shadowColor || '#272727'};
+`;
+
+export const MobileDescription = styled.div`
+  font-family: Prompt;
+`;
+
+export const MobilePrizes = styled.div`
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0em;
+  text-align: center;
+  background: transparent;
+  font-size: 24px;
+  margin-top: 12px;
+`;
+
+export const MobilePrize = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  bottom: 20px;
+  gap: 5px 0px;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+`;
+
+export const MobileCash = styled.div`
+  color: var(--color-primary-blue);
+  white-space: nowrap;
+  font-size: 14px;
+  &::after {
+    content: '+';
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+`;
+
+export const MobileSwags = styled.div`
+  color: var(--color-primary-purple);
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 14px;
+  &::after {
+    content: '+';
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+`;
+
+export const MobileMerchandise = styled.div`
+  color: var(--color-primary-green);
+  text-align: center;
+  font-size: 14px;
 `;

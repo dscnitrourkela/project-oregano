@@ -4,20 +4,19 @@ import { Body1, Heading1, Heading4 } from '../shared';
 export const TimelineHead = styled(Heading1)`
   font-weight: 700;
   margin: 0 0 24px 0;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     font-size: 32px;
     line-height: 96px;
     margin: 32px 0px;
   }
 `;
 export const TimelineWrapper = styled.div`
-  // width: 1280px;
   margin: 4% auto -6% auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     width: 390px;
     padding: 0 8px;
   }
@@ -61,7 +60,7 @@ export const BoxWrapper = styled.div`
     color: var(--neutral-5, #a1a1a1);
     margin: 8px 0 0 0;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     padding: 13px 18px;
     gap: 8px;
     h3 {
@@ -96,7 +95,7 @@ export const LineWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     svg {
       width: 86px;
       height: 1px;
@@ -111,7 +110,7 @@ export const LineWrapper = styled.div`
   }
 `;
 export const RightLineWrapper = styled(LineWrapper)`
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     svg {
       transform: rotate(44deg) translate(11px, 39px);
     }
@@ -132,7 +131,7 @@ export const Date = styled(Heading4)`
   font-weight: 600;
   line-height: 42px;
   margin: 0;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -142,7 +141,7 @@ export const Date = styled(Heading4)`
   }
 `;
 export const Month = styled(Body1)`
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     font-size: 12px;
     line-height: 18px;
   }
@@ -164,7 +163,7 @@ export const WheelWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     width: 91px;
     height: 91px;
     svg {
@@ -178,6 +177,7 @@ export const WheelWrapper = styled.div`
       flex-direction: column;
       align-items: center;
     }
+  }
   @media (max-width: 390px) {
     width: 70px;
     height: 70px;
@@ -194,13 +194,14 @@ export const WheelWrapper = styled.div`
     }
   }
 `;
+
 export const ArrowWrapper = styled.div`
   position: relative;
   place-self: center;
   #mobile {
     display: none;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     #desktop {
       display: none;
     }
@@ -225,7 +226,7 @@ export const EllipseContent = styled(Heading4)`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -241,7 +242,7 @@ export const EllipseContent = styled(Heading4)`
 export const EllipseWrapper = styled.div`
   place-self: center;
   position: relative;
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     svg {
       width: 138px;
       height: 123px;
@@ -273,17 +274,17 @@ export const CircledLineWrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  @media (min-width: 640px) {
+  @media (min-width: 1300px) {
     display: none;
   }
 `;
 export const DesktopView = styled.div`
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     display: none;
   }
 `;
 export const MobileView = styled.div`
-  @media (min-width: 640px) {
+  @media (min-width: 1300px) {
     display: none;
   }
 `;
@@ -307,7 +308,7 @@ export const VerticalWrapper = styled.div`
     background: #fed954;
     transform: translateY(27px);
   }
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     div {
       height: 114px;
       transform: translateY(0px);
