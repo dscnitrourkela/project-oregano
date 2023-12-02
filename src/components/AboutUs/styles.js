@@ -10,7 +10,6 @@ export const AboutContainer = styled.div`
   overflow-y: hidden;
   width: 100%;
   margin-bottom: 50px;
-  height: 600px;
 `;
 export const AboutContent = styled(Body1)`
   margin-top: 20px;

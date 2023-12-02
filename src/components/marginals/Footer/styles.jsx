@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
-import { Container, Heading4, NavText, Body1, Body2 } from '../..';
+import { Body1 } from '../..';
 
 export const FooterContainer = styled(Body1)`
   ${tw`
@@ -44,8 +44,6 @@ export const SecondPendulumContainer = styled.div`
   flex
   flex-col
   items-center
-  justify-between
-  w-[500px]
   text-white
   p-4
   `}
@@ -61,7 +59,8 @@ export const SecondPendulumContainer = styled.div`
 export const SocialText = styled.div`
   ${tw`
   absolute
-  bottom-12
+  bottom-8
+  sm:bottom-4
   left-0.5
   text-neutral-white-700
   text-lg
@@ -74,7 +73,8 @@ export const SocialsCont = styled.div`
   ${tw`
   flex
   flex-col
-  justify-between
+  items-center
+  m-auto
   `}
 `;
 export const CradleContainer = styled.div`
@@ -390,6 +390,7 @@ export const Terms = styled.div`
     flex-col
     items-baseline
     `}
+  }
 `;
 
 export const ConditionItems = styled.a`
@@ -403,6 +404,7 @@ export const ConditionItems = styled.a`
     px-1
     py-4
     `}
+  }
 `;
 
 export const Credits = styled.div`
@@ -416,4 +418,5 @@ export const Credits = styled.div`
     px-2
     py-6
     `}
+  }
 `;

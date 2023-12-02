@@ -53,9 +53,9 @@ const Homepage = ({ location }) => {
         <HeroSection />
         <Container>
           <AboutSection />
-          <SponsorSection />
           <Prizes />
           <TimelineSection />
+          <SponsorSection />
           <FAQ />
         </Container>
         <Footer />
