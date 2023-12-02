@@ -56,7 +56,7 @@ function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1800,
     beforeChange: (current, next) => setSlideIndex(next),
     responsive: [
       {
@@ -87,7 +87,7 @@ function Carousel() {
         >
           {AboutUs.carouselImages.map((imgUrl, index) => (
             <div className={index === slideIndex ? 'slide slide-active' : 'slide'} key={imgUrl}>
-              <img src={imgUrl} alt={`Alt ${index}`} />
+              <img className='carousel-img' src={imgUrl} alt={`Alt ${index}`} />
             </div>
           ))}
         </Slider>

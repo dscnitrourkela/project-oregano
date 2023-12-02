@@ -20,6 +20,8 @@ import {
   DeltaLogoSecond,
   DeltaContainer,
   DeltaSponsors,
+  AlphaLogoImg,
+  DeltaLogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
 
@@ -40,7 +42,7 @@ function SponsorSection() {
             {alphaSponsors.map(({ src, alt, link }) => (
               <SponsorLogo key={src}>
                 <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <img src={src} alt={alt} />
+                  <AlphaLogoImg src={src} alt={alt} />
                 </a>
               </SponsorLogo>
             ))}
@@ -84,7 +86,7 @@ function SponsorSection() {
                 {deltaSponsorsFirst.map(({ src, alt, link }) => (
                   <SponsorLogo key={src}>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
-                      <img src={src} alt={alt} />
+                      <DeltaLogoImg src={src} alt={alt} />
                     </a>
                   </SponsorLogo>
                 ))}
@@ -93,7 +95,7 @@ function SponsorSection() {
                 {deltaSponsorsSecond.map(({ src, alt, link, width }) => (
                   <SponsorLogo key={src}>
                     <a href={link} target='_blank' rel='noopener noreferrer'>
-                      <img src={src} alt={alt} width={width} />
+                      <DeltaLogoImg src={src} alt={alt} width={width} />
                     </a>
                   </SponsorLogo>
                 ))}

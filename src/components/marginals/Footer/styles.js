@@ -9,6 +9,7 @@ export const FooterContainer = styled(Body1)`
   justify-between
   text-white
   p-4
+  pb-8
   bg-[#060616]
 `}
   @media (max-width: 800px) {
@@ -44,6 +45,8 @@ export const SecondPendulumContainer = styled.div`
   flex
   flex-col
   items-center
+  justify-between
+  w-[500px]
   text-white
   p-4
   `}
@@ -59,8 +62,7 @@ export const SecondPendulumContainer = styled.div`
 export const SocialText = styled.div`
   ${tw`
   absolute
-  bottom-8
-  sm:bottom-4
+  bottom-12
   left-0.5
   text-neutral-white-700
   text-lg
@@ -73,8 +75,7 @@ export const SocialsCont = styled.div`
   ${tw`
   flex
   flex-col
-  items-center
-  m-auto
+  justify-between
   `}
 `;
 export const CradleContainer = styled.div`
@@ -96,6 +97,9 @@ export const CradleContainer = styled.div`
     h-[300px]
     pt-[0px]
     `}
+  }
+  &:hover .ball {
+    animation: none;
   }
 `;
 
@@ -223,6 +227,9 @@ export const Ball1 = styled(Ball)`
   @media (max-width: 600px) {
     animation: ${ball1Mob} 1s ease-out infinite alternate;
   }
+  &:hover {
+    animation: none;
+  }
 `;
 
 export const Ball5 = styled(Ball)`
@@ -230,6 +237,9 @@ export const Ball5 = styled(Ball)`
     ${ballColour} 1s ease-out 1s infinite alternate;
   @media (max-width: 600px) {
     animation: ${ball5Mob} 1s ease-out 1s infinite alternate;
+  }
+  &:hover {
+    animation: none;
   }
 `;
 
@@ -390,12 +400,10 @@ export const Terms = styled.div`
     flex-col
     items-baseline
     `}
-  }
 `;
 
 export const ConditionItems = styled.a`
   ${tw`
-  text-xl
   px-4
   py-6
 `}
@@ -404,7 +412,6 @@ export const ConditionItems = styled.a`
     px-1
     py-4
     `}
-  }
 `;
 
 export const Credits = styled.div`
@@ -418,5 +425,7 @@ export const Credits = styled.div`
     px-2
     py-6
     `}
+`;
+`}
   }
 `;

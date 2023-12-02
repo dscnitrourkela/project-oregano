@@ -1,23 +1,32 @@
 import styled from 'styled-components';
+import tw from 'twin.macro';
 import { Body1, Heading1 } from '../shared';
 
 export const AboutContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 0px;
-  overflow-y: hidden;
-  width: 100%;
-  margin-bottom: 50px;
+  ${tw`
+    flex 
+    flex-col 
+    items-center 
+    text-center 
+    mt-0 
+    overflow-y-hidden 
+    w-full 
+    mb-12
+    `}
 `;
 export const AboutContent = styled(Body1)`
-  margin-top: 20px;
-  margin-bottom: 50px;
-  width: 80%;
-  font-size: 16px;
-  line-height: 24px;
+  ${tw`
+    mt-5
+    mb-12
+    w-[80%]
+    text-base	 
+    `}
+  @media (max-width: 800px) {
+    text-align: justify;
+  }
 `;
 export const Heading = styled(Heading1)`
-  font-weight: 700;
+  ${tw`
+    font-bold	
+  `}
 `;
