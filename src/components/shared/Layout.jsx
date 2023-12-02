@@ -10,13 +10,13 @@ const LayoutContainer = styled.div`
     w-full
   `}
 
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 const Nav = styled.div`
   ${tw`
-    absolute
-    top-0
-    w-full
+   sm:fixed
+   w-full
+   z-[100]
   `}
 `;
 

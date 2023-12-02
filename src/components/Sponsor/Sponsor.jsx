@@ -31,7 +31,7 @@ function SponsorSection() {
   const deltaSponsorsSecond = Sponsor.deltaSecond;
 
   return (
-    <SectionContainer>
+    <SectionContainer id='Sponsors'>
       <SponsorHeader>Sponsors</SponsorHeader>
       <AlphaSponsors>
         <AlphaContainer>
