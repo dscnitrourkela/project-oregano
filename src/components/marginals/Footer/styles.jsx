@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
-import { Container, Heading4, NavText, Body1, Body2 } from '../..';
+import { Body1 } from '../..';
 
 export const FooterContainer = styled(Body1)`
   ${tw`
