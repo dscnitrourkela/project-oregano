@@ -56,7 +56,7 @@ function Carousel() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1800,
     beforeChange: (current, next) => setSlideIndex(next),
     responsive: [
       {

@@ -1,7 +1,7 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 .slider {
-  height: 400px;
+  min-height: 400px;
 }
 .header {
   margin: 50px auto;
@@ -17,13 +17,14 @@
 .slide {
   margin: 50px 0px;
   transform: scale(0.7);
-  transition: 0.5s;
+  transition: 0.6s;
   border-radius: 12px;
 }
 .slide-active {
   filter: blur(0);
   opacity: 1;
   transform: scale(1.1);
+  transition: 0.8s;
   border-radius: 20px;
 }
 .container {
@@ -35,14 +36,23 @@
 .slick-next:before {
   display: none;
 }
+
+@media screen and (max-width: 996px) {
+  .slide,
+  .slide img {
+    height: 300px;
+    width: 450px;
+    border-radius: 5px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     font-size: 7vw;
   }
   .slide,
   .slide img {
-    width: 288px;
-    height: 180px;
+    width: 300px;
+    height: 200px;
     border-radius: 5px;
   }
   .arrow {
@@ -63,13 +73,6 @@
   .custom-next-arrow {
     right: 0;
     justify-content: flex-end;
-  }
-}
-@media screen and (max-width: 996px) {
-  .slide,
-  .slide img {
-    height: 280px;
-    border-radius: 5px;
   }
 }
 @media screen and (max-width: 554px) {
