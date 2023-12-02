@@ -98,6 +98,9 @@ export const CradleContainer = styled.div`
     pt-[0px]
     `}
   }
+  &:hover .ball {
+    animation: none;
+  }
 `;
 
 export const Ball = styled.div`
