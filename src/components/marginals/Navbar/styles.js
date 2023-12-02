@@ -14,6 +14,7 @@ export const NavContainer = styled.div`
   height: 90px;
   z-index: 100;
   background-color: ${(props) => (props.scrolled ? 'rgba(235,235,235,0.1)' : 'transparent')};
+  backdrop-filter: ${(props) => (props.scrolled ? 'blur(10px)' : 'none')};
   transition: background-color 0.3s ease;
   .open-nav {
     top: 0px;

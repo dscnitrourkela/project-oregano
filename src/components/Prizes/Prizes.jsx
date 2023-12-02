@@ -60,7 +60,7 @@ const Prizes = () => {
   }, []);
 
   return (
-    <SectionContainer>
+    <SectionContainer id='Prizes'>
       <PrizesContainerWrapper>
         <PrizesTitle>{PrizesContent.title}</PrizesTitle>
         <PrizesContainer>

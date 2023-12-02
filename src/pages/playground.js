@@ -12,6 +12,7 @@ import FAQ from '../components/Faq/Faq';
 import TimelineSection from '../components/TimelineSection/Timeline';
 import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
+import ParticleBackground from '../components/shared/Particle';
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -48,7 +49,7 @@ const Homepage = ({ location }) => {
           src='//js.hs-scripts.com/8898157.js'
         />
       </Helmet>
-
+      <ParticleBackground />
       <Layout location={location}>
         <HeroSection />
         <Container>

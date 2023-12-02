@@ -400,6 +400,7 @@ export const Terms = styled.div`
     flex-col
     items-baseline
     `}
+  }
 `;
 
 export const ConditionItems = styled.a`
@@ -412,6 +413,7 @@ export const ConditionItems = styled.a`
     px-1
     py-4
     `}
+  }
 `;
 
 export const Credits = styled.div`
@@ -425,7 +427,5 @@ export const Credits = styled.div`
     px-2
     py-6
     `}
-`;
-`}
   }
 `;

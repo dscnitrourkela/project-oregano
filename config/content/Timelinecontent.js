@@ -9,7 +9,7 @@ export const timelinecontent = {
       duration: '15 oct to 15 dec',
       boxcolor: '#72F7BF',
       wheelcolor: '#35E1FF',
-      ellipsecolor: '#B067FF',
+      ellipsecolor: '#FF65CD',
       ellipsecontent: 'Get extra perks with early registration',
     },
     {
