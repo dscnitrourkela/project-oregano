@@ -8,16 +8,26 @@ export const SponsorLogo = styled.div`
     items-center
     justify-center
     `}
+  @media (max-width: 545px) {
+    height: 41.288px;
+  }
 `;
-
+export const LogoImg = styled.img`
+  ${tw`
+    h-[41.288px]
+    `}
+`;
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
-    md:grid-cols-3
+    md:grid-cols-3 
     grid-cols-1
     md:gap-[120px]
     gap-[24px]
     `}
+  @media (max-width: 545px) {
+    width: 85%;
+  }
 `;
 
 export const AlphaContainer = styled.div`
@@ -25,6 +35,7 @@ export const AlphaContainer = styled.div`
     flex
     flex-col
     text-center
+    items-center
     md:gap-[48px]
     gap-[32px]
     `}

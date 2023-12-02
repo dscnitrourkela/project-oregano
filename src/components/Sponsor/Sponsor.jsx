@@ -20,6 +20,7 @@ import {
   DeltaLogoSecond,
   DeltaContainer,
   DeltaSponsors,
+  LogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
 
@@ -40,7 +41,7 @@ function SponsorSection() {
             {alphaSponsors.map(({ src, alt, link }) => (
               <SponsorLogo key={src}>
                 <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <img src={src} alt={alt} />
+                  <LogoImg src={src} alt={alt} />
                 </a>
               </SponsorLogo>
             ))}
