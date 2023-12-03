@@ -19,9 +19,10 @@ export const NavContainer = styled.div`
   .open-nav {
     top: 0px;
     padding-top: 0px;
-    background: #0e0812;
     z-index: 1;
+    background: transparent;
     @media (max-width: 1023px) {
+      background: #0e0812;
       padding-top: 150px;
       height: 100vh;
       position: fixed;
@@ -52,6 +53,7 @@ export const NavLink = styled.a`
   align-items: centre;
   gap: 41px;
   position: relative;
+  scroll-behavior: smooth;
   &:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;

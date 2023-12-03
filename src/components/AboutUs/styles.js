@@ -4,15 +4,16 @@ import { Body1, Heading1 } from '../shared';
 
 export const AboutContainer = styled.div`
   ${tw`
-    flex 
-    flex-col 
-    items-center 
-    text-center 
-    mt-0 
-    overflow-y-hidden 
-    w-full 
-    mb-12
-    `}
+    w-11/12
+    h-auto
+    flex
+    flex-col
+    items-center
+    justify-center
+    min-h-screen
+  `}
+  height: fit-content;
+  margin: 2% auto 3%;
 `;
 export const AboutContent = styled(Body1)`
   ${tw`

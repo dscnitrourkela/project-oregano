@@ -1,8 +1,6 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
-.slider {
-  min-height: 400px;
-}
+
 .header {
   margin: 50px auto;
   text-align: center;
@@ -40,8 +38,8 @@
 @media screen and (max-width: 996px) {
   .slide,
   .slide img {
-    height: 300px;
     width: 450px;
+    aspect-ratio: 4/3;
     border-radius: 5px;
   }
 }
@@ -52,7 +50,7 @@
   .slide,
   .slide img {
     width: 300px;
-    height: 200px;
+    aspect-ratio: 4/3;
     border-radius: 5px;
   }
   .arrow {
@@ -90,8 +88,8 @@
   .slide img {
     height: 200px;
     border-radius: 20px;
-    width: 300px;
+    width: 250px;
     position: relative;
-    left: 2.4%;
+    margin: auto;
   }
 }

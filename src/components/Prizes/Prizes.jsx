@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  SectionContainer,
   PrizesContainer,
   Box,
   PrizesTitle,
@@ -60,56 +59,54 @@ const Prizes = () => {
   }, []);
 
   return (
-    <SectionContainer id='Prizes'>
-      <PrizesContainerWrapper>
-        <PrizesTitle>{PrizesContent.title}</PrizesTitle>
-        <PrizesContainer>
-          {isMobile
-            ? PrizesContent.prizeData.map((item) => (
-                <MobileBox key={item.id} shadowColor={item.prizeShadowColor}>
-                  <img src={item.src} alt='Medal' />
-                  <MobileDescription>
-                    <MobilePrizes>Total Prize - {item.prizeValue}</MobilePrizes>
-                    <MobilePrize>
-                      <MobileCash>Cash Prize {item.cash}</MobileCash>
-                      <MobileSwags>{item.swags}</MobileSwags>
-                      <MobileMerchandise>{item.merchandise}</MobileMerchandise>
-                    </MobilePrize>
-                  </MobileDescription>
-                </MobileBox>
-              ))
-            : PrizesContent.prizeData.map((item) => (
-                // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-                <div
-                  key={item.id}
-                  onClick={() => (isMobile ? handleBoxInteraction(item.id) : undefined)}
-                  onMouseEnter={() => (!isMobile ? handleBoxInteraction(item.id) : undefined)}
+    <PrizesContainerWrapper id='Prizes'>
+      <PrizesTitle>{PrizesContent.title}</PrizesTitle>
+      <PrizesContainer>
+        {isMobile
+          ? PrizesContent.prizeData.map((item) => (
+              <MobileBox key={item.id} shadowColor={item.prizeShadowColor}>
+                <img src={item.src} alt='Medal' />
+                <MobileDescription>
+                  <MobilePrizes>Total Prize - {item.prizeValue}</MobilePrizes>
+                  <MobilePrize>
+                    <MobileCash>Cash Prize {item.cash}</MobileCash>
+                    <MobileSwags>{item.swags}</MobileSwags>
+                    <MobileMerchandise>{item.merchandise}</MobileMerchandise>
+                  </MobilePrize>
+                </MobileDescription>
+              </MobileBox>
+            ))
+          : PrizesContent.prizeData.map((item) => (
+              // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+              <div
+                key={item.id}
+                onClick={() => (isMobile ? handleBoxInteraction(item.id) : undefined)}
+                onMouseEnter={() => (!isMobile ? handleBoxInteraction(item.id) : undefined)}
+              >
+                <Box
+                  expanded={isMobile || expandedIndex === item.id}
+                  shadowColor={item.prizeShadowColor}
+                  backgroundColor={
+                    isMobile || expandedIndex === item.id ? selectedBackgroundColor : '#272727'
+                  }
+                  className={expandedIndex === item.id ? 'clicked' : ''}
                 >
-                  <Box
-                    expanded={isMobile || expandedIndex === item.id}
-                    shadowColor={item.prizeShadowColor}
-                    backgroundColor={
-                      isMobile || expandedIndex === item.id ? selectedBackgroundColor : '#272727'
-                    }
-                    className={expandedIndex === item.id ? 'clicked' : ''}
-                  >
-                    <img src={item.src} alt='Medal' />
-                    {!isMobile && expandedIndex === item.id && (
-                      <Description>
-                        <TotalPrizes>Total Prize - {item.prizeValue}</TotalPrizes>
-                        <PrizeText>
-                          <CashPrize>Cash Prize {item.cash}</CashPrize>
-                          <Swags>{item.swags}</Swags>
-                          <Merchandise>{item.merchandise}</Merchandise>
-                        </PrizeText>
-                      </Description>
-                    )}
-                  </Box>
-                </div>
-              ))}
-        </PrizesContainer>
-      </PrizesContainerWrapper>
-    </SectionContainer>
+                  <img src={item.src} alt='Medal' />
+                  {!isMobile && expandedIndex === item.id && (
+                    <Description>
+                      <TotalPrizes>Total Prize - {item.prizeValue}</TotalPrizes>
+                      <PrizeText>
+                        <CashPrize>Cash Prize {item.cash}</CashPrize>
+                        <Swags>{item.swags}</Swags>
+                        <Merchandise>{item.merchandise}</Merchandise>
+                      </PrizeText>
+                    </Description>
+                  )}
+                </Box>
+              </div>
+            ))}
+      </PrizesContainer>
+    </PrizesContainerWrapper>
   );
 };
 

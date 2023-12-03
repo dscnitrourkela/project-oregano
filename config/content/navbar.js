@@ -5,11 +5,11 @@ export default {
     alt: 'logo',
   },
   Links: [
-    { id: 'Home', name: 'Home', link: '#Home' },
-    { id: 'About', name: 'About', link: '#About' },
-    { id: 'Stats', name: 'Stats', link: '#Stats' },
-    { id: 'Timeline', name: 'Timeline', link: '#Timeline' },
-    { id: 'Sponsors', name: 'Sponsors', link: '#Sponsors' },
-    { id: 'FAQs', name: 'FAQs', link: '#FAQs' },
+    { id: 'Home', name: 'Home', link: '/#Home' },
+    { id: 'About', name: 'About', link: '/#About' },
+    { id: 'Stats', name: 'Stats', link: '/#Stats' },
+    { id: 'Timeline', name: 'Timeline', link: '/#Timeline' },
+    { id: 'Sponsors', name: 'Sponsors', link: '/#Sponsors' },
+    { id: 'FAQs', name: 'FAQs', link: '/#FAQs' },
   ],
 };

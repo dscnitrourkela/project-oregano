@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
-import Container from '../components/shared/Container';
 import '../styles/global.css';
 import SEO from '../components/shared/SEO/SEO';
 import ParticleBackground from '../components/shared/Particle';
@@ -14,6 +13,7 @@ import SponsorSection from '../components/Sponsor/Sponsor';
 import FAQ from '../components/Faq/Faq';
 import Prizes from '../components/Prizes/Prizes';
 import { Footer } from '../components/marginals';
+import { ContainerWrapper } from '../components/shared/Container';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -56,13 +56,13 @@ const HomePage = ({ location }) => {
       <ParticleBackground />
       <Layout location={location}>
         <HeroSection />
-        <Container>
+        <ContainerWrapper>
           <AboutSection />
           <Prizes />
           <TimelineSection />
           <SponsorSection />
           <FAQ />
-        </Container>
+        </ContainerWrapper>
         <Footer />
       </Layout>
     </>
