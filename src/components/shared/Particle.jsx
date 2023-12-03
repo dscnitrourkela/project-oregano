@@ -14,10 +14,10 @@ const ParticleBackground = () => {
       options={{
         particles: {
           number: {
-            value: 77,
+            value: 80,
             density: {
               enable: true,
-              value_area: 78.77116975187079,
+              value_area: 68.77116975187079,
             },
           },
           color: {
@@ -43,7 +43,7 @@ const ParticleBackground = () => {
             random: true,
             anim: {
               enable: true,
-              speed: 1,
+              speed: 1.3,
               opacity_min: 0,
               sync: false,
             },

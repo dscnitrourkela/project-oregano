@@ -28,6 +28,17 @@ export const AboutContent = styled(Body1)`
 `;
 export const Heading = styled(Heading1)`
   ${tw`
-    font-bold	
-  `}
+  text-center
+  mt-5
+  m-auto
+  leading-[96px]
+  text-[64px]
+`}
+  font-weight: 700;
+  @media (max-width: 761px) {
+    color: var(--neutral-1, #fff);
+    font-size: 32px;
+    font-style: normal;
+    line-height: 96px;
+  }
 `;

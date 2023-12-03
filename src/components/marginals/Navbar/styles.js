@@ -161,7 +161,7 @@ export const NavLinksContainer = styled.li`
     lg:ml-[8px]
     ml-0
     py-[16px]
-    px-[32px]
+    px-[24px]
     mb-[18px]
     lg:mb-[0]
     flex
