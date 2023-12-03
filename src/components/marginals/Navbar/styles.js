@@ -44,11 +44,10 @@ export const NavContainer = styled.div`
 `;
 export const NavLink = styled.a`
   color: white;
-  transition-duration: 500ms;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  transition: 0.5s;
+  transition: 0.25s;
   display: flex;
   align-items: centre;
   gap: 41px;
@@ -94,7 +93,7 @@ export const StyledHamburger = styled.button`
     position: absolute;
     display: block;
     left: 0;
-    transition: all 0.7s;
+    transition: all 0.25s;
   }
   &:active,
   &:focus {
@@ -146,7 +145,7 @@ export const NavLinks = styled.ul`
     lg:w-auto
     lg:pl-0
     transition-all
-    duration-[450ms]
+    duration-[250ms]
     ease-in
 `}
 `;
