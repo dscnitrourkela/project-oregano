@@ -37,8 +37,8 @@ const FAQ = () => {
   };
 
   return (
-    <SectionContainer id='FAQs'>
-      <FAQContainer>
+    <SectionContainer>
+      <FAQContainer id='FAQs'>
         <Helmet>
           <link
             rel='stylesheet'
