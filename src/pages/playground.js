@@ -12,6 +12,7 @@ import FAQ from '../components/Faq/Faq';
 import TimelineSection from '../components/TimelineSection/Timeline';
 import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
+import PreviousStats from '../components/PrevStats/PreviousStats';
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -52,10 +53,12 @@ const Homepage = ({ location }) => {
       <Layout location={location}>
         <HeroSection />
         <Container>
+          <PreviousStats />
           <AboutSection />
           <Prizes />
           <TimelineSection />
           <SponsorSection />
+
           <FAQ />
         </Container>
         <Footer />
