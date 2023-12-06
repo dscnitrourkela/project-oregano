@@ -19,7 +19,7 @@ export const SectionContainer = styled.div`
 
 export const HeroBody = styled.div`
   ${tw`
-    mt-[6%]
+    mt-[7%]
     h-full
     flex
     justify-center
@@ -64,6 +64,7 @@ export const HeroInside = styled.div`
 export const ContentBlock = styled.div`
   ${tw`
     max-w-[360px]
+    pb-4
     sm:max-w-sm
     md:max-w-xl
     lg:max-w-3xl

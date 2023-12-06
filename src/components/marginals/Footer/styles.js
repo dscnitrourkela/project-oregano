@@ -90,6 +90,7 @@ export const CradleContainer = styled.div`
   mx-4
   pt-[100px]
   text-[16px]
+  m-auto
   `}
   @media (max-width: 800px) {
     ${tw`
@@ -369,11 +370,14 @@ export const LastLine = styled.div`
     w-[60vw]
     flex
     flex-row
-    justify-around	
+    justify-center
+    gap-4	
     items-center
   `}
   @media (max-width: 800px) {
     ${tw`
+    pt-3
+    gap-7
     w-full
     h-[250px]
     flex-col-reverse
@@ -399,7 +403,9 @@ export const Terms = styled.div`
     ${tw`
     flex-col
     items-baseline
+    gap-2
     `}
+  }
 `;
 
 export const ConditionItems = styled.a`
@@ -412,6 +418,7 @@ export const ConditionItems = styled.a`
     px-1
     py-4
     `}
+  }
 `;
 
 export const Credits = styled.div`
@@ -423,9 +430,6 @@ export const Credits = styled.div`
     ${tw`
     m-[0px]
     px-2
-    py-6
     `}
-`;
-`}
   }
 `;
