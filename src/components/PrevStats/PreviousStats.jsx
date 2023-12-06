@@ -31,7 +31,7 @@ const PreviousStats = () => {
   const [windowWidth, setWindowWidth] = useState(() =>
     typeof window !== 'undefined' ? window.innerWidth : 0,
   );
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(Array(prevstat.data.length).fill(false));
 
   useEffect(() => {
     const handleResize = () => {
@@ -55,12 +55,12 @@ const PreviousStats = () => {
     'https://res.cloudinary.com/dzxgf75bh/image/upload/v1701689072/' +
     'xori1-removebg-preview_1_tbbsw8.png';
 
-  const handleHover = () => {
-    setIsHovered(true);
+  const handleHover = (index) => {
+    setIsHovered((prev) => prev.map((_, i) => i === index));
   };
 
   const handleLeave = () => {
-    setIsHovered(false);
+    setIsHovered(Array(prevstat.data.length).fill(false));
   };
 
   return (
@@ -80,19 +80,19 @@ const PreviousStats = () => {
                 </MobileHead>
                 <MobileBoxContent>
                   <MobileSubContent>Registration</MobileSubContent>
-                  <MobileSubBar background={prevstat.headerColors[id]} width='320px'>
+                  <MobileSubBar background={prevstat.headerColors[id]} width='280px' width1='230px'>
                     <StatNumber>{item.registration}</StatNumber>
                   </MobileSubBar>
                   <MobileSubContent>Projects</MobileSubContent>
-                  <MobileSubBar background={prevstat.headerColors[id]} width='300px'>
+                  <MobileSubBar background={prevstat.headerColors[id]} width='250px' width1='160px'>
                     <StatNumber>{item.projects}</StatNumber>
                   </MobileSubBar>
                   <MobileSubContent>Community Partners</MobileSubContent>
-                  <MobileSubBar background={prevstat.headerColors[id]} width='280px'>
+                  <MobileSubBar background={prevstat.headerColors[id]} width='230px' width1='130px'>
                     <StatNumber>{item.partners}</StatNumber>
                   </MobileSubBar>
                   <MobileSubContent>Reach in Colleges</MobileSubContent>
-                  <MobileSubBar background={prevstat.headerColors[id]} width='250px'>
+                  <MobileSubBar background={prevstat.headerColors[id]} width='210px' width1='90px'>
                     <StatNumber>{item.reach}</StatNumber>
                   </MobileSubBar>
                 </MobileBoxContent>
@@ -107,9 +107,9 @@ const PreviousStats = () => {
             {prevstat.data.map((item, id) => (
               <SectionBox
                 key={item.id}
-                onMouseEnter={handleHover}
+                onMouseEnter={() => handleHover(id)}
                 onMouseLeave={handleLeave}
-                expanded={isHovered}
+                expanded={isHovered[id]}
               >
                 <BoxText>
                   <BoxHeader color={prevstat.headerColors[id]}>
@@ -123,7 +123,7 @@ const PreviousStats = () => {
                     <BoxSubHeader>Registration</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
-                      expanded={isHovered}
+                      expanded={isHovered[id]}
                       width='310px'
                     >
                       <ProgressNumber>{item.registration}</ProgressNumber>
@@ -134,7 +134,7 @@ const PreviousStats = () => {
                     <BoxSubHeader>Projects</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
-                      expanded={isHovered}
+                      expanded={isHovered[id]}
                       width='290px'
                     >
                       <ProgressNumber>{item.projects}</ProgressNumber>
@@ -145,7 +145,7 @@ const PreviousStats = () => {
                     <BoxSubHeader>Community Partners</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
-                      expanded={isHovered}
+                      expanded={isHovered[id]}
                       width='280px'
                     >
                       <ProgressNumber>{item.partners}</ProgressNumber>
@@ -156,7 +156,7 @@ const PreviousStats = () => {
                     <BoxSubHeader>Reach in Colleges</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
-                      expanded={isHovered}
+                      expanded={isHovered[id]}
                       width='250px'
                     >
                       <ProgressNumber>{item.reach}</ProgressNumber>

@@ -139,17 +139,15 @@ export const SectionContainer = styled.div`
 `;
 
 export const MobileBox1 = styled.div`
-  display: inline-flex;
   height: 366px;
-  padding: 12px 0px;
+  width: auto;
   flex-direction: column;
-  align-items: flex-start;
   gap: 10px;
-  flex-shrink: 0;
   border-radius: 12px;
   background: linear-gradient(179deg, #464646 0.74%, rgba(58, 58, 58, 0.15) 185.9%);
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow: visible;
 `;
 
 export const MobileBoxHeader = styled(Heading3)`
@@ -165,6 +163,7 @@ export const MobileContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 18px;
+  margin: 0 auto;
 `;
 
 export const MobileBoxContent = styled.div`
@@ -202,6 +201,10 @@ export const MobileSubBar = styled.div`
   border-radius: 14.4px;
   width: ${(props) => props.width || '228px'};
   background: ${(props) => props.background || '#02daff'};
+
+  @media (max-width: 319px) {
+    width: ${(props) => props.width1 || '228px'};
+  }
 `;
 
 export const StatNumber = styled(Caption)`
