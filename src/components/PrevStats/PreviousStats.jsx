@@ -31,6 +31,7 @@ const PreviousStats = () => {
   const [windowWidth, setWindowWidth] = useState(() =>
     typeof window !== 'undefined' ? window.innerWidth : 0,
   );
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,6 +54,14 @@ const PreviousStats = () => {
   const imageUrl =
     'https://res.cloudinary.com/dzxgf75bh/image/upload/v1701689072/' +
     'xori1-removebg-preview_1_tbbsw8.png';
+
+  const handleHover = () => {
+    setIsHovered(true);
+  };
+
+  const handleLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
     <SectionContainer>
@@ -94,9 +103,14 @@ const PreviousStats = () => {
       ) : (
         <SectionContent>
           <SectionImage src={imageUrl} alt='xori' />
-          <SectionCards>
+          <SectionCards expanded={isHovered} value='600px'>
             {prevstat.data.map((item, id) => (
-              <SectionBox key={item.id} width='310px'>
+              <SectionBox
+                key={item.id}
+                onMouseEnter={handleHover}
+                onMouseLeave={handleLeave}
+                expanded={isHovered}
+              >
                 <BoxText>
                   <BoxHeader color={prevstat.headerColors[id]}>
                     {`HACKNITR ${item.version}`}
@@ -105,30 +119,46 @@ const PreviousStats = () => {
                 </BoxText>
 
                 <BoxContent>
-                  <BoxSubContent>
+                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     <BoxSubHeader>Registration</BoxSubHeader>
-                    <BoxSubDetail background={prevstat.headerColors[id]}>
+                    <BoxSubDetail
+                      background={prevstat.headerColors[id]}
+                      expanded={isHovered}
+                      width='310px'
+                    >
                       <ProgressNumber>{item.registration}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent>
+                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     <BoxSubHeader>Projects</BoxSubHeader>
-                    <BoxSubDetail background={prevstat.headerColors[id]}>
+                    <BoxSubDetail
+                      background={prevstat.headerColors[id]}
+                      expanded={isHovered}
+                      width='290px'
+                    >
                       <ProgressNumber>{item.projects}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent>
+                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     <BoxSubHeader>Community Partners</BoxSubHeader>
-                    <BoxSubDetail background={prevstat.headerColors[id]}>
+                    <BoxSubDetail
+                      background={prevstat.headerColors[id]}
+                      expanded={isHovered}
+                      width='280px'
+                    >
                       <ProgressNumber>{item.partners}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent>
+                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                     <BoxSubHeader>Reach in Colleges</BoxSubHeader>
-                    <BoxSubDetail background={prevstat.headerColors[id]}>
+                    <BoxSubDetail
+                      background={prevstat.headerColors[id]}
+                      expanded={isHovered}
+                      width='250px'
+                    >
                       <ProgressNumber>{item.reach}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>

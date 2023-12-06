@@ -13,11 +13,10 @@ export const Heading = styled(Heading1)`
 
 export const SectionContent = styled.div`
   display: flex;
-  padding-right: 47vw;
-
-  @media (max-width: 1270px) {
-    padding-right: 60vw;
-  }
+  flex-direction: row;
+  padding-right: 34vw;
+  align-items: center;
+  justify-content: space-around;
 
   @media (max-width: 1023px) {
     opacity: 0;
@@ -25,10 +24,11 @@ export const SectionContent = styled.div`
 `;
 
 export const SectionImage = styled.img`
-  max-width: 1063 px;
-  height: 550px;
+  width: 100%;
+  max-width: 998px;
+  max-height: 562px;
 
-  padding-left: 3rem;
+  padding-left: 18rem;
 
   @media (max-width: 1007px) {
     visibility: hidden;
@@ -39,7 +39,7 @@ export const SectionCards = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Add this line to center vertically */
+  justify-content: center;
   gap: 33px;
 `;
 
@@ -53,6 +53,8 @@ export const BoxSubDetail = styled(Body1)`
   transition: width 0.5s ease-in-out;
 
   background: ${(props) => props.background || '#02daff'};
+
+  width: ${(props) => (props.expanded ? props.width : '23px')};
 `;
 
 export const ProgressNumber = styled.div`
@@ -65,7 +67,7 @@ export const ProgressNumber = styled.div`
   transition: opacity 0.3s ease-in-out;
   margin-right: 10px;
   position: relative;
-  top: -5%;
+  bottom: 20%;
 `;
 
 export const BoxContent = styled.div`
@@ -88,17 +90,18 @@ export const SectionBox = styled.div`
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
   transition: padding-right 0.6s;
 
-  &:hover {
-    padding-right: 600px;
-
-    ${BoxSubDetail} {
-      width: ${(props) => props.width || '228px'};
-    }
+  ${(props) =>
+    props.expanded
+      ? `
+    padding-right:600px;
 
     ${ProgressNumber} {
       opacity: 1;
     }
-  }
+
+
+    `
+      : ''}
 `;
 
 export const BoxHeader = styled(Heading3)`
