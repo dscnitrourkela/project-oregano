@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 // Libraries
 import Helmet from 'react-helmet';
+
 import HeroSection from '../components/HeroSection/HeroSection';
 import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
@@ -57,6 +58,7 @@ const Homepage = ({ location }) => {
           <Prizes />
           <TimelineSection />
           <SponsorSection />
+
           <FAQ />
         </Container>
         <Footer />
