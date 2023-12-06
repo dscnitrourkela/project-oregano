@@ -56,7 +56,6 @@ const Homepage = ({ location }) => {
           <Prizes />
           <TimelineSection />
           <SponsorSection />
-
           <FAQ />
         </Container>
         <Footer />

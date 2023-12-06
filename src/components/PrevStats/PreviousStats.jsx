@@ -28,19 +28,25 @@ import {
 import prevstat from '../../../config/content/prevstat';
 
 const PreviousStats = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(() =>
+    typeof window !== 'undefined' ? window.innerWidth : 0,
+  );
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+      setWindowWidth(typeof window !== 'undefined' ? window.innerWidth : 0);
     };
 
-    window.addEventListener('resize', handleResize);
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+
+    return undefined;
+  }, []); // Empty dependency array ensures that the effect runs once when the component mounts
 
   const isMobile = windowWidth < 1023;
 
@@ -55,7 +61,7 @@ const PreviousStats = () => {
       {isMobile ? (
         <MobileContainer>
           {prevstat.data.map((item, id) => (
-            <div key={prevstat.data.id}>
+            <div key={item.id}>
               <MobileBox1>
                 <MobileHead>
                   <MobileBoxHeader
@@ -90,7 +96,7 @@ const PreviousStats = () => {
           <SectionImage src={imageUrl} alt='xori' />
           <SectionCards>
             {prevstat.data.map((item, id) => (
-              <SectionBox key={prevstat.data.id} width='310px'>
+              <SectionBox key={item.id} width='310px'>
                 <BoxText>
                   <BoxHeader color={prevstat.headerColors[id]}>
                     {`HACKNITR ${item.version}`}
