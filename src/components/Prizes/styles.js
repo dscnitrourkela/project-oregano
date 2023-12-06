@@ -5,22 +5,17 @@ import { Body1, Heading1 } from '../shared';
 
 const smallScreen = '768px';
 
-export const SectionContainer = styled.section`
+export const PrizesContainerWrapper = styled.div`
   ${tw`
     w-full
     h-auto
     flex
     flex-col
-    items-start
+    items-center
   `}
   height: fit-content;
-  margin: 2% auto 3%;
-`;
-
-export const PrizesContainerWrapper = styled.div`
-  margin-top: 0px;
+  margin: auto;
   padding-left: 0;
-  width: 100%;
   @media (max-width: ${smallScreen}) {
     padding: 0 20px;
   }

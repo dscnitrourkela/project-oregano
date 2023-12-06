@@ -14,7 +14,7 @@ const HeroBtn = () => {
       <div>
         <button onClick={handleButtonClick} type='button'>
           <a href='https://dscnitrourkela.netlify.app/' target='__blank' rel='noreferrer'>
-            REGISTER
+            PRE-REGISTER
           </a>
         </button>
       </div>

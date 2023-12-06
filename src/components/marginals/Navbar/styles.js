@@ -14,13 +14,15 @@ export const NavContainer = styled.div`
   height: 90px;
   z-index: 100;
   background-color: ${(props) => (props.scrolled ? 'rgba(235,235,235,0.1)' : 'transparent')};
+  backdrop-filter: ${(props) => (props.scrolled ? 'blur(10px)' : 'none')};
   transition: background-color 0.3s ease;
   .open-nav {
     top: 0px;
     padding-top: 0px;
-    background: #0e0812;
     z-index: 1;
+    background: transparent;
     @media (max-width: 1023px) {
+      background: #0e0812;
       padding-top: 150px;
       height: 100vh;
       position: fixed;
@@ -42,15 +44,15 @@ export const NavContainer = styled.div`
 `;
 export const NavLink = styled.a`
   color: white;
-  transition-duration: 500ms;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  transition: 0.5s;
+  transition: 0.25s;
   display: flex;
   align-items: centre;
   gap: 41px;
   position: relative;
+  scroll-behavior: smooth;
   &:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -91,7 +93,7 @@ export const StyledHamburger = styled.button`
     position: absolute;
     display: block;
     left: 0;
-    transition: all 0.7s;
+    transition: all 0.25s;
   }
   &:active,
   &:focus {
@@ -143,7 +145,7 @@ export const NavLinks = styled.ul`
     lg:w-auto
     lg:pl-0
     transition-all
-    duration-[450ms]
+    duration-[250ms]
     ease-in
 `}
 `;
@@ -159,7 +161,7 @@ export const NavLinksContainer = styled.li`
     lg:ml-[8px]
     ml-0
     py-[16px]
-    px-[32px]
+    px-[24px]
     mb-[18px]
     lg:mb-[0]
     flex
