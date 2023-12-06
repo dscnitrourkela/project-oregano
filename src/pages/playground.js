@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-// Libraries
 import Helmet from 'react-helmet';
-
 import HeroSection from '../components/HeroSection/HeroSection';
 import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
@@ -14,7 +11,6 @@ import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
 import PreviousStats from '../components/PrevStats/PreviousStats';
 import ParticleBackground from '../components/shared/Particle';
-
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
