@@ -3,7 +3,7 @@ export default {
   title: 'Navigation',
   logo: {
     src: '/apple-touch-icon.png',
-    alt: 'HackNITR 4.0',
+    alt: 'HackNITR 5.0',
   },
   navItems: [
     {
