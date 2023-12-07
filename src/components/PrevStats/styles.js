@@ -43,6 +43,30 @@ export const SectionCards = styled.div`
   gap: 33px;
 `;
 
+export const SectionBox = styled.div`
+  display: flex;
+  width: 440px;
+  height: 205px;
+  padding: 12px 24px 12px 6px;
+  gap: 16px;
+  border-radius: 12px;
+  background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
+  transition: padding-right 0.9s;
+
+  ${(props) =>
+    props.expanded
+      ? `
+    padding-right:600px;
+
+
+    ${ProgressNumber} {
+      opacity: 1;
+    }
+
+    `
+      : ''}
+`;
+
 export const BoxSubDetail = styled(Body1)`
   width: 23px;
   height: 19px;
@@ -50,7 +74,7 @@ export const BoxSubDetail = styled(Body1)`
   border-radius: 20px;
 
   margin-bottom: 2px;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.9s ease-in-out;
 
   background: ${(props) => props.background || '#02daff'};
 
@@ -77,32 +101,6 @@ export const BoxContent = styled.div`
 `;
 
 export const BoxSubContent = styled(Caption)``;
-
-export const SectionBox = styled.div`
-  display: flex;
-  position: relative;
-  width: 440px;
-  height: 205px;
-  padding: 12px 24px 12px 6px;
-  align-items: flex-start;
-  gap: 16px;
-  border-radius: 12px;
-  background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
-  transition: padding-right 0.6s;
-
-  ${(props) =>
-    props.expanded
-      ? `
-    padding-right:600px;
-
-    ${ProgressNumber} {
-      opacity: 1;
-    }
-
-
-    `
-      : ''}
-`;
 
 export const BoxHeader = styled(Heading3)`
   font-weight: bold;
@@ -133,7 +131,7 @@ export const BoxText = styled.div`
 
 export const SectionContainer = styled.div`
   margin: 10px auto;
-  max-width: 1440px;
+  max-width: 1540px;
   width: 100%;
   height: auto;
 `;

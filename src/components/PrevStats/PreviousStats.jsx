@@ -92,7 +92,7 @@ const PreviousStats = () => {
                     <StatNumber>{item.partners}</StatNumber>
                   </MobileSubBar>
                   <MobileSubContent>Reach in Colleges</MobileSubContent>
-                  <MobileSubBar background={prevstat.headerColors[id]} width='210px' width1='90px'>
+                  <MobileSubBar background={prevstat.headerColors[id]} width='210px' width1='110px'>
                     <StatNumber>{item.reach}</StatNumber>
                   </MobileSubBar>
                 </MobileBoxContent>
@@ -119,7 +119,11 @@ const PreviousStats = () => {
                 </BoxText>
 
                 <BoxContent>
-                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                  <BoxSubContent
+                    onMouseEnter={() => handleHover(id)}
+                    onMouseLeave={handleLeave}
+                    expanded={isHovered[id]}
+                  >
                     <BoxSubHeader>Registration</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
@@ -130,7 +134,7 @@ const PreviousStats = () => {
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                  <BoxSubContent onMouseEnter={() => handleHover(id)}>
                     <BoxSubHeader>Projects</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
@@ -141,7 +145,7 @@ const PreviousStats = () => {
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                  <BoxSubContent onMouseLeave={handleLeave}>
                     <BoxSubHeader>Community Partners</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
@@ -152,7 +156,7 @@ const PreviousStats = () => {
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+                  <BoxSubContent expanded={isHovered[id]}>
                     <BoxSubHeader>Reach in Colleges</BoxSubHeader>
                     <BoxSubDetail
                       background={prevstat.headerColors[id]}
