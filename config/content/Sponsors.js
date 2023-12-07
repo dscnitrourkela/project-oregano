@@ -3,7 +3,7 @@ export default {
   id: 'sponsors',
   title: 'Our Awesome Sponsors',
   content:
-    'Our love for open source and drive to make an impact materialized as HackNITR 4.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
+    'Our love for open source and drive to make an impact materialized as HackNITR 5.0. Backed by likes of participating students, we grew steadily to organize hackathons and support social initiatives. Today,we bring you the opportunity to collaborate with us on our next endeavour.',
   alpha: [
     {
       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/sponsors/past_rv4xvj.png',
@@ -11,7 +11,7 @@ export default {
       size: '90%',
       link: 'https://devfolio.co/',
       width: '150px',
-      alt: 'Devfolio',
+      alt: 'DEVFOLIO LOGO',
     },
     {
       src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/MLH_xejp6v.png',
@@ -27,7 +27,7 @@ export default {
       size: '90%',
       link: 'https://polygon.technology/',
       width: '180px',
-      alt: 'Polygon',
+      alt: 'POLYGON LOGO',
     },
   ],
   beta: [
@@ -61,7 +61,7 @@ export default {
       size: '90%',
       link: 'https://replit.com',
       width: '170px',
-      alt: 'Replit',
+      alt: 'REPLIT LOGO',
     },
     {
       src: 'https://res.cloudinary.com/dujqfyato/image/upload/v1673028465/HackNITR/Shardeum_Logo_Light_thajcd_zsfpax.svg',
