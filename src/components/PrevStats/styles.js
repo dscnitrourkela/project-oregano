@@ -14,7 +14,7 @@ export const Heading = styled(Heading1)`
 export const SectionContent = styled.div`
   display: flex;
   flex-direction: row;
-  padding-right: 34vw;
+
   align-items: center;
   justify-content: space-around;
 
@@ -25,10 +25,8 @@ export const SectionContent = styled.div`
 
 export const SectionImage = styled.img`
   width: 100%;
-  max-width: 998px;
-  max-height: 562px;
-
-  padding-left: 18rem;
+  max-width: 500px;
+  max-height: 500px;
 
   @media (max-width: 1007px) {
     visibility: hidden;
@@ -51,12 +49,12 @@ export const SectionBox = styled.div`
   gap: 16px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
-  transition: padding-right 0.9s;
+  transition: width 0.8s ease-in-out;
 
   ${(props) =>
     props.expanded
       ? `
-    padding-right:600px;
+    width:600px;
 
 
     ${ProgressNumber} {

@@ -103,7 +103,7 @@ const PreviousStats = () => {
       ) : (
         <SectionContent>
           <SectionImage src={imageUrl} alt='xori' />
-          <SectionCards expanded={isHovered} value='600px'>
+          <SectionCards expanded={isHovered}>
             {prevstat.data.map((item, id) => (
               <SectionBox
                 key={item.id}
