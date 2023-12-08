@@ -12,11 +12,9 @@ export const Heading = styled(Heading1)`
 `;
 
 export const SectionContent = styled.div`
-  display: flex;
-  flex-direction: row;
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   align-items: center;
-  justify-content: space-around;
 
   @media (max-width: 1023px) {
     opacity: 0;
@@ -25,8 +23,9 @@ export const SectionContent = styled.div`
 
 export const SectionImage = styled.img`
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 500px;
+  position: absolute;
 
   @media (max-width: 1007px) {
     visibility: hidden;
@@ -49,7 +48,7 @@ export const SectionBox = styled.div`
   gap: 16px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
-  transition: width 0.8s ease-in-out;
+  transition: width 1s ease;
 
   ${(props) =>
     props.expanded
@@ -72,7 +71,7 @@ export const BoxSubDetail = styled(Body1)`
   border-radius: 20px;
 
   margin-bottom: 2px;
-  transition: width 0.9s ease-in-out;
+  transition: width 1s ease;
 
   background: ${(props) => props.background || '#02daff'};
 
