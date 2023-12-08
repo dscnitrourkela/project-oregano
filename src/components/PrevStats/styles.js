@@ -26,10 +26,6 @@ export const SectionImage = styled.img`
   max-width: 600px;
   max-height: 500px;
   position: absolute;
-
-  @media (max-width: 1007px) {
-    visibility: hidden;
-  }
 `;
 
 export const SectionCards = styled.div`
@@ -38,6 +34,8 @@ export const SectionCards = styled.div`
   align-items: center;
   justify-content: center;
   gap: 33px;
+  position: relative;
+  left: 96px;
 `;
 
 export const SectionBox = styled.div`
