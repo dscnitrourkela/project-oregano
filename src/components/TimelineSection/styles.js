@@ -4,19 +4,24 @@ import { Body1, Heading1, Heading4 } from '../shared';
 export const TimelineHead = styled(Heading1)`
   font-weight: 700;
   margin: 0 0 24px 0;
-  @media (max-width: 1300px) {
+  @media (max-width: 640px) {
     font-size: 32px;
     line-height: 96px;
     margin: 32px 0px;
   }
 `;
 export const TimelineWrapper = styled.div`
-  margin: 4% auto -6% auto;
+  width: 1280px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 15px;
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    width: 768px;
+    padding: 0 9px;
+  }
+  @media (max-width: 640px) {
     width: 390px;
     padding: 0 8px;
   }
@@ -31,6 +36,10 @@ export const Container = styled.div`
   grid-template-rows: 248px 135px;
   margin: auto;
   color: #fff;
+  @media (max-width: 1280px) {
+    grid-template-columns: 213px 121px 80px 146px 190px;
+    grid-template-rows: 142px 55px;
+  }
 `;
 export const MobileContainer = styled.div`
   display: grid;
@@ -60,7 +69,21 @@ export const BoxWrapper = styled.div`
     color: var(--neutral-5, #a1a1a1);
     margin: 8px 0 0 0;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    padding: 20px 18px;
+    border-radius: 17px;
+    h3 {
+      font-size: 17px;
+      line-height: 22px;
+    }
+    p {
+      margin: 0;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+
+  @media (max-width: 640px) {
     padding: 13px 18px;
     gap: 8px;
     h3 {
@@ -69,7 +92,6 @@ export const BoxWrapper = styled.div`
       line-height: 20px;
     }
     p {
-      margin: 0;
       font-size: 10px;
       font-weight: 300;
       line-height: 18px;
@@ -77,16 +99,12 @@ export const BoxWrapper = styled.div`
   }
   @media (max-width: 390px) {
     padding: 10px 14px;
-    gap: 8px;
     h3 {
       font-size: 10px;
-      font-weight: 500;
       line-height: 16px;
     }
     p {
-      margin: 0;
       font-size: 7px;
-      font-weight: 300;
       line-height: 14px;
     }
   }
@@ -95,7 +113,12 @@ export const LineWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    svg {
+      width: 121px;
+    }
+  }
+  @media (max-width: 640px) {
     svg {
       width: 86px;
       height: 1px;
@@ -110,7 +133,7 @@ export const LineWrapper = styled.div`
   }
 `;
 export const RightLineWrapper = styled(LineWrapper)`
-  @media (max-width: 1300px) {
+  @media (max-width: 640px) {
     svg {
       transform: rotate(44deg) translate(11px, 39px);
     }
@@ -125,13 +148,23 @@ export const VerticalBox = styled.div`
     background: #fed954;
     transform: translateY(-58px);
   }
+  @media (max-width: 1280px) {
+    div {
+      transform: translateY(-32px);
+      height: 119px;
+    }
+  }
 `;
 export const Date = styled(Heading4)`
   font-size: 36px;
   font-weight: 600;
   line-height: 42px;
   margin: 0;
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  @media (max-width: 640px) {
     font-size: 18px;
     line-height: 22px;
   }
@@ -141,7 +174,11 @@ export const Date = styled(Heading4)`
   }
 `;
 export const Month = styled(Body1)`
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  @media (max-width: 640px) {
     font-size: 12px;
     line-height: 18px;
   }
@@ -163,7 +200,15 @@ export const WheelWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    width: 80px;
+    height: 80px;
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  @media (max-width: 640px) {
     width: 91px;
     height: 91px;
     svg {
@@ -174,8 +219,6 @@ export const WheelWrapper = styled.div`
       display: flex;
       width: 43px;
       height: 40px;
-      flex-direction: column;
-      align-items: center;
     }
   }
   @media (max-width: 390px) {
@@ -186,22 +229,18 @@ export const WheelWrapper = styled.div`
       height: 70px;
     }
     div {
-      display: flex;
       width: 35px;
       height: 33px;
-      flex-direction: column;
-      align-items: center;
     }
   }
 `;
-
 export const ArrowWrapper = styled.div`
   position: relative;
   place-self: center;
   #mobile {
     display: none;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 640px) {
     #desktop {
       display: none;
     }
@@ -226,13 +265,18 @@ export const EllipseContent = styled(Heading4)`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 1300px) {
-    font-size: 14px;
-    font-weight: 300;
+  @media (max-width: 1280px) {
+    font-size: 16px;
+    font-weight: 500;
     line-height: 20px;
-    width: 113px;
+    width: 130px;
     height: 56px;
     margin: 0 0 0 11px;
+  }
+  @media (max-width: 640px) {
+    font-size: 14px;
+    font-weight: 300;
+    width: 113px;
   }
   @media (max-width: 390px) {
     width: 87px;
@@ -242,7 +286,13 @@ export const EllipseContent = styled(Heading4)`
 export const EllipseWrapper = styled.div`
   place-self: center;
   position: relative;
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    svg {
+      width: 190px;
+      height: 170px;
+    }
+  }
+  @media (max-width: 640px) {
     svg {
       width: 138px;
       height: 123px;
@@ -274,17 +324,17 @@ export const CircledLineWrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  @media (min-width: 1300px) {
+  @media (min-width: 640px) {
     display: none;
   }
 `;
 export const DesktopView = styled.div`
-  @media (max-width: 1300px) {
+  @media (max-width: 640px) {
     display: none;
   }
 `;
 export const MobileView = styled.div`
-  @media (min-width: 1300px) {
+  @media (min-width: 640px) {
     display: none;
   }
 `;
@@ -294,8 +344,8 @@ export const RightContainer = styled.div`
   grid-template-rows: 141px 103px;
   margin: auto;
   color: #fff;
-  @media (max-width: 768px) {
-    grid-template-columns: 313px 236px 134px 201px 352px;
+  @media (max-width: 1280px) {
+    grid-template-columns: 98px 236px 80px 121px 213px;
   }
 `;
 export const VerticalWrapper = styled.div`
@@ -308,7 +358,12 @@ export const VerticalWrapper = styled.div`
     background: #fed954;
     transform: translateY(27px);
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
+    div {
+      transform: translateY(0px);
+    }
+  }
+  @media (max-width: 640px) {
     div {
       height: 114px;
       transform: translateY(0px);
