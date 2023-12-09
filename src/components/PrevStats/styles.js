@@ -23,8 +23,10 @@ export const SectionContent = styled.div`
 
 export const SectionImage = styled.img`
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   max-height: 500px;
+  position: relative;
+  left: 75px;
 `;
 
 export const SectionCards = styled.div`
@@ -34,7 +36,7 @@ export const SectionCards = styled.div`
   justify-content: flex-start;
   gap: 33px;
   position: relative;
-  right: 120px;
+  right: 103px;
 `;
 
 export const SectionBox = styled.div`
