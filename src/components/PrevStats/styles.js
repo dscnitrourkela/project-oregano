@@ -8,6 +8,12 @@ export const Heading = styled(Heading1)`
   justify-content: center;
   padding-bottom: 30px;
   margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    font-size: 32px;
+    font-style: normal;
+    line-height: 96px;
+  }
 `;
 
 export const SectionContent = styled.div`
@@ -52,12 +58,9 @@ export const SectionBox = styled.div`
     props.expanded
       ? `
     width:600px;
-
-
-    ${ProgressNumber} {
+   ${ProgressNumber} {
       opacity: 1;
     }
-
     `
       : ''}
 `;
@@ -67,12 +70,9 @@ export const BoxSubDetail = styled(Body1)`
   height: 19px;
   flex-shrink: 0;
   border-radius: 20px;
-
   margin-bottom: 2px;
   transition: width 1s ease;
-
   background: ${(props) => props.background || '#02daff'};
-
   width: ${(props) => (props.expanded ? props.width : '23px')};
 `;
 
@@ -95,7 +95,9 @@ export const BoxContent = styled.div`
   padding: 10px;
 `;
 
-export const BoxSubContent = styled(Caption)``;
+export const BoxSubContent = styled(Caption)`
+  line-height: 16px;
+`;
 
 export const BoxHeader = styled(Heading3)`
   font-weight: bold;
@@ -115,7 +117,6 @@ export const BoxSubHeader = styled(Caption)`
 
 export const BoxText = styled.div`
   display: flex;
-
   padding: 32px 16px;
   flex-direction: column;
   align-items: center;
@@ -147,7 +148,6 @@ export const MobileBox1 = styled.div`
 export const MobileBoxHeader = styled(Heading3)`
   font-weight: bold;
   color: var(--primary-blue-3, #02daff);
-
   color: ${(props) => props.color || '#02daff'};
 `;
 

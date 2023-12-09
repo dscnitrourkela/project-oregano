@@ -31,7 +31,13 @@ const PreviousStats = () => {
   const [windowWidth, setWindowWidth] = useState(() =>
     typeof window !== 'undefined' ? window.innerWidth : 0,
   );
+
   const [isHovered, setIsHovered] = useState(Array(prevstat.data.length).fill(false));
+  const isMobile = windowWidth < 1023;
+
+  const imageUrl =
+    'https://res.cloudinary.com/dzxgf75bh/image/upload/v1701689072/' +
+    'xori1-removebg-preview_1_tbbsw8.png';
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,13 +53,7 @@ const PreviousStats = () => {
     }
 
     return undefined;
-  }, []); // Empty dependency array ensures that the effect runs once when the component mounts
-
-  const isMobile = windowWidth < 1023;
-
-  const imageUrl =
-    'https://res.cloudinary.com/dzxgf75bh/image/upload/v1701689072/' +
-    'xori1-removebg-preview_1_tbbsw8.png';
+  }, []);
 
   const handleHover = (index) => {
     setIsHovered((prev) => prev.map((_, i) => i === index));
@@ -117,7 +117,6 @@ const PreviousStats = () => {
                   </BoxHeader>
                   <BoxDetail>Details</BoxDetail>
                 </BoxText>
-
                 <BoxContent expanded={isHovered[id]}>
                   <BoxSubContent
                     onMouseEnter={() => handleHover(id)}
@@ -133,7 +132,6 @@ const PreviousStats = () => {
                       <ProgressNumber>{item.registration}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
-
                   <BoxSubContent onMouseEnter={() => handleHover(id)}>
                     <BoxSubHeader>Projects</BoxSubHeader>
                     <BoxSubDetail
