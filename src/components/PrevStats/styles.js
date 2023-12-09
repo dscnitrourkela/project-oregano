@@ -5,7 +5,6 @@ import { Caption, Heading4, Body1, Heading1, Heading3 } from '../shared';
 export const Heading = styled(Heading1)`
   font-weight: 700;
   display: flex;
-  text-align: center;
   justify-content: center;
   padding-bottom: 30px;
   margin: 0 auto;
