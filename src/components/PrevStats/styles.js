@@ -3,12 +3,19 @@ import styled from 'styled-components';
 import { Caption, Heading4, Body1, Heading1, Heading3 } from '../shared';
 
 export const Heading = styled(Heading1)`
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   text-align: center;
   justify-content: center;
   padding-bottom: 30px;
   margin: 0 auto;
+
+  @media (max-width: 761px) {
+    color: var(--neutral-1, #fff);
+    font-size: 32px;
+    font-style: normal;
+    line-height: 96px;
+  }
 `;
 
 export const SectionContent = styled.div`
@@ -133,7 +140,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const MobileBox1 = styled.div`
-  height: 360px;
+  height: 390px;
   width: auto;
   flex-direction: column;
   gap: 20px;
@@ -145,12 +152,11 @@ export const MobileBox1 = styled.div`
   overflow: visible;
 `;
 
-export const MobileBoxHeader = styled.div`
+export const MobileBoxHeader = styled(Heading3)`
   font-weight: bold;
   color: var(--primary-blue-3, #02daff);
 
   color: ${(props) => props.color || '#02daff'};
-  font-size: 24px;
 `;
 
 export const MobileContainer = styled.div`
@@ -165,17 +171,16 @@ export const MobileContainer = styled.div`
 
 export const MobileBoxContent = styled.div`
   display: flex;
-  height: 183px;
-  padding: 0px 8px;
+  height: 193px;
+  padding: 0px 8px 10px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 13px;
   flex-shrink: 0;
 `;
 
-export const MobileDetail = styled.div`
+export const MobileDetail = styled(Heading4)`
   color: #fff;
-  font-size: 14px;
 `;
 
 export const MobileHead = styled.div`
