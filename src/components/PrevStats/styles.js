@@ -173,6 +173,7 @@ export const MobileBoxContent = styled.div`
 
 export const MobileDetail = styled(Heading4)`
   color: #fff;
+  line-height: normal;
 `;
 
 export const MobileHead = styled.div`
