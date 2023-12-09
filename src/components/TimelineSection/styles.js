@@ -21,6 +21,10 @@ export const TimelineWrapper = styled.div`
     width: 768px;
     padding: 0 9px;
   }
+  @media (max-width: 832px) {
+    width: 600px;
+    padding: 0;
+  }
   @media (max-width: 640px) {
     width: 390px;
     padding: 0 8px;
@@ -39,6 +43,10 @@ export const Container = styled.div`
   @media (max-width: 1280px) {
     grid-template-columns: 213px 121px 80px 146px 190px;
     grid-template-rows: 142px 55px;
+  }
+  @media (max-width: 832px) {
+    grid-template-columns: 170px 97px 64px 117px 152px;
+    grid-template-rows: 129px 55px;
   }
 `;
 export const MobileContainer = styled.div`
@@ -82,7 +90,19 @@ export const BoxWrapper = styled.div`
       line-height: 15px;
     }
   }
-
+  @media (max-width: 832px) {
+    padding: 18px 14px;
+    border-radius: 17px;
+    h3 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    p {
+      margin: 0;
+      font-size: 9px;
+      line-height: 15px;
+    }
+  }
   @media (max-width: 640px) {
     padding: 13px 18px;
     gap: 8px;
@@ -164,6 +184,10 @@ export const Date = styled(Heading4)`
     font-size: 20px;
     line-height: 23px;
   }
+  @media (max-width: 832px) {
+    font-size: 17px;
+    line-height: 18px;
+  }
   @media (max-width: 640px) {
     font-size: 18px;
     line-height: 22px;
@@ -177,6 +201,10 @@ export const Month = styled(Body1)`
   @media (max-width: 1280px) {
     font-size: 10px;
     line-height: 10px;
+  }
+  @media (max-width: 832px) {
+    font-size: 8px;
+    line-height: 8px;
   }
   @media (max-width: 640px) {
     font-size: 12px;
@@ -206,6 +234,14 @@ export const WheelWrapper = styled.div`
     svg {
       width: 80px;
       height: 80px;
+    }
+  }
+  @media (max-width: 832px) {
+    width: 64px;
+    height: 64px;
+    svg {
+      width: 64px;
+      height: 64px;
     }
   }
   @media (max-width: 640px) {
@@ -292,6 +328,12 @@ export const EllipseWrapper = styled.div`
       height: 170px;
     }
   }
+  @media (max-width: 832px) {
+    svg {
+      width: 150px;
+      height: 134px;
+    }
+  }
   @media (max-width: 640px) {
     svg {
       width: 138px;
@@ -346,6 +388,10 @@ export const RightContainer = styled.div`
   color: #fff;
   @media (max-width: 1280px) {
     grid-template-columns: 98px 236px 80px 121px 213px;
+  }
+  @media (max-width: 832px) {
+    grid-template-columns: 98px 168px 64px 97px 170px;
+    grid-template-rows: 128px 103px;
   }
 `;
 export const VerticalWrapper = styled.div`
