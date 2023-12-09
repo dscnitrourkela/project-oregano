@@ -111,14 +111,14 @@ const PreviousStats = () => {
                 onMouseLeave={handleLeave}
                 expanded={isHovered[id]}
               >
-                <BoxText>
+                <BoxText expanded={isHovered[id]}>
                   <BoxHeader color={prevstat.headerColors[id]}>
                     {`HACKNITR ${item.version}`}
                   </BoxHeader>
                   <BoxDetail>Details</BoxDetail>
                 </BoxText>
 
-                <BoxContent>
+                <BoxContent expanded={isHovered[id]}>
                   <BoxSubContent
                     onMouseEnter={() => handleHover(id)}
                     onMouseLeave={handleLeave}

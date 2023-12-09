@@ -25,38 +25,46 @@ export const SectionImage = styled.img`
   width: 100%;
   max-width: 600px;
   max-height: 500px;
+  position: absolute;
 `;
 
 export const SectionCards = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-card;
   justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   gap: 33px;
   position: relative;
-  right: 120px;
+  left: 96px;
 `;
 
 export const SectionBox = styled.div`
-  display: flex;
-  width: 440px;
-  height: 205px;
-  padding: 12px 24px 12px 6px;
+  display: grid;
+  grid-template-columns: 200px 250px;
+  grid-template-rows: 205px;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
+  padding: 12px 24px 12px 6px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
-  transition: width 1s ease;
+  transition: grid-template-columns 1s ease;
+
+  position: relative;
+
+  &:hover {
+    justify-content: flex-start;
+  }
 
   ${(props) =>
     props.expanded
       ? `
-    width:600px;
-
+      grid-template-columns: 200px 340px;
 
     ${ProgressNumber} {
-      opacity: 1;
-    }
-
+        opacity: 1;
+      }
     `
       : ''}
 `;
