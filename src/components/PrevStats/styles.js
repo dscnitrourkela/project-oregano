@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Caption, Heading4, Body1, Heading1, Heading3, Body2 } from '../shared';
+import { Caption, Heading4, Body1, Heading1, Heading3 } from '../shared';
 
 export const Heading = styled(Heading1)`
   font-weight: bold;
@@ -133,22 +133,24 @@ export const SectionContainer = styled.div`
 `;
 
 export const MobileBox1 = styled.div`
-  height: 366px;
+  height: 360px;
   width: auto;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   border-radius: 12px;
   background: linear-gradient(179deg, #464646 0.74%, rgba(58, 58, 58, 0.15) 185.9%);
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 20px;
   overflow: visible;
 `;
 
-export const MobileBoxHeader = styled(Heading3)`
+export const MobileBoxHeader = styled.div`
   font-weight: bold;
   color: var(--primary-blue-3, #02daff);
 
   color: ${(props) => props.color || '#02daff'};
+  font-size: 24px;
 `;
 
 export const MobileContainer = styled.div`
@@ -156,8 +158,9 @@ export const MobileContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 20px;
   margin: 0 auto;
+  font-family: Prompt;
 `;
 
 export const MobileBoxContent = styled.div`
@@ -166,12 +169,13 @@ export const MobileBoxContent = styled.div`
   padding: 0px 8px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 15px;
   flex-shrink: 0;
 `;
 
-export const MobileDetail = styled(Body2)`
+export const MobileDetail = styled.div`
   color: #fff;
+  font-size: 14px;
 `;
 
 export const MobileHead = styled.div`
@@ -179,17 +183,19 @@ export const MobileHead = styled.div`
   padding: 12px 16px;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
   align-self: stretch;
   border-radius: 8px;
 `;
 
-export const MobileSubContent = styled(Caption)`
+export const MobileSubContent = styled.div`
   color: #c7c7c7;
+  font-size: 14px;
 `;
 
 export const MobileSubBar = styled.div`
   width: 228px;
+  font-size: 14px;
   height: 15.95px;
   flex-shrink: 0;
   border-radius: 14.4px;
@@ -201,9 +207,11 @@ export const MobileSubBar = styled.div`
   }
 `;
 
-export const StatNumber = styled(Caption)`
+export const StatNumber = styled.div`
   display: flex;
   justify-content: flex-end;
   padding-right: 8px;
   color: #fff;
+  font-size: 14px;
+  padding-top: 2px;
 `;
