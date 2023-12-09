@@ -9,13 +9,6 @@ export const Heading = styled(Heading1)`
   justify-content: center;
   padding-bottom: 30px;
   margin: 0 auto;
-
-  @media (max-width: 761px) {
-    color: var(--neutral-1, #fff);
-    font-size: 32px;
-    font-style: normal;
-    line-height: 96px;
-  }
 `;
 
 export const SectionContent = styled.div`
