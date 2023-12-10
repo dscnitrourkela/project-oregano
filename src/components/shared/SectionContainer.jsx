@@ -6,8 +6,6 @@ export const Container = styled.section`
   ${tw`
     w-full
     h-auto
-    overflow-x-hidden
-    overflow-y-hidden
     flex
     flex-col
     items-start

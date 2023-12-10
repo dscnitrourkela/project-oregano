@@ -38,11 +38,7 @@ export const AlphaSponsors = styled.div`
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
   &:hover {
-    background: linear-gradient(
-      180deg,
-      rgba(53, 225, 255, 0.4) -6.4%,
-      rgba(58, 58, 58, 0.15) 99.89%
-    );
+    background: linear-gradient(180deg, rgba(53, 225, 255, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
 
   @media (max-width: 761px) {
@@ -156,7 +152,7 @@ export const BetaSponsors = styled.div`
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
   &:hover {
-    background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) 0%, rgba(58, 58, 58, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
 
   @media (max-width: 761px) {
@@ -227,7 +223,7 @@ export const GammaSponsors = styled.div`
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
   &:hover {
-    background: linear-gradient(180deg, rgba(176, 103, 255, 0.6) 0%, rgba(58, 58, 58, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(176, 103, 255, 0.6) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
 
   @media (max-width: 761px) {
@@ -300,7 +296,7 @@ export const DeltaSponsors = styled.div`
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
   &:hover {
-    background: linear-gradient(180deg, rgba(255, 63, 192, 0.6) 0%, rgba(58, 58, 58, 0.15) 100%);
+    background: linear-gradient(180deg, rgba(255, 63, 192, 0.6) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
 
   @media (max-width: 761px) {

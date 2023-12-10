@@ -8,19 +8,20 @@ export const NavContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem 6rem;
+  margin: 1rem 5rem;
+  padding: 10px 1rem;
   border-radius: 12px;
-  height: 80px;
-  @media (max-width: 1024px) {
-    padding: '6px 24px 6px 24px';
-  }
+  height: 90px;
+  z-index: 100;
+  background-color: ${(props) => (props.scrolled ? 'rgba(235,235,235,0.1)' : 'transparent')};
+  transition: background-color 0.3s ease;
   .open-nav {
-    top: 80px;
+    top: 0px;
     padding-top: 0px;
     background: #0e0812;
-    z-index: 100;
+    z-index: 1;
     @media (max-width: 1023px) {
-      padding-top: 70px;
+      padding-top: 150px;
       height: 100vh;
       position: fixed;
     }
@@ -31,8 +32,12 @@ export const NavContainer = styled.div`
       height: 100vh;
     }
   }
+  @media (max-width: 992px) {
+    margin: 0.5rem 2.5rem;
+  }
   @media (max-width: 720px) {
-    margin: 0.5rem 3rem;
+    margin: 0.5rem 1rem;
+    background-color: transparent;
   }
 `;
 export const NavLink = styled.a`
@@ -68,18 +73,19 @@ export const NavLink = styled.a`
 export const StyledHamburger = styled.button`
   height: 2em;
   width: 2em;
-  background: inherit;
+  background: transparent;
   display: block;
   padding: 0.5em;
   border: 1px solid #fff;
   position: relative;
   border: none;
   border-radius: 50%;
+  z-index: 100;
   cursor: pointer;
   &::before,
   &::after {
     content: '';
-    background: #fff;
+    background: white;
     height: 2px;
     width: 100%;
     position: absolute;
@@ -170,17 +176,6 @@ const spin = keyframes`
   }
 `;
 
-// export const CustomCardContainer = styled.div`
-//   min-height: 100vh;
-//   background: #212534;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   padding-top: 2rem;
-//   padding-bottom: 2rem;
-//   box-sizing: border-box;
-// `;
-
 export const CustomLogo = styled.div`
   background: #191c29;
   width: 68px;
@@ -195,11 +190,12 @@ export const CustomLogo = styled.div`
   color: rgb(88, 199, 250, 0%);
   cursor: pointer;
   font-family: cursive;
+  z-index: 100;
 
   &::before {
     content: '';
-    width: 110%;
-    height: 110%;
+    width: 105%;
+    height: 105%;
     border-radius: 50%;
     background-image: linear-gradient(
       var(--rotate),
@@ -208,6 +204,7 @@ export const CustomLogo = styled.div`
       #14f195 75.52%,
       #fecf29
     );
+    filter: blur(3px);
     position: absolute;
     z-index: -1;
     top: -50;
