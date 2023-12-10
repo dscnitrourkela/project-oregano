@@ -65,7 +65,7 @@ const PreviousStats = () => {
 
   return (
     <SectionContainer>
-      <Heading>Previous Stats</Heading>
+      <Heading id='Stats'>Previous Stats</Heading>
 
       {isMobile ? (
         <MobileContainer>
