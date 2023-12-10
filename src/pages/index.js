@@ -58,8 +58,8 @@ const HomePage = ({ location }) => {
       <Layout location={location}>
         <HeroSection />
         <ContainerWrapper>
-          <AboutSection />
           <PreviousStats />
+          <AboutSection />
           {/* <Prizes />
         <TimelineSection /> */}
           <SponsorSection />
