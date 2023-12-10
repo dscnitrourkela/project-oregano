@@ -2,9 +2,9 @@
 
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/blog your pathPrefix should be "blog"
-  siteTitle: 'HackNITR 4.0', // Navigation and Site Title
+  siteTitle: 'HackNITR 5.0', // Navigation and Site Title
   siteTitleAlt: 'Official Website of HackNITR', // Alternative Site title for SEO
-  siteTitleShort: 'HackNITR 4.0', // short_name for manifest
+  siteTitleShort: 'HackNITR 5.0', // short_name for manifest
   siteUrl: 'https://hacknitr.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
@@ -37,7 +37,7 @@ module.exports = {
 
   // MLH Links
   codeOfConduct: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  privacyPolicy: 'https://mlh.io/privacy',
+  privacyPolicy: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
   termsConditions: 'https://github.com/MLH/mlh-policies/blob/main/contest-terms.md',
 
   // Community Partners Link

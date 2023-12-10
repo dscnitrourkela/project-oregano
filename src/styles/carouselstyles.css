@@ -11,6 +11,7 @@
   width: 580px;
   border-radius: 20px;
   aspect-ratio: 4/3;
+  object-fit: contain;
 }
 .slide {
   margin: 50px 0px;
