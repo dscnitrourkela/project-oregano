@@ -10,7 +10,7 @@ export default {
       alt: 'Hack',
     },
     nitr: {
-      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201459/HackNitr/Hero%20Section/kgjxmevu0bvj4yn7ojfy.gif',
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201272/HackNitr/Hero%20Section/anjnbvyn94vxvpf8acbc.png',
       alt: 'NITR',
     },
     five: {
