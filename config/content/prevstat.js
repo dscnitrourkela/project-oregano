@@ -1,7 +1,9 @@
 export default {
   imgs: {
     xori: {
-      src: 'https://res.cloudinary.com/dra96qhox/image/upload/v1698055003/NITREdited_gaxxwc.png',
+      src:
+        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/' +
+        '47b90edefbd3bad3e9b3a1f0064a67bb/detailed',
       alt: 'Xori',
     },
   },

@@ -37,7 +37,7 @@ module.exports = {
 
   // MLH Links
   codeOfConduct: 'https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
-  privacyPolicy: 'https://mlh.io/privacy',
+  privacyPolicy: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
   termsConditions: 'https://github.com/MLH/mlh-policies/blob/main/contest-terms.md',
 
   // Community Partners Link

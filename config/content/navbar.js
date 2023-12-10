@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 export default {
   logo: {
-    src: 'https://res.cloudinary.com/dnih7lhqk/image/upload/e_improve,w_300,h_600,c_thumb,g_auto/v1699452673/HackNITR_logo-removebg-preview_1-01_wvudod.png',
+    src: 'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/e9774e8cc2ad145b6a6199cd7eaee607/detailed',
     alt: 'logo',
   },
   Links: [
