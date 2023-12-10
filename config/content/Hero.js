@@ -6,15 +6,15 @@ export default {
 
   imgs: {
     hack: {
-      src: 'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/677549177fa541ed9062d9f9aa2c1d1d/detailed',
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201459/HackNitr/Hero%20Section/kgjxmevu0bvj4yn7ojfy.gif',
       alt: 'Hack',
     },
     nitr: {
-      src: 'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/50586cb20c0e444c351f8c6a717875d7/detailed',
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201459/HackNitr/Hero%20Section/kgjxmevu0bvj4yn7ojfy.gif',
       alt: 'NITR',
     },
     five: {
-      src: 'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/1e392a2226576bd705fb29997c82a5fa/detailed',
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201281/HackNitr/Hero%20Section/b1iuqxt1meh81y8bxwbd.png',
       alt: 'FIVE',
     },
   },

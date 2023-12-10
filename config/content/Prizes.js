@@ -7,8 +7,8 @@ export default {
       swags: '40k worth of swags',
       merchandise: 'official merchandise',
       src:
-        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails' +
-        '/37d73028b38d78550ba6a2f4546891bf/detailed',
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202197/HackNitr/Prizes%20section/t1pyt5chofrp19hvk9ek.png',
       alt: 'Gold Prize Image',
       prizeValue: '100k',
       prizeShadowColor: 'var(--color-primary-green)',
@@ -19,8 +19,8 @@ export default {
       swags: '40k worth of swags',
       merchandise: 'official merchandise',
       src:
-        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails' +
-        '/a6b26b9a9b00ee29ed13c469967b8acd/detailed',
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202198/HackNitr/Prizes%20section/l2xaqr8dtx69whaidmna.png',
       alt: 'Silver Prize Image',
       prizeValue: '30k',
       prizeShadowColor: 'var(--color-primary-blue)',
@@ -31,8 +31,8 @@ export default {
       swags: '40k worth of swags',
       merchandise: 'official merchandise',
       src:
-        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails' +
-        '/5a18bd91115428171bef05d3caeb643a/detailed',
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202203/HackNitr/Prizes%20section/vmlqilkrfh9e7aa2gjd0.png',
       alt: 'Bronze Prize Image',
       prizeValue: '20k',
       prizeShadowColor: 'var(--color-primary-purple)',

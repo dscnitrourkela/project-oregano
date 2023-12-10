@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
 export default {
   logo: {
-    src: 'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/e9774e8cc2ad145b6a6199cd7eaee607/detailed',
+    src:
+      'https://res.cloudinary.com/dzxgf75bh/image' +
+      '/upload/v1702201666/HackNitr/Navbar%20Section/cyxvfrbonlxivjas44gb.png',
     alt: 'logo',
   },
   Links: [
