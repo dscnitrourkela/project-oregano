@@ -36,7 +36,7 @@ export const AlphaContainer = styled.div`
     text-center
     items-center
     md:gap-[48px]
-    gap-[32px]
+    gap-[10px]
     `}
 `;
 
@@ -145,7 +145,8 @@ export const BetaLogoContainer = styled.div`
     flex-row
     items-center
     justify-center
-    gap-x-[4rem]
+    md:gap-x-[4rem]
+    gap-x-[1rem]
     `}
 `;
 
@@ -343,5 +344,8 @@ export const DeltaSponsors = styled.div`
   }
 `;
 export const PlatformImage = styled.img`
-  height: 60px;
+  ${tw`
+  md:h[60px]
+  h-[30px]
+  `}
 `;
