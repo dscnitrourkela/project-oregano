@@ -2,8 +2,8 @@ export default {
   imgs: {
     xori: {
       src:
-        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails/' +
-        '47b90edefbd3bad3e9b3a1f0064a67bb/detailed',
+        'https://res-console.cloudinary.com/dzxgf75bh/media_explorer_thumbnails' +
+        '/2de679fe30b317c0a089588ea6ba1860/detailed',
       alt: 'Xori',
     },
   },
