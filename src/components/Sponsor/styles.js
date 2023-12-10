@@ -11,13 +11,15 @@ export const SponsorLogo = styled.div`
 `;
 export const AlphaLogoImg = styled.img`
   ${tw`
-    h-[41.288px]
+    h-[100px]
     `}
+  filter: invert(100%);
+  filter: brightness(10);
 `;
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
-    md:grid-cols-3 
+    // md:grid-cols-3 
     grid-cols-1
     md:gap-[120px]
     gap-[24px]
@@ -131,14 +133,19 @@ export const SmallHeader = styled(Heading4)`
 
 export const BetaLogoContainer = styled.div`
   ${tw`
-    grid
-    md:grid-cols-6
-    md:grid-rows-1
-    grid-cols-2
-    grid-rows-3
-    md:gap-x-[24px]
-    gap-x-[24px]
-    gap-y-[16px]
+    // grid
+    // md:grid-cols-6
+    // md:grid-rows-1
+    // grid-cols-2
+    // grid-rows-3
+    // md:gap-x-[24px]
+    // gap-x-[24px]
+    // gap-y-[16px]
+    flex
+    flex-row
+    items-center
+    justify-center
+    gap-x-[4rem]
     `}
 `;
 
@@ -155,7 +162,7 @@ export const BetaContainer = styled.div`
 export const BetaSponsors = styled.div`
   padding: 32px 42px;
   width: 90%;
-  margin: 64px auto 64px auto;
+  margin: 64px auto 0px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
@@ -298,7 +305,7 @@ export const DeltaContainer = styled.div`
 
 export const DeltaLogoImg = styled.img`
   ${tw`
-    h-[16px]
+    h-[40px]
     `}
 `;
 
@@ -334,4 +341,7 @@ export const DeltaSponsors = styled.div`
   &:hover::before {
     opacity: 1;
   }
+`;
+export const PlatformImage = styled.img`
+  height: 60px;
 `;

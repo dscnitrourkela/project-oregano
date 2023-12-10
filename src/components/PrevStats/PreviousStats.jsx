@@ -36,8 +36,7 @@ const PreviousStats = () => {
   const isMobile = windowWidth < 1023;
 
   const imageUrl =
-    'https://res.cloudinary.com/dzxgf75bh/image/upload/v1701689072/' +
-    'xori1-removebg-preview_1_tbbsw8.png';
+    'https://res.cloudinary.com/dhnkuonev/image/upload/v1702223047/b4a5bp26odsbks87lqvh.png';
 
   useEffect(() => {
     const handleResize = () => {

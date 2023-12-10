@@ -15,7 +15,7 @@ const AboutContainer = ({ AbtLogo, aboutContent, abtLinks }) => (
   <FirstAboutContainer>
     <FirstRow>
       {abtLinks.map((link) => (
-        <FrItems href='#' key={link.id}>
+        <FrItems href={link.url} key={link.id}>
           {link.title}
         </FrItems>
       ))}

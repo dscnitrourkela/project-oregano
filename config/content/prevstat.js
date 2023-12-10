@@ -1,9 +1,7 @@
 export default {
   imgs: {
     xori: {
-      src:
-        'https://res.cloudinary.com/dzxgf75bh/image' +
-        '/upload/v1702209115/HackNitr/PreviousStats%20Section/icgsk4elkurtcmgmptyq.png',
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1702223047/b4a5bp26odsbks87lqvh.png',
       alt: 'Xori',
     },
   },
