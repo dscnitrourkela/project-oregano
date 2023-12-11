@@ -2,9 +2,9 @@ export default {
   alpha: [
     {
       src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1702220626/r2qzajqcvyrr3ozscf05.svg',
-      name: 'Devfolio',
-      link: 'https://devfolio.co/',
-      alt: 'Devfolio',
+      name: 'Orkes',
+      link: 'https://orkes.io/',
+      alt: 'ORKES LOGO',
     },
     // {
     //   src:
@@ -55,7 +55,7 @@ export default {
         '/upload/v1702202803/HackNitr/Sponsor%20Section/nqtaio4fr8earl9us0z9.png',
       name: 'Devfolio',
       link: 'https://devfolio.co/',
-      alt: 'Devfolio',
+      alt: 'DEVFOLIO LOGO',
     },
     {
       src:
@@ -63,7 +63,7 @@ export default {
         '/upload/v1702202903/HackNitr/Sponsor%20Section/xpipftsfivsn4l1rhxot.png',
       name: 'Polygon',
       link: 'https://polygon.technology/',
-      alt: 'Polygon',
+      alt: 'POLYGON LOGO',
       // width: '20%',
     },
     // {

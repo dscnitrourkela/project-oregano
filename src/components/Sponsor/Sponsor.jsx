@@ -102,7 +102,7 @@ function SponsorSection() {
         </GammaSponsors>
         <DeltaSponsors>
           <DeltaContainer>
-            <SmallHeader>Platform Sponsors</SmallHeader>
+            <SmallHeader>Web3 Track Sponsors</SmallHeader>
             <DeltaLogoContainer>
               <DeltaLogoSecond>
                 {deltaSponsorsSecond.map(({ src, alt, link, width }) => (
