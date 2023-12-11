@@ -208,12 +208,13 @@ export const BetaSponsors = styled.div`
 export const BottomContainer = styled.div`
   ${tw`
     flex
-    md:flex-row
+    sm:flex-row
     flex-col
+    w-[100%]
     md:w-[90%]
-    md:mx-auto
+    mx-auto
     text-center
-    md:gap-x-[21px]
+    sm:gap-x-[21px]
     gap-y-[24px]
     `}
 `;
@@ -316,7 +317,7 @@ export const DeltaContainer = styled.div`
 
 export const DeltaLogoImg = styled.img`
   ${tw`
-    h-[40px]
+    h-[50px]
     `}
 `;
 
@@ -355,7 +356,6 @@ export const DeltaSponsors = styled.div`
 `;
 export const PlatformImage = styled.img`
   ${tw`
-  md:h[60px]
-  h-[30px]
+  h-[50px]
   `}
 `;

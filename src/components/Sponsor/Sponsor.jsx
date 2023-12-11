@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import Sponsor from '../../../config/content/Sponsor';
 import {
@@ -26,6 +25,7 @@ import {
   PlatformImage,
   SponsorTitle,
   SponsorLink,
+  // DeltaLogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
 
@@ -102,7 +102,7 @@ function SponsorSection() {
         </GammaSponsors>
         <DeltaSponsors>
           <DeltaContainer>
-            <SmallHeader>Track Sponsors</SmallHeader>
+            <SmallHeader>Platform Sponsors</SmallHeader>
             <DeltaLogoContainer>
               <DeltaLogoSecond>
                 {deltaSponsorsSecond.map(({ src, alt, link, width }) => (

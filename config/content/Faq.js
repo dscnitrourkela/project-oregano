@@ -6,9 +6,9 @@ export default {
   questions: [
     {
       id: 1,
-      question: 'How do I register for the hackathon?',
+      question: 'How do I pre-register for the hackathon?',
       answer:
-        'You can click the register now button on our website or head over to Devfolio under HackNITR5.0 for registrations. Heading in, you will get the portal of details to register.',
+        "You can click the pre-register button on our website for pre-registrations. Fill in the form and let's start the journey.",
     },
     {
       id: 2,

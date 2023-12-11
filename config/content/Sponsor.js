@@ -127,9 +127,7 @@ export default {
   ],
   deltaFirst: [
     {
-      src:
-        'https://res.cloudinary.com/dzxgf75bh/image' +
-        '/upload/v1702202827/HackNitr/Sponsor%20Section/d1zbuvdlc4j4ui5feb8p.png',
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1702281493/fee3mushznsu7enbq7a1.png',
       name: 'Replit',
       link: 'https://replit.com',
       alt: 'Replit',

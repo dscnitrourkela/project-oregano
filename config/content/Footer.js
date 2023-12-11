@@ -13,16 +13,22 @@ export default {
       title: 'About Us',
       id: 'about-us',
       url: '/#About',
+      target: '',
+      rel: '',
     },
     {
       title: 'Contact Us',
       id: 'contact-us',
       url: 'mailto:hacknitr@gmail.com',
+      target: '_blank',
+      rel: 'noopener noreferrer',
     },
     {
       title: 'Sponsor Us',
       id: 'sponsor-us',
       url: 'https://tally.so/r/3jl2za',
+      target: '_blank',
+      rel: 'noopener noreferrer',
     },
   ],
   Nitr: {
