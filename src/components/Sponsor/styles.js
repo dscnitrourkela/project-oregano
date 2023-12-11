@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading1, Heading3, Heading4 } from '../shared';
+import { Body1, Heading1, Heading3, Heading4 } from '../shared';
 
 export const SponsorLogo = styled.div`
   ${tw`
@@ -99,6 +99,16 @@ export const SponsorHeader = styled(Heading1)`
   }
 `;
 
+export const SponsorTitle = styled(Body1)`
+  width: 100%;
+  text-align: center;
+  color: #ffffff9c;
+`;
+
+export const SponsorLink = styled.a`
+  color: #fff;
+`;
+
 export const AlphaHeader = styled(Heading3)`
   ${tw`
   text-center
@@ -163,7 +173,7 @@ export const BetaContainer = styled.div`
 export const BetaSponsors = styled.div`
   padding: 32px 42px;
   width: 90%;
-  margin: 64px auto 0px auto;
+  margin: 64px auto 64px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
@@ -211,10 +221,10 @@ export const BottomContainer = styled.div`
 export const GammaLogoContainer = styled.div`
   ${tw`
     grid
-    md:grid-cols-5
-    md:grid-rows-1
-    grid-cols-4
-    grid-rows-2
+    // md:grid-cols-5
+    // md:grid-rows-1
+    grid-cols-1
+    // grid-rows-2
     md:gap-x-[28px]
     gap-x-[24px]
     gap-y-[16px]

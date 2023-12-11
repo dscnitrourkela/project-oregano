@@ -13,5 +13,6 @@ export default {
     // { id: 'Timeline', name: 'Timeline', link: '/#Timeline' },
     { id: 'Sponsors', name: 'Sponsors', link: '/#Sponsors' },
     { id: 'FAQs', name: 'FAQs', link: '/#FAQs' },
+    { id: 'Brochure', name: 'Brochure', link: '/brochure' },
   ],
 };

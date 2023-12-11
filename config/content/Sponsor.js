@@ -170,34 +170,14 @@ export default {
     //     alt: 'Twilio',
     //     width: '42%',
     //   },
-    // ],
-    // deltaSecond: [
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702203005/HackNitr/Sponsor%20Section/efcten7krtjiwnxfeuzh.png',
-    //     name: 'Echo3d',
-    //     link: 'https://www.echo3d.com/',
-    //     alt: 'Echo3d',
-    //     width: '542%',
-    //   },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702203023/HackNitr/Sponsor%20Section/us81cjyrf00wdkmut0lo.png',
-    //     name: 'Velo',
-    //     link: 'https://www.wix.com/velo',
-    //     alt: 'Velo',
-    //     width: '542%',
-    //   },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702203155/HackNitr/Sponsor%20Section/k6bvmabnz4jw7f9x2srf.png',
-    //     name: 'xyz',
-    //     link: 'https://gen.xyz/',
-    //     alt: 'xyz',
-    //     width: '542%',
-    //   },
+  ],
+  deltaSecond: [
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1702277604/qoug3sk1aze8uikcseow.png',
+      name: 'Solidity Scan',
+      link: 'https://solidityscan.com/',
+      alt: 'Solidity Scan',
+      width: '542%',
+    },
   ],
 };
