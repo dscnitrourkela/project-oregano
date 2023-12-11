@@ -40,7 +40,7 @@ function SponsorSection() {
     <SectionContainer>
       <SponsorHeader id='Sponsors'>Sponsors</SponsorHeader>
       <SponsorTitle>
-        Today,we bring you the opportunity to collaborate with us on our next endeavour.&nbsp;
+        Today, we bring you the opportunity to collaborate with us on our next endeavour.&nbsp;
         <SponsorLink href='https://tally.so/r/3jl2za'>Sponsor Us</SponsorLink>
       </SponsorTitle>
       <AlphaSponsors>
