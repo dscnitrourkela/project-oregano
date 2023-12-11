@@ -6,9 +6,35 @@ import {
   faGithubSquare,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import config from '../website';
 
 export default {
+  links: [
+    {
+      title: 'About Us',
+      id: 'about-us',
+      url: '/#About',
+      target: '',
+      rel: '',
+    },
+    {
+      title: 'Contact Us',
+      id: 'contact-us',
+      url: 'mailto:hacknitr@gmail.com',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+    {
+      title: 'Sponsor Us',
+      id: 'sponsor-us',
+      url: 'https://tally.so/r/3jl2za',
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    },
+  ],
+  Nitr: {
+    imgSrc: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/nitr_logo_vdj3aw.png',
+  },
+
   hacknitr: {
     img: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/logo1_rg97i6.png',
     alt: 'HackNITR 4.0',
@@ -23,7 +49,7 @@ export default {
   cards: [
     {
       title: 'About NIT Rourkela',
-      text: 'With a total strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
+      text: 'With a strength of around 7000 students, NIT Rourkela is one of the most coveted institutes for higher studies by future technocrats. With its lush green and humongous area, it indeed makes a pleasant campus impression.',
       id: 'footer-card-1',
       img: {
         src: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/nitr_huzgbq.png',
@@ -42,28 +68,38 @@ export default {
   ],
   socials: [
     {
-      icon: faInstagram,
-      link: 'https://www.instagram.com/hacknitr/',
+      name: 'fb',
+      icon: faFacebook,
+      link: 'https://facebook.com/hacknitr',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/fb_zzl91w.png',
     },
     {
+      name: 'insta',
+      icon: faInstagram,
+      link: 'https://www.instagram.com/hacknitr/',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/insta_aktzjs.png',
+    },
+    {
+      name: 'li',
       icon: faLinkedin,
       link: 'https://www.linkedin.com/company/hacknitr/',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/linkedin_eoenzs.png',
     },
     // {
     //   icon: faDiscord,
     //   link: 'https://hacknitr.com/discord',
     // },
     {
-      icon: faFacebook,
-      link: 'https://facebook.com/hacknitr',
-    },
-    {
+      name: 'gh',
       icon: faGithubSquare,
       link: 'https://github.com/dscnitrourkela/project-oregano',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/github_ve2kbe.png',
     },
     {
+      name: 'twitter',
       icon: faTwitterSquare,
       link: 'https://twitter.com/hacknitr',
+      imgLink: 'https://res.cloudinary.com/dxsyc4p2j/image/upload/v1699473996/TwitterX_uua6eg.png',
     },
   ],
   organisers: [
@@ -98,20 +134,12 @@ export default {
   ],
   impLinks: [
     {
-      text: 'MLH Code of Conduct',
-      href: config.codeOfConduct,
-    },
-    {
       text: 'Terms and Conditions',
-      href: config.termsConditions,
+      href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
     },
     {
       text: 'Privacy Policy',
-      href: config.privacyPolicy,
-    },
-    {
-      text: 'Sponsor Us',
-      href: config.sponsor,
+      href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
     },
   ],
 };

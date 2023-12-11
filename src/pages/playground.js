@@ -1,24 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Helmet from 'react-helmet';
+import HeroSection from '../components/HeroSection/HeroSection';
+import { Container } from '../components/shared/SectionContainer';
+import Layout from '../components/shared/Layout';
+import AboutSection from '../components/AboutUs/About';
+import SponsorSection from '../components/Sponsor/Sponsor';
+import FAQ from '../components/Faq/Faq';
+import TimelineSection from '../components/TimelineSection/Timeline';
+import { Footer } from '../components/marginals';
+import Prizes from '../components/Prizes/Prizes';
+import PreviousStats from '../components/PrevStats/PreviousStats';
+import ParticleBackground from '../components/shared/Particle';
 
-import JoinUsSection from '../components/JoinUsSection/JoinUsSection'
+const Homepage = ({ location }) => {
+  const isHome = location?.pathname === '/';
+  const [loading, setLoading] = useState(isHome);
 
-import {
-  Heading1,
-  Heading2,
-  Heading3,
-  Heading4,
-  Body1,
-  Body2,
-  Caption,
-  ButtonMeta,
-  ButtonMetaLarge,
-  NavText,
-} from '../components/shared';
+  useEffect(() => {
+    if (loading) {
+      return;
+    }
 
-export default function Playground() {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({
+            block: id === 'sponsors' ? 'nearest' : 'center',
+          });
+          el.focus();
+        }
+        setLoading(true);
+      }, 0);
+    }
+  }, [location.hash, loading]);
+
   return (
-    <div>
-      <JoinUsSection />
-    </div>
+    <>
+      <Helmet>
+        <script
+          type='text/javascript'
+          id='hs-script-loader'
+          async
+          defer
+          src='//js.hs-scripts.com/8898157.js'
+        />
+      </Helmet>
+      <ParticleBackground />
+      <Layout location={location}>
+        <HeroSection />
+        <Container>
+          <PreviousStats />
+          <AboutSection />
+          <Prizes />
+          <TimelineSection />
+          <SponsorSection />
+          <FAQ />
+        </Container>
+        <Footer />
+      </Layout>
+    </>
   );
-}
+};
+export default Homepage;

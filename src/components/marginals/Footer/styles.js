@@ -1,191 +1,435 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
+import { Body1 } from '../..';
 
-// First Row Styles
-export const FooterContainer = styled.div`
+export const FooterContainer = styled(Body1)`
   ${tw`
+  flex
+  flex-row
+  justify-between
+  text-white
+  p-4
+  pb-8
+  bg-[#060616]
+`}
+  @media (max-width: 800px) {
+    ${tw`
+    flex-col-reverse
+    items-center
+    justify-between
+    `}
+  }
+`;
+
+export const InitialCont = styled.div`
+  ${tw`
+  w-[70vw]
+  flex
+  flex-col
+  justify-between		
+  `}
+  @media (max-width: 800px) {
+    ${tw`
     w-full
-    bg-background-dark
-    mt-40
-    overflow-x-hidden
+    flex-row
+    items-center
+    justify-between
+    `}
+  }
+`;
+
+// Cradle Container
+export const SecondPendulumContainer = styled.div`
+  ${tw` 
+  relative
+  flex
+  flex-col
+  items-center
+  justify-between
+  w-[500px]
+  text-white
+  p-4
+  `}
+  @media (max-width: 800px) {
+    ${tw`
+    p-[0px]
+    w-full
+    h-[370px]
+    `}
+  }
+`;
+
+export const SocialText = styled.div`
+  ${tw`
+  absolute
+  bottom-12
+  left-0.5
+  text-neutral-white-700
+  text-lg
+  text-center	
+  w-full
+  `}
+`;
+
+export const SocialsCont = styled.div`
+  ${tw`
+  flex
+  flex-col
+  justify-between
+  `}
+`;
+export const CradleContainer = styled.div`
+  ${tw`
+  flex
+  flex-row 
+  items-center
+  justify-center 
+  w-full 
+  h-auto 
+  p-4
+  mx-4
+  pt-[100px]
+  text-[16px]
+  m-auto
+  `}
+  @media (max-width: 800px) {
+    ${tw`
+    w-full
+    h-[300px]
+    pt-[0px]
+    `}
+  }
+  &:hover .ball {
+    animation: none;
+  }
+`;
+
+export const Ball = styled.div`
+  transform-origin: 50% -200px;
+  ${tw`
+  flex
+  flex-row 
+  items-center
+  justify-center
+  relative
+  text-black
+  top-[100px]
+  float-left
+  w-[40px]
+  h-[40px]
+  bg-white
+  rounded-full
+  `}
+  &::before {
+    content: '';
+    ${tw`
+    text-black
+    bg-black
+    block
+    absolute
+    h-[200px]
+    w-[3px]
+    top-[-200px]
+    left-[19px]
+    bg-[#575757]
+    `}
+  }
+
+  @media (max-width: 800px) {
+    ${tw`
+    top-[80px]
+    `}
+  }
+
+  &:hover {
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
+// Define keyframes
+const ball1Animation = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+`;
+
+const ball1Mob = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(15deg);
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
+const ball5Animation = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+`;
+
+const ball5Mob = keyframes`
+  0%, 50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-15deg);
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
+const ballColour = keyframes`
+  0%, 50% {
+    background: white;
+  }
+  100% {
+    background: linear-gradient(
+      -17.61deg,
+      #ff3fc0 0%,
+      #b067ff 25%,
+      #02daff 50%,
+      #14f195 75%,
+      #fecf29 100%
+    );
+  }
+`;
+
+// Apply animations to specific elements
+export const Ball1 = styled(Ball)`
+  animation: ${ball1Animation} 1s infinite alternate, ${ballColour} 1s infinite alternate;
+  @media (max-width: 600px) {
+    animation: ${ball1Mob} 1s ease-out infinite alternate;
+  }
+  &:hover {
+    animation: none;
+  }
+`;
+
+export const Ball5 = styled(Ball)`
+  animation: ${ball5Animation} 1s ease-out 1s infinite alternate,
+    ${ballColour} 1s ease-out 1s infinite alternate;
+  @media (max-width: 600px) {
+    animation: ${ball5Mob} 1s ease-out 1s infinite alternate;
+  }
+  &:hover {
+    animation: none;
+  }
+`;
+
+export const ImgCont = styled.img`
+  ${tw`
+  w-full
 `}
 `;
 
-export const SecondaryContainer = styled.div`
+export const SocialLogo = styled.img`
   ${tw`
-    flex
-    sm:flex-row
+  w-[20px]
+`}
+`;
+
+// About Container
+export const FirstAboutContainer = styled.div`
+  ${tw`
+  text-white
+  p-4
+  bg-[#060616]
+  `}
+  @media (max-width: 600px) {
+    ${tw`
+    h-[250px]
+    px-0
+  `}
+  }
+`;
+
+export const FirstRow = styled.div`
+  ${tw`
+  w-full
+  flex
+  flex-row
+  justify-start	
+  p-2
+  `}
+  @media (max-width: 800px) {
+    ${tw`
     flex-col
-    justify-between
-    items-start
-    sm:items-center
-    w-full
-    mt-8
-  `}
+    w-[50vw]
+    mx-0
+    `}
+  }
+  @media (max-width: 500px) {
+    ${tw`
+    flex-col
+    w-[40vw]
+    mx-0
+    `}
+  }
 `;
 
-export const Logo = styled.img`
+export const FrItems = styled.a`
   ${tw`
-    w-10
-    h-auto
-    hidden
-    sm:block
-  `}
+  text-white
+  text-xl
+  px-4
+  py-6
+`}
+  @media (max-width: 1000px) {
+    ${tw`
+    px-2
+    py-6
+    `}
+  }
 `;
 
-export const IconContainer = styled.div`
+export const AboutBox = styled.div`
   ${tw`
     flex
     flex-row
-    flex-wrap
-    mb-2
+    text-lg
+    w-[55vw]
+    mx-4
+    my-8
+    p-5
+    bg-[#080822]
+    `}
+  @media (max-width: 800px) {
+    display: none;
+  }
+  @media (max-width: 600px) {
+    ${tw`
+    w-[80vw]
+    m-auto
+    `}
+  }
+`;
+
+export const Para = styled.p`
+  ${tw`
+    flex
+    flex-col
+    mx-5
+    
+    `}
+`;
+export const Content = styled.p`
+  ${tw`
+    my-5
+    text-neutral-white-700
+    `}
+`;
+
+export const LogoCont = styled.span`
+  ${tw`
+  w-[250px]
+`}
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
+
+export const LogoImg = styled.img`
+  ${tw`
     w-full
-    sm:w-auto
-    justify-between
-    sm:justify-end
+    `}
+`;
+
+// Terms and Credits
+export const LastLine = styled.div`
+  ${tw`
+    text-gray-500
+    h-[50px]
+    w-[60vw]
+    flex
+    flex-row
+    justify-center
+    gap-4	
+    items-center
   `}
+  @media (max-width: 800px) {
+    ${tw`
+    pt-3
+    gap-7
+    w-full
+    h-[250px]
+    flex-col-reverse
+    items-baseline
+    `}
+  }
+  @media (max-width: 600px) {
+    ${tw`
+    h-[250px]
+    flex-col-reverse
+    items-baseline
+    `}
+  }
 `;
 
-// Grid Styles (Row 2)
-export const Grid = styled.div`
+export const Terms = styled.div`
   ${tw`
-    grid
-    grid-cols-track
-    bg-background-dark
-    gap-4
-    overflow-x-hidden
-    mt-4
+  flex
+  flex-row
+  justify-start	
   `}
-`;
-
-export const NoStyleNav = styled.a`
-  ${tw`
-    no-underline
-    mt-2
-    cursor-pointer
-    text-color-secondary
-    p-2
-    pr-0
-  `}
-  &:hover {
-    color: var(--text-color-tertiary);
-  }
-
-  @media (max-width: 1045px) {
-    padding: 10;
+  @media (max-width: 600px) {
+    ${tw`
+    flex-col
+    items-baseline
+    gap-2
+    `}
   }
 `;
 
-export const EmptyDiv = styled.div`
-  background: transparent;
-  padding: 10px 0 10px 10px;
-
-  @media (max-width: 1045px) {
-    display: none;
-  }
-
-  min-height: 175px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-`;
-
-export const LinksContainer = styled.div`
-  background: transparent;
-  padding: 10px;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  grid-column: 1 / span2;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 1045px) {
-    display: none;
-  }
-`;
-
-// Final Row Styles
-export const LogoContainer = styled.div`
-  width: 45%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 15px 0;
-
-  @media (max-width: 640px) {
-    margin-top: 20px;
-    width: 70%;
-  }
-
-  @media (max-width: 464px) {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-`;
-
-// Check css from here onwards.
-const FooterCards = styled.div`
-  ${tw`
-  w-full
-  min-h-full
-  rounded-xl
-  mx-auto
-`}
-`;
-
-const CardContainer = styled.div`
-  ${tw`
-  grid
-  bg-background-darker
-  py-4
-  pr-2
-  grid-flow-col
-  rounded-xl
-  auto-cols-auto
-`}
-`;
-
-const CardImage = styled.img`
-  max-height: 40px;
-  margin: 0 auto;
-`;
-
-const FooterCardImg = styled.div`
+export const ConditionItems = styled.a`
   ${tw`
   px-4
-  justify-center
+  py-6
 `}
+  @media (max-width: 800px) {
+    ${tw`
+    px-1
+    py-4
+    `}
+  }
 `;
 
-const FooterCardText = styled.div`
+export const Credits = styled.div`
   ${tw`
-  px-2
+  mx-2
+  px-8
   `}
+  @media (max-width: 1000px) {
+    ${tw`
+    m-[0px]
+    px-2
+    `}
+  }
 `;
-
-const FooterCardTextSmall = styled.div`
-  ${tw`
-  font-normal
-  sm:text-base
-  text-sm
-  leading-normal
-  text-color-tertiary
-  justify-center
-  my-4
-  `}
-`;
-
-export {
-  FooterCards,
-  CardContainer,
-  FooterCardText,
-  FooterCardImg,
-  FooterCardTextSmall,
-  CardImage,
-};

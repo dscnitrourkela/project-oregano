@@ -1,35 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { DesktopNav, Footer, MobileNav } from '../marginals';
+import NavBar from '../marginals/Navbar/navbar';
+import { MenuContext } from '../marginals/Navbar/MenuContext';
 
-const Wrapper = styled.div`
+const LayoutContainer = styled.div`
   ${tw`
-    w-full
     relative
-  `}
-`;
-
-const NavBar = styled.div`
-  z-index: 9999;
-  ${tw`
     w-full
-    sticky
-    top-0
+  `}
+
+  overflow: hidden;
+`;
+const Nav = styled.div`
+  ${tw`
+   sm:fixed
+   w-full
+   z-[100]
   `}
 `;
 
-function Layout({ children }) {
+export default function Layout({ children }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenuOpen = () => (menuOpen ? setMenuOpen(false) : setMenuOpen(true));
   return (
-    <Wrapper>
-      <NavBar>
-        <DesktopNav />
-        <MobileNav />
-      </NavBar>
+    <LayoutContainer>
+      <Nav>
+        <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
+          <NavBar />
+        </MenuContext.Provider>
+      </Nav>
       {children}
-      <Footer />
-    </Wrapper>
+    </LayoutContainer>
   );
 }
-
-export default Layout;

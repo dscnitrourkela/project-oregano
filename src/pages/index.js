@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
-
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
-import { Layout, SectionLayout } from '../components/shared/index';
-import Container from '../components/shared/Container';
 import '../styles/global.css';
-import Hero from '../components/HeroSection/HeroSection';
-import FAQ from '../components/FaqSection/Faq';
-import Ticker from '../components/Ticker';
-import SponsorSection from '../components/SponsorsSection/SponsorSection';
 import SEO from '../components/shared/SEO/SEO';
-import { CommunitySection } from '../components';
-import Moments from '../components/Moments';
-import { about } from '../../config';
+import ParticleBackground from '../components/shared/Particle';
+import Layout from '../components/shared/Layout';
+import HeroSection from '../components/HeroSection/HeroSection';
+import PreviousStats from '../components/PrevStats/PreviousStats';
+import AboutSection from '../components/AboutUs/About';
+// import TimelineSection from '../components/TimelineSection/Timeline';
+import SponsorSection from '../components/Sponsor/Sponsor';
+import FAQ from '../components/Faq/Faq';
+// import Prizes from '../components/Prizes/Prizes';
+import { Footer } from '../components/marginals';
+import { ContainerWrapper } from '../components/shared/Container';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -53,18 +54,18 @@ const HomePage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
-
-      <Layout>
-        <Hero />
-        <Ticker />
-        <Container>
-          <SectionLayout id='about' title={about.title} description={about.content} />;
-          <Moments />
+      <ParticleBackground />
+      <Layout location={location}>
+        <HeroSection />
+        <ContainerWrapper>
+          <AboutSection />
+          <PreviousStats />
+          {/* <Prizes />
+        <TimelineSection /> */}
           <SponsorSection />
-          <CommunitySection />
-          {/* <JoinUsSection /> */}
           <FAQ />
-        </Container>
+        </ContainerWrapper>
+        <Footer />
       </Layout>
     </>
   );

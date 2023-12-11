@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
 
 *,
 *:before,
@@ -14,6 +15,7 @@ html,
 body {
   max-width: 100vw;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 html,
 body,
@@ -169,13 +171,20 @@ table {
 }
 
 :root {
-  --background-primary: #00020c;
-  --background-secondary: #001325;
-  --text-color-primary: #f4f4f4;
-  --text-color-secondary: #403b3b;
-  --text-color-tertiary: #8c8c8c;
-
+  --background-primary: #0e0812;
+  --color-primary-pink: #ff8cd9;
+  --color-primary-purple: #c48dff;
+  --color-primary-blue: #67e9ff;
+  --color-primary-green: #72f7bf;
+  --color-neutral-white: #ffffff;
+  --color-neutral-yellow: #fee27f;
   --max-width: 83.5em;
   --max-width-bleed: 90%;
   --max-width-narrow: 50em;
+}
+
+@property --rotate {
+  syntax: '<angle>';
+  initial-value: 132deg;
+  inherits: false;
 }

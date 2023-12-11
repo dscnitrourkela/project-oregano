@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export default styled.p`
-  font-weight: ${(props) => (props.semibold ? '600' : '400')};
+  font-weight: ${(props) => (props.light ? '300' : '400')};
   ${tw`
-   text-xm
-   leading-3 
+   text-xs
+   leading-4.5
 
-   sm:text-lg
-   sm:leading-4.5
+   md:text-sm
+   md:leading-5
 
-   text-color-primary
-   font-Inter
+   text-white
+   font-Prompt
 `}
 `;

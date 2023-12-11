@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Libraries
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import Body1 from './Typography/Body1';
@@ -37,7 +35,6 @@ const HighlightLink = styled.a`
     lg:text-base
     md:text-base
     sm:text-sm
-    text-color-primary
     ml-2
     no-underline
   `}
