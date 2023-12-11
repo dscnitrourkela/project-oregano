@@ -9,7 +9,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
   siteDescription:
-    "Dive deep into your innovation journey with HackNITR 4.0 and manifest your skills. Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
+    "Dive deep into your innovation journey with HackNITR 5.0 and manifest your skills. Re-envision what's conceivable with hack and turn your fanatical ideas into reality. Calling out all innovators, its your time to showcase your skills and creativity.",
   author: 'HackNITR', // Author for schemaORGJSONLD
   organization: 'HackNITR',
 
@@ -31,7 +31,7 @@ module.exports = {
   facebook: 'https://facebook.com/hacknitr',
   instagram: 'https://instagram.com/hacknitr',
   discord: 'https://discord.com/invite/rxMB9aWbJD',
-  register: 'https://hacknitr4.devfolio.co/',
+  register: 'https://hacknitr5.devfolio.co/',
   sponsor: 'https://o0rqxa59g3k.typeform.com/to/GXfkpiIo',
   join: 'https://preregister.hacknitr.com',
 
