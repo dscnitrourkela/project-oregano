@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Heading1, Heading3, Heading4 } from '../shared';
+import { Body1, Heading1, Heading3, Heading4 } from '../shared';
 
 export const SponsorLogo = styled.div`
   ${tw`
@@ -11,13 +11,15 @@ export const SponsorLogo = styled.div`
 `;
 export const AlphaLogoImg = styled.img`
   ${tw`
-    h-[41.288px]
+    h-[100px]
     `}
+  filter: invert(100%);
+  filter: brightness(10);
 `;
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
-    md:grid-cols-3 
+    // md:grid-cols-3 
     grid-cols-1
     md:gap-[120px]
     gap-[24px]
@@ -34,7 +36,7 @@ export const AlphaContainer = styled.div`
     text-center
     items-center
     md:gap-[48px]
-    gap-[32px]
+    gap-[10px]
     `}
 `;
 
@@ -97,6 +99,16 @@ export const SponsorHeader = styled(Heading1)`
   }
 `;
 
+export const SponsorTitle = styled(Body1)`
+  width: 100%;
+  text-align: center;
+  color: #ffffff9c;
+`;
+
+export const SponsorLink = styled.a`
+  color: #fff;
+`;
+
 export const AlphaHeader = styled(Heading3)`
   ${tw`
   text-center
@@ -131,14 +143,20 @@ export const SmallHeader = styled(Heading4)`
 
 export const BetaLogoContainer = styled.div`
   ${tw`
-    grid
-    md:grid-cols-6
-    md:grid-rows-1
-    grid-cols-2
-    grid-rows-3
-    md:gap-x-[24px]
-    gap-x-[24px]
-    gap-y-[16px]
+    // grid
+    // md:grid-cols-6
+    // md:grid-rows-1
+    // grid-cols-2
+    // grid-rows-3
+    // md:gap-x-[24px]
+    // gap-x-[24px]
+    // gap-y-[16px]
+    flex
+    flex-row
+    items-center
+    justify-center
+    md:gap-x-[4rem]
+    gap-x-[1rem]
     `}
 `;
 
@@ -190,12 +208,13 @@ export const BetaSponsors = styled.div`
 export const BottomContainer = styled.div`
   ${tw`
     flex
-    md:flex-row
+    sm:flex-row
     flex-col
+    w-[100%]
     md:w-[90%]
-    md:mx-auto
+    mx-auto
     text-center
-    md:gap-x-[21px]
+    sm:gap-x-[21px]
     gap-y-[24px]
     `}
 `;
@@ -203,10 +222,10 @@ export const BottomContainer = styled.div`
 export const GammaLogoContainer = styled.div`
   ${tw`
     grid
-    md:grid-cols-5
-    md:grid-rows-1
-    grid-cols-4
-    grid-rows-2
+    // md:grid-cols-5
+    // md:grid-rows-1
+    grid-cols-1
+    // grid-rows-2
     md:gap-x-[28px]
     gap-x-[24px]
     gap-y-[16px]
@@ -298,7 +317,7 @@ export const DeltaContainer = styled.div`
 
 export const DeltaLogoImg = styled.img`
   ${tw`
-    h-[16px]
+    h-[50px]
     `}
 `;
 
@@ -334,4 +353,9 @@ export const DeltaSponsors = styled.div`
   &:hover::before {
     opacity: 1;
   }
+`;
+export const PlatformImage = styled.img`
+  ${tw`
+  h-[50px]
+  `}
 `;

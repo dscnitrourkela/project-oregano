@@ -23,7 +23,7 @@ export const AboutContent = styled(Body1)`
     text-base	 
     `}
   @media (max-width: 800px) {
-    text-align: justify;
+    text-align: left;
   }
 `;
 export const Heading = styled(Heading1)`

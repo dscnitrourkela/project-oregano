@@ -16,28 +16,36 @@ import {
   GammaContainer,
   GammaSponsors,
   DeltaLogoContainer,
-  DeltaLogoFirst,
+  // DeltaLogoFirst,
   DeltaLogoSecond,
   DeltaContainer,
   DeltaSponsors,
   AlphaLogoImg,
   DeltaLogoImg,
+  PlatformImage,
+  SponsorTitle,
+  SponsorLink,
+  // DeltaLogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
 
 function SponsorSection() {
   const alphaSponsors = Sponsor.alpha;
   const betaSponsors = Sponsor.beta;
-  const gammaSponsors = Sponsor.gamma;
+  // const gammaSponsors = Sponsor.gamma;
   const deltaSponsorsFirst = Sponsor.deltaFirst;
   const deltaSponsorsSecond = Sponsor.deltaSecond;
 
   return (
     <SectionContainer>
       <SponsorHeader id='Sponsors'>Sponsors</SponsorHeader>
+      <SponsorTitle>
+        Today,we bring you the opportunity to collaborate with us on our next endeavour.&nbsp;
+        <SponsorLink href='https://tally.so/r/3jl2za'>Sponsor Us</SponsorLink>
+      </SponsorTitle>
       <AlphaSponsors>
         <AlphaContainer>
-          <AlphaHeader>Alpha Sponsors</AlphaHeader>
+          <AlphaHeader>Title Sponsor</AlphaHeader>
           <AlphaLogoContainer>
             {alphaSponsors.map(({ src, alt, link }) => (
               <SponsorLogo key={src}>
@@ -51,27 +59,41 @@ function SponsorSection() {
       </AlphaSponsors>
       <BetaSponsors>
         <BetaContainer>
-          <SmallHeader>Beta Sponsors</SmallHeader>
+          <SmallHeader>Platform Sponsors</SmallHeader>
           <BetaLogoContainer>
             {betaSponsors.map(({ src, alt, link }) => (
               <SponsorLogo key={src}>
                 <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <img src={src} alt={alt} />
+                  <PlatformImage src={src} alt={alt} />
                 </a>
               </SponsorLogo>
             ))}
           </BetaLogoContainer>
         </BetaContainer>
       </BetaSponsors>
+      {/* <BetaSponsors>
+        <BetaContainer>
+          <SmallHeader>Delta Sponsor</SmallHeader>
+          <BetaLogoContainer>
+            {deltaSponsorsFirst.map(({ src, alt, link }) => (
+              <SponsorLogo key={src}>
+                <a href={link} target='_blank' rel='noopener noreferrer'>
+                  <DeltaLogoImg src={src} alt={alt} />
+                </a>
+              </SponsorLogo>
+            ))}
+          </BetaLogoContainer>
+        </BetaContainer>
+      </BetaSponsors> */}
       <BottomContainer>
         <GammaSponsors>
           <GammaContainer>
-            <SmallHeader>Gamma Sponsors</SmallHeader>
+            <SmallHeader>Delta Sponsors</SmallHeader>
             <GammaLogoContainer>
-              {gammaSponsors.map(({ src, alt, link }) => (
+              {deltaSponsorsFirst.map(({ src, alt, link }) => (
                 <SponsorLogo key={src}>
                   <a href={link} target='_blank' rel='noopener noreferrer'>
-                    <img src={src} alt={alt} />
+                    <DeltaLogoImg src={src} alt={alt} />
                   </a>
                 </SponsorLogo>
               ))}
@@ -80,17 +102,8 @@ function SponsorSection() {
         </GammaSponsors>
         <DeltaSponsors>
           <DeltaContainer>
-            <SmallHeader>Delta Sponsors</SmallHeader>
+            <SmallHeader>Platform Sponsors</SmallHeader>
             <DeltaLogoContainer>
-              <DeltaLogoFirst>
-                {deltaSponsorsFirst.map(({ src, alt, link }) => (
-                  <SponsorLogo key={src}>
-                    <a href={link} target='_blank' rel='noopener noreferrer'>
-                      <DeltaLogoImg src={src} alt={alt} />
-                    </a>
-                  </SponsorLogo>
-                ))}
-              </DeltaLogoFirst>
               <DeltaLogoSecond>
                 {deltaSponsorsSecond.map(({ src, alt, link, width }) => (
                   <SponsorLogo key={src}>

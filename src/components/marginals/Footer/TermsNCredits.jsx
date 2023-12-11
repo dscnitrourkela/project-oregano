@@ -4,10 +4,13 @@ import { LastLine, Terms, ConditionItems, Credits } from './styles';
 const TermsNCredits = ({ copyw }) => (
   <LastLine>
     <Terms>
-      <ConditionItems href='#'>Privacy & Policy</ConditionItems>
-      <ConditionItems href='#'>Terms and Conditions</ConditionItems>
+      {copyw.map((link) => (
+        <ConditionItems href={link.href} key={link.id} target='_blank' rel='noreferrer'>
+          {link.text}
+        </ConditionItems>
+      ))}
     </Terms>
-    <Credits>{copyw.content}</Credits>
+    <Credits>Architected with ❤️ by HackNITR Team</Credits>
   </LastLine>
 );
 
