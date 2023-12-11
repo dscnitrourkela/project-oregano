@@ -2,7 +2,7 @@
 export default {
   id: 'faq',
   title: 'DO YOU HAVE A QUESTION?',
-  content: 'New to hackathon dont worry we got you covered with all the basic information.',
+  content: "New to hackathon? Don't worry we got you covered with all the basic information.",
   questions: [
     {
       id: 1,
