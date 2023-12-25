@@ -31,7 +31,7 @@ export default {
       id: 5,
       question: 'What could be the size of the team?',
       answer:
-        'A team size of a maximum of four members is allowed. Even if you are an individual warrior, you are highly welcome.',
+        'We're only looking for groups of 2 to 4 heroes this time. No solo adventurers allowed. Gather your buddies and get ready for an epic adventure together!',
     },
     {
       id: 6,
