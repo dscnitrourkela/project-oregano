@@ -29,8 +29,8 @@ export default function HeroSection() {
           <ContentBlock>
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
-          <RegisterButton />
         </HeroTitle>
+        <RegisterButton />
       </HeroBody>
     </SectionContainer>
   );
