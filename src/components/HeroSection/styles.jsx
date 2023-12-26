@@ -22,6 +22,7 @@ export const HeroBody = styled.div`
     mt-[7%]
     h-full
     flex
+    gap-[2rem]
     justify-center
     items-center
     text-white
