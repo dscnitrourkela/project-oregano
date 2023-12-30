@@ -32,7 +32,6 @@ const PreviousStats = () => {
     typeof window !== 'undefined' ? window.innerWidth : 0,
   );
 
-  const [isHovered, setIsHovered] = useState(Array(prevstat.data.length).fill(false));
   const isMobile = windowWidth < 1023;
 
   const imageUrl =
@@ -54,14 +53,6 @@ const PreviousStats = () => {
 
     return undefined;
   }, []);
-
-  const handleHover = (index) => {
-    setIsHovered((prev) => prev.map((_, i) => i === index));
-  };
-
-  const handleLeave = () => {
-    setIsHovered(Array(prevstat.data.length).fill(false));
-  };
 
   return (
     <SectionContainer>
@@ -103,64 +94,39 @@ const PreviousStats = () => {
       ) : (
         <SectionContent>
           <SectionImage src={imageUrl} alt='xori' />
-          <SectionCards expanded={isHovered}>
+          <SectionCards>
             {prevstat.data.map((item, id) => (
-              <SectionBox
-                key={item.id}
-                onMouseEnter={() => handleHover(id)}
-                onMouseLeave={handleLeave}
-                expanded={isHovered[id]}
-              >
-                <BoxText expanded={isHovered[id]}>
+              <SectionBox key={item.id}>
+                <BoxText>
                   <BoxHeader color={prevstat.headerColors[id]}>
                     {`HACKNITR ${item.version}`}
                   </BoxHeader>
                   <BoxDetail>Details</BoxDetail>
                 </BoxText>
-                <BoxContent expanded={isHovered[id]}>
-                  <BoxSubContent
-                    onMouseEnter={() => handleHover(id)}
-                    onMouseLeave={handleLeave}
-                    expanded={isHovered[id]}
-                  >
+                <BoxContent>
+                  <BoxSubContent>
                     <BoxSubHeader>Registration</BoxSubHeader>
-                    <BoxSubDetail
-                      background={prevstat.headerColors[id]}
-                      expanded={isHovered[id]}
-                      width='310px'
-                    >
+                    <BoxSubDetail background={prevstat.headerColors[id]} width='310px'>
                       <ProgressNumber>{item.registration}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
-                  <BoxSubContent onMouseEnter={() => handleHover(id)}>
+                  <BoxSubContent>
                     <BoxSubHeader>Projects</BoxSubHeader>
-                    <BoxSubDetail
-                      background={prevstat.headerColors[id]}
-                      expanded={isHovered[id]}
-                      width='290px'
-                    >
+                    <BoxSubDetail background={prevstat.headerColors[id]} width='290px'>
                       <ProgressNumber>{item.projects}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent onMouseLeave={handleLeave}>
+                  <BoxSubContent>
                     <BoxSubHeader>Community Partners</BoxSubHeader>
-                    <BoxSubDetail
-                      background={prevstat.headerColors[id]}
-                      expanded={isHovered[id]}
-                      width='280px'
-                    >
+                    <BoxSubDetail background={prevstat.headerColors[id]} width='280px'>
                       <ProgressNumber>{item.partners}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
 
-                  <BoxSubContent expanded={isHovered[id]}>
+                  <BoxSubContent>
                     <BoxSubHeader>Reach in Colleges</BoxSubHeader>
-                    <BoxSubDetail
-                      background={prevstat.headerColors[id]}
-                      expanded={isHovered[id]}
-                      width='250px'
-                    >
+                    <BoxSubDetail background={prevstat.headerColors[id]} width='250px'>
                       <ProgressNumber>{item.reach}</ProgressNumber>
                     </BoxSubDetail>
                   </BoxSubContent>
