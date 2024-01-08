@@ -31,7 +31,7 @@ export const SectionImage = styled.img`
   max-width: 700px;
   max-height: 500px;
   position: relative;
-  left: 76px;
+  left: 75px;
 `;
 
 export const SectionCards = styled.div`
