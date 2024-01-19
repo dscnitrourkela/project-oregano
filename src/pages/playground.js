@@ -11,6 +11,7 @@ import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
 import PreviousStats from '../components/PrevStats/PreviousStats';
 import ParticleBackground from '../components/shared/Particle';
+import Timeline2 from '../components/TimelineSec/Timeline2';
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -54,6 +55,7 @@ const Homepage = ({ location }) => {
           <PreviousStats />
           <AboutSection />
           <Prizes />
+          <Timeline2 />
           <TimelineSection />
           <SponsorSection />
           <FAQ />
