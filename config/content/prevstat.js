@@ -47,5 +47,5 @@ export default {
     },
   ],
 
-  headerColors: ['#02daff', ' #FF65CD', '#43F4AA', '#FED954'],
+  headerColors: ['#02daff', ' #9C41FF', '#43F4AA', '#FED954'],
 };
