@@ -56,7 +56,7 @@ export const SectionBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 370px;
+  width: 355px;
   height: 390px;
 
   padding-bottom: 40px;
