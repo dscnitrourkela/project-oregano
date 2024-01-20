@@ -36,7 +36,7 @@ export const SectionImage = styled.img`
 export const SectionCards = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 67px 30px;
+  gap: 67px 25px;
   position: relative;
   left: -200px;
 
@@ -63,6 +63,10 @@ export const SectionBox = styled.div`
   gap: 16px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
+
+  @media (max-width: 1162px) {
+    width: 320px;
+  }
 `;
 
 export const ProgressNumber = styled.div`
