@@ -58,6 +58,7 @@ export const SectionBox = styled.div`
   align-items: center;
   width: 355px;
   height: 390px;
+  padding-right: 9px;
 
   padding-bottom: 40px;
   gap: 16px;
