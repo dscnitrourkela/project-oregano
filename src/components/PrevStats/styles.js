@@ -9,7 +9,7 @@ export const Heading = styled(Heading1)`
   padding-bottom: 30px;
   margin: 0 auto;
 
-  @media (max-width: 1162px) {
+  @media (max-width: 1145px) {
     font-size: 24px;
     font-style: normal;
   }
@@ -28,7 +28,7 @@ export const SectionImage = styled.img`
   position: relative;
   right: 50px;
 
-  @media (max-width: 1162px) {
+  @media (max-width: 1145px) {
     display: none;
   }
 `;
@@ -36,13 +36,13 @@ export const SectionImage = styled.img`
 export const SectionCards = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 67px 25px;
+  gap: 67px 30px;
   position: relative;
   left: -200px;
 
   width: 100%;
 
-  @media (max-width: 1162px) {
+  @media (max-width: 1145px) {
     left: 0px;
 
     display: flex;
@@ -57,15 +57,16 @@ export const SectionBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 355px;
-  height: 390px;
+  height: 440px;
   padding-right: 9px;
+  padding-top: 30px;
 
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   gap: 16px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
 
-  @media (max-width: 1162px) {
+  @media (max-width: 1145px) {
     width: 320px;
   }
 `;
@@ -125,7 +126,7 @@ export const BoxText = styled.div`
   padding: 32px 16px;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 14px;
   flex-shrink: 0;
   border-radius: 8px;
 `;
