@@ -21,9 +21,9 @@ const Line = () => (
 const Ellipse = () => (
   <div>
     <img
-      src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1705901250/Ellipse_20_nhbab9.svg'
+      src='https://res.cloudinary.com/dhnkuonev/image/upload/v1699458313/hnlogo_ei64kd.png'
       alt='Ellipse'
-      className='absolute bottom-0 scale-150'
+      className='absolute bottom-0 scale-150 filter invert'
     />
   </div>
 );
