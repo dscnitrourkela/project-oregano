@@ -70,14 +70,14 @@ export default function Timeline() {
   return (
     <>
       <TimelineHead>{timelinecontent.title}</TimelineHead>
-      <div className='flex m-auto' ref={targetRef}>
+      <div className='flex m-auto px-10' ref={targetRef}>
         <ProgressBar>
           <Progress height={scrollHeight}>
             <Ellipse />
           </Progress>
         </ProgressBar>
         <div className='flex flex-col md:gap-[36px]'>
-          {timelinecontent.nodes.map((node) => (
+          {timelinecontent.nodes.map((node, index) => (
             <div key={node.serialid} className='flex items-center md:flex-row flex-col'>
               <Branch />
               <Box color={node.color}>
@@ -86,7 +86,7 @@ export default function Timeline() {
                 <Duration>{node.duration}</Duration>
                 <Description>{node.description}</Description>
               </Box>
-              <MobileBranch />
+              {index !== timelinecontent.nodes.length - 1 && <MobileBranch />}
             </div>
           ))}
         </div>
