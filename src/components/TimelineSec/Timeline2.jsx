@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Heading3, Heading4, Body2 } from '../shared';
 import { timelinecontent } from '../../../config/content/Timelinecontent';
@@ -17,7 +17,7 @@ const ProgressBar = styled.div`
 const Progress = styled(ProgressBar)`
   position: relative;
   background: #14f195;
-  height: 100%;
+  height: ${(props) => `${props.height}%`};
 `;
 
 const Branch = styled.div`
@@ -69,10 +69,67 @@ const Description = styled(Body2)`
   color: var(--Neutral-4, #c3c3c3);
 `;
 export default function Timeline2() {
+  const [scrollHeight, setScrollHeight] = useState(0); // Initial height in percentage
+  const targetRef = useRef(null);
+
+  const handleScroll = () => {
+    if (targetRef.current) {
+      const { top, bottom } = targetRef.current.getBoundingClientRect();
+      if (bottom > 0 && top < window.innerHeight) {
+        const scrolled = Math.min(
+          100,
+          Math.max(0, 100 - ((top < 0 ? 0 : top) / (bottom - top)) * 100 - 30),
+        );
+        console.log('scrolled from top of div:', scrolled);
+        setScrollHeight(scrolled);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log('Div is intersecting!');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0 });
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+      console.log('Observing targetRef:', targetRef.current);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+      console.log('Observer disconnected');
+    };
+  }, []);
+
   return (
-    <div className='flex m-auto'>
+    <div className='flex m-auto' ref={targetRef}>
       <ProgressBar>
-        <Progress />
+        <Progress height={scrollHeight}>
+          <div className=''>
+            <img
+              // eslint-disable-next-line max-len
+              src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1705901250/Ellipse_20_nhbab9.svg'
+              alt='Ellipse'
+              className='absolute bottom-0 scale-150'
+            />
+            <img
+              // eslint-disable-next-line max-len
+              src='https://res.cloudinary.com/dgjzygzgx/image/upload/v1705901566/HackNITR_logo-removebg-preview_1_m9h3ul.png'
+              alt='HN logo'
+              className=''
+            />
+          </div>
+        </Progress>
       </ProgressBar>
       <div className='flex flex-col md:gap-[36px]'>
         {timelinecontent.nodes.map((node) => (
@@ -82,7 +139,7 @@ export default function Timeline2() {
               <BoxHeading color={node.color}>{node.title}</BoxHeading>
               <Line />
               <Duration>{node.duration}</Duration>
-              <Description>Get extra perks with early registration</Description>
+              <Description>Scroll Height: {scrollHeight.toFixed(2)}%</Description>
             </Box>
             <MobileBranch />
           </div>
