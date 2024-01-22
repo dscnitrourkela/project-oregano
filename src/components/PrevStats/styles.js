@@ -57,7 +57,11 @@ export const SectionBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 355px;
+<<<<<<< HEAD
   height: 440px;
+=======
+  height: 442px;
+>>>>>>> 1a0e47b77f1ced54f03d0d86b157ebb2faa01718
   padding-right: 9px;
   padding-top: 30px;
 
