@@ -69,17 +69,24 @@ const Description = styled(Body2)`
   color: var(--Neutral-4, #c3c3c3);
 `;
 export default function Timeline2() {
-  const [scrollHeight, setScrollHeight] = useState(0); // Initial height in percentage
+  const [scrollHeight, setScrollHeight] = useState(0);
   const targetRef = useRef(null);
 
   const handleScroll = () => {
     if (targetRef.current) {
       const { top, bottom } = targetRef.current.getBoundingClientRect();
       if (bottom > 0 && top < window.innerHeight) {
-        const scrolled = Math.min(
-          100,
-          Math.max(0, 100 - ((top < 0 ? 0 : top) / (bottom - top)) * 100 - 30),
-        );
+        let scrolled;
+
+        if (top >= 0) {
+          scrolled = Math.min(100, Math.max(0, (1 - top / (bottom - top)) * 100 - 30));
+        } else {
+          scrolled = Math.min(
+            100,
+            Math.max(0, (1 - (bottom - window.innerHeight) / (bottom - top)) * 100 - 18),
+          );
+        }
+
         console.log('scrolled from top of div:', scrolled);
         setScrollHeight(scrolled);
       }
