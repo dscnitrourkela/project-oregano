@@ -6,9 +6,9 @@ export default {
   questions: [
     {
       id: 1,
-      question: 'What are the tentative dates for HackNITR 5.0?',
+      question: 'What are the dates for HackNITR 5.0?',
       answer:
-        'HackNITR 5.0 will be held tentatively on 9th and 10th March 2024. We will be waiting for you with a warm welcome.',
+        'HackNITR 5.0 will be held on 2nd and 3rd March, 2024. We will be waiting for you with a warm welcome.',
     },
     {
       id: 2,
