@@ -78,7 +78,7 @@ height: 42px
 font-family: Prompt;
 font-size: 28px;
 font-weight: 500;
-line-height: 42px;
+line-height: 20px;
 color: ${(props) => props.color || '#02daff'};
 text-align: center;
 
