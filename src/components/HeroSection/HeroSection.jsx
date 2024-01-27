@@ -13,6 +13,7 @@ import {
 } from './styles';
 import { hero } from '../../../config';
 import RegisterButton from '../shared/DevfolioBtn';
+import Discord from '../shared/Discord';
 
 export default function HeroSection() {
   return (
@@ -31,6 +32,7 @@ export default function HeroSection() {
           </ContentBlock>
         </HeroTitle>
         <RegisterButton />
+        <Discord />
       </HeroBody>
     </SectionContainer>
   );
