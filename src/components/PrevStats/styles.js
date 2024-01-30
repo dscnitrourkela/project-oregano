@@ -57,12 +57,9 @@ export const SectionBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 355px;
-  height: 390px;
-  padding-right: 9px;
-  padding-top: 30px;
-
-  padding-bottom: 70px;
-  gap: 16px;
+  height: 370px;
+  padding: 0px 16px 32px;
+  gap: 12px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
 
@@ -111,7 +108,7 @@ export const BoxSubHeader = styled(Caption)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   flex-shrink: 0;
   color: var(--Neutral-2, #ededed);
   text-align: center;
@@ -126,7 +123,7 @@ export const BoxText = styled.div`
   padding: 16px;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   flex-shrink: 0;
   border-radius: 8px;
 `;
