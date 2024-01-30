@@ -18,7 +18,6 @@ const Prizes = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [selectedBackgroundColor, setSelectedBackgroundColor] = useState('#272727');
   const isBrowser = typeof window !== 'undefined';
-
   const isMobile = isBrowser && window.innerWidth <= 768;
   const isSmallerScreenRef = useRef(isMobile);
 

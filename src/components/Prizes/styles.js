@@ -98,8 +98,7 @@ export const Box = styled.div`
   @media (max-width: ${smallScreen}) {
     align-items:center;
     justify-content:center;
-    height: ${(props) => (props.expanded ? '460px' : '350px')};
-    j
+    height: ${(props) => (props.expanded ? '360px' : '350px')};
   }
   
   &:not(:hover) {
