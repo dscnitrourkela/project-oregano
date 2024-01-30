@@ -6,7 +6,6 @@ export default styled.p`
   ${tw`
    text-sm
    leading-5
-   
    md:text-base
    md:leading-5
    text-white
