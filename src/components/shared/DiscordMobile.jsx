@@ -5,16 +5,16 @@ import { hero } from '../../../config';
 
 const Wrapper = styled.div`
   ${tw`
-  hidden lg:flex
+  lg:hidden
+  md:flex
+  sm:flex
   justify-start
   items-center
   bg-white
-  p-1
-  md:p-4
+  p-4
   border-2
   border-white
   rounded
-  mt-14
   h-10
   w-auto
 `}

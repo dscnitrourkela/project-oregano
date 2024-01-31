@@ -5,7 +5,7 @@ import { hero } from '../../../config';
 
 const Wrapper = styled.div`
   ${tw`
-  flex
+  lg:flex
   justify-end
   items-center
   p-2.5
@@ -14,6 +14,8 @@ const Wrapper = styled.div`
   bg-white
   rounded-md 
   h-11
+  sm:hidden
+  md:hidden
   `}
 `;
 const Image = styled.img`
