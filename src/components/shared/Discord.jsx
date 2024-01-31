@@ -20,7 +20,6 @@ const Image = styled.img`
   ${tw`
   h-6
   w-auto
-  mr-3
   `}
 `;
 
