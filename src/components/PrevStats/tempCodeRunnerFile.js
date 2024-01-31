@@ -57,9 +57,12 @@ export const SectionBox = styled.div`
   justify-content: center;
   align-items: center;
   width: 355px;
-  height: 370px;
-  padding: 0px 16px 32px;
-  gap: 12px;
+  height: 440px;
+  padding-right: 9px;
+  padding-top: 30px;
+
+  padding-bottom: 70px;
+  gap: 16px;
   border-radius: 12px;
   background: var(--Bg, linear-gradient(180deg, #464646 0%, rgba(58, 58, 58, 0.15) 100%));
 
@@ -75,7 +78,7 @@ height: 42px
 font-family: Prompt;
 font-size: 28px;
 font-weight: 500;
-line-height: 20px;
+line-height: 42px;
 color: ${(props) => props.color || '#02daff'};
 text-align: center;
 
@@ -108,22 +111,22 @@ export const BoxSubHeader = styled(Caption)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 6px;
   flex-shrink: 0;
+  margin-bottom: 3px;
   color: var(--Neutral-2, #ededed);
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 32px; /* 200% */
 `;
 
 export const BoxText = styled.div`
   display: flex;
-  padding: 16px;
+  padding: 32px 16px;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   flex-shrink: 0;
   border-radius: 8px;
 `;
