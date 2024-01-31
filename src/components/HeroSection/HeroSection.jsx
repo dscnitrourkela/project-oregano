@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroBtn from './HeroBtn';
 import {
   HeroBody,
   NITRimg,
@@ -13,6 +12,7 @@ import {
   FIVEimg,
 } from './styles';
 import { hero } from '../../../config';
+import RegisterButton from '../shared/DevfolioBtn';
 
 export default function HeroSection() {
   return (
@@ -29,8 +29,8 @@ export default function HeroSection() {
           <ContentBlock>
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
-          <HeroBtn />
         </HeroTitle>
+        <RegisterButton />
       </HeroBody>
     </SectionContainer>
   );
