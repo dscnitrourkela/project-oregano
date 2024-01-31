@@ -1,36 +1,30 @@
-/* eslint-disable max-len */
 import React from 'react';
+import tw from 'twin.macro';
+import { hero } from '../../../config';
 
-const Discord = () => {
-  React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://discord.com/invite/yQZ368XPrB';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
+const Wrapper = tw.div`
+  flex
+  justify-end
+  items-center
+  p-2.5
+  border-2
+  border-white
+  bg-white
+  rounded-md 
+  h-11
+`;
+const Image = tw.img`
+  h-6
+  w-auto
+  mr-3
+`;
+function DiscordButton() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignContent: 'center',
-      }}
-    >
-      <div
-        className='apply-button'
-        data-hackathon-slug='hacknitr5'
-        data-button-theme='dark-inverted'
-        style={{ height: '44px', minWidth: '270px', marginTop: '2rem', marginRight: '14px' }}
-      >
-        Discord
-      </div>
-    </div>
+    <Wrapper>
+      <a href={hero.links.discord.link} target='_blank' rel='noreferrer noopener'>
+        <Image src={hero.links.discord.icon} alt='Discord Icon' />
+      </a>
+    </Wrapper>
   );
-};
-
-export default Discord;
+}
+export default DiscordButton;

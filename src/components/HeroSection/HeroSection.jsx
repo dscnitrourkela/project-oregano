@@ -14,7 +14,7 @@ import {
 } from './styles';
 import { hero } from '../../../config';
 import RegisterButton from '../shared/DevfolioBtn';
-import Discord from '../shared/Discord';
+import DiscordButton from '../shared/Discord';
 
 export default function HeroSection() {
   return (
@@ -34,7 +34,7 @@ export default function HeroSection() {
         </HeroTitle>
         <Herodiv>
           <RegisterButton />
-          <Discord />
+          <DiscordButton />
         </Herodiv>
       </HeroBody>
     </SectionContainer>

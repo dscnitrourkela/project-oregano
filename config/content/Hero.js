@@ -18,4 +18,10 @@ export default {
       alt: 'FIVE',
     },
   },
+  links: {
+    discord: {
+      icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Discord-Logo-Black_ratsjn.svg',
+      link: 'https://discord.com/invite/yQZ368XPrB',
+    },
+  },
 };
