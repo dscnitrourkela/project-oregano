@@ -57,7 +57,11 @@ const PreviousStats = () => {
                 </BoxSubContent>
 
                 <BoxSubContent>
-                  <BoxSubHeader>Reach in College</BoxSubHeader>
+                  <BoxSubHeader>
+                    Reach in
+                    <br />
+                    College
+                  </BoxSubHeader>
                   <ProgressNumber color={prevstat.headerColors[id]}>{item.reach}</ProgressNumber>
                 </BoxSubContent>
               </BoxContent>
