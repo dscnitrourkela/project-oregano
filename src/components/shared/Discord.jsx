@@ -2,7 +2,8 @@ import React from 'react';
 import tw from 'twin.macro';
 import { hero } from '../../../config';
 
-const Wrapper = tw.div`
+const Wrapper = styled.div`
+  ${tw`
   flex
   justify-end
   items-center
@@ -12,12 +13,16 @@ const Wrapper = tw.div`
   bg-white
   rounded-md 
   h-11
+  `}
 `;
-const Image = tw.img`
+const Image = styled.img`
+  ${tw`
   h-6
   w-auto
   mr-3
+  `}
 `;
+
 function DiscordButton() {
   return (
     <Wrapper>
