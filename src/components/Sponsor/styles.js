@@ -173,7 +173,7 @@ export const BetaContainer = styled.div`
 export const BetaSponsors = styled.div`
   padding: 40px 42px;
   width: 90%;
-  margin: 58px auto 40px auto;
+  margin: 58px auto 42px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
