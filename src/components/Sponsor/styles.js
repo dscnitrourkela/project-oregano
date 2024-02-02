@@ -356,11 +356,11 @@ export const DeltaSponsors = styled.div`
 `;
 export const PlatformImage = styled.img`
   ${tw`
-  h-[45px]
+  h-[42px]
   `}
 `;
 export const Alpha1Image = styled.img`
   ${tw`
-  h-[50px]
+  h-[45px]
   `}
 `;
