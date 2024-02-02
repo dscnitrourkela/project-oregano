@@ -14,8 +14,7 @@ const Wrapper = styled.div`
   bg-white
   rounded-md 
   h-11
-  sm:hidden
-  md:hidden
+  hidden
   `}
 `;
 const Image = styled.img`

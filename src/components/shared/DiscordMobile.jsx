@@ -6,8 +6,7 @@ import { hero } from '../../../config';
 const Wrapper = styled.div`
   ${tw`
   lg:hidden
-  md:flex
-  sm:flex
+  flex
   justify-start
   items-center
   bg-white
