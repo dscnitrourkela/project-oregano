@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import HeroSection from '../components/HeroSection/HeroSection';
-import { Container } from '../components/shared/SectionContainer';
+// import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
 import AboutSection from '../components/AboutUs/About';
 import SponsorSection from '../components/Sponsor/Sponsor';
@@ -47,18 +47,18 @@ const Homepage = ({ location }) => {
           src='//js.hs-scripts.com/8898157.js'
         />
       </Helmet>
-      <ParticleBackground />
+      {/* <ParticleBackground /> */}
       <Layout location={location}>
         <HeroSection />
-        <Container>
-          <PreviousStats />
+        {/* <Container> */}
+        {/* <PreviousStats />
           <AboutSection />
           <Prizes />
           <Timeline />
           <SponsorSection />
-          <FAQ />
-        </Container>
-        <Footer />
+          <FAQ /> */}
+        {/* </Container> */}
+        {/* <Footer /> */}
       </Layout>
     </>
   );
