@@ -215,3 +215,13 @@ export const Button = styled.button`
     }
   }
 `;
+export const Herodiv = styled.div`
+  ${tw`
+  flex
+lg:flex-row
+flex-col
+    justify-center
+    items-center
+   space-x-4
+  `}
+`;
