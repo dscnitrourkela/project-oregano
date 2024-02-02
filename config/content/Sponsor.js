@@ -24,6 +24,17 @@ export default {
     //   alt: 'Polygon',
     // },
   ],
+
+  alpha1: [
+    {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
+        '/Sponsor%20Section/jsvurmvvk3nrr4lmncy9.png',
+      name: 'Quine',
+      link: 'https://quine.sh/',
+      alt: 'Quine',
+    },
+  ],
   beta: [
     // {
     //   src:
