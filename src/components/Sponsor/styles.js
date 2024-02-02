@@ -361,6 +361,6 @@ export const PlatformImage = styled.img`
 `;
 export const Alpha1Image = styled.img`
   ${tw`
-  h-[55px]
+  h-[50px]
   `}
 `;
