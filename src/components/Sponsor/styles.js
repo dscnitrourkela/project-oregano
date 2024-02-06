@@ -9,13 +9,19 @@ export const SponsorLogo = styled.div`
     justify-center
     `}
 `;
+
 export const AlphaLogoImg = styled.img`
   ${tw`
-    h-[100px]
-    `}
+    h-[180px]
+  `}
   filter: invert(100%);
   filter: brightness(10);
+  object-fit: contain;
+  @media (max-width: 440px) {
+    min-height: 140px;
+  }
 `;
+
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
@@ -24,9 +30,6 @@ export const AlphaLogoContainer = styled.div`
     md:gap-[120px]
     gap-[24px]
     `}
-  @media (max-width: 545px) {
-    width: 85%;
-  }
 `;
 
 export const AlphaContainer = styled.div`
@@ -171,9 +174,9 @@ export const BetaContainer = styled.div`
 `;
 
 export const BetaSponsors = styled.div`
-  padding: 32px 42px;
+  padding: 40px 42px;
   width: 90%;
-  margin: 64px auto 64px auto;
+  margin: 58px auto 42px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
@@ -317,7 +320,7 @@ export const DeltaContainer = styled.div`
 
 export const DeltaLogoImg = styled.img`
   ${tw`
-    h-[50px]
+    h-[40px]
     `}
 `;
 
@@ -356,6 +359,11 @@ export const DeltaSponsors = styled.div`
 `;
 export const PlatformImage = styled.img`
   ${tw`
-  h-[50px]
+  h-[42px]
+  `}
+`;
+export const Alpha1Image = styled.img`
+  ${tw`
+  h-[45px]
   `}
 `;
