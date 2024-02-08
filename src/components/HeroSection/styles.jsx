@@ -222,6 +222,6 @@ lg:flex-row
 flex-col
     justify-center
     items-center
-   space-x-4
+    gap-4
   `}
 `;
