@@ -9,7 +9,7 @@ import Layout from '../components/shared/Layout';
 import HeroSection from '../components/HeroSection/HeroSection';
 import PreviousStats from '../components/PrevStats/PreviousStats';
 import AboutSection from '../components/AboutUs/About';
-// import TimelineSection from '../components/TimelineSection/Timeline';
+import Timeline from '../components/TimelineSec/Timeline';
 import SponsorSection from '../components/Sponsor/Sponsor';
 import FAQ from '../components/Faq/Faq';
 import Prizes from '../components/Prizes/Prizes';
@@ -61,7 +61,7 @@ const HomePage = ({ location }) => {
           <AboutSection />
           <PreviousStats />
           <Prizes />
-          {/* <TimelineSection /> */}
+          <Timeline />
           <SponsorSection />
           <FAQ />
         </ContainerWrapper>
