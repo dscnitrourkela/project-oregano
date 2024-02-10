@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import HeroSection from '../components/HeroSection/HeroSection';
 // import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
+import Timeline from '../components/TimelineSec/Timeline';
 // import AboutSection from '../components/AboutUs/About';
 // import SponsorSection from '../components/Sponsor/Sponsor';
 // import FAQ from '../components/Faq/Faq';
