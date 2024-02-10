@@ -12,7 +12,7 @@ import AboutSection from '../components/AboutUs/About';
 import Timeline from '../components/TimelineSec/Timeline';
 import SponsorSection from '../components/Sponsor/Sponsor';
 import FAQ from '../components/Faq/Faq';
-// import Prizes from '../components/Prizes/Prizes';
+import Prizes from '../components/Prizes/Prizes';
 import { Footer } from '../components/marginals';
 import { ContainerWrapper } from '../components/shared/Container';
 
