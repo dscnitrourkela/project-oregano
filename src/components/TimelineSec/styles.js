@@ -3,7 +3,7 @@ import { Heading3, Heading4, Body2, Heading1 } from '../shared';
 
 export const ProgressBar = styled.div`
   display: none;
-  width: 39px;
+  width: 35px;
   flex-shrink: 0;
   border-radius: 30px;
   background: #191919;
