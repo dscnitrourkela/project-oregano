@@ -50,11 +50,11 @@ const Homepage = ({ location }) => {
       {/* <ParticleBackground /> */}
       <Layout location={location}>
         <HeroSection />
+        <Timeline />
         {/* <Container> */}
         {/* <PreviousStats />
           <AboutSection />
           <Prizes />
-          <Timeline />
           <SponsorSection />
           <FAQ /> */}
         {/* </Container> */}
