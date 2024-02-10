@@ -60,7 +60,7 @@ const HomePage = ({ location }) => {
         <ContainerWrapper>
           <AboutSection />
           <PreviousStats />
-          {/* <Prizes /> */}
+          <Prizes />
           <Timeline />
           <SponsorSection />
           <FAQ />
