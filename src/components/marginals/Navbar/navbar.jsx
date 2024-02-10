@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import navbar from '../../../../config/content/navbar';
 import { MenuContext } from './MenuContext';
-
+import MLHBanner from '../../../../config/content/MLHBanner';
 import {
   NavContainer,
   NavLink,
@@ -56,7 +56,9 @@ const NavBar = () => {
           </NavLinksContainer>
         ))}
       </NavLinks>
-      <div>.</div>
+      <div>
+        <MLHBanner />
+      </div>
       <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
     </NavContainer>
   );

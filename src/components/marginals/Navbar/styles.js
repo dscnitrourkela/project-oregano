@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
 import NavText from '../../shared/Typography/NavText';
