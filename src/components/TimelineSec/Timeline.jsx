@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { timelinecontent } from '../../../config/content/Timelinecontent';
+import { SectionContainer } from '../shared';
 import {
   ProgressBar,
   Progress,
@@ -68,7 +69,7 @@ export default function Timeline() {
   }, []);
 
   return (
-    <>
+    <SectionContainer>
       <TimelineHead>{timelinecontent.title}</TimelineHead>
       <div className='flex m-auto px-10' ref={targetRef}>
         <ProgressBar>
@@ -91,6 +92,6 @@ export default function Timeline() {
           ))}
         </div>
       </div>
-    </>
+    </SectionContainer>
   );
 }

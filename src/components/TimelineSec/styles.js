@@ -65,6 +65,6 @@ export const TimelineHead = styled(Heading1)`
   @media (max-width: 640px) {
     font-size: 32px;
     line-height: 96px;
-    margin: 32px auto;
+    margin: 0 auto;
   }
 `;
