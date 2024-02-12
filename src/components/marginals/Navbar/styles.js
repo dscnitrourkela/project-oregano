@@ -127,6 +127,11 @@ export const LogoContainer = styled.div`
     h-[47.663px]
     flex-shrink-0
 `}
+  @media (max-width: 540px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const NavLinks = styled.ul`
@@ -220,6 +225,13 @@ export const CustomLogo = styled.div`
   }
   @media (max-width: 1024px) {
     width: 48px;
+  }
+  @media (max-width: 540px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
   }
 `;
 

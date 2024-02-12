@@ -16,8 +16,15 @@ const Banner = styled.a`
     width: 8%;
   }
 
-  @media (max-width: 540px) {
-    width: 10%;
+  @media (max-width: 768px) {
+    width: 15%;
+   
+    display: block
+    top: 0; 
+    left: 0; 
+    padding: 10px; 
+    max-width: none; 
+    min-width: unset; 
   }
 `;
 
