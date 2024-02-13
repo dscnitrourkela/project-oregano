@@ -65,9 +65,9 @@ export default {
     },
     {
       id: 11,
-      question: 'What is Code of Conduct?',
+      question: 'What is the Code of Conduct?',
       answer:
-        'To ensure a positive experience among all the participants, we follow the MLH Code of Conduct. It is advised that you go through it once. [MLH Code of Conduct]',
+        'To ensure a positive experience among all the participants, we follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>. It is advised that you go through it once :)',
     },
   ],
 };

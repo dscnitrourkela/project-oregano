@@ -11,9 +11,42 @@ import {
   FAQQuestionText,
   FAQDiv,
   FAQHeading,
+  StyledLink,
 } from './styles';
 import faqData from '../../../config/content/Faq';
 import { SectionContainer } from '../shared';
+
+/**
+ *
+ * @param {String} data
+ * @description This function takes in the data and returns while sprinkling the data with the necessary HTML tags.
+ */
+const preProcess = (data) => {
+  // Add body tags to the data for parsing
+  const body = `<body>${data}</body>`;
+  const parser = new DOMParser();
+  const parsed = parser.parseFromString(body, 'text/html');
+
+  // Map over parsed data and return array of strings, anchor elements, bold elements and italic elements
+  const parsedData = Array.from(parsed.body.childNodes).map((node) => {
+    switch (node.nodeName) {
+      case 'A':
+        return (
+          <StyledLink href={node.attributes.href.value} target='_blank' rel='noreferrer'>
+            {node.textContent}
+          </StyledLink>
+        );
+      case 'STRONG':
+        return <strong>{node.textContent}</strong>;
+      case 'EM':
+        return <em>{node.textContent}</em>;
+      default:
+        return node.textContent;
+    }
+  });
+
+  return parsedData;
+};
 
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
@@ -61,17 +94,7 @@ const FAQ = () => {
                   </FAQIcon>
                 </FAQDiv>
                 <FAQAnswer isOpen={openQuestions.includes(index)}>
-                  {' '}
-                  {faq.id === 11 && (
-                    <>
-                      To ensure a positive experience among all the participants, we follow the{' '}
-                      <a href=' https://static.mlh.io/docs/mlh-code-of-conduct.pdf' target='_blank'>
-                        MLH Code of Conduct
-                      </a>
-                      . It is advised that you go through it once.
-                    </>
-                  )}
-                  {faq.id !== 11 && faq.answer}
+                  {preProcess(faq.answer)}
                 </FAQAnswer>
               </FAQQuestion>
             </div>
