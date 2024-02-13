@@ -41,6 +41,7 @@ export const NavContainer = styled.div`
   @media (max-width: 720px) {
     margin: 0.5rem 1rem;
     background-color: transparent;
+    justify-content: space-between;
   }
 `;
 export const NavLink = styled.a`
@@ -127,10 +128,16 @@ export const LogoContainer = styled.div`
     h-[47.663px]
     flex-shrink-0
 `}
-  @media (max-width: 540px) {
-    display: flex;
+  @media (max-width: 720px) {
+    //   display: flex;
+    //   justify-content: center;
+
+    width: 100%; /* Make the container occupy full width */
+
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Center the logo vertically */
+    margin-bottom: 1rem;
+    position: absolute; /* Add relative positioning */
   }
 `;
 
@@ -223,15 +230,22 @@ export const CustomLogo = styled.div`
   &::after {
     display: none;
   }
+
   @media (max-width: 1024px) {
     width: 48px;
   }
-  @media (max-width: 540px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
+  @media (max-width: 720px) {
+    //position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // z-index: 100;
+    //align-item: center;
+    //justify-content: center;
+    //display: flex;
+    // justify-content: center;
+    margin-bottom: 0;
+    // align-items: center;
   }
 `;
 
@@ -242,3 +256,15 @@ export const CustomLink = styled.a`
   font-weight: bold;
   margin-top: 2rem;
 `;
+// export const Wrapper = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   max-width: 1200px; // Adjust max-width as needed
+//   margin: 0 auto;
+
+//   @media (max-width: 720px) {
+//     padding: 0 1rem; // Add padding for mobile screens
+//   }
+// `;

@@ -56,9 +56,11 @@ const NavBar = () => {
           </NavLinksContainer>
         ))}
       </NavLinks>
+
       <div>
         <MLHBanner />
       </div>
+
       <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
     </NavContainer>
   );

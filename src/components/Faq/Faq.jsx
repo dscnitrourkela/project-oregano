@@ -60,7 +60,19 @@ const FAQ = () => {
                     <span className='material-symbols-outlined'>add</span>
                   </FAQIcon>
                 </FAQDiv>
-                <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
+                <FAQAnswer isOpen={openQuestions.includes(index)}>
+                  {' '}
+                  {faq.id === 11 && (
+                    <>
+                      To ensure a positive experience among all the participants, we follow the{' '}
+                      <a href=' https://static.mlh.io/docs/mlh-code-of-conduct.pdf' target='_blank'>
+                        MLH Code of Conduct
+                      </a>
+                      . It is advised that you go through it once.
+                    </>
+                  )}
+                  {faq.id !== 11 && faq.answer}
+                </FAQAnswer>
               </FAQQuestion>
             </div>
           ))}

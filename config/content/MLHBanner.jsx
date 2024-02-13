@@ -16,7 +16,7 @@ const Banner = styled.a`
     width: 8%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 720px) {
     width: 15%;
    
     display: block
