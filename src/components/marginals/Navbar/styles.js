@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import styled, { keyframes } from 'styled-components';
 import tw from 'twin.macro';
 import NavText from '../../shared/Typography/NavText';
@@ -34,12 +35,19 @@ export const NavContainer = styled.div`
       height: 100vh;
     }
   }
+  .logo-container {
+    @media (max-width: 1023px) {
+      margin: 0 auto;
+    }
+  }
   @media (max-width: 992px) {
     margin: 0.5rem 2.5rem;
+    justify-content: space-between;
   }
   @media (max-width: 720px) {
     margin: 0.5rem 1rem;
     background-color: transparent;
+    justify-content: space-between;
   }
 `;
 export const NavLink = styled.a`
@@ -124,8 +132,15 @@ export const LogoContainer = styled.div`
     bg-[#232323]
     w-[47.481px]
     h-[47.663px]
-    flex-shrink-0
+    flex-shrink-0 // Have to use deprecated tailwindcss classes as shrink-0 is not supported
 `}
+  @media (max-width: 720px) {
+    width: 100%; /* Make the container occupy full width */
+    justify-content: center;
+    align-items: center; /* Center the logo vertically */
+    margin-bottom: 1rem;
+    position: absolute; /* Add relative positioning */
+  }
 `;
 
 export const NavLinks = styled.ul`
@@ -217,8 +232,12 @@ export const CustomLogo = styled.div`
   &::after {
     display: none;
   }
+
   @media (max-width: 1024px) {
     width: 48px;
+  }
+  @media (max-width: 720px) {
+    margin-bottom: 0;
   }
 `;
 

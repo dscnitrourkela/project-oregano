@@ -119,3 +119,9 @@ export const FAQDiv = styled.div`
   display: flex;
   align-items: center;
 `;
+
+export const StyledLink = styled.a`
+  color: var(--color-primary-blue);
+  font-weight: 600;
+  text-decoration: underline;
+`;

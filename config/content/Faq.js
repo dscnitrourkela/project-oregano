@@ -63,5 +63,11 @@ export default {
       answer:
         'The teams will be judged based on skills of viability and technical complexity, presentation skills, and, most importantly, creativity.',
     },
+    {
+      id: 11,
+      question: 'What is the Code of Conduct?',
+      answer:
+        'To ensure a positive experience among all the participants, we follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a>. It is advised that you go through it once :)',
+    },
   ],
 };
