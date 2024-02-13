@@ -40,7 +40,7 @@ const NavBar = () => {
 
   return (
     <NavContainer scrolled={isScrolled}>
-      <CustomLogo>
+      <CustomLogo className='logo-container'>
         <img
           src='https://res.cloudinary.com/dhnkuonev/image/upload/v1699458313/hnlogo_ei64kd.png'
           alt='Your Alt Text'

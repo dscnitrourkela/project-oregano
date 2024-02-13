@@ -35,8 +35,14 @@ export const NavContainer = styled.div`
       height: 100vh;
     }
   }
+  .logo-container {
+    @media (max-width: 1023px) {
+      margin: 0 auto;
+    }
+  }
   @media (max-width: 992px) {
     margin: 0.5rem 2.5rem;
+    justify-content: space-between;
   }
   @media (max-width: 720px) {
     margin: 0.5rem 1rem;

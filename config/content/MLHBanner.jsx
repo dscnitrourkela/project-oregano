@@ -22,7 +22,6 @@ const Banner = styled.a`
     display: block
     top: 0; 
     left: 0; 
-    padding: 10px; 
     max-width: none; 
     min-width: unset; 
   }
