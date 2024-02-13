@@ -132,7 +132,7 @@ export const LogoContainer = styled.div`
     bg-[#232323]
     w-[47.481px]
     h-[47.663px]
-    shrink-0
+    flex-shrink-0 // Have to use deprecated tailwindcss classes as shrink-0 is not supported
 `}
   @media (max-width: 720px) {
     width: 100%; /* Make the container occupy full width */
