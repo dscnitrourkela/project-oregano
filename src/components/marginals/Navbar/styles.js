@@ -132,14 +132,10 @@ export const LogoContainer = styled.div`
     bg-[#232323]
     w-[47.481px]
     h-[47.663px]
-    flex-shrink-0
+    shrink-0
 `}
   @media (max-width: 720px) {
-    //   display: flex;
-    //   justify-content: center;
-
     width: 100%; /* Make the container occupy full width */
-
     justify-content: center;
     align-items: center; /* Center the logo vertically */
     margin-bottom: 1rem;
@@ -241,17 +237,7 @@ export const CustomLogo = styled.div`
     width: 48px;
   }
   @media (max-width: 720px) {
-    //position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // z-index: 100;
-    //align-item: center;
-    //justify-content: center;
-    //display: flex;
-    // justify-content: center;
     margin-bottom: 0;
-    // align-items: center;
   }
 `;
 
@@ -262,15 +248,3 @@ export const CustomLink = styled.a`
   font-weight: bold;
   margin-top: 2rem;
 `;
-// export const Wrapper = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 100%;
-//   max-width: 1200px; // Adjust max-width as needed
-//   margin: 0 auto;
-
-//   @media (max-width: 720px) {
-//     padding: 0 1rem; // Add padding for mobile screens
-//   }
-// `;
