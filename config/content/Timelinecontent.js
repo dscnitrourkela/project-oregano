@@ -4,14 +4,14 @@ export const timelinecontent = {
     {
       serialid: 1,
       title: 'Registration',
-      duration: 'Duration: 15 Oct to 15 Feb',
+      duration: 'Duration: 15 Oct to 19 Feb',
       color: '#35E1FF',
       description: 'Registration period for HackNITR 5.0',
     },
     {
       serialid: 2,
       title: 'Acceptance Letter rollout',
-      duration: 'Duration: 16 Feb to 18 Feb',
+      duration: 'Duration: 16 Feb to 28 Feb',
       color: '#35E1FF',
       description: 'Mails sent to accepted hackers',
     },
