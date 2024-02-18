@@ -29,8 +29,8 @@ const Image = styled.img`
 function DiscordMobile() {
   return (
     <Wrapper>
-      <a href={hero.links.discordMobile.link} target='_blank' rel='noreferrer noopener'>
-        <Image src={hero.links.discordMobile.icon} alt='Discord Icon' />
+      <a href={hero.links.discord.link} target='_blank' rel='noreferrer noopener'>
+        <Image src={hero.links.discord.icon} alt='Discord Icon' />
       </a>
     </Wrapper>
   );
