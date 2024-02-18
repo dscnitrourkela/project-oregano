@@ -50,7 +50,7 @@ const NavBar = () => {
       <NavLinks className={` ${menuOpen ? 'open-nav' : 'closed-nav'}`}>
         {navbar.Links.map((link) => (
           <NavLinksContainer key={link.name}>
-            <NavLink href={link.link} onClick={handleClick}>
+            <NavLink href={link.link} onClick={handleClick} target={link.target || ''}>
               <NavHeaders semibold>{link.name}</NavHeaders>
             </NavLink>
           </NavLinksContainer>

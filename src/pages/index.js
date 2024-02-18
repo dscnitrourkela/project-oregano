@@ -2,10 +2,19 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { eventData, breadcrumbsData } from '../components/shared/SEO/structuredData';
 
-import Container from '../components/shared/Container';
 import '../styles/global.css';
 import SEO from '../components/shared/SEO/SEO';
-import Heading1 from '../components/shared/Typography/Heading1';
+import ParticleBackground from '../components/shared/Particle';
+import Layout from '../components/shared/Layout';
+import HeroSection from '../components/HeroSection/HeroSection';
+import PreviousStats from '../components/PrevStats/PreviousStats';
+import AboutSection from '../components/AboutUs/About';
+// import TimelineSection from '../components/TimelineSection/Timeline';
+import SponsorSection from '../components/Sponsor/Sponsor';
+import FAQ from '../components/Faq/Faq';
+// import Prizes from '../components/Prizes/Prizes';
+import { Footer } from '../components/marginals';
+import { ContainerWrapper } from '../components/shared/Container';
 
 const HomePage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -45,9 +54,19 @@ const HomePage = ({ location }) => {
         <script type='application/ld+json'>{JSON.stringify(breadcrumbsData)}</script>
       </Helmet>
       <SEO />
-      <Container>
-        <Heading1>Hello World</Heading1>
-      </Container>
+      <ParticleBackground />
+      <Layout location={location}>
+        <HeroSection />
+        <ContainerWrapper>
+          <AboutSection />
+          <PreviousStats />
+          {/* <Prizes />
+        <TimelineSection /> */}
+          <SponsorSection />
+          <FAQ />
+        </ContainerWrapper>
+        <Footer />
+      </Layout>
     </>
   );
 };

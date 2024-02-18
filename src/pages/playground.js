@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-// Libraries
 import Helmet from 'react-helmet';
-
 import HeroSection from '../components/HeroSection/HeroSection';
 import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
@@ -10,8 +7,10 @@ import AboutSection from '../components/AboutUs/About';
 import SponsorSection from '../components/Sponsor/Sponsor';
 import FAQ from '../components/Faq/Faq';
 import TimelineSection from '../components/TimelineSection/Timeline';
-import { Footer } from '../components/marginals/Footer/Footer';
+import { Footer } from '../components/marginals';
 import Prizes from '../components/Prizes/Prizes';
+import PreviousStats from '../components/PrevStats/PreviousStats';
+import ParticleBackground from '../components/shared/Particle';
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -48,10 +47,11 @@ const Homepage = ({ location }) => {
           src='//js.hs-scripts.com/8898157.js'
         />
       </Helmet>
-
+      <ParticleBackground />
       <Layout location={location}>
         <HeroSection />
         <Container>
+          <PreviousStats />
           <AboutSection />
           <Prizes />
           <TimelineSection />

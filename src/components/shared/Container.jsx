@@ -14,6 +14,18 @@ const Wrapper = styled.div`
     `}
 `;
 
+export const ContainerWrapper = styled.div`
+  ${tw`
+    w-11/12
+    flex
+    flex-col
+    gap-4
+    items-center
+    content-center
+    m-auto
+  `}
+`;
+
 function Container({ children }) {
   return <Wrapper>{children}</Wrapper>;
 }

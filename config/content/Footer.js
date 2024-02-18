@@ -6,24 +6,29 @@ import {
   faGithubSquare,
   faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
-import config from '../website';
 
 export default {
   links: [
     {
       title: 'About Us',
       id: 'about-us',
-      url: '',
+      url: '/#About',
+      target: '',
+      rel: '',
     },
     {
       title: 'Contact Us',
       id: 'contact-us',
-      url: '',
+      url: 'mailto:hacknitr@gmail.com',
+      target: '_blank',
+      rel: 'noopener noreferrer',
     },
     {
       title: 'Sponsor Us',
       id: 'sponsor-us',
-      url: '',
+      url: 'https://tally.so/r/3jl2za',
+      target: '_blank',
+      rel: 'noopener noreferrer',
     },
   ],
   Nitr: {
@@ -129,20 +134,12 @@ export default {
   ],
   impLinks: [
     {
-      text: 'MLH Code of Conduct',
-      href: config.codeOfConduct,
-    },
-    {
       text: 'Terms and Conditions',
-      href: config.termsConditions,
+      href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
     },
     {
       text: 'Privacy Policy',
-      href: config.privacyPolicy,
-    },
-    {
-      text: 'Sponsor Us',
-      href: config.sponsor,
+      href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
     },
   ],
 };

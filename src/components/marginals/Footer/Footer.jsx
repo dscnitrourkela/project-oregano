@@ -13,7 +13,7 @@ export const Footer = () => (
         aboutContent={footer.cards[0]}
         abtLinks={footer.links}
       />
-      <TermsNCredits copyw={footer.copyright} />
+      <TermsNCredits copyw={footer.impLinks} />
     </InitialCont>
     <SecondPendulumContainer>
       <Cradle socials={footer.socials} text={footer.icons} />

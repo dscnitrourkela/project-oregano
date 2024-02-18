@@ -6,66 +6,56 @@ export default {
   questions: [
     {
       id: 1,
-      question: 'How do I register for the hackathon?',
+      question: 'How do I pre-register for the hackathon?',
       answer:
-        'Click on any "Register Now" button on the website. Alternatively, you can head over to Devfolio',
+        "You can click the pre-register button on our website for pre-registrations. Fill in the form and let's start the journey.",
     },
     {
       id: 2,
       question: 'What is the participation fee?',
-      answer: "Just some enthusiasm and an open mind are enough. We don't charge any money!!",
+      answer:
+        'Only a creative mind, enthusiasm, and interest are required to participate in the hackathon. In short, the hackathon is entirely free and without monetary charges.',
     },
-
     {
       id: 3,
-      question: "What if I don't have a team or idea?",
-      answer:
-        "We'll have team formation and ideation events geared towards helping you find a team. Make sure you join the discord server.",
+      question: 'Who can participate?',
+      answer: 'Any student with a zeal to innovate and have some fun with creativity can apply.',
     },
     {
       id: 4,
-      question: 'Who can participate?',
+      question: 'What could be the size of the team?',
       answer:
-        'Everyone is welcome to apply, any student or working professionals. If you can innovate or just want to have a fun weekend, you are most welcome.',
+        'A team size of a maximum of four members is allowed. Even if you are an individual warrior, you are highly welcome.',
     },
     {
       id: 5,
-      question: 'What could be the size of the team?',
-      answer: 'You can make teams of up to 4 members. Lone wolfs are also welcome.',
+      question: 'Will my travel expenses be reimbursed?',
+      answer:
+        'Since HackNITR 5.0 is a student-run hackathon, we will not be able to cover your travel expenses.',
     },
     {
       id: 6,
-      question: 'Why should I participate in HackNITR?',
+      question: 'Can I participate online?',
       answer:
-        'You will get cash prizes if you win; otherwise, you will always get an excellent opportunity to network with like-minded people, learn many things and get cool schwag.😉',
+        'No, since HackNITR 5.0 is a completely offline hackathon, online participation is not encouraged.',
     },
     {
       id: 7,
-      question: 'How will the teams be judged?',
+      question: 'Will food be provided at the hackathon?',
       answer:
-        'The teams will be judged based on Viability, Technical Complexity, Presentation Skills and most importantly, Creativity.',
+        'Of course!! Meals, water, snacks and most importantly- Coffee, will be provided FREE OF COST.',
     },
     {
       id: 8,
-      question: 'What is the Code of Conduct?',
+      question: 'Why should I participate in HackNITR?',
       answer:
-        'To ensure a positive experience among all the participants, we follow the MLH Code of Conduct. It is advised that you go through it once.',
+        'You will always get an excellent opportunity to network with like-minded people, learn many things, get cool vibes and also, free goodies!! Also, if you emerge as a winner, then you can have a chance to win a cash prize along with goodies and merchandise.',
     },
     {
       id: 9,
-      question: 'What all expenses will be covered by us for Round 2?',
+      question: 'How will the teams be judged?',
       answer:
-        "Food, snacks, unlimited coffee and accommodation. As we are a student-run hackathon, travelling expenses won't be covered.",
-    },
-    {
-      id: 10,
-      question: 'What are the guidelines for the submissions?',
-      answer: 'Kindly refer to the Submission guidelines.',
-    },
-    {
-      id: 11,
-      question: 'What are the rules and regulations for HackNITR?',
-      answer: 'Kindly refer to the Rulebook: HackNITR 4.0.',
+        'The teams will be judged based on skills of viability and technical complexity, presentation skills, and, most importantly, creativity.',
     },
   ],
 };
