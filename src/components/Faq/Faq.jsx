@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import {
   FAQContainer,
@@ -11,13 +11,56 @@ import {
   FAQQuestionText,
   FAQDiv,
   FAQHeading,
+  StyledLink,
 } from './styles';
 import faqData from '../../../config/content/Faq';
 import { SectionContainer } from '../shared';
 
+/**
+ *
+ * @param {String} data
+ * @description This function takes in the data and returns while sprinkling the data with the necessary HTML tags.
+ */
+const preProcess = (data, DOMParser) => {
+  // Weird hack to get around the fact that SSR doesn't support the DOMParser https://developer.mozilla.org/en-US/docs/Web/API/DOMParser
+  if (typeof window === 'undefined') {
+    return data;
+  }
+
+  // Add body tags to the data for parsing
+  const body = `<body>${data}</body>`;
+  const parser = new DOMParser();
+  const parsed = parser.parseFromString(body, 'text/html');
+
+  // Map over parsed data and return array of strings, anchor elements, bold elements and italic elements
+  const parsedData = Array.from(parsed.body.childNodes).map((node) => {
+    switch (node.nodeName) {
+      case 'A':
+        return (
+          <StyledLink href={node.attributes.href.value} target='_blank' rel='noreferrer'>
+            {node.textContent}
+          </StyledLink>
+        );
+      case 'STRONG':
+        return <strong>{node.textContent}</strong>;
+      case 'EM':
+        return <em>{node.textContent}</em>;
+      default:
+        return node.textContent;
+    }
+  });
+
+  return parsedData;
+};
+
 const FAQ = () => {
   const [openQuestions, setOpenQuestions] = useState([]);
   const [animationState, setAnimationState] = useState(Array(faqData.questions.length).fill(''));
+  const parser = useRef(null);
+
+  if (typeof window !== 'undefined') {
+    parser.current = window.DOMParser;
+  }
 
   const toggleQuestion = (index) => {
     const newAnimationStates = [...animationState];
@@ -60,7 +103,9 @@ const FAQ = () => {
                     <span className='material-symbols-outlined'>add</span>
                   </FAQIcon>
                 </FAQDiv>
-                <FAQAnswer isOpen={openQuestions.includes(index)}>{faq.answer}</FAQAnswer>
+                <FAQAnswer isOpen={openQuestions.includes(index)}>
+                  {preProcess(faq.answer, parser.current)}
+                </FAQAnswer>
               </FAQQuestion>
             </div>
           ))}

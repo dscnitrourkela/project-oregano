@@ -22,6 +22,7 @@ export const HeroBody = styled.div`
     mt-[7%]
     h-full
     flex
+    gap-6
     justify-center
     items-center
     text-white
@@ -213,4 +214,14 @@ export const Button = styled.button`
       border-radius: 10px;
     }
   }
+`;
+export const Herodiv = styled.div`
+  ${tw`
+  flex
+lg:flex-row
+flex-col
+    justify-center
+    items-center
+    gap-4
+  `}
 `;

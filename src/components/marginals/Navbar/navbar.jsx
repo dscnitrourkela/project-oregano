@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import navbar from '../../../../config/content/navbar';
 import { MenuContext } from './MenuContext';
-
+import MLHBanner from '../../../../config/content/MLHBanner';
 import {
   NavContainer,
   NavLink,
@@ -40,7 +40,7 @@ const NavBar = () => {
 
   return (
     <NavContainer scrolled={isScrolled}>
-      <CustomLogo>
+      <CustomLogo className='logo-container'>
         <img
           src='https://res.cloudinary.com/dhnkuonev/image/upload/v1699458313/hnlogo_ei64kd.png'
           alt='Your Alt Text'
@@ -56,7 +56,11 @@ const NavBar = () => {
           </NavLinksContainer>
         ))}
       </NavLinks>
-      <div>.</div>
+
+      <div>
+        <MLHBanner />
+      </div>
+
       <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
     </NavContainer>
   );

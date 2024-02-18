@@ -24,6 +24,17 @@ export default {
     //   alt: 'Polygon',
     // },
   ],
+  alpha1: [
+    {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
+        '/Sponsor%20Section/jsvurmvvk3nrr4lmncy9.png',
+      name: 'Quine',
+      link: 'https://quine.sh/',
+      alt: 'Quine',
+    },
+  ],
+
   beta: [
     // {
     //   src:
@@ -127,7 +138,7 @@ export default {
   ],
   deltaFirst: [
     {
-      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1702281493/fee3mushznsu7enbq7a1.png',
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1707708337/replit-light_mhki6f.png',
       name: 'Replit',
       link: 'https://replit.com',
       alt: 'Replit',

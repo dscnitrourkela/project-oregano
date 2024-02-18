@@ -141,5 +141,9 @@ export default {
       text: 'Privacy Policy',
       href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
     },
+    {
+      text: 'Code of Conduct',
+      href: ' https://static.mlh.io/docs/mlh-code-of-conduct.pdf',
+    },
   ],
 };

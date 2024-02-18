@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroBtn from './HeroBtn';
 import {
   HeroBody,
   NITRimg,
@@ -11,8 +10,12 @@ import {
   SectionContainer,
   HeroHeadingBase,
   FIVEimg,
+  Herodiv,
 } from './styles';
 import { hero } from '../../../config';
+import RegisterButton from '../shared/DevfolioBtn';
+import DiscordButton from '../shared/Discord';
+import DiscordMobile from '../shared/DiscordMobile';
 
 export default function HeroSection() {
   return (
@@ -29,8 +32,12 @@ export default function HeroSection() {
           <ContentBlock>
             <TaglineText>{hero.content}</TaglineText>
           </ContentBlock>
-          <HeroBtn />
         </HeroTitle>
+        <Herodiv>
+          <RegisterButton />
+          <DiscordButton />
+          <DiscordMobile />
+        </Herodiv>
       </HeroBody>
     </SectionContainer>
   );

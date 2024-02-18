@@ -18,4 +18,18 @@ export default {
       alt: 'FIVE',
     },
   },
+  links: {
+    discord: {
+      icon: 'https://res.cloudinary.com/db4zymomi/image/upload/hacknitr/Discord-Logo-Black_ratsjn.svg',
+      link: 'https://discord.com/invite/yuNgCHknJz',
+    },
+    nitr: {
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201272/HackNitr/Hero%20Section/anjnbvyn94vxvpf8acbc.png',
+      alt: 'NITR',
+    },
+    five: {
+      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201281/HackNitr/Hero%20Section/b1iuqxt1meh81y8bxwbd.png',
+      alt: 'FIVE',
+    },
+  },
 };
