@@ -3,26 +3,26 @@ export default {
   prizeData: [
     {
       id: '1',
-      cash: '25k',
+      cash: '35k',
       swags: 'swags',
       merchandise: 'official merchandise',
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
         '/upload/v1702202197/HackNitr/Prizes%20section/t1pyt5chofrp19hvk9ek.png',
       alt: 'Gold Prize Image',
-      prizeValue: '25k',
+      prizeValue: '35k',
       prizeShadowColor: 'var(--color-primary-green)',
     },
     {
       id: '2',
-      cash: '15k',
+      cash: '25k',
       swags: 'swags',
       merchandise: 'official merchandise',
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
         '/upload/v1702202198/HackNitr/Prizes%20section/l2xaqr8dtx69whaidmna.png',
       alt: 'Silver Prize Image',
-      prizeValue: '15k',
+      prizeValue: '25k',
       prizeShadowColor: 'var(--color-primary-blue)',
     },
     {
