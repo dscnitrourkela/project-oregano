@@ -15,14 +15,14 @@ export default {
     },
     {
       id: '2',
-      cash: '25k',
+      cash: '20k',
       swags: 'swags',
       merchandise: 'official merchandise',
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
         '/upload/v1702202198/HackNitr/Prizes%20section/l2xaqr8dtx69whaidmna.png',
       alt: 'Silver Prize Image',
-      prizeValue: '25k',
+      prizeValue: '20k',
       prizeShadowColor: 'var(--color-primary-blue)',
     },
     {
