@@ -33,6 +33,13 @@ export default {
       link: 'https://quine.sh/',
       alt: 'Quine',
     },
+    {
+      src:
+        'https://res.cloudinary.com/dhnkuonev/image/upload/v1708441978/Square_White_u3qnii.png',
+      name: 'Taipy',
+      link: 'https://www.taipy.io/',
+      alt: 'Taipy',
+    },
   ],
 
   beta: [
