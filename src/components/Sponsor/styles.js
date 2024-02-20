@@ -362,9 +362,9 @@ export const PlatformImage = styled.img`
   h-[42px]
   `}
 `;
-export const Alpha1Image = styled.img`
-  ${tw`
-  sm:h-[45px]
-  h-[30px]
-  `}
+export const BetaImage = styled.img`
+  width: ${(props) => props.width || 'auto'};
+  @media (min-width: 640px) {
+    height: ${(props) => props.height || '2rem'};
+  }
 `;

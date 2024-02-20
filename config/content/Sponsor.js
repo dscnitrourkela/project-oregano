@@ -24,7 +24,7 @@ export default {
     //   alt: 'Polygon',
     // },
   ],
-  alpha1: [
+  beta: [
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
@@ -32,10 +32,20 @@ export default {
       name: 'Quine',
       link: 'https://quine.sh/',
       alt: 'Quine',
+      width: '10rem',
+      height: '40px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1708441978/Square_White_u3qnii.png',
+      name: 'Taipy',
+      link: 'https://www.taipy.io/',
+      alt: 'Taipy',
+      width: '8rem',
+      height: '8rem',
     },
   ],
 
-  beta: [
+  platform: [
     // {
     //   src:
     //     'https://res.cloudinary.com/dzxgf75bh/image' +
