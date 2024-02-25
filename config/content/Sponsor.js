@@ -11,6 +11,25 @@ export default {
   beta: [
     {
       src:
+        'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
+        '/Sponsor%20Section/jsvurmvvk3nrr4lmncy9.png',
+      name: 'Quine',
+      link: 'https://quine.sh/',
+      alt: 'Quine',
+      width: '10rem',
+      height: '40px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1708441978/Square_White_u3qnii.png',
+      name: 'Taipy',
+      link: 'https://www.taipy.io/',
+      alt: 'Taipy',
+      width: '8rem',
+      height: '8rem',
+    },
+
+    {
+      src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
         '/upload/v1702202803/HackNitr/Sponsor%20Section/nqtaio4fr8earl9us0z9.png',
       name: 'Devfolio',
@@ -24,39 +43,6 @@ export default {
       name: 'Polygon',
       link: 'https://polygon.technology/',
       alt: 'POLYGON LOGO',
-    },
-    {
-      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786350/download__2_-removebg-preview_1_dscm20.png',
-      name: 'MathWorks',
-      link: 'https://in.mathworks.com/',
-      alt: 'MathWorks LOGO',
-    },
-
-    {
-      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786569/download__3_-removebg-preview_otfa7p.png',
-      name: 'mongoDB',
-      link: 'https://www.mongodb.com/',
-      alt: 'mongoDB LOGO',
-    },
-
-    {
-      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786739/download__5_-removebg-preview_zslel5.png',
-      name: 'GoDaddy Registry',
-      link: 'https://in.godaddy.com/',
-      alt: ' GoDaddy LOGO',
-    },
-
-    {
-      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708787057/download_6_sop5ix.png',
-      name: 'auth0',
-      link: 'https://auth0.com/',
-      alt: 'Auth0 LOGO',
-    },
-    {
-      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708830042/download__7_-removebg-preview_qcloyx.png',
-      name: 'flow',
-      link: ' https://www.onflow.org/',
-      alt: 'flow LOGO',
     },
   ],
   gamma: [
@@ -122,6 +108,49 @@ export default {
       link: 'https://solidityscan.com/',
       alt: 'Solidity Scan',
       width: '542%',
+    },
+  ],
+  platform: [
+    {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202903/HackNitr/Sponsor%20Section/xpipftsfivsn4l1rhxot.png',
+      name: 'Polygon',
+      link: 'https://polygon.technology/',
+      alt: 'POLYGON LOGO',
+    },
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786350/download__2_-removebg-preview_1_dscm20.png',
+      name: 'MathWorks',
+      link: 'https://in.mathworks.com/',
+      alt: 'MathWorks LOGO',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786569/download__3_-removebg-preview_otfa7p.png',
+      name: 'mongoDB',
+      link: 'https://www.mongodb.com/',
+      alt: 'mongoDB LOGO',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786739/download__5_-removebg-preview_zslel5.png',
+      name: 'GoDaddy Registry',
+      link: 'https://in.godaddy.com/',
+      alt: ' GoDaddy LOGO',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708787057/download_6_sop5ix.png',
+      name: 'auth0',
+      link: 'https://auth0.com/',
+      alt: 'Auth0 LOGO',
+    },
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708830042/download__7_-removebg-preview_qcloyx.png',
+      name: 'flow',
+      link: 'https://www.onflow.org/',
+      alt: 'flow LOGO',
     },
   ],
 };

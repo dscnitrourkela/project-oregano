@@ -16,7 +16,6 @@ import {
   GammaContainer,
   GammaSponsors,
   DeltaLogoContainer,
-  // DeltaLogoFirst,
   DeltaLogoSecond,
   DeltaContainer,
   DeltaSponsors,
@@ -25,14 +24,12 @@ import {
   PlatformImage,
   SponsorTitle,
   SponsorLink,
-  // DeltaLogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
 
 function SponsorSection() {
   const alphaSponsors = Sponsor.alpha;
   const betaSponsors = Sponsor.beta;
-  // const gammaSponsors = Sponsor.gamma;
   const deltaSponsorsFirst = Sponsor.deltaFirst;
   const deltaSponsorsSecond = Sponsor.deltaSecond;
 
@@ -71,20 +68,6 @@ function SponsorSection() {
           </BetaLogoContainer>
         </BetaContainer>
       </BetaSponsors>
-      {/* <BetaSponsors>
-        <BetaContainer>
-          <SmallHeader>Delta Sponsor</SmallHeader>
-          <BetaLogoContainer>
-            {deltaSponsorsFirst.map(({ src, alt, link }) => (
-              <SponsorLogo key={src}>
-                <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <DeltaLogoImg src={src} alt={alt} />
-                </a>
-              </SponsorLogo>
-            ))}
-          </BetaLogoContainer>
-        </BetaContainer>
-      </BetaSponsors> */}
       <BottomContainer>
         <GammaSponsors>
           <GammaContainer>
