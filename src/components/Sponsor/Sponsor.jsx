@@ -26,6 +26,8 @@ import {
   SponsorTitle,
   SponsorLink,
   BetaImage,
+  PlatformSponsors,
+  PlatformLogoContainer,
   // DeltaLogoImg,
 } from './styles';
 import { SectionContainer } from '../shared';
@@ -73,34 +75,20 @@ function SponsorSection() {
           </BetaLogoContainer>
         </BetaContainer>
       </BetaSponsors>
-      <BetaSponsors>
+      <PlatformSponsors>
         <BetaContainer>
           <SmallHeader>Platform Sponsors</SmallHeader>
-          <BetaLogoContainer>
-            {platformSponsors.map(({ src, alt, link }) => (
+          <PlatformLogoContainer>
+            {platformSponsors.map(({ src, alt, link, width, height }) => (
               <SponsorLogo key={src}>
                 <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <PlatformImage src={src} alt={alt} />
+                  <PlatformImage src={src} alt={alt} height={height} width={width} />
                 </a>
               </SponsorLogo>
             ))}
-          </BetaLogoContainer>
+          </PlatformLogoContainer>
         </BetaContainer>
-      </BetaSponsors>
-      {/* <BetaSponsors>
-        <BetaContainer>
-          <SmallHeader>Delta Sponsor</SmallHeader>
-          <BetaLogoContainer>
-            {deltaSponsorsFirst.map(({ src, alt, link }) => (
-              <SponsorLogo key={src}>
-                <a href={link} target='_blank' rel='noopener noreferrer'>
-                  <DeltaLogoImg src={src} alt={alt} />
-                </a>
-              </SponsorLogo>
-            ))}
-          </BetaLogoContainer>
-        </BetaContainer>
-      </BetaSponsors> */}
+      </PlatformSponsors>
       <BottomContainer>
         <GammaSponsors>
           <GammaContainer>
