@@ -9,6 +9,25 @@ export default {
     },
   ],
   beta: [
+     {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
+        '/Sponsor%20Section/jsvurmvvk3nrr4lmncy9.png',
+      name: 'Quine',
+      link: 'https://quine.sh/',
+      alt: 'Quine',
+      width: '10rem',
+      height: '40px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1708441978/Square_White_u3qnii.png',
+      name: 'Taipy',
+      link: 'https://www.taipy.io/',
+      alt: 'Taipy',
+      width: '8rem',
+      height: '8rem',
+    },
+    
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
@@ -46,6 +65,7 @@ export default {
     },
   ],
   gamma: [
+    
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
