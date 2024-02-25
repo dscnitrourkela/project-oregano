@@ -28,15 +28,6 @@ export default {
       width: '8rem',
       height: '8rem',
     },
-
-    {
-      src:
-        'https://res.cloudinary.com/dzxgf75bh/image' +
-        '/upload/v1702202803/HackNitr/Sponsor%20Section/nqtaio4fr8earl9us0z9.png',
-      name: 'Devfolio',
-      link: 'https://devfolio.co/',
-      alt: 'DEVFOLIO LOGO',
-    },
   ],
   gamma: [
     {
@@ -104,6 +95,14 @@ export default {
     },
   ],
   platform: [
+    {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202803/HackNitr/Sponsor%20Section/nqtaio4fr8earl9us0z9.png',
+      name: 'Devfolio',
+      link: 'https://devfolio.co/',
+      alt: 'DEVFOLIO LOGO',
+    },
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
