@@ -7,29 +7,32 @@ export const SponsorLogo = styled.div`
     flex
     items-center
     justify-center
-    `}
-`;
-
-export const AlphaLogoImg = styled.img`
-  ${tw`
-    h-[180px]
   `}
-  filter: invert(100%);
-  filter: brightness(10);
-  object-fit: contain;
-  @media (max-width: 440px) {
-    min-height: 140px;
+
+  @media (max-width: 900px) {
+    img {
+      margin: 30px auto;
+    }
   }
 `;
-
+export const AlphaLogoImg = styled.img`
+  ${tw`
+    h-[100px]
+    `}
+  filter: invert(100%);
+  filter: brightness(10);
+`;
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
-    // md:grid-cols-3 
+  
     grid-cols-1
     md:gap-[120px]
     gap-[24px]
     `}
+  @media (max-width: 545px) {
+    width: 85%;
+  }
 `;
 
 export const AlphaContainer = styled.div`
@@ -65,7 +68,7 @@ export const AlphaSponsors = styled.div`
   }
   &::before {
     content: '';
-    position: absolute; /* Position the pseudo-element absolutely */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -146,21 +149,20 @@ export const SmallHeader = styled(Heading4)`
 
 export const BetaLogoContainer = styled.div`
   ${tw`
-    // grid
-    // md:grid-cols-6
-    // md:grid-rows-1
-    // grid-cols-2
-    // grid-rows-3
-    // md:gap-x-[24px]
-    // gap-x-[24px]
-    // gap-y-[16px]
     flex
     flex-row
     items-center
     justify-center
-    md:gap-x-[4rem]
+    md:gap-x-[2rem]
     gap-x-[1rem]
     `}
+
+  flex-wrap: nowrap;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `;
 
 export const BetaContainer = styled.div`
@@ -170,16 +172,21 @@ export const BetaContainer = styled.div`
     text-center
     md:gap-[48px]
     gap-[32px]
-    `}
+  `}
+
+  @media (max-width: 761px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const BetaSponsors = styled.div`
-  padding: 40px 42px;
+  padding: 32px 42px;
   width: 90%;
-  margin: 58px auto 42px auto;
+  margin: 64px auto 64px auto;
   border-radius: 12px;
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
+
   &:hover {
     background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
@@ -189,9 +196,10 @@ export const BetaSponsors = styled.div`
     padding: 12px 24px;
     margin: 24px auto;
   }
+
   &::before {
     content: '';
-    position: absolute; /* Position the pseudo-element absolutely */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -225,10 +233,7 @@ export const BottomContainer = styled.div`
 export const GammaLogoContainer = styled.div`
   ${tw`
     grid
-    // md:grid-cols-5
-    // md:grid-rows-1
     grid-cols-1
-    // grid-rows-2
     md:gap-x-[28px]
     gap-x-[24px]
     gap-y-[16px]
@@ -262,7 +267,7 @@ export const GammaSponsors = styled.div`
   }
   &::before {
     content: '';
-    position: absolute; /* Position the pseudo-element absolutely */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -284,7 +289,7 @@ export const DeltaLogoFirst = styled.div`
       flex
       flex-row
       md:gap-[48px]
-      gap-[24px]
+      gap-[4px]
   `}
 `;
 
@@ -320,7 +325,7 @@ export const DeltaContainer = styled.div`
 
 export const DeltaLogoImg = styled.img`
   ${tw`
-    h-[40px]
+    h-[50px]
     `}
 `;
 
@@ -341,7 +346,7 @@ export const DeltaSponsors = styled.div`
   }
   &::before {
     content: '';
-    position: absolute; /* Position the pseudo-element absolutely */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -357,14 +362,32 @@ export const DeltaSponsors = styled.div`
     opacity: 1;
   }
 `;
+
 export const PlatformImage = styled.img`
   ${tw`
-  h-[42px]
+    h-auto
   `}
-`;
-export const BetaImage = styled.img`
-  width: ${(props) => props.width || 'auto'};
-  @media (min-width: 640px) {
-    height: ${(props) => props.height || '2rem'};
+  */
+  object-fit: contain;
+  max-width: 100%; 
+  max-height: 300px; 
+  width: auto; 
+  width: 650px; 
+  */
+
+ /* ${tw`
+    flex
+    text-center
+    md:gap-[48px]
+    gap-[32px]
+  `}
+
+  flex-direction: column; 
+
+  height:100px;
+  width:500px;
+  @media (max-width: 761px) {
+    flex-wrap: wrap; 
   }
+
 `;
