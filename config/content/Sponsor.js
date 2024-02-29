@@ -143,6 +143,12 @@ export default {
       link: 'https://replit.com',
       alt: 'Replit',
     },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1709186270/NordVPN_wqlefv.png',
+      name: 'NordVPN',
+      link: 'https://nordvpn.com/',
+      alt: 'NordVPN',
+    },
   ],
   deltaSecond: [
     {
