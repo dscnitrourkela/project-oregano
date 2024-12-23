@@ -27,6 +27,7 @@ module.exports = {
         '12xl': '120px',
         '13xl': '48px',
         '14xl': '64px',
+        '15xl': '80px',
       },
       padding: {
         side: '21.33px',

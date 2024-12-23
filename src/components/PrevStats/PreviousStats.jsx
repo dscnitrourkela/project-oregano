@@ -1,76 +1,47 @@
 import React from 'react';
 import {
   Heading,
-  SectionBox,
-  BoxHeader,
-  BoxDetail,
-  BoxContent,
-  BoxText,
-  BoxSubContent,
-  BoxSubHeader,
   SectionContainer,
-  SectionContent,
-  SectionImage,
-  ProgressNumber,
-  SectionCards,
+  SectionStats,
+  SectionCard,
+  Circle,
+  StatValue,
+  StatCaption,
 } from './styles';
 
-import prevstat from '../../../config/content/prevstat';
+const prevstat = {
+  data: {
+    id: 1,
+    version: '5.0',
+    registration: '5000+',
+    projects: '500+',
+    partners: '500+',
+  },
+};
 
-const PreviousStats = () => {
-  const imageUrl =
-    'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702209115/HackNitr' +
-    '/PreviousStats%20Section/icgsk4elkurtcmgmptyq.png';
-
-  return (
+const PreviousStats = () => (
     <SectionContainer>
-      <Heading id='Stats'>Previous Stats</Heading>
-      <SectionContent>
-        <SectionImage src={imageUrl} alt='xori' />
-        <SectionCards>
-          {prevstat.data.map((item, id) => (
-            <SectionBox key={item.id}>
-              <BoxText>
-                <BoxHeader color={prevstat.headerColors[id]}>
-                  {`HACKNITR ${item.version}`}
-                </BoxHeader>
-                <BoxDetail>Details</BoxDetail>
-              </BoxText>
-              <BoxContent>
-                <BoxSubContent>
-                  <BoxSubHeader>Registration</BoxSubHeader>
-
-                  <ProgressNumber color={prevstat.headerColors[id]}>
-                    {item.registration}
-                  </ProgressNumber>
-                </BoxSubContent>
-                <BoxSubContent>
-                  <BoxSubHeader>Projects</BoxSubHeader>
-
-                  <ProgressNumber color={prevstat.headerColors[id]}>{item.projects}</ProgressNumber>
-                </BoxSubContent>
-
-                <BoxSubContent>
-                  <BoxSubHeader>Community Partners</BoxSubHeader>
-
-                  <ProgressNumber color={prevstat.headerColors[id]}>{item.partners}</ProgressNumber>
-                </BoxSubContent>
-
-                <BoxSubContent>
-                  <BoxSubHeader>
-                    Reach in
-                    <br />
-                    College
-                  </BoxSubHeader>
-                  <ProgressNumber color={prevstat.headerColors[id]}>{item.reach}</ProgressNumber>
-                </BoxSubContent>
-              </BoxContent>
-            </SectionBox>
-          ))}
-        </SectionCards>
-      </SectionContent>
+      <Heading id='Stats'>HackNITR 5.0 Stats</Heading>
+      <SectionStats>
+        <SectionCard>
+          <Circle size='200' color='#18586d' />
+          <StatValue color='#35e1ff'>{prevstat.data.projects}</StatValue>
+          <StatCaption>Projects</StatCaption>
+        </SectionCard>
+        <SectionCard>
+          <Circle size='300' color='#672b2d' />
+          <StatValue main color='#f1604f'>
+            {prevstat.data.registration}
+          </StatValue>
+          <StatCaption main>Registeration</StatCaption>
+        </SectionCard>
+        <SectionCard>
+          <Circle size='200' color='#516331' />
+          <StatValue color='#cfff5e'>{prevstat.data.partners}</StatValue>
+          <StatCaption>Community Partners</StatCaption>
+        </SectionCard>
+      </SectionStats>
     </SectionContainer>
   );
-};
 
 export default PreviousStats;

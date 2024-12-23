@@ -10,7 +10,6 @@ export const AboutContainer = styled.div`
     flex-col
     items-center
     justify-center
-    min-h-screen
   `}
   height: fit-content;
   margin: 2% auto 3%;
@@ -19,8 +18,10 @@ export const AboutContent = styled(Body1)`
   ${tw`
     mt-5
     mb-12
-    w-[80%]
-    text-base	 
+    lg:w-[80%]
+    w-[90%]
+    lg:text-lg
+    text-center
     `}
   @media (max-width: 800px) {
     text-align: left;

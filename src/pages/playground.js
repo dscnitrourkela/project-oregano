@@ -11,6 +11,7 @@ import Layout from '../components/shared/Layout';
 // import Prizes from '../components/Prizes/Prizes';
 // import PreviousStats from '../components/PrevStats/PreviousStats';
 // import ParticleBackground from '../components/shared/Particle';
+// import AboutSection from '../components/AboutUs/About';
 
 const Homepage = ({ location }) => {
   const isHome = location?.pathname === '/';
@@ -51,9 +52,9 @@ const Homepage = ({ location }) => {
       <Layout location={location}>
         <HeroSection />
         {/* <Container> */}
-        {/* <PreviousStats />
-          <AboutSection />
-          <Prizes />
+        {/* <AboutSection />
+         <PreviousStats /> */}
+        {/*  <Prizes />
           <TimelineSection />
           <SponsorSection />
           <FAQ /> */}
