@@ -6,9 +6,13 @@
 **/node_modules/*
 **/.firebaserc
 
+
 ### Firebase Patch ###
 .runtimeconfig.json
 .firebase/
+
+### React-Three-Fiber ###h
+src/components/shared/Background.jsx
 
 ### Node ###
 # Logs
