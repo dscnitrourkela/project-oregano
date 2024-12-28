@@ -7,6 +7,7 @@ export const SponsorLogo = styled.div`
     flex
     items-center
     justify-center
+    my-2
     `}
 `;
 
@@ -25,7 +26,6 @@ export const AlphaLogoImg = styled.img`
 export const AlphaLogoContainer = styled.div`
   ${tw`
     grid
-    // md:grid-cols-3 
     grid-cols-1
     md:gap-[120px]
     gap-[24px]
@@ -146,14 +146,6 @@ export const SmallHeader = styled(Heading4)`
 
 export const BetaLogoContainer = styled.div`
   ${tw`
-    // grid
-    // md:grid-cols-6
-    // md:grid-rows-1
-    // grid-cols-2
-    // grid-rows-3
-    // md:gap-x-[24px]
-    // gap-x-[24px]
-    // gap-y-[16px]
     flex
     flex-row
     items-center
@@ -162,14 +154,28 @@ export const BetaLogoContainer = styled.div`
     gap-x-[1rem]
     `}
 `;
+export const PlatformLogoContainer = styled.div`
+  ${tw`
+    flex
+    flex-row
+    items-center
+    justify-center
+    md:gap-x-[2rem]
+    gap-x-[1rem]
+    mt-2
+    `}
+  flex-wrap: wrap;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+`;
 
 export const BetaContainer = styled.div`
   ${tw`
     flex
     flex-col
     text-center
-    md:gap-[48px]
-    gap-[32px]
     `}
 `;
 
@@ -181,7 +187,7 @@ export const BetaSponsors = styled.div`
   background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
   position: relative;
   &:hover {
-    background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
+    background: linear-gradient(180deg, rgba(53, 225, 255, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
   }
 
   @media (max-width: 761px) {
@@ -198,6 +204,48 @@ export const BetaSponsors = styled.div`
     height: 100%;
     border-radius: 12px;
     background: linear-gradient(180deg, rgba(20, 241, 149, 0.4) 0%, rgba(58, 58, 58, 0.15) 100%);
+    transition: opacity 0.5s linear;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+`;
+export const PlatformSponsors = styled.div`
+  padding: 40px 42px;
+  width: 90%;
+  margin: 20px auto 42px auto;
+  border-radius: 12px;
+  background: linear-gradient(182deg, #464646 -65%, rgba(70, 70, 70, 0.15) 98.55%);
+  position: relative;
+  &:hover {
+    background: linear-gradient(180deg, rgba(53, 225, 255, 0.4) -50%, rgba(58, 58, 58, 0.15) 50%);
+  }
+
+  @media (max-width: 761px) {
+    background: linear-gradient(
+      180deg,
+      rgba(53, 225, 255, 0.4) -6.4%,
+      rgba(58, 58, 58, 0.15) 99.89%
+    );
+    padding: 12px 24px;
+    margin: 24px auto;
+  }
+  &::before {
+    content: '';
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      180deg,
+      rgba(53, 225, 255, 0.4) -6.4%,
+      rgba(58, 58, 58, 0.15) 99.89%
+    );
     transition: opacity 0.5s linear;
     z-index: -1;
     opacity: 0;
@@ -225,10 +273,7 @@ export const BottomContainer = styled.div`
 export const GammaLogoContainer = styled.div`
   ${tw`
     grid
-    // md:grid-cols-5
-    // md:grid-rows-1
     grid-cols-1
-    // grid-rows-2
     md:gap-x-[28px]
     gap-x-[24px]
     gap-y-[16px]
@@ -359,12 +404,12 @@ export const DeltaSponsors = styled.div`
 `;
 export const PlatformImage = styled.img`
   ${tw`
-  h-[42px]
+  
   `}
 `;
-export const Alpha1Image = styled.img`
-  ${tw`
-  sm:h-[45px]
-  h-[30px]
-  `}
+export const BetaImage = styled.img`
+  width: ${(props) => props.width || 'auto'};
+  @media (min-width: 640px) {
+    height: ${(props) => props.height || '2rem'};
+  }
 `;

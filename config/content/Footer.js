@@ -135,7 +135,7 @@ export default {
   impLinks: [
     {
       text: 'Terms and Conditions',
-      href: 'https://drive.google.com/file/d/18w9fE4ZhUrugPAlXH7tqxbKQ16Cr6lqn/view?pli=1',
+      href: 'https://drive.google.com/file/d/1qW9PXMEooyCULlhTK8HOcj2gZk8Bz4vj/view?usp=sharing',
     },
     {
       text: 'Privacy Policy',

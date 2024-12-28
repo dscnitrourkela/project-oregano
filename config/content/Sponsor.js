@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default {
   alpha: [
     {
@@ -6,25 +7,8 @@ export default {
       link: 'https://orkes.io/',
       alt: 'ORKES LOGO',
     },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202811/HackNitr/Sp
-    // onsor%20Section' +
-    //     '/jdorwxnipj0twbko2qod.png',
-    //   name: 'Major League Hacking',
-    //   link: 'https://mlh.io/',
-    //   alt: 'Major League Hacking',
-    // },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202812/HackNitr/Sponsor%20Section/zar2p2pouk5fvr8qsojj.png',
-    //   name: 'Polygon',
-    //   link: 'https://polygon.technology/',
-    //   alt: 'Polygon',
-    // },
   ],
-  alpha1: [
+  beta: [
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702202813/HackNitr' +
@@ -32,34 +16,20 @@ export default {
       name: 'Quine',
       link: 'https://quine.sh/',
       alt: 'Quine',
+      width: '10rem',
+      height: '40px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1708441978/Square_White_u3qnii.png',
+      name: 'Taipy',
+      link: 'https://www.taipy.io/',
+      alt: 'Taipy',
+      width: '8rem',
+      height: '8rem',
     },
   ],
 
-  beta: [
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202813/HackNitr/Sponsor%20Section/jsvurmvvk3nrr4lmncy9.png',
-    //   name: 'Quine',
-    //   link: 'https://quine.sh/',
-    //   alt: 'Quine',
-    // },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202818/HackNitr/Sponsor%20Section/r2arfrrqfbwwtre4cnzm.png',
-    //   name: 'Solana',
-    //   link: 'https://solana.com',
-    //   alt: 'Solana',
-    // },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202820/HackNitr/Sponsor%20Section/en4bf0uiglauk6grmywe.png',
-    //   name: 'Filecoin',
-    //   link: 'https://filecoin.io',
-    //   alt: 'Filecoin',
-    // },
+  platform: [
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
@@ -67,6 +37,8 @@ export default {
       name: 'Devfolio',
       link: 'https://devfolio.co/',
       alt: 'DEVFOLIO LOGO',
+      width: '200px',
+      height: '200px',
     },
     {
       src:
@@ -76,23 +48,51 @@ export default {
       link: 'https://polygon.technology/',
       alt: 'POLYGON LOGO',
       // width: '20%',
+      width: '200px',
+      height: '200px',
     },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202879/HackNitr/Sponsor%20Section/w9kndnmoqjxt5i2tq71t.png',
-    //   name: 'Shardeum',
-    //   link: 'https://shardeum.org/',
-    //   alt: 'Shardeum',
-    // },
-    // {
-    //   src:
-    //     'https://res.cloudinary.com/dzxgf75bh/image' +
-    //     '/upload/v1702202885/HackNitr/Sponsor%20Section/va0bxpx2de0le1zfjwex.png',
-    //   name: 'Digitalocean',
-    //   link: 'https://digitalocean.com/',
-    //   alt: 'Digitalocean',
-    // },
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786350/download__2_-removebg-preview_1_dscm20.png',
+      name: 'MathWorks',
+      link: 'https://in.mathworks.com/',
+      alt: 'MathWorks',
+      width: '200px',
+      height: '200px',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786569/download__3_-removebg-preview_otfa7p.png',
+      name: 'mongoDB',
+      link: 'https://www.mongodb.com/',
+      alt: 'mongoDB',
+      width: '200px',
+      height: '200px',
+    },
+
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708786739/download__5_-removebg-preview_zslel5.png',
+      name: 'GoDaddy Registry',
+      link: 'https://in.godaddy.com/',
+      alt: ' GoDaddy',
+      width: '200px',
+      height: '200px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708787057/download_6_sop5ix.png',
+      name: 'auth0',
+      link: 'https://auth0.com/',
+      alt: 'Auth0',
+      width: '200px',
+      height: '200px',
+    },
+    {
+      src: 'https://res.cloudinary.com/dkpdi1wek/image/upload/v1708830042/download__7_-removebg-preview_qcloyx.png',
+      name: 'flow',
+      link: 'https://www.onflow.org/',
+      alt: 'flow',
+      width: '200px',
+      height: '200px',
+    },
   ],
   gamma: [
     {
@@ -143,42 +143,12 @@ export default {
       link: 'https://replit.com',
       alt: 'Replit',
     },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702202900/HackNitr/Sponsor%20Section/tatgslbybvbpqdydhjsn.png',
-    //     name: 'Major League Hacking',
-    //     link: 'https://mlh.io/',
-    //     alt: 'Major League Hacking',
-    //     width: '42%',
-    //   },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702202903/HackNitr/Sponsor%20Section/xpipftsfivsn4l1rhxot.png',
-    //     name: 'Polygon',
-    //     link: 'https://polygon.technology/',
-    //     alt: 'Polygon',
-    //     width: '42%',
-    //   },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702202904/HackNitr/Sponsor%20Section/pa0b377dp24u2a9nlwvl.png',
-    //     name: 'Wolfram',
-    //     link: 'https://www.wolfram.com/',
-    //     alt: 'Wolfram',
-    //     width: '42%',
-    //   },
-    //   {
-    //     src:
-    //       'https://res.cloudinary.com/dzxgf75bh/image' +
-    //       '/upload/v1702202908/HackNitr/Sponsor%20Section/d1d4i1o9sftwo3xbbl6s.png',
-    //     name: 'Twilio',
-    //     link: 'https://www.twilio.com/',
-    //     alt: 'Twilio',
-    //     width: '42%',
-    //   },
+    {
+      src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1709186270/NordVPN_wqlefv.png',
+      name: 'NordVPN',
+      link: 'https://nordvpn.com/',
+      alt: 'NordVPN',
+    },
   ],
   deltaSecond: [
     {
