@@ -98,6 +98,26 @@ export default {
     {
       src:
         'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1702202903/HackNitr/Sponsor%20Section/xpipftsfivsn4l1rhxot.png',
+      name: 'Polygon',
+      link: 'https://polygon.technology/',
+      alt: 'POLYGON LOGO',
+      width: '200px',
+      height: '200px',
+    },
+    {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image' +
+        '/upload/v1735416820/HackNitr/Sponsor%20Section/ethindia-light_w1bvhf.png',
+      name: 'Polygon',
+      link: 'https://ethindia.co',
+      alt: 'ETHINDIA LOGO',
+      width: '200px',
+      height: '200px',
+    },
+    /* {
+      src:
+        'https://res.cloudinary.com/dzxgf75bh/image' +
         '/upload/v1702202888/HackNitr/Sponsor%20Section/fpjare0ropp6bmaubepc.png',
       name: 'Apyhub',
       link: 'https://apyhub.com/',
@@ -134,8 +154,9 @@ export default {
       name: 'Buidlerstribe',
       link: 'https://buidlerstribe.com/',
       alt: 'Buidlerstribe',
-    },
+    }, */
   ],
+
   deltaFirst: [
     {
       src: 'https://res.cloudinary.com/dhnkuonev/image/upload/v1707708337/replit-light_mhki6f.png',
