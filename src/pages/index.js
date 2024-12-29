@@ -7,6 +7,7 @@ import SEO from '../components/shared/SEO/SEO';
 import Layout from '../components/shared/Layout';
 import HeroSection from '../components/HeroSection/HeroSection';
 import PreviousStats from '../components/PrevStats/PreviousStats';
+import PhotoGallery from '../components/PhotoGallery/PhotoGallery';
 import AboutSection from '../components/AboutUs/About';
 import Timeline from '../components/TimelineSec/Timeline';
 import SponsorSection from '../components/Sponsor/Sponsor';
@@ -61,6 +62,7 @@ const HomePage = ({ location }) => {
         <ContainerWrapper>
           <AboutSection />
           <PreviousStats />
+          <PhotoGallery />
           <Prizes />
           <Timeline />
           <SponsorSection />

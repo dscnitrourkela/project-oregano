@@ -13,6 +13,7 @@
 
 ### React-Three-Fiber ###h
 src/components/shared/Background.jsx
+src/components/PhotoGallery/PhotoGallery.jsx
 
 ### Node ###
 # Logs
