@@ -6,7 +6,7 @@ export const timelinecontent = {
       title: 'Registration',
       duration: 'Duration: 15 Oct to 19 Feb',
       color: '#35E1FF',
-      description: 'Registration period for HackNITR 5.0',
+      description: 'Registration period for HackNITR 6.0',
     },
     {
       serialid: 2,

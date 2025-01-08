@@ -6,9 +6,9 @@ export default {
   questions: [
     {
       id: 1,
-      question: 'What are the dates for HackNITR 5.0?',
+      question: 'What are the dates for HackNITR 6.0?',
       answer:
-        'HackNITR 5.0 will be held on 2nd and 3rd March, 2024. We will be waiting for you with a warm welcome.',
+        'HackNITR 5.0 will be held on 2nd and 3rd March, 2025. We will be waiting for you with a warm welcome.',
     },
     {
       id: 2,
@@ -47,13 +47,13 @@ export default {
       id: 6,
       question: 'Will my travel expenses be reimbursed?',
       answer:
-        'Since HackNITR 5.0 is a student-run hackathon, we will not be able to cover your travel expenses.',
+        'Since HackNITR 6.0 is a student-run hackathon, we will not be able to cover your travel expenses.',
     },
     {
       id: 7,
       question: 'Can I participate online?',
       answer:
-        'No, since HackNITR 5.0 is a completely offline hackathon, online participation is not encouraged.',
+        'No, since HackNITR 6.0 is a completely offline hackathon, online participation is not encouraged.',
     },
     {
       id: 8,
