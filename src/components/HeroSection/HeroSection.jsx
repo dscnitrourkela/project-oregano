@@ -1,21 +1,22 @@
 import React from 'react';
-import {
-  HeroBody,
-  NITRimg,
-  HACKimg,
-  HeroTitle,
-  HeroInside,
-  ContentBlock,
-  TaglineText,
-  SectionContainer,
-  HeroHeadingBase,
-  FIVEimg,
-  Herodiv,
-} from './styles';
+
 import { hero } from '../../../config';
-import RegisterButton from '../shared/DevfolioBtn';
+import Brochure from '../shared/Brochure';
 import DiscordButton from '../shared/Discord';
 import DiscordMobile from '../shared/DiscordMobile';
+import {
+  ContentBlock,
+  FIVEimg,
+  HACKimg,
+  HeroBody,
+  Herodiv,
+  HeroHeadingBase,
+  HeroInside,
+  HeroTitle,
+  NITRimg,
+  SectionContainer,
+  TaglineText,
+} from './styles';
 
 export default function HeroSection() {
   return (
@@ -34,8 +35,10 @@ export default function HeroSection() {
           </ContentBlock>
         </HeroTitle>
         <Herodiv>
-          <RegisterButton />
+          {/* <RegisterButton /> */}
           <DiscordButton />
+          <Brochure>Pre Register</Brochure>
+          <Brochure>Brochure</Brochure>
           <DiscordMobile />
         </Herodiv>
       </HeroBody>
