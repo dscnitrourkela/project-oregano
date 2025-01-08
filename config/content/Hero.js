@@ -2,7 +2,7 @@
 export default {
   tagline: 'IMAGINE. INITIATE. IMPLEMENT',
   content:
-    'Hop on the bandwagon, and join one of India’s largest Student-run hackathons. HackNITR is back with version 5.0, which is now fully offline!',
+    'Hop on the bandwagon, and join one of India’s largest Student-run hackathons. HackNITR is back with version 6.0, which is now fully offline!',
 
   imgs: {
     hack: {
@@ -14,7 +14,7 @@ export default {
       alt: 'NITR',
     },
     five: {
-      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201281/HackNitr/Hero%20Section/b1iuqxt1meh81y8bxwbd.png',
+      src: 'https://res.cloudinary.com/dqqyuvg1v/image/upload/v1736342048/6.0_mib1pl.png',
       alt: 'FIVE',
     },
   },
