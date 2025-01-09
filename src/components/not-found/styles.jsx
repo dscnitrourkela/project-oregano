@@ -40,7 +40,7 @@ export const NotFoundSubTitle = styled.h2`
   font-weight: 500;
   line-height: 100%;
 
-  ${tw`font-proza`}
+  ${tw`font-proza -mt-5`}
 `;
 
 export const NotFoundInnerContainer = styled.div`
