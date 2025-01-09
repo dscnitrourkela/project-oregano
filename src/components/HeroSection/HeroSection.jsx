@@ -17,6 +17,7 @@ import {
   SectionContainer,
   TaglineText,
 } from './styles';
+import PreRegisterBtn from '../shared/PreRegisterBtn';
 
 export default function HeroSection() {
   return (
@@ -37,7 +38,7 @@ export default function HeroSection() {
         <Herodiv>
           {/* <RegisterButton /> */}
           <DiscordButton />
-          <Brochure>Pre Register</Brochure>
+          <PreRegisterBtn>Pre-register</PreRegisterBtn>
           <Brochure>Brochure</Brochure>
           <DiscordMobile />
         </Herodiv>
