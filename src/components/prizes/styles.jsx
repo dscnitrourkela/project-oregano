@@ -25,28 +25,23 @@ export const PrizeCardImage = styled(Image)`
 export const PrizeAmount = styled(H1)`
   ${tw`
     absolute
-    top-[20%]
+    top-[35%]
+    sm:top-[32%]
+    ssm:top-[30%]
+    msm:top-[25%]
+    smd:top-[20%]
     text-center
     w-full
     z-10
+    text-2xl
+    ssm:text-3xl
+    msm:text-4xl
+    md:text-5xl
   `}
 `;
 
-export const PrizeTitle = styled.div`
-  ${tw`
-    absolute
-    top-[40%]
-    text-center
-    w-full
-    z-10
-  `}
-`;
 export const PrizesContainer = styled.div`
-  ${tw` max-w-6xl
-        mx-auto
-        py-20
-        min-h-screen
-   `}
+  ${tw`max-w-6xl mx-auto py-20 flex flex-col items-center justify-center`}
 `;
 export const PrizesHeadingContainer = styled.div`
   display: inline-flex;
@@ -57,6 +52,7 @@ export const PrizesHeadingContainer = styled.div`
   border-radius: 1.125rem;
   background: #f6dfc2;
 `;
+
 export const PrizesHeading = styled(H1)`
   ${tw`
     text-center
@@ -65,7 +61,7 @@ export const PrizesHeading = styled(H1)`
 `;
 
 export const PrizesContent = styled.div`
-  ${tw` my-10
+  ${tw` md:my-10
         flex
         items-center
         justify-center

@@ -19,6 +19,12 @@ module.exports = {
         satoshi: 'var(--Satoshi)',
         poppins: 'var(--Poppins)',
       },
+      screens: {
+        smd: '640px',
+        msm: '550px',
+        ssm: '430px',
+        sm: '400px',
+      },
     },
   },
   plugins: [],
