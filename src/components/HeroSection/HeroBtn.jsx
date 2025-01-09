@@ -13,7 +13,7 @@ const HeroBtn = () => {
     <Button className={`btn ${clicked ? 'clicked' : ''}`}>
       <div>
         <button onClick={handleButtonClick} type='button'>
-          <a href='https://forms.gle/U5ChTxGNzDHhrYjg8' target='__blank' rel='noreferrer'>
+          <a href='https://tally.so/r/w4AjMY' target='__blank' rel='noreferrer'>
             PRE-REGISTER
           </a>
         </button>
