@@ -9,6 +9,15 @@ export default {
   data: [
     {
       id: 1,
+      version: '5.0',
+      registration: '11500+',
+      projects: '630+',
+      partners: '4000+',
+      reach: '600+',
+      name: 'registration',
+    },
+    {
+      id: 2,
       version: '4.0',
       registration: '5300+',
       projects: '334',
@@ -17,7 +26,7 @@ export default {
       name: 'registration',
     },
     {
-      id: 2,
+      id: 3,
       version: '3.0',
       registration: '2500+',
       projects: '119',
@@ -26,7 +35,7 @@ export default {
       name: 'projects',
     },
     {
-      id: 3,
+      id: 4,
       version: '2.0',
       registration: '1500+',
       projects: '83',
@@ -35,7 +44,7 @@ export default {
       name: 'partners',
     },
     {
-      id: 4,
+      id: 5,
       version: '1.0',
       registration: '700+',
       projects: '33',
@@ -45,5 +54,5 @@ export default {
     },
   ],
 
-  headerColors: ['#02daff', ' #9C41FF', '#43F4AA', '#FED954'],
+  headerColors: ['#F1604F', '#02daff', ' #9C41FF', '#43F4AA', '#FED954'],
 };
