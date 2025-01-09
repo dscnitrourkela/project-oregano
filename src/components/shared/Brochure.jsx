@@ -22,15 +22,13 @@ const Wrapper = styled.div`
   `}
 `;
 
+const link = "https://drive.google.com/file/d/1EUQ0uAw3nWfUOIrx411GGzrcSrPmV9u3/'";
+
 function Brochure({ children }) {
   return (
     <Wrapper>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a
-        href='https://drive.google.com/file/d/1EUQ0uAw3nWfUOIrx411GGzrcSrPmV9u3/'
-        target='_blank'
-        rel='noreferrer noopener'
-      >
+      <a href={link} target='_blank' rel='noreferrer noopener'>
         {children}
       </a>
     </Wrapper>
