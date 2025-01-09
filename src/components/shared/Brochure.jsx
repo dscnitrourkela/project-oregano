@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const link = "https://drive.google.com/file/d/1EUQ0uAw3nWfUOIrx411GGzrcSrPmV9u3/'";
+const link = 'https://drive.google.com/file/d/1EUQ0uAw3nWfUOIrx411GGzrcSrPmV9u3/';
 
 function Brochure({ children }) {
   return (
