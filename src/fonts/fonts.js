@@ -1,4 +1,4 @@
-import { DM_Sans, Inter, Prompt, Proza_Libre } from 'next/font/google';
+import { DM_Sans, Inter, Poppins, Prompt, Proza_Libre } from 'next/font/google';
 import localFont from 'next/font/local';
 
 export const proza = Proza_Libre({
@@ -28,4 +28,10 @@ export const dmsans = DM_Sans({
 export const satoshi = localFont({
   src: [{ path: './satoshi/regular.ttf', weight: '500', style: 'normal' }],
   variable: '--Satoshi',
+});
+
+export const poppins = Poppins({
+  variable: '--Poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
 });

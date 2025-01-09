@@ -4,7 +4,7 @@ import HOC from '@/components/shared/hoc/HOC';
 import GlobalStyles from '@/GlobalStyles';
 import StyledComponentsRegistry from '@/lib/registry';
 
-import { dmsans, inter, prompt, proza, satoshi } from '../fonts/fonts';
+import { dmsans, inter, poppins, prompt, proza, satoshi } from '../fonts/fonts';
 
 export const metadata = {
   title: 'HackNitR',
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${proza.variable} ${inter.variable} ${prompt.variable} ${dmsans.variable} ${satoshi.variable} antialiased`}
+        className={`${poppins.variable} ${proza.variable} ${inter.variable} ${prompt.variable} ${dmsans.variable} ${satoshi.variable} antialiased`}
       >
         <StyledComponentsRegistry>
           <GlobalStyles />

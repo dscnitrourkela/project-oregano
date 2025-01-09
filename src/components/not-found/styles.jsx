@@ -27,7 +27,7 @@ export const NotFoundText = styled.p`
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 140%; /* 1.75rem */
+  line-height: 140%;
   letter-spacing: 0.0375rem;
   ${tw` font-satoshi max-w-2xl`};
 `;
