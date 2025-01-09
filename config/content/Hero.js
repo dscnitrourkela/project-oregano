@@ -6,11 +6,11 @@ export default {
 
   imgs: {
     hack: {
-      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201459/HackNitr/Hero%20Section/kgjxmevu0bvj4yn7ojfy.gif',
+      src: 'https://res.cloudinary.com/dqqyuvg1v/image/upload/v1736426796/Hack_qk4whh.png',
       alt: 'Hack',
     },
     nitr: {
-      src: 'https://res.cloudinary.com/dzxgf75bh/image/upload/v1702201272/HackNitr/Hero%20Section/anjnbvyn94vxvpf8acbc.png',
+      src: 'https://res.cloudinary.com/dqqyuvg1v/image/upload/v1736427153/Group_687_yk82pz.png',
       alt: 'NITR',
     },
     five: {

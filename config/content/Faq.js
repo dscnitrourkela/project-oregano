@@ -8,7 +8,7 @@ export default {
       id: 1,
       question: 'What are the dates for HackNITR 6.0?',
       answer:
-        'HackNITR 5.0 will be held on 2nd and 3rd March, 2025. We will be waiting for you with a warm welcome.',
+        'HackNITR 6.0 will be held on 2nd and 3rd March, 2025. We will be waiting for you with a warm welcome.',
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export default {
       question: 'What all things do you need to with while attending the hackathon?',
       answer: `Although we will provide you with a lot of things, you should bring your laptop, chargers, extension cords, and any other hardware you might need. 
       Furthermore it is mandatory to bring a physical copy of your undertaking form signed by your college authority and the hacker ID assigned to you within 24 hrs before the event along with a valid govt. ID. 
-      For further information please look at <a href="https://wakeful-echidna-360.notion.site/Things-to-carry-for-HackNITR-5-0-50baca07cae94fe8bdcfbefc99aea026" target="_blank">Things to carry for HackNITR 5.0 notion link</a>.\n
+      For further information please look at <a href="https://wakeful-echidna-360.notion.site/Things-to-carry-for-HackNITR-5-0-50baca07cae94fe8bdcfbefc99aea026" target="_blank">Things to carry for HackNITR 6.0 notion link</a>.\n
       
       Students faling to submit the MoU within the stipulated time will be disqualified from the event.`,
     },
