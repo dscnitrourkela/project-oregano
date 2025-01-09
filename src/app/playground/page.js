@@ -10,8 +10,13 @@ const Playground = () => {
       <H1>Playground</H1>
       <H2>Add your components here.</H2>
       <div className='flex gap-5 h-full flex-col my-10'>
-        <PrimaryButton>This is a primary button</PrimaryButton>
-        <DiscordButton>Discord</DiscordButton>
+        <div>
+          {' '}
+          <PrimaryButton>This is a primary button</PrimaryButton>
+        </div>
+        <div>
+          <DiscordButton>Discord</DiscordButton>
+        </div>
       </div>
       <Paragraph>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error tenetur quae totam?

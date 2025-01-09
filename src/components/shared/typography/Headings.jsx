@@ -10,13 +10,13 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h3`
-  ${tw`text-2xl  font-bold leading-snug tracking-normal sm:text-3xl md:text-4xl`}
+  ${tw`text-2xl font-satoshi font-semibold leading-snug tracking-normal sm:text-3xl md:text-4xl`}
 `;
 
 export const H3 = styled.h4`
-  ${tw`text-xl font-medium leading-snug tracking-normal sm:text-2xl md:text-3xl`}
+  ${tw`text-xl font-prompt font-medium leading-snug tracking-normal sm:text-2xl md:text-3xl`}
 `;
 
 export const Paragraph = styled.p`
-  ${tw`text-white text-base font-normal leading-relaxed text-justify sm:text-lg md:text-xl`}
+  ${tw`text-white font-inter text-base font-normal leading-relaxed text-justify sm:text-lg md:text-xl`}
 `;

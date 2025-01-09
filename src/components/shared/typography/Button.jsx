@@ -16,7 +16,7 @@ const BackLayer = styled.div`
 `;
 
 const FrontLayer = styled.button`
-  ${tw`relative px-8 py-4 rounded-[0.6rem] font-poppins font-semibold text-2xl flex items-center justify-center min-w-[200px] duration-200 overflow-hidden`}
+  ${tw`relative px-6 py-3 rounded-[0.6rem] font-poppins font-semibold text-2xl flex items-center justify-center min-w-[200px] duration-200 overflow-hidden`}
   background: ${({ gradient }) => gradient};
   color: ${({ color }) => color};
   border: ${({ border }) => border || 'none'};
@@ -43,7 +43,7 @@ const Button = ({ text, onClick, icon, gradients, color, border, iconPosition, c
     <>
       {icon && (
         <IconWrapper position={iconPosition} centered={centerIcon}>
-          <Image src={icon} alt={text} width={24} height={24} />
+          <Image src={icon} alt={text} width={30} height={30} />
         </IconWrapper>
       )}
       {text}
