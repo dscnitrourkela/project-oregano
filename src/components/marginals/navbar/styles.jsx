@@ -19,7 +19,7 @@ export const DesktopNavbar = styled.div`
   ${tw`hidden md:block absolute left-1/2 transform -translate-x-1/2`}
 `;
 export const DesktopNavbarLinks = styled.div`
-  ${tw`bg-[#F4E7D6] h-[5.5rem] flex items-center px-8 py-3`}
+  ${tw`bg-[#F4E7D6] h-[5.5rem] flex items-center px-8 py-3 shadow-2xl`}
   border-radius: 0rem 0rem 0.75rem 0.75rem;
 `;
 export const NavbarLink = styled(Link)`
