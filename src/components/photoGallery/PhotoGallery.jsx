@@ -5,7 +5,7 @@ import { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Image } from '@react-three/drei';
 import { easing } from 'maath';
-import gallery from './data';
+import gallery from '@/config/gallery/index';
 import { H1 } from '../shared/typography/Headings';
 
 const PhotoGallery = () => {
