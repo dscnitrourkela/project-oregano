@@ -1,11 +1,11 @@
 'use client';
 
-import { NavBar } from '@/components/navbar/navbar';
+import Navbar from '@/components/marginals/navbar/navbar';
 
 function HOC({ children }) {
   return (
     <>
-      <NavBar />
+      <Navbar />
       {children}
     </>
   );

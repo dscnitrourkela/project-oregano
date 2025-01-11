@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { easing } from 'maath';
 import * as THREE from 'three';
 
-import gallery from '@/config/gallery/index';
+import gallery from '@/config/content/gallery/index';
 import { Image } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 
