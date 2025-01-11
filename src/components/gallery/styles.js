@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-import { PrizesHeadingContainer } from '../prizes/styles';
+import { PrizesHeading, PrizesHeadingContainer } from '../prizes/styles';
 
 export const GalleryHeadingContainer = styled(PrizesHeadingContainer)`
   ${tw`
@@ -19,6 +19,7 @@ export const SectionContainer = styled.div`
       mb-12
   `}
 `;
+export const GalleryHeading = styled(PrizesHeading)``;
 
 export const CanvasContainer = styled.div`
   height: 100vh;

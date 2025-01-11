@@ -23,9 +23,9 @@ const Navbar = () => {
   };
 
   return (
-    <NavbarContainer>
+    <NavbarContainer className={isOpen && '!pb-0'}>
       <NavbarWrapper>
-        <HNLogo src={HN_LOGO} alt='HN Logo' width={70} height={70} className='mt-5' />
+        <HNLogo src={HN_LOGO} alt='HN Logo' width={70} height={70} />
         <DesktopNavbar>
           <DesktopNavbarLinks>
             {NAVBAR_LINKS.map((link) => (
@@ -36,7 +36,7 @@ const Navbar = () => {
           </DesktopNavbarLinks>
         </DesktopNavbar>
 
-        <ToggleButton onClick={toggleMenu} className='mt-5'>
+        <ToggleButton onClick={toggleMenu}>
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </ToggleButton>
       </NavbarWrapper>

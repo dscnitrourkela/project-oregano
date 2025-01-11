@@ -7,8 +7,12 @@ import gallery from '@/config/content/gallery/index';
 import { Image } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 
-import { H1 } from '../shared/typography/Headings';
-import { CanvasContainer, GalleryHeadingContainer, SectionContainer } from './styles';
+import {
+  CanvasContainer,
+  GalleryHeading,
+  GalleryHeadingContainer,
+  SectionContainer,
+} from './styles';
 
 const Gallery = () => {
   const [active, setActive] = useState(null);
@@ -33,7 +37,7 @@ const Gallery = () => {
     <SectionContainer>
       <div className='flex justify-center'>
         <GalleryHeadingContainer>
-          <H1>Photo Gallery</H1>
+          <GalleryHeading>Gallery</GalleryHeading>
         </GalleryHeadingContainer>
       </div>
       <CanvasContainer>

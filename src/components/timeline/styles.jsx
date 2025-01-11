@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-import { PrizesHeadingContainer } from '../prizes/styles';
+import { PrizesHeading, PrizesHeadingContainer } from '../prizes/styles';
 import { H1, H3, Paragraph } from '../shared/typography/Headings';
 
 export const ProgressBar = styled.div`
@@ -81,3 +81,4 @@ export const Container = styled.section`
 export const TimelineHeadingContainer = styled(PrizesHeadingContainer)`
   ${tw`my-5 md:my-20`}
 `;
+export const TimeLineHeading = styled(PrizesHeading)``;

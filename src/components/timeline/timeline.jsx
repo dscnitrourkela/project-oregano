@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { ELLIPSE_IMG, LINE_IMG, TIMELINE } from '@/config/content/timeline';
 
-import { H1 } from '../shared/typography/Headings';
 import {
   Box,
   BoxHeading,
@@ -14,6 +13,7 @@ import {
   MobileBranch,
   Progress,
   ProgressBar,
+  TimeLineHeading,
   TimelineHeadingContainer,
 } from './styles';
 
@@ -67,7 +67,7 @@ export default function Timeline() {
     <Container>
       <div className='flex w-full justify-center mb-20'>
         <TimelineHeadingContainer>
-          <H1>Timeline</H1>
+          <TimeLineHeading>Timeline</TimeLineHeading>
         </TimelineHeadingContainer>
       </div>
       <div className='flex m-auto px-0 md:px-10' ref={targetRef}>

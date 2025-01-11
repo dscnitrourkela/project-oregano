@@ -2,16 +2,16 @@
 
 import { PRIZES } from '@/config/content/prizes';
 
-import { H1, H3 } from '../shared/typography/Headings';
+import { H3 } from '../shared/typography/Headings';
 import PrizeCard from './prize-card';
-import { PrizesContainer, PrizesContent, PrizesHeadingContainer } from './styles';
+import { PrizesContainer, PrizesContent, PrizesHeading, PrizesHeadingContainer } from './styles';
 
 function Prizes() {
   return (
     <PrizesContainer>
       <div className='my-5 md:my-20'>
         <PrizesHeadingContainer>
-          <H1>Prizes</H1>
+          <PrizesHeading>Prizes</PrizesHeading>
         </PrizesHeadingContainer>
       </div>
       <PrizesContent>

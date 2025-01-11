@@ -5,14 +5,15 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 export const NavbarContainer = styled.div`
-  ${tw`sticky w-full top-0 z-50 max-w-6xl left-0 right-0 mx-auto`}
+  ${tw`sticky w-full top-0 z-50 max-w-7xl left-0 right-0 mx-auto md:backdrop-blur-0 backdrop-blur-2xl md:py-0 py-5 bg-[#170611]/50 md:bg-transparent `}
+  border-radius: 0rem 0rem 0.75rem 0.75rem;
 `;
 
 export const NavbarWrapper = styled.div`
   ${tw`flex items-center justify-between`}
 `;
 export const HNLogo = styled(Image)`
-  ${tw`cursor-pointer ml-5 md:ml-0`}
+  ${tw`cursor-pointer md:mt-5 mt-0 ml-5 md:ml-0`}
 `;
 export const DesktopNavbar = styled.div`
   ${tw`hidden md:block absolute left-1/2 transform -translate-x-1/2`}

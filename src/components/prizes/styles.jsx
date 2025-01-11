@@ -45,18 +45,22 @@ export const PrizesContainer = styled.div`
 `;
 export const PrizesHeadingContainer = styled.div`
   display: inline-flex;
-  padding: 1rem 3rem;
+  /* padding: 1rem 3rem; */
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
   border-radius: 1.125rem;
   background: #f6dfc2;
+  ${tw`md:px-[3rem] md:py-[1rem] ssm:px-[2rem] ssm:py-[1rem] px-[2rem] py-[0.5rem]`};
 `;
 
 export const PrizesHeading = styled(H1)`
   ${tw`
     text-center
     w-full
+    md:text-3xl
+    ssm:text-3xl
+    text-2xl
   `}
 `;
 
