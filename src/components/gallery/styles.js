@@ -1,20 +1,13 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-export const GalleryHeadingContainer = styled.div`
+import { PrizesHeadingContainer } from '../prizes/styles';
+
+export const GalleryHeadingContainer = styled(PrizesHeadingContainer)`
   ${tw`
-      my-auto
-      border-2
-      flex
-      bg-[#f6dfc2]
-      rounded-[1.125rem]
-      w-fit
-      mx-auto
-      py-4
-      px-12
-    `}
-  align-items: center;
-  gap: 0.625rem;
+   my-5 md:my-20
+    
+  `}
 `;
 
 export const SectionContainer = styled.div`

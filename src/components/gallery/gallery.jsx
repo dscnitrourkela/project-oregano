@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react';
-import { SectionContainer, CanvasContainer, GalleryHeadingContainer } from './styles';
-import * as THREE from 'three';
-import { useRef, useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Image } from '@react-three/drei';
-import { easing } from 'maath';
-import gallery from '@/config/gallery/index';
-import { H1 } from '../shared/typography/Headings';
+import React, { useEffect, useRef, useState } from 'react';
 
-const PhotoGallery = () => {
+import { easing } from 'maath';
+import * as THREE from 'three';
+
+import gallery from '@/config/gallery/index';
+import { Image } from '@react-three/drei';
+import { Canvas, useFrame } from '@react-three/fiber';
+
+import { H1 } from '../shared/typography/Headings';
+import { CanvasContainer, GalleryHeadingContainer, SectionContainer } from './styles';
+
+const Gallery = () => {
   const [active, setActive] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const cameraRef = useRef();
@@ -29,9 +31,11 @@ const PhotoGallery = () => {
   }, []);
   return (
     <SectionContainer>
-      <GalleryHeadingContainer>
-        <H1>Photo Gallery</H1>
-      </GalleryHeadingContainer>
+      <div className='flex justify-center'>
+        <GalleryHeadingContainer>
+          <H1>Photo Gallery</H1>
+        </GalleryHeadingContainer>
+      </div>
       <CanvasContainer>
         <Canvas
           camera={{ position: [0, 0, isMobile ? 15 : 11], fov: 16 }}
@@ -116,10 +120,11 @@ function Card({ url, ...props }) {
       onPointerOut={pointerOut}
       color={'#f6dfc2'}
       {...props}
+      alt='gallery'
     >
       <primitive object={createCurvedPlaneGeometry(1, 1.3, 20, 20, 0.5)} />
     </Image>
   );
 }
 
-export default PhotoGallery;
+export default Gallery;

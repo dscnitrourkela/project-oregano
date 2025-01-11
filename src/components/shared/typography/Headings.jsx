@@ -14,7 +14,7 @@ export const H2 = styled.h2`
 `;
 
 export const H3 = styled.h3`
-  ${tw`text-xl font-prompt font-medium leading-snug tracking-normal sm:text-2xl md:text-3xl`}
+  ${tw`text-xl font-poppins font-medium leading-snug tracking-normal sm:text-2xl md:text-3xl`}
 `;
 
 export const Paragraph = styled.p`
