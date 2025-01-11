@@ -4,6 +4,7 @@ import { hero } from '../../../config';
 import Brochure from '../shared/Brochure';
 import DiscordButton from '../shared/Discord';
 import DiscordMobile from '../shared/DiscordMobile';
+import PreRegisterBtn from '../shared/PreRegisterBtn';
 import {
   ContentBlock,
   FIVEimg,
@@ -17,7 +18,6 @@ import {
   SectionContainer,
   TaglineText,
 } from './styles';
-import PreRegisterBtn from '../shared/PreRegisterBtn';
 
 export default function HeroSection() {
   return (
@@ -38,7 +38,7 @@ export default function HeroSection() {
         <Herodiv>
           {/* <RegisterButton /> */}
           <DiscordButton />
-          <PreRegisterBtn>Pre-register</PreRegisterBtn>
+          <PreRegisterBtn>Apply with Devfolio</PreRegisterBtn>
           <Brochure>Brochure</Brochure>
           <DiscordMobile />
         </Herodiv>
