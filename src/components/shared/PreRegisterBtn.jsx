@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const link = 'https://tally.so/r/w4AjMY';
+const link = 'https://hacknitr6.devfolio.co/';
 
 function PreRegisterBtn({ children }) {
   return (
