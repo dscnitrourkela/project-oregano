@@ -78,9 +78,9 @@ const GhostIcon = () => (
 
 export default function Hero() {
   return (
-    <main className='min-h-screen bg-[#200818] overflow-x-hidden pt-16 sm:pt-20'>
+    <main className='min-h-[70vh] bg-[#200818] overflow-x-hidden pt-16 sm:pt-20'>
       {/* Hero Section */}
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-16 sm:pb-32 text-center'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-16 sm:pb-32 text-center'>
         <div className='max-w-[300px] xs:max-w-[400px] sm:max-w-[500px] md:max-w-[600px] mx-auto mb-8'>
           <Image
             src={Hack}
@@ -92,7 +92,7 @@ export default function Hero() {
           />
         </div>
 
-        <p className='text-white text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12'>
+        <p className='text-white text-base font-poppins sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12'>
           December 15th-17th, 2025 | NIT Rourkela
         </p>
 
