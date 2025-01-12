@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import HeroSection from '../components/HeroSection/HeroSection';
 // import { Container } from '../components/shared/SectionContainer';
 import Layout from '../components/shared/Layout';
+import PhotoGallery from '../components/Gallery/Gallery';
 // import AboutSection from '../components/AboutUs/About';
 // import SponsorSection from '../components/Sponsor/Sponsor';
 // import FAQ from '../components/Faq/Faq';
@@ -50,6 +51,7 @@ const Homepage = ({ location }) => {
       {/* <ParticleBackground /> */}
       <Layout location={location}>
         <HeroSection />
+        <PhotoGallery />
         {/* <Container> */}
         {/* <PreviousStats />
           <AboutSection />
